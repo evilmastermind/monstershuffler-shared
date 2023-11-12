@@ -30,7 +30,7 @@ export const postFourRandomNpcsResponse = z.object({
   npcs: z.array(characterObject),
 });
 
-export const postGeneratorDataResponse = z.object({
+export const getGeneratorDataResponse = z.object({
   races: objectWithVariantsList,
   classes: objectWithVariantsList,
   backgrounds: objectList,

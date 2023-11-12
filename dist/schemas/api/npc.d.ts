@@ -17634,7 +17634,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
         } | undefined;
     }[];
 }>;
-export declare const postGeneratorDataResponse: z.ZodObject<{
+export declare const getGeneratorDataResponse: z.ZodObject<{
     races: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

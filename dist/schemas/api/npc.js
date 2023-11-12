@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postGeneratorDataResponse = exports.postFourRandomNpcsResponse = exports.postRandomNpcResponse = exports.postRandomNpcInput = void 0;
+exports.getGeneratorDataResponse = exports.postFourRandomNpcsResponse = exports.postRandomNpcResponse = exports.postRandomNpcInput = void 0;
 const zod_1 = require("zod");
 const objects_1 = require("../../schemas/objects");
 const object_1 = require("./object");
@@ -29,7 +29,7 @@ exports.postRandomNpcResponse = zod_1.z.object({
 exports.postFourRandomNpcsResponse = zod_1.z.object({
     npcs: zod_1.z.array(objects_1.characterObject),
 });
-exports.postGeneratorDataResponse = zod_1.z.object({
+exports.getGeneratorDataResponse = zod_1.z.object({
     races: object_1.objectWithVariantsList,
     classes: object_1.objectWithVariantsList,
     backgrounds: object_1.objectList,
