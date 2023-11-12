@@ -1,0 +1,36 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.tagsObject = void 0;
+const zod_1 = require("zod");
+exports.tagsObject = zod_1.z.object({
+    name: zod_1.z.string(),
+    Name: zod_1.z.string(),
+    he: zod_1.z.string(),
+    she: zod_1.z.string(),
+    his: zod_1.z.string(),
+    her: zod_1.z.string(),
+    him: zod_1.z.string(),
+    hers: zod_1.z.string(),
+    He: zod_1.z.string(),
+    His: zod_1.z.string(),
+    Him: zod_1.z.string(),
+    Hers: zod_1.z.string(),
+    they: zod_1.z.string(),
+    their: zod_1.z.string(),
+    them: zod_1.z.string(),
+    theirs: zod_1.z.string(),
+    They: zod_1.z.string(),
+    Their: zod_1.z.string(),
+    Them: zod_1.z.string(),
+    Theirs: zod_1.z.string(),
+    it: zod_1.z.string(),
+    its: zod_1.z.string(),
+    It: zod_1.z.string(),
+    Its: zod_1.z.string(),
+    size: zod_1.z.string(),
+    sizegreater: zod_1.z.string(),
+    sizesmaller: zod_1.z.string(),
+    sizetwogreater: zod_1.z.string(),
+    sizetwosmaller: zod_1.z.string(),
+    type: zod_1.z.string(),
+}).catchall(zod_1.z.string());
