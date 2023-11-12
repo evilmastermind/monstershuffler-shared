@@ -4,6 +4,7 @@ import { pronounsObject } from './other';
 const statNumberString = z.object({
   number: z.number(),
   string: z.string(),
+  array: z.array(z.string()).optional(),
   id: z.number().optional(),
 });
 
@@ -22,9 +23,8 @@ const descriptionPartObject = z.object({
   id: z.number().optional(),
 });
 
-
 export const statisticsObject = z.object({
-  alignment: z.array(z.string()),
+  alignment: statNumberString,
   pronouns: pronounsObject,
   prename: z.string(),
   name: z.string(),
@@ -40,8 +40,9 @@ export const statisticsObject = z.object({
   abilityScores: abilitiesObject,
   abilityModifiers: abilitiesObject,
   HP: statNumberString,
-  type: statNumberString.optional(),
+  type: statNumberString,
   subtypes: z.array(statNumberString).optional(),
+  meta: z.string(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

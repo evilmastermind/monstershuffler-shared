@@ -22,7 +22,22 @@ export declare const abilitiesObject: z.ZodObject<{
     CHA: number;
 }>;
 export declare const statisticsObject: z.ZodObject<{
-    alignment: z.ZodArray<z.ZodString, "many">;
+    alignment: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    }>;
     pronouns: z.ZodEnum<["male", "female", "neutral", "thing"]>;
     prename: z.ZodString;
     name: z.ZodString;
@@ -45,14 +60,17 @@ export declare const statisticsObject: z.ZodObject<{
     CR: z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }>;
     XP: z.ZodString;
@@ -60,27 +78,33 @@ export declare const statisticsObject: z.ZodObject<{
     size: z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }>;
     sizeSingleEntityOfSwarm: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }>>;
     abilityScores: z.ZodObject<{
@@ -130,51 +154,73 @@ export declare const statisticsObject: z.ZodObject<{
     HP: z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }>;
-    type: z.ZodOptional<z.ZodObject<{
+    type: z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
-    }>>;
+    }>;
     subtypes: z.ZodOptional<z.ZodArray<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }>, "many">>;
+    meta: z.ZodString;
 }, "strip", z.ZodTypeAny, {
+    type: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     name: string;
     level: number;
     CR: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
-    alignment: string[];
+    alignment: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     pronouns: "male" | "female" | "neutral" | "thing";
     prename: string;
     surname: string;
@@ -184,6 +230,7 @@ export declare const statisticsObject: z.ZodObject<{
     size: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
     abilityScores: {
@@ -205,8 +252,10 @@ export declare const statisticsObject: z.ZodObject<{
     HP: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
+    meta: string;
     characterHook?: {
         string: string;
         type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -215,27 +264,36 @@ export declare const statisticsObject: z.ZodObject<{
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
-        id?: number | undefined;
-    } | undefined;
-    type?: {
-        string: string;
-        number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     } | undefined;
     subtypes?: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }[] | undefined;
 }, {
+    type: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     name: string;
     level: number;
     CR: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
-    alignment: string[];
+    alignment: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     pronouns: "male" | "female" | "neutral" | "thing";
     prename: string;
     surname: string;
@@ -245,6 +303,7 @@ export declare const statisticsObject: z.ZodObject<{
     size: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
     abilityScores: {
@@ -266,8 +325,10 @@ export declare const statisticsObject: z.ZodObject<{
     HP: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     };
+    meta: string;
     characterHook?: {
         string: string;
         type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -276,16 +337,13 @@ export declare const statisticsObject: z.ZodObject<{
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
-        id?: number | undefined;
-    } | undefined;
-    type?: {
-        string: string;
-        number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     } | undefined;
     subtypes?: {
         string: string;
         number: number;
+        array?: string[] | undefined;
         id?: number | undefined;
     }[] | undefined;
 }>;

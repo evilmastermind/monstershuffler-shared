@@ -6,6 +6,7 @@ const other_1 = require("./other");
 const statNumberString = zod_1.z.object({
     number: zod_1.z.number(),
     string: zod_1.z.string(),
+    array: zod_1.z.array(zod_1.z.string()).optional(),
     id: zod_1.z.number().optional(),
 });
 exports.abilitiesObject = zod_1.z.object({
@@ -22,7 +23,7 @@ const descriptionPartObject = zod_1.z.object({
     id: zod_1.z.number().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
-    alignment: zod_1.z.array(zod_1.z.string()),
+    alignment: statNumberString,
     pronouns: other_1.pronounsObject,
     prename: zod_1.z.string(),
     name: zod_1.z.string(),
@@ -38,6 +39,7 @@ exports.statisticsObject = zod_1.z.object({
     abilityScores: exports.abilitiesObject,
     abilityModifiers: exports.abilitiesObject,
     HP: statNumberString,
-    type: statNumberString.optional(),
+    type: statNumberString,
     subtypes: zod_1.z.array(statNumberString).optional(),
+    meta: zod_1.z.string(),
 });

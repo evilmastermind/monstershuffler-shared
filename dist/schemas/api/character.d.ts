@@ -4306,14 +4306,26 @@ export declare const getCharacterResponse: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -4323,6 +4335,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -4344,8 +4357,10 @@ export declare const getCharacterResponse: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -4354,16 +4369,13 @@ export declare const getCharacterResponse: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -8702,14 +8714,26 @@ export declare const getCharacterResponse: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -8719,6 +8743,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -8740,8 +8765,10 @@ export declare const getCharacterResponse: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -8750,16 +8777,13 @@ export declare const getCharacterResponse: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -13103,14 +13127,26 @@ export declare const postCharacter: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -13120,6 +13156,7 @@ export declare const postCharacter: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -13141,8 +13178,10 @@ export declare const postCharacter: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -13151,16 +13190,13 @@ export declare const postCharacter: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -17500,14 +17536,26 @@ export declare const postCharacter: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -17517,6 +17565,7 @@ export declare const postCharacter: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -17538,8 +17587,10 @@ export declare const postCharacter: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -17548,16 +17599,13 @@ export declare const postCharacter: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -21902,14 +21950,26 @@ export declare const putCharacter: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -21919,6 +21979,7 @@ export declare const putCharacter: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -21940,8 +22001,10 @@ export declare const putCharacter: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -21950,16 +22013,13 @@ export declare const putCharacter: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -26299,14 +26359,26 @@ export declare const putCharacter: z.ZodObject<{
         };
         id?: number | undefined;
         statistics?: {
+            type: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             name: string;
             level: number;
             CR: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
-            alignment: string[];
+            alignment: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             pronouns: "male" | "female" | "neutral" | "thing";
             prename: string;
             surname: string;
@@ -26316,6 +26388,7 @@ export declare const putCharacter: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -26337,8 +26410,10 @@ export declare const putCharacter: z.ZodObject<{
             HP: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             };
+            meta: string;
             characterHook?: {
                 string: string;
                 type?: "type" | "trait" | "background" | "spell" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
@@ -26347,16 +26422,13 @@ export declare const putCharacter: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
-                id?: number | undefined;
-            } | undefined;
-            type?: {
-                string: string;
-                number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
                 number: number;
+                array?: string[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
