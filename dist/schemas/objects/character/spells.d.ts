@@ -802,8 +802,8 @@ export declare const spellObject: z.ZodObject<{
     ritual: boolean;
     school: string;
     duration: string;
-    components: string;
     castingTime: string;
+    components: string;
 }, {
     name: string;
     source: string;
@@ -814,7 +814,7 @@ export declare const spellObject: z.ZodObject<{
     ritual: boolean;
     school: string;
     duration: string;
-    components: string;
     castingTime: string;
+    components: string;
 }>;
 //# sourceMappingURL=spells.d.ts.map
