@@ -1,0 +1,35 @@
+{
+  "name": "monstershuffler-shared",
+  "version": "0.0.1",
+  "description": "Monstershuffler Schemas & Utils",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilmastermind/monstershuffler-shared.git"
+  },
+  "keywords": [
+    "d&d",
+    "monstershuffler"
+  ],
+  "author": "Ismael",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/evilmastermind/monstershuffler-shared/issues"
+  },
+  "homepage": "https://github.com/evilmastermind/monstershuffler-shared#readme",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
