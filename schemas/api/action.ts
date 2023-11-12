@@ -1,0 +1,60 @@
+import { z } from 'zod';
+import { actionObject } from '@/schemas';
+import { id, userid, game, name } from './object';
+
+const type = z.string().min(2);
+const subtype = z.string().min(2).optional();
+const source = z.string().min(2);
+const actionstags = z.array(z.string()).optional();
+const actionsdetails = z.object({
+  name,
+  type,
+  subtype,
+  source,
+});
+
+export const getActionList = z.object({
+  game: game.optional(),
+  name: name.optional(),
+  type: type.optional(),
+  subtype: subtype.optional(),
+  source: source.optional(),
+  tag: z.string().optional(),
+});
+
+export const getActionListResponse = z.object({
+  list: z.array(
+    z.object({
+      id,
+      userid,
+      actionsdetails,
+      actionstags,
+    })
+  ),
+});
+
+export const getActionResponse = z.object({
+  id,
+  userid,
+  object: actionObject,
+  actionsdetails,
+});
+
+export const postAction = z.object({
+  game,
+  name,
+  type,
+  subtype,
+  source,
+  tags: actionstags,
+  object: actionObject,
+});
+
+export const putAction = z.object({
+  name,
+  type,
+  subtype,
+  source,
+  tags: actionstags,
+  object: actionObject,
+});

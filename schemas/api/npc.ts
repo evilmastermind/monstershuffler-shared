@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { characterObject, pronounsObject } from '@/schemas/objects';
+import { characterObject, pronounsObject } from '@/schemas';
 import { id, objectWithVariantsList, objectList } from './object';
 
 export const postRandomNpcInput = z.object({

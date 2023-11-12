@@ -11,8 +11,8 @@ export declare const armorObject: z.ZodObject<{
     weight: z.ZodOptional<z.ZodString>;
     stealthDis: z.ZodOptional<z.ZodBoolean>;
 }, "strip", z.ZodTypeAny, {
-    AC: string;
     name: string;
+    AC: string;
     isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;
@@ -21,8 +21,8 @@ export declare const armorObject: z.ZodObject<{
     weight?: string | undefined;
     stealthDis?: boolean | undefined;
 }, {
-    AC: string;
     name: string;
+    AC: string;
     isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;

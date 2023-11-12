@@ -1175,8 +1175,8 @@ export declare const languagesStats: {
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -1190,8 +1190,8 @@ export declare const languagesStats: {
             }[] | undefined;
         }, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -1207,8 +1207,8 @@ export declare const languagesStats: {
     }, "strip", z.ZodTypeAny, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -1224,8 +1224,8 @@ export declare const languagesStats: {
     }, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -1465,8 +1465,8 @@ export declare const actionsStats: {
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
-                        resultType: "object" | "nameId";
                         source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -1480,8 +1480,8 @@ export declare const actionsStats: {
                         }[] | undefined;
                     }, {
                         type: "random";
-                        resultType: "object" | "nameId";
                         source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -1497,8 +1497,8 @@ export declare const actionsStats: {
                 }, "strip", z.ZodTypeAny, {
                     choice: {
                         type: "random";
-                        resultType: "object" | "nameId";
                         source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -1514,8 +1514,8 @@ export declare const actionsStats: {
                 }, {
                     choice: {
                         type: "random";
-                        resultType: "object" | "nameId";
                         source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -1585,23 +1585,6 @@ export declare const actionsStats: {
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1616,24 +1599,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1648,6 +1631,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -1666,23 +1666,6 @@ export declare const actionsStats: {
             }, {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1697,24 +1680,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1729,6 +1712,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -1758,23 +1758,6 @@ export declare const actionsStats: {
             attacks?: {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1789,24 +1772,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1821,6 +1804,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -1850,23 +1850,6 @@ export declare const actionsStats: {
             attacks?: {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1881,24 +1864,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -1913,6 +1896,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -1961,8 +1961,8 @@ export declare const actionsStats: {
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -1976,8 +1976,8 @@ export declare const actionsStats: {
                 }[] | undefined;
             }, {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -1993,8 +1993,8 @@ export declare const actionsStats: {
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2010,8 +2010,8 @@ export declare const actionsStats: {
         }, {
             choice: {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2089,8 +2089,8 @@ export declare const actionsStats: {
         variants: ({
             choice: {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2102,17 +2102,6 @@ export declare const actionsStats: {
                     id?: number | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
             };
         } | {
             name: string;
@@ -2127,23 +2116,6 @@ export declare const actionsStats: {
             attacks?: {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -2158,24 +2130,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -2190,6 +2162,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -2206,6 +2195,17 @@ export declare const actionsStats: {
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
         })[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
@@ -2219,8 +2219,8 @@ export declare const actionsStats: {
         variants: ({
             choice: {
                 type: "random";
-                resultType: "object" | "nameId";
                 source: "objects" | "languages" | "skills";
+                resultType: "object" | "nameId";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2232,17 +2232,6 @@ export declare const actionsStats: {
                     id?: number | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
             };
         } | {
             name: string;
@@ -2257,23 +2246,6 @@ export declare const actionsStats: {
             attacks?: {
                 name: string;
                 attributes: ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -2288,24 +2260,24 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 }) & ({
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            availableAt?: number | undefined;
-                        }[] | undefined;
-                    };
-                } | {
                     properties: string[];
                     reach?: string | undefined;
                     targets?: string | undefined;
@@ -2320,6 +2292,23 @@ export declare const actionsStats: {
                     diceNumberV?: string | undefined;
                     range?: string | undefined;
                     rangeMax?: string | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        source: "objects" | "languages" | "skills";
+                        resultType: "object" | "nameId";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
                 } | undefined);
                 replaceName?: boolean | undefined;
                 enchantment?: {
@@ -2336,6 +2325,17 @@ export declare const actionsStats: {
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
         })[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
@@ -2376,8 +2376,8 @@ export declare const actionsStats: {
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -2391,8 +2391,8 @@ export declare const actionsStats: {
             }[] | undefined;
         }, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -2408,8 +2408,8 @@ export declare const actionsStats: {
     }, "strip", z.ZodTypeAny, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -2425,8 +2425,8 @@ export declare const actionsStats: {
     }, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -3419,8 +3419,8 @@ export declare const spellsStats: {
                     }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3434,8 +3434,8 @@ export declare const spellsStats: {
                     }[] | undefined;
                 }, {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3451,8 +3451,8 @@ export declare const spellsStats: {
             }, "strip", z.ZodTypeAny, {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3468,8 +3468,8 @@ export declare const spellsStats: {
             }, {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3551,8 +3551,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3583,8 +3583,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3621,8 +3621,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3653,8 +3653,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3696,8 +3696,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3728,8 +3728,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3771,8 +3771,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3803,8 +3803,8 @@ export declare const spellsStats: {
             }[] | {
                 choice: {
                     type: "random";
-                    resultType: "object" | "nameId";
                     source: "objects" | "languages" | "skills";
+                    resultType: "object" | "nameId";
                     number?: number | undefined;
                     objectType?: number | undefined;
                     filters?: {
@@ -3880,8 +3880,8 @@ export declare const skillsStats: {
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -3895,8 +3895,8 @@ export declare const skillsStats: {
             }[] | undefined;
         }, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -3912,8 +3912,8 @@ export declare const skillsStats: {
     }, "strip", z.ZodTypeAny, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -3929,8 +3929,8 @@ export declare const skillsStats: {
     }, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -4206,8 +4206,8 @@ export declare const armorStats: {
         weight: z.ZodOptional<z.ZodString>;
         stealthDis: z.ZodOptional<z.ZodBoolean>;
     }, "strip", z.ZodTypeAny, {
-        AC: string;
         name: string;
+        AC: string;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -4216,8 +4216,8 @@ export declare const armorStats: {
         weight?: string | undefined;
         stealthDis?: boolean | undefined;
     }, {
-        AC: string;
         name: string;
+        AC: string;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -4257,8 +4257,8 @@ export declare const armorStats: {
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -4272,8 +4272,8 @@ export declare const armorStats: {
             }[] | undefined;
         }, {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -4289,8 +4289,8 @@ export declare const armorStats: {
     }, "strip", z.ZodTypeAny, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -4306,8 +4306,8 @@ export declare const armorStats: {
     }, {
         choice: {
             type: "random";
-            resultType: "object" | "nameId";
             source: "objects" | "languages" | "skills";
+            resultType: "object" | "nameId";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {

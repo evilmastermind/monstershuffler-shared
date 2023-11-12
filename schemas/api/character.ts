@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { characterObject } from '@/schemas/objects';
+import { characterObject } from '@/schemas';
 import { id, userid, name, game } from './object';
 
 export const getCharacterListResponse = z.object({

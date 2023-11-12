@@ -44,8 +44,8 @@ export declare const choiceRandomObject: z.ZodObject<{
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
         type: "random";
-        resultType: "object" | "nameId";
         source: "objects" | "languages" | "skills";
+        resultType: "object" | "nameId";
         number?: number | undefined;
         objectType?: number | undefined;
         filters?: {
@@ -59,8 +59,8 @@ export declare const choiceRandomObject: z.ZodObject<{
         }[] | undefined;
     }, {
         type: "random";
-        resultType: "object" | "nameId";
         source: "objects" | "languages" | "skills";
+        resultType: "object" | "nameId";
         number?: number | undefined;
         objectType?: number | undefined;
         filters?: {
@@ -76,8 +76,8 @@ export declare const choiceRandomObject: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     choice: {
         type: "random";
-        resultType: "object" | "nameId";
         source: "objects" | "languages" | "skills";
+        resultType: "object" | "nameId";
         number?: number | undefined;
         objectType?: number | undefined;
         filters?: {
@@ -93,8 +93,8 @@ export declare const choiceRandomObject: z.ZodObject<{
 }, {
     choice: {
         type: "random";
-        resultType: "object" | "nameId";
         source: "objects" | "languages" | "skills";
+        resultType: "object" | "nameId";
         number?: number | undefined;
         objectType?: number | undefined;
         filters?: {
