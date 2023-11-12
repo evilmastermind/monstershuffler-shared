@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const Abilities: z.ZodObject<{
+export declare const abilitiesObject: z.ZodObject<{
     STR: z.ZodNumber;
     DEX: z.ZodNumber;
     CON: z.ZodNumber;
@@ -21,7 +21,6 @@ export declare const Abilities: z.ZodObject<{
     WIS: number;
     CHA: number;
 }>;
-export declare const Pronouns: z.ZodEnum<["male", "female", "neutral", "thing"]>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodArray<z.ZodString, "many">;
     pronouns: z.ZodEnum<["male", "female", "neutral", "thing"]>;
@@ -170,16 +169,16 @@ export declare const statisticsObject: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     name: string;
     level: number;
-    alignment: string[];
-    pronouns: "male" | "female" | "neutral" | "thing";
-    prename: string;
-    surname: string;
-    fullName: string;
     CR: {
         string: string;
         number: number;
         id?: number | undefined;
     };
+    alignment: string[];
+    pronouns: "male" | "female" | "neutral" | "thing";
+    prename: string;
+    surname: string;
+    fullName: string;
     XP: string;
     proficiency: number;
     size: {
@@ -231,16 +230,16 @@ export declare const statisticsObject: z.ZodObject<{
 }, {
     name: string;
     level: number;
-    alignment: string[];
-    pronouns: "male" | "female" | "neutral" | "thing";
-    prename: string;
-    surname: string;
-    fullName: string;
     CR: {
         string: string;
         number: number;
         id?: number | undefined;
     };
+    alignment: string[];
+    pronouns: "male" | "female" | "neutral" | "thing";
+    prename: string;
+    surname: string;
+    fullName: string;
     XP: string;
     proficiency: number;
     size: {
