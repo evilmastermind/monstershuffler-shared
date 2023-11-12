@@ -4877,8 +4877,8 @@ export declare const getBackgroundResponse: z.ZodObject<{
     id: number;
     name: string;
     description: string;
-    age: string;
     femaleName: string;
+    age: string;
 }, {
     object: {
         name: string;
@@ -5464,8 +5464,8 @@ export declare const getBackgroundResponse: z.ZodObject<{
     id: number;
     name: string;
     description: string;
-    age: string;
     femaleName: string;
+    age: string;
 }>;
 export declare const postBackground: z.ZodObject<{
     object: z.ZodObject<{
