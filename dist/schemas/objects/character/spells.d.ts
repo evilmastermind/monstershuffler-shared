@@ -1,0 +1,820 @@
+import { z } from 'zod';
+export declare const spellGroupObject: z.ZodObject<{
+    tag: z.ZodString;
+    availableAt: z.ZodOptional<z.ZodString>;
+    timesDay: z.ZodOptional<z.ZodString>;
+    timesDayMax: z.ZodOptional<z.ZodString>;
+    spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
+        value: z.ZodString;
+        availableAt: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }, {
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }>, "many">, z.ZodObject<{
+        choice: z.ZodObject<{
+            type: z.ZodLiteral<"random">;
+            number: z.ZodOptional<z.ZodNumber>;
+            resultType: z.ZodEnum<["object", "nameId"]>;
+            source: z.ZodEnum<["objects", "languages", "skills"]>;
+            objectType: z.ZodOptional<z.ZodNumber>;
+            filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                keyName: z.ZodString;
+                keyValues: z.ZodArray<z.ZodString, "many">;
+            }, "strip", z.ZodTypeAny, {
+                keyName: string;
+                keyValues: string[];
+            }, {
+                keyName: string;
+                keyValues: string[];
+            }>, "many">>;
+            chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                id: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodString;
+                availableAt: z.ZodOptional<z.ZodNumber>;
+            }, "strip", z.ZodTypeAny, {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }, {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }>, "many">>;
+        }, "strip", z.ZodTypeAny, {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        }, {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        }>;
+    }, "strip", z.ZodTypeAny, {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    }, {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    }>, z.ZodObject<{
+        choice: z.ZodObject<{
+            type: z.ZodLiteral<"list">;
+            number: z.ZodNumber;
+            list: z.ZodArray<z.ZodObject<{
+                id: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodString;
+                availableAt: z.ZodOptional<z.ZodNumber>;
+            }, "strip", z.ZodTypeAny, {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }, {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }>, "many">;
+            isRepeatable: z.ZodOptional<z.ZodBoolean>;
+        }, "strip", z.ZodTypeAny, {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        }, {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        }>;
+    }, "strip", z.ZodTypeAny, {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    }, {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    }>]>;
+}, "strict", z.ZodTypeAny, {
+    tag: string;
+    spells: ({
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }[] | {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    } | {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    }) & ({
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }[] | {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    } | {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    } | undefined);
+    availableAt?: string | undefined;
+    timesDay?: string | undefined;
+    timesDayMax?: string | undefined;
+}, {
+    tag: string;
+    spells: ({
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }[] | {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    } | {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    }) & ({
+        value: string;
+        id?: number | undefined;
+        availableAt?: number | undefined;
+    }[] | {
+        choice: {
+            type: "random";
+            resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
+            number?: number | undefined;
+            objectType?: number | undefined;
+            filters?: {
+                keyName: string;
+                keyValues: string[];
+            }[] | undefined;
+            chosenAlready?: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[] | undefined;
+        };
+    } | {
+        choice: {
+            number: number;
+            type: "list";
+            list: {
+                value: string;
+                id?: number | undefined;
+                availableAt?: number | undefined;
+            }[];
+            isRepeatable?: boolean | undefined;
+        };
+    } | undefined);
+    availableAt?: string | undefined;
+    timesDay?: string | undefined;
+    timesDayMax?: string | undefined;
+}>;
+export declare const spellsObject: z.ZodObject<{
+    hasSlots: z.ZodOptional<z.ZodBoolean>;
+    ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
+    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+    groups: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        tag: z.ZodString;
+        availableAt: z.ZodOptional<z.ZodString>;
+        timesDay: z.ZodOptional<z.ZodString>;
+        timesDayMax: z.ZodOptional<z.ZodString>;
+        spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
+            id: z.ZodOptional<z.ZodNumber>;
+            value: z.ZodString;
+            availableAt: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }, {
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }>, "many">, z.ZodObject<{
+            choice: z.ZodObject<{
+                type: z.ZodLiteral<"random">;
+                number: z.ZodOptional<z.ZodNumber>;
+                resultType: z.ZodEnum<["object", "nameId"]>;
+                source: z.ZodEnum<["objects", "languages", "skills"]>;
+                objectType: z.ZodOptional<z.ZodNumber>;
+                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    keyName: z.ZodString;
+                    keyValues: z.ZodArray<z.ZodString, "many">;
+                }, "strip", z.ZodTypeAny, {
+                    keyName: string;
+                    keyValues: string[];
+                }, {
+                    keyName: string;
+                    keyValues: string[];
+                }>, "many">>;
+                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    id: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodString;
+                    availableAt: z.ZodOptional<z.ZodNumber>;
+                }, "strip", z.ZodTypeAny, {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }, {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }>, "many">>;
+            }, "strip", z.ZodTypeAny, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            }, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            }>;
+        }, "strip", z.ZodTypeAny, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        }, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        }>, z.ZodObject<{
+            choice: z.ZodObject<{
+                type: z.ZodLiteral<"list">;
+                number: z.ZodNumber;
+                list: z.ZodArray<z.ZodObject<{
+                    id: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodString;
+                    availableAt: z.ZodOptional<z.ZodNumber>;
+                }, "strip", z.ZodTypeAny, {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }, {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }>, "many">;
+                isRepeatable: z.ZodOptional<z.ZodBoolean>;
+            }, "strip", z.ZodTypeAny, {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            }, {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            }>;
+        }, "strip", z.ZodTypeAny, {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }, {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }>]>;
+    }, "strict", z.ZodTypeAny, {
+        tag: string;
+        spells: ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }) & ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined);
+        availableAt?: string | undefined;
+        timesDay?: string | undefined;
+        timesDayMax?: string | undefined;
+    }, {
+        tag: string;
+        spells: ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }) & ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined);
+        availableAt?: string | undefined;
+        timesDay?: string | undefined;
+        timesDayMax?: string | undefined;
+    }>, "many">>;
+}, "strip", z.ZodTypeAny, {
+    hasSlots?: boolean | undefined;
+    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+    availableUnit?: "level" | "cr" | undefined;
+    groups?: {
+        tag: string;
+        spells: ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }) & ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined);
+        availableAt?: string | undefined;
+        timesDay?: string | undefined;
+        timesDayMax?: string | undefined;
+    }[] | undefined;
+}, {
+    hasSlots?: boolean | undefined;
+    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+    availableUnit?: "level" | "cr" | undefined;
+    groups?: {
+        tag: string;
+        spells: ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        }) & ({
+            value: string;
+            id?: number | undefined;
+            availableAt?: number | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    availableAt?: number | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined);
+        availableAt?: string | undefined;
+        timesDay?: string | undefined;
+        timesDayMax?: string | undefined;
+    }[] | undefined;
+}>;
+export declare const spellObject: z.ZodObject<{
+    name: z.ZodString;
+    level: z.ZodNumber;
+    range: z.ZodString;
+    ritual: z.ZodBoolean;
+    school: z.ZodString;
+    source: z.ZodString;
+    classes: z.ZodArray<z.ZodString, "many">;
+    duration: z.ZodString;
+    components: z.ZodString;
+    castingTime: z.ZodString;
+    description: z.ZodString;
+}, "strict", z.ZodTypeAny, {
+    name: string;
+    source: string;
+    range: string;
+    level: number;
+    description: string;
+    ritual: boolean;
+    school: string;
+    classes: string[];
+    duration: string;
+    components: string;
+    castingTime: string;
+}, {
+    name: string;
+    source: string;
+    range: string;
+    level: number;
+    description: string;
+    ritual: boolean;
+    school: string;
+    classes: string[];
+    duration: string;
+    components: string;
+    castingTime: string;
+}>;
+//# sourceMappingURL=spells.d.ts.map

@@ -392,7 +392,48 @@ export const backgroundObject = z
   })
   .strict();
 
-export const characterObject = z
+const CRCalculationObject = z
+  .union([CRTwoPointsObject, CRNPCObject, CRAutomaticObject])
+  .optional();
+const proficiencyCalculationObject = z.enum(['level', 'CR']).optional();
+
+export type CharacterObject = z.ZodObject<{
+  id: z.ZodOptional<z.ZodNumber>;
+  character: z.ZodObject<{
+    name: typeof namingStats.name;
+    prename: typeof namingStats.prename;
+    surname: typeof namingStats.surname;
+    generic: typeof namingStats.generic;
+    pronouns: typeof pronounsStats.pronouns;
+    race: z.ZodOptional<typeof raceObject>;
+    racevariant: z.ZodOptional<typeof racevariantObject>;
+    class: z.ZodOptional<typeof classObject>;
+    classvariant: z.ZodOptional<typeof classvariantObject>;
+    background: z.ZodOptional<typeof backgroundObject>;
+    template: z.ZodOptional<typeof templateObject>;
+    user: z.ZodOptional<typeof userObject>;
+    abilityScores: typeof abilityScoresStats.abilityScores;
+    alignmentModifiers: typeof alignmentModifiersStats.alignmentModifiers;
+    alignmentEthical: typeof alignmentStats.alignmentEthical;
+    alignmentMoral: typeof alignmentStats.alignmentMoral;
+    skills: typeof skillsStats.skills;
+    characterHook: typeof roleplayStats.characterHook;
+    trait: typeof roleplayStats.trait;
+    feeling: typeof roleplayStats.feeling;
+    age: typeof roleplayStats.age;
+    height: typeof roleplayStats.height;
+    weight: typeof roleplayStats.weight;
+    voice: typeof roleplayStats.voice;
+    CRCalculation: typeof CRCalculationObject;
+    proficiencyCalculation: typeof proficiencyCalculationObject;
+  }>;
+  statistics: z.ZodOptional<typeof statisticsObject>;
+  variables: z.ZodOptional<typeof variablesObject>;
+  tags: z.ZodOptional<typeof tagsObject>;
+  variations: z.ZodOptional<typeof variationsObject>
+}>;
+
+export const characterObject: CharacterObject = z
   .object({
     id: z.number().optional(),
     character: z
@@ -414,10 +455,8 @@ export const characterObject = z
         ...skillsStats,
         ...roleplayStats,
         // CR
-        CRCalculation: z
-          .union([CRTwoPointsObject, CRNPCObject, CRAutomaticObject])
-          .optional(),
-        proficiencyCalculation: z.enum(['level', 'CR']).optional(),
+        CRCalculation: CRCalculationObject,
+        proficiencyCalculation: proficiencyCalculationObject,
       })
       .strict(),
     statistics: statisticsObject.optional(),

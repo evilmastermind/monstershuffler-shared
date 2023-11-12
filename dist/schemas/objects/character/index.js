@@ -370,6 +370,10 @@ exports.backgroundObject = zod_1.z
     ...exports.generatorStats,
 })
     .strict();
+const CRCalculationObject = zod_1.z
+    .union([exports.CRTwoPointsObject, exports.CRNPCObject, exports.CRAutomaticObject])
+    .optional();
+const proficiencyCalculationObject = zod_1.z.enum(['level', 'CR']).optional();
 exports.characterObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
@@ -392,10 +396,8 @@ exports.characterObject = zod_1.z
         ...exports.skillsStats,
         ...exports.roleplayStats,
         // CR
-        CRCalculation: zod_1.z
-            .union([exports.CRTwoPointsObject, exports.CRNPCObject, exports.CRAutomaticObject])
-            .optional(),
-        proficiencyCalculation: zod_1.z.enum(['level', 'CR']).optional(),
+        CRCalculation: CRCalculationObject,
+        proficiencyCalculation: proficiencyCalculationObject,
     })
         .strict(),
     statistics: statistics_1.statisticsObject.optional(),
