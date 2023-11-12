@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.putCharacter = exports.postCharacter = exports.getCharacterResponse = exports.getCharacterListResponse = void 0;
 const zod_1 = require("zod");
-const character_1 = require("@/schemas/objects/character");
+const character_1 = require("../../schemas/objects/character");
 const object_1 = require("./object");
 exports.getCharacterListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
