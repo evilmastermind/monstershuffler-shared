@@ -18,5 +18,8 @@ __exportStar(require("./action"), exports);
 __exportStar(require("./armor"), exports);
 __exportStar(require("./background"), exports);
 __exportStar(require("./character"), exports);
+__exportStar(require("./characterhook"), exports);
+__exportStar(require("./class"), exports);
+__exportStar(require("./classvariant"), exports);
 __exportStar(require("./npc"), exports);
 __exportStar(require("./object"), exports);

@@ -2,6 +2,9 @@ export * from './action';
 export * from './armor';
 export * from './background';
 export * from './character';
+export * from './characterhook';
+export * from './class';
+export * from './classvariant';
 export * from './npc';
 export * from './object';
 //# sourceMappingURL=index.d.ts.map
