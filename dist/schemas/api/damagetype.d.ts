@@ -15,15 +15,15 @@ export declare const getDamageTypeResponse: z.ZodObject<{
     name: z.ZodString;
     description: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    id: number;
-    userid: number;
     name: string;
+    id: number;
     description: string;
+    userid: number;
 }, {
-    id: number;
-    userid: number;
     name: string;
+    id: number;
     description: string;
+    userid: number;
 }>;
 export declare const putDamageType: z.ZodObject<{
     name: z.ZodString;
@@ -42,29 +42,29 @@ export declare const getDamageTypeListResponse: z.ZodObject<{
         name: z.ZodString;
         description: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        id: number;
-        userid: number;
         name: string;
+        id: number;
         description: string;
+        userid: number;
     }, {
-        id: number;
-        userid: number;
         name: string;
+        id: number;
         description: string;
+        userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        id: number;
-        userid: number;
         name: string;
+        id: number;
         description: string;
+        userid: number;
     }[];
 }, {
     list: {
-        id: number;
-        userid: number;
         name: string;
+        id: number;
         description: string;
+        userid: number;
     }[];
 }>;
 //# sourceMappingURL=damagetype.d.ts.map

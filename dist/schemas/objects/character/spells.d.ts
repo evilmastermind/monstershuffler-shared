@@ -48,8 +48,8 @@ export declare const spellGroupObject: z.ZodObject<{
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -63,8 +63,8 @@ export declare const spellGroupObject: z.ZodObject<{
             }[] | undefined;
         }, {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -80,8 +80,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -97,8 +97,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }, {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -180,8 +180,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }[] | {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -212,8 +212,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }[] | {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -250,8 +250,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }[] | {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -282,8 +282,8 @@ export declare const spellGroupObject: z.ZodObject<{
     }[] | {
         choice: {
             type: "random";
-            source: "objects" | "languages" | "skills";
             resultType: "object" | "nameId";
+            source: "objects" | "languages" | "skills";
             number?: number | undefined;
             objectType?: number | undefined;
             filters?: {
@@ -365,8 +365,8 @@ export declare const spellsObject: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -380,8 +380,8 @@ export declare const spellsObject: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -397,8 +397,8 @@ export declare const spellsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -414,8 +414,8 @@ export declare const spellsObject: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -497,8 +497,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -529,8 +529,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -567,8 +567,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -599,8 +599,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -642,8 +642,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -674,8 +674,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -717,8 +717,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -749,8 +749,8 @@ export declare const spellsObject: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -794,27 +794,27 @@ export declare const spellObject: z.ZodObject<{
     description: z.ZodString;
 }, "strict", z.ZodTypeAny, {
     name: string;
+    range: string;
     source: string;
     level: number;
     description: string;
-    range: string;
-    classes: string[];
     ritual: boolean;
     school: string;
+    classes: string[];
     duration: string;
-    castingTime: string;
     components: string;
+    castingTime: string;
 }, {
     name: string;
+    range: string;
     source: string;
     level: number;
     description: string;
-    range: string;
-    classes: string[];
     ritual: boolean;
     school: string;
+    classes: string[];
     duration: string;
-    castingTime: string;
     components: string;
+    castingTime: string;
 }>;
 //# sourceMappingURL=spells.d.ts.map

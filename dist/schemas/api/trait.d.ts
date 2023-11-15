@@ -23,15 +23,15 @@ export declare const getRandomTraitResponse: z.ZodObject<{
     feeling: z.ZodNumber;
     description: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    type: string;
     name: string;
+    type: string;
     description: string;
     feeling: number;
     subtitle: number;
     category: string;
 }, {
-    type: string;
     name: string;
+    type: string;
     description: string;
     feeling: number;
     subtitle: number;

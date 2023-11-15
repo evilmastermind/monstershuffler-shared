@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.postBackground = exports.getBackgroundResponse = exports.getBackgroundListResponse = void 0;
 const zod_1 = require("zod");
-const schemas_1 = require("../../schemas");
+const objects_1 = require("../../schemas/objects/character/objects");
 const object_1 = require("./object");
 const age = zod_1.z.enum([
     'medieval',
@@ -14,7 +14,7 @@ const age = zod_1.z.enum([
     'other',
 ]);
 const description = zod_1.z.string();
-const object = schemas_1.backgroundObject;
+const object = objects_1.backgroundObject;
 exports.getBackgroundListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
         id: object_1.id,

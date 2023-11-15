@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { templateObject } from '@/schemas';
+import { templateObject } from '@/schemas/objects/character/objects';
 import { id, userid, name, game } from './object';
 
 export const getTemplateListResponse = z.object({
@@ -8,7 +8,7 @@ export const getTemplateListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });
 

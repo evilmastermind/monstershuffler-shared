@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { backgroundObject } from '@/schemas';
+import { backgroundObject } from '@/schemas/objects/character/objects';
 import { id, userid, game, name } from './object';
 
 const age = z.enum([
@@ -21,7 +21,7 @@ export const getBackgroundListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });
 

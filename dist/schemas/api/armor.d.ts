@@ -192,25 +192,25 @@ export declare const getArmorListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }>;
 //# sourceMappingURL=armor.d.ts.map

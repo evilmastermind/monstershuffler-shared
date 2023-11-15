@@ -25,12 +25,12 @@ export declare const variablesObject: z.ZodObject<{
     INT: number;
     WIS: number;
     CHA: number;
-    HD: number;
     CR: number;
     HP: number;
     LVL: number;
     PROF: number;
     SIZE: number;
+    HD: number;
     STRVALUE: number;
     DEXVALUE: number;
     CONVALUE: number;
@@ -44,12 +44,12 @@ export declare const variablesObject: z.ZodObject<{
     INT: number;
     WIS: number;
     CHA: number;
-    HD: number;
     CR: number;
     HP: number;
     LVL: number;
     PROF: number;
     SIZE: number;
+    HD: number;
     STRVALUE: number;
     DEXVALUE: number;
     CONVALUE: number;

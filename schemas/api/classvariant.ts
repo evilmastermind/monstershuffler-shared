@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { classvariantObject } from '@/schemas';
+import { classvariantObject } from '@/schemas/objects/character/objects';
 import { id, game, name, userid } from './object';
 
 export const getClassvariantListResponse = z.object({
@@ -12,7 +12,7 @@ export const getClassvariantListResponse = z.object({
         id,
         name,
       }),
-    })
+    }),
   ),
 });
 
@@ -22,7 +22,7 @@ export const getClassvariantClassListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });
 

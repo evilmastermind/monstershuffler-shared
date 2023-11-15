@@ -4,11 +4,11 @@ export declare const getFolderContentResponse: z.ZodObject<{
         id: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        id: number;
         name: string;
+        id: number;
     }, {
-        id: number;
         name: string;
+        id: number;
     }>, "many">;
     characters: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
@@ -22,9 +22,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
         negativeratings: z.ZodOptional<z.ZodNumber>;
         positiveratings: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         type: string;
         id: number;
-        name: string;
         cr: number;
         size: number;
         meta: string;
@@ -33,9 +33,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
+        name: string;
         type: string;
         id: number;
-        name: string;
         cr: number;
         size: number;
         meta: string;
@@ -52,15 +52,15 @@ export declare const getFolderContentResponse: z.ZodObject<{
         negativeratings: z.ZodOptional<z.ZodNumber>;
         positiveratings: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
@@ -74,15 +74,15 @@ export declare const getFolderContentResponse: z.ZodObject<{
         negativeratings: z.ZodOptional<z.ZodNumber>;
         positiveratings: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
@@ -96,29 +96,37 @@ export declare const getFolderContentResponse: z.ZodObject<{
         negativeratings: z.ZodOptional<z.ZodNumber>;
         positiveratings: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
-    folders: {
-        id: number;
+    classes: {
         name: string;
+        id: number;
+        adds?: number | undefined;
+        url?: string | undefined;
+        negativeratings?: number | undefined;
+        positiveratings?: number | undefined;
+    }[];
+    folders: {
+        name: string;
+        id: number;
     }[];
     characters: {
+        name: string;
         type: string;
         id: number;
-        name: string;
         cr: number;
         size: number;
         meta: string;
@@ -128,38 +136,38 @@ export declare const getFolderContentResponse: z.ZodObject<{
         positiveratings?: number | undefined;
     }[];
     races: {
-        id: number;
         name: string;
-        adds?: number | undefined;
-        url?: string | undefined;
-        negativeratings?: number | undefined;
-        positiveratings?: number | undefined;
-    }[];
-    classes: {
         id: number;
-        name: string;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     templates: {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
 }, {
-    folders: {
-        id: number;
+    classes: {
         name: string;
+        id: number;
+        adds?: number | undefined;
+        url?: string | undefined;
+        negativeratings?: number | undefined;
+        positiveratings?: number | undefined;
+    }[];
+    folders: {
+        name: string;
+        id: number;
     }[];
     characters: {
+        name: string;
         type: string;
         id: number;
-        name: string;
         cr: number;
         size: number;
         meta: string;
@@ -169,24 +177,16 @@ export declare const getFolderContentResponse: z.ZodObject<{
         positiveratings?: number | undefined;
     }[];
     races: {
-        id: number;
         name: string;
-        adds?: number | undefined;
-        url?: string | undefined;
-        negativeratings?: number | undefined;
-        positiveratings?: number | undefined;
-    }[];
-    classes: {
         id: number;
-        name: string;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     templates: {
-        id: number;
         name: string;
+        id: number;
         adds?: number | undefined;
         url?: string | undefined;
         negativeratings?: number | undefined;
@@ -204,10 +204,10 @@ export declare const postFolderResponse: z.ZodObject<{
     id: z.ZodNumber;
     name: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    id: number;
     name: string;
+    id: number;
 }, {
-    id: number;
     name: string;
+    id: number;
 }>;
 //# sourceMappingURL=folder.d.ts.map

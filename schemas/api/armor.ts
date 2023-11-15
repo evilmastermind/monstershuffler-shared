@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { armorObject } from '@/schemas';
+import { armorObject } from '@/schemas/objects/character/armor';
 import { id, userid, game, name } from './object';
 
 export const postArmor = z.object({
@@ -27,6 +27,6 @@ export const getArmorListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });

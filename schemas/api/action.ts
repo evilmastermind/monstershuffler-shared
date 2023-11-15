@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { actionObject } from '@/schemas';
+import { actionObject } from '@/schemas/objects/character/actions';
 import { id, userid, game, name } from './object';
 
 const type = z.string().min(2);
@@ -29,7 +29,7 @@ export const getActionListResponse = z.object({
       userid,
       actionsdetails,
       actionstags,
-    })
+    }),
   ),
 });
 

@@ -45,25 +45,25 @@ export declare const getSpellListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }>;
 export declare const getSpellResponse: z.ZodObject<{
@@ -83,58 +83,58 @@ export declare const getSpellResponse: z.ZodObject<{
         description: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     id: number;
     userid: number;
 }, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     id: number;
     userid: number;
@@ -156,58 +156,58 @@ export declare const postSpell: z.ZodObject<{
         description: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     name: string;
     game: number;
 }, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     name: string;
     game: number;
@@ -228,57 +228,57 @@ export declare const putSpell: z.ZodObject<{
         description: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }, {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     name: string;
 }, {
     object: {
         name: string;
+        range: string;
         source: string;
         level: number;
         description: string;
-        range: string;
-        classes: string[];
         ritual: boolean;
         school: string;
+        classes: string[];
         duration: string;
-        castingTime: string;
         components: string;
+        castingTime: string;
     };
     name: string;
 }>;

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { spellObject } from '@/schemas';
+import { spellObject } from '@/schemas/objects/character/spells';
 import { id, userid, name, game } from './object';
 
 const level = z.number();
@@ -34,7 +34,7 @@ export const getSpellListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });
 

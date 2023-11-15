@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.putClassvariant = exports.postClassvariant = exports.getClassvariantResponse = exports.getClassvariantClassListResponse = exports.getClassvariantListResponse = void 0;
 const zod_1 = require("zod");
-const schemas_1 = require("../../schemas");
+const objects_1 = require("../../schemas/objects/character/objects");
 const object_1 = require("./object");
 exports.getClassvariantListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
@@ -23,14 +23,14 @@ exports.getClassvariantClassListResponse = zod_1.z.object({
     })),
 });
 exports.getClassvariantResponse = zod_1.z.object({
-    object: schemas_1.classvariantObject,
+    object: objects_1.classvariantObject,
     id: object_1.id,
 });
 exports.postClassvariant = zod_1.z.object({
     game: object_1.game,
     classId: object_1.id,
-    object: schemas_1.classvariantObject,
+    object: objects_1.classvariantObject,
 });
 exports.putClassvariant = zod_1.z.object({
-    object: schemas_1.classvariantObject,
+    object: objects_1.classvariantObject,
 });

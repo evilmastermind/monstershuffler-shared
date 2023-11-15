@@ -1,9 +1,9 @@
 import { z } from 'zod';
-import { raceObject } from '@/schemas';
+import { raceObject } from '@/schemas/objects/character/objects';
 import { id, game, objectList, objectWithVariantsList } from './object';
 
 export const getRaceListResponse = z.object({
-  list: objectList
+  list: objectList,
 });
 
 export const getRaceWithVariantsListResponse = z.object({

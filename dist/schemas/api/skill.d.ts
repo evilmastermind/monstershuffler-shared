@@ -5,24 +5,24 @@ export declare const getSkillListResponse: z.ZodObject<{
         game: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        id: number;
         name: string;
+        id: number;
         game: number;
     }, {
-        id: number;
         name: string;
+        id: number;
         game: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        id: number;
         name: string;
+        id: number;
         game: number;
     }[];
 }, {
     list: {
-        id: number;
         name: string;
+        id: number;
         game: number;
     }[];
 }>;
@@ -31,12 +31,12 @@ export declare const getSkillResponse: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    id: number;
     name: string;
+    id: number;
     game: number;
 }, {
-    id: number;
     name: string;
+    id: number;
     game: number;
 }>;
 //# sourceMappingURL=skill.d.ts.map

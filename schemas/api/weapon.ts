@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { weaponObject } from '@/schemas';
+import { weaponObject } from '@/schemas/objects/character/weapons';
 import { id, userid, name, game } from './object';
 
 export const postWeapon = z.object({
@@ -25,6 +25,6 @@ export const getWeaponListResponse = z.object({
       id,
       userid,
       name,
-    })
+    }),
   ),
 });

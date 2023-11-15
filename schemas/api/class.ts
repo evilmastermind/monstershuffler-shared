@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import { classObject } from '@/schemas';
+import { classObject } from '@/schemas/objects/character/objects';
+
 import { id, game, objectList, objectWithVariantsList } from './object';
 
 export const getClassListResponse = z.object({

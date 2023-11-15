@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getGeneratorDataResponse = exports.postFourRandomNpcsResponse = exports.postRandomNpcResponse = exports.postRandomNpcInput = void 0;
 const zod_1 = require("zod");
-const schemas_1 = require("../../schemas");
+const objects_1 = require("../../schemas/objects/character/objects");
+const other_1 = require("../../schemas/objects/character/other");
 const object_1 = require("./object");
 exports.postRandomNpcInput = zod_1.z.object({
     levelType: zod_1.z.enum(['random', 'randomPeasantsMostly']).optional(),
@@ -21,13 +22,13 @@ exports.postRandomNpcInput = zod_1.z.object({
     secondaryRacePercentage: zod_1.z.number().min(0).max(100).optional(),
     addVoice: zod_1.z.boolean().optional(),
     includeChildren: zod_1.z.boolean().optional(),
-    pronounsChosen: schemas_1.pronounsObject.optional(),
+    pronounsChosen: other_1.pronounsObject.optional(),
 });
 exports.postRandomNpcResponse = zod_1.z.object({
-    npc: schemas_1.characterObject,
+    npc: objects_1.characterObject,
 });
 exports.postFourRandomNpcsResponse = zod_1.z.object({
-    npcs: zod_1.z.array(schemas_1.characterObject),
+    npcs: zod_1.z.array(objects_1.characterObject),
 });
 exports.getGeneratorDataResponse = zod_1.z.object({
     races: object_1.objectWithVariantsList,

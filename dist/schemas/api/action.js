@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.putAction = exports.postAction = exports.getActionResponse = exports.getActionListResponse = exports.getActionList = void 0;
 const zod_1 = require("zod");
-const schemas_1 = require("../../schemas");
+const actions_1 = require("../../schemas/objects/character/actions");
 const object_1 = require("./object");
 const type = zod_1.z.string().min(2);
 const subtype = zod_1.z.string().min(2).optional();
@@ -33,7 +33,7 @@ exports.getActionListResponse = zod_1.z.object({
 exports.getActionResponse = zod_1.z.object({
     id: object_1.id,
     userid: object_1.userid,
-    object: schemas_1.actionObject,
+    object: actions_1.actionObject,
     actionsdetails,
 });
 exports.postAction = zod_1.z.object({
@@ -43,7 +43,7 @@ exports.postAction = zod_1.z.object({
     subtype,
     source,
     tags: actionstags,
-    object: schemas_1.actionObject,
+    object: actions_1.actionObject,
 });
 exports.putAction = zod_1.z.object({
     name: object_1.name,
@@ -51,5 +51,5 @@ exports.putAction = zod_1.z.object({
     subtype,
     source,
     tags: actionstags,
-    object: schemas_1.actionObject,
+    object: actions_1.actionObject,
 });

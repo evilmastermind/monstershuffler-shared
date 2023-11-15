@@ -5,25 +5,25 @@ export declare const getClassListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
     }[];
 }>;
 export declare const getClassWithVariantsListResponse: z.ZodObject<{
@@ -36,53 +36,53 @@ export declare const getClassWithVariantsListResponse: z.ZodObject<{
             name: z.ZodString;
             userid: z.ZodNumber;
         }, "strip", z.ZodTypeAny, {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }, {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }>, "many">;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
         other_objects: {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }[];
     }, {
+        name: string;
         id: number;
         userid: number;
-        name: string;
         other_objects: {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }[];
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
         other_objects: {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }[];
     }[];
 }, {
     list: {
+        name: string;
         id: number;
         userid: number;
-        name: string;
         other_objects: {
+            name: string;
             id: number;
             userid: number;
-            name: string;
         }[];
     }[];
 }>;
@@ -155,8 +155,8 @@ export declare const getClassResponse: z.ZodObject<{
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -170,8 +170,8 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     }, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -187,8 +187,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -204,8 +204,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -287,8 +287,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -319,8 +319,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -357,8 +357,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -389,8 +389,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -432,8 +432,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -464,8 +464,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -507,8 +507,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -539,8 +539,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -1638,8 +1638,8 @@ export declare const getClassResponse: z.ZodObject<{
                             }>, "many">>;
                         }, "strip", z.ZodTypeAny, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -1653,8 +1653,8 @@ export declare const getClassResponse: z.ZodObject<{
                             }[] | undefined;
                         }, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -1670,8 +1670,8 @@ export declare const getClassResponse: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -1687,8 +1687,8 @@ export declare const getClassResponse: z.ZodObject<{
                     }, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -1758,6 +1758,23 @@ export declare const getClassResponse: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1772,24 +1789,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1804,23 +1821,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -1839,6 +1839,23 @@ export declare const getClassResponse: z.ZodObject<{
                 }, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1853,24 +1870,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1885,23 +1902,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -1931,6 +1931,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1945,24 +1962,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -1977,23 +1994,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -2023,6 +2023,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2037,24 +2054,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2069,23 +2086,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -2118,6 +2118,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2132,24 +2149,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2164,23 +2181,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -2220,6 +2220,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2234,24 +2251,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -2266,23 +2283,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -2339,8 +2339,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2354,8 +2354,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2371,8 +2371,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2388,8 +2388,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2449,8 +2449,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2464,8 +2464,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2481,8 +2481,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2498,8 +2498,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2685,8 +2685,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2700,8 +2700,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2717,8 +2717,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2734,8 +2734,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2918,8 +2918,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2933,8 +2933,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2950,8 +2950,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -2967,8 +2967,8 @@ export declare const getClassResponse: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3008,8 +3008,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -3040,8 +3040,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -3280,8 +3280,8 @@ export declare const getClassResponse: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3309,6 +3309,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -3323,24 +3340,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -3355,23 +3372,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -3406,8 +3406,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3466,8 +3466,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3513,8 +3513,8 @@ export declare const getClassResponse: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3563,8 +3563,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -3595,8 +3595,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -3835,8 +3835,8 @@ export declare const getClassResponse: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -3864,6 +3864,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -3878,24 +3895,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -3910,23 +3927,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -3961,8 +3961,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4021,8 +4021,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4068,8 +4068,8 @@ export declare const getClassResponse: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4121,8 +4121,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -4153,8 +4153,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -4393,8 +4393,8 @@ export declare const getClassResponse: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4422,6 +4422,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -4436,24 +4453,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -4468,23 +4485,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -4519,8 +4519,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4579,8 +4579,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4626,8 +4626,8 @@ export declare const getClassResponse: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4679,8 +4679,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -4711,8 +4711,8 @@ export declare const getClassResponse: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -4951,8 +4951,8 @@ export declare const getClassResponse: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -4980,6 +4980,23 @@ export declare const getClassResponse: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -4994,24 +5011,24 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -5026,23 +5043,6 @@ export declare const getClassResponse: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -5077,8 +5077,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -5137,8 +5137,8 @@ export declare const getClassResponse: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -5184,8 +5184,8 @@ export declare const getClassResponse: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -5284,8 +5284,8 @@ export declare const postClass: z.ZodObject<{
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5299,8 +5299,8 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     }, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5316,8 +5316,8 @@ export declare const postClass: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5333,8 +5333,8 @@ export declare const postClass: z.ZodObject<{
                 }, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5416,8 +5416,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5448,8 +5448,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5486,8 +5486,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5518,8 +5518,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5561,8 +5561,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5593,8 +5593,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5636,8 +5636,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -5668,8 +5668,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -6767,8 +6767,8 @@ export declare const postClass: z.ZodObject<{
                             }>, "many">>;
                         }, "strip", z.ZodTypeAny, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -6782,8 +6782,8 @@ export declare const postClass: z.ZodObject<{
                             }[] | undefined;
                         }, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -6799,8 +6799,8 @@ export declare const postClass: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -6816,8 +6816,8 @@ export declare const postClass: z.ZodObject<{
                     }, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -6887,6 +6887,23 @@ export declare const postClass: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -6901,24 +6918,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -6933,23 +6950,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -6968,6 +6968,23 @@ export declare const postClass: z.ZodObject<{
                 }, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -6982,24 +6999,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7014,23 +7031,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -7060,6 +7060,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7074,24 +7091,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7106,23 +7123,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -7152,6 +7152,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7166,24 +7183,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7198,23 +7215,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -7247,6 +7247,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7261,24 +7278,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7293,23 +7310,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -7349,6 +7349,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7363,24 +7380,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -7395,23 +7412,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -7468,8 +7468,8 @@ export declare const postClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7483,8 +7483,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7500,8 +7500,8 @@ export declare const postClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7517,8 +7517,8 @@ export declare const postClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7578,8 +7578,8 @@ export declare const postClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7593,8 +7593,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7610,8 +7610,8 @@ export declare const postClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7627,8 +7627,8 @@ export declare const postClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7814,8 +7814,8 @@ export declare const postClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7829,8 +7829,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7846,8 +7846,8 @@ export declare const postClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -7863,8 +7863,8 @@ export declare const postClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8047,8 +8047,8 @@ export declare const postClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8062,8 +8062,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8079,8 +8079,8 @@ export declare const postClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8096,8 +8096,8 @@ export declare const postClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8137,8 +8137,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -8169,8 +8169,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -8409,8 +8409,8 @@ export declare const postClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8438,6 +8438,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -8452,24 +8469,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -8484,23 +8501,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -8535,8 +8535,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8595,8 +8595,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8642,8 +8642,8 @@ export declare const postClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8692,8 +8692,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -8724,8 +8724,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -8964,8 +8964,8 @@ export declare const postClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -8993,6 +8993,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -9007,24 +9024,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -9039,23 +9056,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -9090,8 +9090,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9150,8 +9150,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9197,8 +9197,8 @@ export declare const postClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9249,8 +9249,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -9281,8 +9281,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -9521,8 +9521,8 @@ export declare const postClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9550,6 +9550,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -9564,24 +9581,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -9596,23 +9613,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -9647,8 +9647,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9707,8 +9707,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9754,8 +9754,8 @@ export declare const postClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -9807,8 +9807,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -9839,8 +9839,8 @@ export declare const postClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10079,8 +10079,8 @@ export declare const postClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -10108,6 +10108,23 @@ export declare const postClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -10122,24 +10139,24 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -10154,23 +10171,6 @@ export declare const postClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -10205,8 +10205,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -10265,8 +10265,8 @@ export declare const postClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -10312,8 +10312,8 @@ export declare const postClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -10411,8 +10411,8 @@ export declare const putClass: z.ZodObject<{
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10426,8 +10426,8 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     }, {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10443,8 +10443,8 @@ export declare const putClass: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10460,8 +10460,8 @@ export declare const putClass: z.ZodObject<{
                 }, {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10543,8 +10543,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10575,8 +10575,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10613,8 +10613,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10645,8 +10645,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10688,8 +10688,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10720,8 +10720,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10763,8 +10763,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -10795,8 +10795,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -11894,8 +11894,8 @@ export declare const putClass: z.ZodObject<{
                             }>, "many">>;
                         }, "strip", z.ZodTypeAny, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -11909,8 +11909,8 @@ export declare const putClass: z.ZodObject<{
                             }[] | undefined;
                         }, {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -11926,8 +11926,8 @@ export declare const putClass: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -11943,8 +11943,8 @@ export declare const putClass: z.ZodObject<{
                     }, {
                         choice: {
                             type: "random";
-                            source: "objects" | "languages" | "skills";
                             resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
                             number?: number | undefined;
                             objectType?: number | undefined;
                             filters?: {
@@ -12014,6 +12014,23 @@ export declare const putClass: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12028,24 +12045,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12060,23 +12077,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12095,6 +12095,23 @@ export declare const putClass: z.ZodObject<{
                 }, {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12109,24 +12126,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12141,23 +12158,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12187,6 +12187,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12201,24 +12218,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12233,23 +12250,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12279,6 +12279,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12293,24 +12310,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12325,23 +12342,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12374,6 +12374,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12388,24 +12405,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12420,23 +12437,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12476,6 +12476,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12490,24 +12507,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -12522,23 +12539,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -12595,8 +12595,8 @@ export declare const putClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12610,8 +12610,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12627,8 +12627,8 @@ export declare const putClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12644,8 +12644,8 @@ export declare const putClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12705,8 +12705,8 @@ export declare const putClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12720,8 +12720,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12737,8 +12737,8 @@ export declare const putClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12754,8 +12754,8 @@ export declare const putClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12941,8 +12941,8 @@ export declare const putClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12956,8 +12956,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12973,8 +12973,8 @@ export declare const putClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -12990,8 +12990,8 @@ export declare const putClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13174,8 +13174,8 @@ export declare const putClass: z.ZodObject<{
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13189,8 +13189,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | undefined;
             }, {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13206,8 +13206,8 @@ export declare const putClass: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13223,8 +13223,8 @@ export declare const putClass: z.ZodObject<{
         }, {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13264,8 +13264,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -13296,8 +13296,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -13536,8 +13536,8 @@ export declare const putClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13565,6 +13565,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -13579,24 +13596,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -13611,23 +13628,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -13662,8 +13662,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13722,8 +13722,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13769,8 +13769,8 @@ export declare const putClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -13819,8 +13819,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -13851,8 +13851,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -14091,8 +14091,8 @@ export declare const putClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14120,6 +14120,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -14134,24 +14151,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -14166,23 +14183,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -14217,8 +14217,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14277,8 +14277,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14324,8 +14324,8 @@ export declare const putClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14377,8 +14377,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -14409,8 +14409,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -14649,8 +14649,8 @@ export declare const putClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14678,6 +14678,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -14692,24 +14709,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -14724,23 +14741,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -14775,8 +14775,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14835,8 +14835,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14882,8 +14882,8 @@ export declare const putClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -14935,8 +14935,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -14967,8 +14967,8 @@ export declare const putClass: z.ZodObject<{
                 }[] | {
                     choice: {
                         type: "random";
-                        source: "objects" | "languages" | "skills";
                         resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
                         number?: number | undefined;
                         objectType?: number | undefined;
                         filters?: {
@@ -15207,8 +15207,8 @@ export declare const putClass: z.ZodObject<{
         actions?: ({
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -15236,6 +15236,23 @@ export declare const putClass: z.ZodObject<{
                 attacks?: {
                     name: string;
                     attributes: ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -15250,24 +15267,24 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     }) & ({
+                        choice: {
+                            type: "random";
+                            resultType: "object" | "nameId";
+                            source: "objects" | "languages" | "skills";
+                            number?: number | undefined;
+                            objectType?: number | undefined;
+                            filters?: {
+                                keyName: string;
+                                keyValues: string[];
+                            }[] | undefined;
+                            chosenAlready?: {
+                                value: string;
+                                id?: number | undefined;
+                                availableAt?: number | undefined;
+                            }[] | undefined;
+                        };
+                    } | {
                         properties: string[];
                         reach?: string | undefined;
                         targets?: string | undefined;
@@ -15282,23 +15299,6 @@ export declare const putClass: z.ZodObject<{
                         diceNumberV?: string | undefined;
                         range?: string | undefined;
                         rangeMax?: string | undefined;
-                    } | {
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
                     } | undefined);
                     replaceName?: boolean | undefined;
                     enchantment?: {
@@ -15333,8 +15333,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -15393,8 +15393,8 @@ export declare const putClass: z.ZodObject<{
         }[] | {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {
@@ -15440,8 +15440,8 @@ export declare const putClass: z.ZodObject<{
         armor?: {
             choice: {
                 type: "random";
-                source: "objects" | "languages" | "skills";
                 resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
                 number?: number | undefined;
                 objectType?: number | undefined;
                 filters?: {

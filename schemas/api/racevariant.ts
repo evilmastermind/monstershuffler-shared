@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { racevariantObject } from '@/schemas';
+import { racevariantObject } from '@/schemas/objects/character/objects';
 import { id, game, objectList } from './object';
 
 export const getRacevariantListResponse = z.object({
