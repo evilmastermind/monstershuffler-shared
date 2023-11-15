@@ -17,9 +17,28 @@ export const abilitiesObject = z.object({
   CHA: z.number(),
 });
 
-const descriptionPartObject = z.object({
+export const descriptionPartObject = z.object({
   string: z.string(),
-  type: z.enum(['background' , 'spell' , 'trait' , 'race' , 'class' , 'template' , 'type' , 'subtype' , 'language' , 'skill'  , 'savingThrow' , 'condition' , 'resistance' , 'immunity' , 'vulnerability' , 'conditionImmunity']).optional(),
+  type: z
+    .enum([
+      'background',
+      'spell',
+      'trait',
+      'race',
+      'class',
+      'template',
+      'type',
+      'subtype',
+      'language',
+      'skill',
+      'savingThrow',
+      'condition',
+      'resistance',
+      'immunity',
+      'vulnerability',
+      'conditionImmunity',
+    ])
+    .optional(),
   id: z.number().optional(),
 });
 

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.descriptionPartObject = exports.abilitiesObject = void 0;
 const zod_1 = require("zod");
 const other_1 = require("./other");
 const statNumberString = zod_1.z.object({
@@ -17,9 +17,28 @@ exports.abilitiesObject = zod_1.z.object({
     WIS: zod_1.z.number(),
     CHA: zod_1.z.number(),
 });
-const descriptionPartObject = zod_1.z.object({
+exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
-    type: zod_1.z.enum(['background', 'spell', 'trait', 'race', 'class', 'template', 'type', 'subtype', 'language', 'skill', 'savingThrow', 'condition', 'resistance', 'immunity', 'vulnerability', 'conditionImmunity']).optional(),
+    type: zod_1.z
+        .enum([
+        'background',
+        'spell',
+        'trait',
+        'race',
+        'class',
+        'template',
+        'type',
+        'subtype',
+        'language',
+        'skill',
+        'savingThrow',
+        'condition',
+        'resistance',
+        'immunity',
+        'vulnerability',
+        'conditionImmunity',
+    ])
+        .optional(),
     id: zod_1.z.number().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
@@ -29,7 +48,7 @@ exports.statisticsObject = zod_1.z.object({
     name: zod_1.z.string(),
     surname: zod_1.z.string(),
     fullName: zod_1.z.string(),
-    characterHook: zod_1.z.array(descriptionPartObject).optional(),
+    characterHook: zod_1.z.array(exports.descriptionPartObject).optional(),
     level: zod_1.z.number(),
     CR: statNumberString,
     XP: zod_1.z.string(),

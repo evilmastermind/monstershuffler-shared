@@ -21,6 +21,19 @@ export declare const abilitiesObject: z.ZodObject<{
     WIS: number;
     CHA: number;
 }>;
+export declare const descriptionPartObject: z.ZodObject<{
+    string: z.ZodString;
+    type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+    id: z.ZodOptional<z.ZodNumber>;
+}, "strip", z.ZodTypeAny, {
+    string: string;
+    type?: "type" | "subtype" | "trait" | "race" | "class" | "background" | "template" | "spell" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+    id?: number | undefined;
+}, {
+    string: string;
+    type?: "type" | "subtype" | "trait" | "race" | "class" | "background" | "template" | "spell" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+    id?: number | undefined;
+}>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodObject<{
         number: z.ZodNumber;
