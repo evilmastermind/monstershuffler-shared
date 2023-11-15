@@ -1,9 +1,6 @@
 import { z } from 'zod';
 import { weaponObject } from './weapons';
-import {
-  choiceRandomObject,
-  choiceListObject,
-} from './choices';
+import { choiceRandomObject } from './choices';
 import { abilitiesEnum } from './abilities';
 
 export const actionTypesEnum = z.enum([
@@ -24,7 +21,7 @@ export const diceObject = z.object({
   diceIncrement: z.number().optional(),
   availableAt: z.number().optional(),
   availableUntil: z.number().optional(),
-  availableUnit: z.enum(['level','cr']).optional(),
+  availableUnit: z.enum(['level', 'cr']).optional(),
   unitInterval: z.number().optional(),
 });
 
@@ -66,7 +63,7 @@ export const valueIncrProgressionObject = z.object({
     unitInterval: z.string(),
     unitIncrement: z.string(),
     availableAt: z.string(),
-    availableUnit: z.enum(['level','cr']).optional(),
+    availableUnit: z.enum(['level', 'cr']).optional(),
     valueBase: z.string(),
     valueIncrement: z.string(),
   }),
@@ -82,27 +79,19 @@ export const actionVariantObject = z.object({
   recharge: z.string().optional(),
   cost: z.string().optional(),
   values: z
-    .array(
-      z.union([
-        z.any(),
-        z.any(),
-        valueIncrProgressionObject,
-      ])
-    )
+    .array(z.union([z.any(), z.any(), valueIncrProgressionObject]))
     .optional(),
   attacks: z.array(attackObject).optional(),
-}); 
+});
 export const chosenActionObject = z.object({
   tag: z.string(),
   actionType: actionTypesEnum.optional(),
   priority: z.number().optional(),
-  availableUnit: z.enum(['level','cr']).optional(),
+  availableUnit: z.enum(['level', 'cr']).optional(),
   availableUntil: z.number().optional(),
   subType: z.string().optional(),
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
-  variants: z.array(
-    z.union([actionVariantObject, choiceRandomObject, choiceListObject])
-  ),
+  variants: z.array(actionVariantObject),
 });
 export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
