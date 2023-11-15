@@ -76,11 +76,7 @@ exports.actionVariantObject = zod_1.z.object({
     recharge: zod_1.z.string().optional(),
     cost: zod_1.z.string().optional(),
     values: zod_1.z
-        .array(zod_1.z.union([
-        zod_1.z.any(),
-        zod_1.z.any(),
-        exports.valueIncrProgressionObject,
-    ]))
+        .array(zod_1.z.union([zod_1.z.any(), zod_1.z.any(), exports.valueIncrProgressionObject]))
         .optional(),
     attacks: zod_1.z.array(exports.attackObject).optional(),
 });
@@ -93,6 +89,6 @@ exports.chosenActionObject = zod_1.z.object({
     subType: zod_1.z.string().optional(),
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
-    variants: zod_1.z.array(zod_1.z.union([exports.actionVariantObject, choices_1.choiceRandomObject, choices_1.choiceListObject])),
+    variants: zod_1.z.array(exports.actionVariantObject),
 });
 exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);

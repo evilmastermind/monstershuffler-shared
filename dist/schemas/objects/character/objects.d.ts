@@ -1458,7 +1458,7 @@ export declare const userObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -2059,181 +2059,10 @@ export declare const userObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -2325,18 +2154,7 @@ export declare const userObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -2346,24 +2164,7 @@ export declare const userObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -2455,18 +2256,7 @@ export declare const userObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -3581,24 +3371,7 @@ export declare const userObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -3690,18 +3463,7 @@ export declare const userObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -4205,24 +3967,7 @@ export declare const userObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -4314,18 +4059,7 @@ export declare const userObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -5919,7 +5653,7 @@ export declare const raceObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -6520,181 +6254,10 @@ export declare const raceObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -6786,18 +6349,7 @@ export declare const raceObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -6807,24 +6359,7 @@ export declare const raceObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -6916,18 +6451,7 @@ export declare const raceObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -7938,24 +7462,7 @@ export declare const raceObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -8047,18 +7554,7 @@ export declare const raceObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -8535,24 +8031,7 @@ export declare const raceObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -8644,18 +8123,7 @@ export declare const raceObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -10237,7 +9705,7 @@ export declare const racevariantObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -10838,181 +10306,10 @@ export declare const racevariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -11104,18 +10401,7 @@ export declare const racevariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -11125,24 +10411,7 @@ export declare const racevariantObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -11234,18 +10503,7 @@ export declare const racevariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -12245,24 +11503,7 @@ export declare const racevariantObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -12354,18 +11595,7 @@ export declare const racevariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -12831,24 +12061,7 @@ export declare const racevariantObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -12940,18 +12153,7 @@ export declare const racevariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -14520,7 +13722,7 @@ export declare const classObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -15121,181 +14323,10 @@ export declare const classObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -15387,18 +14418,7 @@ export declare const classObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -15408,24 +14428,7 @@ export declare const classObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -15517,18 +14520,7 @@ export declare const classObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -16525,24 +15517,7 @@ export declare const classObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -16634,18 +15609,7 @@ export declare const classObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -17108,24 +16072,7 @@ export declare const classObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -17217,18 +16164,7 @@ export declare const classObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -18796,7 +17732,7 @@ export declare const classvariantObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -19397,181 +18333,10 @@ export declare const classvariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19663,18 +18428,7 @@ export declare const classvariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -19684,24 +18438,7 @@ export declare const classvariantObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19793,18 +18530,7 @@ export declare const classvariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -20801,24 +19527,7 @@ export declare const classvariantObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -20910,18 +19619,7 @@ export declare const classvariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -21384,24 +20082,7 @@ export declare const classvariantObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -21493,18 +20174,7 @@ export declare const classvariantObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -23070,7 +21740,7 @@ export declare const templateObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -23671,181 +22341,10 @@ export declare const templateObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -23937,18 +22436,7 @@ export declare const templateObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -23958,24 +22446,7 @@ export declare const templateObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -24067,18 +22538,7 @@ export declare const templateObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -25194,24 +23654,7 @@ export declare const templateObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -25303,18 +23746,7 @@ export declare const templateObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -25810,24 +24242,7 @@ export declare const templateObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -25919,18 +24334,7 @@ export declare const templateObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -27517,7 +25921,7 @@ export declare const backgroundObject: z.ZodObject<{
         subType: z.ZodOptional<z.ZodString>;
         source: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-        variants: z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        variants: z.ZodArray<z.ZodObject<{
             name: z.ZodString;
             description: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -28118,181 +26522,10 @@ export declare const backgroundObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
-                resultType: z.ZodEnum<["object", "nameId"]>;
-                source: z.ZodEnum<["objects", "languages", "skills"]>;
-                objectType: z.ZodOptional<z.ZodNumber>;
-                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    keyName: z.ZodString;
-                    keyValues: z.ZodArray<z.ZodString, "many">;
-                }, "strip", z.ZodTypeAny, {
-                    keyName: string;
-                    keyValues: string[];
-                }, {
-                    keyName: string;
-                    keyValues: string[];
-                }>, "many">>;
-                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">>;
-            }, "strip", z.ZodTypeAny, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }, {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }, {
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        }>, z.ZodObject<{
-            choice: z.ZodObject<{
-                type: z.ZodLiteral<"list">;
-                number: z.ZodNumber;
-                list: z.ZodArray<z.ZodObject<{
-                    id: z.ZodOptional<z.ZodNumber>;
-                    value: z.ZodString;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }, {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }>, "many">;
-                isRepeatable: z.ZodOptional<z.ZodBoolean>;
-            }, "strip", z.ZodTypeAny, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }, {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            }>;
-        }, "strip", z.ZodTypeAny, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }, {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        }>]>, "many">;
+        }>, "many">;
     }, "strip", z.ZodTypeAny, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -28384,18 +26617,7 @@ export declare const backgroundObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -28405,24 +26627,7 @@ export declare const backgroundObject: z.ZodObject<{
         tags?: string[] | undefined;
     }, {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -28514,18 +26719,7 @@ export declare const backgroundObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -29522,24 +27716,7 @@ export declare const backgroundObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -29631,18 +27808,7 @@ export declare const backgroundObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -30102,24 +28268,7 @@ export declare const backgroundObject: z.ZodObject<{
         };
     } | {
         tag: string;
-        variants: ({
-            choice: {
-                type: "random";
-                source: "objects" | "languages" | "skills";
-                resultType: "object" | "nameId";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[] | undefined;
-            };
-        } | {
+        variants: {
             name: string;
             description: string;
             type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -30211,18 +28360,7 @@ export declare const backgroundObject: z.ZodObject<{
                     expression?: string | undefined;
                 } | undefined;
             }[] | undefined;
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    availableAt?: number | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        })[];
+        }[];
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         priority?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;

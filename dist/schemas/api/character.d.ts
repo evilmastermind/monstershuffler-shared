@@ -348,24 +348,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -457,18 +440,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -947,24 +919,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -1056,18 +1011,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -1533,24 +1477,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -1642,18 +1569,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -2118,24 +2034,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -2227,18 +2126,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -2697,24 +2585,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -2806,18 +2677,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -3282,24 +3142,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -3391,18 +3234,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -3913,24 +3745,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -4022,18 +3837,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -4756,24 +4560,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -4865,18 +4652,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -5355,24 +5131,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -5464,18 +5223,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -5941,24 +5689,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -6050,18 +5781,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -6526,24 +6246,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -6635,18 +6338,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -7105,24 +6797,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -7214,18 +6889,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -7690,24 +7354,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -7799,18 +7446,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -8321,24 +7957,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -8430,18 +8049,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -9169,24 +8777,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -9278,18 +8869,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -9768,24 +9348,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -9877,18 +9440,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -10354,24 +9906,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -10463,18 +9998,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -10939,24 +10463,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -11048,18 +10555,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -11518,24 +11014,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -11627,18 +11106,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -12103,24 +11571,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -12212,18 +11663,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -12734,24 +12174,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -12843,18 +12266,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -13578,24 +12990,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -13687,18 +13082,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -14177,24 +13561,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -14286,18 +13653,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -14763,24 +14119,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -14872,18 +14211,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -15348,24 +14676,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -15457,18 +14768,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -15927,24 +15227,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -16036,18 +15319,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -16512,24 +15784,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -16621,18 +15876,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -17143,24 +16387,7 @@ export declare const postCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -17252,18 +16479,7 @@ export declare const postCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -17992,24 +17208,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -18101,18 +17300,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -18591,24 +17779,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -18700,18 +17871,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -19177,24 +18337,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19286,18 +18429,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -19762,24 +18894,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19871,18 +18986,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -20341,24 +19445,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -20450,18 +19537,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -20926,24 +20002,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -21035,18 +20094,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -21557,24 +20605,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -21666,18 +20697,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -22401,24 +21421,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -22510,18 +21513,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -23000,24 +21992,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -23109,18 +22084,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -23586,24 +22550,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -23695,18 +22642,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -24171,24 +23107,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -24280,18 +23199,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -24750,24 +23658,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -24859,18 +23750,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -25335,24 +24215,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -25444,18 +24307,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -25966,24 +24818,7 @@ export declare const putCharacter: z.ZodObject<{
                     };
                 } | {
                     tag: string;
-                    variants: ({
-                        choice: {
-                            type: "random";
-                            source: "objects" | "languages" | "skills";
-                            resultType: "object" | "nameId";
-                            number?: number | undefined;
-                            objectType?: number | undefined;
-                            filters?: {
-                                keyName: string;
-                                keyValues: string[];
-                            }[] | undefined;
-                            chosenAlready?: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[] | undefined;
-                        };
-                    } | {
+                    variants: {
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -26075,18 +24910,7 @@ export declare const putCharacter: z.ZodObject<{
                                 expression?: string | undefined;
                             } | undefined;
                         }[] | undefined;
-                    } | {
-                        choice: {
-                            number: number;
-                            type: "list";
-                            list: {
-                                value: string;
-                                id?: number | undefined;
-                                availableAt?: number | undefined;
-                            }[];
-                            isRepeatable?: boolean | undefined;
-                        };
-                    })[];
+                    }[];
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
