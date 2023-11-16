@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { statType } from './choices';
 import { pronounsObject } from './other';
 
 export const statNumberString = z.object({
@@ -19,26 +20,7 @@ export const abilitiesObject = z.object({
 
 export const descriptionPartObject = z.object({
   string: z.string(),
-  type: z
-    .enum([
-      'background',
-      'spell',
-      'trait',
-      'race',
-      'class',
-      'template',
-      'type',
-      'subtype',
-      'language',
-      'skill',
-      'savingThrow',
-      'condition',
-      'resistance',
-      'immunity',
-      'vulnerability',
-      'conditionImmunity',
-    ])
-    .optional(),
+  type: statType.optional(),
   id: z.number().optional(),
 });
 

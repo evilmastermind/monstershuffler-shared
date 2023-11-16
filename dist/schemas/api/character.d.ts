@@ -56,6 +56,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -71,6 +72,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -81,6 +83,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -88,6 +91,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -103,6 +107,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -113,6 +118,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -343,6 +349,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -374,6 +381,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -406,6 +414,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -454,6 +463,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -469,6 +479,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -479,6 +490,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -494,26 +506,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -529,6 +546,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -539,6 +557,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -547,6 +566,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -573,6 +593,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -593,6 +614,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -627,6 +649,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -642,6 +665,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -652,6 +676,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -659,6 +684,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -674,6 +700,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -684,6 +711,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -914,6 +942,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -945,6 +974,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -977,6 +1007,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -1025,6 +1056,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -1040,6 +1072,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1050,6 +1083,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -1065,26 +1099,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -1100,6 +1139,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1110,6 +1150,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -1118,6 +1159,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -1132,6 +1174,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -1148,6 +1191,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1185,6 +1229,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -1200,6 +1245,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -1210,6 +1256,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -1217,6 +1264,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -1232,6 +1280,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -1242,6 +1291,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -1472,6 +1522,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1503,6 +1554,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -1535,6 +1587,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -1583,6 +1636,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -1598,6 +1652,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1608,6 +1663,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -1623,26 +1679,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -1658,6 +1719,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1668,6 +1730,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -1676,6 +1739,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -1689,6 +1753,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -1705,6 +1770,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -1742,6 +1808,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -1757,6 +1824,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -1767,6 +1835,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -1774,6 +1843,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -1789,6 +1859,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -1799,6 +1870,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -2029,6 +2101,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2060,6 +2133,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -2092,6 +2166,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -2140,6 +2215,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -2155,6 +2231,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2165,6 +2242,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -2180,26 +2258,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -2215,6 +2298,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2225,6 +2309,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -2233,6 +2318,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -2246,6 +2332,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -2262,6 +2349,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2293,6 +2381,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -2308,6 +2397,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -2318,6 +2408,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -2325,6 +2416,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -2340,6 +2432,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -2350,6 +2443,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -2580,6 +2674,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2611,6 +2706,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -2643,6 +2739,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -2691,6 +2788,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -2706,6 +2804,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2716,6 +2815,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -2731,26 +2831,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -2766,6 +2871,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2776,6 +2882,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -2784,6 +2891,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -2798,6 +2906,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -2815,6 +2924,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -2850,6 +2960,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -2865,6 +2976,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -2875,6 +2987,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -2882,6 +2995,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -2897,6 +3011,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -2907,6 +3022,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -3137,6 +3253,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3168,6 +3285,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -3200,6 +3318,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -3248,6 +3367,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -3263,6 +3383,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3273,6 +3394,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -3288,26 +3410,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -3323,6 +3450,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3333,6 +3461,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -3341,6 +3470,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -3393,6 +3523,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3413,6 +3544,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -3453,6 +3585,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -3468,6 +3601,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -3478,6 +3612,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -3485,6 +3620,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -3500,6 +3636,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -3510,6 +3647,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -3740,6 +3878,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3771,6 +3910,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -3803,6 +3943,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -3851,6 +3992,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -3866,6 +4008,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3876,6 +4019,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -3891,26 +4035,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -3926,6 +4075,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -3936,6 +4086,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -3991,6 +4142,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -4008,6 +4160,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -4049,6 +4202,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -4064,6 +4218,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -4074,6 +4229,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -4167,7 +4323,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -4178,7 +4334,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -4267,6 +4423,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -4282,6 +4439,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -4292,6 +4450,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -4299,6 +4458,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -4314,6 +4474,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -4324,6 +4485,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -4554,6 +4716,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -4585,6 +4748,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -4617,6 +4781,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -4665,6 +4830,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -4680,6 +4846,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -4690,6 +4857,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -4705,26 +4873,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -4740,6 +4913,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -4750,6 +4924,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -4758,6 +4933,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -4784,6 +4960,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -4804,6 +4981,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -4838,6 +5016,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -4853,6 +5032,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -4863,6 +5043,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -4870,6 +5051,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -4885,6 +5067,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -4895,6 +5078,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -5125,6 +5309,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5156,6 +5341,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -5188,6 +5374,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -5236,6 +5423,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -5251,6 +5439,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5261,6 +5450,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -5276,26 +5466,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -5311,6 +5506,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5321,6 +5517,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -5329,6 +5526,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -5343,6 +5541,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -5359,6 +5558,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5396,6 +5596,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -5411,6 +5612,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -5421,6 +5623,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -5428,6 +5631,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -5443,6 +5647,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -5453,6 +5658,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -5683,6 +5889,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5714,6 +5921,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -5746,6 +5954,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -5794,6 +6003,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -5809,6 +6019,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5819,6 +6030,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -5834,26 +6046,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -5869,6 +6086,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5879,6 +6097,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -5887,6 +6106,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -5900,6 +6120,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -5916,6 +6137,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -5953,6 +6175,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -5968,6 +6191,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -5978,6 +6202,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -5985,6 +6210,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -6000,6 +6226,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -6010,6 +6237,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -6240,6 +6468,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6271,6 +6500,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -6303,6 +6533,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -6351,6 +6582,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -6366,6 +6598,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6376,6 +6609,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -6391,26 +6625,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -6426,6 +6665,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6436,6 +6676,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -6444,6 +6685,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -6457,6 +6699,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -6473,6 +6716,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6504,6 +6748,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -6519,6 +6764,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -6529,6 +6775,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -6536,6 +6783,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -6551,6 +6799,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -6561,6 +6810,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -6791,6 +7041,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6822,6 +7073,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -6854,6 +7106,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -6902,6 +7155,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -6917,6 +7171,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6927,6 +7182,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -6942,26 +7198,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -6977,6 +7238,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -6987,6 +7249,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -6995,6 +7258,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -7009,6 +7273,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -7026,6 +7291,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7061,6 +7327,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -7076,6 +7343,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -7086,6 +7354,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -7093,6 +7362,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -7108,6 +7378,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -7118,6 +7389,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -7348,6 +7620,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7379,6 +7652,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -7411,6 +7685,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -7459,6 +7734,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -7474,6 +7750,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7484,6 +7761,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -7499,26 +7777,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -7534,6 +7817,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7544,6 +7828,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -7552,6 +7837,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -7604,6 +7890,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7624,6 +7911,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -7664,6 +7952,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -7679,6 +7968,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -7689,6 +7979,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -7696,6 +7987,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -7711,6 +8003,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -7721,6 +8014,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -7951,6 +8245,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -7982,6 +8277,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -8014,6 +8310,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -8062,6 +8359,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -8077,6 +8375,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8087,6 +8386,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -8102,26 +8402,31 @@ export declare const getCharacterResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -8137,6 +8442,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8147,6 +8453,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -8202,6 +8509,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8219,6 +8527,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -8260,6 +8569,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -8275,6 +8585,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -8285,6 +8596,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -8378,7 +8690,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -8389,7 +8701,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -8483,6 +8795,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -8498,6 +8811,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -8508,6 +8822,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -8515,6 +8830,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -8530,6 +8846,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -8540,6 +8857,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -8770,6 +9088,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8801,6 +9120,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -8833,6 +9153,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -8881,6 +9202,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -8896,6 +9218,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8906,6 +9229,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -8921,26 +9245,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -8956,6 +9285,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -8966,6 +9296,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -8974,6 +9305,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -9000,6 +9332,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9020,6 +9353,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -9054,6 +9388,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -9069,6 +9404,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -9079,6 +9415,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -9086,6 +9423,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -9101,6 +9439,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -9111,6 +9450,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -9341,6 +9681,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9372,6 +9713,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -9404,6 +9746,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -9452,6 +9795,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -9467,6 +9811,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9477,6 +9822,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -9492,26 +9838,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -9527,6 +9878,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9537,6 +9889,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -9545,6 +9898,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -9559,6 +9913,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -9575,6 +9930,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9612,6 +9968,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -9627,6 +9984,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -9637,6 +9995,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -9644,6 +10003,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -9659,6 +10019,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -9669,6 +10030,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -9899,6 +10261,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -9930,6 +10293,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -9962,6 +10326,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -10010,6 +10375,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -10025,6 +10391,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10035,6 +10402,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -10050,26 +10418,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -10085,6 +10458,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10095,6 +10469,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -10103,6 +10478,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -10116,6 +10492,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -10132,6 +10509,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10169,6 +10547,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -10184,6 +10563,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -10194,6 +10574,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -10201,6 +10582,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -10216,6 +10598,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -10226,6 +10609,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -10456,6 +10840,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10487,6 +10872,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -10519,6 +10905,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -10567,6 +10954,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -10582,6 +10970,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10592,6 +10981,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -10607,26 +10997,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -10642,6 +11037,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10652,6 +11048,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -10660,6 +11057,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -10673,6 +11071,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -10689,6 +11088,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -10720,6 +11120,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -10735,6 +11136,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -10745,6 +11147,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -10752,6 +11155,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -10767,6 +11171,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -10777,6 +11182,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -11007,6 +11413,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11038,6 +11445,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -11070,6 +11478,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -11118,6 +11527,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -11133,6 +11543,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11143,6 +11554,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -11158,26 +11570,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -11193,6 +11610,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11203,6 +11621,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -11211,6 +11630,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -11225,6 +11645,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -11242,6 +11663,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11277,6 +11699,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -11292,6 +11715,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -11302,6 +11726,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -11309,6 +11734,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -11324,6 +11750,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -11334,6 +11761,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -11564,6 +11992,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11595,6 +12024,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -11627,6 +12057,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -11675,6 +12106,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -11690,6 +12122,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11700,6 +12133,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -11715,26 +12149,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -11750,6 +12189,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11760,6 +12200,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -11768,6 +12209,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -11820,6 +12262,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -11840,6 +12283,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -11880,6 +12324,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -11895,6 +12340,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -11905,6 +12351,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -11912,6 +12359,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -11927,6 +12375,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -11937,6 +12386,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -12167,6 +12617,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -12198,6 +12649,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -12230,6 +12682,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -12278,6 +12731,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -12293,6 +12747,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -12303,6 +12758,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -12318,26 +12774,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -12353,6 +12814,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -12363,6 +12825,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -12418,6 +12881,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -12435,6 +12899,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -12476,6 +12941,7 @@ export declare const postCharacter: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -12491,6 +12957,7 @@ export declare const postCharacter: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -12501,6 +12968,7 @@ export declare const postCharacter: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -12594,7 +13062,7 @@ export declare const postCharacter: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -12605,7 +13073,7 @@ export declare const postCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -12695,6 +13163,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -12710,6 +13179,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -12720,6 +13190,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -12727,6 +13198,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -12742,6 +13214,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -12752,6 +13225,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -12982,6 +13456,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13013,6 +13488,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -13045,6 +13521,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -13093,6 +13570,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -13108,6 +13586,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13118,6 +13597,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -13133,26 +13613,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -13168,6 +13653,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13178,6 +13664,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -13186,6 +13673,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -13212,6 +13700,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13232,6 +13721,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -13266,6 +13756,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -13281,6 +13772,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -13291,6 +13783,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -13298,6 +13791,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -13313,6 +13807,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -13323,6 +13818,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -13553,6 +14049,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13584,6 +14081,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -13616,6 +14114,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -13664,6 +14163,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -13679,6 +14179,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13689,6 +14190,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -13704,26 +14206,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -13739,6 +14246,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13749,6 +14257,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -13757,6 +14266,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -13771,6 +14281,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -13787,6 +14298,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -13824,6 +14336,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -13839,6 +14352,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -13849,6 +14363,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -13856,6 +14371,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -13871,6 +14387,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -13881,6 +14398,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -14111,6 +14629,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14142,6 +14661,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -14174,6 +14694,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -14222,6 +14743,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -14237,6 +14759,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14247,6 +14770,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -14262,26 +14786,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -14297,6 +14826,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14307,6 +14837,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -14315,6 +14846,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -14328,6 +14860,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -14344,6 +14877,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14381,6 +14915,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -14396,6 +14931,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -14406,6 +14942,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -14413,6 +14950,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -14428,6 +14966,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -14438,6 +14977,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -14668,6 +15208,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14699,6 +15240,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -14731,6 +15273,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -14779,6 +15322,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -14794,6 +15338,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14804,6 +15349,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -14819,26 +15365,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -14854,6 +15405,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14864,6 +15416,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -14872,6 +15425,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -14885,6 +15439,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -14901,6 +15456,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -14932,6 +15488,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -14947,6 +15504,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -14957,6 +15515,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -14964,6 +15523,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -14979,6 +15539,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -14989,6 +15550,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -15219,6 +15781,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15250,6 +15813,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -15282,6 +15846,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -15330,6 +15895,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -15345,6 +15911,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15355,6 +15922,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -15370,26 +15938,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -15405,6 +15978,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15415,6 +15989,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -15423,6 +15998,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -15437,6 +16013,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -15454,6 +16031,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15489,6 +16067,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -15504,6 +16083,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -15514,6 +16094,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -15521,6 +16102,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -15536,6 +16118,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -15546,6 +16129,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -15776,6 +16360,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15807,6 +16392,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -15839,6 +16425,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -15887,6 +16474,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -15902,6 +16490,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15912,6 +16501,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -15927,26 +16517,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -15962,6 +16557,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -15972,6 +16568,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -15980,6 +16577,7 @@ export declare const postCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -16032,6 +16630,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -16052,6 +16651,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -16092,6 +16692,7 @@ export declare const postCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -16107,6 +16708,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -16117,6 +16719,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -16124,6 +16727,7 @@ export declare const postCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -16139,6 +16743,7 @@ export declare const postCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -16149,6 +16754,7 @@ export declare const postCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -16379,6 +16985,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -16410,6 +17017,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -16442,6 +17050,7 @@ export declare const postCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -16490,6 +17099,7 @@ export declare const postCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -16505,6 +17115,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -16515,6 +17126,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -16530,26 +17142,31 @@ export declare const postCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -16565,6 +17182,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -16575,6 +17193,7 @@ export declare const postCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -16630,6 +17249,7 @@ export declare const postCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -16647,6 +17267,7 @@ export declare const postCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -16688,6 +17309,7 @@ export declare const postCharacter: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -16703,6 +17325,7 @@ export declare const postCharacter: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -16713,6 +17336,7 @@ export declare const postCharacter: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -16806,7 +17430,7 @@ export declare const postCharacter: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -16817,7 +17441,7 @@ export declare const postCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -16912,6 +17536,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -16927,6 +17552,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -16937,6 +17563,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -16944,6 +17571,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -16959,6 +17587,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -16969,6 +17598,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -17199,6 +17829,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17230,6 +17861,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -17262,6 +17894,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -17310,6 +17943,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -17325,6 +17959,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17335,6 +17970,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -17350,26 +17986,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -17385,6 +18026,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17395,6 +18037,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -17403,6 +18046,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -17429,6 +18073,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17449,6 +18094,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -17483,6 +18129,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -17498,6 +18145,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -17508,6 +18156,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -17515,6 +18164,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -17530,6 +18180,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -17540,6 +18191,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -17770,6 +18422,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17801,6 +18454,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -17833,6 +18487,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -17881,6 +18536,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -17896,6 +18552,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17906,6 +18563,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -17921,26 +18579,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -17956,6 +18619,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -17966,6 +18630,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -17974,6 +18639,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -17988,6 +18654,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -18004,6 +18671,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18041,6 +18709,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -18056,6 +18725,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -18066,6 +18736,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -18073,6 +18744,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -18088,6 +18760,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -18098,6 +18771,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -18328,6 +19002,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18359,6 +19034,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -18391,6 +19067,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -18439,6 +19116,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -18454,6 +19132,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18464,6 +19143,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -18479,26 +19159,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -18514,6 +19199,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18524,6 +19210,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -18532,6 +19219,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -18545,6 +19233,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -18561,6 +19250,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18598,6 +19288,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -18613,6 +19304,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -18623,6 +19315,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -18630,6 +19323,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -18645,6 +19339,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -18655,6 +19350,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -18885,6 +19581,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -18916,6 +19613,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -18948,6 +19646,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -18996,6 +19695,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -19011,6 +19711,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19021,6 +19722,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -19036,26 +19738,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -19071,6 +19778,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19081,6 +19789,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -19089,6 +19798,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -19102,6 +19812,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -19118,6 +19829,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19149,6 +19861,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -19164,6 +19877,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -19174,6 +19888,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -19181,6 +19896,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -19196,6 +19912,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -19206,6 +19923,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -19436,6 +20154,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19467,6 +20186,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -19499,6 +20219,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -19547,6 +20268,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -19562,6 +20284,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19572,6 +20295,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -19587,26 +20311,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -19622,6 +20351,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19632,6 +20362,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -19640,6 +20371,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -19654,6 +20386,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -19671,6 +20404,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -19706,6 +20440,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -19721,6 +20456,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -19731,6 +20467,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -19738,6 +20475,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -19753,6 +20491,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -19763,6 +20502,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -19993,6 +20733,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20024,6 +20765,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -20056,6 +20798,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -20104,6 +20847,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -20119,6 +20863,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20129,6 +20874,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -20144,26 +20890,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -20179,6 +20930,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20189,6 +20941,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -20197,6 +20950,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -20249,6 +21003,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20269,6 +21024,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -20309,6 +21065,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -20324,6 +21081,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -20334,6 +21092,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -20341,6 +21100,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -20356,6 +21116,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -20366,6 +21127,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -20596,6 +21358,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20627,6 +21390,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -20659,6 +21423,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -20707,6 +21472,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -20722,6 +21488,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20732,6 +21499,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -20747,26 +21515,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -20782,6 +21555,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20792,6 +21566,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -20847,6 +21622,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -20864,6 +21640,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -20905,6 +21682,7 @@ export declare const putCharacter: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -20920,6 +21698,7 @@ export declare const putCharacter: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -20930,6 +21709,7 @@ export declare const putCharacter: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -21023,7 +21803,7 @@ export declare const putCharacter: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -21034,7 +21814,7 @@ export declare const putCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -21124,6 +21904,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -21139,6 +21920,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -21149,6 +21931,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -21156,6 +21939,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -21171,6 +21955,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -21181,6 +21966,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -21411,6 +22197,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -21442,6 +22229,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -21474,6 +22262,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -21522,6 +22311,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -21537,6 +22327,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -21547,6 +22338,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -21562,26 +22354,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -21597,6 +22394,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -21607,6 +22405,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -21615,6 +22414,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -21641,6 +22441,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -21661,6 +22462,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -21695,6 +22497,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -21710,6 +22513,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -21720,6 +22524,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -21727,6 +22532,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -21742,6 +22548,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -21752,6 +22559,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -21982,6 +22790,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22013,6 +22822,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -22045,6 +22855,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -22093,6 +22904,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -22108,6 +22920,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22118,6 +22931,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -22133,26 +22947,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -22168,6 +22987,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22178,6 +22998,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -22186,6 +23007,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -22200,6 +23022,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -22216,6 +23039,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22253,6 +23077,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -22268,6 +23093,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -22278,6 +23104,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -22285,6 +23112,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -22300,6 +23128,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -22310,6 +23139,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -22540,6 +23370,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22571,6 +23402,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -22603,6 +23435,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -22651,6 +23484,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -22666,6 +23500,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22676,6 +23511,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -22691,26 +23527,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -22726,6 +23567,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22736,6 +23578,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -22744,6 +23587,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -22757,6 +23601,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -22773,6 +23618,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -22810,6 +23656,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -22825,6 +23672,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -22835,6 +23683,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -22842,6 +23691,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -22857,6 +23707,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -22867,6 +23718,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -23097,6 +23949,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23128,6 +23981,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -23160,6 +24014,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -23208,6 +24063,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -23223,6 +24079,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23233,6 +24090,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -23248,26 +24106,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -23283,6 +24146,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23293,6 +24157,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -23301,6 +24166,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 speeds?: {
@@ -23314,6 +24180,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 armor?: {
@@ -23330,6 +24197,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23361,6 +24229,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -23376,6 +24245,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -23386,6 +24256,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -23393,6 +24264,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -23408,6 +24280,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -23418,6 +24291,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -23648,6 +24522,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23679,6 +24554,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -23711,6 +24587,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -23759,6 +24636,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -23774,6 +24652,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23784,6 +24663,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -23799,26 +24679,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -23834,6 +24719,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23844,6 +24730,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -23852,6 +24739,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -23866,6 +24754,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
@@ -23883,6 +24772,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -23918,6 +24808,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -23933,6 +24824,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -23943,6 +24835,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -23950,6 +24843,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -23965,6 +24859,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -23975,6 +24870,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -24205,6 +25101,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24236,6 +25133,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -24268,6 +25166,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -24316,6 +25215,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -24331,6 +25231,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24341,6 +25242,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -24356,26 +25258,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -24391,6 +25298,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24401,6 +25309,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -24409,6 +25318,7 @@ export declare const putCharacter: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
@@ -24461,6 +25371,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24481,6 +25392,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -24521,6 +25433,7 @@ export declare const putCharacter: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -24536,6 +25449,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -24546,6 +25460,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -24553,6 +25468,7 @@ export declare const putCharacter: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | {
                             choice: {
@@ -24568,6 +25484,7 @@ export declare const putCharacter: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[] | undefined;
                             };
@@ -24578,6 +25495,7 @@ export declare const putCharacter: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                     availableAt?: number | undefined;
                                 }[];
                                 isRepeatable?: boolean | undefined;
@@ -24808,6 +25726,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24839,6 +25758,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -24871,6 +25791,7 @@ export declare const putCharacter: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                         availableAt?: number | undefined;
                                     }[] | undefined;
                                 };
@@ -24919,6 +25840,7 @@ export declare const putCharacter: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -24934,6 +25856,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -24944,6 +25867,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -24959,26 +25883,31 @@ export declare const putCharacter: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | {
                     choice: {
@@ -24994,6 +25923,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -25004,6 +25934,7 @@ export declare const putCharacter: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
@@ -25059,6 +25990,7 @@ export declare const putCharacter: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
                         }[] | undefined;
                     };
@@ -25076,6 +26008,7 @@ export declare const putCharacter: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
                 type?: string | undefined;
@@ -25117,6 +26050,7 @@ export declare const putCharacter: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 availableAt?: number | undefined;
             }[] | {
                 choice: {
@@ -25132,6 +26066,7 @@ export declare const putCharacter: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[] | undefined;
                 };
@@ -25142,6 +26077,7 @@ export declare const putCharacter: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                         availableAt?: number | undefined;
                     }[];
                     isRepeatable?: boolean | undefined;
@@ -25235,7 +26171,7 @@ export declare const putCharacter: z.ZodObject<{
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -25246,7 +26182,7 @@ export declare const putCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;

@@ -1,11 +1,30 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.choiceListObject = exports.choiceRandomObject = exports.statObject = void 0;
+exports.choiceListObject = exports.choiceRandomObject = exports.statObject = exports.statType = void 0;
 const zod_1 = require("zod");
+exports.statType = zod_1.z.enum([
+    'background',
+    'spell',
+    'trait',
+    'race',
+    'class',
+    'template',
+    'type',
+    'subtype',
+    'language',
+    'skill',
+    'savingThrow',
+    'condition',
+    'resistance',
+    'immunity',
+    'vulnerability',
+    'conditionImmunity',
+]);
 // object schemas
 exports.statObject = zod_1.z.object({
     id: zod_1.z.number().optional(),
     value: zod_1.z.string(),
+    type: exports.statType.optional(),
     availableAt: zod_1.z.number().optional(),
 });
 exports.choiceRandomObject = zod_1.z.object({

@@ -1,9 +1,29 @@
 import { z } from 'zod';
 
+export const statType = z.enum([
+  'background',
+  'spell',
+  'trait',
+  'race',
+  'class',
+  'template',
+  'type',
+  'subtype',
+  'language',
+  'skill',
+  'savingThrow',
+  'condition',
+  'resistance',
+  'immunity',
+  'vulnerability',
+  'conditionImmunity',
+]);
+
 // object schemas
 export const statObject = z.object({
   id: z.number().optional(),
   value: z.string(),
+  type: statType.optional(),
   availableAt: z.number().optional(),
 });
 export const choiceRandomObject = z.object({
@@ -18,7 +38,7 @@ export const choiceRandomObject = z.object({
         z.object({
           keyName: z.string(),
           keyValues: z.array(z.string()),
-        })
+        }),
       )
       .optional(),
     chosenAlready: z.array(statObject).optional(),

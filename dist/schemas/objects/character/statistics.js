@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.statisticsObject = exports.descriptionPartObject = exports.abilitiesObject = exports.statNumberString = void 0;
 const zod_1 = require("zod");
+const choices_1 = require("./choices");
 const other_1 = require("./other");
 exports.statNumberString = zod_1.z.object({
     number: zod_1.z.number(),
@@ -19,26 +20,7 @@ exports.abilitiesObject = zod_1.z.object({
 });
 exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
-    type: zod_1.z
-        .enum([
-        'background',
-        'spell',
-        'trait',
-        'race',
-        'class',
-        'template',
-        'type',
-        'subtype',
-        'language',
-        'skill',
-        'savingThrow',
-        'condition',
-        'resistance',
-        'immunity',
-        'vulnerability',
-        'conditionImmunity',
-    ])
-        .optional(),
+    type: choices_1.statType.optional(),
     id: zod_1.z.number().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
