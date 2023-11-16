@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.descriptionPartObject = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.descriptionPartObject = exports.abilitiesObject = exports.statNumberString = void 0;
 const zod_1 = require("zod");
 const other_1 = require("./other");
-const statNumberString = zod_1.z.object({
+exports.statNumberString = zod_1.z.object({
     number: zod_1.z.number(),
     string: zod_1.z.string(),
     array: zod_1.z.array(zod_1.z.string()).optional(),
@@ -42,7 +42,7 @@ exports.descriptionPartObject = zod_1.z.object({
     id: zod_1.z.number().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
-    alignment: statNumberString,
+    alignment: exports.statNumberString,
     pronouns: other_1.pronounsObject,
     prename: zod_1.z.string(),
     name: zod_1.z.string(),
@@ -50,15 +50,15 @@ exports.statisticsObject = zod_1.z.object({
     fullName: zod_1.z.string(),
     characterHook: zod_1.z.array(exports.descriptionPartObject).optional(),
     level: zod_1.z.number(),
-    CR: statNumberString,
+    CR: exports.statNumberString,
     XP: zod_1.z.string(),
     proficiency: zod_1.z.number(),
-    size: statNumberString,
-    sizeSingleEntityOfSwarm: statNumberString.optional(),
+    size: exports.statNumberString,
+    sizeSingleEntityOfSwarm: exports.statNumberString.optional(),
     abilityScores: exports.abilitiesObject,
     abilityModifiers: exports.abilitiesObject,
-    HP: statNumberString,
-    type: statNumberString,
-    subtypes: zod_1.z.array(statNumberString).optional(),
+    HP: exports.statNumberString,
+    type: exports.statNumberString,
+    subtypes: zod_1.z.array(exports.statNumberString).optional(),
     meta: zod_1.z.string(),
 });

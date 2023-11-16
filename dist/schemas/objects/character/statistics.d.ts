@@ -1,4 +1,20 @@
 import { z } from 'zod';
+export declare const statNumberString: z.ZodObject<{
+    number: z.ZodNumber;
+    string: z.ZodString;
+    array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+    id: z.ZodOptional<z.ZodNumber>;
+}, "strip", z.ZodTypeAny, {
+    string: string;
+    number: number;
+    array?: string[] | undefined;
+    id?: number | undefined;
+}, {
+    string: string;
+    number: number;
+    array?: string[] | undefined;
+    id?: number | undefined;
+}>;
 export declare const abilitiesObject: z.ZodObject<{
     STR: z.ZodNumber;
     DEX: z.ZodNumber;

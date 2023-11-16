@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { pronounsObject } from './other';
 
-const statNumberString = z.object({
+export const statNumberString = z.object({
   number: z.number(),
   string: z.string(),
   array: z.array(z.string()).optional(),
