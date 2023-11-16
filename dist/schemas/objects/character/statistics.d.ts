@@ -213,19 +213,16 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     subtypes: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        number: z.ZodNumber;
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number: number;
-        array?: string[] | undefined;
+        type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number: number;
-        array?: string[] | undefined;
+        type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }>, "many">>;
     meta: z.ZodString;
@@ -298,8 +295,7 @@ export declare const statisticsObject: z.ZodObject<{
     } | undefined;
     subtypes?: {
         string: string;
-        number: number;
-        array?: string[] | undefined;
+        type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
 }, {
@@ -371,8 +367,7 @@ export declare const statisticsObject: z.ZodObject<{
     } | undefined;
     subtypes?: {
         string: string;
-        number: number;
-        array?: string[] | undefined;
+        type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
 }>;

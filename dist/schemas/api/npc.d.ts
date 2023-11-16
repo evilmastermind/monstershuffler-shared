@@ -4199,8 +4199,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -8410,8 +8409,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -12624,8 +12622,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -16835,8 +16832,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                type?: "type" | "trait" | "subtype" | "background" | "spell" | "race" | "class" | "template" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;

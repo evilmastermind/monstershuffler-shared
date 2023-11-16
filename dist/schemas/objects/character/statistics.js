@@ -59,6 +59,6 @@ exports.statisticsObject = zod_1.z.object({
     abilityModifiers: exports.abilitiesObject,
     HP: exports.statNumberString,
     type: exports.statNumberString,
-    subtypes: zod_1.z.array(exports.statNumberString).optional(),
+    subtypes: zod_1.z.array(exports.descriptionPartObject).optional(),
     meta: zod_1.z.string(),
 });

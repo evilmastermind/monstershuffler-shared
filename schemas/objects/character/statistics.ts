@@ -60,7 +60,7 @@ export const statisticsObject = z.object({
   abilityModifiers: abilitiesObject,
   HP: statNumberString,
   type: statNumberString,
-  subtypes: z.array(statNumberString).optional(),
+  subtypes: z.array(descriptionPartObject).optional(),
   meta: z.string(),
 });
 
