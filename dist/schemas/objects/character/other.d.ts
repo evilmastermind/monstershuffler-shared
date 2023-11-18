@@ -37,6 +37,16 @@ export declare const sensesObject: z.ZodObject<{
     tremorsense?: string | undefined;
     truesight?: string | undefined;
 }>;
+export declare const bonusObject: z.ZodObject<{
+    name: z.ZodOptional<z.ZodString>;
+    value: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    value: string;
+    name?: string | undefined;
+}, {
+    value: string;
+    name?: string | undefined;
+}>;
 export declare const bonusesObject: z.ZodObject<{
     HPBonus: z.ZodOptional<z.ZodObject<{
         name: z.ZodOptional<z.ZodString>;

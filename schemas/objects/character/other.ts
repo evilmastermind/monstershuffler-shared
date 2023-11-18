@@ -2,10 +2,7 @@ import { z } from 'zod';
 import { voiceObject } from './roleplay';
 import { armorObject } from './armor';
 import { statObject } from './choices';
-import {
-  choiceRandomObject,
-  choiceListObject,
-} from './choices';
+import { choiceRandomObject, choiceListObject } from './choices';
 import { actionObject } from './actions';
 import { spellsObject } from './spells';
 import { abilityScoresObject } from './abilities';
@@ -27,7 +24,7 @@ export const sensesObject = z.object({
   truesight: z.string().optional(),
 });
 
-const bonusObject = z.object({
+export const bonusObject = z.object({
   name: z.string().optional(),
   value: z.string(),
 });
@@ -118,7 +115,15 @@ export const resistenceImmunitiesStats = {
   vulnerabilities: z.array(statObject).optional(),
   conditionImmunities: z.array(statObject).optional(),
 };
-export const ages = z.enum(['child', 'adolescent', 'young adult', 'adult', 'middle-aged', 'elderly', 'venerable']);
+export const ages = z.enum([
+  'child',
+  'adolescent',
+  'young adult',
+  'adult',
+  'middle-aged',
+  'elderly',
+  'venerable',
+]);
 export const AgeObject = z.object({
   number: z.number(),
   string: ages,
