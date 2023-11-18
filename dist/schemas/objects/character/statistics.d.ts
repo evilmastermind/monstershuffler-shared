@@ -227,6 +227,28 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }>, "many">>;
     meta: z.ZodString;
+    speeds: z.ZodOptional<z.ZodObject<{
+        base: z.ZodOptional<z.ZodNumber>;
+        burrow: z.ZodOptional<z.ZodNumber>;
+        climb: z.ZodOptional<z.ZodNumber>;
+        fly: z.ZodOptional<z.ZodNumber>;
+        hover: z.ZodOptional<z.ZodNumber>;
+        swim: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        base?: number | undefined;
+        burrow?: number | undefined;
+        climb?: number | undefined;
+        fly?: number | undefined;
+        hover?: number | undefined;
+        swim?: number | undefined;
+    }, {
+        base?: number | undefined;
+        burrow?: number | undefined;
+        climb?: number | undefined;
+        fly?: number | undefined;
+        hover?: number | undefined;
+        swim?: number | undefined;
+    }>>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -300,6 +322,14 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    speeds?: {
+        base?: number | undefined;
+        burrow?: number | undefined;
+        climb?: number | undefined;
+        fly?: number | undefined;
+        hover?: number | undefined;
+        swim?: number | undefined;
+    } | undefined;
 }, {
     name: string;
     type: {
@@ -373,6 +403,14 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    speeds?: {
+        base?: number | undefined;
+        burrow?: number | undefined;
+        climb?: number | undefined;
+        fly?: number | undefined;
+        hover?: number | undefined;
+        swim?: number | undefined;
+    } | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

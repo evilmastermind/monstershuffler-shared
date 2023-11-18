@@ -45,6 +45,16 @@ export const statisticsObject = z.object({
   type: statNumberString,
   subtypes: z.array(descriptionPartObject).optional(),
   meta: z.string(),
+  speeds: z
+    .object({
+      base: z.number().optional(),
+      burrow: z.number().optional(),
+      climb: z.number().optional(),
+      fly: z.number().optional(),
+      hover: z.number().optional(),
+      swim: z.number().optional(),
+    })
+    .optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

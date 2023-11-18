@@ -4338,6 +4338,14 @@ export declare const getCharacterResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -8706,6 +8714,14 @@ export declare const getCharacterResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -13079,6 +13095,14 @@ export declare const postCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -17448,6 +17472,14 @@ export declare const postCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -21822,6 +21854,14 @@ export declare const putCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -26191,6 +26231,14 @@ export declare const putCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            speeds?: {
+                base?: number | undefined;
+                burrow?: number | undefined;
+                climb?: number | undefined;
+                fly?: number | undefined;
+                hover?: number | undefined;
+                swim?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
