@@ -4326,6 +4326,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -8693,6 +8694,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -13065,6 +13067,7 @@ export declare const postCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -17433,6 +17436,7 @@ export declare const postCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -21806,6 +21810,7 @@ export declare const putCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -26174,6 +26179,7 @@ export declare const putCharacter: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;

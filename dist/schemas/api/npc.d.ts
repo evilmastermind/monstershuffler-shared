@@ -4347,6 +4347,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -8713,6 +8714,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -13082,6 +13084,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
@@ -17448,6 +17451,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;

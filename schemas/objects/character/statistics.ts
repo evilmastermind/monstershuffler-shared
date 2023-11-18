@@ -37,6 +37,7 @@ export const statisticsObject = z.object({
   XP: z.string(),
   proficiency: z.number(),
   size: statNumberString,
+  isSwarm: z.boolean().optional(),
   sizeSingleEntityOfSwarm: statNumberString.optional(),
   abilityScores: abilitiesObject,
   abilityModifiers: abilitiesObject,

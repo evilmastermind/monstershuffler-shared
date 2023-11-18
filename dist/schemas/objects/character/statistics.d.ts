@@ -120,6 +120,7 @@ export declare const statisticsObject: z.ZodObject<{
         array?: string[] | undefined;
         id?: number | undefined;
     }>;
+    isSwarm: z.ZodOptional<z.ZodBoolean>;
     sizeSingleEntityOfSwarm: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodString;
@@ -287,6 +288,7 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
@@ -359,6 +361,7 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
