@@ -45,9 +45,9 @@ export const statisticsObject = z.object({
   type: statNumberString,
   subtypes: z.array(descriptionPartObject).optional(),
   meta: z.string(),
-  speeds: z
+  speed: z
     .object({
-      base: z.number().optional(),
+      walk: z.number().optional(),
       burrow: z.number().optional(),
       climb: z.number().optional(),
       fly: z.number().optional(),
