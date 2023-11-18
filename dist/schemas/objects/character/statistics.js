@@ -44,9 +44,9 @@ exports.statisticsObject = zod_1.z.object({
     type: exports.statNumberString,
     subtypes: zod_1.z.array(exports.descriptionPartObject).optional(),
     meta: zod_1.z.string(),
-    speeds: zod_1.z
+    speed: zod_1.z
         .object({
-        base: zod_1.z.number().optional(),
+        walk: zod_1.z.number().optional(),
         burrow: zod_1.z.number().optional(),
         climb: zod_1.z.number().optional(),
         fly: zod_1.z.number().optional(),

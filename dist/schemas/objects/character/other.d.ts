@@ -1,20 +1,20 @@
 import { z } from 'zod';
-export declare const speedsObject: z.ZodObject<{
-    base: z.ZodOptional<z.ZodString>;
+export declare const speedObject: z.ZodObject<{
+    walk: z.ZodOptional<z.ZodString>;
     burrow: z.ZodOptional<z.ZodString>;
     climb: z.ZodOptional<z.ZodString>;
     fly: z.ZodOptional<z.ZodString>;
     hover: z.ZodOptional<z.ZodString>;
     swim: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
-    base?: string | undefined;
+    walk?: string | undefined;
     burrow?: string | undefined;
     climb?: string | undefined;
     fly?: string | undefined;
     hover?: string | undefined;
     swim?: string | undefined;
 }, {
-    base?: string | undefined;
+    walk?: string | undefined;
     burrow?: string | undefined;
     climb?: string | undefined;
     fly?: string | undefined;
@@ -3935,23 +3935,23 @@ export declare const savingThrowsStats: {
         availableAt?: number | undefined;
     }>, "many">>;
 };
-export declare const speedsStats: {
-    speeds: z.ZodOptional<z.ZodObject<{
-        base: z.ZodOptional<z.ZodString>;
+export declare const speedStats: {
+    speed: z.ZodOptional<z.ZodObject<{
+        walk: z.ZodOptional<z.ZodString>;
         burrow: z.ZodOptional<z.ZodString>;
         climb: z.ZodOptional<z.ZodString>;
         fly: z.ZodOptional<z.ZodString>;
         hover: z.ZodOptional<z.ZodString>;
         swim: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
-        base?: string | undefined;
+        walk?: string | undefined;
         burrow?: string | undefined;
         climb?: string | undefined;
         fly?: string | undefined;
         hover?: string | undefined;
         swim?: string | undefined;
     }, {
-        base?: string | undefined;
+        walk?: string | undefined;
         burrow?: string | undefined;
         climb?: string | undefined;
         fly?: string | undefined;

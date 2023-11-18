@@ -227,22 +227,22 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }>, "many">>;
     meta: z.ZodString;
-    speeds: z.ZodOptional<z.ZodObject<{
-        base: z.ZodOptional<z.ZodNumber>;
+    speed: z.ZodOptional<z.ZodObject<{
+        walk: z.ZodOptional<z.ZodNumber>;
         burrow: z.ZodOptional<z.ZodNumber>;
         climb: z.ZodOptional<z.ZodNumber>;
         fly: z.ZodOptional<z.ZodNumber>;
         hover: z.ZodOptional<z.ZodNumber>;
         swim: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        base?: number | undefined;
+        walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
         fly?: number | undefined;
         hover?: number | undefined;
         swim?: number | undefined;
     }, {
-        base?: number | undefined;
+        walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
         fly?: number | undefined;
@@ -322,8 +322,8 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
-    speeds?: {
-        base?: number | undefined;
+    speed?: {
+        walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
         fly?: number | undefined;
@@ -403,8 +403,8 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
-    speeds?: {
-        base?: number | undefined;
+    speed?: {
+        walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
         fly?: number | undefined;
