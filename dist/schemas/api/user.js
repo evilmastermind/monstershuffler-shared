@@ -52,11 +52,14 @@ exports.loginSchema = zod_1.z.object({
 exports.loginResponse = zod_1.z.object({
     accessToken: zod_1.z.string(),
 });
-exports.userSettingsObject = zod_1.z.object({
-    stats: zod_1.z.object({
-        lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
+exports.userSettingsObject = zod_1.z.union([
+    zod_1.z.object({
+        stats: zod_1.z.object({
+            lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
+        }),
     }),
-});
+    zod_1.z.null(),
+]);
 exports.getUserResponse = zod_1.z.object({
     id: zod_1.z.number(),
     ...userCore,

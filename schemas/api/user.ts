@@ -58,11 +58,14 @@ export const loginResponse = z.object({
   accessToken: z.string(),
 });
 
-export const userSettingsObject = z.object({
-  stats: z.object({
-    lengthUnit: z.enum(['feet', 'meters', 'squares']),
+export const userSettingsObject = z.union([
+  z.object({
+    stats: z.object({
+      lengthUnit: z.enum(['feet', 'meters', 'squares']),
+    }),
   }),
-});
+  z.null(),
+]);
 
 export const getUserResponse = z.object({
   id: z.number(),
