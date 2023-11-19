@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.putUser = exports.getUserResponse = exports.loginResponse = exports.loginSchema = exports.reactivateUser = exports.resetPassword = exports.activateUser = exports.postUserResponse = exports.postUser = void 0;
+exports.putUser = exports.getUserResponse = exports.userSettingsObject = exports.loginResponse = exports.loginSchema = exports.reactivateUser = exports.resetPassword = exports.activateUser = exports.postUserResponse = exports.postUser = void 0;
 const zod_1 = require("zod");
 const userCore = {
     email: zod_1.z
@@ -52,6 +52,11 @@ exports.loginSchema = zod_1.z.object({
 exports.loginResponse = zod_1.z.object({
     accessToken: zod_1.z.string(),
 });
+exports.userSettingsObject = zod_1.z.object({
+    stats: zod_1.z.object({
+        lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
+    }),
+});
 exports.getUserResponse = zod_1.z.object({
     id: zod_1.z.number(),
     ...userCore,
@@ -59,6 +64,7 @@ exports.getUserResponse = zod_1.z.object({
     created: zod_1.z.string().datetime(),
     publishsuspension: zod_1.z.string().datetime(),
     avatar: zod_1.z.string(),
+    settings: exports.userSettingsObject,
 });
 exports.putUser = zod_1.z.object({
     username: zod_1.z.string().min(2).max(21),

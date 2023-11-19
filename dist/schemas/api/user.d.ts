@@ -66,11 +66,45 @@ export declare const loginResponse: z.ZodObject<{
 }, {
     accessToken: string;
 }>;
+export declare const userSettingsObject: z.ZodObject<{
+    stats: z.ZodObject<{
+        lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
+    }, "strip", z.ZodTypeAny, {
+        lengthUnit: "feet" | "meters" | "squares";
+    }, {
+        lengthUnit: "feet" | "meters" | "squares";
+    }>;
+}, "strip", z.ZodTypeAny, {
+    stats: {
+        lengthUnit: "feet" | "meters" | "squares";
+    };
+}, {
+    stats: {
+        lengthUnit: "feet" | "meters" | "squares";
+    };
+}>;
 export declare const getUserResponse: z.ZodObject<{
     level: z.ZodNumber;
     created: z.ZodString;
     publishsuspension: z.ZodString;
     avatar: z.ZodString;
+    settings: z.ZodObject<{
+        stats: z.ZodObject<{
+            lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
+        }, "strip", z.ZodTypeAny, {
+            lengthUnit: "feet" | "meters" | "squares";
+        }, {
+            lengthUnit: "feet" | "meters" | "squares";
+        }>;
+    }, "strip", z.ZodTypeAny, {
+        stats: {
+            lengthUnit: "feet" | "meters" | "squares";
+        };
+    }, {
+        stats: {
+            lengthUnit: "feet" | "meters" | "squares";
+        };
+    }>;
     email: z.ZodString;
     username: z.ZodString;
     id: z.ZodNumber;
@@ -82,6 +116,11 @@ export declare const getUserResponse: z.ZodObject<{
     created: string;
     publishsuspension: string;
     avatar: string;
+    settings: {
+        stats: {
+            lengthUnit: "feet" | "meters" | "squares";
+        };
+    };
 }, {
     id: number;
     level: number;
@@ -90,6 +129,11 @@ export declare const getUserResponse: z.ZodObject<{
     created: string;
     publishsuspension: string;
     avatar: string;
+    settings: {
+        stats: {
+            lengthUnit: "feet" | "meters" | "squares";
+        };
+    };
 }>;
 export declare const putUser: z.ZodObject<{
     username: z.ZodString;
