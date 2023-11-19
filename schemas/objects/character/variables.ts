@@ -7,6 +7,7 @@ export const variablesObject = z.object({
   SIZE: z.number(),
   HD: z.number(),
   HP: z.number(),
+  AC: z.number(),
   STR: z.number(),
   DEX: z.number(),
   CON: z.number(),
@@ -19,4 +20,10 @@ export const variablesObject = z.object({
   INTVALUE: z.number(),
   WISVALUE: z.number(),
   CHAVALUE: z.number(),
+  WALK: z.number(),
+  BURROW: z.number(),
+  CLIMB: z.number(),
+  FLY: z.number(),
+  HOVER: z.number(),
+  SWIM: z.number(),
 });

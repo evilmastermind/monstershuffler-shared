@@ -9,6 +9,7 @@ exports.variablesObject = zod_1.z.object({
     SIZE: zod_1.z.number(),
     HD: zod_1.z.number(),
     HP: zod_1.z.number(),
+    AC: zod_1.z.number(),
     STR: zod_1.z.number(),
     DEX: zod_1.z.number(),
     CON: zod_1.z.number(),
@@ -21,4 +22,10 @@ exports.variablesObject = zod_1.z.object({
     INTVALUE: zod_1.z.number(),
     WISVALUE: zod_1.z.number(),
     CHAVALUE: zod_1.z.number(),
+    WALK: zod_1.z.number(),
+    BURROW: zod_1.z.number(),
+    CLIMB: zod_1.z.number(),
+    FLY: zod_1.z.number(),
+    HOVER: zod_1.z.number(),
+    SWIM: zod_1.z.number(),
 });

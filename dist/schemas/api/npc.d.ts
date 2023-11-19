@@ -4381,6 +4381,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -4393,6 +4394,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -8762,6 +8769,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -8774,6 +8782,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;
@@ -13146,6 +13160,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -13158,6 +13173,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -17527,6 +17548,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -17539,6 +17561,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;

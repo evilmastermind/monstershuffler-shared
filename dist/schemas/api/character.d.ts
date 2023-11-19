@@ -4360,6 +4360,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -4372,6 +4373,12 @@ export declare const getCharacterResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -8742,6 +8749,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -8754,6 +8762,12 @@ export declare const getCharacterResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;
@@ -13129,6 +13143,7 @@ export declare const postCharacter: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -13141,6 +13156,12 @@ export declare const postCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -17512,6 +17533,7 @@ export declare const postCharacter: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -17524,6 +17546,12 @@ export declare const postCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;
@@ -21900,6 +21928,7 @@ export declare const putCharacter: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -21912,6 +21941,12 @@ export declare const putCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -26283,6 +26318,7 @@ export declare const putCharacter: z.ZodObject<{
             INT: number;
             WIS: number;
             CHA: number;
+            AC: number;
             CR: number;
             HP: number;
             LVL: number;
@@ -26295,6 +26331,12 @@ export declare const putCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            WALK: number;
+            BURROW: number;
+            CLIMB: number;
+            FLY: number;
+            HOVER: number;
+            SWIM: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;

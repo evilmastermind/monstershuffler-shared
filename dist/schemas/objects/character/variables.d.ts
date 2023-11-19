@@ -6,6 +6,7 @@ export declare const variablesObject: z.ZodObject<{
     SIZE: z.ZodNumber;
     HD: z.ZodNumber;
     HP: z.ZodNumber;
+    AC: z.ZodNumber;
     STR: z.ZodNumber;
     DEX: z.ZodNumber;
     CON: z.ZodNumber;
@@ -18,6 +19,12 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: z.ZodNumber;
     WISVALUE: z.ZodNumber;
     CHAVALUE: z.ZodNumber;
+    WALK: z.ZodNumber;
+    BURROW: z.ZodNumber;
+    CLIMB: z.ZodNumber;
+    FLY: z.ZodNumber;
+    HOVER: z.ZodNumber;
+    SWIM: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     STR: number;
     DEX: number;
@@ -25,6 +32,7 @@ export declare const variablesObject: z.ZodObject<{
     INT: number;
     WIS: number;
     CHA: number;
+    AC: number;
     CR: number;
     HP: number;
     LVL: number;
@@ -37,6 +45,12 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: number;
     WISVALUE: number;
     CHAVALUE: number;
+    WALK: number;
+    BURROW: number;
+    CLIMB: number;
+    FLY: number;
+    HOVER: number;
+    SWIM: number;
 }, {
     STR: number;
     DEX: number;
@@ -44,6 +58,7 @@ export declare const variablesObject: z.ZodObject<{
     INT: number;
     WIS: number;
     CHA: number;
+    AC: number;
     CR: number;
     HP: number;
     LVL: number;
@@ -56,5 +71,11 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: number;
     WISVALUE: number;
     CHAVALUE: number;
+    WALK: number;
+    BURROW: number;
+    CLIMB: number;
+    FLY: number;
+    HOVER: number;
+    SWIM: number;
 }>;
 //# sourceMappingURL=variables.d.ts.map
