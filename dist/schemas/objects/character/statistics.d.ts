@@ -103,6 +103,22 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     XP: z.ZodString;
+    AC: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    }>;
     proficiency: z.ZodNumber;
     size: z.ZodObject<{
         number: z.ZodNumber;
@@ -258,6 +274,12 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     };
     level: number;
+    AC: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     CR: {
         string: string;
         number: number;
@@ -339,6 +361,12 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     };
     level: number;
+    AC: {
+        string: string;
+        number: number;
+        array?: string[] | undefined;
+        id?: number | undefined;
+    };
     CR: {
         string: string;
         number: number;

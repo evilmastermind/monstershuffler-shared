@@ -34,6 +34,7 @@ exports.statisticsObject = zod_1.z.object({
     level: zod_1.z.number(),
     CR: exports.statNumberString,
     XP: zod_1.z.string(),
+    AC: exports.statNumberString,
     proficiency: zod_1.z.number(),
     size: exports.statNumberString,
     isSwarm: zod_1.z.boolean().optional(),

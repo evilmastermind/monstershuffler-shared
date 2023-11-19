@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.putSpell = exports.postSpell = exports.getSpellResponse = exports.getSpellListResponse = exports.getSpellList = void 0;
 const zod_1 = require("zod");
-const spells_1 = require("@/schemas/objects/character/spells");
+const spells_1 = require("../../schemas/objects/character/spells");
 const object_1 = require("./object");
 const level = zod_1.z.number();
 const range = zod_1.z.string();

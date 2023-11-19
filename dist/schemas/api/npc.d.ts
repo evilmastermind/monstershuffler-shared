@@ -49,7 +49,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{
-    npc: import("@/schemas/objects/character/objects").CharacterObject;
+    npc: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     npc: {
         character: {
@@ -59,25 +59,4137 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             generic?: boolean | undefined;
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             racevariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             class?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             classvariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             background?: {
-                [x: string]: any;
+                name: string;
+                femaleName: string;
+                workplace: string;
+                compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             template?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             user?: {
-                [x: string]: any;
+                characterHook?: string | undefined;
+                trait?: string | undefined;
+                feeling?: string | undefined;
+                age?: {
+                    string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
+                    number: number;
+                } | undefined;
+                height?: number | undefined;
+                weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+                voice?: {
+                    person: string;
+                    filename: string;
+                    character?: string | undefined;
+                    production?: string | undefined;
+                } | undefined;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                name?: string | undefined;
             } | undefined;
             abilityScores?: {
                 STR?: {
@@ -183,6 +4295,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             };
             level: number;
+            AC: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             CR: {
                 string: string;
                 number: number;
@@ -322,25 +4440,4137 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             generic?: boolean | undefined;
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             racevariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             class?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             classvariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             background?: {
-                [x: string]: any;
+                name: string;
+                femaleName: string;
+                workplace: string;
+                compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             template?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             user?: {
-                [x: string]: any;
+                characterHook?: string | undefined;
+                trait?: string | undefined;
+                feeling?: string | undefined;
+                age?: {
+                    string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
+                    number: number;
+                } | undefined;
+                height?: number | undefined;
+                weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+                voice?: {
+                    person: string;
+                    filename: string;
+                    character?: string | undefined;
+                    production?: string | undefined;
+                } | undefined;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                name?: string | undefined;
             } | undefined;
             abilityScores?: {
                 STR?: {
@@ -446,6 +8676,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             };
             level: number;
+            AC: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             CR: {
                 string: string;
                 number: number;
@@ -578,7 +8814,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
     };
 }>;
 export declare const postFourRandomNpcsResponse: z.ZodObject<{
-    npcs: z.ZodArray<import("@/schemas/objects/character/objects").CharacterObject, "many">;
+    npcs: z.ZodArray<import("../../schemas/objects/character/objects").CharacterObject, "many">;
 }, "strip", z.ZodTypeAny, {
     npcs: {
         character: {
@@ -588,25 +8824,4137 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             generic?: boolean | undefined;
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             racevariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             class?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             classvariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             background?: {
-                [x: string]: any;
+                name: string;
+                femaleName: string;
+                workplace: string;
+                compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             template?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             user?: {
-                [x: string]: any;
+                characterHook?: string | undefined;
+                trait?: string | undefined;
+                feeling?: string | undefined;
+                age?: {
+                    string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
+                    number: number;
+                } | undefined;
+                height?: number | undefined;
+                weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+                voice?: {
+                    person: string;
+                    filename: string;
+                    character?: string | undefined;
+                    production?: string | undefined;
+                } | undefined;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                name?: string | undefined;
             } | undefined;
             abilityScores?: {
                 STR?: {
@@ -712,6 +13060,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             };
             level: number;
+            AC: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             CR: {
                 string: string;
                 number: number;
@@ -851,25 +13205,4137 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             generic?: boolean | undefined;
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             racevariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             class?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                enableGenerator?: boolean | undefined;
+                id?: number | undefined;
             } | undefined;
             classvariant?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             background?: {
-                [x: string]: any;
+                name: string;
+                femaleName: string;
+                workplace: string;
+                compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                enableGenerator?: boolean | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                id?: number | undefined;
             } | undefined;
             template?: {
-                [x: string]: any;
+                name: string;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                savingThrows?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                id?: number | undefined;
             } | undefined;
             user?: {
-                [x: string]: any;
+                characterHook?: string | undefined;
+                trait?: string | undefined;
+                feeling?: string | undefined;
+                age?: {
+                    string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
+                    number: number;
+                } | undefined;
+                height?: number | undefined;
+                weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+                voice?: {
+                    person: string;
+                    filename: string;
+                    character?: string | undefined;
+                    production?: string | undefined;
+                } | undefined;
+                image?: {
+                    imgdir: string;
+                    lastedited: number;
+                } | undefined;
+                imageBackground?: string | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                spells?: {
+                    hasSlots?: boolean | undefined;
+                    ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    groups?: {
+                        tag: string;
+                        spells: ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        }) & ({
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | {
+                            choice: {
+                                type: "random";
+                                resultType: "object" | "nameId";
+                                source: "objects" | "languages" | "skills";
+                                number?: number | undefined;
+                                objectType?: number | undefined;
+                                filters?: {
+                                    keyName: string;
+                                    keyValues: string[];
+                                }[] | undefined;
+                                chosenAlready?: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[] | undefined;
+                            };
+                        } | {
+                            choice: {
+                                number: number;
+                                type: "list";
+                                list: {
+                                    value: string;
+                                    id?: number | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    availableAt?: number | undefined;
+                                }[];
+                                isRepeatable?: boolean | undefined;
+                            };
+                        } | undefined);
+                        availableAt?: string | undefined;
+                        timesDay?: string | undefined;
+                        timesDayMax?: string | undefined;
+                    }[] | undefined;
+                } | undefined;
+                bonuses?: {
+                    HPBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ACBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    sizeBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBaseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedBurrowBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedClimbBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedFlyBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedHoverBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    speedSwimBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHABonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    STRSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DEXSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CONSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    INTSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    WISSaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    CHASaveBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AthleticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AcrobaticsBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SleightOfHandBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    StealthBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ArcanaBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    HistoryBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InvestigationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    NatureBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    ReligionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    AnimalHandlingBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    InsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    MedicineBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    SurvivalBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    DeceptionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    IntimidationBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PerformanceBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    PersuasionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    blindsightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    darkvisionBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    tremorsenseBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    truesightBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    rangedDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    meleeDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    spellDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponAttackBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                    weaponDamageBonus?: {
+                        value: string;
+                        name?: string | undefined;
+                    } | undefined;
+                } | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: {
+                        name: string;
+                        description: string;
+                        type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+                        charges?: string | undefined;
+                        recharge?: string | undefined;
+                        cost?: string | undefined;
+                        values?: any[] | undefined;
+                        attacks?: {
+                            name: string;
+                            attributes: ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            }) & ({
+                                choice: {
+                                    type: "random";
+                                    resultType: "object" | "nameId";
+                                    source: "objects" | "languages" | "skills";
+                                    number?: number | undefined;
+                                    objectType?: number | undefined;
+                                    filters?: {
+                                        keyName: string;
+                                        keyValues: string[];
+                                    }[] | undefined;
+                                    chosenAlready?: {
+                                        value: string;
+                                        id?: number | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        availableAt?: number | undefined;
+                                    }[] | undefined;
+                                };
+                            } | {
+                                properties: string[];
+                                reach?: string | undefined;
+                                targets?: string | undefined;
+                                name?: string | undefined;
+                                cost?: string | undefined;
+                                weight?: string | undefined;
+                                damageType?: string | undefined;
+                                special?: string | undefined;
+                                die?: string | undefined;
+                                diceNumber?: string | undefined;
+                                dieV?: string | undefined;
+                                diceNumberV?: string | undefined;
+                                range?: string | undefined;
+                                rangeMax?: string | undefined;
+                            } | undefined);
+                            replaceName?: boolean | undefined;
+                            enchantment?: {
+                                type: string;
+                                dice?: {
+                                    die: number;
+                                    diceNumber: number;
+                                    diceIncrement?: number | undefined;
+                                    availableAt?: number | undefined;
+                                    availableUntil?: number | undefined;
+                                    availableUnit?: "level" | "cr" | undefined;
+                                    unitInterval?: number | undefined;
+                                } | undefined;
+                                expression?: string | undefined;
+                            } | undefined;
+                        }[] | undefined;
+                    }[];
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    priority?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
+                canSpeak?: boolean | undefined;
+                telepathy?: string | undefined;
+                languages?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                senses?: {
+                    blindsight?: string | undefined;
+                    darkvision?: string | undefined;
+                    tremorsense?: string | undefined;
+                    truesight?: string | undefined;
+                } | undefined;
+                isBlind?: boolean | undefined;
+                resistances?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                immunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                vulnerabilities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                conditionImmunities?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                skills?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                } | undefined;
+                speed?: {
+                    walk?: string | undefined;
+                    burrow?: string | undefined;
+                    climb?: string | undefined;
+                    fly?: string | undefined;
+                    hover?: string | undefined;
+                    swim?: string | undefined;
+                } | undefined;
+                abilityScoresLimit?: number | undefined;
+                abilityScores?: {
+                    STR?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    DEX?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CON?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    INT?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    WIS?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                    CHA?: {
+                        value: number;
+                        isAutomaticCalcDisabled?: boolean | undefined;
+                    } | undefined;
+                } | undefined;
+                HD?: number | undefined;
+                armor?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            availableAt?: number | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    name: string;
+                    AC: string;
+                    isAutomaticCalcDisabled?: boolean | undefined;
+                    cost?: string | undefined;
+                    type?: "light" | "medium" | "heavy" | undefined;
+                    maxDex?: string | undefined;
+                    minStr?: string | undefined;
+                    weight?: string | undefined;
+                    stealthDis?: boolean | undefined;
+                } | undefined;
+                subtypes?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    availableAt?: number | undefined;
+                }[] | undefined;
+                type?: string | undefined;
+                isSwarm?: boolean | undefined;
+                swarmSize?: string | undefined;
+                size?: number | undefined;
+                pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                name?: string | undefined;
             } | undefined;
             abilityScores?: {
                 STR?: {
@@ -975,6 +17441,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             };
             level: number;
+            AC: {
+                string: string;
+                number: number;
+                array?: string[] | undefined;
+                id?: number | undefined;
+            };
             CR: {
                 string: string;
                 number: number;

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.putClass = exports.postClass = exports.getClassResponse = exports.getClassWithVariantsListResponse = exports.getClassListResponse = void 0;
 const zod_1 = require("zod");
-const objects_1 = require("@/schemas/objects/character/objects");
+const objects_1 = require("../../schemas/objects/character/objects");
 const object_1 = require("./object");
 exports.getClassListResponse = zod_1.z.object({
     list: object_1.objectList,

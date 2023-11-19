@@ -35,6 +35,7 @@ export const statisticsObject = z.object({
   level: z.number(),
   CR: statNumberString,
   XP: z.string(),
+  AC: statNumberString,
   proficiency: z.number(),
   size: statNumberString,
   isSwarm: z.boolean().optional(),

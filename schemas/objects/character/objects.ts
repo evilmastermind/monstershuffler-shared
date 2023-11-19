@@ -5,7 +5,7 @@ import { variablesObject } from './variables';
 import { tagsObject } from './tags';
 import { variationsObject } from './variations';
 import { alignmentStats } from './alignment';
-import { 
+import {
   namingStats,
   pronounsStats,
   sizeStats,
@@ -15,7 +15,7 @@ import {
   HDStats,
   abilityScoresStats,
   abilityScoresLimit,
-  speedsStats,
+  speedStats,
   skillsStats,
   resistenceImmunitiesStats,
   sensesStats,
@@ -54,7 +54,7 @@ export const userObject = z.object({
   ...HDStats,
   ...abilityScoresStats,
   ...abilityScoresLimit,
-  ...speedsStats,
+  ...speedStats,
   ...skillsStats,
   ...resistenceImmunitiesStats,
   ...sensesStats,
@@ -80,7 +80,7 @@ export const raceObject = z
     ...armorStats,
     ...HDStats,
     ...abilityScoresLimit,
-    ...speedsStats,
+    ...speedStats,
     ...savingThrowsStats,
     ...skillsStats,
     ...resistenceImmunitiesStats,
@@ -102,7 +102,7 @@ export const racevariantObject = z
     ...armorStats,
     ...subtypesStats,
     ...abilityScoresLimit,
-    ...speedsStats,
+    ...speedStats,
     ...savingThrowsStats,
     ...skillsStats,
     ...resistenceImmunitiesStats,
@@ -123,7 +123,7 @@ export const classObject = z
     ...generatorStats,
     ...armorStats,
     ...subtypesStats,
-    ...speedsStats,
+    ...speedStats,
     ...savingThrowsStats,
     ...skillsStats,
     ...resistenceImmunitiesStats,
@@ -142,7 +142,7 @@ export const classvariantObject = z
     name: z.string(),
     ...armorStats,
     ...subtypesStats,
-    ...speedsStats,
+    ...speedStats,
     ...savingThrowsStats,
     ...skillsStats,
     ...resistenceImmunitiesStats,
@@ -167,7 +167,7 @@ export const templateObject = z
     ...alignmentModifiersStats,
     ...armorStats,
     ...HDStats,
-    ...speedsStats,
+    ...speedStats,
     ...abilityScoresStats,
     ...abilityScoresLimit,
     ...savingThrowsStats,
@@ -192,7 +192,7 @@ export const backgroundObject = z
     ...armorStats,
     ...alignmentModifiersStats,
     ...subtypesStats,
-    ...speedsStats,
+    ...speedStats,
     ...abilityScoresLimit,
     ...savingThrowsStats,
     ...skillsStats,
@@ -210,7 +210,6 @@ const CRCalculationObject = z
   .union([CRTwoPointsObject, CRNPCObject, CRAutomaticObject])
   .optional();
 const proficiencyCalculationObject = z.enum(['level', 'CR']).optional();
-
 
 // TODO: characterObject is too big that, if I don't define the type myself, TypeScript will raise an error.
 // See: https://github.com/colinhacks/zod/issues/1040
@@ -247,7 +246,7 @@ export type CharacterObject = z.ZodObject<{
   statistics: z.ZodOptional<typeof statisticsObject>;
   variables: z.ZodOptional<typeof variablesObject>;
   tags: z.ZodOptional<typeof tagsObject>;
-  variations: z.ZodOptional<typeof variationsObject>
+  variations: z.ZodOptional<typeof variationsObject>;
 }>;
 
 export const characterObject: CharacterObject = z
