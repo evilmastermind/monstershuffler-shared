@@ -4373,7 +4373,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -8762,7 +8762,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -13156,7 +13156,7 @@ export declare const postCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -17546,7 +17546,7 @@ export declare const postCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -21941,7 +21941,7 @@ export declare const putCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -26331,7 +26331,7 @@ export declare const putCharacter: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;

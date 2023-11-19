@@ -19,7 +19,7 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: z.ZodNumber;
     WISVALUE: z.ZodNumber;
     CHAVALUE: z.ZodNumber;
-    WALK: z.ZodNumber;
+    SPEED: z.ZodNumber;
     BURROW: z.ZodNumber;
     CLIMB: z.ZodNumber;
     FLY: z.ZodNumber;
@@ -45,7 +45,7 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: number;
     WISVALUE: number;
     CHAVALUE: number;
-    WALK: number;
+    SPEED: number;
     BURROW: number;
     CLIMB: number;
     FLY: number;
@@ -71,7 +71,7 @@ export declare const variablesObject: z.ZodObject<{
     INTVALUE: number;
     WISVALUE: number;
     CHAVALUE: number;
-    WALK: number;
+    SPEED: number;
     BURROW: number;
     CLIMB: number;
     FLY: number;

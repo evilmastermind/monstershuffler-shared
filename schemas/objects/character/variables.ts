@@ -20,7 +20,7 @@ export const variablesObject = z.object({
   INTVALUE: z.number(),
   WISVALUE: z.number(),
   CHAVALUE: z.number(),
-  WALK: z.number(),
+  SPEED: z.number(),
   BURROW: z.number(),
   CLIMB: z.number(),
   FLY: z.number(),

@@ -4394,7 +4394,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -8782,7 +8782,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -13173,7 +13173,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
@@ -17561,7 +17561,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
-            WALK: number;
+            SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;

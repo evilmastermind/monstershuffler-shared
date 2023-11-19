@@ -22,7 +22,7 @@ exports.variablesObject = zod_1.z.object({
     INTVALUE: zod_1.z.number(),
     WISVALUE: zod_1.z.number(),
     CHAVALUE: zod_1.z.number(),
-    WALK: zod_1.z.number(),
+    SPEED: zod_1.z.number(),
     BURROW: zod_1.z.number(),
     CLIMB: zod_1.z.number(),
     FLY: zod_1.z.number(),
