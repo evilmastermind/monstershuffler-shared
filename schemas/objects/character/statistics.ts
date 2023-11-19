@@ -54,6 +54,7 @@ export const statisticsObject = z.object({
       fly: z.number().optional(),
       hover: z.number().optional(),
       swim: z.number().optional(),
+      string: z.string(),
     })
     .optional(),
 });

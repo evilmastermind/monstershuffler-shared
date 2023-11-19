@@ -4345,6 +4345,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -8734,6 +8735,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -13128,6 +13130,7 @@ export declare const postCharacter: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -17518,6 +17521,7 @@ export declare const postCharacter: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -21913,6 +21917,7 @@ export declare const putCharacter: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -26303,6 +26308,7 @@ export declare const putCharacter: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;

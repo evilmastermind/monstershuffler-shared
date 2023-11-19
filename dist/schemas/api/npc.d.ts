@@ -4366,6 +4366,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -8754,6 +8755,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -13145,6 +13147,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;
@@ -17533,6 +17536,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             speed?: {
+                string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
                 climb?: number | undefined;

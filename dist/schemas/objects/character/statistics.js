@@ -53,6 +53,7 @@ exports.statisticsObject = zod_1.z.object({
         fly: zod_1.z.number().optional(),
         hover: zod_1.z.number().optional(),
         swim: zod_1.z.number().optional(),
+        string: zod_1.z.string(),
     })
         .optional(),
 });

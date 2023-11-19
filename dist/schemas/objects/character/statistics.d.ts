@@ -250,7 +250,9 @@ export declare const statisticsObject: z.ZodObject<{
         fly: z.ZodOptional<z.ZodNumber>;
         hover: z.ZodOptional<z.ZodNumber>;
         swim: z.ZodOptional<z.ZodNumber>;
+        string: z.ZodString;
     }, "strip", z.ZodTypeAny, {
+        string: string;
         walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
@@ -258,6 +260,7 @@ export declare const statisticsObject: z.ZodObject<{
         hover?: number | undefined;
         swim?: number | undefined;
     }, {
+        string: string;
         walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
@@ -345,6 +348,7 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }[] | undefined;
     speed?: {
+        string: string;
         walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
@@ -432,6 +436,7 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }[] | undefined;
     speed?: {
+        string: string;
         walk?: number | undefined;
         burrow?: number | undefined;
         climb?: number | undefined;
