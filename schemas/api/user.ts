@@ -58,6 +58,12 @@ export const loginResponse = z.object({
   accessToken: z.string(),
 });
 
+export const userSettingsObject = z.object({
+  stats: z.object({
+    lengthUnit: z.enum(['feet', 'meters', 'squares']),
+  }),
+});
+
 export const getUserResponse = z.object({
   id: z.number(),
   ...userCore,
@@ -65,6 +71,7 @@ export const getUserResponse = z.object({
   created: z.string().datetime(),
   publishsuspension: z.string().datetime(),
   avatar: z.string(),
+  settings: userSettingsObject,
 });
 
 export const putUser = z.object({
