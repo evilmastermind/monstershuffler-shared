@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStats = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.imageObject = exports.bonusesObject = exports.bonusObject = exports.sensesObject = exports.speedObject = void 0;
+exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStats = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedsStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.imageObject = exports.bonusesObject = exports.bonusObject = exports.sensesObject = exports.speedsObject = void 0;
 const zod_1 = require("zod");
 const roleplay_1 = require("./roleplay");
 const armor_1 = require("./armor");
@@ -10,7 +10,7 @@ const actions_1 = require("./actions");
 const spells_1 = require("./spells");
 const abilities_1 = require("./abilities");
 const alignment_1 = require("./alignment");
-exports.speedObject = zod_1.z.object({
+exports.speedsObject = zod_1.z.object({
     walk: zod_1.z.string().optional(),
     burrow: zod_1.z.string().optional(),
     climb: zod_1.z.string().optional(),
@@ -32,12 +32,12 @@ exports.bonusesObject = zod_1.z.object({
     HPBonus: exports.bonusObject.optional(),
     ACBonus: exports.bonusObject.optional(),
     sizeBonus: exports.bonusObject.optional(),
-    speedBaseBonus: exports.bonusObject.optional(),
-    speedBurrowBonus: exports.bonusObject.optional(),
-    speedClimbBonus: exports.bonusObject.optional(),
-    speedFlyBonus: exports.bonusObject.optional(),
-    speedHoverBonus: exports.bonusObject.optional(),
-    speedSwimBonus: exports.bonusObject.optional(),
+    walkBonus: exports.bonusObject.optional(),
+    burrowBonus: exports.bonusObject.optional(),
+    climbBonus: exports.bonusObject.optional(),
+    flyBonus: exports.bonusObject.optional(),
+    hoverBonus: exports.bonusObject.optional(),
+    swimBonus: exports.bonusObject.optional(),
     STRBonus: exports.bonusObject.optional(),
     DEXBonus: exports.bonusObject.optional(),
     CONBonus: exports.bonusObject.optional(),
@@ -171,8 +171,8 @@ exports.skillsStats = {
 exports.savingThrowsStats = {
     savingThrows: zod_1.z.array(choices_1.statObject).optional(),
 };
-exports.speedStats = {
-    speed: exports.speedObject.optional(),
+exports.speedsStats = {
+    speeds: exports.speedsObject.optional(),
 };
 exports.abilityScoresStats = {
     abilityScores: abilities_1.abilityScoresObject.optional(),

@@ -243,7 +243,7 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }>, "many">>;
     meta: z.ZodString;
-    speed: z.ZodOptional<z.ZodObject<{
+    speeds: z.ZodOptional<z.ZodObject<{
         walk: z.ZodOptional<z.ZodNumber>;
         burrow: z.ZodOptional<z.ZodNumber>;
         climb: z.ZodOptional<z.ZodNumber>;
@@ -347,7 +347,7 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
-    speed?: {
+    speeds?: {
         string: string;
         walk?: number | undefined;
         burrow?: number | undefined;
@@ -435,7 +435,7 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
-    speed?: {
+    speeds?: {
         string: string;
         walk?: number | undefined;
         burrow?: number | undefined;

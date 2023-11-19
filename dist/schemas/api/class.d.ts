@@ -642,7 +642,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBaseBonus: z.ZodOptional<z.ZodObject<{
+            walkBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -652,7 +652,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBurrowBonus: z.ZodOptional<z.ZodObject<{
+            burrowBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -662,7 +662,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedClimbBonus: z.ZodOptional<z.ZodObject<{
+            climbBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -672,7 +672,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedFlyBonus: z.ZodOptional<z.ZodObject<{
+            flyBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -682,7 +682,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedHoverBonus: z.ZodOptional<z.ZodObject<{
+            hoverBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -692,7 +692,7 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedSwimBonus: z.ZodOptional<z.ZodObject<{
+            swimBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -1135,27 +1135,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -1340,27 +1340,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -2937,7 +2937,7 @@ export declare const getClassResponse: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }>, "many">>;
-        speed: z.ZodOptional<z.ZodObject<{
+        speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
             burrow: z.ZodOptional<z.ZodString>;
             climb: z.ZodOptional<z.ZodString>;
@@ -3216,27 +3216,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -3643,7 +3643,7 @@ export declare const getClassResponse: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -3793,27 +3793,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -4220,7 +4220,7 @@ export declare const getClassResponse: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -4373,27 +4373,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -4800,7 +4800,7 @@ export declare const getClassResponse: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -4953,27 +4953,27 @@ export declare const getClassResponse: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -5380,7 +5380,7 @@ export declare const getClassResponse: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -5985,7 +5985,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBaseBonus: z.ZodOptional<z.ZodObject<{
+            walkBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -5995,7 +5995,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBurrowBonus: z.ZodOptional<z.ZodObject<{
+            burrowBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -6005,7 +6005,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedClimbBonus: z.ZodOptional<z.ZodObject<{
+            climbBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -6015,7 +6015,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedFlyBonus: z.ZodOptional<z.ZodObject<{
+            flyBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -6025,7 +6025,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedHoverBonus: z.ZodOptional<z.ZodObject<{
+            hoverBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -6035,7 +6035,7 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedSwimBonus: z.ZodOptional<z.ZodObject<{
+            swimBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -6478,27 +6478,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -6683,27 +6683,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -8280,7 +8280,7 @@ export declare const postClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }>, "many">>;
-        speed: z.ZodOptional<z.ZodObject<{
+        speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
             burrow: z.ZodOptional<z.ZodString>;
             climb: z.ZodOptional<z.ZodString>;
@@ -8559,27 +8559,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -8986,7 +8986,7 @@ export declare const postClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -9136,27 +9136,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -9563,7 +9563,7 @@ export declare const postClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -9715,27 +9715,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -10142,7 +10142,7 @@ export declare const postClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -10295,27 +10295,27 @@ export declare const postClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -10722,7 +10722,7 @@ export declare const postClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -11326,7 +11326,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBaseBonus: z.ZodOptional<z.ZodObject<{
+            walkBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11336,7 +11336,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedBurrowBonus: z.ZodOptional<z.ZodObject<{
+            burrowBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11346,7 +11346,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedClimbBonus: z.ZodOptional<z.ZodObject<{
+            climbBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11356,7 +11356,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedFlyBonus: z.ZodOptional<z.ZodObject<{
+            flyBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11366,7 +11366,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedHoverBonus: z.ZodOptional<z.ZodObject<{
+            hoverBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11376,7 +11376,7 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             }>>;
-            speedSwimBonus: z.ZodOptional<z.ZodObject<{
+            swimBonus: z.ZodOptional<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
                 value: z.ZodString;
             }, "strip", z.ZodTypeAny, {
@@ -11819,27 +11819,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -12024,27 +12024,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -13621,7 +13621,7 @@ export declare const putClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }>, "many">>;
-        speed: z.ZodOptional<z.ZodObject<{
+        speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
             burrow: z.ZodOptional<z.ZodString>;
             climb: z.ZodOptional<z.ZodString>;
@@ -13900,27 +13900,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -14327,7 +14327,7 @@ export declare const putClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -14477,27 +14477,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -14904,7 +14904,7 @@ export declare const putClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -15057,27 +15057,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -15484,7 +15484,7 @@ export declare const putClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;
@@ -15637,27 +15637,27 @@ export declare const putClass: z.ZodObject<{
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBaseBonus?: {
+            walkBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedBurrowBonus?: {
+            burrowBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedClimbBonus?: {
+            climbBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedFlyBonus?: {
+            flyBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedHoverBonus?: {
+            hoverBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
-            speedSwimBonus?: {
+            swimBonus?: {
                 value: string;
                 name?: string | undefined;
             } | undefined;
@@ -16064,7 +16064,7 @@ export declare const putClass: z.ZodObject<{
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
         }[] | undefined;
-        speed?: {
+        speeds?: {
             walk?: string | undefined;
             burrow?: string | undefined;
             climb?: string | undefined;

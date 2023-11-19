@@ -163,27 +163,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -590,7 +590,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -756,27 +756,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -1183,7 +1183,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -1336,27 +1336,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -1763,7 +1763,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -1915,27 +1915,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -2342,7 +2342,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -2488,27 +2488,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -2916,7 +2916,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -3067,27 +3067,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -3521,7 +3521,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         isAutomaticCalcDisabled?: boolean | undefined;
                     } | undefined;
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -3692,27 +3692,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -4113,7 +4113,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         isRepeatable?: boolean | undefined;
                     };
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -4365,7 +4365,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
-            speed?: {
+            speeds?: {
                 string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
@@ -4552,27 +4552,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -4979,7 +4979,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -5145,27 +5145,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -5572,7 +5572,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -5725,27 +5725,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -6152,7 +6152,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -6304,27 +6304,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -6731,7 +6731,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -6877,27 +6877,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -7305,7 +7305,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -7456,27 +7456,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -7910,7 +7910,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         isAutomaticCalcDisabled?: boolean | undefined;
                     } | undefined;
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -8081,27 +8081,27 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -8502,7 +8502,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         isRepeatable?: boolean | undefined;
                     };
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -8754,7 +8754,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
-            speed?: {
+            speeds?: {
                 string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
@@ -8944,27 +8944,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -9371,7 +9371,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -9537,27 +9537,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -9964,7 +9964,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -10117,27 +10117,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -10544,7 +10544,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -10696,27 +10696,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -11123,7 +11123,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -11269,27 +11269,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -11697,7 +11697,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -11848,27 +11848,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -12302,7 +12302,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         isAutomaticCalcDisabled?: boolean | undefined;
                     } | undefined;
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -12473,27 +12473,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -12894,7 +12894,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         isRepeatable?: boolean | undefined;
                     };
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -13146,7 +13146,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
-            speed?: {
+            speeds?: {
                 string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;
@@ -13333,27 +13333,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -13760,7 +13760,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -13926,27 +13926,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -14353,7 +14353,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -14506,27 +14506,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -14933,7 +14933,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -15085,27 +15085,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -15512,7 +15512,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
                 }[] | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -15658,27 +15658,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -16086,7 +16086,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     availableAt?: number | undefined;
                 }[] | undefined;
                 abilityScoresLimit?: number | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -16237,27 +16237,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -16691,7 +16691,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         isAutomaticCalcDisabled?: boolean | undefined;
                     } | undefined;
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -16862,27 +16862,27 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBaseBonus?: {
+                    walkBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedBurrowBonus?: {
+                    burrowBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedClimbBonus?: {
+                    climbBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedFlyBonus?: {
+                    flyBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedHoverBonus?: {
+                    hoverBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
-                    speedSwimBonus?: {
+                    swimBonus?: {
                         value: string;
                         name?: string | undefined;
                     } | undefined;
@@ -17283,7 +17283,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         isRepeatable?: boolean | undefined;
                     };
                 } | undefined;
-                speed?: {
+                speeds?: {
                     walk?: string | undefined;
                     burrow?: string | undefined;
                     climb?: string | undefined;
@@ -17535,7 +17535,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
-            speed?: {
+            speeds?: {
                 string: string;
                 walk?: number | undefined;
                 burrow?: number | undefined;

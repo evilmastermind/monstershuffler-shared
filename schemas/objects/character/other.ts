@@ -8,7 +8,7 @@ import { spellsObject } from './spells';
 import { abilityScoresObject } from './abilities';
 import { alignmentModifiers } from './alignment';
 
-export const speedObject = z.object({
+export const speedsObject = z.object({
   walk: z.string().optional(),
   burrow: z.string().optional(),
   climb: z.string().optional(),
@@ -33,12 +33,12 @@ export const bonusesObject = z.object({
   HPBonus: bonusObject.optional(),
   ACBonus: bonusObject.optional(),
   sizeBonus: bonusObject.optional(),
-  speedBaseBonus: bonusObject.optional(),
-  speedBurrowBonus: bonusObject.optional(),
-  speedClimbBonus: bonusObject.optional(),
-  speedFlyBonus: bonusObject.optional(),
-  speedHoverBonus: bonusObject.optional(),
-  speedSwimBonus: bonusObject.optional(),
+  walkBonus: bonusObject.optional(),
+  burrowBonus: bonusObject.optional(),
+  climbBonus: bonusObject.optional(),
+  flyBonus: bonusObject.optional(),
+  hoverBonus: bonusObject.optional(),
+  swimBonus: bonusObject.optional(),
   STRBonus: bonusObject.optional(),
   DEXBonus: bonusObject.optional(),
   CONBonus: bonusObject.optional(),
@@ -176,8 +176,8 @@ export const skillsStats = {
 export const savingThrowsStats = {
   savingThrows: z.array(statObject).optional(),
 };
-export const speedStats = {
-  speed: speedObject.optional(),
+export const speedsStats = {
+  speeds: speedsObject.optional(),
 };
 export const abilityScoresStats = {
   abilityScores: abilityScoresObject.optional(),
