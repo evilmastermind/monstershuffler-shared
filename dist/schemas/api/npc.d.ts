@@ -4367,13 +4367,58 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
-                walk?: number | undefined;
-                burrow?: number | undefined;
-                climb?: number | undefined;
-                fly?: number | undefined;
-                hover?: number | undefined;
-                swim?: number | undefined;
+                values: {
+                    walk?: number | undefined;
+                    burrow?: number | undefined;
+                    climb?: number | undefined;
+                    fly?: number | undefined;
+                    hover?: number | undefined;
+                    swim?: number | undefined;
+                };
             } | undefined;
+            savingThrows?: {
+                string: string;
+                values: {
+                    STR?: number | undefined;
+                    DEX?: number | undefined;
+                    CON?: number | undefined;
+                    INT?: number | undefined;
+                    WIS?: number | undefined;
+                    CHA?: number | undefined;
+                };
+            } | undefined;
+            skills?: {
+                string: string;
+                values: Record<string, number>;
+            } | undefined;
+            resistances?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            immunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            vulnerabilities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            conditionImmunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            senses?: {
+                values: Record<string, number>;
+            } | undefined;
+            languages?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -8756,13 +8801,58 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
-                walk?: number | undefined;
-                burrow?: number | undefined;
-                climb?: number | undefined;
-                fly?: number | undefined;
-                hover?: number | undefined;
-                swim?: number | undefined;
+                values: {
+                    walk?: number | undefined;
+                    burrow?: number | undefined;
+                    climb?: number | undefined;
+                    fly?: number | undefined;
+                    hover?: number | undefined;
+                    swim?: number | undefined;
+                };
             } | undefined;
+            savingThrows?: {
+                string: string;
+                values: {
+                    STR?: number | undefined;
+                    DEX?: number | undefined;
+                    CON?: number | undefined;
+                    INT?: number | undefined;
+                    WIS?: number | undefined;
+                    CHA?: number | undefined;
+                };
+            } | undefined;
+            skills?: {
+                string: string;
+                values: Record<string, number>;
+            } | undefined;
+            resistances?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            immunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            vulnerabilities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            conditionImmunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            senses?: {
+                values: Record<string, number>;
+            } | undefined;
+            languages?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -13148,13 +13238,58 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
-                walk?: number | undefined;
-                burrow?: number | undefined;
-                climb?: number | undefined;
-                fly?: number | undefined;
-                hover?: number | undefined;
-                swim?: number | undefined;
+                values: {
+                    walk?: number | undefined;
+                    burrow?: number | undefined;
+                    climb?: number | undefined;
+                    fly?: number | undefined;
+                    hover?: number | undefined;
+                    swim?: number | undefined;
+                };
             } | undefined;
+            savingThrows?: {
+                string: string;
+                values: {
+                    STR?: number | undefined;
+                    DEX?: number | undefined;
+                    CON?: number | undefined;
+                    INT?: number | undefined;
+                    WIS?: number | undefined;
+                    CHA?: number | undefined;
+                };
+            } | undefined;
+            skills?: {
+                string: string;
+                values: Record<string, number>;
+            } | undefined;
+            resistances?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            immunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            vulnerabilities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            conditionImmunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            senses?: {
+                values: Record<string, number>;
+            } | undefined;
+            languages?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -17537,13 +17672,58 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
-                walk?: number | undefined;
-                burrow?: number | undefined;
-                climb?: number | undefined;
-                fly?: number | undefined;
-                hover?: number | undefined;
-                swim?: number | undefined;
+                values: {
+                    walk?: number | undefined;
+                    burrow?: number | undefined;
+                    climb?: number | undefined;
+                    fly?: number | undefined;
+                    hover?: number | undefined;
+                    swim?: number | undefined;
+                };
             } | undefined;
+            savingThrows?: {
+                string: string;
+                values: {
+                    STR?: number | undefined;
+                    DEX?: number | undefined;
+                    CON?: number | undefined;
+                    INT?: number | undefined;
+                    WIS?: number | undefined;
+                    CHA?: number | undefined;
+                };
+            } | undefined;
+            skills?: {
+                string: string;
+                values: Record<string, number>;
+            } | undefined;
+            resistances?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            immunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            vulnerabilities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            conditionImmunities?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
+            senses?: {
+                values: Record<string, number>;
+            } | undefined;
+            languages?: {
+                string: string;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                id?: number | undefined;
+            }[] | undefined;
         } | undefined;
         variables?: {
             STR: number;

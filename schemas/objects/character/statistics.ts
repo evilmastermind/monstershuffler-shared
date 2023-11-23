@@ -48,15 +48,46 @@ export const statisticsObject = z.object({
   meta: z.string(),
   speeds: z
     .object({
-      walk: z.number().optional(),
-      burrow: z.number().optional(),
-      climb: z.number().optional(),
-      fly: z.number().optional(),
-      hover: z.number().optional(),
-      swim: z.number().optional(),
+      values: z.object({
+        walk: z.number().optional(),
+        burrow: z.number().optional(),
+        climb: z.number().optional(),
+        fly: z.number().optional(),
+        hover: z.number().optional(),
+        swim: z.number().optional(),
+      }),
       string: z.string(),
     })
     .optional(),
+  savingThrows: z
+    .object({
+      values: z.object({
+        STR: z.number().optional(),
+        DEX: z.number().optional(),
+        CON: z.number().optional(),
+        INT: z.number().optional(),
+        WIS: z.number().optional(),
+        CHA: z.number().optional(),
+      }),
+      string: z.string(),
+    })
+    .optional(),
+  skills: z
+    .object({
+      values: z.record(z.number()),
+      string: z.string(),
+    })
+    .optional(),
+  resistances: z.array(descriptionPartObject).optional(),
+  immunities: z.array(descriptionPartObject).optional(),
+  vulnerabilities: z.array(descriptionPartObject).optional(),
+  conditionImmunities: z.array(descriptionPartObject).optional(),
+  senses: z
+    .object({
+      values: z.record(z.number()),
+    })
+    .optional(),
+  languages: z.array(descriptionPartObject).optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

@@ -244,30 +244,177 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     meta: z.ZodString;
     speeds: z.ZodOptional<z.ZodObject<{
-        walk: z.ZodOptional<z.ZodNumber>;
-        burrow: z.ZodOptional<z.ZodNumber>;
-        climb: z.ZodOptional<z.ZodNumber>;
-        fly: z.ZodOptional<z.ZodNumber>;
-        hover: z.ZodOptional<z.ZodNumber>;
-        swim: z.ZodOptional<z.ZodNumber>;
+        values: z.ZodObject<{
+            walk: z.ZodOptional<z.ZodNumber>;
+            burrow: z.ZodOptional<z.ZodNumber>;
+            climb: z.ZodOptional<z.ZodNumber>;
+            fly: z.ZodOptional<z.ZodNumber>;
+            hover: z.ZodOptional<z.ZodNumber>;
+            swim: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        }, {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        }>;
         string: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        walk?: number | undefined;
-        burrow?: number | undefined;
-        climb?: number | undefined;
-        fly?: number | undefined;
-        hover?: number | undefined;
-        swim?: number | undefined;
+        values: {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        };
     }, {
         string: string;
-        walk?: number | undefined;
-        burrow?: number | undefined;
-        climb?: number | undefined;
-        fly?: number | undefined;
-        hover?: number | undefined;
-        swim?: number | undefined;
+        values: {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        };
     }>>;
+    savingThrows: z.ZodOptional<z.ZodObject<{
+        values: z.ZodObject<{
+            STR: z.ZodOptional<z.ZodNumber>;
+            DEX: z.ZodOptional<z.ZodNumber>;
+            CON: z.ZodOptional<z.ZodNumber>;
+            INT: z.ZodOptional<z.ZodNumber>;
+            WIS: z.ZodOptional<z.ZodNumber>;
+            CHA: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        }, {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        }>;
+        string: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        values: {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        };
+    }, {
+        string: string;
+        values: {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        };
+    }>>;
+    skills: z.ZodOptional<z.ZodObject<{
+        values: z.ZodRecord<z.ZodString, z.ZodNumber>;
+        string: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        values: Record<string, number>;
+    }, {
+        string: string;
+        values: Record<string, number>;
+    }>>;
+    resistances: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }>, "many">>;
+    immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }>, "many">>;
+    vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }>, "many">>;
+    conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }>, "many">>;
+    senses: z.ZodOptional<z.ZodObject<{
+        values: z.ZodRecord<z.ZodString, z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        values: Record<string, number>;
+    }, {
+        values: Record<string, number>;
+    }>>;
+    languages: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -349,13 +496,58 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     speeds?: {
         string: string;
-        walk?: number | undefined;
-        burrow?: number | undefined;
-        climb?: number | undefined;
-        fly?: number | undefined;
-        hover?: number | undefined;
-        swim?: number | undefined;
+        values: {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        };
     } | undefined;
+    savingThrows?: {
+        string: string;
+        values: {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        };
+    } | undefined;
+    skills?: {
+        string: string;
+        values: Record<string, number>;
+    } | undefined;
+    resistances?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    immunities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    vulnerabilities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    conditionImmunities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    senses?: {
+        values: Record<string, number>;
+    } | undefined;
+    languages?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
 }, {
     name: string;
     type: {
@@ -437,13 +629,58 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     speeds?: {
         string: string;
-        walk?: number | undefined;
-        burrow?: number | undefined;
-        climb?: number | undefined;
-        fly?: number | undefined;
-        hover?: number | undefined;
-        swim?: number | undefined;
+        values: {
+            walk?: number | undefined;
+            burrow?: number | undefined;
+            climb?: number | undefined;
+            fly?: number | undefined;
+            hover?: number | undefined;
+            swim?: number | undefined;
+        };
     } | undefined;
+    savingThrows?: {
+        string: string;
+        values: {
+            STR?: number | undefined;
+            DEX?: number | undefined;
+            CON?: number | undefined;
+            INT?: number | undefined;
+            WIS?: number | undefined;
+            CHA?: number | undefined;
+        };
+    } | undefined;
+    skills?: {
+        string: string;
+        values: Record<string, number>;
+    } | undefined;
+    resistances?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    immunities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    vulnerabilities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    conditionImmunities?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    senses?: {
+        values: Record<string, number>;
+    } | undefined;
+    languages?: {
+        string: string;
+        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+        id?: number | undefined;
+    }[] | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

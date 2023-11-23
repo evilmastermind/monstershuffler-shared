@@ -47,13 +47,44 @@ exports.statisticsObject = zod_1.z.object({
     meta: zod_1.z.string(),
     speeds: zod_1.z
         .object({
-        walk: zod_1.z.number().optional(),
-        burrow: zod_1.z.number().optional(),
-        climb: zod_1.z.number().optional(),
-        fly: zod_1.z.number().optional(),
-        hover: zod_1.z.number().optional(),
-        swim: zod_1.z.number().optional(),
+        values: zod_1.z.object({
+            walk: zod_1.z.number().optional(),
+            burrow: zod_1.z.number().optional(),
+            climb: zod_1.z.number().optional(),
+            fly: zod_1.z.number().optional(),
+            hover: zod_1.z.number().optional(),
+            swim: zod_1.z.number().optional(),
+        }),
         string: zod_1.z.string(),
     })
         .optional(),
+    savingThrows: zod_1.z
+        .object({
+        values: zod_1.z.object({
+            STR: zod_1.z.number().optional(),
+            DEX: zod_1.z.number().optional(),
+            CON: zod_1.z.number().optional(),
+            INT: zod_1.z.number().optional(),
+            WIS: zod_1.z.number().optional(),
+            CHA: zod_1.z.number().optional(),
+        }),
+        string: zod_1.z.string(),
+    })
+        .optional(),
+    skills: zod_1.z
+        .object({
+        values: zod_1.z.record(zod_1.z.number()),
+        string: zod_1.z.string(),
+    })
+        .optional(),
+    resistances: zod_1.z.array(exports.descriptionPartObject).optional(),
+    immunities: zod_1.z.array(exports.descriptionPartObject).optional(),
+    vulnerabilities: zod_1.z.array(exports.descriptionPartObject).optional(),
+    conditionImmunities: zod_1.z.array(exports.descriptionPartObject).optional(),
+    senses: zod_1.z
+        .object({
+        values: zod_1.z.record(zod_1.z.number()),
+    })
+        .optional(),
+    languages: zod_1.z.array(exports.descriptionPartObject).optional(),
 });
