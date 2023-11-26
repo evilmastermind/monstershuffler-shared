@@ -4294,6 +4294,14 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 array?: string[] | undefined;
                 id?: number | undefined;
             };
+            languages: {
+                string: string;
+                values: {
+                    string: string;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    id?: number | undefined;
+                }[];
+            };
             level: number;
             AC: {
                 string: string;
@@ -4415,11 +4423,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 values: Record<string, number>;
             } | undefined;
-            languages?: {
-                string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                id?: number | undefined;
-            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -4444,12 +4447,42 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            STRSAVE: number;
+            DEXSAVE: number;
+            CONSAVE: number;
+            INTSAVE: number;
+            WISSAVE: number;
+            CHASAVE: number;
             SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
             HOVER: number;
             SWIM: number;
+            ACROBATICS: number;
+            ANIMALHANDLING: number;
+            ARCANA: number;
+            ATHLETICS: number;
+            DECEPTION: number;
+            HISTORY: number;
+            INSIGHT: number;
+            INTIMIDATION: number;
+            INVESTIGATION: number;
+            MEDICINE: number;
+            NATURE: number;
+            PERCEPTION: number;
+            PERFORMANCE: number;
+            PERSUASION: number;
+            RELIGION: number;
+            SLEIGHTOFHAND: number;
+            STEALTH: number;
+            SURVIVAL: number;
+            BLINDSIGHT: number;
+            DARKVISION: number;
+            TREMORSENSE: number;
+            TRUESIGHT: number;
+            PASSIVEPERCEPTION: number;
+            TELEPATHY: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -8732,6 +8765,14 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 array?: string[] | undefined;
                 id?: number | undefined;
             };
+            languages: {
+                string: string;
+                values: {
+                    string: string;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    id?: number | undefined;
+                }[];
+            };
             level: number;
             AC: {
                 string: string;
@@ -8853,11 +8894,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 values: Record<string, number>;
             } | undefined;
-            languages?: {
-                string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                id?: number | undefined;
-            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -8882,12 +8918,42 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            STRSAVE: number;
+            DEXSAVE: number;
+            CONSAVE: number;
+            INTSAVE: number;
+            WISSAVE: number;
+            CHASAVE: number;
             SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
             HOVER: number;
             SWIM: number;
+            ACROBATICS: number;
+            ANIMALHANDLING: number;
+            ARCANA: number;
+            ATHLETICS: number;
+            DECEPTION: number;
+            HISTORY: number;
+            INSIGHT: number;
+            INTIMIDATION: number;
+            INVESTIGATION: number;
+            MEDICINE: number;
+            NATURE: number;
+            PERCEPTION: number;
+            PERFORMANCE: number;
+            PERSUASION: number;
+            RELIGION: number;
+            SLEIGHTOFHAND: number;
+            STEALTH: number;
+            SURVIVAL: number;
+            BLINDSIGHT: number;
+            DARKVISION: number;
+            TREMORSENSE: number;
+            TRUESIGHT: number;
+            PASSIVEPERCEPTION: number;
+            TELEPATHY: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;
@@ -13173,6 +13239,14 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 array?: string[] | undefined;
                 id?: number | undefined;
             };
+            languages: {
+                string: string;
+                values: {
+                    string: string;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    id?: number | undefined;
+                }[];
+            };
             level: number;
             AC: {
                 string: string;
@@ -13294,11 +13368,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 values: Record<string, number>;
             } | undefined;
-            languages?: {
-                string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                id?: number | undefined;
-            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -13323,12 +13392,42 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            STRSAVE: number;
+            DEXSAVE: number;
+            CONSAVE: number;
+            INTSAVE: number;
+            WISSAVE: number;
+            CHASAVE: number;
             SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
             HOVER: number;
             SWIM: number;
+            ACROBATICS: number;
+            ANIMALHANDLING: number;
+            ARCANA: number;
+            ATHLETICS: number;
+            DECEPTION: number;
+            HISTORY: number;
+            INSIGHT: number;
+            INTIMIDATION: number;
+            INVESTIGATION: number;
+            MEDICINE: number;
+            NATURE: number;
+            PERCEPTION: number;
+            PERFORMANCE: number;
+            PERSUASION: number;
+            RELIGION: number;
+            SLEIGHTOFHAND: number;
+            STEALTH: number;
+            SURVIVAL: number;
+            BLINDSIGHT: number;
+            DARKVISION: number;
+            TREMORSENSE: number;
+            TRUESIGHT: number;
+            PASSIVEPERCEPTION: number;
+            TELEPATHY: number;
         } | undefined;
         tags?: z.objectOutputType<{
             name: z.ZodString;
@@ -17611,6 +17710,14 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 array?: string[] | undefined;
                 id?: number | undefined;
             };
+            languages: {
+                string: string;
+                values: {
+                    string: string;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    id?: number | undefined;
+                }[];
+            };
             level: number;
             AC: {
                 string: string;
@@ -17732,11 +17839,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 values: Record<string, number>;
             } | undefined;
-            languages?: {
-                string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                id?: number | undefined;
-            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -17761,12 +17863,42 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             INTVALUE: number;
             WISVALUE: number;
             CHAVALUE: number;
+            STRSAVE: number;
+            DEXSAVE: number;
+            CONSAVE: number;
+            INTSAVE: number;
+            WISSAVE: number;
+            CHASAVE: number;
             SPEED: number;
             BURROW: number;
             CLIMB: number;
             FLY: number;
             HOVER: number;
             SWIM: number;
+            ACROBATICS: number;
+            ANIMALHANDLING: number;
+            ARCANA: number;
+            ATHLETICS: number;
+            DECEPTION: number;
+            HISTORY: number;
+            INSIGHT: number;
+            INTIMIDATION: number;
+            INVESTIGATION: number;
+            MEDICINE: number;
+            NATURE: number;
+            PERCEPTION: number;
+            PERFORMANCE: number;
+            PERSUASION: number;
+            RELIGION: number;
+            SLEIGHTOFHAND: number;
+            STEALTH: number;
+            SURVIVAL: number;
+            BLINDSIGHT: number;
+            DARKVISION: number;
+            TREMORSENSE: number;
+            TRUESIGHT: number;
+            PASSIVEPERCEPTION: number;
+            TELEPATHY: number;
         } | undefined;
         tags?: z.objectInputType<{
             name: z.ZodString;

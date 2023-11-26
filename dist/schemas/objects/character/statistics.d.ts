@@ -405,19 +405,36 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         values: Record<string, number>;
     }>>;
-    languages: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    languages: z.ZodObject<{
+        values: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }, {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }>, "many">;
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
-        id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-        id?: number | undefined;
+        values: {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }[];
     }, {
         string: string;
-        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-        id?: number | undefined;
-    }>, "many">>;
+        values: {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }[];
+    }>;
     isBlind: z.ZodOptional<z.ZodBoolean>;
     canSpeak: z.ZodOptional<z.ZodBoolean>;
     telepathy: z.ZodOptional<z.ZodNumber>;
@@ -429,6 +446,14 @@ export declare const statisticsObject: z.ZodObject<{
         array?: string[] | undefined;
         id?: number | undefined;
     };
+    languages: {
+        string: string;
+        values: {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }[];
+    };
     level: number;
     AC: {
         string: string;
@@ -550,11 +575,6 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         values: Record<string, number>;
     } | undefined;
-    languages?: {
-        string: string;
-        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-        id?: number | undefined;
-    }[] | undefined;
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;
@@ -566,6 +586,14 @@ export declare const statisticsObject: z.ZodObject<{
         array?: string[] | undefined;
         id?: number | undefined;
     };
+    languages: {
+        string: string;
+        values: {
+            string: string;
+            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+            id?: number | undefined;
+        }[];
+    };
     level: number;
     AC: {
         string: string;
@@ -687,11 +715,6 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         values: Record<string, number>;
     } | undefined;
-    languages?: {
-        string: string;
-        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-        id?: number | undefined;
-    }[] | undefined;
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;

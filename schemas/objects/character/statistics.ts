@@ -88,7 +88,10 @@ export const statisticsObject = z.object({
       string: z.string(),
     })
     .optional(),
-  languages: z.array(descriptionPartObject).optional(),
+  languages: z.object({
+    values: z.array(descriptionPartObject),
+    string: z.string(),
+  }),
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
