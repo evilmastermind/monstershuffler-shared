@@ -85,9 +85,13 @@ export const statisticsObject = z.object({
   senses: z
     .object({
       values: z.record(z.number()),
+      string: z.string(),
     })
     .optional(),
   languages: z.array(descriptionPartObject).optional(),
+  isBlind: z.boolean().optional(),
+  canSpeak: z.boolean().optional(),
+  telepathy: z.number().optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

@@ -4412,6 +4412,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             senses?: {
+                string: string;
                 values: Record<string, number>;
             } | undefined;
             languages?: {
@@ -4419,6 +4420,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isBlind?: boolean | undefined;
+            canSpeak?: boolean | undefined;
+            telepathy?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -8846,6 +8850,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             senses?: {
+                string: string;
                 values: Record<string, number>;
             } | undefined;
             languages?: {
@@ -8853,6 +8858,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isBlind?: boolean | undefined;
+            canSpeak?: boolean | undefined;
+            telepathy?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -13283,6 +13291,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             senses?: {
+                string: string;
                 values: Record<string, number>;
             } | undefined;
             languages?: {
@@ -13290,6 +13299,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isBlind?: boolean | undefined;
+            canSpeak?: boolean | undefined;
+            telepathy?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -17717,6 +17729,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 id?: number | undefined;
             }[] | undefined;
             senses?: {
+                string: string;
                 values: Record<string, number>;
             } | undefined;
             languages?: {
@@ -17724,6 +17737,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                 id?: number | undefined;
             }[] | undefined;
+            isBlind?: boolean | undefined;
+            canSpeak?: boolean | undefined;
+            telepathy?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;

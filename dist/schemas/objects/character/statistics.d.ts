@@ -397,9 +397,12 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     senses: z.ZodOptional<z.ZodObject<{
         values: z.ZodRecord<z.ZodString, z.ZodNumber>;
+        string: z.ZodString;
     }, "strip", z.ZodTypeAny, {
+        string: string;
         values: Record<string, number>;
     }, {
+        string: string;
         values: Record<string, number>;
     }>>;
     languages: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -415,6 +418,9 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }>, "many">>;
+    isBlind: z.ZodOptional<z.ZodBoolean>;
+    canSpeak: z.ZodOptional<z.ZodBoolean>;
+    telepathy: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -541,6 +547,7 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }[] | undefined;
     senses?: {
+        string: string;
         values: Record<string, number>;
     } | undefined;
     languages?: {
@@ -548,6 +555,9 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    isBlind?: boolean | undefined;
+    canSpeak?: boolean | undefined;
+    telepathy?: number | undefined;
 }, {
     name: string;
     type: {
@@ -674,6 +684,7 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }[] | undefined;
     senses?: {
+        string: string;
         values: Record<string, number>;
     } | undefined;
     languages?: {
@@ -681,6 +692,9 @@ export declare const statisticsObject: z.ZodObject<{
         type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
         id?: number | undefined;
     }[] | undefined;
+    isBlind?: boolean | undefined;
+    canSpeak?: boolean | undefined;
+    telepathy?: number | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

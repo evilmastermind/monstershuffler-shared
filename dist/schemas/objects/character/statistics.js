@@ -84,7 +84,11 @@ exports.statisticsObject = zod_1.z.object({
     senses: zod_1.z
         .object({
         values: zod_1.z.record(zod_1.z.number()),
+        string: zod_1.z.string(),
     })
         .optional(),
     languages: zod_1.z.array(exports.descriptionPartObject).optional(),
+    isBlind: zod_1.z.boolean().optional(),
+    canSpeak: zod_1.z.boolean().optional(),
+    telepathy: zod_1.z.number().optional(),
 });
