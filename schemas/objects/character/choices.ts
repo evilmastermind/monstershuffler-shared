@@ -25,6 +25,7 @@ export const statObject = z.object({
   value: z.string(),
   type: statType.optional(),
   availableAt: z.number().optional(),
+  availableUnit: z.enum(['level', 'cr']).optional(),
 });
 export const choiceRandomObject = z.object({
   choice: z.object({
