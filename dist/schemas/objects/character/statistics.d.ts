@@ -50,6 +50,22 @@ export declare const descriptionPartObject: z.ZodObject<{
     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
     id?: number | undefined;
 }>;
+export declare const parsedActionObject: z.ZodObject<{
+    name: z.ZodString;
+    tag: z.ZodString;
+    priority: z.ZodNumber;
+    description: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    name: string;
+    description: string;
+    tag: string;
+    priority: number;
+}, {
+    name: string;
+    description: string;
+    tag: string;
+    priority: number;
+}>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodObject<{
         number: z.ZodNumber;
@@ -438,6 +454,86 @@ export declare const statisticsObject: z.ZodObject<{
     isBlind: z.ZodOptional<z.ZodBoolean>;
     canSpeak: z.ZodOptional<z.ZodBoolean>;
     telepathy: z.ZodOptional<z.ZodNumber>;
+    traits: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        tag: z.ZodString;
+        priority: z.ZodNumber;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }>, "many">>;
+    actions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        tag: z.ZodString;
+        priority: z.ZodNumber;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }>, "many">>;
+    bonusActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        tag: z.ZodString;
+        priority: z.ZodNumber;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }>, "many">>;
+    reactions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        tag: z.ZodString;
+        priority: z.ZodNumber;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }>, "many">>;
+    legendaryActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        tag: z.ZodString;
+        priority: z.ZodNumber;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }, {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -446,6 +542,7 @@ export declare const statisticsObject: z.ZodObject<{
         array?: string[] | undefined;
         id?: number | undefined;
     };
+    level: number;
     languages: {
         string: string;
         values: {
@@ -454,7 +551,6 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
     };
-    level: number;
     AC: {
         string: string;
         number: number;
@@ -578,6 +674,36 @@ export declare const statisticsObject: z.ZodObject<{
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;
+    traits?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    actions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    bonusActions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    reactions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    legendaryActions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
 }, {
     name: string;
     type: {
@@ -586,6 +712,7 @@ export declare const statisticsObject: z.ZodObject<{
         array?: string[] | undefined;
         id?: number | undefined;
     };
+    level: number;
     languages: {
         string: string;
         values: {
@@ -594,7 +721,6 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
     };
-    level: number;
     AC: {
         string: string;
         number: number;
@@ -718,6 +844,36 @@ export declare const statisticsObject: z.ZodObject<{
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;
+    traits?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    actions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    bonusActions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    reactions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
+    legendaryActions?: {
+        name: string;
+        description: string;
+        tag: string;
+        priority: number;
+    }[] | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

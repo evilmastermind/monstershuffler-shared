@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.descriptionPartObject = exports.abilitiesObject = exports.statNumberString = void 0;
+exports.statisticsObject = exports.parsedActionObject = exports.descriptionPartObject = exports.abilitiesObject = exports.statNumberString = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -22,6 +22,12 @@ exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
     type: choices_1.statType.optional(),
     id: zod_1.z.number().optional(),
+});
+exports.parsedActionObject = zod_1.z.object({
+    name: zod_1.z.string(),
+    tag: zod_1.z.string(),
+    priority: zod_1.z.number(),
+    description: zod_1.z.string(),
 });
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statNumberString,
@@ -94,4 +100,9 @@ exports.statisticsObject = zod_1.z.object({
     isBlind: zod_1.z.boolean().optional(),
     canSpeak: zod_1.z.boolean().optional(),
     telepathy: zod_1.z.number().optional(),
+    traits: zod_1.z.array(exports.parsedActionObject).optional(),
+    actions: zod_1.z.array(exports.parsedActionObject).optional(),
+    bonusActions: zod_1.z.array(exports.parsedActionObject).optional(),
+    reactions: zod_1.z.array(exports.parsedActionObject).optional(),
+    legendaryActions: zod_1.z.array(exports.parsedActionObject).optional(),
 });

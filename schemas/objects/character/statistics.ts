@@ -24,6 +24,13 @@ export const descriptionPartObject = z.object({
   id: z.number().optional(),
 });
 
+export const parsedActionObject = z.object({
+  name: z.string(),
+  tag: z.string(),
+  priority: z.number(),
+  description: z.string(),
+});
+
 export const statisticsObject = z.object({
   alignment: statNumberString,
   pronouns: pronounsObject,
@@ -95,6 +102,11 @@ export const statisticsObject = z.object({
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
+  traits: z.array(parsedActionObject).optional(),
+  actions: z.array(parsedActionObject).optional(),
+  bonusActions: z.array(parsedActionObject).optional(),
+  reactions: z.array(parsedActionObject).optional(),
+  legendaryActions: z.array(parsedActionObject).optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

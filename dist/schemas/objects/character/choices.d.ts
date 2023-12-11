@@ -5,16 +5,19 @@ export declare const statObject: z.ZodObject<{
     value: z.ZodString;
     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
     availableAt: z.ZodOptional<z.ZodNumber>;
+    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
 }, "strip", z.ZodTypeAny, {
     value: string;
     id?: number | undefined;
     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
     availableAt?: number | undefined;
+    availableUnit?: "level" | "cr" | undefined;
 }, {
     value: string;
     id?: number | undefined;
     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
     availableAt?: number | undefined;
+    availableUnit?: "level" | "cr" | undefined;
 }>;
 export declare const choiceRandomObject: z.ZodObject<{
     choice: z.ZodObject<{
@@ -38,16 +41,19 @@ export declare const choiceRandomObject: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
         type: "random";
@@ -64,6 +70,7 @@ export declare const choiceRandomObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
     }, {
         type: "random";
@@ -80,6 +87,7 @@ export declare const choiceRandomObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
@@ -98,6 +106,7 @@ export declare const choiceRandomObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
     };
 }, {
@@ -116,6 +125,7 @@ export declare const choiceRandomObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
     };
 }>;
@@ -128,16 +138,19 @@ export declare const choiceListObject: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">;
         isRepeatable: z.ZodOptional<z.ZodBoolean>;
     }, "strip", z.ZodTypeAny, {
@@ -148,6 +161,7 @@ export declare const choiceListObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[];
         isRepeatable?: boolean | undefined;
     }, {
@@ -158,6 +172,7 @@ export declare const choiceListObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[];
         isRepeatable?: boolean | undefined;
     }>;
@@ -170,6 +185,7 @@ export declare const choiceListObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[];
         isRepeatable?: boolean | undefined;
     };
@@ -182,6 +198,7 @@ export declare const choiceListObject: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[];
         isRepeatable?: boolean | undefined;
     };

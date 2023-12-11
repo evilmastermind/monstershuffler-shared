@@ -43,16 +43,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">, z.ZodObject<{
                     choice: z.ZodObject<{
                         type: z.ZodLiteral<"random">;
@@ -75,16 +78,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             value: z.ZodString;
                             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                             availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                         }, "strip", z.ZodTypeAny, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -101,6 +107,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -117,6 +124,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -135,6 +143,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -153,6 +162,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 }>, z.ZodObject<{
@@ -164,16 +174,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             value: z.ZodString;
                             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                             availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                         }, "strip", z.ZodTypeAny, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }>, "many">;
                         isRepeatable: z.ZodOptional<z.ZodBoolean>;
                     }, "strip", z.ZodTypeAny, {
@@ -184,6 +197,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }, {
@@ -194,6 +208,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }>;
@@ -206,6 +221,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -218,6 +234,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -229,6 +246,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -245,6 +263,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -256,6 +275,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -264,6 +284,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -280,6 +301,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -291,6 +313,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -305,6 +328,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -321,6 +345,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -332,6 +357,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -340,6 +366,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -356,6 +383,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -367,6 +395,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -386,6 +415,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -402,6 +432,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -413,6 +444,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -421,6 +453,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -437,6 +470,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -448,6 +482,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -467,6 +502,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -483,6 +519,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -494,6 +531,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -502,6 +540,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -518,6 +557,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -529,6 +569,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -1596,16 +1637,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 value: z.ZodString;
                                 type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                                 availableAt: z.ZodOptional<z.ZodNumber>;
+                                availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                             }, "strip", z.ZodTypeAny, {
                                 value: string;
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }, {
                                 value: string;
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }>, "many">>;
                         }, "strip", z.ZodTypeAny, {
                             type: "random";
@@ -1622,6 +1666,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         }, {
                             type: "random";
@@ -1638,6 +1683,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         }>;
                     }, "strip", z.ZodTypeAny, {
@@ -1656,6 +1702,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     }, {
@@ -1674,6 +1721,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     }>]>;
@@ -1748,6 +1796,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -1781,6 +1830,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -1831,6 +1881,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -1864,6 +1915,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -1925,6 +1977,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -1958,6 +2011,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2019,6 +2073,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2052,6 +2107,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2116,6 +2172,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2149,6 +2206,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2220,6 +2278,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2253,6 +2312,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -2316,16 +2376,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2342,6 +2405,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2358,6 +2422,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2376,6 +2441,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2394,6 +2460,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>]>, "many">>;
@@ -2404,16 +2471,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -2436,16 +2506,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2462,6 +2535,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2478,6 +2552,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2496,6 +2571,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2514,6 +2590,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -2525,16 +2602,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -2545,6 +2625,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -2555,6 +2636,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -2567,6 +2649,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2579,6 +2662,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2605,80 +2689,95 @@ export declare const getBackgroundResponse: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         skills: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -2701,16 +2800,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2727,6 +2829,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2743,6 +2846,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2761,6 +2865,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2779,6 +2884,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -2790,16 +2896,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -2810,6 +2919,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -2820,6 +2930,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -2832,6 +2943,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2844,6 +2956,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2853,16 +2966,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         abilityScoresLimit: z.ZodOptional<z.ZodNumber>;
         speeds: z.ZodOptional<z.ZodObject<{
@@ -2892,16 +3008,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         alignmentModifiers: z.ZodOptional<z.ZodTuple<[z.ZodTuple<[z.ZodNumber, z.ZodNumber, z.ZodNumber], null>, z.ZodTuple<[z.ZodNumber, z.ZodNumber, z.ZodNumber], null>], null>>;
         armor: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
@@ -2956,16 +3075,19 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2982,6 +3104,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2998,6 +3121,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -3016,6 +3140,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -3034,6 +3159,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>]>>;
@@ -3059,6 +3185,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -3075,6 +3202,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -3086,6 +3214,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -3094,6 +3223,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -3110,6 +3240,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -3121,6 +3252,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -3352,6 +3484,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3384,6 +3517,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -3417,6 +3551,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -3466,6 +3601,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -3482,6 +3618,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3493,6 +3630,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -3509,30 +3647,35 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -3549,6 +3692,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3560,6 +3704,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -3569,6 +3714,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -3584,6 +3730,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -3602,6 +3749,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3633,6 +3781,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -3649,6 +3798,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -3660,6 +3810,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -3668,6 +3819,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -3684,6 +3836,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -3695,6 +3848,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -3926,6 +4080,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3958,6 +4113,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -3991,6 +4147,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -4040,6 +4197,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -4056,6 +4214,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4067,6 +4226,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -4083,30 +4243,35 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -4123,6 +4288,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4134,6 +4300,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -4143,6 +4310,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -4158,6 +4326,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -4176,6 +4345,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4214,6 +4384,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -4230,6 +4401,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -4241,6 +4413,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -4249,6 +4422,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -4265,6 +4439,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -4276,6 +4451,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -4507,6 +4683,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4539,6 +4716,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -4572,6 +4750,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -4621,6 +4800,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -4637,6 +4817,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4648,6 +4829,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -4664,30 +4846,35 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -4704,6 +4891,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4715,6 +4903,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -4724,6 +4913,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -4739,6 +4929,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -4757,6 +4948,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4795,6 +4987,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -4811,6 +5004,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -4822,6 +5016,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -4830,6 +5025,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -4846,6 +5042,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -4857,6 +5054,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5088,6 +5286,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -5120,6 +5319,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -5153,6 +5353,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -5202,6 +5403,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -5218,6 +5420,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -5229,6 +5432,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -5245,30 +5449,35 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -5285,6 +5494,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -5296,6 +5506,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -5305,6 +5516,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -5320,6 +5532,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -5338,6 +5551,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -5376,16 +5590,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">, z.ZodObject<{
                     choice: z.ZodObject<{
                         type: z.ZodLiteral<"random">;
@@ -5408,16 +5625,19 @@ export declare const postBackground: z.ZodObject<{
                             value: z.ZodString;
                             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                             availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                         }, "strip", z.ZodTypeAny, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -5434,6 +5654,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -5450,6 +5671,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -5468,6 +5690,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -5486,6 +5709,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 }>, z.ZodObject<{
@@ -5497,16 +5721,19 @@ export declare const postBackground: z.ZodObject<{
                             value: z.ZodString;
                             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                             availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                         }, "strip", z.ZodTypeAny, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }>, "many">;
                         isRepeatable: z.ZodOptional<z.ZodBoolean>;
                     }, "strip", z.ZodTypeAny, {
@@ -5517,6 +5744,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }, {
@@ -5527,6 +5755,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }>;
@@ -5539,6 +5768,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5551,6 +5781,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5562,6 +5793,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5578,6 +5810,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5589,6 +5822,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5597,6 +5831,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5613,6 +5848,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5624,6 +5860,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5638,6 +5875,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5654,6 +5892,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5665,6 +5904,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5673,6 +5913,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5689,6 +5930,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5700,6 +5942,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5719,6 +5962,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5735,6 +5979,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5746,6 +5991,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5754,6 +6000,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5770,6 +6017,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5781,6 +6029,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5800,6 +6049,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5816,6 +6066,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5827,6 +6078,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -5835,6 +6087,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -5851,6 +6104,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -5862,6 +6116,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -6929,16 +7184,19 @@ export declare const postBackground: z.ZodObject<{
                                 value: z.ZodString;
                                 type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                                 availableAt: z.ZodOptional<z.ZodNumber>;
+                                availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                             }, "strip", z.ZodTypeAny, {
                                 value: string;
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }, {
                                 value: string;
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }>, "many">>;
                         }, "strip", z.ZodTypeAny, {
                             type: "random";
@@ -6955,6 +7213,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         }, {
                             type: "random";
@@ -6971,6 +7230,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         }>;
                     }, "strip", z.ZodTypeAny, {
@@ -6989,6 +7249,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     }, {
@@ -7007,6 +7268,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     }>]>;
@@ -7081,6 +7343,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7114,6 +7377,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7164,6 +7428,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7197,6 +7462,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7258,6 +7524,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7291,6 +7558,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7352,6 +7620,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7385,6 +7654,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7449,6 +7719,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7482,6 +7753,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7553,6 +7825,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7586,6 +7859,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -7649,16 +7923,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -7675,6 +7952,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -7691,6 +7969,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -7709,6 +7988,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -7727,6 +8007,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>]>, "many">>;
@@ -7737,16 +8018,19 @@ export declare const postBackground: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -7769,16 +8053,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -7795,6 +8082,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -7811,6 +8099,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -7829,6 +8118,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -7847,6 +8137,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -7858,16 +8149,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -7878,6 +8172,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -7888,6 +8183,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -7900,6 +8196,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -7912,6 +8209,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -7938,80 +8236,95 @@ export declare const postBackground: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         skills: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -8034,16 +8347,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -8060,6 +8376,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -8076,6 +8393,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -8094,6 +8412,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -8112,6 +8431,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -8123,16 +8443,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -8143,6 +8466,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -8153,6 +8477,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -8165,6 +8490,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8177,6 +8503,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8186,16 +8513,19 @@ export declare const postBackground: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         abilityScoresLimit: z.ZodOptional<z.ZodNumber>;
         speeds: z.ZodOptional<z.ZodObject<{
@@ -8225,16 +8555,19 @@ export declare const postBackground: z.ZodObject<{
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }>, "many">>;
         alignmentModifiers: z.ZodOptional<z.ZodTuple<[z.ZodTuple<[z.ZodNumber, z.ZodNumber, z.ZodNumber], null>, z.ZodTuple<[z.ZodNumber, z.ZodNumber, z.ZodNumber], null>], null>>;
         armor: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
@@ -8289,16 +8622,19 @@ export declare const postBackground: z.ZodObject<{
                     value: z.ZodString;
                     type: z.ZodOptional<z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -8315,6 +8651,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -8331,6 +8668,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -8349,6 +8687,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }, {
@@ -8367,6 +8706,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         }>]>>;
@@ -8392,6 +8732,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -8408,6 +8749,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -8419,6 +8761,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -8427,6 +8770,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -8443,6 +8787,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -8454,6 +8799,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -8685,6 +9031,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -8717,6 +9064,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -8750,6 +9098,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -8799,6 +9148,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -8815,6 +9165,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -8826,6 +9177,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8842,30 +9194,35 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -8882,6 +9239,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -8893,6 +9251,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8902,6 +9261,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -8917,6 +9277,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -8935,6 +9296,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -8966,6 +9328,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -8982,6 +9345,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -8993,6 +9357,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -9001,6 +9366,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -9017,6 +9383,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -9028,6 +9395,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -9259,6 +9627,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9291,6 +9660,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -9324,6 +9694,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -9373,6 +9744,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -9389,6 +9761,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9400,6 +9773,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -9416,30 +9790,35 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -9456,6 +9835,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9467,6 +9847,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -9476,6 +9857,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -9491,6 +9873,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -9509,6 +9892,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9545,6 +9929,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -9561,6 +9946,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -9572,6 +9958,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -9580,6 +9967,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -9596,6 +9984,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -9607,6 +9996,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -9838,6 +10228,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9870,6 +10261,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -9903,6 +10295,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -9952,6 +10345,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -9968,6 +10362,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9979,6 +10374,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -9995,30 +10391,35 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -10035,6 +10436,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10046,6 +10448,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -10055,6 +10458,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -10070,6 +10474,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -10088,6 +10493,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10124,6 +10530,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -10140,6 +10547,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -10151,6 +10559,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -10159,6 +10568,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -10175,6 +10585,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -10186,6 +10597,7 @@ export declare const postBackground: z.ZodObject<{
                             id?: number | undefined;
                             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                             availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -10417,6 +10829,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10449,6 +10862,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -10482,6 +10896,7 @@ export declare const postBackground: z.ZodObject<{
                                 id?: number | undefined;
                                 type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                                 availableAt?: number | undefined;
+                                availableUnit?: "level" | "cr" | undefined;
                             }[] | undefined;
                         };
                     } | {
@@ -10531,6 +10946,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -10547,6 +10963,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10558,6 +10975,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -10574,30 +10992,35 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         immunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         vulnerabilities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         conditionImmunities?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         skills?: {
             value: string;
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -10614,6 +11037,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10625,6 +11049,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -10634,6 +11059,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         abilityScoresLimit?: number | undefined;
         speeds?: {
@@ -10649,6 +11075,7 @@ export declare const postBackground: z.ZodObject<{
             id?: number | undefined;
             type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
             availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
         }[] | undefined;
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         armor?: {
@@ -10667,6 +11094,7 @@ export declare const postBackground: z.ZodObject<{
                     id?: number | undefined;
                     type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
                     availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
             };
         } | {

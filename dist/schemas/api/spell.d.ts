@@ -84,8 +84,8 @@ export declare const getSpellResponse: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -96,8 +96,8 @@ export declare const getSpellResponse: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -110,8 +110,8 @@ export declare const getSpellResponse: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -126,8 +126,8 @@ export declare const getSpellResponse: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -157,8 +157,8 @@ export declare const postSpell: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -169,8 +169,8 @@ export declare const postSpell: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -183,8 +183,8 @@ export declare const postSpell: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -199,8 +199,8 @@ export declare const postSpell: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -229,8 +229,8 @@ export declare const putSpell: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -241,8 +241,8 @@ export declare const putSpell: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -255,8 +255,8 @@ export declare const putSpell: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
@@ -270,8 +270,8 @@ export declare const putSpell: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        source: string;
         level: number;
+        source: string;
         description: string;
         ritual: boolean;
         school: string;
