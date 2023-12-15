@@ -68,6 +68,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -683,6 +684,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1285,6 +1287,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1886,6 +1889,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -2481,6 +2485,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3082,6 +3087,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3729,6 +3735,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4725,6 +4732,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5340,6 +5348,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5942,6 +5951,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -6543,6 +6553,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7138,6 +7149,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7739,6 +7751,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -8386,6 +8399,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9385,6 +9399,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10000,6 +10015,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10602,6 +10618,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11203,6 +11220,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11798,6 +11816,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -12399,6 +12418,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -13046,6 +13066,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14042,6 +14063,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14657,6 +14679,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15259,6 +15282,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15860,6 +15884,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -16455,6 +16480,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17056,6 +17082,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17703,6 +17730,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;

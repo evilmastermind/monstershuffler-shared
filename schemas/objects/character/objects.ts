@@ -20,6 +20,7 @@ import {
   resistenceImmunitiesStats,
   sensesStats,
   languagesStats,
+  legendaryActionsPerTurnStats,
   actionsStats,
   bonusesStats,
   spellsStats,
@@ -62,6 +63,7 @@ export const userObject = z.object({
   ...actionsStats,
   ...bonusesStats,
   ...spellsStats,
+  ...legendaryActionsPerTurnStats,
   ...publicationStats,
   ...roleplayStats,
 });
@@ -89,6 +91,7 @@ export const raceObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...publicationStats,
   })
   .strict();
@@ -111,6 +114,7 @@ export const racevariantObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...generatorStats,
     ...publicationStats,
   })
@@ -132,6 +136,7 @@ export const classObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...publicationStats,
   })
   .strict();
@@ -151,6 +156,7 @@ export const classvariantObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...generatorStats,
     ...publicationStats,
   })
@@ -178,6 +184,7 @@ export const templateObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...publicationStats,
   })
   .strict();
@@ -202,6 +209,7 @@ export const backgroundObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
+    ...legendaryActionsPerTurnStats,
     ...generatorStats,
   })
   .strict();
@@ -211,7 +219,8 @@ const CRCalculationObject = z
   .optional();
 const proficiencyCalculationObject = z.enum(['level', 'CR']).optional();
 
-// TODO: characterObject is too big that, if I don't define the type myself, TypeScript will raise an error.
+// TODO: yomama and characterObject are so fat that, 
+// if I don't define their type myself, TypeScript is gonna raise an error.
 // See: https://github.com/colinhacks/zod/issues/1040
 export type CharacterObject = z.ZodObject<{
   id: z.ZodOptional<z.ZodNumber>;

@@ -34,6 +34,7 @@ exports.userObject = zod_1.z.object({
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.publicationStats,
     ...other_1.roleplayStats,
 });
@@ -60,6 +61,7 @@ exports.raceObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.publicationStats,
 })
     .strict();
@@ -81,6 +83,7 @@ exports.racevariantObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.generatorStats,
     ...other_1.publicationStats,
 })
@@ -101,6 +104,7 @@ exports.classObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.publicationStats,
 })
     .strict();
@@ -119,6 +123,7 @@ exports.classvariantObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.generatorStats,
     ...other_1.publicationStats,
 })
@@ -145,6 +150,7 @@ exports.templateObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.publicationStats,
 })
     .strict();
@@ -168,6 +174,7 @@ exports.backgroundObject = zod_1.z
     ...other_1.actionsStats,
     ...other_1.bonusesStats,
     ...other_1.spellsStats,
+    ...other_1.legendaryActionsPerTurnStats,
     ...other_1.generatorStats,
 })
     .strict();

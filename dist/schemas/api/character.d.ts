@@ -47,6 +47,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -662,6 +663,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1264,6 +1266,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1865,6 +1868,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -2460,6 +2464,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3061,6 +3066,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3708,6 +3714,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4705,6 +4712,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5320,6 +5328,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5922,6 +5931,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -6523,6 +6533,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7118,6 +7129,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7719,6 +7731,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -8366,6 +8379,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9368,6 +9382,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9983,6 +9998,7 @@ export declare const postCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10585,6 +10601,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11186,6 +11203,7 @@ export declare const postCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11781,6 +11799,7 @@ export declare const postCharacter: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -12382,6 +12401,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -13029,6 +13049,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14027,6 +14048,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14642,6 +14664,7 @@ export declare const postCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15244,6 +15267,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15845,6 +15869,7 @@ export declare const postCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -16440,6 +16465,7 @@ export declare const postCharacter: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17041,6 +17067,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17688,6 +17715,7 @@ export declare const postCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -18691,6 +18719,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -19306,6 +19335,7 @@ export declare const putCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -19908,6 +19938,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -20509,6 +20540,7 @@ export declare const putCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -21104,6 +21136,7 @@ export declare const putCharacter: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -21705,6 +21738,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -22352,6 +22386,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -23350,6 +23385,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -23965,6 +24001,7 @@ export declare const putCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -24567,6 +24604,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -25168,6 +25206,7 @@ export declare const putCharacter: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -25763,6 +25802,7 @@ export declare const putCharacter: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -26364,6 +26404,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -27011,6 +27052,7 @@ export declare const putCharacter: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+                legendaryActionsPerTurn?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
