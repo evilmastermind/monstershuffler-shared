@@ -68,7 +68,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -684,7 +684,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1287,7 +1287,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -1889,7 +1889,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -2485,7 +2485,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3087,7 +3087,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3735,7 +3735,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4453,35 +4453,43 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             level: number;
-            languages: {
-                string: string;
-                values: {
-                    string: string;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                    id?: number | undefined;
-                }[];
-            };
             AC: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             alignment: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -4492,8 +4500,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -4514,111 +4526,199 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             speeds?: {
                 string: string;
-                values: {
-                    walk?: number | undefined;
-                    burrow?: number | undefined;
-                    climb?: number | undefined;
-                    fly?: number | undefined;
-                    hover?: number | undefined;
-                    swim?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             savingThrows?: {
                 string: string;
-                values: {
-                    STR?: number | undefined;
-                    DEX?: number | undefined;
-                    CON?: number | undefined;
-                    INT?: number | undefined;
-                    WIS?: number | undefined;
-                    CHA?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             skills?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             resistances?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             immunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             vulnerabilities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             conditionImmunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             senses?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
+            languages?: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
             traits?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             actions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             bonusActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             reactions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             legendaryActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -4732,7 +4832,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5348,7 +5448,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5951,7 +6051,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -6553,7 +6653,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7149,7 +7249,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -7751,7 +7851,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -8399,7 +8499,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9117,35 +9217,43 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             level: number;
-            languages: {
-                string: string;
-                values: {
-                    string: string;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                    id?: number | undefined;
-                }[];
-            };
             AC: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             alignment: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -9156,8 +9264,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -9178,111 +9290,199 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             speeds?: {
                 string: string;
-                values: {
-                    walk?: number | undefined;
-                    burrow?: number | undefined;
-                    climb?: number | undefined;
-                    fly?: number | undefined;
-                    hover?: number | undefined;
-                    swim?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             savingThrows?: {
                 string: string;
-                values: {
-                    STR?: number | undefined;
-                    DEX?: number | undefined;
-                    CON?: number | undefined;
-                    INT?: number | undefined;
-                    WIS?: number | undefined;
-                    CHA?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             skills?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             resistances?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             immunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             vulnerabilities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             conditionImmunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             senses?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
+            languages?: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
             traits?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             actions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             bonusActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             reactions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             legendaryActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -9399,7 +9599,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10015,7 +10215,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10618,7 +10818,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11220,7 +11420,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11816,7 +12016,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -12418,7 +12618,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -13066,7 +13266,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -13784,35 +13984,43 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             level: number;
-            languages: {
-                string: string;
-                values: {
-                    string: string;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                    id?: number | undefined;
-                }[];
-            };
             AC: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             alignment: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -13823,8 +14031,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -13845,111 +14057,199 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             speeds?: {
                 string: string;
-                values: {
-                    walk?: number | undefined;
-                    burrow?: number | undefined;
-                    climb?: number | undefined;
-                    fly?: number | undefined;
-                    hover?: number | undefined;
-                    swim?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             savingThrows?: {
                 string: string;
-                values: {
-                    STR?: number | undefined;
-                    DEX?: number | undefined;
-                    CON?: number | undefined;
-                    INT?: number | undefined;
-                    WIS?: number | undefined;
-                    CHA?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             skills?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             resistances?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             immunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             vulnerabilities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             conditionImmunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             senses?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
+            languages?: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
             traits?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             actions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             bonusActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             reactions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             legendaryActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -14063,7 +14363,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14679,7 +14979,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15282,7 +15582,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15884,7 +16184,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -16480,7 +16780,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
                 enableGenerator?: boolean | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17082,7 +17382,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17730,7 +18030,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-                legendaryActionsPerTurn?: number | undefined;
+                legendaryActionsPerRound?: number | undefined;
                 spells?: {
                     hasSlots?: boolean | undefined;
                     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -18448,35 +18748,43 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             level: number;
-            languages: {
-                string: string;
-                values: {
-                    string: string;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
-                    id?: number | undefined;
-                }[];
-            };
             AC: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             alignment: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -18487,8 +18795,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             abilityScores: {
@@ -18509,111 +18821,199 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             };
             meta: string;
             characterHook?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number: number;
-                array?: string[] | undefined;
+                number?: number | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             speeds?: {
                 string: string;
-                values: {
-                    walk?: number | undefined;
-                    burrow?: number | undefined;
-                    climb?: number | undefined;
-                    fly?: number | undefined;
-                    hover?: number | undefined;
-                    swim?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             savingThrows?: {
                 string: string;
-                values: {
-                    STR?: number | undefined;
-                    DEX?: number | undefined;
-                    CON?: number | undefined;
-                    INT?: number | undefined;
-                    WIS?: number | undefined;
-                    CHA?: number | undefined;
-                };
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             skills?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             resistances?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             immunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             vulnerabilities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             conditionImmunities?: {
                 string: string;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             senses?: {
                 string: string;
-                values: Record<string, number>;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
+            languages?: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
             } | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
             traits?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             actions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             bonusActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             reactions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
             legendaryActions?: {
-                name: string;
-                description: string;
-                tag: string;
-                priority: number;
-            }[] | undefined;
+                string: string;
+                nameString: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                nameArray?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "italicText" | "boldText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            } | undefined;
         } | undefined;
         variables?: {
             STR: number;

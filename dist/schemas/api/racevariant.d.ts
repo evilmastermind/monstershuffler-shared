@@ -44,7 +44,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
-        legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -3193,7 +3193,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3796,7 +3796,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4401,7 +4401,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5007,7 +5007,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5621,7 +5621,7 @@ export declare const postRacevariant: z.ZodObject<{
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
-        legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -8770,7 +8770,7 @@ export declare const postRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9373,7 +9373,7 @@ export declare const postRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9978,7 +9978,7 @@ export declare const postRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10585,7 +10585,7 @@ export declare const postRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11198,7 +11198,7 @@ export declare const putRacevariant: z.ZodObject<{
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
-        legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -14347,7 +14347,7 @@ export declare const putRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -14950,7 +14950,7 @@ export declare const putRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15555,7 +15555,7 @@ export declare const putRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -16160,7 +16160,7 @@ export declare const putRacevariant: z.ZodObject<{
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;

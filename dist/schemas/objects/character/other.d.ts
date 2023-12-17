@@ -47,8 +47,8 @@ export declare const bonusObject: z.ZodObject<{
     value: string;
     name?: string | undefined;
 }>;
-export declare const legendaryActionsPerTurnStats: {
-    legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+export declare const legendaryActionsPerRoundStats: {
+    legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
 };
 export declare const bonusesObject: z.ZodObject<{
     HPBonus: z.ZodOptional<z.ZodObject<{

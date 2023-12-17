@@ -29,8 +29,8 @@ export const bonusObject = z.object({
   value: z.string(),
 });
 
-export const legendaryActionsPerTurnStats = {
-  legendaryActionsPerTurn: z.number().optional(),
+export const legendaryActionsPerRoundStats = {
+  legendaryActionsPerRound: z.number().optional(),
 };
 
 export const bonusesObject = z.object({

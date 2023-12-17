@@ -2,12 +2,29 @@ import { z } from 'zod';
 import { statType } from './choices';
 import { pronounsObject } from './other';
 
-export const statNumberString = z.object({
-  number: z.number(),
-  string: z.string(),
-  array: z.array(z.string()).optional(),
-  id: z.number().optional(),
-});
+/**
+ * About the .statistics object and how it should be constructed:
+ * Parsed stats inside .statistics must follow these rules:
+ * 
+ * - the special words included, which are part of the d&d standard rules 
+ * ( like the stat name, conditions, damage types, etc. ) must be provided 
+ * in a way that can be isolated and translated;
+ * 
+ * - if the stat includes values/words that a) can be rolled with dice b) 
+ * define a limited resource or c) may trigger some changes within this 
+ * stat block or another creature's, those values must be isolated so that 
+ * they can be processed or extracted for additional functionalities
+ * provided by the interface (ex: dice roll, resource tracking, applying
+ * conditions or templates, etc.)
+ * 
+ * - it must always be possible to write the stats (in English) in their
+ * final form by using the words and values provided within the 
+ * object and without relying on other resources (like other parsers,
+ * tables, etc) so that partners and third-party software can use the 
+ * .statistics object to draw the stat block. When this is not
+ * possible, provide an alternative string that can be used instead.
+ * 
+ */
 
 export const abilitiesObject = z.object({
   STR: z.number(),
@@ -18,11 +35,38 @@ export const abilitiesObject = z.object({
   CHA: z.number(),
 });
 
+export const additionalStringTypes = z.enum([
+  'text', 'italicText', 'boldText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign'
+]);
+
 export const descriptionPartObject = z.object({
   string: z.string(),
-  type: statType.optional(),
+  type: z.union([statType, additionalStringTypes]).optional(),
   id: z.number().optional(),
 });
+
+export const statStringNumber = z.object({
+  number: z.number().optional(),
+  string: z.string(),
+  array: z.array(descriptionPartObject).optional(),
+  id: z.number().optional(),
+});
+
+export const statString = z.object({
+  string: z.string(),
+  array: z.array(descriptionPartObject).optional(),
+  id: z.number().optional(),
+});
+
+export const statStringWithName = z.object({
+  string: z.string(),
+  array: z.array(descriptionPartObject).optional(),
+  nameString: z.string(),
+  nameArray: z.array(descriptionPartObject).optional(),
+  id: z.number().optional(),
+});
+
+
 
 export const parsedActionObject = z.object({
   name: z.string(),
@@ -32,7 +76,7 @@ export const parsedActionObject = z.object({
 });
 
 export const statisticsObject = z.object({
-  alignment: statNumberString,
+  alignment: statStringNumber,
   pronouns: pronounsObject,
   prename: z.string(),
   name: z.string(),
@@ -40,73 +84,36 @@ export const statisticsObject = z.object({
   fullName: z.string(),
   characterHook: z.array(descriptionPartObject).optional(),
   level: z.number(),
-  CR: statNumberString,
+  CR: statStringNumber,
   XP: z.string(),
-  AC: statNumberString,
+  AC: statStringNumber,
   proficiency: z.number(),
-  size: statNumberString,
+  size: statStringNumber,
   isSwarm: z.boolean().optional(),
-  sizeSingleEntityOfSwarm: statNumberString.optional(),
+  sizeSingleEntityOfSwarm: statStringNumber.optional(),
   abilityScores: abilitiesObject,
   abilityModifiers: abilitiesObject,
-  HP: statNumberString,
-  type: statNumberString,
-  subtypes: z.array(descriptionPartObject).optional(),
+  HP: statStringNumber,
+  type: statStringNumber,
+  subtypes: statString.optional(),
   meta: z.string(),
-  speeds: z
-    .object({
-      values: z.object({
-        walk: z.number().optional(),
-        burrow: z.number().optional(),
-        climb: z.number().optional(),
-        fly: z.number().optional(),
-        hover: z.number().optional(),
-        swim: z.number().optional(),
-      }),
-      string: z.string(),
-    })
-    .optional(),
-  savingThrows: z
-    .object({
-      values: z.object({
-        STR: z.number().optional(),
-        DEX: z.number().optional(),
-        CON: z.number().optional(),
-        INT: z.number().optional(),
-        WIS: z.number().optional(),
-        CHA: z.number().optional(),
-      }),
-      string: z.string(),
-    })
-    .optional(),
-  skills: z
-    .object({
-      values: z.record(z.number()),
-      string: z.string(),
-    })
-    .optional(),
-  resistances: z.array(descriptionPartObject).optional(),
-  immunities: z.array(descriptionPartObject).optional(),
-  vulnerabilities: z.array(descriptionPartObject).optional(),
-  conditionImmunities: z.array(descriptionPartObject).optional(),
-  senses: z
-    .object({
-      values: z.record(z.number()),
-      string: z.string(),
-    })
-    .optional(),
-  languages: z.object({
-    values: z.array(descriptionPartObject),
-    string: z.string(),
-  }),
+  speeds: statString.optional(),
+  savingThrows: statString.optional(),
+  skills: statString.optional(),
+  resistances:  statString.optional(),
+  immunities:  statString.optional(),
+  vulnerabilities:  statString.optional(),
+  conditionImmunities:  statString.optional(),
+  senses: statString.optional(),
+  languages:  statString.optional(),
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
-  traits: z.array(parsedActionObject).optional(),
-  actions: z.array(parsedActionObject).optional(),
-  bonusActions: z.array(parsedActionObject).optional(),
-  reactions: z.array(parsedActionObject).optional(),
-  legendaryActions: z.array(parsedActionObject).optional(),
+  traits: statStringWithName.optional(),
+  actions: statStringWithName.optional(),
+  bonusActions: statStringWithName.optional(),
+  reactions: statStringWithName.optional(),
+  legendaryActions: statStringWithName.optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

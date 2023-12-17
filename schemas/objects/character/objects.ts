@@ -20,7 +20,7 @@ import {
   resistenceImmunitiesStats,
   sensesStats,
   languagesStats,
-  legendaryActionsPerTurnStats,
+  legendaryActionsPerRoundStats,
   actionsStats,
   bonusesStats,
   spellsStats,
@@ -63,7 +63,7 @@ export const userObject = z.object({
   ...actionsStats,
   ...bonusesStats,
   ...spellsStats,
-  ...legendaryActionsPerTurnStats,
+  ...legendaryActionsPerRoundStats,
   ...publicationStats,
   ...roleplayStats,
 });
@@ -91,7 +91,7 @@ export const raceObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...publicationStats,
   })
   .strict();
@@ -114,7 +114,7 @@ export const racevariantObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...generatorStats,
     ...publicationStats,
   })
@@ -136,7 +136,7 @@ export const classObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...publicationStats,
   })
   .strict();
@@ -156,7 +156,7 @@ export const classvariantObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...generatorStats,
     ...publicationStats,
   })
@@ -184,7 +184,7 @@ export const templateObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...publicationStats,
   })
   .strict();
@@ -209,7 +209,7 @@ export const backgroundObject = z
     ...actionsStats,
     ...bonusesStats,
     ...spellsStats,
-    ...legendaryActionsPerTurnStats,
+    ...legendaryActionsPerRoundStats,
     ...generatorStats,
   })
   .strict();

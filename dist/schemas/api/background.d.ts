@@ -29,7 +29,7 @@ export declare const getBackgroundListResponse: z.ZodObject<{
 export declare const getBackgroundResponse: z.ZodObject<{
     object: z.ZodObject<{
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
-        legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -3175,7 +3175,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -3772,7 +3772,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4376,7 +4376,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4980,7 +4980,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5581,7 +5581,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
 export declare const postBackground: z.ZodObject<{
     object: z.ZodObject<{
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
-        legendaryActionsPerTurn: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -8727,7 +8727,7 @@ export declare const postBackground: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9324,7 +9324,7 @@ export declare const postBackground: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9926,7 +9926,7 @@ export declare const postBackground: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10528,7 +10528,7 @@ export declare const postBackground: z.ZodObject<{
         workplace: string;
         compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
         enableGenerator?: boolean | undefined;
-        legendaryActionsPerTurn?: number | undefined;
+        legendaryActionsPerRound?: number | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
