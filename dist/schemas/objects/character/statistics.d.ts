@@ -855,7 +855,7 @@ export declare const statisticsObject: z.ZodObject<{
     isBlind: z.ZodOptional<z.ZodBoolean>;
     canSpeak: z.ZodOptional<z.ZodBoolean>;
     telepathy: z.ZodOptional<z.ZodNumber>;
-    traits: z.ZodOptional<z.ZodObject<{
+    traits: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -913,8 +913,8 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    }>>;
-    actions: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    actions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -972,8 +972,8 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    }>>;
-    bonusActions: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    bonusActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -1031,8 +1031,8 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    }>>;
-    reactions: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    reactions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -1090,8 +1090,8 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    }>>;
-    legendaryActions: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    legendaryActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -1149,7 +1149,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    }>>;
+    }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -1359,7 +1359,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     actions?: {
         string: string;
         nameString: string;
@@ -1374,7 +1374,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     bonusActions?: {
         string: string;
         nameString: string;
@@ -1389,7 +1389,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     reactions?: {
         string: string;
         nameString: string;
@@ -1404,7 +1404,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     legendaryActions?: {
         string: string;
         nameString: string;
@@ -1419,7 +1419,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
 }, {
     name: string;
     type: {
@@ -1629,7 +1629,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     actions?: {
         string: string;
         nameString: string;
@@ -1644,7 +1644,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     bonusActions?: {
         string: string;
         nameString: string;
@@ -1659,7 +1659,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     reactions?: {
         string: string;
         nameString: string;
@@ -1674,7 +1674,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     legendaryActions?: {
         string: string;
         nameString: string;
@@ -1689,7 +1689,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

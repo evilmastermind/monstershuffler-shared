@@ -109,11 +109,11 @@ export const statisticsObject = z.object({
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
-  traits: statStringWithName.optional(),
-  actions: statStringWithName.optional(),
-  bonusActions: statStringWithName.optional(),
-  reactions: statStringWithName.optional(),
-  legendaryActions: statStringWithName.optional(),
+  traits: z.array(statStringWithName).optional(),
+  actions: z.array(statStringWithName).optional(),
+  bonusActions: z.array(statStringWithName).optional(),
+  reactions: z.array(statStringWithName).optional(),
+  legendaryActions: z.array(statStringWithName).optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

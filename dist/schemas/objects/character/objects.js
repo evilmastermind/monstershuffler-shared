@@ -182,6 +182,7 @@ const CRCalculationObject = zod_1.z
     .union([other_1.CRTwoPointsObject, other_1.CRNPCObject, other_1.CRAutomaticObject])
     .optional();
 const proficiencyCalculationObject = zod_1.z.enum(['level', 'CR']).optional();
+const conditionsObject = zod_1.z.array(exports.userObject);
 exports.characterObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
@@ -198,6 +199,7 @@ exports.characterObject = zod_1.z
         background: exports.backgroundObject.optional(),
         template: exports.templateObject.optional(),
         user: exports.userObject.optional(),
+        conditions: conditionsObject.optional(),
         ...other_1.abilityScoresStats,
         ...other_1.alignmentModifiersStats,
         ...alignment_1.alignmentStats,

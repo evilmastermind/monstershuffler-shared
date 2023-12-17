@@ -219,6 +219,8 @@ const CRCalculationObject = z
   .optional();
 const proficiencyCalculationObject = z.enum(['level', 'CR']).optional();
 
+const conditionsObject = z.array(userObject);
+
 // TODO: yomama and characterObject are so fat that, 
 // if I don't define their type myself, TypeScript is gonna raise an error.
 // See: https://github.com/colinhacks/zod/issues/1040
@@ -237,6 +239,7 @@ export type CharacterObject = z.ZodObject<{
     background: z.ZodOptional<typeof backgroundObject>;
     template: z.ZodOptional<typeof templateObject>;
     user: z.ZodOptional<typeof userObject>;
+    conditions: z.ZodOptional<typeof conditionsObject>;
     abilityScores: typeof abilityScoresStats.abilityScores;
     alignmentModifiers: typeof alignmentModifiersStats.alignmentModifiers;
     alignmentEthical: typeof alignmentStats.alignmentEthical;
@@ -274,6 +277,7 @@ export const characterObject: CharacterObject = z
         background: backgroundObject.optional(),
         template: templateObject.optional(),
         user: userObject.optional(),
+        conditions: conditionsObject.optional(),
         ...abilityScoresStats,
         ...alignmentModifiersStats,
         ...alignmentStats,
