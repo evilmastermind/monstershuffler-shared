@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.parsedActionObject = exports.statStringWithName = exports.statString = exports.statStringNumber = exports.descriptionPartObject = exports.additionalStringTypes = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.parsedActionObject = exports.statStringWithName = exports.statString = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -36,11 +36,13 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'italicText', 'boldText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign'
 ]);
+exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
     type: zod_1.z.union([choices_1.statType, exports.additionalStringTypes]).optional(),
+    format: zod_1.z.array(exports.format).optional(),
     id: zod_1.z.number().optional(),
 });
 exports.statStringNumber = zod_1.z.object({
