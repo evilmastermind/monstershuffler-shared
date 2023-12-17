@@ -36,7 +36,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -49,11 +49,19 @@ export const descriptionPartObject = z.object({
 });
 
 export const statStringNumber = z.object({
-  number: z.number().optional(),
+  number: z.number(),
   string: z.string(),
   array: z.array(descriptionPartObject).optional(),
   id: z.number().optional(),
 });
+
+export const statStringNumberArray = z.object({
+  number: z.number(),
+  string: z.string(),
+  array: z.array(descriptionPartObject),
+  id: z.number().optional(),
+});
+
 
 export const statString = z.object({
   string: z.string(),
@@ -61,11 +69,17 @@ export const statString = z.object({
   id: z.number().optional(),
 });
 
-export const statStringWithName = z.object({
+export const statStringArray = z.object({
   string: z.string(),
   array: z.array(descriptionPartObject).optional(),
+  id: z.number().optional(),
+});
+
+export const statStringWithName = z.object({
+  string: z.string(),
+  array: z.array(descriptionPartObject),
   nameString: z.string(),
-  nameArray: z.array(descriptionPartObject).optional(),
+  nameArray: z.array(descriptionPartObject),
   id: z.number().optional(),
 });
 
@@ -79,7 +93,7 @@ export const parsedActionObject = z.object({
 });
 
 export const statisticsObject = z.object({
-  alignment: statStringNumber,
+  alignment: statStringNumberArray,
   pronouns: pronounsObject,
   prename: z.string(),
   name: z.string(),
@@ -89,7 +103,7 @@ export const statisticsObject = z.object({
   level: z.number(),
   CR: statStringNumber,
   XP: z.string(),
-  AC: statStringNumber,
+  AC: statStringNumberArray,
   proficiency: z.number(),
   size: statStringNumber,
   isSwarm: z.boolean().optional(),
@@ -98,17 +112,17 @@ export const statisticsObject = z.object({
   abilityModifiers: abilitiesObject,
   HP: statStringNumber,
   type: statStringNumber,
-  subtypes: statString.optional(),
-  meta: z.string(),
-  speeds: statString.optional(),
-  savingThrows: statString.optional(),
-  skills: statString.optional(),
-  resistances:  statString.optional(),
-  immunities:  statString.optional(),
-  vulnerabilities:  statString.optional(),
-  conditionImmunities:  statString.optional(),
-  senses: statString.optional(),
-  languages:  statString.optional(),
+  subtypes: statStringArray.optional(),
+  meta: statStringArray,
+  speeds: statStringArray.optional(),
+  savingThrows: statStringArray.optional(),
+  skills: statStringArray.optional(),
+  resistances:  statStringArray.optional(),
+  immunities:  statStringArray.optional(),
+  vulnerabilities:  statStringArray.optional(),
+  conditionImmunities:  statStringArray.optional(),
+  senses: statStringArray.optional(),
+  languages:  statStringArray.optional(),
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),

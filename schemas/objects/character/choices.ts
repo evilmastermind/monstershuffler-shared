@@ -17,6 +17,9 @@ export const statType = z.enum([
   'immunity',
   'vulnerability',
   'conditionImmunity',
+  'armor',
+  'weapon',
+  'item'
 ]);
 
 // object schemas

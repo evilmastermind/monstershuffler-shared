@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.parsedActionObject = exports.statStringWithName = exports.statString = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.parsedActionObject = exports.statStringWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -36,7 +36,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.descriptionPartObject = zod_1.z.object({
@@ -46,9 +46,15 @@ exports.descriptionPartObject = zod_1.z.object({
     id: zod_1.z.number().optional(),
 });
 exports.statStringNumber = zod_1.z.object({
-    number: zod_1.z.number().optional(),
+    number: zod_1.z.number(),
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject).optional(),
+    id: zod_1.z.number().optional(),
+});
+exports.statStringNumberArray = zod_1.z.object({
+    number: zod_1.z.number(),
+    string: zod_1.z.string(),
+    array: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
 });
 exports.statString = zod_1.z.object({
@@ -56,11 +62,16 @@ exports.statString = zod_1.z.object({
     array: zod_1.z.array(exports.descriptionPartObject).optional(),
     id: zod_1.z.number().optional(),
 });
-exports.statStringWithName = zod_1.z.object({
+exports.statStringArray = zod_1.z.object({
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject).optional(),
+    id: zod_1.z.number().optional(),
+});
+exports.statStringWithName = zod_1.z.object({
+    string: zod_1.z.string(),
+    array: zod_1.z.array(exports.descriptionPartObject),
     nameString: zod_1.z.string(),
-    nameArray: zod_1.z.array(exports.descriptionPartObject).optional(),
+    nameArray: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
 });
 exports.parsedActionObject = zod_1.z.object({
@@ -70,7 +81,7 @@ exports.parsedActionObject = zod_1.z.object({
     description: zod_1.z.string(),
 });
 exports.statisticsObject = zod_1.z.object({
-    alignment: exports.statStringNumber,
+    alignment: exports.statStringNumberArray,
     pronouns: other_1.pronounsObject,
     prename: zod_1.z.string(),
     name: zod_1.z.string(),
@@ -80,7 +91,7 @@ exports.statisticsObject = zod_1.z.object({
     level: zod_1.z.number(),
     CR: exports.statStringNumber,
     XP: zod_1.z.string(),
-    AC: exports.statStringNumber,
+    AC: exports.statStringNumberArray,
     proficiency: zod_1.z.number(),
     size: exports.statStringNumber,
     isSwarm: zod_1.z.boolean().optional(),
@@ -89,17 +100,17 @@ exports.statisticsObject = zod_1.z.object({
     abilityModifiers: exports.abilitiesObject,
     HP: exports.statStringNumber,
     type: exports.statStringNumber,
-    subtypes: exports.statString.optional(),
-    meta: zod_1.z.string(),
-    speeds: exports.statString.optional(),
-    savingThrows: exports.statString.optional(),
-    skills: exports.statString.optional(),
-    resistances: exports.statString.optional(),
-    immunities: exports.statString.optional(),
-    vulnerabilities: exports.statString.optional(),
-    conditionImmunities: exports.statString.optional(),
-    senses: exports.statString.optional(),
-    languages: exports.statString.optional(),
+    subtypes: exports.statStringArray.optional(),
+    meta: exports.statStringArray,
+    speeds: exports.statStringArray.optional(),
+    savingThrows: exports.statStringArray.optional(),
+    skills: exports.statStringArray.optional(),
+    resistances: exports.statStringArray.optional(),
+    immunities: exports.statStringArray.optional(),
+    vulnerabilities: exports.statStringArray.optional(),
+    conditionImmunities: exports.statStringArray.optional(),
+    senses: exports.statStringArray.optional(),
+    languages: exports.statStringArray.optional(),
     isBlind: zod_1.z.boolean().optional(),
     canSpeak: zod_1.z.boolean().optional(),
     telepathy: zod_1.z.number().optional(),

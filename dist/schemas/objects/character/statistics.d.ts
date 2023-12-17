@@ -44,80 +44,121 @@ export declare const abilitiesObject: z.ZodObject<{
     WIS: number;
     CHA: number;
 }>;
-export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>;
+export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>;
 export declare const format: z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>;
 export declare const descriptionPartObject: z.ZodObject<{
     string: z.ZodString;
-    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
     format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     string: string;
-    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
     id?: number | undefined;
 }, {
     string: string;
-    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
     id?: number | undefined;
 }>;
 export declare const statStringNumber: z.ZodObject<{
-    number: z.ZodOptional<z.ZodNumber>;
+    number: z.ZodNumber;
     string: z.ZodString;
     array: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }>, "many">>;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     string: string;
-    number?: number | undefined;
+    number: number;
     array?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
     id?: number | undefined;
 }, {
     string: string;
-    number?: number | undefined;
+    number: number;
     array?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
+    id?: number | undefined;
+}>;
+export declare const statStringNumberArray: z.ZodObject<{
+    number: z.ZodNumber;
+    string: z.ZodString;
+    array: z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
+        format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }>, "many">;
+    id: z.ZodOptional<z.ZodNumber>;
+}, "strip", z.ZodTypeAny, {
+    string: string;
+    number: number;
+    array: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[];
+    id?: number | undefined;
+}, {
+    string: string;
+    number: number;
+    array: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[];
     id?: number | undefined;
 }>;
 export declare const statString: z.ZodObject<{
     string: z.ZodString;
     array: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }>, "many">>;
@@ -126,7 +167,7 @@ export declare const statString: z.ZodObject<{
     string: string;
     array?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
@@ -135,7 +176,45 @@ export declare const statString: z.ZodObject<{
     string: string;
     array?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    id?: number | undefined;
+}>;
+export declare const statStringArray: z.ZodObject<{
+    string: z.ZodString;
+    array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        string: z.ZodString;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
+        format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }>, "many">>;
+    id: z.ZodOptional<z.ZodNumber>;
+}, "strip", z.ZodTypeAny, {
+    string: string;
+    array?: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[] | undefined;
+    id?: number | undefined;
+}, {
+    string: string;
+    array?: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
@@ -143,71 +222,71 @@ export declare const statString: z.ZodObject<{
 }>;
 export declare const statStringWithName: z.ZodObject<{
     string: z.ZodString;
-    array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    array: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
-    }>, "many">>;
+    }>, "many">;
     nameString: z.ZodString;
-    nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    nameArray: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
-    }>, "many">>;
+    }>, "many">;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     string: string;
+    array: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[];
     nameString: string;
-    array?: {
+    nameArray: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
-    }[] | undefined;
-    nameArray?: {
-        string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-        id?: number | undefined;
-    }[] | undefined;
+    }[];
     id?: number | undefined;
 }, {
     string: string;
+    array: {
+        string: string;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+        id?: number | undefined;
+    }[];
     nameString: string;
-    array?: {
+    nameArray: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
-    }[] | undefined;
-    nameArray?: {
-        string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-        format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-        id?: number | undefined;
-    }[] | undefined;
+    }[];
     id?: number | undefined;
 }>;
 export declare const parsedActionObject: z.ZodObject<{
@@ -228,44 +307,44 @@ export declare const parsedActionObject: z.ZodObject<{
 }>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>;
     pronouns: z.ZodEnum<["male", "female", "neutral", "thing"]>;
@@ -275,57 +354,57 @@ export declare const statisticsObject: z.ZodObject<{
     fullName: z.ZodString;
     characterHook: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }>, "many">>;
     level: z.ZodNumber;
     CR: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -333,83 +412,83 @@ export declare const statisticsObject: z.ZodObject<{
     }>;
     XP: z.ZodString;
     AC: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>;
     proficiency: z.ZodNumber;
     size: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -417,41 +496,41 @@ export declare const statisticsObject: z.ZodObject<{
     }>;
     isSwarm: z.ZodOptional<z.ZodBoolean>;
     sizeSingleEntityOfSwarm: z.ZodOptional<z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -502,82 +581,82 @@ export declare const statisticsObject: z.ZodObject<{
         CHA: number;
     }>;
     HP: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }>;
     type: z.ZodObject<{
-        number: z.ZodOptional<z.ZodNumber>;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }, {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -587,17 +666,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -606,7 +685,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -615,28 +694,27 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     }>>;
-    meta: z.ZodString;
-    speeds: z.ZodOptional<z.ZodObject<{
+    meta: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -645,7 +723,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -654,7 +732,45 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[] | undefined;
+        id?: number | undefined;
+    }>;
+    speeds: z.ZodOptional<z.ZodObject<{
+        string: z.ZodString;
+        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }, {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }>, "many">>;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        array?: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[] | undefined;
+        id?: number | undefined;
+    }, {
+        string: string;
+        array?: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -664,17 +780,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -683,7 +799,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -692,7 +808,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -702,17 +818,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -721,7 +837,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -730,7 +846,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -740,17 +856,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -759,7 +875,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -768,7 +884,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -778,17 +894,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -797,7 +913,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -806,7 +922,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -816,17 +932,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -835,7 +951,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -844,7 +960,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -854,17 +970,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -873,7 +989,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -882,7 +998,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -892,17 +1008,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -911,7 +1027,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -920,7 +1036,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -930,17 +1046,17 @@ export declare const statisticsObject: z.ZodObject<{
         string: z.ZodString;
         array: z.ZodOptional<z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }>, "many">>;
@@ -949,7 +1065,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -958,7 +1074,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -969,357 +1085,357 @@ export declare const statisticsObject: z.ZodObject<{
     telepathy: z.ZodOptional<z.ZodNumber>;
     traits: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         nameString: z.ZodString;
-        nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>, "many">>;
     actions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         nameString: z.ZodString;
-        nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>, "many">>;
     bonusActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         nameString: z.ZodString;
-        nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>, "many">>;
     reactions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         nameString: z.ZodString;
-        nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>, "many">>;
     legendaryActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
-        array: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         nameString: z.ZodString;
-        nameArray: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["background", "spell", "trait", "race", "class", "template", "type", "subtype", "language", "skill", "savingThrow", "condition", "resistance", "immunity", "vulnerability", "conditionImmunity", "armor", "weapon", "item"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "number", "numberWithSign", "ft"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }, {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }>, "many">>;
+        }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }, {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1328,21 +1444,21 @@ export declare const statisticsObject: z.ZodObject<{
     level: number;
     AC: {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     };
     CR: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1350,13 +1466,13 @@ export declare const statisticsObject: z.ZodObject<{
     };
     alignment: {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     };
     pronouns: "male" | "female" | "neutral" | "thing";
@@ -1367,10 +1483,10 @@ export declare const statisticsObject: z.ZodObject<{
     proficiency: number;
     size: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1394,29 +1510,38 @@ export declare const statisticsObject: z.ZodObject<{
     };
     HP: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     };
-    meta: string;
+    meta: {
+        string: string;
+        array?: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[] | undefined;
+        id?: number | undefined;
+    };
     characterHook?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
     isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1426,7 +1551,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1436,7 +1561,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1446,7 +1571,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1456,7 +1581,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1466,7 +1591,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1476,7 +1601,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1486,7 +1611,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1496,7 +1621,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1506,7 +1631,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1516,7 +1641,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1527,97 +1652,97 @@ export declare const statisticsObject: z.ZodObject<{
     telepathy?: number | undefined;
     traits?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     actions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     bonusActions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     reactions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     legendaryActions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
 }, {
     name: string;
     type: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1626,21 +1751,21 @@ export declare const statisticsObject: z.ZodObject<{
     level: number;
     AC: {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     };
     CR: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1648,13 +1773,13 @@ export declare const statisticsObject: z.ZodObject<{
     };
     alignment: {
         string: string;
-        number?: number | undefined;
-        array?: {
+        number: number;
+        array: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     };
     pronouns: "male" | "female" | "neutral" | "thing";
@@ -1665,10 +1790,10 @@ export declare const statisticsObject: z.ZodObject<{
     proficiency: number;
     size: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1692,29 +1817,38 @@ export declare const statisticsObject: z.ZodObject<{
     };
     HP: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
         id?: number | undefined;
     };
-    meta: string;
+    meta: {
+        string: string;
+        array?: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[] | undefined;
+        id?: number | undefined;
+    };
     characterHook?: {
         string: string;
-        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+        type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
         format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
         id?: number | undefined;
     }[] | undefined;
     isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
         string: string;
-        number?: number | undefined;
+        number: number;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1724,7 +1858,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1734,7 +1868,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1744,7 +1878,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1754,7 +1888,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1764,7 +1898,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1774,7 +1908,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1784,7 +1918,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1794,7 +1928,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1804,7 +1938,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1814,7 +1948,7 @@ export declare const statisticsObject: z.ZodObject<{
         string: string;
         array?: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
         }[] | undefined;
@@ -1825,87 +1959,87 @@ export declare const statisticsObject: z.ZodObject<{
     telepathy?: number | undefined;
     traits?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     actions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     bonusActions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     reactions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
     legendaryActions?: {
         string: string;
+        array: {
+            string: string;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+            id?: number | undefined;
+        }[];
         nameString: string;
-        array?: {
+        nameArray: {
             string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
             format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
             id?: number | undefined;
-        }[] | undefined;
-        nameArray?: {
-            string: string;
-            type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-            format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-            id?: number | undefined;
-        }[] | undefined;
+        }[];
         id?: number | undefined;
     }[] | undefined;
 }>;

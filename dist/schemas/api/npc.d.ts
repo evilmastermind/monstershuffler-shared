@@ -78,7 +78,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -95,7 +95,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -107,7 +107,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -116,7 +116,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -133,7 +133,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -145,7 +145,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -377,7 +377,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -410,7 +410,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -444,7 +444,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -494,7 +494,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -511,7 +511,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -523,7 +523,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -540,35 +540,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -585,7 +585,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -597,7 +597,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -607,7 +607,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -635,7 +635,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -657,7 +657,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -694,7 +694,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -711,7 +711,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -723,7 +723,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -732,7 +732,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -749,7 +749,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -761,7 +761,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -993,7 +993,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1026,7 +1026,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -1060,7 +1060,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -1110,7 +1110,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -1127,7 +1127,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1139,7 +1139,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -1156,35 +1156,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -1201,7 +1201,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1213,7 +1213,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -1223,7 +1223,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -1239,7 +1239,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -1257,7 +1257,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1297,7 +1297,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -1314,7 +1314,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -1326,7 +1326,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -1335,7 +1335,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -1352,7 +1352,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -1364,7 +1364,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -1596,7 +1596,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1629,7 +1629,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -1663,7 +1663,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -1713,7 +1713,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -1730,7 +1730,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1742,7 +1742,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -1759,35 +1759,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -1804,7 +1804,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1816,7 +1816,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -1826,7 +1826,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -1841,7 +1841,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -1859,7 +1859,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -1899,7 +1899,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -1916,7 +1916,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -1928,7 +1928,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -1937,7 +1937,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -1954,7 +1954,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -1966,7 +1966,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -2198,7 +2198,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2231,7 +2231,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -2265,7 +2265,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -2315,7 +2315,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -2332,7 +2332,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2344,7 +2344,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -2361,35 +2361,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -2406,7 +2406,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2418,7 +2418,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -2428,7 +2428,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -2443,7 +2443,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -2461,7 +2461,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2495,7 +2495,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -2512,7 +2512,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -2524,7 +2524,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -2533,7 +2533,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -2550,7 +2550,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -2562,7 +2562,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -2794,7 +2794,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2827,7 +2827,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -2861,7 +2861,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -2911,7 +2911,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -2928,7 +2928,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -2940,7 +2940,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -2957,35 +2957,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -3002,7 +3002,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3014,7 +3014,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -3024,7 +3024,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -3040,7 +3040,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -3059,7 +3059,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3097,7 +3097,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -3114,7 +3114,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -3126,7 +3126,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -3135,7 +3135,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -3152,7 +3152,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -3164,7 +3164,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -3396,7 +3396,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3429,7 +3429,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -3463,7 +3463,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -3513,7 +3513,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -3530,7 +3530,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3542,7 +3542,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -3559,35 +3559,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -3604,7 +3604,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3616,7 +3616,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -3626,7 +3626,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -3680,7 +3680,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -3702,7 +3702,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -3745,7 +3745,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -3762,7 +3762,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -3774,7 +3774,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -3783,7 +3783,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -3800,7 +3800,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -3812,7 +3812,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -4044,7 +4044,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4077,7 +4077,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -4111,7 +4111,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -4161,7 +4161,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -4178,7 +4178,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4190,7 +4190,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -4207,35 +4207,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -4252,7 +4252,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4264,7 +4264,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -4321,7 +4321,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4340,7 +4340,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -4385,7 +4385,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -4402,7 +4402,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -4414,7 +4414,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -4423,7 +4423,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -4440,7 +4440,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -4452,7 +4452,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -4684,7 +4684,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4717,7 +4717,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -4751,7 +4751,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -4801,7 +4801,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -4818,7 +4818,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4830,7 +4830,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -4847,35 +4847,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -4892,7 +4892,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4904,7 +4904,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -4961,7 +4961,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -4980,7 +4980,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -5023,7 +5023,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
             }[] | {
@@ -5040,7 +5040,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[] | undefined;
@@ -5052,7 +5052,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[];
@@ -5093,10 +5093,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5105,21 +5105,21 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             level: number;
             AC: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5127,13 +5127,13 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             alignment: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -5144,10 +5144,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5171,29 +5171,38 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
                 id?: number | undefined;
             };
-            meta: string;
+            meta: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            };
             characterHook?: {
                 string: string;
-                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5203,7 +5212,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5213,7 +5222,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5223,7 +5232,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5233,7 +5242,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5243,7 +5252,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5253,7 +5262,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5263,7 +5272,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5273,7 +5282,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5283,7 +5292,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5293,7 +5302,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -5304,87 +5313,87 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -5510,7 +5519,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -5527,7 +5536,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -5539,7 +5548,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -5548,7 +5557,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -5565,7 +5574,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -5577,7 +5586,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -5809,7 +5818,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -5842,7 +5851,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -5876,7 +5885,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -5926,7 +5935,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -5943,7 +5952,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -5955,7 +5964,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -5972,35 +5981,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -6017,7 +6026,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6029,7 +6038,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -6039,7 +6048,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -6067,7 +6076,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6089,7 +6098,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -6126,7 +6135,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -6143,7 +6152,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -6155,7 +6164,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -6164,7 +6173,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -6181,7 +6190,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -6193,7 +6202,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -6425,7 +6434,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6458,7 +6467,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -6492,7 +6501,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -6542,7 +6551,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -6559,7 +6568,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6571,7 +6580,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -6588,35 +6597,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -6633,7 +6642,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6645,7 +6654,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -6655,7 +6664,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -6671,7 +6680,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -6689,7 +6698,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -6729,7 +6738,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -6746,7 +6755,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -6758,7 +6767,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -6767,7 +6776,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -6784,7 +6793,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -6796,7 +6805,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -7028,7 +7037,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7061,7 +7070,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -7095,7 +7104,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -7145,7 +7154,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -7162,7 +7171,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7174,7 +7183,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -7191,35 +7200,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -7236,7 +7245,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7248,7 +7257,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -7258,7 +7267,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -7273,7 +7282,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -7291,7 +7300,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7331,7 +7340,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -7348,7 +7357,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -7360,7 +7369,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -7369,7 +7378,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -7386,7 +7395,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -7398,7 +7407,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -7630,7 +7639,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7663,7 +7672,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -7697,7 +7706,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -7747,7 +7756,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -7764,7 +7773,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7776,7 +7785,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -7793,35 +7802,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -7838,7 +7847,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7850,7 +7859,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -7860,7 +7869,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -7875,7 +7884,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -7893,7 +7902,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -7927,7 +7936,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -7944,7 +7953,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -7956,7 +7965,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -7965,7 +7974,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -7982,7 +7991,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -7994,7 +8003,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -8226,7 +8235,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8259,7 +8268,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -8293,7 +8302,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -8343,7 +8352,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -8360,7 +8369,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8372,7 +8381,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -8389,35 +8398,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -8434,7 +8443,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8446,7 +8455,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -8456,7 +8465,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -8472,7 +8481,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -8491,7 +8500,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8529,7 +8538,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -8546,7 +8555,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -8558,7 +8567,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -8567,7 +8576,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -8584,7 +8593,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -8596,7 +8605,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -8828,7 +8837,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8861,7 +8870,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -8895,7 +8904,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -8945,7 +8954,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -8962,7 +8971,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -8974,7 +8983,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -8991,35 +9000,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -9036,7 +9045,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9048,7 +9057,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -9058,7 +9067,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -9112,7 +9121,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9134,7 +9143,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -9177,7 +9186,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -9194,7 +9203,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -9206,7 +9215,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -9215,7 +9224,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -9232,7 +9241,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -9244,7 +9253,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -9476,7 +9485,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9509,7 +9518,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -9543,7 +9552,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -9593,7 +9602,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -9610,7 +9619,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9622,7 +9631,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -9639,35 +9648,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -9684,7 +9693,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9696,7 +9705,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -9753,7 +9762,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -9772,7 +9781,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -9817,7 +9826,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -9834,7 +9843,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -9846,7 +9855,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -9855,7 +9864,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -9872,7 +9881,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -9884,7 +9893,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -10116,7 +10125,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -10149,7 +10158,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -10183,7 +10192,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -10233,7 +10242,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -10250,7 +10259,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -10262,7 +10271,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -10279,35 +10288,35 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -10324,7 +10333,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -10336,7 +10345,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -10393,7 +10402,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -10412,7 +10421,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -10455,7 +10464,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
             }[] | {
@@ -10472,7 +10481,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[] | undefined;
@@ -10484,7 +10493,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[];
@@ -10525,10 +10534,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10537,21 +10546,21 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             level: number;
             AC: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10559,13 +10568,13 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             alignment: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -10576,10 +10585,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10603,29 +10612,38 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
                 id?: number | undefined;
             };
-            meta: string;
+            meta: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            };
             characterHook?: {
                 string: string;
-                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10635,7 +10653,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10645,7 +10663,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10655,7 +10673,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10665,7 +10683,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10675,7 +10693,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10685,7 +10703,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10695,7 +10713,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10705,7 +10723,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10715,7 +10733,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10725,7 +10743,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -10736,87 +10754,87 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -10945,7 +10963,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -10962,7 +10980,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -10974,7 +10992,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -10983,7 +11001,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -11000,7 +11018,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -11012,7 +11030,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -11244,7 +11262,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -11277,7 +11295,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -11311,7 +11329,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -11361,7 +11379,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -11378,7 +11396,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -11390,7 +11408,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -11407,35 +11425,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -11452,7 +11470,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -11464,7 +11482,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -11474,7 +11492,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -11502,7 +11520,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -11524,7 +11542,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -11561,7 +11579,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -11578,7 +11596,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -11590,7 +11608,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -11599,7 +11617,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -11616,7 +11634,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -11628,7 +11646,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -11860,7 +11878,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -11893,7 +11911,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -11927,7 +11945,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -11977,7 +11995,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -11994,7 +12012,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12006,7 +12024,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -12023,35 +12041,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -12068,7 +12086,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12080,7 +12098,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -12090,7 +12108,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -12106,7 +12124,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -12124,7 +12142,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12164,7 +12182,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -12181,7 +12199,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -12193,7 +12211,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -12202,7 +12220,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -12219,7 +12237,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -12231,7 +12249,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -12463,7 +12481,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12496,7 +12514,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -12530,7 +12548,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -12580,7 +12598,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -12597,7 +12615,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12609,7 +12627,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -12626,35 +12644,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -12671,7 +12689,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12683,7 +12701,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -12693,7 +12711,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -12708,7 +12726,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -12726,7 +12744,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -12766,7 +12784,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -12783,7 +12801,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -12795,7 +12813,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -12804,7 +12822,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -12821,7 +12839,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -12833,7 +12851,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -13065,7 +13083,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13098,7 +13116,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -13132,7 +13150,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -13182,7 +13200,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -13199,7 +13217,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13211,7 +13229,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -13228,35 +13246,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -13273,7 +13291,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13285,7 +13303,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -13295,7 +13313,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -13310,7 +13328,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -13328,7 +13346,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13362,7 +13380,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -13379,7 +13397,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -13391,7 +13409,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -13400,7 +13418,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -13417,7 +13435,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -13429,7 +13447,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -13661,7 +13679,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13694,7 +13712,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -13728,7 +13746,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -13778,7 +13796,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -13795,7 +13813,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13807,7 +13825,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -13824,35 +13842,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -13869,7 +13887,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13881,7 +13899,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -13891,7 +13909,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -13907,7 +13925,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -13926,7 +13944,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -13964,7 +13982,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -13981,7 +13999,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -13993,7 +14011,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -14002,7 +14020,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -14019,7 +14037,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -14031,7 +14049,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -14263,7 +14281,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -14296,7 +14314,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -14330,7 +14348,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -14380,7 +14398,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -14397,7 +14415,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -14409,7 +14427,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -14426,35 +14444,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -14471,7 +14489,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -14483,7 +14501,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -14493,7 +14511,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -14547,7 +14565,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -14569,7 +14587,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -14612,7 +14630,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -14629,7 +14647,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -14641,7 +14659,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -14650,7 +14668,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -14667,7 +14685,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -14679,7 +14697,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -14911,7 +14929,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -14944,7 +14962,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -14978,7 +14996,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -15028,7 +15046,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -15045,7 +15063,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15057,7 +15075,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -15074,35 +15092,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -15119,7 +15137,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15131,7 +15149,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -15188,7 +15206,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15207,7 +15225,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -15252,7 +15270,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -15269,7 +15287,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -15281,7 +15299,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -15290,7 +15308,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -15307,7 +15325,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -15319,7 +15337,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -15551,7 +15569,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15584,7 +15602,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -15618,7 +15636,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -15668,7 +15686,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -15685,7 +15703,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15697,7 +15715,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -15714,35 +15732,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -15759,7 +15777,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15771,7 +15789,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -15828,7 +15846,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -15847,7 +15865,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -15890,7 +15908,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
             }[] | {
@@ -15907,7 +15925,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[] | undefined;
@@ -15919,7 +15937,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[];
@@ -15960,10 +15978,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -15972,21 +15990,21 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             level: number;
             AC: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -15994,13 +16012,13 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             alignment: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -16011,10 +16029,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16038,29 +16056,38 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
                 id?: number | undefined;
             };
-            meta: string;
+            meta: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            };
             characterHook?: {
                 string: string;
-                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16070,7 +16097,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16080,7 +16107,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16090,7 +16117,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16100,7 +16127,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16110,7 +16137,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16120,7 +16147,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16130,7 +16157,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16140,7 +16167,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16150,7 +16177,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16160,7 +16187,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -16171,87 +16198,87 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;
@@ -16377,7 +16404,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -16394,7 +16421,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -16406,7 +16433,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -16415,7 +16442,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -16432,7 +16459,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -16444,7 +16471,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -16676,7 +16703,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -16709,7 +16736,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -16743,7 +16770,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -16793,7 +16820,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -16810,7 +16837,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -16822,7 +16849,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -16839,35 +16866,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -16884,7 +16911,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -16896,7 +16923,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -16906,7 +16933,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -16934,7 +16961,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -16956,7 +16983,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -16993,7 +17020,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -17010,7 +17037,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -17022,7 +17049,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -17031,7 +17058,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -17048,7 +17075,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -17060,7 +17087,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -17292,7 +17319,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -17325,7 +17352,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -17359,7 +17386,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -17409,7 +17436,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -17426,7 +17453,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -17438,7 +17465,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -17455,35 +17482,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -17500,7 +17527,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -17512,7 +17539,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -17522,7 +17549,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -17538,7 +17565,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -17556,7 +17583,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -17596,7 +17623,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -17613,7 +17640,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -17625,7 +17652,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -17634,7 +17661,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -17651,7 +17678,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -17663,7 +17690,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -17895,7 +17922,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -17928,7 +17955,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -17962,7 +17989,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -18012,7 +18039,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -18029,7 +18056,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18041,7 +18068,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -18058,35 +18085,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -18103,7 +18130,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18115,7 +18142,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -18125,7 +18152,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -18140,7 +18167,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -18158,7 +18185,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18198,7 +18225,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -18215,7 +18242,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -18227,7 +18254,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -18236,7 +18263,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -18253,7 +18280,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -18265,7 +18292,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -18497,7 +18524,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18530,7 +18557,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -18564,7 +18591,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -18614,7 +18641,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -18631,7 +18658,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18643,7 +18670,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -18660,35 +18687,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -18705,7 +18732,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18717,7 +18744,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -18727,7 +18754,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -18742,7 +18769,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -18760,7 +18787,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -18794,7 +18821,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -18811,7 +18838,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -18823,7 +18850,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -18832,7 +18859,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -18849,7 +18876,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -18861,7 +18888,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -19093,7 +19120,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19126,7 +19153,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -19160,7 +19187,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -19210,7 +19237,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -19227,7 +19254,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19239,7 +19266,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -19256,35 +19283,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -19301,7 +19328,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19313,7 +19340,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -19323,7 +19350,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -19339,7 +19366,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -19358,7 +19385,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19396,7 +19423,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -19413,7 +19440,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -19425,7 +19452,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -19434,7 +19461,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -19451,7 +19478,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -19463,7 +19490,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -19695,7 +19722,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19728,7 +19755,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -19762,7 +19789,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -19812,7 +19839,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -19829,7 +19856,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19841,7 +19868,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -19858,35 +19885,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -19903,7 +19930,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -19915,7 +19942,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -19925,7 +19952,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 savingThrows?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -19979,7 +20006,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -20001,7 +20028,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -20044,7 +20071,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -20061,7 +20088,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -20073,7 +20100,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -20082,7 +20109,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -20099,7 +20126,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -20111,7 +20138,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -20343,7 +20370,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -20376,7 +20403,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -20410,7 +20437,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -20460,7 +20487,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -20477,7 +20504,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -20489,7 +20516,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -20506,35 +20533,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -20551,7 +20578,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -20563,7 +20590,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -20620,7 +20647,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -20639,7 +20666,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -20684,7 +20711,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         spells: ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -20701,7 +20728,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -20713,7 +20740,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -20722,7 +20749,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         }) & ({
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | {
@@ -20739,7 +20766,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 chosenAlready?: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[] | undefined;
@@ -20751,7 +20778,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 list: {
                                     value: string;
                                     id?: number | undefined;
-                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                     availableAt?: number | undefined;
                                     availableUnit?: "level" | "cr" | undefined;
                                 }[];
@@ -20983,7 +21010,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -21016,7 +21043,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -21050,7 +21077,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     chosenAlready?: {
                                         value: string;
                                         id?: number | undefined;
-                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                                         availableAt?: number | undefined;
                                         availableUnit?: "level" | "cr" | undefined;
                                     }[] | undefined;
@@ -21100,7 +21127,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 languages?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -21117,7 +21144,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -21129,7 +21156,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -21146,35 +21173,35 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 resistances?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 immunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 vulnerabilities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 conditionImmunities?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
                 skills?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | {
@@ -21191,7 +21218,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -21203,7 +21230,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         list: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[];
@@ -21260,7 +21287,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         chosenAlready?: {
                             value: string;
                             id?: number | undefined;
-                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                            type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
                         }[] | undefined;
@@ -21279,7 +21306,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 subtypes?: {
                     value: string;
                     id?: number | undefined;
-                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                    type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                 }[] | undefined;
@@ -21322,7 +21349,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             skills?: {
                 value: string;
                 id?: number | undefined;
-                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
             }[] | {
@@ -21339,7 +21366,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     chosenAlready?: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[] | undefined;
@@ -21351,7 +21378,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     list: {
                         value: string;
                         id?: number | undefined;
-                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | undefined;
+                        type?: "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | undefined;
                         availableAt?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                     }[];
@@ -21392,10 +21419,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             name: string;
             type: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21404,21 +21431,21 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             level: number;
             AC: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             CR: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21426,13 +21453,13 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             alignment: {
                 string: string;
-                number?: number | undefined;
-                array?: {
+                number: number;
+                array: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             };
             pronouns: "male" | "female" | "neutral" | "thing";
@@ -21443,10 +21470,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             proficiency: number;
             size: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21470,29 +21497,38 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             HP: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
                 id?: number | undefined;
             };
-            meta: string;
+            meta: {
+                string: string;
+                array?: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[] | undefined;
+                id?: number | undefined;
+            };
             characterHook?: {
                 string: string;
-                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
                 string: string;
-                number?: number | undefined;
+                number: number;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21502,7 +21538,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21512,7 +21548,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21522,7 +21558,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21532,7 +21568,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21542,7 +21578,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21552,7 +21588,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21562,7 +21598,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21572,7 +21608,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21582,7 +21618,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21592,7 +21628,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array?: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
                 }[] | undefined;
@@ -21603,87 +21639,87 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                array: {
+                    string: string;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    id?: number | undefined;
+                }[];
                 nameString: string;
-                array?: {
+                nameArray: {
                     string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
+                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "armor" | "weapon" | "item" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     id?: number | undefined;
-                }[] | undefined;
-                nameArray?: {
-                    string: string;
-                    type?: "number" | "type" | "background" | "spell" | "trait" | "race" | "class" | "template" | "subtype" | "language" | "skill" | "savingThrow" | "condition" | "resistance" | "immunity" | "vulnerability" | "conditionImmunity" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | undefined;
-                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
-                    id?: number | undefined;
-                }[] | undefined;
+                }[];
                 id?: number | undefined;
             }[] | undefined;
         } | undefined;

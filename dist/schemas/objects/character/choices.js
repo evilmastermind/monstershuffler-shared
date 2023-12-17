@@ -19,6 +19,9 @@ exports.statType = zod_1.z.enum([
     'immunity',
     'vulnerability',
     'conditionImmunity',
+    'armor',
+    'weapon',
+    'item'
 ]);
 // object schemas
 exports.statObject = zod_1.z.object({
