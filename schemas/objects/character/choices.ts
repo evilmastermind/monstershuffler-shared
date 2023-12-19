@@ -1,25 +1,26 @@
 import { z } from 'zod';
 
 export const statType = z.enum([
-  'background',
-  'spell',
-  'trait',
-  'race',
-  'class',
-  'template',
-  'type',
-  'subtype',
-  'language',
-  'skill',
-  'savingThrow',
-  'condition',
-  'resistance',
-  'immunity',
-  'vulnerability',
-  'conditionImmunity',
   'armor',
+  'background',
+  'class',
+  'condition',
+  'conditionImmunity',
+  'immunity',
+  'item',
+  'language',
+  'race',
+  'resistance',
+  'savingThrow',
+  'size',
+  'skill',
+  'spell',
+  'subtype',
+  'template',
+  'trait',
+  'type',
+  'vulnerability',
   'weapon',
-  'item'
 ]);
 
 // object schemas

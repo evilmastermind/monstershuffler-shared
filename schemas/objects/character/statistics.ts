@@ -51,7 +51,6 @@ export const descriptionPartObject = z.object({
 export const statStringNumber = z.object({
   number: z.number(),
   string: z.string(),
-  array: z.array(descriptionPartObject).optional(),
   id: z.number().optional(),
 });
 
@@ -65,7 +64,6 @@ export const statStringNumberArray = z.object({
 
 export const statString = z.object({
   string: z.string(),
-  array: z.array(descriptionPartObject).optional(),
   id: z.number().optional(),
 });
 
@@ -75,21 +73,12 @@ export const statStringArray = z.object({
   id: z.number().optional(),
 });
 
-export const statStringWithName = z.object({
+export const statStringArrayWithName = z.object({
   string: z.string(),
   array: z.array(descriptionPartObject),
   nameString: z.string(),
   nameArray: z.array(descriptionPartObject),
   id: z.number().optional(),
-});
-
-
-
-export const parsedActionObject = z.object({
-  name: z.string(),
-  tag: z.string(),
-  priority: z.number(),
-  description: z.string(),
 });
 
 export const statisticsObject = z.object({
@@ -112,7 +101,7 @@ export const statisticsObject = z.object({
   abilityModifiers: abilitiesObject,
   HP: statStringNumber,
   type: statStringNumber,
-  subtypes: statStringArray.optional(),
+  subtypes: z.array(descriptionPartObject).optional(),
   meta: statStringArray,
   speeds: statStringArray.optional(),
   savingThrows: statStringArray.optional(),
@@ -126,11 +115,11 @@ export const statisticsObject = z.object({
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
-  traits: z.array(statStringWithName).optional(),
-  actions: z.array(statStringWithName).optional(),
-  bonusActions: z.array(statStringWithName).optional(),
-  reactions: z.array(statStringWithName).optional(),
-  legendaryActions: z.array(statStringWithName).optional(),
+  traits: z.array(statStringArrayWithName).optional(),
+  actions: z.array(statStringArrayWithName).optional(),
+  bonusActions: z.array(statStringArrayWithName).optional(),
+  reactions: z.array(statStringArrayWithName).optional(),
+  legendaryActions: z.array(statStringArrayWithName).optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;
