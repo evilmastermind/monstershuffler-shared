@@ -24,9 +24,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         name: string;
         type: string;
+        size: number;
         id: number;
         cr: number;
-        size: number;
         meta: string;
         adds?: number | undefined;
         url?: string | undefined;
@@ -35,9 +35,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
     }, {
         name: string;
         type: string;
+        size: number;
         id: number;
         cr: number;
-        size: number;
         meta: string;
         adds?: number | undefined;
         url?: string | undefined;
@@ -126,9 +126,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
     characters: {
         name: string;
         type: string;
+        size: number;
         id: number;
         cr: number;
-        size: number;
         meta: string;
         adds?: number | undefined;
         url?: string | undefined;
@@ -167,9 +167,9 @@ export declare const getFolderContentResponse: z.ZodObject<{
     characters: {
         name: string;
         type: string;
+        size: number;
         id: number;
         cr: number;
-        size: number;
         meta: string;
         adds?: number | undefined;
         url?: string | undefined;

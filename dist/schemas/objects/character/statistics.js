@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.parsedActionObject = exports.statStringWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -48,7 +48,6 @@ exports.descriptionPartObject = zod_1.z.object({
 exports.statStringNumber = zod_1.z.object({
     number: zod_1.z.number(),
     string: zod_1.z.string(),
-    array: zod_1.z.array(exports.descriptionPartObject).optional(),
     id: zod_1.z.number().optional(),
 });
 exports.statStringNumberArray = zod_1.z.object({
@@ -59,7 +58,6 @@ exports.statStringNumberArray = zod_1.z.object({
 });
 exports.statString = zod_1.z.object({
     string: zod_1.z.string(),
-    array: zod_1.z.array(exports.descriptionPartObject).optional(),
     id: zod_1.z.number().optional(),
 });
 exports.statStringArray = zod_1.z.object({
@@ -67,18 +65,12 @@ exports.statStringArray = zod_1.z.object({
     array: zod_1.z.array(exports.descriptionPartObject).optional(),
     id: zod_1.z.number().optional(),
 });
-exports.statStringWithName = zod_1.z.object({
+exports.statStringArrayWithName = zod_1.z.object({
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject),
     nameString: zod_1.z.string(),
     nameArray: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
-});
-exports.parsedActionObject = zod_1.z.object({
-    name: zod_1.z.string(),
-    tag: zod_1.z.string(),
-    priority: zod_1.z.number(),
-    description: zod_1.z.string(),
 });
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statStringNumberArray,
@@ -100,7 +92,7 @@ exports.statisticsObject = zod_1.z.object({
     abilityModifiers: exports.abilitiesObject,
     HP: exports.statStringNumber,
     type: exports.statStringNumber,
-    subtypes: exports.statStringArray.optional(),
+    subtypes: zod_1.z.array(exports.descriptionPartObject).optional(),
     meta: exports.statStringArray,
     speeds: exports.statStringArray.optional(),
     savingThrows: exports.statStringArray.optional(),
@@ -114,9 +106,9 @@ exports.statisticsObject = zod_1.z.object({
     isBlind: zod_1.z.boolean().optional(),
     canSpeak: zod_1.z.boolean().optional(),
     telepathy: zod_1.z.number().optional(),
-    traits: zod_1.z.array(exports.statStringWithName).optional(),
-    actions: zod_1.z.array(exports.statStringWithName).optional(),
-    bonusActions: zod_1.z.array(exports.statStringWithName).optional(),
-    reactions: zod_1.z.array(exports.statStringWithName).optional(),
-    legendaryActions: zod_1.z.array(exports.statStringWithName).optional(),
+    traits: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    actions: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    bonusActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    reactions: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    legendaryActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
 });
