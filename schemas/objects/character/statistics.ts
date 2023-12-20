@@ -36,7 +36,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft', 'rollableNumberWithSign'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -69,7 +69,7 @@ export const statString = z.object({
 
 export const statStringArray = z.object({
   string: z.string(),
-  array: z.array(descriptionPartObject).optional(),
+  array: z.array(descriptionPartObject),
   id: z.number().optional(),
 });
 

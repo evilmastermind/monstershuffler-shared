@@ -36,7 +36,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft', 'rollableNumberWithSign'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.descriptionPartObject = zod_1.z.object({
@@ -62,7 +62,7 @@ exports.statString = zod_1.z.object({
 });
 exports.statStringArray = zod_1.z.object({
     string: zod_1.z.string(),
-    array: zod_1.z.array(exports.descriptionPartObject).optional(),
+    array: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
 });
 exports.statStringArrayWithName = zod_1.z.object({
