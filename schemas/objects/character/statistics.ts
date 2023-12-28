@@ -85,6 +85,7 @@ export const statStringArray = z.object({
 
 export const statStringArrayWithName = z.object({
   tag: z.string(),
+  priority: z.number(),
   string: z.string(),
   array: z.array(descriptionPartObject),
   nameString: z.string(),

@@ -76,6 +76,7 @@ exports.statStringArray = zod_1.z.object({
 });
 exports.statStringArrayWithName = zod_1.z.object({
     tag: zod_1.z.string(),
+    priority: zod_1.z.number(),
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject),
     nameString: zod_1.z.string(),

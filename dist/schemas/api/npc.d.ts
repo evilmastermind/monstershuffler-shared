@@ -5780,6 +5780,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5840,6 +5841,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5900,6 +5902,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5960,6 +5963,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -6020,6 +6024,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11878,6 +11883,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11938,6 +11944,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11998,6 +12005,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -12058,6 +12066,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -12118,6 +12127,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -17979,6 +17989,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18039,6 +18050,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18099,6 +18111,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18159,6 +18172,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18219,6 +18233,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24077,6 +24092,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24137,6 +24153,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24197,6 +24214,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24257,6 +24275,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24317,6 +24336,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 tag: string;
+                priority: number;
                 nameString: string;
                 nameArray: ({
                     string: string;

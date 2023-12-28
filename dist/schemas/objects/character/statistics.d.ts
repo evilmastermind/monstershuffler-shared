@@ -569,6 +569,7 @@ export declare const statStringArray: z.ZodObject<{
 }>;
 export declare const statStringArrayWithName: z.ZodObject<{
     tag: z.ZodString;
+    priority: z.ZodNumber;
     string: z.ZodString;
     array: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
@@ -857,6 +858,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         id?: number | undefined;
     }[];
     tag: string;
+    priority: number;
     nameString: string;
     nameArray: ({
         string: string;
@@ -916,6 +918,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         id?: number | undefined;
     }[];
     tag: string;
+    priority: number;
     nameString: string;
     nameArray: ({
         string: string;
@@ -3455,6 +3458,7 @@ export declare const statisticsObject: z.ZodObject<{
     telepathy: z.ZodOptional<z.ZodNumber>;
     traits: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
+        priority: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -3743,6 +3747,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -3802,6 +3807,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -3837,6 +3843,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     actions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
+        priority: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -4125,6 +4132,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4184,6 +4192,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4219,6 +4228,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     bonusActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
+        priority: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -4507,6 +4517,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4566,6 +4577,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4601,6 +4613,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     reactions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
+        priority: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -4889,6 +4902,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4948,6 +4962,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -4983,6 +4998,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     legendaryActions: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
+        priority: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5271,6 +5287,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -5330,6 +5347,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -5830,6 +5848,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -5890,6 +5909,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -5950,6 +5970,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6010,6 +6031,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6070,6 +6092,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6570,6 +6593,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6630,6 +6654,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6690,6 +6715,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6750,6 +6776,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
@@ -6810,6 +6837,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }[];
         tag: string;
+        priority: number;
         nameString: string;
         nameArray: ({
             string: string;
