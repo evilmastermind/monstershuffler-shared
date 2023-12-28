@@ -64,11 +64,11 @@ export declare const variablesObject: z.ZodObject<{
     CHA: number;
     AC: number;
     CR: number;
-    HP: number;
     LVL: number;
     PROF: number;
     SIZE: number;
     HD: number;
+    HP: number;
     STRVALUE: number;
     DEXVALUE: number;
     CONVALUE: number;
@@ -120,11 +120,11 @@ export declare const variablesObject: z.ZodObject<{
     CHA: number;
     AC: number;
     CR: number;
-    HP: number;
     LVL: number;
     PROF: number;
     SIZE: number;
     HD: number;
+    HP: number;
     STRVALUE: number;
     DEXVALUE: number;
     CONVALUE: number;

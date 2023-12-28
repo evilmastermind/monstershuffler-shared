@@ -79,7 +79,7 @@ export const actionVariantObject = z.object({
   recharge: z.string().optional(),
   cost: z.string().optional(),
   values: z
-    .array(z.union([z.any(), z.any(), valueIncrProgressionObject]))
+    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
     .optional(),
   attacks: z.array(attackObject).optional(),
 });

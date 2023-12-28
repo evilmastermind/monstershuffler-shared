@@ -1,11 +1,13 @@
 import { z } from 'zod';
 
 export const statType = z.enum([
+  'alignment',
   'armor',
   'background',
   'class',
   'condition',
   'conditionImmunity',
+  'damageType',
   'immunity',
   'item',
   'language',
@@ -13,9 +15,9 @@ export const statType = z.enum([
   'race',
   'resistance',
   'savingThrow',
+  'sense',
   'size',
   'skill',
-  'sense',
   'speed',
   'spell',
   'subtype',

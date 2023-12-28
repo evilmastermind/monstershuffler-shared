@@ -3,11 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.choiceListObject = exports.choiceRandomObject = exports.statObject = exports.statType = void 0;
 const zod_1 = require("zod");
 exports.statType = zod_1.z.enum([
+    'alignment',
     'armor',
     'background',
     'class',
     'condition',
     'conditionImmunity',
+    'damageType',
     'immunity',
     'item',
     'language',
@@ -15,9 +17,9 @@ exports.statType = zod_1.z.enum([
     'race',
     'resistance',
     'savingThrow',
+    'sense',
     'size',
     'skill',
-    'sense',
     'speed',
     'spell',
     'subtype',

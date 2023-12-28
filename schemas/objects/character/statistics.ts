@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { statType } from './choices';
 import { pronounsObject } from './other';
+import { valueExpressionObject, valueDiceObject } from '.';
 
 /**
  * About the .statistics object and how it should be constructed:
@@ -36,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'number', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -45,7 +46,16 @@ export const descriptionPartObject = z.object({
   string: z.string(),
   type: z.union([statType, additionalStringTypes]).optional(),
   format: z.array(format).optional(),
+  dice: z.array(z.union([valueDiceObject, valueExpressionObject])).optional(),
   id: z.number().optional(),
+});
+
+export const resourcePartObject = z.object({
+  recharge: z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']).optional(),
+  cost: z.number().optional(),
+  charges: z.string().optional(),
+  chargesUsed: z.number().optional(),
+  isCharged: z.boolean().optional(),
 });
 
 export const statStringNumber = z.object({
@@ -77,7 +87,7 @@ export const statStringArrayWithName = z.object({
   string: z.string(),
   array: z.array(descriptionPartObject),
   nameString: z.string(),
-  nameArray: z.array(descriptionPartObject),
+  nameArray: z.array(z.union([descriptionPartObject, resourcePartObject])),
   id: z.number().optional(),
 });
 
@@ -110,8 +120,8 @@ export const statisticsObject = z.object({
   immunities:  statStringArray.optional(),
   vulnerabilities:  statStringArray.optional(),
   conditionImmunities:  statStringArray.optional(),
-  senses: statStringArray.optional(),
-  languages:  statStringArray.optional(),
+  senses: statStringArray, // never optional: passive perception is always calculated
+  languages:  statStringArray, // never optional: write "-" if no languages are known
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),

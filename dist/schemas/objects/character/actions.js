@@ -76,7 +76,7 @@ exports.actionVariantObject = zod_1.z.object({
     recharge: zod_1.z.string().optional(),
     cost: zod_1.z.string().optional(),
     values: zod_1.z
-        .array(zod_1.z.union([zod_1.z.any(), zod_1.z.any(), exports.valueIncrProgressionObject]))
+        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
         .optional(),
     attacks: zod_1.z.array(exports.attackObject).optional(),
 });
