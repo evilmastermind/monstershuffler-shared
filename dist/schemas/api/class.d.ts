@@ -1591,7 +1591,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
                 charges: z.ZodOptional<z.ZodString>;
-                recharge: z.ZodOptional<z.ZodString>;
+                recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
                 cost: z.ZodOptional<z.ZodString>;
                 values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     name: z.ZodString;
@@ -2097,7 +2097,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -2221,7 +2221,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -2348,7 +2348,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -2482,7 +2482,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -3750,7 +3750,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -4378,7 +4378,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -5009,7 +5009,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -5640,7 +5640,7 @@ export declare const getClassResponse: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -7444,7 +7444,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
                 charges: z.ZodOptional<z.ZodString>;
-                recharge: z.ZodOptional<z.ZodString>;
+                recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
                 cost: z.ZodOptional<z.ZodString>;
                 values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     name: z.ZodString;
@@ -7950,7 +7950,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -8074,7 +8074,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -8201,7 +8201,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -8335,7 +8335,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -9603,7 +9603,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -10231,7 +10231,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -10861,7 +10861,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -11492,7 +11492,7 @@ export declare const postClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -13295,7 +13295,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
                 charges: z.ZodOptional<z.ZodString>;
-                recharge: z.ZodOptional<z.ZodString>;
+                recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
                 cost: z.ZodOptional<z.ZodString>;
                 values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     name: z.ZodString;
@@ -13801,7 +13801,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -13925,7 +13925,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -14052,7 +14052,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -14186,7 +14186,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -15454,7 +15454,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -16082,7 +16082,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -16713,7 +16713,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;
@@ -17344,7 +17344,7 @@ export declare const putClass: z.ZodObject<{
                 availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                 charges?: string | undefined;
-                recharge?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: string | undefined;
                 values?: ({
                     name: string;

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { statType } from './choices';
 import { pronounsObject } from './other';
-import { valueExpressionObject, valueDiceObject } from '.';
+import { valueExpressionObject, valueDiceObject, rechargeTypeEnum } from '.';
 
 /**
  * About the .statistics object and how it should be constructed:
@@ -37,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -48,14 +48,6 @@ export const descriptionPartObject = z.object({
   format: z.array(format).optional(),
   dice: z.array(z.union([valueDiceObject, valueExpressionObject])).optional(),
   id: z.number().optional(),
-});
-
-export const resourcePartObject = z.object({
-  recharge: z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']).optional(),
-  cost: z.number().optional(),
-  charges: z.string().optional(),
-  chargesUsed: z.number().optional(),
-  isCharged: z.boolean().optional(),
 });
 
 export const statStringNumber = z.object({
@@ -70,7 +62,6 @@ export const statStringNumberArray = z.object({
   array: z.array(descriptionPartObject),
   id: z.number().optional(),
 });
-
 
 export const statString = z.object({
   string: z.string(),
@@ -89,8 +80,13 @@ export const statStringArrayWithName = z.object({
   string: z.string(),
   array: z.array(descriptionPartObject),
   nameString: z.string(),
-  nameArray: z.array(z.union([descriptionPartObject, resourcePartObject])),
+  nameArray: z.array(descriptionPartObject),
   id: z.number().optional(),
+  recharge: rechargeTypeEnum.optional(),
+  cost: z.number().optional(),
+  charges: z.number().optional(),
+  chargesUsed: z.number().optional(),
+  isCharged: z.boolean().optional(),
 });
 
 export const statisticsObject = z.object({

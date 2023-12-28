@@ -15,6 +15,8 @@ export const actionTypesEnum = z.enum([
   'lair',
 ]);
 
+export const rechargeTypeEnum = z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
+
 export const diceObject = z.object({
   die: z.number(),
   diceNumber: z.number(),
@@ -76,7 +78,7 @@ export const actionVariantObject = z.object({
   availableAt: z.number().optional(),
   ability: abilitiesEnum.optional(),
   charges: z.string().optional(),
-  recharge: z.string().optional(),
+  recharge: rechargeTypeEnum.optional(),
   cost: z.string().optional(),
   values: z
     .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))

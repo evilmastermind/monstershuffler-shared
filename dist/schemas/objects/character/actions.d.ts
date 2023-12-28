@@ -1,5 +1,6 @@
 import { z } from 'zod';
 export declare const actionTypesEnum: z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>;
+export declare const rechargeTypeEnum: z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>;
 export declare const diceObject: z.ZodObject<{
     die: z.ZodNumber;
     diceNumber: z.ZodNumber;
@@ -594,7 +595,7 @@ export declare const actionVariantObject: z.ZodObject<{
     availableAt: z.ZodOptional<z.ZodNumber>;
     ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
     charges: z.ZodOptional<z.ZodString>;
-    recharge: z.ZodOptional<z.ZodString>;
+    recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
     cost: z.ZodOptional<z.ZodString>;
     values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
@@ -1100,7 +1101,7 @@ export declare const actionVariantObject: z.ZodObject<{
     availableAt?: number | undefined;
     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
     charges?: string | undefined;
-    recharge?: string | undefined;
+    recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
     cost?: string | undefined;
     values?: ({
         name: string;
@@ -1224,7 +1225,7 @@ export declare const actionVariantObject: z.ZodObject<{
     availableAt?: number | undefined;
     ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
     charges?: string | undefined;
-    recharge?: string | undefined;
+    recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
     cost?: string | undefined;
     values?: ({
         name: string;
@@ -1358,7 +1359,7 @@ export declare const chosenActionObject: z.ZodObject<{
         availableAt: z.ZodOptional<z.ZodNumber>;
         ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
         charges: z.ZodOptional<z.ZodString>;
-        recharge: z.ZodOptional<z.ZodString>;
+        recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
         cost: z.ZodOptional<z.ZodString>;
         values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             name: z.ZodString;
@@ -1864,7 +1865,7 @@ export declare const chosenActionObject: z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -1988,7 +1989,7 @@ export declare const chosenActionObject: z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -2115,7 +2116,7 @@ export declare const chosenActionObject: z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -2249,7 +2250,7 @@ export declare const chosenActionObject: z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -2391,7 +2392,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         availableAt: z.ZodOptional<z.ZodNumber>;
         ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
         charges: z.ZodOptional<z.ZodString>;
-        recharge: z.ZodOptional<z.ZodString>;
+        recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
         cost: z.ZodOptional<z.ZodString>;
         values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             name: z.ZodString;
@@ -2897,7 +2898,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -3021,7 +3022,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -3148,7 +3149,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;
@@ -3282,7 +3283,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         availableAt?: number | undefined;
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         charges?: string | undefined;
-        recharge?: string | undefined;
+        recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
         cost?: string | undefined;
         values?: ({
             name: string;

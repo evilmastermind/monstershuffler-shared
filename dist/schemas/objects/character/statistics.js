@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.resourcePartObject = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.descriptionPartObject = zod_1.z.object({
@@ -46,13 +46,6 @@ exports.descriptionPartObject = zod_1.z.object({
     format: zod_1.z.array(exports.format).optional(),
     dice: zod_1.z.array(zod_1.z.union([_1.valueDiceObject, _1.valueExpressionObject])).optional(),
     id: zod_1.z.number().optional(),
-});
-exports.resourcePartObject = zod_1.z.object({
-    recharge: zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']).optional(),
-    cost: zod_1.z.number().optional(),
-    charges: zod_1.z.string().optional(),
-    chargesUsed: zod_1.z.number().optional(),
-    isCharged: zod_1.z.boolean().optional(),
 });
 exports.statStringNumber = zod_1.z.object({
     number: zod_1.z.number(),
@@ -80,8 +73,13 @@ exports.statStringArrayWithName = zod_1.z.object({
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject),
     nameString: zod_1.z.string(),
-    nameArray: zod_1.z.array(zod_1.z.union([exports.descriptionPartObject, exports.resourcePartObject])),
+    nameArray: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
+    recharge: _1.rechargeTypeEnum.optional(),
+    cost: zod_1.z.number().optional(),
+    charges: zod_1.z.number().optional(),
+    chargesUsed: zod_1.z.number().optional(),
+    isCharged: zod_1.z.boolean().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statStringNumberArray,

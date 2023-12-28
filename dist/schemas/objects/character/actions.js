@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.attackObject = exports.attackAttributesObject = exports.enchantmentObject = exports.diceObject = exports.actionTypesEnum = void 0;
+exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.attackObject = exports.attackAttributesObject = exports.enchantmentObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
@@ -16,6 +16,7 @@ exports.actionTypesEnum = zod_1.z.enum([
     'mythic',
     'lair',
 ]);
+exports.rechargeTypeEnum = zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
 exports.diceObject = zod_1.z.object({
     die: zod_1.z.number(),
     diceNumber: zod_1.z.number(),
@@ -73,7 +74,7 @@ exports.actionVariantObject = zod_1.z.object({
     availableAt: zod_1.z.number().optional(),
     ability: abilities_1.abilitiesEnum.optional(),
     charges: zod_1.z.string().optional(),
-    recharge: zod_1.z.string().optional(),
+    recharge: exports.rechargeTypeEnum.optional(),
     cost: zod_1.z.string().optional(),
     values: zod_1.z
         .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
