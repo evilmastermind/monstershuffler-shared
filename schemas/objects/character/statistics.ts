@@ -84,6 +84,7 @@ export const statStringArray = z.object({
 });
 
 export const statStringArrayWithName = z.object({
+  tag: z.string(),
   string: z.string(),
   array: z.array(descriptionPartObject),
   nameString: z.string(),

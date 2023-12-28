@@ -75,6 +75,7 @@ exports.statStringArray = zod_1.z.object({
     id: zod_1.z.number().optional(),
 });
 exports.statStringArrayWithName = zod_1.z.object({
+    tag: zod_1.z.string(),
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject),
     nameString: zod_1.z.string(),

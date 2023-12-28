@@ -5758,6 +5758,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5817,6 +5818,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5876,6 +5878,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5935,6 +5938,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -5994,6 +5998,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11852,6 +11857,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11911,6 +11917,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -11970,6 +11977,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -12029,6 +12037,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -12088,6 +12097,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -17951,6 +17961,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18010,6 +18021,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18069,6 +18081,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18128,6 +18141,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -18187,6 +18201,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24046,6 +24061,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24105,6 +24121,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24164,6 +24181,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24223,6 +24241,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -24282,6 +24301,7 @@ export declare const postCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -30146,6 +30166,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -30205,6 +30226,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -30264,6 +30286,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -30323,6 +30346,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -30382,6 +30406,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -36241,6 +36266,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -36300,6 +36326,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -36359,6 +36386,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -36418,6 +36446,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
@@ -36477,6 +36506,7 @@ export declare const putCharacter: z.ZodObject<{
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
+                tag: string;
                 nameString: string;
                 nameArray: ({
                     string: string;
