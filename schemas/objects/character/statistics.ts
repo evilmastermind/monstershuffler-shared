@@ -37,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -85,8 +85,8 @@ export const statStringArrayWithName = z.object({
   recharge: rechargeTypeEnum.optional(),
   cost: z.number().optional(),
   charges: z.number().optional(),
-  chargesUsed: z.number().optional(),
-  isCharged: z.boolean().optional(),
+  // chargesUsed: z.number().optional(),
+  // isCharged: z.boolean().optional(),
 });
 
 export const statisticsObject = z.object({
