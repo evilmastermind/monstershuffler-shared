@@ -102,7 +102,7 @@ export declare const getClassResponse: z.ZodObject<{
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
-        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsMax: z.ZodOptional<z.ZodString>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -3427,7 +3427,7 @@ export declare const getClassResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4055,7 +4055,7 @@ export declare const getClassResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -4686,7 +4686,7 @@ export declare const getClassResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5317,7 +5317,7 @@ export declare const getClassResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -5955,7 +5955,7 @@ export declare const postClass: z.ZodObject<{
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
-        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsMax: z.ZodOptional<z.ZodString>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -9280,7 +9280,7 @@ export declare const postClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -9908,7 +9908,7 @@ export declare const postClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -10538,7 +10538,7 @@ export declare const postClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11169,7 +11169,7 @@ export declare const postClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -11806,7 +11806,7 @@ export declare const putClass: z.ZodObject<{
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
-        legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
+        legendaryActionsMax: z.ZodOptional<z.ZodString>;
         spells: z.ZodOptional<z.ZodObject<{
             hasSlots: z.ZodOptional<z.ZodBoolean>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
@@ -15131,7 +15131,7 @@ export declare const putClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -15759,7 +15759,7 @@ export declare const putClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -16390,7 +16390,7 @@ export declare const putClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
@@ -17021,7 +17021,7 @@ export declare const putClass: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsPerRound?: number | undefined;
+        legendaryActionsMax?: string | undefined;
         spells?: {
             hasSlots?: boolean | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;

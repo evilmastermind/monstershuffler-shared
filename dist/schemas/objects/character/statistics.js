@@ -121,5 +121,5 @@ exports.statisticsObject = zod_1.z.object({
     reactions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     legendaryActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     legendaryActionsIntro: zod_1.z.array(exports.statStringArray).optional(),
-    legendaryActionsPerRound: zod_1.z.number().optional(),
+    legendaryActionsMax: zod_1.z.number().optional(),
 });

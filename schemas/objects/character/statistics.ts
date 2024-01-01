@@ -129,7 +129,7 @@ export const statisticsObject = z.object({
   reactions: z.array(statStringArrayWithName).optional(),
   legendaryActions: z.array(statStringArrayWithName).optional(),
   legendaryActionsIntro: z.array(statStringArray).optional(),
-  legendaryActionsPerRound: z.number().optional(),
+  legendaryActionsMax: z.number().optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

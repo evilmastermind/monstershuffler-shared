@@ -29,7 +29,7 @@ exports.bonusObject = zod_1.z.object({
     value: zod_1.z.string(),
 });
 exports.legendaryActionsPerRoundStats = {
-    legendaryActionsPerRound: zod_1.z.number().optional(),
+    legendaryActionsMax: zod_1.z.string().optional(),
 };
 exports.bonusesObject = zod_1.z.object({
     HPBonus: exports.bonusObject.optional(),

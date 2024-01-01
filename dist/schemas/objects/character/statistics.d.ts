@@ -5414,7 +5414,7 @@ export declare const statisticsObject: z.ZodObject<{
         }[];
         id?: number | undefined;
     }>, "many">>;
-    legendaryActionsPerRound: z.ZodOptional<z.ZodNumber>;
+    legendaryActionsMax: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -6173,7 +6173,7 @@ export declare const statisticsObject: z.ZodObject<{
         }[];
         id?: number | undefined;
     }[] | undefined;
-    legendaryActionsPerRound?: number | undefined;
+    legendaryActionsMax?: number | undefined;
 }, {
     name: string;
     type: {
@@ -6932,7 +6932,7 @@ export declare const statisticsObject: z.ZodObject<{
         }[];
         id?: number | undefined;
     }[] | undefined;
-    legendaryActionsPerRound?: number | undefined;
+    legendaryActionsMax?: number | undefined;
 }>;
 export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map
