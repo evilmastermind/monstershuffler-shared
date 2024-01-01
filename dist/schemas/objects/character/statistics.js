@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.descriptionPartObject = zod_1.z.object({
@@ -78,8 +78,8 @@ exports.statStringArrayWithName = zod_1.z.object({
     recharge: _1.rechargeTypeEnum.optional(),
     cost: zod_1.z.number().optional(),
     charges: zod_1.z.number().optional(),
-    chargesUsed: zod_1.z.number().optional(),
-    isCharged: zod_1.z.boolean().optional(),
+    // chargesUsed: z.number().optional(),
+    // isCharged: z.boolean().optional(),
 });
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statStringNumberArray,
@@ -120,4 +120,6 @@ exports.statisticsObject = zod_1.z.object({
     bonusActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     reactions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     legendaryActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    legendaryActionsIntro: zod_1.z.array(exports.statStringArray).optional(),
+    legendaryActionsPerRound: zod_1.z.number().optional(),
 });

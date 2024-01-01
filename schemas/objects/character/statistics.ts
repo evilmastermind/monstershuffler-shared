@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { statType } from './choices';
-import { pronounsObject } from './other';
+import { pronounsObject, legendaryActionsPerRoundStats } from './other';
 import { valueExpressionObject, valueDiceObject, rechargeTypeEnum } from '.';
 
 /**
@@ -128,6 +128,8 @@ export const statisticsObject = z.object({
   bonusActions: z.array(statStringArrayWithName).optional(),
   reactions: z.array(statStringArrayWithName).optional(),
   legendaryActions: z.array(statStringArrayWithName).optional(),
+  legendaryActionsIntro: z.array(statStringArray).optional(),
+  legendaryActionsPerRound: z.number().optional(),
 });
 
 export type Statistics = z.infer<typeof statisticsObject>;

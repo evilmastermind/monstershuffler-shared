@@ -5304,7 +5304,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5339,7 +5339,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5368,7 +5368,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5427,7 +5427,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5455,7 +5455,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5481,7 +5481,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -5511,7 +5511,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -5537,7 +5537,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5565,7 +5565,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5593,7 +5593,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5621,7 +5621,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5649,7 +5649,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5677,7 +5677,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5705,7 +5705,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5736,7 +5736,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5763,7 +5763,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5789,14 +5789,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5823,7 +5821,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5849,14 +5847,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5883,7 +5879,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5909,14 +5905,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5943,7 +5937,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -5969,14 +5963,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -6003,7 +5995,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -6029,9 +6021,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -11403,7 +11422,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11438,7 +11457,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11467,7 +11486,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11526,7 +11545,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11554,7 +11573,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11580,7 +11599,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -11610,7 +11629,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -11636,7 +11655,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11664,7 +11683,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11692,7 +11711,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11720,7 +11739,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11748,7 +11767,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11776,7 +11795,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11804,7 +11823,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11835,7 +11854,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11862,7 +11881,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11888,14 +11907,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11922,7 +11939,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11948,14 +11965,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -11982,7 +11997,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -12008,14 +12023,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -12042,7 +12055,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -12068,14 +12081,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -12102,7 +12113,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -12128,9 +12139,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -17507,7 +17545,7 @@ export declare const postCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17542,7 +17580,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17571,7 +17609,7 @@ export declare const postCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17630,7 +17668,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17658,7 +17696,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17684,7 +17722,7 @@ export declare const postCharacter: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -17714,7 +17752,7 @@ export declare const postCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -17740,7 +17778,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17768,7 +17806,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17796,7 +17834,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17824,7 +17862,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17852,7 +17890,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17880,7 +17918,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17908,7 +17946,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17939,7 +17977,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17966,7 +18004,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -17992,14 +18030,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18026,7 +18062,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18052,14 +18088,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18086,7 +18120,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18112,14 +18146,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18146,7 +18178,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18172,14 +18204,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18206,7 +18236,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -18232,9 +18262,36 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -23607,7 +23664,7 @@ export declare const postCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23642,7 +23699,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23671,7 +23728,7 @@ export declare const postCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23730,7 +23787,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23758,7 +23815,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23784,7 +23841,7 @@ export declare const postCharacter: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -23814,7 +23871,7 @@ export declare const postCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -23840,7 +23897,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23868,7 +23925,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23896,7 +23953,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23924,7 +23981,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23952,7 +24009,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -23980,7 +24037,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24008,7 +24065,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24039,7 +24096,7 @@ export declare const postCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24066,7 +24123,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24092,14 +24149,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24126,7 +24181,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24152,14 +24207,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24186,7 +24239,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24212,14 +24265,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24246,7 +24297,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24272,14 +24323,12 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24306,7 +24355,7 @@ export declare const postCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -24332,9 +24381,36 @@ export declare const postCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -29712,7 +29788,7 @@ export declare const putCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29747,7 +29823,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29776,7 +29852,7 @@ export declare const putCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29835,7 +29911,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29863,7 +29939,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29889,7 +29965,7 @@ export declare const putCharacter: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -29919,7 +29995,7 @@ export declare const putCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -29945,7 +30021,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -29973,7 +30049,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30001,7 +30077,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30029,7 +30105,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30057,7 +30133,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30085,7 +30161,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30113,7 +30189,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30144,7 +30220,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30171,7 +30247,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30197,14 +30273,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30231,7 +30305,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30257,14 +30331,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30291,7 +30363,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30317,14 +30389,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30351,7 +30421,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30377,14 +30447,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30411,7 +30479,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -30437,9 +30505,36 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -35812,7 +35907,7 @@ export declare const putCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -35847,7 +35942,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -35876,7 +35971,7 @@ export declare const putCharacter: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -35935,7 +36030,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -35963,7 +36058,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -35989,7 +36084,7 @@ export declare const putCharacter: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -36019,7 +36114,7 @@ export declare const putCharacter: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
                     name: string;
@@ -36045,7 +36140,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36073,7 +36168,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36101,7 +36196,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36129,7 +36224,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36157,7 +36252,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36185,7 +36280,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36213,7 +36308,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36244,7 +36339,7 @@ export declare const putCharacter: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36271,7 +36366,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36297,14 +36392,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             actions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36331,7 +36424,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36357,14 +36450,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             bonusActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36391,7 +36482,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36417,14 +36508,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             reactions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36451,7 +36540,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36477,14 +36566,12 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
             legendaryActions?: {
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36511,7 +36598,7 @@ export declare const putCharacter: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
                         name: string;
@@ -36537,9 +36624,36 @@ export declare const putCharacter: z.ZodObject<{
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
                 cost?: number | undefined;
                 charges?: number | undefined;
-                chargesUsed?: number | undefined;
-                isCharged?: boolean | undefined;
             }[] | undefined;
+            legendaryActionsIntro?: {
+                string: string;
+                array: {
+                    string: string;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
+                    dice?: ({
+                        name: string;
+                        expression: string;
+                        type?: string | undefined;
+                    } | {
+                        name: string;
+                        dice: {
+                            die: number;
+                            diceNumber: number;
+                            diceIncrement?: number | undefined;
+                            availableAt?: number | undefined;
+                            availableUntil?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                            unitInterval?: number | undefined;
+                        };
+                        type?: string | undefined;
+                        expression?: string | undefined;
+                    })[] | undefined;
+                    id?: number | undefined;
+                }[];
+                id?: number | undefined;
+            }[] | undefined;
+            legendaryActionsPerRound?: number | undefined;
         } | undefined;
         variables?: {
             STR: number;
