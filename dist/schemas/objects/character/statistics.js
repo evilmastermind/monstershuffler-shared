@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'numberAsWord', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.parsedDice = zod_1.z.object({
@@ -52,6 +52,7 @@ exports.parsedExpression = zod_1.z.object({
 });
 exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
+    number: zod_1.z.number().optional(),
     type: zod_1.z.union([choices_1.statType, exports.additionalStringTypes]).optional(),
     format: zod_1.z.array(exports.format).optional(),
     dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])).optional(),
