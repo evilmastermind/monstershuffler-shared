@@ -400,8 +400,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -452,10 +452,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -486,10 +486,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -497,8 +497,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -1044,8 +1044,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -1096,10 +1096,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -1130,10 +1130,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -1141,8 +1141,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -1675,8 +1675,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -1727,10 +1727,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -1761,10 +1761,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -1772,8 +1772,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -2305,8 +2305,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -2357,10 +2357,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -2391,10 +2391,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -2402,8 +2402,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -2929,8 +2929,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -2981,10 +2981,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -3015,10 +3015,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -3026,8 +3026,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -3559,8 +3559,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -3611,10 +3611,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -3645,10 +3645,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -3656,8 +3656,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -4235,8 +4235,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -4287,10 +4287,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -4321,10 +4321,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -4332,8 +4332,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -4903,8 +4903,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -4955,10 +4955,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -4989,10 +4989,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -5000,8 +5000,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -5325,25 +5325,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5360,25 +5351,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5389,25 +5371,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5448,25 +5421,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5476,25 +5440,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5502,25 +5457,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -5532,25 +5478,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -5558,25 +5495,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5586,25 +5514,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5614,25 +5533,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5642,25 +5552,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5670,25 +5571,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5698,25 +5590,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5726,25 +5609,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5757,25 +5631,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5784,25 +5649,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5815,25 +5671,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5842,25 +5689,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5873,25 +5711,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5900,25 +5729,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5931,25 +5751,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5958,25 +5769,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -5989,25 +5791,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -6016,25 +5809,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -6047,25 +5831,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -6517,8 +6292,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -6569,10 +6344,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -6603,10 +6378,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -6614,8 +6389,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -7161,8 +6936,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -7213,10 +6988,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -7247,10 +7022,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -7258,8 +7033,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -7792,8 +7567,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -7844,10 +7619,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -7878,10 +7653,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -7889,8 +7664,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -8422,8 +8197,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -8474,10 +8249,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -8508,10 +8283,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -8519,8 +8294,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -9046,8 +8821,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -9098,10 +8873,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -9132,10 +8907,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -9143,8 +8918,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -9676,8 +9451,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -9728,10 +9503,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -9762,10 +9537,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -9773,8 +9548,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -10352,8 +10127,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -10404,10 +10179,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -10438,10 +10213,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -10449,8 +10224,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -11020,8 +10795,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -11072,10 +10847,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -11106,10 +10881,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -11117,8 +10892,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -11442,25 +11217,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11477,25 +11243,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11506,25 +11263,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11565,25 +11313,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11593,25 +11332,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11619,25 +11349,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -11649,25 +11370,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -11675,25 +11387,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11703,25 +11406,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11731,25 +11425,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11759,25 +11444,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11787,25 +11463,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11815,25 +11482,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11843,25 +11501,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11874,25 +11523,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11901,25 +11541,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11932,25 +11563,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11959,25 +11581,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -11990,25 +11603,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12017,25 +11621,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12048,25 +11643,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12075,25 +11661,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12106,25 +11683,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12133,25 +11701,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12164,25 +11723,16 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -12637,8 +12187,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -12689,10 +12239,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -12723,10 +12273,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -12734,8 +12284,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -13281,8 +12831,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -13333,10 +12883,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -13367,10 +12917,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -13378,8 +12928,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -13912,8 +13462,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -13964,10 +13514,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -13998,10 +13548,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -14009,8 +13559,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -14542,8 +14092,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -14594,10 +14144,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -14628,10 +14178,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -14639,8 +14189,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -15166,8 +14716,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -15218,10 +14768,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -15252,10 +14802,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -15263,8 +14813,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -15796,8 +15346,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -15848,10 +15398,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -15882,10 +15432,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -15893,8 +15443,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -16472,8 +16022,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -16524,10 +16074,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -16558,10 +16108,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -16569,8 +16119,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -17140,8 +16690,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -17192,10 +16742,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -17226,10 +16776,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -17237,8 +16787,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -17562,25 +17112,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17597,25 +17138,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17626,25 +17158,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17685,25 +17208,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17713,25 +17227,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17739,25 +17244,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -17769,25 +17265,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -17795,25 +17282,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17823,25 +17301,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17851,25 +17320,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17879,25 +17339,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17907,25 +17358,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17935,25 +17377,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17963,25 +17396,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -17994,25 +17418,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18021,25 +17436,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18052,25 +17458,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18079,25 +17476,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18110,25 +17498,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18137,25 +17516,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18168,25 +17538,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18195,25 +17556,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18226,25 +17578,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18253,25 +17596,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18284,25 +17618,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -18754,8 +18079,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -18806,10 +18131,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -18840,10 +18165,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -18851,8 +18176,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -19398,8 +18723,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -19450,10 +18775,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -19484,10 +18809,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -19495,8 +18820,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -20029,8 +19354,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -20081,10 +19406,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -20115,10 +19440,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -20126,8 +19451,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -20659,8 +19984,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -20711,10 +20036,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -20745,10 +20070,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -20756,8 +20081,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -21283,8 +20608,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -21335,10 +20660,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -21369,10 +20694,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -21380,8 +20705,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -21913,8 +21238,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -21965,10 +21290,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -21999,10 +21324,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -22010,8 +21335,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -22589,8 +21914,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -22641,10 +21966,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -22675,10 +22000,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -22686,8 +22011,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -23257,8 +22582,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             dice: {
-                                die: number;
-                                diceNumber: number;
+                                dice: number;
+                                sides: number;
                                 diceIncrement?: number | undefined;
                                 availableAt?: number | undefined;
                                 availableUntil?: number | undefined;
@@ -23309,10 +22634,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             }) & ({
@@ -23343,10 +22668,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 weight?: string | undefined;
                                 damageType?: string | undefined;
                                 special?: string | undefined;
-                                die?: string | undefined;
-                                diceNumber?: string | undefined;
-                                dieV?: string | undefined;
-                                diceNumberV?: string | undefined;
+                                dice?: string | undefined;
+                                sides?: string | undefined;
+                                diceV?: string | undefined;
+                                sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
                             } | undefined);
@@ -23354,8 +22679,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             enchantment?: {
                                 type: string;
                                 dice?: {
-                                    die: number;
-                                    diceNumber: number;
+                                    dice: number;
+                                    sides: number;
                                     diceIncrement?: number | undefined;
                                     availableAt?: number | undefined;
                                     availableUntil?: number | undefined;
@@ -23679,25 +23004,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23714,25 +23030,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23743,25 +23050,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 number: number;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23802,25 +23100,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23830,25 +23119,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23856,25 +23136,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             };
             characterHook?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -23886,25 +23157,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             subtypes?: {
                 string: string;
-                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                 format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                 dice?: ({
-                    name: string;
-                    expression: string;
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
                     type?: string | undefined;
                 } | {
-                    name: string;
-                    dice: {
-                        die: number;
-                        diceNumber: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    };
+                    value: number;
                     type?: string | undefined;
-                    expression?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
             }[] | undefined;
@@ -23912,25 +23174,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23940,25 +23193,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23968,25 +23212,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -23996,25 +23231,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24024,25 +23250,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24052,25 +23269,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24080,25 +23288,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24111,25 +23310,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24138,25 +23328,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24169,25 +23350,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24196,25 +23368,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24227,25 +23390,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24254,25 +23408,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24285,25 +23430,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24312,25 +23448,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24343,25 +23470,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24370,25 +23488,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 nameString: string;
                 nameArray: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];
@@ -24401,25 +23510,16 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 string: string;
                 array: {
                     string: string;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "endOfParagraph" | "numberWithSign" | "ft" | "rollableNumberWithSign" | "feet" | "resource" | "rollableDice" | undefined;
                     format?: ("italic" | "bold" | "underline" | "strikethrough" | "superscript" | "subscript")[] | undefined;
                     dice?: ({
-                        name: string;
-                        expression: string;
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
-                        name: string;
-                        dice: {
-                            die: number;
-                            diceNumber: number;
-                            diceIncrement?: number | undefined;
-                            availableAt?: number | undefined;
-                            availableUntil?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            unitInterval?: number | undefined;
-                        };
+                        value: number;
                         type?: string | undefined;
-                        expression?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
                 }[];

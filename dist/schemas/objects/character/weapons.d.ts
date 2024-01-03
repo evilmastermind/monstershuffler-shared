@@ -5,10 +5,10 @@ export declare const weaponObject: z.ZodObject<{
     weight: z.ZodOptional<z.ZodString>;
     damageType: z.ZodOptional<z.ZodString>;
     special: z.ZodOptional<z.ZodString>;
-    die: z.ZodOptional<z.ZodString>;
-    diceNumber: z.ZodOptional<z.ZodString>;
-    dieV: z.ZodOptional<z.ZodString>;
-    diceNumberV: z.ZodOptional<z.ZodString>;
+    dice: z.ZodOptional<z.ZodString>;
+    sides: z.ZodOptional<z.ZodString>;
+    diceV: z.ZodOptional<z.ZodString>;
+    sidesV: z.ZodOptional<z.ZodString>;
     range: z.ZodOptional<z.ZodString>;
     rangeMax: z.ZodOptional<z.ZodString>;
     properties: z.ZodArray<z.ZodString, "many">;
@@ -19,10 +19,10 @@ export declare const weaponObject: z.ZodObject<{
     weight?: string | undefined;
     damageType?: string | undefined;
     special?: string | undefined;
-    die?: string | undefined;
-    diceNumber?: string | undefined;
-    dieV?: string | undefined;
-    diceNumberV?: string | undefined;
+    dice?: string | undefined;
+    sides?: string | undefined;
+    diceV?: string | undefined;
+    sidesV?: string | undefined;
     range?: string | undefined;
     rangeMax?: string | undefined;
 }, {
@@ -32,10 +32,10 @@ export declare const weaponObject: z.ZodObject<{
     weight?: string | undefined;
     damageType?: string | undefined;
     special?: string | undefined;
-    die?: string | undefined;
-    diceNumber?: string | undefined;
-    dieV?: string | undefined;
-    diceNumberV?: string | undefined;
+    dice?: string | undefined;
+    sides?: string | undefined;
+    diceV?: string | undefined;
+    sidesV?: string | undefined;
     range?: string | undefined;
     rangeMax?: string | undefined;
 }>;

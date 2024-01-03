@@ -18,8 +18,8 @@ export const actionTypesEnum = z.enum([
 export const rechargeTypeEnum = z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
 
 export const diceObject = z.object({
-  die: z.number(),
-  diceNumber: z.number(),
+  dice: z.number(),
+  sides: z.number(),
   diceIncrement: z.number().optional(),
   availableAt: z.number().optional(),
   availableUntil: z.number().optional(),

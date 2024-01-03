@@ -2,24 +2,24 @@ import { z } from 'zod';
 export declare const actionTypesEnum: z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>;
 export declare const rechargeTypeEnum: z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>;
 export declare const diceObject: z.ZodObject<{
-    die: z.ZodNumber;
-    diceNumber: z.ZodNumber;
+    dice: z.ZodNumber;
+    sides: z.ZodNumber;
     diceIncrement: z.ZodOptional<z.ZodNumber>;
     availableAt: z.ZodOptional<z.ZodNumber>;
     availableUntil: z.ZodOptional<z.ZodNumber>;
     availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
     unitInterval: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
-    die: number;
-    diceNumber: number;
+    dice: number;
+    sides: number;
     diceIncrement?: number | undefined;
     availableAt?: number | undefined;
     availableUntil?: number | undefined;
     availableUnit?: "level" | "cr" | undefined;
     unitInterval?: number | undefined;
 }, {
-    die: number;
-    diceNumber: number;
+    dice: number;
+    sides: number;
     diceIncrement?: number | undefined;
     availableAt?: number | undefined;
     availableUntil?: number | undefined;
@@ -29,24 +29,24 @@ export declare const diceObject: z.ZodObject<{
 export declare const enchantmentObject: z.ZodObject<{
     type: z.ZodString;
     dice: z.ZodOptional<z.ZodObject<{
-        die: z.ZodNumber;
-        diceNumber: z.ZodNumber;
+        dice: z.ZodNumber;
+        sides: z.ZodNumber;
         diceIncrement: z.ZodOptional<z.ZodNumber>;
         availableAt: z.ZodOptional<z.ZodNumber>;
         availableUntil: z.ZodOptional<z.ZodNumber>;
         availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         unitInterval: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
         unitInterval?: number | undefined;
     }, {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -57,8 +57,8 @@ export declare const enchantmentObject: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     type: string;
     dice?: {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -69,8 +69,8 @@ export declare const enchantmentObject: z.ZodObject<{
 }, {
     type: string;
     dice?: {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -100,10 +100,10 @@ export declare const attackObject: z.ZodObject<{
         weight: z.ZodOptional<z.ZodString>;
         damageType: z.ZodOptional<z.ZodString>;
         special: z.ZodOptional<z.ZodString>;
-        die: z.ZodOptional<z.ZodString>;
-        diceNumber: z.ZodOptional<z.ZodString>;
-        dieV: z.ZodOptional<z.ZodString>;
-        diceNumberV: z.ZodOptional<z.ZodString>;
+        dice: z.ZodOptional<z.ZodString>;
+        sides: z.ZodOptional<z.ZodString>;
+        diceV: z.ZodOptional<z.ZodString>;
+        sidesV: z.ZodOptional<z.ZodString>;
         range: z.ZodOptional<z.ZodString>;
         rangeMax: z.ZodOptional<z.ZodString>;
         properties: z.ZodArray<z.ZodString, "many">;
@@ -116,10 +116,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     }, {
@@ -131,10 +131,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     }>, z.ZodObject<{
@@ -250,24 +250,24 @@ export declare const attackObject: z.ZodObject<{
     enchantment: z.ZodOptional<z.ZodObject<{
         type: z.ZodString;
         dice: z.ZodOptional<z.ZodObject<{
-            die: z.ZodNumber;
-            diceNumber: z.ZodNumber;
+            dice: z.ZodNumber;
+            sides: z.ZodNumber;
             diceIncrement: z.ZodOptional<z.ZodNumber>;
             availableAt: z.ZodOptional<z.ZodNumber>;
             availableUntil: z.ZodOptional<z.ZodNumber>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
             unitInterval: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
             unitInterval?: number | undefined;
         }, {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -278,8 +278,8 @@ export declare const attackObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         type: string;
         dice?: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -290,8 +290,8 @@ export declare const attackObject: z.ZodObject<{
     }, {
         type: string;
         dice?: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -330,10 +330,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     }) & ({
@@ -364,10 +364,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     } | undefined);
@@ -375,8 +375,8 @@ export declare const attackObject: z.ZodObject<{
     enchantment?: {
         type: string;
         dice?: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -415,10 +415,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     }) & ({
@@ -449,10 +449,10 @@ export declare const attackObject: z.ZodObject<{
         weight?: string | undefined;
         damageType?: string | undefined;
         special?: string | undefined;
-        die?: string | undefined;
-        diceNumber?: string | undefined;
-        dieV?: string | undefined;
-        diceNumberV?: string | undefined;
+        dice?: string | undefined;
+        sides?: string | undefined;
+        diceV?: string | undefined;
+        sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
     } | undefined);
@@ -460,8 +460,8 @@ export declare const attackObject: z.ZodObject<{
     enchantment?: {
         type: string;
         dice?: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -489,24 +489,24 @@ export declare const valueDiceObject: z.ZodObject<{
     type: z.ZodOptional<z.ZodString>;
     expression: z.ZodOptional<z.ZodString>;
     dice: z.ZodObject<{
-        die: z.ZodNumber;
-        diceNumber: z.ZodNumber;
+        dice: z.ZodNumber;
+        sides: z.ZodNumber;
         diceIncrement: z.ZodOptional<z.ZodNumber>;
         availableAt: z.ZodOptional<z.ZodNumber>;
         availableUntil: z.ZodOptional<z.ZodNumber>;
         availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
         unitInterval: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
         unitInterval?: number | undefined;
     }, {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -516,8 +516,8 @@ export declare const valueDiceObject: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     name: string;
     dice: {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -529,8 +529,8 @@ export declare const valueDiceObject: z.ZodObject<{
 }, {
     name: string;
     dice: {
-        die: number;
-        diceNumber: number;
+        dice: number;
+        sides: number;
         diceIncrement?: number | undefined;
         availableAt?: number | undefined;
         availableUntil?: number | undefined;
@@ -602,24 +602,24 @@ export declare const actionVariantObject: z.ZodObject<{
         type: z.ZodOptional<z.ZodString>;
         expression: z.ZodOptional<z.ZodString>;
         dice: z.ZodObject<{
-            die: z.ZodNumber;
-            diceNumber: z.ZodNumber;
+            dice: z.ZodNumber;
+            sides: z.ZodNumber;
             diceIncrement: z.ZodOptional<z.ZodNumber>;
             availableAt: z.ZodOptional<z.ZodNumber>;
             availableUntil: z.ZodOptional<z.ZodNumber>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
             unitInterval: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
             unitInterval?: number | undefined;
         }, {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -629,8 +629,8 @@ export declare const actionVariantObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         name: string;
         dice: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -642,8 +642,8 @@ export declare const actionVariantObject: z.ZodObject<{
     }, {
         name: string;
         dice: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -723,10 +723,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight: z.ZodOptional<z.ZodString>;
             damageType: z.ZodOptional<z.ZodString>;
             special: z.ZodOptional<z.ZodString>;
-            die: z.ZodOptional<z.ZodString>;
-            diceNumber: z.ZodOptional<z.ZodString>;
-            dieV: z.ZodOptional<z.ZodString>;
-            diceNumberV: z.ZodOptional<z.ZodString>;
+            dice: z.ZodOptional<z.ZodString>;
+            sides: z.ZodOptional<z.ZodString>;
+            diceV: z.ZodOptional<z.ZodString>;
+            sidesV: z.ZodOptional<z.ZodString>;
             range: z.ZodOptional<z.ZodString>;
             rangeMax: z.ZodOptional<z.ZodString>;
             properties: z.ZodArray<z.ZodString, "many">;
@@ -739,10 +739,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }, {
@@ -754,10 +754,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }>, z.ZodObject<{
@@ -873,24 +873,24 @@ export declare const actionVariantObject: z.ZodObject<{
         enchantment: z.ZodOptional<z.ZodObject<{
             type: z.ZodString;
             dice: z.ZodOptional<z.ZodObject<{
-                die: z.ZodNumber;
-                diceNumber: z.ZodNumber;
+                dice: z.ZodNumber;
+                sides: z.ZodNumber;
                 diceIncrement: z.ZodOptional<z.ZodNumber>;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 availableUntil: z.ZodOptional<z.ZodNumber>;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 unitInterval: z.ZodOptional<z.ZodNumber>;
             }, "strip", z.ZodTypeAny, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
                 unitInterval?: number | undefined;
             }, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -901,8 +901,8 @@ export declare const actionVariantObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -913,8 +913,8 @@ export declare const actionVariantObject: z.ZodObject<{
         }, {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -953,10 +953,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }) & ({
@@ -987,10 +987,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         } | undefined);
@@ -998,8 +998,8 @@ export declare const actionVariantObject: z.ZodObject<{
         enchantment?: {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1038,10 +1038,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }) & ({
@@ -1072,10 +1072,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         } | undefined);
@@ -1083,8 +1083,8 @@ export declare const actionVariantObject: z.ZodObject<{
         enchantment?: {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1110,8 +1110,8 @@ export declare const actionVariantObject: z.ZodObject<{
     } | {
         name: string;
         dice: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -1162,10 +1162,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }) & ({
@@ -1196,10 +1196,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         } | undefined);
@@ -1207,8 +1207,8 @@ export declare const actionVariantObject: z.ZodObject<{
         enchantment?: {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1234,8 +1234,8 @@ export declare const actionVariantObject: z.ZodObject<{
     } | {
         name: string;
         dice: {
-            die: number;
-            diceNumber: number;
+            dice: number;
+            sides: number;
             diceIncrement?: number | undefined;
             availableAt?: number | undefined;
             availableUntil?: number | undefined;
@@ -1286,10 +1286,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         }) & ({
@@ -1320,10 +1320,10 @@ export declare const actionVariantObject: z.ZodObject<{
             weight?: string | undefined;
             damageType?: string | undefined;
             special?: string | undefined;
-            die?: string | undefined;
-            diceNumber?: string | undefined;
-            dieV?: string | undefined;
-            diceNumberV?: string | undefined;
+            dice?: string | undefined;
+            sides?: string | undefined;
+            diceV?: string | undefined;
+            sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
         } | undefined);
@@ -1331,8 +1331,8 @@ export declare const actionVariantObject: z.ZodObject<{
         enchantment?: {
             type: string;
             dice?: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1366,24 +1366,24 @@ export declare const chosenActionObject: z.ZodObject<{
             type: z.ZodOptional<z.ZodString>;
             expression: z.ZodOptional<z.ZodString>;
             dice: z.ZodObject<{
-                die: z.ZodNumber;
-                diceNumber: z.ZodNumber;
+                dice: z.ZodNumber;
+                sides: z.ZodNumber;
                 diceIncrement: z.ZodOptional<z.ZodNumber>;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 availableUntil: z.ZodOptional<z.ZodNumber>;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 unitInterval: z.ZodOptional<z.ZodNumber>;
             }, "strip", z.ZodTypeAny, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
                 unitInterval?: number | undefined;
             }, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1393,8 +1393,8 @@ export declare const chosenActionObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1406,8 +1406,8 @@ export declare const chosenActionObject: z.ZodObject<{
         }, {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1487,10 +1487,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight: z.ZodOptional<z.ZodString>;
                 damageType: z.ZodOptional<z.ZodString>;
                 special: z.ZodOptional<z.ZodString>;
-                die: z.ZodOptional<z.ZodString>;
-                diceNumber: z.ZodOptional<z.ZodString>;
-                dieV: z.ZodOptional<z.ZodString>;
-                diceNumberV: z.ZodOptional<z.ZodString>;
+                dice: z.ZodOptional<z.ZodString>;
+                sides: z.ZodOptional<z.ZodString>;
+                diceV: z.ZodOptional<z.ZodString>;
+                sidesV: z.ZodOptional<z.ZodString>;
                 range: z.ZodOptional<z.ZodString>;
                 rangeMax: z.ZodOptional<z.ZodString>;
                 properties: z.ZodArray<z.ZodString, "many">;
@@ -1503,10 +1503,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }, {
@@ -1518,10 +1518,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }>, z.ZodObject<{
@@ -1637,24 +1637,24 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment: z.ZodOptional<z.ZodObject<{
                 type: z.ZodString;
                 dice: z.ZodOptional<z.ZodObject<{
-                    die: z.ZodNumber;
-                    diceNumber: z.ZodNumber;
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
                     diceIncrement: z.ZodOptional<z.ZodNumber>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
                     availableUntil: z.ZodOptional<z.ZodNumber>;
                     availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                     unitInterval: z.ZodOptional<z.ZodNumber>;
                 }, "strip", z.ZodTypeAny, {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     unitInterval?: number | undefined;
                 }, {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1665,8 +1665,8 @@ export declare const chosenActionObject: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1677,8 +1677,8 @@ export declare const chosenActionObject: z.ZodObject<{
             }, {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1717,10 +1717,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -1751,10 +1751,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -1762,8 +1762,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1802,10 +1802,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -1836,10 +1836,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -1847,8 +1847,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1874,8 +1874,8 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -1926,10 +1926,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -1960,10 +1960,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -1971,8 +1971,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -1998,8 +1998,8 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2050,10 +2050,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2084,10 +2084,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -2095,8 +2095,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2125,8 +2125,8 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2177,10 +2177,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2211,10 +2211,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -2222,8 +2222,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2259,8 +2259,8 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2311,10 +2311,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2345,10 +2345,10 @@ export declare const chosenActionObject: z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -2356,8 +2356,8 @@ export declare const chosenActionObject: z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2399,24 +2399,24 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             type: z.ZodOptional<z.ZodString>;
             expression: z.ZodOptional<z.ZodString>;
             dice: z.ZodObject<{
-                die: z.ZodNumber;
-                diceNumber: z.ZodNumber;
+                dice: z.ZodNumber;
+                sides: z.ZodNumber;
                 diceIncrement: z.ZodOptional<z.ZodNumber>;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 availableUntil: z.ZodOptional<z.ZodNumber>;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                 unitInterval: z.ZodOptional<z.ZodNumber>;
             }, "strip", z.ZodTypeAny, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
                 unitInterval?: number | undefined;
             }, {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2426,8 +2426,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2439,8 +2439,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         }, {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2520,10 +2520,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight: z.ZodOptional<z.ZodString>;
                 damageType: z.ZodOptional<z.ZodString>;
                 special: z.ZodOptional<z.ZodString>;
-                die: z.ZodOptional<z.ZodString>;
-                diceNumber: z.ZodOptional<z.ZodString>;
-                dieV: z.ZodOptional<z.ZodString>;
-                diceNumberV: z.ZodOptional<z.ZodString>;
+                dice: z.ZodOptional<z.ZodString>;
+                sides: z.ZodOptional<z.ZodString>;
+                diceV: z.ZodOptional<z.ZodString>;
+                sidesV: z.ZodOptional<z.ZodString>;
                 range: z.ZodOptional<z.ZodString>;
                 rangeMax: z.ZodOptional<z.ZodString>;
                 properties: z.ZodArray<z.ZodString, "many">;
@@ -2536,10 +2536,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }, {
@@ -2551,10 +2551,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }>, z.ZodObject<{
@@ -2670,24 +2670,24 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment: z.ZodOptional<z.ZodObject<{
                 type: z.ZodString;
                 dice: z.ZodOptional<z.ZodObject<{
-                    die: z.ZodNumber;
-                    diceNumber: z.ZodNumber;
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
                     diceIncrement: z.ZodOptional<z.ZodNumber>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
                     availableUntil: z.ZodOptional<z.ZodNumber>;
                     availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
                     unitInterval: z.ZodOptional<z.ZodNumber>;
                 }, "strip", z.ZodTypeAny, {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     unitInterval?: number | undefined;
                 }, {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2698,8 +2698,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2710,8 +2710,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             }, {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2750,10 +2750,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2784,10 +2784,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -2795,8 +2795,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2835,10 +2835,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2869,10 +2869,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -2880,8 +2880,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -2907,8 +2907,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -2959,10 +2959,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -2993,10 +2993,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -3004,8 +3004,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -3031,8 +3031,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -3083,10 +3083,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -3117,10 +3117,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -3128,8 +3128,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -3158,8 +3158,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -3210,10 +3210,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -3244,10 +3244,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -3255,8 +3255,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;
@@ -3292,8 +3292,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             dice: {
-                die: number;
-                diceNumber: number;
+                dice: number;
+                sides: number;
                 diceIncrement?: number | undefined;
                 availableAt?: number | undefined;
                 availableUntil?: number | undefined;
@@ -3344,10 +3344,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             }) & ({
@@ -3378,10 +3378,10 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 weight?: string | undefined;
                 damageType?: string | undefined;
                 special?: string | undefined;
-                die?: string | undefined;
-                diceNumber?: string | undefined;
-                dieV?: string | undefined;
-                diceNumberV?: string | undefined;
+                dice?: string | undefined;
+                sides?: string | undefined;
+                diceV?: string | undefined;
+                sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
             } | undefined);
@@ -3389,8 +3389,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             enchantment?: {
                 type: string;
                 dice?: {
-                    die: number;
-                    diceNumber: number;
+                    dice: number;
+                    sides: number;
                     diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
                     availableUntil?: number | undefined;

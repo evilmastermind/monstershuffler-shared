@@ -18,8 +18,8 @@ exports.actionTypesEnum = zod_1.z.enum([
 ]);
 exports.rechargeTypeEnum = zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
 exports.diceObject = zod_1.z.object({
-    die: zod_1.z.number(),
-    diceNumber: zod_1.z.number(),
+    dice: zod_1.z.number(),
+    sides: zod_1.z.number(),
     diceIncrement: zod_1.z.number().optional(),
     availableAt: zod_1.z.number().optional(),
     availableUntil: zod_1.z.number().optional(),

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { statType } from './choices';
-import { pronounsObject, legendaryActionsPerRoundStats } from './other';
-import { valueExpressionObject, valueDiceObject, rechargeTypeEnum } from '.';
+import { pronounsObject } from './other';
+import { rechargeTypeEnum } from '.';
 
 /**
  * About the .statistics object and how it should be constructed:
@@ -37,16 +37,28 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
+
+export const parsedDice = z.object({
+  dice: z.number(),
+  sides: z.number(),
+  bonus: z.number().optional(),
+  type: z.string().optional(),
+});
+
+export const parsedExpression = z.object({
+  value: z.number(),
+  type: z.string().optional(),
+});
 
 export const descriptionPartObject = z.object({
   string: z.string(),
   type: z.union([statType, additionalStringTypes]).optional(),
   format: z.array(format).optional(),
-  dice: z.array(z.union([valueDiceObject, valueExpressionObject])).optional(),
+  dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
   id: z.number().optional(),
 });
 
