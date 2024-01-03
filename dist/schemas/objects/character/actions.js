@@ -59,12 +59,12 @@ exports.valueIncrProgressionObject = zod_1.z.object({
     name: zod_1.z.string(),
     type: zod_1.z.string().optional(),
     incrProgression: zod_1.z.object({
-        unitInterval: zod_1.z.string(),
-        unitIncrement: zod_1.z.string(),
-        availableAt: zod_1.z.string(),
+        unitInterval: zod_1.z.number(),
+        unitIncrement: zod_1.z.number(),
+        availableAt: zod_1.z.number(),
         availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
-        valueBase: zod_1.z.string(),
-        valueIncrement: zod_1.z.string(),
+        valueBase: zod_1.z.number(),
+        valueIncrement: zod_1.z.number(),
     }),
 });
 exports.actionVariantObject = zod_1.z.object({

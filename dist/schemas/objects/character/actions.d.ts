@@ -544,46 +544,46 @@ export declare const valueIncrProgressionObject: z.ZodObject<{
     name: z.ZodString;
     type: z.ZodOptional<z.ZodString>;
     incrProgression: z.ZodObject<{
-        unitInterval: z.ZodString;
-        unitIncrement: z.ZodString;
-        availableAt: z.ZodString;
+        unitInterval: z.ZodNumber;
+        unitIncrement: z.ZodNumber;
+        availableAt: z.ZodNumber;
         availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-        valueBase: z.ZodString;
-        valueIncrement: z.ZodString;
+        valueBase: z.ZodNumber;
+        valueIncrement: z.ZodNumber;
     }, "strip", z.ZodTypeAny, {
-        availableAt: string;
-        unitInterval: string;
-        unitIncrement: string;
-        valueBase: string;
-        valueIncrement: string;
+        availableAt: number;
+        unitInterval: number;
+        unitIncrement: number;
+        valueBase: number;
+        valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     }, {
-        availableAt: string;
-        unitInterval: string;
-        unitIncrement: string;
-        valueBase: string;
-        valueIncrement: string;
+        availableAt: number;
+        unitInterval: number;
+        unitIncrement: number;
+        valueBase: number;
+        valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     incrProgression: {
-        availableAt: string;
-        unitInterval: string;
-        unitIncrement: string;
-        valueBase: string;
-        valueIncrement: string;
+        availableAt: number;
+        unitInterval: number;
+        unitIncrement: number;
+        valueBase: number;
+        valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     };
     type?: string | undefined;
 }, {
     name: string;
     incrProgression: {
-        availableAt: string;
-        unitInterval: string;
-        unitIncrement: string;
-        valueBase: string;
-        valueIncrement: string;
+        availableAt: number;
+        unitInterval: number;
+        unitIncrement: number;
+        valueBase: number;
+        valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     };
     type?: string | undefined;
@@ -668,46 +668,46 @@ export declare const actionVariantObject: z.ZodObject<{
         name: z.ZodString;
         type: z.ZodOptional<z.ZodString>;
         incrProgression: z.ZodObject<{
-            unitInterval: z.ZodString;
-            unitIncrement: z.ZodString;
-            availableAt: z.ZodString;
+            unitInterval: z.ZodNumber;
+            unitIncrement: z.ZodNumber;
+            availableAt: z.ZodNumber;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-            valueBase: z.ZodString;
-            valueIncrement: z.ZodString;
+            valueBase: z.ZodNumber;
+            valueIncrement: z.ZodNumber;
         }, "strip", z.ZodTypeAny, {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         }, {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         }>;
     }, "strip", z.ZodTypeAny, {
         name: string;
         incrProgression: {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
         type?: string | undefined;
     }, {
         name: string;
         incrProgression: {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
         type?: string | undefined;
@@ -1123,11 +1123,11 @@ export declare const actionVariantObject: z.ZodObject<{
     } | {
         name: string;
         incrProgression: {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
         type?: string | undefined;
@@ -1247,11 +1247,11 @@ export declare const actionVariantObject: z.ZodObject<{
     } | {
         name: string;
         incrProgression: {
-            availableAt: string;
-            unitInterval: string;
-            unitIncrement: string;
-            valueBase: string;
-            valueIncrement: string;
+            availableAt: number;
+            unitInterval: number;
+            unitIncrement: number;
+            valueBase: number;
+            valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
         type?: string | undefined;
@@ -1432,46 +1432,46 @@ export declare const chosenActionObject: z.ZodObject<{
             name: z.ZodString;
             type: z.ZodOptional<z.ZodString>;
             incrProgression: z.ZodObject<{
-                unitInterval: z.ZodString;
-                unitIncrement: z.ZodString;
-                availableAt: z.ZodString;
+                unitInterval: z.ZodNumber;
+                unitIncrement: z.ZodNumber;
+                availableAt: z.ZodNumber;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                valueBase: z.ZodString;
-                valueIncrement: z.ZodString;
+                valueBase: z.ZodNumber;
+                valueIncrement: z.ZodNumber;
             }, "strip", z.ZodTypeAny, {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             }, {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
         }, {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -1887,11 +1887,11 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -2011,11 +2011,11 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -2138,11 +2138,11 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -2272,11 +2272,11 @@ export declare const chosenActionObject: z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -2465,46 +2465,46 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             name: z.ZodString;
             type: z.ZodOptional<z.ZodString>;
             incrProgression: z.ZodObject<{
-                unitInterval: z.ZodString;
-                unitIncrement: z.ZodString;
-                availableAt: z.ZodString;
+                unitInterval: z.ZodNumber;
+                unitIncrement: z.ZodNumber;
+                availableAt: z.ZodNumber;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                valueBase: z.ZodString;
-                valueIncrement: z.ZodString;
+                valueBase: z.ZodNumber;
+                valueIncrement: z.ZodNumber;
             }, "strip", z.ZodTypeAny, {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             }, {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
         }, {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -2920,11 +2920,11 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -3044,11 +3044,11 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -3171,11 +3171,11 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;
@@ -3305,11 +3305,11 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         } | {
             name: string;
             incrProgression: {
-                availableAt: string;
-                unitInterval: string;
-                unitIncrement: string;
-                valueBase: string;
-                valueIncrement: string;
+                availableAt: number;
+                unitInterval: number;
+                unitIncrement: number;
+                valueBase: number;
+                valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
             type?: string | undefined;

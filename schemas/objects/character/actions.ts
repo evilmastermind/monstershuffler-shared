@@ -62,12 +62,12 @@ export const valueIncrProgressionObject = z.object({
   name: z.string(),
   type: z.string().optional(),
   incrProgression: z.object({
-    unitInterval: z.string(),
-    unitIncrement: z.string(),
-    availableAt: z.string(),
+    unitInterval: z.number(),
+    unitIncrement: z.number(),
+    availableAt: z.number(),
     availableUnit: z.enum(['level', 'cr']).optional(),
-    valueBase: z.string(),
-    valueIncrement: z.string(),
+    valueBase: z.number(),
+    valueIncrement: z.number(),
   }),
 });
 

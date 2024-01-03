@@ -413,11 +413,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -1057,11 +1057,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -1688,11 +1688,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -2318,11 +2318,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -2942,11 +2942,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -3572,11 +3572,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -4248,11 +4248,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -4916,11 +4916,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -6305,11 +6305,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -6949,11 +6949,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -7580,11 +7580,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -8210,11 +8210,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -8834,11 +8834,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -9464,11 +9464,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -10140,11 +10140,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -10808,11 +10808,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -12200,11 +12200,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -12844,11 +12844,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -13475,11 +13475,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -14105,11 +14105,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -14729,11 +14729,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -15359,11 +15359,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -16035,11 +16035,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -16703,11 +16703,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -18092,11 +18092,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -18736,11 +18736,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -19367,11 +19367,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -19997,11 +19997,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -20621,11 +20621,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -21251,11 +21251,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -21927,11 +21927,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
@@ -22595,11 +22595,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             name: string;
                             incrProgression: {
-                                availableAt: string;
-                                unitInterval: string;
-                                unitIncrement: string;
-                                valueBase: string;
-                                valueIncrement: string;
+                                availableAt: number;
+                                unitInterval: number;
+                                unitIncrement: number;
+                                valueBase: number;
+                                valueIncrement: number;
                                 availableUnit?: "level" | "cr" | undefined;
                             };
                             type?: string | undefined;
