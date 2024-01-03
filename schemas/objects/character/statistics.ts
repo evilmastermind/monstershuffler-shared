@@ -37,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'numberAsWord', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
@@ -56,6 +56,7 @@ export const parsedExpression = z.object({
 
 export const descriptionPartObject = z.object({
   string: z.string(),
+  number: z.number().optional(),
   type: z.union([statType, additionalStringTypes]).optional(),
   format: z.array(format).optional(),
   dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
