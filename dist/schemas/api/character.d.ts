@@ -5849,7 +5849,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -11767,7 +11767,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -17690,7 +17690,7 @@ export declare const postCharacter: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -23609,7 +23609,7 @@ export declare const postCharacter: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -29533,7 +29533,7 @@ export declare const putCharacter: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -35452,7 +35452,7 @@ export declare const putCharacter: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {

@@ -141,7 +141,7 @@ export const statisticsObject = z.object({
   bonusActions: z.array(statStringArrayWithName).optional(),
   reactions: z.array(statStringArrayWithName).optional(),
   legendaryActions: z.array(statStringArrayWithName).optional(),
-  legendaryActionsIntro: z.array(statStringArray).optional(),
+  legendaryActionsIntro: statStringArray.optional(),
   legendaryActionsMax: z.number().optional(),
 });
 

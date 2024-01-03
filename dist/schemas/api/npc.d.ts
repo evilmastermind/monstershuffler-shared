@@ -5870,7 +5870,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -11787,7 +11787,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -17707,7 +17707,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {
@@ -23624,7 +23624,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     id?: number | undefined;
                 }[];
                 id?: number | undefined;
-            }[] | undefined;
+            } | undefined;
             legendaryActionsMax?: number | undefined;
         } | undefined;
         variables?: {

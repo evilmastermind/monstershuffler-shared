@@ -131,6 +131,6 @@ exports.statisticsObject = zod_1.z.object({
     bonusActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     reactions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     legendaryActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
-    legendaryActionsIntro: zod_1.z.array(exports.statStringArray).optional(),
+    legendaryActionsIntro: exports.statStringArray.optional(),
     legendaryActionsMax: zod_1.z.number().optional(),
 });
