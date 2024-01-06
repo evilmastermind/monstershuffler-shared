@@ -5622,6 +5622,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5640,7 +5641,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5664,6 +5664,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5682,7 +5683,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5706,6 +5706,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5724,7 +5725,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5748,6 +5748,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5766,7 +5767,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5790,6 +5790,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5808,7 +5809,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11540,6 +11540,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11558,7 +11559,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11582,6 +11582,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11600,7 +11601,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11624,6 +11624,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11642,7 +11643,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11666,6 +11666,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11684,7 +11685,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11708,6 +11708,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11726,7 +11727,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17463,6 +17463,7 @@ export declare const postCharacter: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17481,7 +17482,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17505,6 +17505,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17523,7 +17524,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17547,6 +17547,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17565,7 +17566,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17589,6 +17589,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17607,7 +17608,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17631,6 +17631,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17649,7 +17650,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23382,6 +23382,7 @@ export declare const postCharacter: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23400,7 +23401,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23424,6 +23424,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23442,7 +23443,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23466,6 +23466,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23484,7 +23485,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23508,6 +23508,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23526,7 +23527,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23550,6 +23550,7 @@ export declare const postCharacter: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23568,7 +23569,6 @@ export declare const postCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -29306,6 +29306,7 @@ export declare const putCharacter: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -29324,7 +29325,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -29348,6 +29348,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -29366,7 +29367,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -29390,6 +29390,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -29408,7 +29409,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -29432,6 +29432,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -29450,7 +29451,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -29474,6 +29474,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -29492,7 +29493,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -35225,6 +35225,7 @@ export declare const putCharacter: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -35243,7 +35244,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -35267,6 +35267,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -35285,7 +35286,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -35309,6 +35309,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -35327,7 +35328,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -35351,6 +35351,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -35369,7 +35370,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -35393,6 +35393,7 @@ export declare const putCharacter: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -35411,7 +35412,6 @@ export declare const putCharacter: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;

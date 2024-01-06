@@ -5643,6 +5643,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5661,7 +5662,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5685,6 +5685,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5703,7 +5704,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5727,6 +5727,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5745,7 +5746,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5769,6 +5769,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5787,7 +5788,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -5811,6 +5811,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5829,7 +5830,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11560,6 +11560,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11578,7 +11579,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11602,6 +11602,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11620,7 +11621,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11644,6 +11644,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11662,7 +11663,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11686,6 +11686,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11704,7 +11705,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -11728,6 +11728,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11746,7 +11747,6 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17480,6 +17480,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17498,7 +17499,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17522,6 +17522,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17540,7 +17541,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17564,6 +17564,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17582,7 +17583,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17606,6 +17606,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17624,7 +17625,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -17648,6 +17648,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -17666,7 +17667,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23397,6 +23397,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             telepathy?: number | undefined;
             traits?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23415,7 +23416,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23439,6 +23439,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             actions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23457,7 +23458,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23481,6 +23481,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             bonusActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23499,7 +23500,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23523,6 +23523,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             reactions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23541,7 +23542,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;
@@ -23565,6 +23565,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             }[] | undefined;
             legendaryActions?: {
                 string: string;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -23583,7 +23584,6 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 }[];
                 tag: string;
                 priority: number;
-                nameString: string;
                 nameArray: {
                     string: string;
                     number?: number | undefined;

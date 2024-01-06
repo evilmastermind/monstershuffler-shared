@@ -83,7 +83,7 @@ exports.statStringArrayWithName = zod_1.z.object({
     priority: zod_1.z.number(),
     string: zod_1.z.string(),
     array: zod_1.z.array(exports.descriptionPartObject),
-    nameString: zod_1.z.string(),
+    name: zod_1.z.string(),
     nameArray: zod_1.z.array(exports.descriptionPartObject),
     id: zod_1.z.number().optional(),
     recharge: _1.rechargeTypeEnum.optional(),

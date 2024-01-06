@@ -92,7 +92,7 @@ export const statStringArrayWithName = z.object({
   priority: z.number(),
   string: z.string(),
   array: z.array(descriptionPartObject),
-  nameString: z.string(),
+  name: z.string(),
   nameArray: z.array(descriptionPartObject),
   id: z.number().optional(),
   recharge: rechargeTypeEnum.optional(),
