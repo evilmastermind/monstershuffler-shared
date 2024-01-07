@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.attackObject = exports.attackAttributesObject = exports.enchantmentObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
+const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
 const abilities_1 = require("./abilities");
 exports.actionTypesEnum = zod_1.z.enum([
@@ -37,11 +38,10 @@ exports.attackAttributesObject = zod_1.z.object({
 exports.attackObject = zod_1.z.object({
     name: zod_1.z.string(),
     replaceName: zod_1.z.boolean().optional(),
-    // attributes: z.union([
-    //   attackAttributesObject.merge(weaponObject),
-    //   choiceRandomObject,
-    // ]),
-    attributes: zod_1.z.any().optional(),
+    attributes: zod_1.z.union([
+        exports.attackAttributesObject.merge(weapons_1.weaponObject),
+        choices_1.choiceRandomObject,
+    ]).optional(),
     enchantment: exports.enchantmentObject.optional(),
 });
 exports.valueExpressionObject = zod_1.z.object({

@@ -39,11 +39,10 @@ export const attackAttributesObject = z.object({
 export const attackObject = z.object({
   name: z.string(),
   replaceName: z.boolean().optional(),
-  // attributes: z.union([
-  //   attackAttributesObject.merge(weaponObject),
-  //   choiceRandomObject,
-  // ]),
-  attributes: z.any().optional(),
+  attributes: z.union([
+    attackAttributesObject.merge(weaponObject),
+    choiceRandomObject,
+  ]).optional(),
   enchantment: enchantmentObject.optional(),
 });
 

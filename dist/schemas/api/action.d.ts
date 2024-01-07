@@ -221,7 +221,161 @@ export declare const getActionResponse: z.ZodObject<{
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
-                attributes: z.ZodOptional<z.ZodAny>;
+                attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+                    reach: z.ZodOptional<z.ZodString>;
+                    targets: z.ZodOptional<z.ZodString>;
+                    name: z.ZodOptional<z.ZodString>;
+                    cost: z.ZodOptional<z.ZodString>;
+                    weight: z.ZodOptional<z.ZodString>;
+                    damageType: z.ZodOptional<z.ZodString>;
+                    special: z.ZodOptional<z.ZodString>;
+                    dice: z.ZodOptional<z.ZodString>;
+                    sides: z.ZodOptional<z.ZodString>;
+                    diceV: z.ZodOptional<z.ZodString>;
+                    sidesV: z.ZodOptional<z.ZodString>;
+                    range: z.ZodOptional<z.ZodString>;
+                    rangeMax: z.ZodOptional<z.ZodString>;
+                    properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+                }, "strip", z.ZodTypeAny, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }>, z.ZodObject<{
+                    choice: z.ZodObject<{
+                        type: z.ZodLiteral<"random">;
+                        resultType: z.ZodEnum<["object", "nameId"]>;
+                        source: z.ZodEnum<["objects", "languages", "skills"]>;
+                        number: z.ZodOptional<z.ZodNumber>;
+                        objectType: z.ZodOptional<z.ZodNumber>;
+                        filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            keyName: z.ZodString;
+                            keyValues: z.ZodArray<z.ZodString, "many">;
+                        }, "strip", z.ZodTypeAny, {
+                            keyName: string;
+                            keyValues: string[];
+                        }, {
+                            keyName: string;
+                            keyValues: string[];
+                        }>, "many">>;
+                        chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            id: z.ZodOptional<z.ZodNumber>;
+                            value: z.ZodString;
+                            type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
+                            availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                        }, "strip", z.ZodTypeAny, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }>, "many">>;
+                    }, "strip", z.ZodTypeAny, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }>;
+                }, "strip", z.ZodTypeAny, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }>]>>;
                 enchantment: z.ZodOptional<z.ZodObject<{
                     type: z.ZodString;
                     dice: z.ZodOptional<z.ZodObject<{
@@ -278,7 +432,41 @@ export declare const getActionResponse: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -295,7 +483,41 @@ export declare const getActionResponse: z.ZodObject<{
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -351,7 +573,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -407,7 +663,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -472,7 +762,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -538,7 +862,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -750,7 +1108,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -835,7 +1227,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -930,7 +1356,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1015,7 +1475,41 @@ export declare const getActionResponse: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1185,7 +1679,161 @@ export declare const postAction: z.ZodObject<{
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
-                attributes: z.ZodOptional<z.ZodAny>;
+                attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+                    reach: z.ZodOptional<z.ZodString>;
+                    targets: z.ZodOptional<z.ZodString>;
+                    name: z.ZodOptional<z.ZodString>;
+                    cost: z.ZodOptional<z.ZodString>;
+                    weight: z.ZodOptional<z.ZodString>;
+                    damageType: z.ZodOptional<z.ZodString>;
+                    special: z.ZodOptional<z.ZodString>;
+                    dice: z.ZodOptional<z.ZodString>;
+                    sides: z.ZodOptional<z.ZodString>;
+                    diceV: z.ZodOptional<z.ZodString>;
+                    sidesV: z.ZodOptional<z.ZodString>;
+                    range: z.ZodOptional<z.ZodString>;
+                    rangeMax: z.ZodOptional<z.ZodString>;
+                    properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+                }, "strip", z.ZodTypeAny, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }>, z.ZodObject<{
+                    choice: z.ZodObject<{
+                        type: z.ZodLiteral<"random">;
+                        resultType: z.ZodEnum<["object", "nameId"]>;
+                        source: z.ZodEnum<["objects", "languages", "skills"]>;
+                        number: z.ZodOptional<z.ZodNumber>;
+                        objectType: z.ZodOptional<z.ZodNumber>;
+                        filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            keyName: z.ZodString;
+                            keyValues: z.ZodArray<z.ZodString, "many">;
+                        }, "strip", z.ZodTypeAny, {
+                            keyName: string;
+                            keyValues: string[];
+                        }, {
+                            keyName: string;
+                            keyValues: string[];
+                        }>, "many">>;
+                        chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            id: z.ZodOptional<z.ZodNumber>;
+                            value: z.ZodString;
+                            type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
+                            availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                        }, "strip", z.ZodTypeAny, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }>, "many">>;
+                    }, "strip", z.ZodTypeAny, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }>;
+                }, "strip", z.ZodTypeAny, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }>]>>;
                 enchantment: z.ZodOptional<z.ZodObject<{
                     type: z.ZodString;
                     dice: z.ZodOptional<z.ZodObject<{
@@ -1242,7 +1890,41 @@ export declare const postAction: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1259,7 +1941,41 @@ export declare const postAction: z.ZodObject<{
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1315,7 +2031,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1371,7 +2121,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1436,7 +2220,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1502,7 +2320,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1698,7 +2550,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1783,7 +2669,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1876,7 +2796,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -1961,7 +2915,41 @@ export declare const postAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2128,7 +3116,161 @@ export declare const putAction: z.ZodObject<{
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
-                attributes: z.ZodOptional<z.ZodAny>;
+                attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+                    reach: z.ZodOptional<z.ZodString>;
+                    targets: z.ZodOptional<z.ZodString>;
+                    name: z.ZodOptional<z.ZodString>;
+                    cost: z.ZodOptional<z.ZodString>;
+                    weight: z.ZodOptional<z.ZodString>;
+                    damageType: z.ZodOptional<z.ZodString>;
+                    special: z.ZodOptional<z.ZodString>;
+                    dice: z.ZodOptional<z.ZodString>;
+                    sides: z.ZodOptional<z.ZodString>;
+                    diceV: z.ZodOptional<z.ZodString>;
+                    sidesV: z.ZodOptional<z.ZodString>;
+                    range: z.ZodOptional<z.ZodString>;
+                    rangeMax: z.ZodOptional<z.ZodString>;
+                    properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+                }, "strip", z.ZodTypeAny, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }, {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                }>, z.ZodObject<{
+                    choice: z.ZodObject<{
+                        type: z.ZodLiteral<"random">;
+                        resultType: z.ZodEnum<["object", "nameId"]>;
+                        source: z.ZodEnum<["objects", "languages", "skills"]>;
+                        number: z.ZodOptional<z.ZodNumber>;
+                        objectType: z.ZodOptional<z.ZodNumber>;
+                        filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            keyName: z.ZodString;
+                            keyValues: z.ZodArray<z.ZodString, "many">;
+                        }, "strip", z.ZodTypeAny, {
+                            keyName: string;
+                            keyValues: string[];
+                        }, {
+                            keyName: string;
+                            keyValues: string[];
+                        }>, "many">>;
+                        chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            id: z.ZodOptional<z.ZodNumber>;
+                            value: z.ZodString;
+                            type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
+                            availableAt: z.ZodOptional<z.ZodNumber>;
+                            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                        }, "strip", z.ZodTypeAny, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }, {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }>, "many">>;
+                    }, "strip", z.ZodTypeAny, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }, {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    }>;
+                }, "strip", z.ZodTypeAny, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }, {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                }>]>>;
                 enchantment: z.ZodOptional<z.ZodObject<{
                     type: z.ZodString;
                     dice: z.ZodOptional<z.ZodObject<{
@@ -2185,7 +3327,41 @@ export declare const putAction: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2202,7 +3378,41 @@ export declare const putAction: z.ZodObject<{
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2258,7 +3468,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2314,7 +3558,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2379,7 +3657,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2445,7 +3757,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2641,7 +3987,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2726,7 +4106,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2818,7 +4232,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
@@ -2903,7 +4351,41 @@ export declare const putAction: z.ZodObject<{
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
-                attributes?: any;
+                attributes?: {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    properties?: string[] | undefined;
+                } | undefined;
                 enchantment?: {
                     type: string;
                     dice?: {
