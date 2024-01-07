@@ -84,7 +84,7 @@ exports.actionVariantObject = zod_1.z.object({
 exports.chosenActionObject = zod_1.z.object({
     tag: zod_1.z.string(),
     priority: zod_1.z.number().optional(),
-    variants: zod_1.z.array(zod_1.z.any()),
+    variants: zod_1.z.array(exports.actionVariantObject),
     actionType: exports.actionTypesEnum.optional(),
     availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
     availableUntil: zod_1.z.number().optional(),
