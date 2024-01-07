@@ -422,97 +422,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -526,7 +439,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -1085,97 +998,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -1189,7 +1015,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -1735,97 +1561,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -1839,7 +1578,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -2384,97 +2123,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -2488,7 +2140,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -3027,97 +2679,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -3131,7 +2696,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -3676,97 +3241,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -3780,7 +3258,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -4371,97 +3849,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -4475,7 +3866,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -5058,97 +4449,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -5162,7 +4466,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -6491,97 +5795,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -6595,7 +5812,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -7154,97 +6371,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -7258,7 +6388,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -7804,97 +6934,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -7908,7 +6951,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -8453,97 +7496,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -8557,7 +7513,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -9096,97 +8052,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -9200,7 +8069,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -9745,97 +8614,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -9849,7 +8631,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -10440,97 +9222,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -10544,7 +9239,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -11127,97 +9822,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -11231,7 +9839,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -12563,97 +11171,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -12667,7 +11188,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -13226,97 +11747,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -13330,7 +11764,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -13876,97 +12310,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -13980,7 +12327,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -14525,97 +12872,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -14629,7 +12889,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -15168,97 +13428,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -15272,7 +13445,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -15817,97 +13990,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -15921,7 +14007,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -16512,97 +14598,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -16616,7 +14615,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -17199,97 +15198,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -17303,7 +15215,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -18632,97 +16544,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -18736,7 +16561,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19295,97 +17120,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -19399,7 +17137,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -19945,97 +17683,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -20049,7 +17700,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -20594,97 +18245,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -20698,7 +18262,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -21237,97 +18801,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -21341,7 +18818,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -21886,97 +19363,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -21990,7 +19380,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -22581,97 +19971,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -22685,7 +19988,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
@@ -23268,97 +20571,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                         })[] | undefined;
-                        attacks?: ({
-                            choice: {
-                                type: "random";
-                                resultType: "object" | "nameId";
-                                source: "objects" | "languages" | "skills";
-                                number?: number | undefined;
-                                objectType?: number | undefined;
-                                filters?: {
-                                    keyName: string;
-                                    keyValues: string[];
-                                }[] | undefined;
-                                chosenAlready?: {
-                                    value: string;
-                                    id?: number | undefined;
-                                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                    availableAt?: number | undefined;
-                                    availableUnit?: "level" | "cr" | undefined;
-                                }[] | undefined;
-                            };
-                        } | {
+                        attacks?: {
                             name: string;
-                            attributes: ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            }) & ({
-                                choice: {
-                                    type: "random";
-                                    resultType: "object" | "nameId";
-                                    source: "objects" | "languages" | "skills";
-                                    number?: number | undefined;
-                                    objectType?: number | undefined;
-                                    filters?: {
-                                        keyName: string;
-                                        keyValues: string[];
-                                    }[] | undefined;
-                                    chosenAlready?: {
-                                        value: string;
-                                        id?: number | undefined;
-                                        type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                                        availableAt?: number | undefined;
-                                        availableUnit?: "level" | "cr" | undefined;
-                                    }[] | undefined;
-                                };
-                            } | {
-                                reach?: string | undefined;
-                                targets?: string | undefined;
-                                name?: string | undefined;
-                                cost?: string | undefined;
-                                weight?: string | undefined;
-                                damageType?: string | undefined;
-                                special?: string | undefined;
-                                dice?: string | undefined;
-                                sides?: string | undefined;
-                                diceV?: string | undefined;
-                                sidesV?: string | undefined;
-                                range?: string | undefined;
-                                rangeMax?: string | undefined;
-                                properties?: string[] | undefined;
-                            } | undefined);
                             replaceName?: boolean | undefined;
+                            attributes?: any;
                             enchantment?: {
                                 type: string;
                                 dice?: {
@@ -23372,7 +20588,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 } | undefined;
                                 expression?: string | undefined;
                             } | undefined;
-                        })[] | undefined;
+                        }[] | undefined;
                     }[];
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;

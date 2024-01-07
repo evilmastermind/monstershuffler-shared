@@ -39,10 +39,11 @@ export const attackAttributesObject = z.object({
 export const attackObject = z.object({
   name: z.string(),
   replaceName: z.boolean().optional(),
-  attributes: z.union([
-    attackAttributesObject.merge(weaponObject),
-    choiceRandomObject,
-  ]),
+  // attributes: z.union([
+  //   attackAttributesObject.merge(weaponObject),
+  //   choiceRandomObject,
+  // ]),
+  attributes: z.any().optional(),
   enchantment: enchantmentObject.optional(),
 });
 
@@ -84,7 +85,7 @@ export const actionVariantObject = z.object({
     .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
     .optional(),
   attacks: z
-    .array(z.union([choiceRandomObject, attackObject]))
+    .array(attackObject)
     .optional(),
 });
 export const chosenActionObject = z.object({
