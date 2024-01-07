@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
 ]);
 exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
 exports.parsedDice = zod_1.z.object({

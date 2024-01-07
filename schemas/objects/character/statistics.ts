@@ -37,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'text', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
 ]);
 
 export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);

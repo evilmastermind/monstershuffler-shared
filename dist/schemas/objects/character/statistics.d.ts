@@ -44,7 +44,7 @@ export declare const abilitiesObject: z.ZodObject<{
     WIS: number;
     CHA: number;
 }>;
-export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>;
+export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>;
 export declare const format: z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>;
 export declare const parsedDice: z.ZodObject<{
     dice: z.ZodNumber;
@@ -75,7 +75,7 @@ export declare const parsedExpression: z.ZodObject<{
 export declare const descriptionPartObject: z.ZodObject<{
     string: z.ZodString;
     number: z.ZodOptional<z.ZodNumber>;
-    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
     format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
     dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
         dice: z.ZodNumber;
@@ -153,7 +153,7 @@ export declare const statStringNumberArray: z.ZodObject<{
     array: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -269,7 +269,7 @@ export declare const statStringArray: z.ZodObject<{
     array: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -375,7 +375,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
     array: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -438,7 +438,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
     nameArray: z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -591,7 +591,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -700,7 +700,7 @@ export declare const statisticsObject: z.ZodObject<{
     characterHook: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -780,7 +780,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -982,7 +982,7 @@ export declare const statisticsObject: z.ZodObject<{
     subtypes: z.ZodOptional<z.ZodArray<z.ZodObject<{
         string: z.ZodString;
         number: z.ZodOptional<z.ZodNumber>;
-        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
         format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
         dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
@@ -1046,7 +1046,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1150,7 +1150,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1254,7 +1254,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1358,7 +1358,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1462,7 +1462,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1566,7 +1566,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1670,7 +1670,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1774,7 +1774,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1878,7 +1878,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1982,7 +1982,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2091,7 +2091,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2154,7 +2154,7 @@ export declare const statisticsObject: z.ZodObject<{
         nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2307,7 +2307,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2370,7 +2370,7 @@ export declare const statisticsObject: z.ZodObject<{
         nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2523,7 +2523,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2586,7 +2586,7 @@ export declare const statisticsObject: z.ZodObject<{
         nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2739,7 +2739,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2802,7 +2802,7 @@ export declare const statisticsObject: z.ZodObject<{
         nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -2955,7 +2955,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -3018,7 +3018,7 @@ export declare const statisticsObject: z.ZodObject<{
         nameArray: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
@@ -3169,7 +3169,7 @@ export declare const statisticsObject: z.ZodObject<{
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
             number: z.ZodOptional<z.ZodNumber>;
-            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "text", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "endOfParagraph", "numberWithSign", "numberAsWord", "ordinal", "ft", "rollableNumberWithSign", "feet", "resource", "tag", "rollableDice"]>]>>;
             format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "bold", "underline", "strikethrough", "superscript", "subscript"]>, "many">>;
             dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
