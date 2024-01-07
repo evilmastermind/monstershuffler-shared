@@ -1502,7 +1502,146 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         }>>;
-        actions: z.ZodOptional<z.ZodArray<z.ZodAny, "many">>;
+        actions: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+            tag: z.ZodString;
+            priority: z.ZodOptional<z.ZodNumber>;
+            variants: z.ZodArray<z.ZodAny, "many">;
+            actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+            availableUntil: z.ZodOptional<z.ZodNumber>;
+            subType: z.ZodOptional<z.ZodString>;
+            source: z.ZodOptional<z.ZodString>;
+            tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+        }, "strip", z.ZodTypeAny, {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        }, {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        }>, z.ZodObject<{
+            choice: z.ZodObject<{
+                type: z.ZodLiteral<"random">;
+                number: z.ZodOptional<z.ZodNumber>;
+                resultType: z.ZodEnum<["object", "nameId"]>;
+                source: z.ZodEnum<["objects", "languages", "skills"]>;
+                objectType: z.ZodOptional<z.ZodNumber>;
+                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    keyName: z.ZodString;
+                    keyValues: z.ZodArray<z.ZodString, "many">;
+                }, "strip", z.ZodTypeAny, {
+                    keyName: string;
+                    keyValues: string[];
+                }, {
+                    keyName: string;
+                    keyValues: string[];
+                }>, "many">>;
+                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    id: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodString;
+                    type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
+                    availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                }, "strip", z.ZodTypeAny, {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }, {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }>, "many">>;
+            }, "strip", z.ZodTypeAny, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            }, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            }>;
+        }, "strip", z.ZodTypeAny, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        }, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        }>]>, "many">>;
         canSpeak: z.ZodOptional<z.ZodBoolean>;
         telepathy: z.ZodOptional<z.ZodString>;
         languages: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
@@ -2508,7 +2647,36 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -2980,7 +3148,36 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -3459,7 +3656,36 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -3938,7 +4164,36 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -5592,7 +5847,146 @@ export declare const postBackground: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         }>>;
-        actions: z.ZodOptional<z.ZodArray<z.ZodAny, "many">>;
+        actions: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+            tag: z.ZodString;
+            priority: z.ZodOptional<z.ZodNumber>;
+            variants: z.ZodArray<z.ZodAny, "many">;
+            actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
+            availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+            availableUntil: z.ZodOptional<z.ZodNumber>;
+            subType: z.ZodOptional<z.ZodString>;
+            source: z.ZodOptional<z.ZodString>;
+            tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+        }, "strip", z.ZodTypeAny, {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        }, {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        }>, z.ZodObject<{
+            choice: z.ZodObject<{
+                type: z.ZodLiteral<"random">;
+                number: z.ZodOptional<z.ZodNumber>;
+                resultType: z.ZodEnum<["object", "nameId"]>;
+                source: z.ZodEnum<["objects", "languages", "skills"]>;
+                objectType: z.ZodOptional<z.ZodNumber>;
+                filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    keyName: z.ZodString;
+                    keyValues: z.ZodArray<z.ZodString, "many">;
+                }, "strip", z.ZodTypeAny, {
+                    keyName: string;
+                    keyValues: string[];
+                }, {
+                    keyName: string;
+                    keyValues: string[];
+                }>, "many">>;
+                chosenAlready: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    id: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodString;
+                    type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
+                    availableAt: z.ZodOptional<z.ZodNumber>;
+                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                }, "strip", z.ZodTypeAny, {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }, {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }>, "many">>;
+            }, "strip", z.ZodTypeAny, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            }, {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            }>;
+        }, "strip", z.ZodTypeAny, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        }, {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        }>]>, "many">>;
         canSpeak: z.ZodOptional<z.ZodBoolean>;
         telepathy: z.ZodOptional<z.ZodString>;
         languages: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
@@ -6598,7 +6992,36 @@ export declare const postBackground: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -7070,7 +7493,36 @@ export declare const postBackground: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -7547,7 +7999,36 @@ export declare const postBackground: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {
@@ -8024,7 +8505,36 @@ export declare const postBackground: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: any[] | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: any[];
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            availableUntil?: number | undefined;
+            subType?: string | undefined;
+            source?: string | undefined;
+            tags?: string[] | undefined;
+        })[] | undefined;
         canSpeak?: boolean | undefined;
         telepathy?: string | undefined;
         languages?: {

@@ -342,7 +342,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -833,7 +862,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -1311,7 +1369,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -1788,7 +1875,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -2259,7 +2375,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -2736,7 +2881,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -3259,7 +3433,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -3774,7 +3977,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -5036,7 +5268,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -5527,7 +5788,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -6005,7 +6295,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -6482,7 +6801,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -6953,7 +7301,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -7430,7 +7807,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -7953,7 +8359,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -8468,7 +8903,36 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -9735,7 +10199,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -10226,7 +10719,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -10704,7 +11226,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -11181,7 +11732,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -11652,7 +12232,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -12129,7 +12738,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -12652,7 +13290,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -13167,7 +13834,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -14430,7 +15126,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -14921,7 +15646,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -15399,7 +16153,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -15876,7 +16659,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -16347,7 +17159,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -16824,7 +17665,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -17347,7 +18217,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -17862,7 +18761,36 @@ export declare const postCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -19130,7 +20058,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -19621,7 +20578,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -20099,7 +21085,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -20576,7 +21591,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -21047,7 +22091,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -21524,7 +22597,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -22047,7 +23149,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -22562,7 +23693,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -23825,7 +24985,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -24316,7 +25505,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -24794,7 +26012,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -25271,7 +26518,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -25742,7 +27018,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -26219,7 +27524,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -26742,7 +28076,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {
@@ -27257,7 +28620,36 @@ export declare const putCharacter: z.ZodObject<{
                         name?: string | undefined;
                     } | undefined;
                 } | undefined;
-                actions?: any[] | undefined;
+                actions?: ({
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    tag: string;
+                    variants: any[];
+                    priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    availableUntil?: number | undefined;
+                    subType?: string | undefined;
+                    source?: string | undefined;
+                    tags?: string[] | undefined;
+                })[] | undefined;
                 canSpeak?: boolean | undefined;
                 telepathy?: string | undefined;
                 languages?: {

@@ -84,7 +84,7 @@ exports.actionVariantObject = zod_1.z.object({
 exports.chosenActionObject = zod_1.z.object({
     tag: zod_1.z.string(),
     priority: zod_1.z.number().optional(),
-    variants: zod_1.z.array(exports.actionVariantObject),
+    variants: zod_1.z.array(zod_1.z.any()),
     actionType: exports.actionTypesEnum.optional(),
     availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
     availableUntil: zod_1.z.number().optional(),
@@ -92,4 +92,4 @@ exports.chosenActionObject = zod_1.z.object({
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
 });
-exports.actionObject = zod_1.z.any();
+exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);

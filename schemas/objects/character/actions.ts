@@ -88,7 +88,7 @@ export const actionVariantObject = z.object({
 export const chosenActionObject = z.object({
   tag: z.string(),
   priority: z.number().optional(),
-  variants: z.array(actionVariantObject),
+  variants: z.array(z.any()),
   actionType: actionTypesEnum.optional(),
   availableUnit: z.enum(['level', 'cr']).optional(),
   availableUntil: z.number().optional(),
@@ -96,4 +96,4 @@ export const chosenActionObject = z.object({
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
 });
-export const actionObject = z.any();
+export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
