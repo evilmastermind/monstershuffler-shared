@@ -80,7 +80,9 @@ export const actionVariantObject = z.object({
   availableAt: z.number().optional(),
   ability: abilitiesEnum.optional(),
   cost: z.string().optional(),
-  values: z.any().optional(),
+  values: z
+    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
+    .optional(),
   attacks: z.array(attackObject).optional(),
 });
 export const chosenActionObject = z.object({
