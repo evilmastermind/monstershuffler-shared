@@ -49,7 +49,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{
-    npc: import("@/schemas/objects/character/objects").CharacterObject;
+    npc: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     npc: {
         character: {
@@ -11886,7 +11886,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
     };
 }>;
 export declare const postFourRandomNpcsResponse: z.ZodObject<{
-    npcs: z.ZodArray<import("@/schemas/objects/character/objects").CharacterObject, "many">;
+    npcs: z.ZodArray<import("../../schemas/objects/character/objects").CharacterObject, "many">;
 }, "strip", z.ZodTypeAny, {
     npcs: {
         character: {

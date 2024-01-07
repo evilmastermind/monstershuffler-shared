@@ -13,9 +13,8 @@ export declare const postWeapon: z.ZodObject<{
         sidesV: z.ZodOptional<z.ZodString>;
         range: z.ZodOptional<z.ZodString>;
         rangeMax: z.ZodOptional<z.ZodString>;
-        properties: z.ZodArray<z.ZodString, "many">;
+        properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -27,8 +26,8 @@ export declare const postWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -40,10 +39,10 @@ export declare const postWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -55,11 +54,11 @@ export declare const postWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
     game: number;
 }, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -71,6 +70,7 @@ export declare const postWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
     game: number;
 }>;
@@ -87,9 +87,8 @@ export declare const putWeapon: z.ZodObject<{
         sidesV: z.ZodOptional<z.ZodString>;
         range: z.ZodOptional<z.ZodString>;
         rangeMax: z.ZodOptional<z.ZodString>;
-        properties: z.ZodArray<z.ZodString, "many">;
+        properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -101,8 +100,8 @@ export declare const putWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -114,10 +113,10 @@ export declare const putWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -129,10 +128,10 @@ export declare const putWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
 }, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -144,6 +143,7 @@ export declare const putWeapon: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
 }>;
 export declare const getWeaponParams: z.ZodObject<{
@@ -166,9 +166,8 @@ export declare const getWeaponResponse: z.ZodObject<{
         sidesV: z.ZodOptional<z.ZodString>;
         range: z.ZodOptional<z.ZodString>;
         rangeMax: z.ZodOptional<z.ZodString>;
-        properties: z.ZodArray<z.ZodString, "many">;
+        properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -180,8 +179,8 @@ export declare const getWeaponResponse: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }, {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -193,10 +192,10 @@ export declare const getWeaponResponse: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -208,10 +207,10 @@ export declare const getWeaponResponse: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
 }, {
     object: {
-        properties: string[];
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -223,6 +222,7 @@ export declare const getWeaponResponse: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     };
 }>;
 export declare const getWeaponListResponse: z.ZodObject<{
