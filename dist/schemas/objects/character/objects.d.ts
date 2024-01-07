@@ -1544,121 +1544,7 @@ export declare const userObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -2050,35 +1936,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -2174,35 +2032,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -2307,35 +2137,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -2441,35 +2243,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -3821,35 +3595,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -4488,35 +4234,7 @@ export declare const userObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -6307,121 +6025,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -6813,35 +6417,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -6937,35 +6513,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -7070,35 +6618,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -7204,35 +6724,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -8486,35 +7978,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -9128,35 +8592,7 @@ export declare const raceObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -10937,121 +10373,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -11443,35 +10765,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -11567,35 +10861,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -11700,35 +10966,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -11834,35 +11072,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -13105,35 +12315,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -13736,35 +12918,7 @@ export declare const racevariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -15532,121 +14686,7 @@ export declare const classObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -16038,35 +15078,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -16162,35 +15174,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -16295,35 +15279,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -16429,35 +15385,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -17697,35 +16625,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -18325,35 +17225,7 @@ export declare const classObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -20120,121 +18992,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -20626,35 +19384,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -20750,35 +19480,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -20883,35 +19585,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -21017,35 +19691,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -22285,35 +20931,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -22913,35 +21531,7 @@ export declare const classvariantObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -24706,121 +23296,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -25212,35 +23688,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -25336,35 +23784,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -25469,35 +23889,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -25603,35 +23995,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -26990,35 +25354,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -27651,35 +25987,7 @@ export declare const templateObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -29465,121 +27773,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -29971,35 +28165,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -30095,35 +28261,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -30228,35 +28366,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -30362,35 +28472,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -31630,35 +29712,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -32255,35 +30309,7 @@ export declare const backgroundObject: z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -34116,121 +32142,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt: z.ZodOptional<z.ZodNumber>;
             ability: z.ZodOptional<z.ZodEnum<["STR", "DEX", "CON", "INT", "WIS", "CHA"]>>;
             cost: z.ZodOptional<z.ZodString>;
-            values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodOptional<z.ZodString>;
-                dice: z.ZodObject<{
-                    dice: z.ZodNumber;
-                    sides: z.ZodNumber;
-                    diceIncrement: z.ZodOptional<z.ZodNumber>;
-                    availableAt: z.ZodOptional<z.ZodNumber>;
-                    availableUntil: z.ZodOptional<z.ZodNumber>;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    unitInterval: z.ZodOptional<z.ZodNumber>;
-                }, "strip", z.ZodTypeAny, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }, {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }, {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                expression: z.ZodString;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }, {
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            }>, z.ZodObject<{
-                name: z.ZodString;
-                type: z.ZodOptional<z.ZodString>;
-                incrProgression: z.ZodObject<{
-                    unitInterval: z.ZodNumber;
-                    unitIncrement: z.ZodNumber;
-                    availableAt: z.ZodNumber;
-                    availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
-                    valueBase: z.ZodNumber;
-                    valueIncrement: z.ZodNumber;
-                }, "strip", z.ZodTypeAny, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }, {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                }>;
-            }, "strip", z.ZodTypeAny, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }, {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            }>]>, "many">>;
+            values: z.ZodOptional<z.ZodAny>;
             attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodString;
                 replaceName: z.ZodOptional<z.ZodBoolean>;
@@ -34622,35 +32534,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -34746,35 +32630,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -34879,35 +32735,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -35013,35 +32841,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -36393,35 +34193,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({
@@ -37060,35 +34832,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             availableAt?: number | undefined;
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
+            values?: any;
             attacks?: {
                 name: string;
                 attributes: ({

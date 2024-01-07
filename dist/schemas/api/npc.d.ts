@@ -393,35 +393,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -1037,35 +1009,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -1668,35 +1612,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -2298,35 +2214,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -2922,35 +2810,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -3552,35 +3412,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -4228,35 +4060,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -4896,35 +4700,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -6310,35 +6086,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -6954,35 +6702,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -7585,35 +7305,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -8215,35 +7907,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -8839,35 +8503,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -9469,35 +9105,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -10145,35 +9753,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -10813,35 +10393,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -12230,35 +11782,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -12874,35 +12398,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -13505,35 +13001,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -14135,35 +13603,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -14759,35 +14199,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -15389,35 +14801,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -16065,35 +15449,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -16733,35 +16089,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -18147,35 +17475,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -18791,35 +18091,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -19422,35 +18694,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -20052,35 +19296,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -20676,35 +19892,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -21306,35 +20494,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -21982,35 +21142,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -22650,35 +21782,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         availableAt?: number | undefined;
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({

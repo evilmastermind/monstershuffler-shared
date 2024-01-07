@@ -77,7 +77,8 @@ exports.actionVariantObject = zod_1.z.object({
     ability: abilities_1.abilitiesEnum.optional(),
     cost: zod_1.z.string().optional(),
     values: zod_1.z
-        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
+        //.array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
+        .any()
         .optional(),
     attacks: zod_1.z.array(exports.attackObject).optional(),
 });
