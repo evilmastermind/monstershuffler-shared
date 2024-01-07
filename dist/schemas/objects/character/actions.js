@@ -69,27 +69,25 @@ exports.valueIncrProgressionObject = zod_1.z.object({
 });
 exports.actionVariantObject = zod_1.z.object({
     name: zod_1.z.string(),
-    description: zod_1.z.string(),
     type: exports.actionTypesEnum.optional(),
-    availableAt: zod_1.z.number().optional(),
-    ability: abilities_1.abilitiesEnum.optional(),
     charges: zod_1.z.string().optional(),
     recharge: exports.rechargeTypeEnum.optional(),
+    description: zod_1.z.string(),
+    availableAt: zod_1.z.number().optional(),
+    ability: abilities_1.abilitiesEnum.optional(),
     cost: zod_1.z.string().optional(),
-    values: zod_1.z
-        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
-        .optional(),
+    values: zod_1.z.any().optional(),
     attacks: zod_1.z.array(exports.attackObject).optional(),
 });
 exports.chosenActionObject = zod_1.z.object({
     tag: zod_1.z.string(),
-    actionType: exports.actionTypesEnum.optional(),
     priority: zod_1.z.number().optional(),
+    variants: zod_1.z.array(exports.actionVariantObject),
+    actionType: exports.actionTypesEnum.optional(),
     availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
     availableUntil: zod_1.z.number().optional(),
     subType: zod_1.z.string().optional(),
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
-    variants: zod_1.z.array(exports.actionVariantObject),
 });
 exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);

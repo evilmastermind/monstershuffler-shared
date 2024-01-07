@@ -367,40 +367,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -488,8 +460,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -1011,40 +983,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -1132,8 +1076,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -1642,40 +1586,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -1763,8 +1679,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -2272,40 +2188,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -2393,8 +2281,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -2896,40 +2784,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -3017,8 +2877,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -3526,40 +3386,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -3647,8 +3479,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -4202,40 +4034,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -4323,8 +4127,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -4870,40 +4674,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -4991,8 +4767,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -6285,40 +6061,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -6406,8 +6154,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -6929,40 +6677,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -7050,8 +6770,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -7560,40 +7280,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -7681,8 +7373,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -8190,40 +7882,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -8311,8 +7975,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -8814,40 +8478,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -8935,8 +8571,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -9444,40 +9080,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -9565,8 +9173,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -10120,40 +9728,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -10241,8 +9821,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -10788,40 +10368,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -10909,8 +10461,8 @@ export declare const getCharacterResponse: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -12208,40 +11760,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -12329,8 +11853,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -12852,40 +12376,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -12973,8 +12469,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -13483,40 +12979,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -13604,8 +13072,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -14113,40 +13581,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -14234,8 +13674,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -14737,40 +14177,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -14858,8 +14270,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -15367,40 +14779,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -15488,8 +14872,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -16043,40 +15427,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -16164,8 +15520,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -16711,40 +16067,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -16832,8 +16160,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -18127,40 +17455,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -18248,8 +17548,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -18771,40 +18071,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -18892,8 +18164,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -19402,40 +18674,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -19523,8 +18767,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -20032,40 +19276,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -20153,8 +19369,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -20656,40 +19872,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -20777,8 +19965,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -21286,40 +20474,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -21407,8 +20567,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -21962,40 +21122,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -22083,8 +21215,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -22630,40 +21762,12 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -22751,8 +21855,8 @@ export declare const postCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -24051,40 +23155,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -24172,8 +23248,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -24695,40 +23771,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -24816,8 +23864,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -25326,40 +24374,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -25447,8 +24467,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -25956,40 +24976,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -26077,8 +25069,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -26580,40 +25572,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -26701,8 +25665,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -27210,40 +26174,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -27331,8 +26267,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -27886,40 +26822,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -28007,8 +26915,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -28554,40 +27462,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -28675,8 +27555,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -29970,40 +28850,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -30091,8 +28943,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -30614,40 +29466,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -30735,8 +29559,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -31245,40 +30069,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -31366,8 +30162,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -31875,40 +30671,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -31996,8 +30764,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -32499,40 +31267,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -32620,8 +31360,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -33129,40 +31869,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -33250,8 +31962,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -33805,40 +32517,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -33926,8 +32610,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;
@@ -34473,40 +33157,12 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         description: string;
                         type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                        availableAt?: number | undefined;
-                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         charges?: string | undefined;
                         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                        availableAt?: number | undefined;
+                        ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
-                        values?: ({
-                            name: string;
-                            expression: string;
-                            type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
-                                dice: number;
-                                sides: number;
-                                diceIncrement?: number | undefined;
-                                availableAt?: number | undefined;
-                                availableUntil?: number | undefined;
-                                availableUnit?: "level" | "cr" | undefined;
-                                unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        } | {
-                            name: string;
-                            incrProgression: {
-                                availableAt: number;
-                                unitInterval: number;
-                                unitIncrement: number;
-                                valueBase: number;
-                                valueIncrement: number;
-                                availableUnit?: "level" | "cr" | undefined;
-                            };
-                            type?: string | undefined;
-                        })[] | undefined;
+                        values?: any;
                         attacks?: {
                             name: string;
                             attributes: ({
@@ -34594,8 +33250,8 @@ export declare const putCharacter: z.ZodObject<{
                             } | undefined;
                         }[] | undefined;
                     }[];
-                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     priority?: number | undefined;
+                    actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
                     availableUntil?: number | undefined;
                     subType?: string | undefined;

@@ -73,27 +73,25 @@ export const valueIncrProgressionObject = z.object({
 
 export const actionVariantObject = z.object({
   name: z.string(),
-  description: z.string(),
   type: actionTypesEnum.optional(),
-  availableAt: z.number().optional(),
-  ability: abilitiesEnum.optional(),
   charges: z.string().optional(),
   recharge: rechargeTypeEnum.optional(),
+  description: z.string(),
+  availableAt: z.number().optional(),
+  ability: abilitiesEnum.optional(),
   cost: z.string().optional(),
-  values: z
-    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
-    .optional(),
+  values: z.any().optional(),
   attacks: z.array(attackObject).optional(),
 });
 export const chosenActionObject = z.object({
   tag: z.string(),
-  actionType: actionTypesEnum.optional(),
   priority: z.number().optional(),
+  variants: z.array(actionVariantObject),
+  actionType: actionTypesEnum.optional(),
   availableUnit: z.enum(['level', 'cr']).optional(),
   availableUntil: z.number().optional(),
   subType: z.string().optional(),
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
-  variants: z.array(actionVariantObject),
 });
 export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
