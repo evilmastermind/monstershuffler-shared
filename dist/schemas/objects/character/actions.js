@@ -80,7 +80,10 @@ exports.actionVariantObject = zod_1.z.object({
         //.array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
         .any()
         .optional(),
-    attacks: zod_1.z.array(exports.attackObject).optional(),
+    attacks: zod_1.z
+        //.array(attackObject)
+        .any()
+        .optional(),
 });
 exports.chosenActionObject = zod_1.z.object({
     tag: zod_1.z.string(),

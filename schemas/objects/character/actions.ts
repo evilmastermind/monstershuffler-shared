@@ -84,7 +84,10 @@ export const actionVariantObject = z.object({
     //.array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
     .any()
     .optional(),
-  attacks: z.array(attackObject).optional(),
+  attacks: z
+  //.array(attackObject)
+    .any()
+    .optional(),
 });
 export const chosenActionObject = z.object({
   tag: z.string(),
