@@ -88,7 +88,7 @@ export const actionVariantObject = z.object({
 export const chosenActionObject = z.object({
   tag: z.string(),
   priority: z.number().optional(),
-  variants: z.array(z.any()),
+  variants: z.array(actionVariantObject),
   actionType: actionTypesEnum.optional(),
   availableUnit: z.enum(['level', 'cr']).optional(),
   availableUntil: z.number().optional(),
