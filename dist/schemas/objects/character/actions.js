@@ -92,4 +92,4 @@ exports.chosenActionObject = zod_1.z.object({
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
 });
-exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);
+exports.actionObject = zod_1.z.any();

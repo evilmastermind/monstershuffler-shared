@@ -96,4 +96,4 @@ export const chosenActionObject = z.object({
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
 });
-export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
+export const actionObject = z.any();
