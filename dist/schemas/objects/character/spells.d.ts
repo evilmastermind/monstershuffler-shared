@@ -25,9 +25,9 @@ export declare const spellGroupObject: z.ZodObject<{
     }>, "many">, z.ZodObject<{
         choice: z.ZodObject<{
             type: z.ZodLiteral<"random">;
-            number: z.ZodOptional<z.ZodNumber>;
             resultType: z.ZodEnum<["object", "nameId"]>;
             source: z.ZodEnum<["objects", "languages", "skills"]>;
+            number: z.ZodOptional<z.ZodNumber>;
             objectType: z.ZodOptional<z.ZodNumber>;
             filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 keyName: z.ZodString;
@@ -400,9 +400,9 @@ export declare const spellsObject: z.ZodObject<{
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
                 resultType: z.ZodEnum<["object", "nameId"]>;
                 source: z.ZodEnum<["objects", "languages", "skills"]>;
+                number: z.ZodOptional<z.ZodNumber>;
                 objectType: z.ZodOptional<z.ZodNumber>;
                 filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                     keyName: z.ZodString;

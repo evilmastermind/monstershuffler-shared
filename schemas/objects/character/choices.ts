@@ -39,9 +39,9 @@ export const statObject = z.object({
 export const choiceRandomObject = z.object({
   choice: z.object({
     type: z.literal('random'),
-    number: z.number().optional(),
     resultType: z.enum(['object', 'nameId']),
     source: z.enum(['objects', 'languages', 'skills']),
+    number: z.number().optional(),
     objectType: z.number().optional(),
     filters: z
       .array(

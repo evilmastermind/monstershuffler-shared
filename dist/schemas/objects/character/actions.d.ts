@@ -106,9 +106,8 @@ export declare const attackObject: z.ZodObject<{
         sidesV: z.ZodOptional<z.ZodString>;
         range: z.ZodOptional<z.ZodString>;
         rangeMax: z.ZodOptional<z.ZodString>;
-        properties: z.ZodArray<z.ZodString, "many">;
+        properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -122,8 +121,8 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }, {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -137,12 +136,13 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }>, z.ZodObject<{
         choice: z.ZodObject<{
             type: z.ZodLiteral<"random">;
-            number: z.ZodOptional<z.ZodNumber>;
             resultType: z.ZodEnum<["object", "nameId"]>;
             source: z.ZodEnum<["objects", "languages", "skills"]>;
+            number: z.ZodOptional<z.ZodNumber>;
             objectType: z.ZodOptional<z.ZodNumber>;
             filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 keyName: z.ZodString;
@@ -322,7 +322,6 @@ export declare const attackObject: z.ZodObject<{
             }[] | undefined;
         };
     } | {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -336,6 +335,7 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }) & ({
         choice: {
             type: "random";
@@ -356,7 +356,6 @@ export declare const attackObject: z.ZodObject<{
             }[] | undefined;
         };
     } | {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -370,6 +369,7 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     } | undefined);
     replaceName?: boolean | undefined;
     enchantment?: {
@@ -407,7 +407,6 @@ export declare const attackObject: z.ZodObject<{
             }[] | undefined;
         };
     } | {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -421,6 +420,7 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     }) & ({
         choice: {
             type: "random";
@@ -441,7 +441,6 @@ export declare const attackObject: z.ZodObject<{
             }[] | undefined;
         };
     } | {
-        properties: string[];
         reach?: string | undefined;
         targets?: string | undefined;
         name?: string | undefined;
@@ -455,6 +454,7 @@ export declare const attackObject: z.ZodObject<{
         sidesV?: string | undefined;
         range?: string | undefined;
         rangeMax?: string | undefined;
+        properties?: string[] | undefined;
     } | undefined);
     replaceName?: boolean | undefined;
     enchantment?: {
@@ -729,9 +729,8 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV: z.ZodOptional<z.ZodString>;
             range: z.ZodOptional<z.ZodString>;
             rangeMax: z.ZodOptional<z.ZodString>;
-            properties: z.ZodArray<z.ZodString, "many">;
+            properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         }, "strip", z.ZodTypeAny, {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -745,8 +744,8 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }, {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -760,12 +759,13 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
-                number: z.ZodOptional<z.ZodNumber>;
                 resultType: z.ZodEnum<["object", "nameId"]>;
                 source: z.ZodEnum<["objects", "languages", "skills"]>;
+                number: z.ZodOptional<z.ZodNumber>;
                 objectType: z.ZodOptional<z.ZodNumber>;
                 filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                     keyName: z.ZodString;
@@ -945,7 +945,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -959,6 +958,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }) & ({
             choice: {
                 type: "random";
@@ -979,7 +979,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -993,6 +992,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         } | undefined);
         replaceName?: boolean | undefined;
         enchantment?: {
@@ -1030,7 +1030,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1044,6 +1043,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }) & ({
             choice: {
                 type: "random";
@@ -1064,7 +1064,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1078,6 +1077,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         } | undefined);
         replaceName?: boolean | undefined;
         enchantment?: {
@@ -1154,7 +1154,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1168,6 +1167,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }) & ({
             choice: {
                 type: "random";
@@ -1188,7 +1188,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1202,6 +1201,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         } | undefined);
         replaceName?: boolean | undefined;
         enchantment?: {
@@ -1278,7 +1278,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1292,6 +1291,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         }) & ({
             choice: {
                 type: "random";
@@ -1312,7 +1312,6 @@ export declare const actionVariantObject: z.ZodObject<{
                 }[] | undefined;
             };
         } | {
-            properties: string[];
             reach?: string | undefined;
             targets?: string | undefined;
             name?: string | undefined;
@@ -1326,6 +1325,7 @@ export declare const actionVariantObject: z.ZodObject<{
             sidesV?: string | undefined;
             range?: string | undefined;
             rangeMax?: string | undefined;
+            properties?: string[] | undefined;
         } | undefined);
         replaceName?: boolean | undefined;
         enchantment?: {
@@ -1487,9 +1487,8 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV: z.ZodOptional<z.ZodString>;
                 range: z.ZodOptional<z.ZodString>;
                 rangeMax: z.ZodOptional<z.ZodString>;
-                properties: z.ZodArray<z.ZodString, "many">;
+                properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
             }, "strip", z.ZodTypeAny, {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1503,8 +1502,8 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }, {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1518,12 +1517,13 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }>, z.ZodObject<{
                 choice: z.ZodObject<{
                     type: z.ZodLiteral<"random">;
-                    number: z.ZodOptional<z.ZodNumber>;
                     resultType: z.ZodEnum<["object", "nameId"]>;
                     source: z.ZodEnum<["objects", "languages", "skills"]>;
+                    number: z.ZodOptional<z.ZodNumber>;
                     objectType: z.ZodOptional<z.ZodNumber>;
                     filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         keyName: z.ZodString;
@@ -1703,7 +1703,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1717,6 +1716,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -1737,7 +1737,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1751,6 +1750,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -1788,7 +1788,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1802,6 +1801,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -1822,7 +1822,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1836,6 +1835,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -1912,7 +1912,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1926,6 +1925,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -1946,7 +1946,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -1960,6 +1959,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2036,7 +2036,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2050,6 +2049,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2070,7 +2070,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2084,6 +2083,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2169,7 +2169,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2183,6 +2182,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2203,7 +2203,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2217,6 +2216,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2303,7 +2303,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2317,6 +2316,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2337,7 +2337,6 @@ export declare const chosenActionObject: z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2351,6 +2350,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2520,9 +2520,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV: z.ZodOptional<z.ZodString>;
                 range: z.ZodOptional<z.ZodString>;
                 rangeMax: z.ZodOptional<z.ZodString>;
-                properties: z.ZodArray<z.ZodString, "many">;
+                properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
             }, "strip", z.ZodTypeAny, {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2536,8 +2535,8 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }, {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2551,12 +2550,13 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }>, z.ZodObject<{
                 choice: z.ZodObject<{
                     type: z.ZodLiteral<"random">;
-                    number: z.ZodOptional<z.ZodNumber>;
                     resultType: z.ZodEnum<["object", "nameId"]>;
                     source: z.ZodEnum<["objects", "languages", "skills"]>;
+                    number: z.ZodOptional<z.ZodNumber>;
                     objectType: z.ZodOptional<z.ZodNumber>;
                     filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         keyName: z.ZodString;
@@ -2736,7 +2736,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2750,6 +2749,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2770,7 +2770,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2784,6 +2783,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2821,7 +2821,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2835,6 +2834,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2855,7 +2855,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2869,6 +2868,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -2945,7 +2945,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2959,6 +2958,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -2979,7 +2979,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -2993,6 +2992,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -3069,7 +3069,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3083,6 +3082,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -3103,7 +3103,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3117,6 +3116,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -3202,7 +3202,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3216,6 +3215,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -3236,7 +3236,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3250,6 +3249,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -3336,7 +3336,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3350,6 +3349,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             }) & ({
                 choice: {
                     type: "random";
@@ -3370,7 +3370,6 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                     }[] | undefined;
                 };
             } | {
-                properties: string[];
                 reach?: string | undefined;
                 targets?: string | undefined;
                 name?: string | undefined;
@@ -3384,6 +3383,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 sidesV?: string | undefined;
                 range?: string | undefined;
                 rangeMax?: string | undefined;
+                properties?: string[] | undefined;
             } | undefined);
             replaceName?: boolean | undefined;
             enchantment?: {
@@ -3411,9 +3411,9 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
 }>, z.ZodObject<{
     choice: z.ZodObject<{
         type: z.ZodLiteral<"random">;
-        number: z.ZodOptional<z.ZodNumber>;
         resultType: z.ZodEnum<["object", "nameId"]>;
         source: z.ZodEnum<["objects", "languages", "skills"]>;
+        number: z.ZodOptional<z.ZodNumber>;
         objectType: z.ZodOptional<z.ZodNumber>;
         filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
             keyName: z.ZodString;

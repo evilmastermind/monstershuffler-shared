@@ -28,7 +28,7 @@ export declare const getCharacterListResponse: z.ZodObject<{
 }>;
 export declare const getCharacterResponse: z.ZodObject<{
     id: z.ZodNumber;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -423,7 +423,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -437,6 +436,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -457,7 +457,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -471,6 +470,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -1067,7 +1067,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -1081,6 +1080,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -1101,7 +1101,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -1115,6 +1114,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -1698,7 +1698,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -1712,6 +1711,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -1732,7 +1732,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -1746,6 +1745,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -2328,7 +2328,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -2342,6 +2341,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -2362,7 +2362,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -2376,6 +2375,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -2952,7 +2952,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -2966,6 +2965,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -2986,7 +2986,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -3000,6 +2999,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -3582,7 +3582,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -3596,6 +3595,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -3616,7 +3616,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -3630,6 +3629,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -4258,7 +4258,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -4272,6 +4271,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -4292,7 +4292,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -4306,6 +4305,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -4926,7 +4926,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -4940,6 +4939,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -4960,7 +4960,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -4974,6 +4973,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -6341,7 +6341,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -6355,6 +6354,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -6375,7 +6375,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -6389,6 +6388,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -6985,7 +6985,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -6999,6 +6998,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -7019,7 +7019,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -7033,6 +7032,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -7616,7 +7616,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -7630,6 +7629,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -7650,7 +7650,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -7664,6 +7663,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -8246,7 +8246,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -8260,6 +8259,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -8280,7 +8280,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -8294,6 +8293,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -8870,7 +8870,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -8884,6 +8883,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -8904,7 +8904,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -8918,6 +8917,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -9500,7 +9500,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -9514,6 +9513,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -9534,7 +9534,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -9548,6 +9547,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -10176,7 +10176,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -10190,6 +10189,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -10210,7 +10210,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -10224,6 +10223,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -10844,7 +10844,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -10858,6 +10857,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -10878,7 +10878,6 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -10892,6 +10891,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -11869,7 +11869,7 @@ export declare const getCharacterResponse: z.ZodObject<{
 export declare const postCharacter: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -12264,7 +12264,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -12278,6 +12277,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -12298,7 +12298,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -12312,6 +12311,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -12908,7 +12908,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -12922,6 +12921,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -12942,7 +12942,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -12956,6 +12955,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -13539,7 +13539,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -13553,6 +13552,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -13573,7 +13573,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -13587,6 +13586,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -14169,7 +14169,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -14183,6 +14182,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -14203,7 +14203,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -14217,6 +14216,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -14793,7 +14793,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -14807,6 +14806,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -14827,7 +14827,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -14841,6 +14840,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -15423,7 +15423,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -15437,6 +15436,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -15457,7 +15457,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -15471,6 +15470,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -16099,7 +16099,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -16113,6 +16112,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -16133,7 +16133,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -16147,6 +16146,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -16767,7 +16767,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -16781,6 +16780,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -16801,7 +16801,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -16815,6 +16814,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -18183,7 +18183,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -18197,6 +18196,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -18217,7 +18217,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -18231,6 +18230,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -18827,7 +18827,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -18841,6 +18840,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -18861,7 +18861,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -18875,6 +18874,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -19458,7 +19458,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -19472,6 +19471,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -19492,7 +19492,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -19506,6 +19505,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -20088,7 +20088,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -20102,6 +20101,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -20122,7 +20122,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -20136,6 +20135,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -20712,7 +20712,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -20726,6 +20725,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -20746,7 +20746,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -20760,6 +20759,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -21342,7 +21342,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -21356,6 +21355,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -21376,7 +21376,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -21390,6 +21389,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -22018,7 +22018,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -22032,6 +22031,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -22052,7 +22052,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -22066,6 +22065,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -22686,7 +22686,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -22700,6 +22699,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -22720,7 +22720,6 @@ export declare const postCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -22734,6 +22733,7 @@ export declare const postCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -23712,7 +23712,7 @@ export declare const postCharacter: z.ZodObject<{
 export declare const putCharacter: z.ZodObject<{
     name: z.ZodString;
     game: z.ZodNumber;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -24107,7 +24107,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -24121,6 +24120,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -24141,7 +24141,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -24155,6 +24154,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -24751,7 +24751,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -24765,6 +24764,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -24785,7 +24785,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -24799,6 +24798,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -25382,7 +25382,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -25396,6 +25395,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -25416,7 +25416,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -25430,6 +25429,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -26012,7 +26012,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -26026,6 +26025,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -26046,7 +26046,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -26060,6 +26059,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -26636,7 +26636,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -26650,6 +26649,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -26670,7 +26670,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -26684,6 +26683,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -27266,7 +27266,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -27280,6 +27279,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -27300,7 +27300,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -27314,6 +27313,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -27942,7 +27942,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -27956,6 +27955,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -27976,7 +27976,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -27990,6 +27989,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -28610,7 +28610,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -28624,6 +28623,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -28644,7 +28644,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -28658,6 +28657,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -30026,7 +30026,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -30040,6 +30039,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -30060,7 +30060,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -30074,6 +30073,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -30670,7 +30670,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -30684,6 +30683,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -30704,7 +30704,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -30718,6 +30717,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -31301,7 +31301,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -31315,6 +31314,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -31335,7 +31335,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -31349,6 +31348,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -31931,7 +31931,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -31945,6 +31944,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -31965,7 +31965,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -31979,6 +31978,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -32555,7 +32555,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -32569,6 +32568,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -32589,7 +32589,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -32603,6 +32602,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -33185,7 +33185,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -33199,6 +33198,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -33219,7 +33219,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -33233,6 +33232,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -33861,7 +33861,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -33875,6 +33874,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -33895,7 +33895,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -33909,6 +33908,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {
@@ -34529,7 +34529,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -34543,6 +34542,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             }) & ({
                                 choice: {
                                     type: "random";
@@ -34563,7 +34563,6 @@ export declare const putCharacter: z.ZodObject<{
                                     }[] | undefined;
                                 };
                             } | {
-                                properties: string[];
                                 reach?: string | undefined;
                                 targets?: string | undefined;
                                 name?: string | undefined;
@@ -34577,6 +34576,7 @@ export declare const putCharacter: z.ZodObject<{
                                 sidesV?: string | undefined;
                                 range?: string | undefined;
                                 rangeMax?: string | undefined;
+                                properties?: string[] | undefined;
                             } | undefined);
                             replaceName?: boolean | undefined;
                             enchantment?: {

@@ -40,9 +40,9 @@ exports.statObject = zod_1.z.object({
 exports.choiceRandomObject = zod_1.z.object({
     choice: zod_1.z.object({
         type: zod_1.z.literal('random'),
-        number: zod_1.z.number().optional(),
         resultType: zod_1.z.enum(['object', 'nameId']),
         source: zod_1.z.enum(['objects', 'languages', 'skills']),
+        number: zod_1.z.number().optional(),
         objectType: zod_1.z.number().optional(),
         filters: zod_1.z
             .array(zod_1.z.object({

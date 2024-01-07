@@ -22,9 +22,9 @@ export declare const statObject: z.ZodObject<{
 export declare const choiceRandomObject: z.ZodObject<{
     choice: z.ZodObject<{
         type: z.ZodLiteral<"random">;
-        number: z.ZodOptional<z.ZodNumber>;
         resultType: z.ZodEnum<["object", "nameId"]>;
         source: z.ZodEnum<["objects", "languages", "skills"]>;
+        number: z.ZodOptional<z.ZodNumber>;
         objectType: z.ZodOptional<z.ZodNumber>;
         filters: z.ZodOptional<z.ZodArray<z.ZodObject<{
             keyName: z.ZodString;

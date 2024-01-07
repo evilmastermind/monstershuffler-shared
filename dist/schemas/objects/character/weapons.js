@@ -14,5 +14,5 @@ exports.weaponObject = zod_1.z.object({
     sidesV: zod_1.z.string().optional(),
     range: zod_1.z.string().optional(),
     rangeMax: zod_1.z.string().optional(),
-    properties: zod_1.z.array(zod_1.z.string()),
+    properties: zod_1.z.array(zod_1.z.string()).optional(),
 });
