@@ -61,6 +61,8 @@ export const descriptionPartObject = z.object({
   format: z.array(format).optional(),
   dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
   id: z.number().optional(),
+  translationKey: z.string().optional(),
+  translationVariables: z.record(z.string()).optional(),
 });
 
 export const statStringNumber = z.object({

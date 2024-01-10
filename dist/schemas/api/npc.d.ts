@@ -5066,6 +5066,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -5093,6 +5095,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -5114,6 +5118,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -5165,6 +5171,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -5185,6 +5193,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -5203,6 +5213,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -5225,6 +5237,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             speeds?: {
                 string: string;
@@ -5243,6 +5257,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5263,6 +5279,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5283,6 +5301,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5303,6 +5323,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5323,6 +5345,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5343,6 +5367,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5363,6 +5389,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -5387,6 +5415,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -5405,6 +5435,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5429,6 +5461,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -5447,6 +5481,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5471,6 +5507,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -5489,6 +5527,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5513,6 +5553,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -5531,6 +5573,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5555,6 +5599,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -5573,6 +5619,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5596,6 +5644,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10711,6 +10761,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -10738,6 +10790,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -10759,6 +10813,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -10810,6 +10866,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -10830,6 +10888,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -10848,6 +10908,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -10870,6 +10932,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             speeds?: {
                 string: string;
@@ -10888,6 +10952,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10908,6 +10974,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10928,6 +10996,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10948,6 +11018,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10968,6 +11040,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -10988,6 +11062,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -11008,6 +11084,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -11032,6 +11110,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -11050,6 +11130,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -11074,6 +11156,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -11092,6 +11176,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -11116,6 +11202,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -11134,6 +11222,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -11158,6 +11248,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -11176,6 +11268,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -11200,6 +11294,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -11218,6 +11314,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -11241,6 +11339,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16359,6 +16459,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -16386,6 +16488,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -16407,6 +16511,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -16458,6 +16564,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -16478,6 +16586,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -16496,6 +16606,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -16518,6 +16630,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             speeds?: {
                 string: string;
@@ -16536,6 +16650,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16556,6 +16672,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16576,6 +16694,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16596,6 +16716,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16616,6 +16738,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16636,6 +16760,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16656,6 +16782,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -16680,6 +16808,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -16698,6 +16828,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -16722,6 +16854,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -16740,6 +16874,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -16764,6 +16900,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -16782,6 +16920,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -16806,6 +16946,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -16824,6 +16966,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -16848,6 +16992,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -16866,6 +17012,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -16889,6 +17037,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22004,6 +22154,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -22031,6 +22183,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -22052,6 +22206,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -22103,6 +22259,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -22123,6 +22281,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             };
@@ -22141,6 +22301,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             isSwarm?: boolean | undefined;
             sizeSingleEntityOfSwarm?: {
@@ -22163,6 +22325,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: string | undefined;
                 })[] | undefined;
                 id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
             }[] | undefined;
             speeds?: {
                 string: string;
@@ -22181,6 +22345,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22201,6 +22367,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22221,6 +22389,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22241,6 +22411,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22261,6 +22433,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22281,6 +22455,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22301,6 +22477,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
@@ -22325,6 +22503,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -22343,6 +22523,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -22367,6 +22549,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -22385,6 +22569,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -22409,6 +22595,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -22427,6 +22615,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -22451,6 +22641,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -22469,6 +22661,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -22493,6 +22687,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 tag: string;
                 priority: number;
@@ -22511,6 +22707,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -22534,6 +22732,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: string | undefined;
                     })[] | undefined;
                     id?: number | undefined;
+                    translationKey?: string | undefined;
+                    translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
             } | undefined;
