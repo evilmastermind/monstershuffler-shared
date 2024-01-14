@@ -74,11 +74,14 @@ export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
     }, {
         lengthUnit: "feet" | "meters" | "squares";
     }>;
+    language: z.ZodEnum<["en", "it"]>;
 }, "strip", z.ZodTypeAny, {
+    language: "it" | "en";
     stats: {
         lengthUnit: "feet" | "meters" | "squares";
     };
 }, {
+    language: "it" | "en";
     stats: {
         lengthUnit: "feet" | "meters" | "squares";
     };
@@ -96,11 +99,14 @@ export declare const getUserResponse: z.ZodObject<{
         }, {
             lengthUnit: "feet" | "meters" | "squares";
         }>;
+        language: z.ZodEnum<["en", "it"]>;
     }, "strip", z.ZodTypeAny, {
+        language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
         };
     }, {
+        language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
         };
@@ -117,6 +123,7 @@ export declare const getUserResponse: z.ZodObject<{
     publishsuspension: string;
     avatar: string;
     settings: {
+        language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
         };
@@ -130,6 +137,7 @@ export declare const getUserResponse: z.ZodObject<{
     publishsuspension: string;
     avatar: string;
     settings: {
+        language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
         };
