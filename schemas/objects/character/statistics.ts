@@ -37,10 +37,11 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+  'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberAsWord', 'ordinal', 'rollableNumberWithSign', 'feet', '-feet', 'ft', 'resource', 'tag', 'rollableDice'
 ]);
 
-export const format = z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
+// these are TailwindCSS classes
+export const format = z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
 
 export const parsedDice = z.object({
   dice: z.number(),

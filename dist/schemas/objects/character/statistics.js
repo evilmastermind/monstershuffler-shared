@@ -37,9 +37,10 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberWithSign', 'numberAsWord', 'ordinal', 'ft', 'rollableNumberWithSign', 'feet', 'resource', 'tag', 'rollableDice'
+    'text', 'translatableText', 'nextLine', 'endOfParagraph', 'numberAsWord', 'ordinal', 'rollableNumberWithSign', 'feet', '-feet', 'ft', 'resource', 'tag', 'rollableDice'
 ]);
-exports.format = zod_1.z.enum(['italic', 'bold', 'underline', 'strikethrough', 'superscript', 'subscript']);
+// these are TailwindCSS classes
+exports.format = zod_1.z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
 exports.parsedDice = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
