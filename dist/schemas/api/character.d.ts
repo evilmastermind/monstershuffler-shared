@@ -133,7 +133,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -743,7 +743,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -1340,7 +1340,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -1936,7 +1936,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -2526,7 +2526,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -3122,7 +3122,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -3764,7 +3764,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -4398,7 +4398,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -5829,7 +5829,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -6439,7 +6439,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -7036,7 +7036,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -7632,7 +7632,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -8222,7 +8222,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -8818,7 +8818,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -9460,7 +9460,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -10094,7 +10094,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -11530,7 +11530,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -12140,7 +12140,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -12737,7 +12737,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -13333,7 +13333,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -13923,7 +13923,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -14519,7 +14519,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -15161,7 +15161,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -15795,7 +15795,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -17227,7 +17227,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -17837,7 +17837,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -18434,7 +18434,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -19030,7 +19030,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -19620,7 +19620,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -20216,7 +20216,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -20858,7 +20858,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -21492,7 +21492,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -22929,7 +22929,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -23539,7 +23539,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -24136,7 +24136,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -24732,7 +24732,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -25322,7 +25322,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -25918,7 +25918,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -26560,7 +26560,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -27194,7 +27194,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -28626,7 +28626,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -29236,7 +29236,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -29833,7 +29833,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -30429,7 +30429,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -31019,7 +31019,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -31615,7 +31615,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -32257,7 +32257,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -32891,7 +32891,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: number | undefined;
+                        timesDayMax?: string | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {

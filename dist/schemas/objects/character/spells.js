@@ -9,7 +9,7 @@ exports.spellGroupObject = zod_1.z
     tag: zod_1.z.string(),
     availableAt: zod_1.z.number().optional(),
     timesDay: zod_1.z.string().optional(),
-    timesDayMax: zod_1.z.number().optional(),
+    timesDayMax: zod_1.z.string().optional(),
     spells: zod_1.z.union([
         zod_1.z.array(choices_1.statObject),
         choices_1.choiceRandomObject,

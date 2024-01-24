@@ -11,7 +11,7 @@ export const spellGroupObject = z
     tag: z.string(),
     availableAt: z.number().optional(),
     timesDay: z.string().optional(),
-    timesDayMax: z.number().optional(),
+    timesDayMax: z.string().optional(),
     spells: z.union([
       z.array(statObject),
       choiceRandomObject,
