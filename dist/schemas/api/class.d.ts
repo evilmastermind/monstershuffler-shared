@@ -111,7 +111,7 @@ export declare const getClassResponse: z.ZodObject<{
                 tag: z.ZodString;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 timesDay: z.ZodOptional<z.ZodString>;
-                timesDayMax: z.ZodOptional<z.ZodString>;
+                timesDayMax: z.ZodOptional<z.ZodNumber>;
                 spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
                     id: z.ZodOptional<z.ZodNumber>;
                     value: z.ZodString;
@@ -394,7 +394,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }, {
                 tag: string;
                 spells: ({
@@ -476,7 +476,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             hasSlots?: boolean | undefined;
@@ -563,7 +563,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }, {
             hasSlots?: boolean | undefined;
@@ -650,7 +650,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }>>;
         bonuses: z.ZodOptional<z.ZodObject<{
@@ -3309,7 +3309,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -3903,7 +3903,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -4500,7 +4500,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -5097,7 +5097,7 @@ export declare const getClassResponse: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -5624,7 +5624,7 @@ export declare const postClass: z.ZodObject<{
                 tag: z.ZodString;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 timesDay: z.ZodOptional<z.ZodString>;
-                timesDayMax: z.ZodOptional<z.ZodString>;
+                timesDayMax: z.ZodOptional<z.ZodNumber>;
                 spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
                     id: z.ZodOptional<z.ZodNumber>;
                     value: z.ZodString;
@@ -5907,7 +5907,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }, {
                 tag: string;
                 spells: ({
@@ -5989,7 +5989,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             hasSlots?: boolean | undefined;
@@ -6076,7 +6076,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }, {
             hasSlots?: boolean | undefined;
@@ -6163,7 +6163,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }>>;
         bonuses: z.ZodOptional<z.ZodObject<{
@@ -8822,7 +8822,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -9416,7 +9416,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -10012,7 +10012,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -10609,7 +10609,7 @@ export declare const postClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -11135,7 +11135,7 @@ export declare const putClass: z.ZodObject<{
                 tag: z.ZodString;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 timesDay: z.ZodOptional<z.ZodString>;
-                timesDayMax: z.ZodOptional<z.ZodString>;
+                timesDayMax: z.ZodOptional<z.ZodNumber>;
                 spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
                     id: z.ZodOptional<z.ZodNumber>;
                     value: z.ZodString;
@@ -11418,7 +11418,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }, {
                 tag: string;
                 spells: ({
@@ -11500,7 +11500,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             hasSlots?: boolean | undefined;
@@ -11587,7 +11587,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }, {
             hasSlots?: boolean | undefined;
@@ -11674,7 +11674,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         }>>;
         bonuses: z.ZodOptional<z.ZodObject<{
@@ -14333,7 +14333,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -14927,7 +14927,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -15524,7 +15524,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {
@@ -16121,7 +16121,7 @@ export declare const putClass: z.ZodObject<{
                 } | undefined);
                 availableAt?: number | undefined;
                 timesDay?: string | undefined;
-                timesDayMax?: string | undefined;
+                timesDayMax?: number | undefined;
             }[] | undefined;
         } | undefined;
         bonuses?: {

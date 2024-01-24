@@ -154,7 +154,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -764,7 +764,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -1361,7 +1361,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -1957,7 +1957,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -2547,7 +2547,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -3143,7 +3143,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -3785,7 +3785,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -4419,7 +4419,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -5849,7 +5849,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -6459,7 +6459,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -7056,7 +7056,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -7652,7 +7652,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -8242,7 +8242,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -8838,7 +8838,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -9480,7 +9480,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -10114,7 +10114,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -11547,7 +11547,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -12157,7 +12157,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -12754,7 +12754,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -13350,7 +13350,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -13940,7 +13940,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -14536,7 +14536,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -15178,7 +15178,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -15812,7 +15812,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -17242,7 +17242,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -17852,7 +17852,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -18449,7 +18449,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -19045,7 +19045,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -19635,7 +19635,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -20231,7 +20231,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -20873,7 +20873,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
@@ -21507,7 +21507,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined);
                         availableAt?: number | undefined;
                         timesDay?: string | undefined;
-                        timesDayMax?: string | undefined;
+                        timesDayMax?: number | undefined;
                     }[] | undefined;
                 } | undefined;
                 bonuses?: {
