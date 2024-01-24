@@ -152,7 +152,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -762,7 +762,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -1359,7 +1359,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -1955,7 +1955,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -2545,7 +2545,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -3141,7 +3141,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -3783,7 +3783,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -4417,7 +4417,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -5847,7 +5847,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -6457,7 +6457,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -7054,7 +7054,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -7650,7 +7650,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -8240,7 +8240,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -8836,7 +8836,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -9478,7 +9478,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -10112,7 +10112,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -11545,7 +11545,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -12155,7 +12155,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -12752,7 +12752,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -13348,7 +13348,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -13938,7 +13938,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -14534,7 +14534,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -15176,7 +15176,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -15810,7 +15810,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -17240,7 +17240,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -17850,7 +17850,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -18447,7 +18447,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -19043,7 +19043,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -19633,7 +19633,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -20229,7 +20229,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -20871,7 +20871,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -21505,7 +21505,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;

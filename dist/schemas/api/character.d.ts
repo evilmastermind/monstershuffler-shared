@@ -131,7 +131,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -741,7 +741,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -1338,7 +1338,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -1934,7 +1934,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -2524,7 +2524,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -3120,7 +3120,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -3762,7 +3762,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -4396,7 +4396,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -5827,7 +5827,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -6437,7 +6437,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -7034,7 +7034,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -7630,7 +7630,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -8220,7 +8220,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -8816,7 +8816,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -9458,7 +9458,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -10092,7 +10092,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -11528,7 +11528,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -12138,7 +12138,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -12735,7 +12735,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -13331,7 +13331,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -13921,7 +13921,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -14517,7 +14517,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -15159,7 +15159,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -15793,7 +15793,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -17225,7 +17225,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -17835,7 +17835,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -18432,7 +18432,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -19028,7 +19028,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -19618,7 +19618,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -20214,7 +20214,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -20856,7 +20856,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -21490,7 +21490,7 @@ export declare const postCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -22927,7 +22927,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -23537,7 +23537,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -24134,7 +24134,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -24730,7 +24730,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -25320,7 +25320,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -25916,7 +25916,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -26558,7 +26558,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -27192,7 +27192,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -28624,7 +28624,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -29234,7 +29234,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -29831,7 +29831,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -30427,7 +30427,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -31017,7 +31017,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -31613,7 +31613,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -32255,7 +32255,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;
@@ -32889,7 +32889,7 @@ export declare const putCharacter: z.ZodObject<{
                                 isRepeatable?: boolean | undefined;
                             };
                         } | undefined);
-                        availableAt?: string | undefined;
+                        availableAt?: number | undefined;
                         timesDay?: string | undefined;
                         timesDayMax?: string | undefined;
                     }[] | undefined;

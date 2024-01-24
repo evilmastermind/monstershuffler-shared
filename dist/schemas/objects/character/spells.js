@@ -7,7 +7,7 @@ const abilities_1 = require("./abilities");
 exports.spellGroupObject = zod_1.z
     .object({
     tag: zod_1.z.string(),
-    availableAt: zod_1.z.string().optional(),
+    availableAt: zod_1.z.number().optional(),
     timesDay: zod_1.z.string().optional(),
     timesDayMax: zod_1.z.string().optional(),
     spells: zod_1.z.union([

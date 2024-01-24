@@ -9,7 +9,7 @@ import { abilitiesEnum } from './abilities';
 export const spellGroupObject = z
   .object({
     tag: z.string(),
-    availableAt: z.string().optional(),
+    availableAt: z.number().optional(),
     timesDay: z.string().optional(),
     timesDayMax: z.string().optional(),
     spells: z.union([
