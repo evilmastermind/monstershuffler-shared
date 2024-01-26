@@ -8,8 +8,9 @@ exports.spellGroupObject = zod_1.z
     .object({
     tag: zod_1.z.string(),
     availableAt: zod_1.z.number().optional(),
-    timesDay: zod_1.z.string().optional(),
-    timesDayMax: zod_1.z.string().optional(),
+    level: zod_1.z.number().optional(),
+    times: zod_1.z.string().optional(),
+    timesMax: zod_1.z.string().optional(),
     spells: zod_1.z.union([
         zod_1.z.array(choices_1.statObject),
         choices_1.choiceRandomObject,

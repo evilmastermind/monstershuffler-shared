@@ -2,26 +2,30 @@ import { z } from 'zod';
 export declare const spellGroupObject: z.ZodObject<{
     tag: z.ZodString;
     availableAt: z.ZodOptional<z.ZodNumber>;
-    timesDay: z.ZodOptional<z.ZodString>;
-    timesDayMax: z.ZodOptional<z.ZodString>;
+    level: z.ZodOptional<z.ZodNumber>;
+    times: z.ZodOptional<z.ZodString>;
+    timesMax: z.ZodOptional<z.ZodString>;
     spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         value: z.ZodString;
         type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
         availableAt: z.ZodOptional<z.ZodNumber>;
         availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+        properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         value: string;
         id?: number | undefined;
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }, {
         value: string;
         id?: number | undefined;
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }>, "many">, z.ZodObject<{
         choice: z.ZodObject<{
             type: z.ZodLiteral<"random">;
@@ -45,18 +49,21 @@ export declare const spellGroupObject: z.ZodObject<{
                 type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
             }, "strip", z.ZodTypeAny, {
                 value: string;
                 id?: number | undefined;
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }, {
                 value: string;
                 id?: number | undefined;
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             type: "random";
@@ -74,6 +81,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         }, {
             type: "random";
@@ -91,6 +99,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         }>;
     }, "strip", z.ZodTypeAny, {
@@ -110,6 +119,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     }, {
@@ -129,6 +139,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     }>, z.ZodObject<{
@@ -141,18 +152,21 @@ export declare const spellGroupObject: z.ZodObject<{
                 type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
                 availableAt: z.ZodOptional<z.ZodNumber>;
                 availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
             }, "strip", z.ZodTypeAny, {
                 value: string;
                 id?: number | undefined;
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }, {
                 value: string;
                 id?: number | undefined;
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }>, "many">;
             isRepeatable: z.ZodOptional<z.ZodBoolean>;
         }, "strip", z.ZodTypeAny, {
@@ -164,6 +178,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         }, {
@@ -175,6 +190,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         }>;
@@ -188,6 +204,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
@@ -201,6 +218,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
@@ -213,6 +231,7 @@ export declare const spellGroupObject: z.ZodObject<{
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }[] | {
         choice: {
             type: "random";
@@ -230,6 +249,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     } | {
@@ -242,6 +262,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
@@ -251,6 +272,7 @@ export declare const spellGroupObject: z.ZodObject<{
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }[] | {
         choice: {
             type: "random";
@@ -268,6 +290,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     } | {
@@ -280,13 +303,15 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
     } | undefined);
     availableAt?: number | undefined;
-    timesDay?: string | undefined;
-    timesDayMax?: string | undefined;
+    level?: number | undefined;
+    times?: string | undefined;
+    timesMax?: string | undefined;
 }, {
     tag: string;
     spells: ({
@@ -295,6 +320,7 @@ export declare const spellGroupObject: z.ZodObject<{
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }[] | {
         choice: {
             type: "random";
@@ -312,6 +338,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     } | {
@@ -324,6 +351,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
@@ -333,6 +361,7 @@ export declare const spellGroupObject: z.ZodObject<{
         type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
         availableAt?: number | undefined;
         availableUnit?: "level" | "cr" | undefined;
+        properties?: Record<string, string | number> | undefined;
     }[] | {
         choice: {
             type: "random";
@@ -350,6 +379,7 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[] | undefined;
         };
     } | {
@@ -362,13 +392,15 @@ export declare const spellGroupObject: z.ZodObject<{
                 type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                 availableAt?: number | undefined;
                 availableUnit?: "level" | "cr" | undefined;
+                properties?: Record<string, string | number> | undefined;
             }[];
             isRepeatable?: boolean | undefined;
         };
     } | undefined);
     availableAt?: number | undefined;
-    timesDay?: string | undefined;
-    timesDayMax?: string | undefined;
+    level?: number | undefined;
+    times?: string | undefined;
+    timesMax?: string | undefined;
 }>;
 export declare const spellsObject: z.ZodObject<{
     hasSlots: z.ZodOptional<z.ZodBoolean>;
@@ -377,26 +409,30 @@ export declare const spellsObject: z.ZodObject<{
     groups: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
         availableAt: z.ZodOptional<z.ZodNumber>;
-        timesDay: z.ZodOptional<z.ZodString>;
-        timesDayMax: z.ZodOptional<z.ZodString>;
+        level: z.ZodOptional<z.ZodNumber>;
+        times: z.ZodOptional<z.ZodString>;
+        timesMax: z.ZodOptional<z.ZodString>;
         spells: z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
             value: z.ZodString;
             type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
             availableAt: z.ZodOptional<z.ZodNumber>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+            properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -420,18 +456,21 @@ export declare const spellsObject: z.ZodObject<{
                     type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
                     availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                    properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -449,6 +488,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -466,6 +506,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -485,6 +526,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -504,6 +546,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -516,18 +559,21 @@ export declare const spellsObject: z.ZodObject<{
                     type: z.ZodOptional<z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>>;
                     availableAt: z.ZodOptional<z.ZodNumber>;
                     availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
+                    properties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
                 }, "strip", z.ZodTypeAny, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -539,6 +585,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -550,6 +597,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -563,6 +611,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -576,6 +625,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -588,6 +638,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -605,6 +656,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -617,6 +669,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -626,6 +679,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -643,6 +697,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -655,13 +710,15 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
         } | undefined);
         availableAt?: number | undefined;
-        timesDay?: string | undefined;
-        timesDayMax?: string | undefined;
+        level?: number | undefined;
+        times?: string | undefined;
+        timesMax?: string | undefined;
     }, {
         tag: string;
         spells: ({
@@ -670,6 +727,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -687,6 +745,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -699,6 +758,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -708,6 +768,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -725,6 +786,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -737,13 +799,15 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
         } | undefined);
         availableAt?: number | undefined;
-        timesDay?: string | undefined;
-        timesDayMax?: string | undefined;
+        level?: number | undefined;
+        times?: string | undefined;
+        timesMax?: string | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     hasSlots?: boolean | undefined;
@@ -757,6 +821,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -774,6 +839,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -786,6 +852,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -795,6 +862,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -812,6 +880,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -824,13 +893,15 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
         } | undefined);
         availableAt?: number | undefined;
-        timesDay?: string | undefined;
-        timesDayMax?: string | undefined;
+        level?: number | undefined;
+        times?: string | undefined;
+        timesMax?: string | undefined;
     }[] | undefined;
 }, {
     hasSlots?: boolean | undefined;
@@ -844,6 +915,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -861,6 +933,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -873,6 +946,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -882,6 +956,7 @@ export declare const spellsObject: z.ZodObject<{
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            properties?: Record<string, string | number> | undefined;
         }[] | {
             choice: {
                 type: "random";
@@ -899,6 +974,7 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -911,13 +987,15 @@ export declare const spellsObject: z.ZodObject<{
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
         } | undefined);
         availableAt?: number | undefined;
-        timesDay?: string | undefined;
-        timesDayMax?: string | undefined;
+        level?: number | undefined;
+        times?: string | undefined;
+        timesMax?: string | undefined;
     }[] | undefined;
 }>;
 export declare const spellObject: z.ZodObject<{

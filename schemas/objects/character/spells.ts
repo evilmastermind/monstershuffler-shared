@@ -10,8 +10,9 @@ export const spellGroupObject = z
   .object({
     tag: z.string(),
     availableAt: z.number().optional(),
-    timesDay: z.string().optional(),
-    timesDayMax: z.string().optional(),
+    level: z.number().optional(),
+    times: z.string().optional(), // must be a string because of expressions and "at will"
+    timesMax: z.string().optional(), // must be a string because of "at will"
     spells: z.union([
       z.array(statObject),
       choiceRandomObject,

@@ -36,6 +36,7 @@ exports.statObject = zod_1.z.object({
     type: exports.statType.optional(),
     availableAt: zod_1.z.number().optional(),
     availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
+    properties: zod_1.z.record(zod_1.z.union([zod_1.z.string(), zod_1.z.number()])).optional(),
 });
 exports.choiceRandomObject = zod_1.z.object({
     choice: zod_1.z.object({
