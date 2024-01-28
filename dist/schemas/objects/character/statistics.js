@@ -136,4 +136,6 @@ exports.statisticsObject = zod_1.z.object({
     legendaryActions: zod_1.z.array(exports.statStringArrayWithName).optional(),
     legendaryActionsIntro: exports.statStringArray.optional(),
     legendaryActionsMax: zod_1.z.number().optional(),
+    spellcasting: zod_1.z.array(exports.descriptionPartObject).optional(),
+    spells: zod_1.z.array(exports.statStringArrayWithName).optional(),
 });

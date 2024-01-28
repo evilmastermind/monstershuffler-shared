@@ -146,6 +146,19 @@ export const statisticsObject = z.object({
   legendaryActions: z.array(statStringArrayWithName).optional(),
   legendaryActionsIntro: statStringArray.optional(),
   legendaryActionsMax: z.number().optional(),
+  spellcasting: z.array(descriptionPartObject).optional(),
+  spells: z.array(statStringArrayWithName).optional(),
 });
 
+/**
+ * 2024-01-28 Note on spells:
+ * both spell slots and uses/day will require the "name" part to have 
+ * - number of uses
+ * - recharge type
+ * 
+ * the difference between them is that they will have a different type of "recharge", and that
+ * we need to count the uses for single spells for groups.
+ * We don't need to do it in descriptionPart, though. The groups' tag and the spells' id (or name) is
+ * enough to be able to identify them
+ * */ 
 export type Statistics = z.infer<typeof statisticsObject>;
