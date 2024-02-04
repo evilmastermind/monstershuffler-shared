@@ -37,7 +37,7 @@ export const abilitiesObject = z.object({
 });
 
 export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'rollableNumberWithSign', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'rollableValue'
+  'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'rollableNumberWithSign', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'rollableValue'
 ]);
 
 // these are TailwindCSS classes
