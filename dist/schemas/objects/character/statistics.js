@@ -59,7 +59,7 @@ exports.descriptionPartObject = zod_1.z.object({
     dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])).optional(),
     id: zod_1.z.number().optional(),
     translationKey: zod_1.z.string().optional(),
-    translationVariables: zod_1.z.record(zod_1.z.string()).optional(),
+    translationVariables: zod_1.z.record(zod_1.z.union([zod_1.z.string(), zod_1.z.number()])).optional(),
 });
 exports.statStringNumber = zod_1.z.object({
     number: zod_1.z.number(),

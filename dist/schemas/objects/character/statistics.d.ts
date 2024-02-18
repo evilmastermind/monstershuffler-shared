@@ -104,7 +104,7 @@ export declare const descriptionPartObject: z.ZodObject<{
     }>]>, "many">>;
     id: z.ZodOptional<z.ZodNumber>;
     translationKey: z.ZodOptional<z.ZodString>;
-    translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+    translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
 }, "strip", z.ZodTypeAny, {
     string: string;
     number?: number | undefined;
@@ -121,7 +121,7 @@ export declare const descriptionPartObject: z.ZodObject<{
     })[] | undefined;
     id?: number | undefined;
     translationKey?: string | undefined;
-    translationVariables?: Record<string, string> | undefined;
+    translationVariables?: Record<string, string | number> | undefined;
 }, {
     string: string;
     number?: number | undefined;
@@ -138,7 +138,7 @@ export declare const descriptionPartObject: z.ZodObject<{
     })[] | undefined;
     id?: number | undefined;
     translationKey?: string | undefined;
-    translationVariables?: Record<string, string> | undefined;
+    translationVariables?: Record<string, string | number> | undefined;
 }>;
 export declare const statStringNumber: z.ZodObject<{
     number: z.ZodNumber;
@@ -188,7 +188,7 @@ export declare const statStringNumberArray: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -205,7 +205,7 @@ export declare const statStringNumberArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -222,7 +222,7 @@ export declare const statStringNumberArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
@@ -244,7 +244,7 @@ export declare const statStringNumberArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
 }, {
@@ -266,7 +266,7 @@ export declare const statStringNumberArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
 }>;
@@ -314,7 +314,7 @@ export declare const statStringArray: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -331,7 +331,7 @@ export declare const statStringArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -348,7 +348,7 @@ export declare const statStringArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
@@ -369,7 +369,7 @@ export declare const statStringArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
 }, {
@@ -390,7 +390,7 @@ export declare const statStringArray: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
 }>;
@@ -430,7 +430,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -447,7 +447,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -464,7 +464,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">;
     name: z.ZodString;
     nameArray: z.ZodArray<z.ZodObject<{
@@ -499,7 +499,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -516,7 +516,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -533,7 +533,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">;
     id: z.ZodOptional<z.ZodNumber>;
     recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -558,7 +558,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     tag: string;
     priority: number;
@@ -578,7 +578,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
     recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -603,7 +603,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     tag: string;
     priority: number;
@@ -623,7 +623,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[];
     id?: number | undefined;
     recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -666,7 +666,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -683,7 +683,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -700,7 +700,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -722,7 +722,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -744,7 +744,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>;
@@ -785,7 +785,7 @@ export declare const statisticsObject: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -802,7 +802,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -819,7 +819,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">>;
     level: z.ZodNumber;
     CR: z.ZodObject<{
@@ -871,7 +871,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -888,7 +888,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -905,7 +905,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -927,7 +927,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -949,7 +949,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>;
@@ -1083,7 +1083,7 @@ export declare const statisticsObject: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -1100,7 +1100,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -1117,7 +1117,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">>;
     meta: z.ZodObject<{
         string: z.ZodString;
@@ -1153,7 +1153,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1170,7 +1170,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1187,7 +1187,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1208,7 +1208,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1229,7 +1229,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>;
@@ -1267,7 +1267,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1284,7 +1284,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1301,7 +1301,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1322,7 +1322,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1343,7 +1343,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1381,7 +1381,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1398,7 +1398,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1415,7 +1415,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1436,7 +1436,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1457,7 +1457,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1495,7 +1495,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1512,7 +1512,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1529,7 +1529,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1550,7 +1550,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1571,7 +1571,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1609,7 +1609,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1626,7 +1626,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1643,7 +1643,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1664,7 +1664,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1685,7 +1685,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1723,7 +1723,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1740,7 +1740,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1757,7 +1757,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1778,7 +1778,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1799,7 +1799,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1837,7 +1837,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1854,7 +1854,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1871,7 +1871,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1892,7 +1892,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -1913,7 +1913,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -1951,7 +1951,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -1968,7 +1968,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -1985,7 +1985,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -2006,7 +2006,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -2027,7 +2027,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -2065,7 +2065,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2082,7 +2082,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2099,7 +2099,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -2120,7 +2120,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -2141,7 +2141,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>;
@@ -2179,7 +2179,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2196,7 +2196,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2213,7 +2213,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -2234,7 +2234,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -2255,7 +2255,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>;
@@ -2298,7 +2298,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2315,7 +2315,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2332,7 +2332,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -2367,7 +2367,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2384,7 +2384,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2401,7 +2401,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -2426,7 +2426,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2446,7 +2446,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -2471,7 +2471,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2491,7 +2491,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -2534,7 +2534,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2551,7 +2551,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2568,7 +2568,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -2603,7 +2603,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2620,7 +2620,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2637,7 +2637,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -2662,7 +2662,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2682,7 +2682,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -2707,7 +2707,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2727,7 +2727,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -2770,7 +2770,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2787,7 +2787,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2804,7 +2804,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -2839,7 +2839,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -2856,7 +2856,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -2873,7 +2873,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -2898,7 +2898,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2918,7 +2918,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -2943,7 +2943,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -2963,7 +2963,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3006,7 +3006,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3023,7 +3023,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3040,7 +3040,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -3075,7 +3075,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3092,7 +3092,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3109,7 +3109,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -3134,7 +3134,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3154,7 +3154,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3179,7 +3179,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3199,7 +3199,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3242,7 +3242,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3259,7 +3259,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3276,7 +3276,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -3311,7 +3311,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3328,7 +3328,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3345,7 +3345,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -3370,7 +3370,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3390,7 +3390,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3415,7 +3415,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3435,7 +3435,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3476,7 +3476,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3493,7 +3493,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3510,7 +3510,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -3531,7 +3531,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }, {
@@ -3552,7 +3552,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     }>>;
@@ -3589,7 +3589,7 @@ export declare const statisticsObject: z.ZodObject<{
         }>]>, "many">>;
         id: z.ZodOptional<z.ZodNumber>;
         translationKey: z.ZodOptional<z.ZodString>;
-        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number?: number | undefined;
@@ -3606,7 +3606,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }, {
         string: string;
         number?: number | undefined;
@@ -3623,7 +3623,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }>, "many">>;
     spells: z.ZodOptional<z.ZodArray<z.ZodObject<{
         tag: z.ZodString;
@@ -3661,7 +3661,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3678,7 +3678,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3695,7 +3695,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         name: z.ZodString;
         nameArray: z.ZodArray<z.ZodObject<{
@@ -3730,7 +3730,7 @@ export declare const statisticsObject: z.ZodObject<{
             }>]>, "many">>;
             id: z.ZodOptional<z.ZodNumber>;
             translationKey: z.ZodOptional<z.ZodString>;
-            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<[z.ZodString, z.ZodNumber]>>>;
         }, "strip", z.ZodTypeAny, {
             string: string;
             number?: number | undefined;
@@ -3747,7 +3747,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }, {
             string: string;
             number?: number | undefined;
@@ -3764,7 +3764,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }>, "many">;
         id: z.ZodOptional<z.ZodNumber>;
         recharge: z.ZodOptional<z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>>;
@@ -3789,7 +3789,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3809,7 +3809,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3834,7 +3834,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -3854,7 +3854,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -3887,7 +3887,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -3916,7 +3916,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -3939,7 +3939,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -3992,7 +3992,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4014,7 +4014,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4034,7 +4034,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
@@ -4058,7 +4058,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     speeds?: {
         string: string;
@@ -4078,7 +4078,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4100,7 +4100,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4122,7 +4122,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4144,7 +4144,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4166,7 +4166,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4188,7 +4188,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4210,7 +4210,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4236,7 +4236,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4256,7 +4256,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4282,7 +4282,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4302,7 +4302,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4328,7 +4328,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4348,7 +4348,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4374,7 +4374,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4394,7 +4394,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4420,7 +4420,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4440,7 +4440,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4465,7 +4465,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4486,7 +4486,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     spells?: {
         string: string;
@@ -4507,7 +4507,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4527,7 +4527,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4560,7 +4560,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4589,7 +4589,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4612,7 +4612,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4665,7 +4665,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4687,7 +4687,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     };
@@ -4707,7 +4707,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     isSwarm?: boolean | undefined;
     sizeSingleEntityOfSwarm?: {
@@ -4731,7 +4731,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     speeds?: {
         string: string;
@@ -4751,7 +4751,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4773,7 +4773,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4795,7 +4795,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4817,7 +4817,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4839,7 +4839,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4861,7 +4861,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4883,7 +4883,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -4909,7 +4909,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4929,7 +4929,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -4955,7 +4955,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -4975,7 +4975,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5001,7 +5001,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -5021,7 +5021,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5047,7 +5047,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -5067,7 +5067,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5093,7 +5093,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -5113,7 +5113,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
@@ -5138,7 +5138,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
     } | undefined;
@@ -5159,7 +5159,7 @@ export declare const statisticsObject: z.ZodObject<{
         })[] | undefined;
         id?: number | undefined;
         translationKey?: string | undefined;
-        translationVariables?: Record<string, string> | undefined;
+        translationVariables?: Record<string, string | number> | undefined;
     }[] | undefined;
     spells?: {
         string: string;
@@ -5180,7 +5180,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         tag: string;
         priority: number;
@@ -5200,7 +5200,7 @@ export declare const statisticsObject: z.ZodObject<{
             })[] | undefined;
             id?: number | undefined;
             translationKey?: string | undefined;
-            translationVariables?: Record<string, string> | undefined;
+            translationVariables?: Record<string, string | number> | undefined;
         }[];
         id?: number | undefined;
         recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
