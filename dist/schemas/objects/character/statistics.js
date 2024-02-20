@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'rollableNumberWithSign', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'rollableValue'
+    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'diceRoll'
 ]);
 // these are TailwindCSS classes
 exports.format = zod_1.z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
@@ -56,6 +56,7 @@ exports.descriptionPartObject = zod_1.z.object({
     number: zod_1.z.number().optional(),
     type: zod_1.z.union([choices_1.statType, exports.additionalStringTypes]).optional(),
     format: zod_1.z.array(exports.format).optional(),
+    rollName: zod_1.z.string().optional(),
     dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])).optional(),
     id: zod_1.z.number().optional(),
     translationKey: zod_1.z.string().optional(),
