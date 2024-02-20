@@ -37,7 +37,7 @@ exports.abilitiesObject = zod_1.z.object({
     CHA: zod_1.z.number(),
 });
 exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'diceRoll'
+    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
 ]);
 // these are TailwindCSS classes
 exports.format = zod_1.z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
