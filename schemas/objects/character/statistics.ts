@@ -55,13 +55,18 @@ export const parsedExpression = z.object({
   type: z.string().optional(),
 });
 
+export const roll = z.object({
+  dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
+  name: z.string().optional(),
+  translationKey: z.string().optional(),
+});
+
 export const descriptionPartObject = z.object({
   string: z.string(),
   number: z.number().optional(),
   type: z.union([statType, additionalStringTypes]).optional(),
   format: z.array(format).optional(),
-  rollName: z.string().optional(),
-  dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
+  roll: roll.optional(),
   id: z.number().optional(),
   translationKey: z.string().optional(),
   translationVariables: z.record(z.string()).optional(),

@@ -5212,16 +5212,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5242,16 +5245,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5266,16 +5272,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5320,16 +5329,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5343,16 +5355,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5364,16 +5379,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -5389,16 +5407,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -5410,16 +5431,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5433,16 +5457,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5456,16 +5483,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5479,16 +5509,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5502,16 +5535,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5525,16 +5561,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5548,16 +5587,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5575,16 +5617,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5596,16 +5641,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5623,16 +5671,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5644,16 +5695,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5671,16 +5725,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5692,16 +5749,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5719,16 +5779,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5740,16 +5803,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5767,16 +5833,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5788,16 +5857,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5814,16 +5886,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5836,16 +5911,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -5858,16 +5936,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -5879,16 +5960,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11177,16 +11261,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11207,16 +11294,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11231,16 +11321,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11285,16 +11378,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11308,16 +11404,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11329,16 +11428,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -11354,16 +11456,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -11375,16 +11480,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11398,16 +11506,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11421,16 +11532,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11444,16 +11558,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11467,16 +11584,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11490,16 +11610,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11513,16 +11636,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11540,16 +11666,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11561,16 +11690,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11588,16 +11720,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11609,16 +11744,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11636,16 +11774,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11657,16 +11798,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11684,16 +11828,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11705,16 +11852,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11732,16 +11882,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11753,16 +11906,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11779,16 +11935,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11801,16 +11960,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -11823,16 +11985,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -11844,16 +12009,19 @@ export declare const getCharacterResponse: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17147,16 +17315,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17177,16 +17348,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17201,16 +17375,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17255,16 +17432,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17278,16 +17458,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17299,16 +17482,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -17324,16 +17510,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -17345,16 +17534,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17368,16 +17560,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17391,16 +17586,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17414,16 +17612,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17437,16 +17638,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17460,16 +17664,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17483,16 +17690,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17510,16 +17720,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17531,16 +17744,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17558,16 +17774,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17579,16 +17798,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17606,16 +17828,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17627,16 +17852,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17654,16 +17882,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17675,16 +17906,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17702,16 +17936,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17723,16 +17960,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17749,16 +17989,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17771,16 +18014,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -17793,16 +18039,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -17814,16 +18063,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23113,16 +23365,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23143,16 +23398,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23167,16 +23425,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23221,16 +23482,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23244,16 +23508,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23265,16 +23532,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -23290,16 +23560,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -23311,16 +23584,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23334,16 +23610,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23357,16 +23636,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23380,16 +23662,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23403,16 +23688,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23426,16 +23714,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23449,16 +23740,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23476,16 +23770,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23497,16 +23794,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23524,16 +23824,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23545,16 +23848,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23572,16 +23878,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23593,16 +23902,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23620,16 +23932,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23641,16 +23956,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23668,16 +23986,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23689,16 +24010,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23715,16 +24039,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23737,16 +24064,19 @@ export declare const postCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -23759,16 +24089,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -23780,16 +24113,19 @@ export declare const postCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29084,16 +29420,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29114,16 +29453,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29138,16 +29480,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29192,16 +29537,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29215,16 +29563,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29236,16 +29587,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -29261,16 +29615,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -29282,16 +29639,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29305,16 +29665,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29328,16 +29691,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29351,16 +29717,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29374,16 +29743,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29397,16 +29769,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29420,16 +29795,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29447,16 +29825,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29468,16 +29849,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29495,16 +29879,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29516,16 +29903,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29543,16 +29933,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29564,16 +29957,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29591,16 +29987,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29612,16 +30011,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29639,16 +30041,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29660,16 +30065,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29686,16 +30094,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29708,16 +30119,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -29730,16 +30144,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -29751,16 +30168,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35050,16 +35470,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35080,16 +35503,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35104,16 +35530,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35158,16 +35587,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35181,16 +35613,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35202,16 +35637,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -35227,16 +35665,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -35248,16 +35689,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35271,16 +35715,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35294,16 +35741,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35317,16 +35767,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35340,16 +35793,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35363,16 +35819,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35386,16 +35845,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35413,16 +35875,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35434,16 +35899,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35461,16 +35929,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35482,16 +35953,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35509,16 +35983,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35530,16 +36007,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35557,16 +36037,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35578,16 +36061,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35605,16 +36091,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35626,16 +36115,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35652,16 +36144,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35674,16 +36169,19 @@ export declare const putCharacter: z.ZodObject<{
                 number?: number | undefined;
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                rollName?: string | undefined;
-                dice?: ({
-                    dice: number;
-                    sides: number;
-                    bonus?: number | undefined;
-                    type?: string | undefined;
-                } | {
-                    value: number;
-                    type?: string | undefined;
-                })[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
                 id?: number | undefined;
                 translationKey?: string | undefined;
                 translationVariables?: Record<string, string> | undefined;
@@ -35696,16 +36194,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
@@ -35717,16 +36218,19 @@ export declare const putCharacter: z.ZodObject<{
                     number?: number | undefined;
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
-                    rollName?: string | undefined;
-                    dice?: ({
-                        dice: number;
-                        sides: number;
-                        bonus?: number | undefined;
-                        type?: string | undefined;
-                    } | {
-                        value: number;
-                        type?: string | undefined;
-                    })[] | undefined;
+                    roll?: {
+                        dice?: ({
+                            dice: number;
+                            sides: number;
+                            bonus?: number | undefined;
+                            type?: string | undefined;
+                        } | {
+                            value: number;
+                            type?: string | undefined;
+                        })[] | undefined;
+                        name?: string | undefined;
+                        translationKey?: string | undefined;
+                    } | undefined;
                     id?: number | undefined;
                     translationKey?: string | undefined;
                     translationVariables?: Record<string, string> | undefined;
