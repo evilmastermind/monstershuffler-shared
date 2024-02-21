@@ -22,30 +22,6 @@ import { z } from 'zod';
  * possible, provide an alternative string that can be used instead.
  *
  */
-export declare const abilitiesObject: z.ZodObject<{
-    STR: z.ZodNumber;
-    DEX: z.ZodNumber;
-    CON: z.ZodNumber;
-    INT: z.ZodNumber;
-    WIS: z.ZodNumber;
-    CHA: z.ZodNumber;
-}, "strip", z.ZodTypeAny, {
-    STR: number;
-    DEX: number;
-    CON: number;
-    INT: number;
-    WIS: number;
-    CHA: number;
-}, {
-    STR: number;
-    DEX: number;
-    CON: number;
-    INT: number;
-    WIS: number;
-    CHA: number;
-}>;
-export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>;
-export declare const format: z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>;
 export declare const parsedDice: z.ZodObject<{
     dice: z.ZodNumber;
     sides: z.ZodNumber;
@@ -125,6 +101,8 @@ export declare const roll: z.ZodObject<{
     name?: string | undefined;
     translationKey?: string | undefined;
 }>;
+export declare const additionalStringTypes: z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>;
+export declare const format: z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>;
 export declare const descriptionPartObject: z.ZodObject<{
     string: z.ZodString;
     number: z.ZodOptional<z.ZodNumber>;
@@ -895,6 +873,1300 @@ export declare const statStringArrayWithName: z.ZodObject<{
     cost?: number | undefined;
     charges?: number | undefined;
 }>;
+export declare const abilitiesObject: z.ZodObject<{
+    STR: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+    DEX: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+    CON: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+    INT: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+    WIS: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+    CHA: z.ZodObject<{
+        number: z.ZodNumber;
+        string: z.ZodString;
+        array: z.ZodArray<z.ZodObject<{
+            string: z.ZodString;
+            number: z.ZodOptional<z.ZodNumber>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+            format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+            roll: z.ZodOptional<z.ZodObject<{
+                dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                    dice: z.ZodNumber;
+                    sides: z.ZodNumber;
+                    bonus: z.ZodOptional<z.ZodNumber>;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }, {
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                }>, z.ZodObject<{
+                    value: z.ZodNumber;
+                    type: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    value: number;
+                    type?: string | undefined;
+                }, {
+                    value: number;
+                    type?: string | undefined;
+                }>]>, "many">>;
+                name: z.ZodOptional<z.ZodString>;
+                translationKey: z.ZodOptional<z.ZodString>;
+            }, "strip", z.ZodTypeAny, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }, {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            }>>;
+            id: z.ZodOptional<z.ZodNumber>;
+            translationKey: z.ZodOptional<z.ZodString>;
+            translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }, {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }>, "many">;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    }>;
+}, "strip", z.ZodTypeAny, {
+    STR: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    DEX: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    CON: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    INT: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    WIS: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    CHA: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+}, {
+    STR: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    DEX: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    CON: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    INT: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    WIS: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+    CHA: {
+        string: string;
+        number: number;
+        array: {
+            string: string;
+            number?: number | undefined;
+            type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+            format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+            roll?: {
+                dice?: ({
+                    dice: number;
+                    sides: number;
+                    bonus?: number | undefined;
+                    type?: string | undefined;
+                } | {
+                    value: number;
+                    type?: string | undefined;
+                })[] | undefined;
+                name?: string | undefined;
+                translationKey?: string | undefined;
+            } | undefined;
+            id?: number | undefined;
+            translationKey?: string | undefined;
+            translationVariables?: Record<string, string> | undefined;
+        }[];
+        id?: number | undefined;
+    };
+}>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodObject<{
         number: z.ZodNumber;
@@ -1370,49 +2642,1299 @@ export declare const statisticsObject: z.ZodObject<{
         number: number;
         id?: number | undefined;
     }>>;
-    abilityScores: z.ZodObject<{
-        STR: z.ZodNumber;
-        DEX: z.ZodNumber;
-        CON: z.ZodNumber;
-        INT: z.ZodNumber;
-        WIS: z.ZodNumber;
-        CHA: z.ZodNumber;
+    abilities: z.ZodObject<{
+        STR: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
+        DEX: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
+        CON: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
+        INT: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
+        WIS: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
+        CHA: z.ZodObject<{
+            number: z.ZodNumber;
+            string: z.ZodString;
+            array: z.ZodArray<z.ZodObject<{
+                string: z.ZodString;
+                number: z.ZodOptional<z.ZodNumber>;
+                type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["alignment", "armor", "background", "class", "condition", "conditionImmunity", "damageType", "immunity", "item", "language", "pronouns", "race", "resistance", "savingThrow", "sense", "size", "skill", "speed", "spell", "subtype", "template", "trait", "type", "vulnerability", "weapon"]>, z.ZodEnum<["text", "translatableText", "nextLine", "paragraphEnd", "listStart", "listEnd", "listItemStart", "listItemEnd", "numberAsWord", "ordinal", "feet", "-feet", "ft", "range/rangeMax", "range", "reach", "resource", "tag", "value", "valueAsWord", "diceRoll", "d20Roll"]>]>>;
+                format: z.ZodOptional<z.ZodArray<z.ZodEnum<["italic", "font-bold", "underline", "line-through", "sups", "subs"]>, "many">>;
+                roll: z.ZodOptional<z.ZodObject<{
+                    dice: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+                        dice: z.ZodNumber;
+                        sides: z.ZodNumber;
+                        bonus: z.ZodOptional<z.ZodNumber>;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }, {
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    }>, z.ZodObject<{
+                        value: z.ZodNumber;
+                        type: z.ZodOptional<z.ZodString>;
+                    }, "strip", z.ZodTypeAny, {
+                        value: number;
+                        type?: string | undefined;
+                    }, {
+                        value: number;
+                        type?: string | undefined;
+                    }>]>, "many">>;
+                    name: z.ZodOptional<z.ZodString>;
+                    translationKey: z.ZodOptional<z.ZodString>;
+                }, "strip", z.ZodTypeAny, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }, {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                }>>;
+                id: z.ZodOptional<z.ZodNumber>;
+                translationKey: z.ZodOptional<z.ZodString>;
+                translationVariables: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+            }, "strip", z.ZodTypeAny, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }, {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }>, "many">;
+            id: z.ZodOptional<z.ZodNumber>;
+        }, "strip", z.ZodTypeAny, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }, {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        }>;
     }, "strip", z.ZodTypeAny, {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
+        STR: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        DEX: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CON: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        INT: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        WIS: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CHA: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
     }, {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
-    }>;
-    abilityModifiers: z.ZodObject<{
-        STR: z.ZodNumber;
-        DEX: z.ZodNumber;
-        CON: z.ZodNumber;
-        INT: z.ZodNumber;
-        WIS: z.ZodNumber;
-        CHA: z.ZodNumber;
-    }, "strip", z.ZodTypeAny, {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
-    }, {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
+        STR: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        DEX: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CON: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        INT: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        WIS: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CHA: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
     }>;
     HP: z.ZodObject<{
         number: z.ZodNumber;
@@ -5443,21 +7965,169 @@ export declare const statisticsObject: z.ZodObject<{
     fullName: string;
     XP: string;
     proficiency: number;
-    abilityScores: {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
-    };
-    abilityModifiers: {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
+    abilities: {
+        STR: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        DEX: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CON: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        INT: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        WIS: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CHA: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
     };
     meta: {
         string: string;
@@ -6228,21 +8898,169 @@ export declare const statisticsObject: z.ZodObject<{
     fullName: string;
     XP: string;
     proficiency: number;
-    abilityScores: {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
-    };
-    abilityModifiers: {
-        STR: number;
-        DEX: number;
-        CON: number;
-        INT: number;
-        WIS: number;
-        CHA: number;
+    abilities: {
+        STR: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        DEX: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CON: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        INT: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        WIS: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
+        CHA: {
+            string: string;
+            number: number;
+            array: {
+                string: string;
+                number?: number | undefined;
+                type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
+                format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
+                roll?: {
+                    dice?: ({
+                        dice: number;
+                        sides: number;
+                        bonus?: number | undefined;
+                        type?: string | undefined;
+                    } | {
+                        value: number;
+                        type?: string | undefined;
+                    })[] | undefined;
+                    name?: string | undefined;
+                    translationKey?: string | undefined;
+                } | undefined;
+                id?: number | undefined;
+                translationKey?: string | undefined;
+                translationVariables?: Record<string, string> | undefined;
+            }[];
+            id?: number | undefined;
+        };
     };
     meta: {
         string: string;

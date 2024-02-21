@@ -27,22 +27,6 @@ import { rechargeTypeEnum } from '.';
  * 
  */
 
-export const abilitiesObject = z.object({
-  STR: z.number(),
-  DEX: z.number(),
-  CON: z.number(),
-  INT: z.number(),
-  WIS: z.number(),
-  CHA: z.number(),
-});
-
-export const additionalStringTypes = z.enum([
-  'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
-]);
-
-// these are TailwindCSS classes
-export const format = z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
-
 export const parsedDice = z.object({
   dice: z.number(),
   sides: z.number(),
@@ -60,6 +44,16 @@ export const roll = z.object({
   name: z.string().optional(),
   translationKey: z.string().optional(),
 });
+
+export const additionalStringTypes = z.enum([
+  'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
+]);
+
+// these are TailwindCSS classes
+export const format = z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
+
+
+///////////////////////////////////////////////////////
 
 export const descriptionPartObject = z.object({
   string: z.string(),
@@ -111,6 +105,17 @@ export const statStringArrayWithName = z.object({
   // isCharged: z.boolean().optional(),
 });
 
+///////////////////////////////////////////////////////
+
+export const abilitiesObject = z.object({
+  STR: statStringNumberArray,
+  DEX: statStringNumberArray,
+  CON: statStringNumberArray,
+  INT: statStringNumberArray,
+  WIS: statStringNumberArray,
+  CHA: statStringNumberArray,
+});
+
 export const statisticsObject = z.object({
   alignment: statStringNumberArray,
   pronouns: pronounsObject,
@@ -127,8 +132,7 @@ export const statisticsObject = z.object({
   size: statStringNumber,
   isSwarm: z.boolean().optional(),
   sizeSingleEntityOfSwarm: statStringNumber.optional(),
-  abilityScores: abilitiesObject,
-  abilityModifiers: abilitiesObject,
+  abilities: abilitiesObject,
   HP: statStringNumber,
   type: statStringNumber,
   subtypes: z.array(descriptionPartObject).optional(),

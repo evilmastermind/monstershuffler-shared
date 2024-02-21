@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.roll = exports.parsedExpression = exports.parsedDice = exports.format = exports.additionalStringTypes = exports.abilitiesObject = void 0;
+exports.statisticsObject = exports.abilitiesObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.roll = exports.parsedExpression = exports.parsedDice = void 0;
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -28,19 +28,6 @@ const _1 = require(".");
  * possible, provide an alternative string that can be used instead.
  *
  */
-exports.abilitiesObject = zod_1.z.object({
-    STR: zod_1.z.number(),
-    DEX: zod_1.z.number(),
-    CON: zod_1.z.number(),
-    INT: zod_1.z.number(),
-    WIS: zod_1.z.number(),
-    CHA: zod_1.z.number(),
-});
-exports.additionalStringTypes = zod_1.z.enum([
-    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
-]);
-// these are TailwindCSS classes
-exports.format = zod_1.z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
 exports.parsedDice = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
@@ -56,6 +43,12 @@ exports.roll = zod_1.z.object({
     name: zod_1.z.string().optional(),
     translationKey: zod_1.z.string().optional(),
 });
+exports.additionalStringTypes = zod_1.z.enum([
+    'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
+]);
+// these are TailwindCSS classes
+exports.format = zod_1.z.enum(['italic', 'font-bold', 'underline', 'line-through', 'sups', 'subs']);
+///////////////////////////////////////////////////////
 exports.descriptionPartObject = zod_1.z.object({
     string: zod_1.z.string(),
     number: zod_1.z.number().optional(),
@@ -100,6 +93,15 @@ exports.statStringArrayWithName = zod_1.z.object({
     // chargesUsed: z.number().optional(),
     // isCharged: z.boolean().optional(),
 });
+///////////////////////////////////////////////////////
+exports.abilitiesObject = zod_1.z.object({
+    STR: exports.statStringNumberArray,
+    DEX: exports.statStringNumberArray,
+    CON: exports.statStringNumberArray,
+    INT: exports.statStringNumberArray,
+    WIS: exports.statStringNumberArray,
+    CHA: exports.statStringNumberArray,
+});
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statStringNumberArray,
     pronouns: other_1.pronounsObject,
@@ -116,8 +118,7 @@ exports.statisticsObject = zod_1.z.object({
     size: exports.statStringNumber,
     isSwarm: zod_1.z.boolean().optional(),
     sizeSingleEntityOfSwarm: exports.statStringNumber.optional(),
-    abilityScores: exports.abilitiesObject,
-    abilityModifiers: exports.abilitiesObject,
+    abilities: exports.abilitiesObject,
     HP: exports.statStringNumber,
     type: exports.statStringNumber,
     subtypes: zod_1.z.array(exports.descriptionPartObject).optional(),
