@@ -40,7 +40,7 @@ export const parsedExpression = z.object({
 });
 
 export const roll = z.object({
-  dice: z.array(z.union([parsedDice, parsedExpression])).optional(),
+  dice: z.array(z.union([parsedDice, parsedExpression])),
   name: z.string().optional(),
   translationKey: z.string().optional(),
 });
