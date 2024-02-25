@@ -5234,7 +5234,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5242,7 +5242,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5267,7 +5267,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5275,7 +5275,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5294,7 +5294,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5302,7 +5302,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5337,7 +5337,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5345,7 +5345,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5364,7 +5364,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5372,7 +5372,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5391,7 +5391,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5399,7 +5399,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5418,7 +5418,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5426,7 +5426,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5445,7 +5445,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5453,7 +5453,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5472,7 +5472,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -5480,7 +5480,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -5499,7 +5499,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5507,7 +5507,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5525,7 +5525,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5533,7 +5533,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5549,7 +5549,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -5557,7 +5557,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -5577,7 +5577,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -5585,7 +5585,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -5601,7 +5601,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5609,7 +5609,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5627,7 +5627,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5635,7 +5635,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5653,7 +5653,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5661,7 +5661,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5679,7 +5679,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5687,7 +5687,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5705,7 +5705,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5713,7 +5713,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5731,7 +5731,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5739,7 +5739,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5757,7 +5757,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5765,7 +5765,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5787,7 +5787,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5795,7 +5795,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5811,7 +5811,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5819,7 +5819,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5841,7 +5841,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5849,7 +5849,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5865,7 +5865,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5873,7 +5873,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5895,7 +5895,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5903,7 +5903,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5919,7 +5919,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5927,7 +5927,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5949,7 +5949,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5957,7 +5957,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -5973,7 +5973,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -5981,7 +5981,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -6003,7 +6003,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -6011,7 +6011,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -6027,7 +6027,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -6035,7 +6035,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -6056,7 +6056,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -6064,7 +6064,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -6081,7 +6081,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -6089,7 +6089,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -6106,7 +6106,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -6114,7 +6114,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -6130,7 +6130,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -6138,7 +6138,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11430,7 +11430,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11438,7 +11438,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11463,7 +11463,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11471,7 +11471,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11490,7 +11490,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11498,7 +11498,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11533,7 +11533,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11541,7 +11541,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11560,7 +11560,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11568,7 +11568,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11587,7 +11587,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11595,7 +11595,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11614,7 +11614,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11622,7 +11622,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11641,7 +11641,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11649,7 +11649,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11668,7 +11668,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -11676,7 +11676,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -11695,7 +11695,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11703,7 +11703,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11721,7 +11721,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11729,7 +11729,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11745,7 +11745,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -11753,7 +11753,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -11773,7 +11773,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -11781,7 +11781,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -11797,7 +11797,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11805,7 +11805,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11823,7 +11823,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11831,7 +11831,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11849,7 +11849,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11857,7 +11857,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11875,7 +11875,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11883,7 +11883,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11901,7 +11901,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11909,7 +11909,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11927,7 +11927,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11935,7 +11935,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11953,7 +11953,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11961,7 +11961,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -11983,7 +11983,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -11991,7 +11991,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12007,7 +12007,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12015,7 +12015,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12037,7 +12037,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12045,7 +12045,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12061,7 +12061,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12069,7 +12069,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12091,7 +12091,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12099,7 +12099,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12115,7 +12115,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12123,7 +12123,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12145,7 +12145,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12153,7 +12153,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12169,7 +12169,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12177,7 +12177,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12199,7 +12199,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12207,7 +12207,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12223,7 +12223,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12231,7 +12231,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12252,7 +12252,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12260,7 +12260,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12277,7 +12277,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -12285,7 +12285,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -12302,7 +12302,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12310,7 +12310,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -12326,7 +12326,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -12334,7 +12334,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17629,7 +17629,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -17637,7 +17637,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17662,7 +17662,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -17670,7 +17670,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17689,7 +17689,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -17697,7 +17697,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17732,7 +17732,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17740,7 +17740,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17759,7 +17759,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17767,7 +17767,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17786,7 +17786,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17794,7 +17794,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17813,7 +17813,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17821,7 +17821,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17840,7 +17840,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17848,7 +17848,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17867,7 +17867,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -17875,7 +17875,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -17894,7 +17894,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -17902,7 +17902,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17920,7 +17920,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -17928,7 +17928,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -17944,7 +17944,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -17952,7 +17952,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -17972,7 +17972,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -17980,7 +17980,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -17996,7 +17996,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18004,7 +18004,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18022,7 +18022,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18030,7 +18030,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18048,7 +18048,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18056,7 +18056,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18074,7 +18074,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18082,7 +18082,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18100,7 +18100,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18108,7 +18108,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18126,7 +18126,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18134,7 +18134,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18152,7 +18152,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18160,7 +18160,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18182,7 +18182,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18190,7 +18190,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18206,7 +18206,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18214,7 +18214,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18236,7 +18236,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18244,7 +18244,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18260,7 +18260,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18268,7 +18268,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18290,7 +18290,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18298,7 +18298,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18314,7 +18314,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18322,7 +18322,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18344,7 +18344,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18352,7 +18352,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18368,7 +18368,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18376,7 +18376,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18398,7 +18398,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18406,7 +18406,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18422,7 +18422,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18430,7 +18430,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18451,7 +18451,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18459,7 +18459,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18476,7 +18476,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -18484,7 +18484,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -18501,7 +18501,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18509,7 +18509,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -18525,7 +18525,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -18533,7 +18533,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -23825,7 +23825,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -23833,7 +23833,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -23858,7 +23858,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -23866,7 +23866,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -23885,7 +23885,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -23893,7 +23893,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -23928,7 +23928,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -23936,7 +23936,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -23955,7 +23955,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -23963,7 +23963,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -23982,7 +23982,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -23990,7 +23990,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -24009,7 +24009,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -24017,7 +24017,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -24036,7 +24036,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -24044,7 +24044,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -24063,7 +24063,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
-                            dice?: ({
+                            dice: ({
                                 dice: number;
                                 sides: number;
                                 bonus?: number | undefined;
@@ -24071,7 +24071,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             } | {
                                 value: number;
                                 type?: string | undefined;
-                            })[] | undefined;
+                            })[];
                             name?: string | undefined;
                             translationKey?: string | undefined;
                         } | undefined;
@@ -24090,7 +24090,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24098,7 +24098,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24116,7 +24116,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24124,7 +24124,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24140,7 +24140,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -24148,7 +24148,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -24168,7 +24168,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -24176,7 +24176,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -24192,7 +24192,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24200,7 +24200,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24218,7 +24218,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24226,7 +24226,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24244,7 +24244,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24252,7 +24252,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24270,7 +24270,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24278,7 +24278,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24296,7 +24296,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24304,7 +24304,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24322,7 +24322,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24330,7 +24330,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24348,7 +24348,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24356,7 +24356,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24378,7 +24378,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24386,7 +24386,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24402,7 +24402,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24410,7 +24410,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24432,7 +24432,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24440,7 +24440,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24456,7 +24456,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24464,7 +24464,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24486,7 +24486,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24494,7 +24494,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24510,7 +24510,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24518,7 +24518,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24540,7 +24540,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24548,7 +24548,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24564,7 +24564,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24572,7 +24572,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24594,7 +24594,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24602,7 +24602,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24618,7 +24618,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24626,7 +24626,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24647,7 +24647,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24655,7 +24655,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24672,7 +24672,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
-                    dice?: ({
+                    dice: ({
                         dice: number;
                         sides: number;
                         bonus?: number | undefined;
@@ -24680,7 +24680,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     } | {
                         value: number;
                         type?: string | undefined;
-                    })[] | undefined;
+                    })[];
                     name?: string | undefined;
                     translationKey?: string | undefined;
                 } | undefined;
@@ -24697,7 +24697,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24705,7 +24705,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;
@@ -24721,7 +24721,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     type?: "damageType" | "range" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "reach" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
-                        dice?: ({
+                        dice: ({
                             dice: number;
                             sides: number;
                             bonus?: number | undefined;
@@ -24729,7 +24729,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | {
                             value: number;
                             type?: string | undefined;
-                        })[] | undefined;
+                        })[];
                         name?: string | undefined;
                         translationKey?: string | undefined;
                     } | undefined;

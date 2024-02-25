@@ -39,7 +39,7 @@ exports.parsedExpression = zod_1.z.object({
     type: zod_1.z.string().optional(),
 });
 exports.roll = zod_1.z.object({
-    dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])).optional(),
+    dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])),
     name: zod_1.z.string().optional(),
     translationKey: zod_1.z.string().optional(),
 });
