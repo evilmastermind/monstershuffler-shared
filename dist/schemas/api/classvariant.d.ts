@@ -81,17 +81,100 @@ export declare const getClassvariantClassListResponse: z.ZodObject<{
 }>;
 export declare const getClassvariantResponse: z.ZodObject<{
     object: z.ZodObject<{
-        image: z.ZodOptional<z.ZodObject<{
-            imgdir: z.ZodString;
-            lastedited: z.ZodNumber;
+        sheet: z.ZodOptional<z.ZodObject<{
+            images: z.ZodArray<z.ZodObject<{
+                url: z.ZodString;
+                artist: z.ZodOptional<z.ZodString>;
+                artistUrl: z.ZodOptional<z.ZodString>;
+                elementHeightPx: z.ZodOptional<z.ZodNumber>;
+                backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+                mask: z.ZodOptional<z.ZodString>;
+                token: z.ZodOptional<z.ZodObject<{
+                    topPx: z.ZodNumber;
+                    leftPx: z.ZodNumber;
+                    widthPx: z.ZodNumber;
+                }, "strip", z.ZodTypeAny, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }>>;
+            }, "strip", z.ZodTypeAny, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }>, "many">;
+            layout: z.ZodOptional<z.ZodString>;
+            decoration: z.ZodOptional<z.ZodString>;
+            statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }>>;
-        imageBackground: z.ZodOptional<z.ZodString>;
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
@@ -3333,11 +3416,26 @@ export declare const getClassvariantResponse: z.ZodObject<{
         name: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -3949,11 +4047,26 @@ export declare const getClassvariantResponse: z.ZodObject<{
         id?: number | undefined;
     }, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -4568,11 +4681,26 @@ export declare const getClassvariantResponse: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -5187,11 +5315,26 @@ export declare const getClassvariantResponse: z.ZodObject<{
 }, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -5808,17 +5951,100 @@ export declare const postClassvariant: z.ZodObject<{
     game: z.ZodNumber;
     classId: z.ZodNumber;
     object: z.ZodObject<{
-        image: z.ZodOptional<z.ZodObject<{
-            imgdir: z.ZodString;
-            lastedited: z.ZodNumber;
+        sheet: z.ZodOptional<z.ZodObject<{
+            images: z.ZodArray<z.ZodObject<{
+                url: z.ZodString;
+                artist: z.ZodOptional<z.ZodString>;
+                artistUrl: z.ZodOptional<z.ZodString>;
+                elementHeightPx: z.ZodOptional<z.ZodNumber>;
+                backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+                mask: z.ZodOptional<z.ZodString>;
+                token: z.ZodOptional<z.ZodObject<{
+                    topPx: z.ZodNumber;
+                    leftPx: z.ZodNumber;
+                    widthPx: z.ZodNumber;
+                }, "strip", z.ZodTypeAny, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }>>;
+            }, "strip", z.ZodTypeAny, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }>, "many">;
+            layout: z.ZodOptional<z.ZodString>;
+            decoration: z.ZodOptional<z.ZodString>;
+            statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }>>;
-        imageBackground: z.ZodOptional<z.ZodString>;
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
@@ -9060,11 +9286,26 @@ export declare const postClassvariant: z.ZodObject<{
         name: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -9676,11 +9917,26 @@ export declare const postClassvariant: z.ZodObject<{
         id?: number | undefined;
     }, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -10294,11 +10550,26 @@ export declare const postClassvariant: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -10914,11 +11185,26 @@ export declare const postClassvariant: z.ZodObject<{
 }, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -11534,17 +11820,100 @@ export declare const postClassvariant: z.ZodObject<{
 }>;
 export declare const putClassvariant: z.ZodObject<{
     object: z.ZodObject<{
-        image: z.ZodOptional<z.ZodObject<{
-            imgdir: z.ZodString;
-            lastedited: z.ZodNumber;
+        sheet: z.ZodOptional<z.ZodObject<{
+            images: z.ZodArray<z.ZodObject<{
+                url: z.ZodString;
+                artist: z.ZodOptional<z.ZodString>;
+                artistUrl: z.ZodOptional<z.ZodString>;
+                elementHeightPx: z.ZodOptional<z.ZodNumber>;
+                backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
+                backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+                mask: z.ZodOptional<z.ZodString>;
+                token: z.ZodOptional<z.ZodObject<{
+                    topPx: z.ZodNumber;
+                    leftPx: z.ZodNumber;
+                    widthPx: z.ZodNumber;
+                }, "strip", z.ZodTypeAny, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }, {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                }>>;
+            }, "strip", z.ZodTypeAny, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }, {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }>, "many">;
+            layout: z.ZodOptional<z.ZodString>;
+            decoration: z.ZodOptional<z.ZodString>;
+            statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }, {
-            imgdir: string;
-            lastedited: number;
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         }>>;
-        imageBackground: z.ZodOptional<z.ZodString>;
         searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
@@ -14786,11 +15155,26 @@ export declare const putClassvariant: z.ZodObject<{
         name: z.ZodString;
     }, "strict", z.ZodTypeAny, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -15402,11 +15786,26 @@ export declare const putClassvariant: z.ZodObject<{
         id?: number | undefined;
     }, {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -16020,11 +16419,26 @@ export declare const putClassvariant: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -16638,11 +17052,26 @@ export declare const putClassvariant: z.ZodObject<{
 }, {
     object: {
         name: string;
-        image?: {
-            imgdir: string;
-            lastedited: number;
+        sheet?: {
+            images: {
+                url: string;
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                elementHeightPx?: number | undefined;
+                backgroundHeightPerc?: number | undefined;
+                backgroundPositionTopPx?: number | undefined;
+                backgroundPositionLeftPx?: number | undefined;
+                mask?: string | undefined;
+                token?: {
+                    topPx: number;
+                    leftPx: number;
+                    widthPx: number;
+                } | undefined;
+            }[];
+            layout?: string | undefined;
+            decoration?: string | undefined;
+            statBlockOffsetPx?: number | undefined;
         } | undefined;
-        imageBackground?: string | undefined;
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;

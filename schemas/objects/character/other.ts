@@ -7,6 +7,7 @@ import { actionObject } from './actions';
 import { spellsObject } from './spells';
 import { abilityScoresObject } from './abilities';
 import { alignmentModifiers } from './alignment';
+import { sheet } from './sheet';
 
 export const speedsObject = z.object({
   walk: z.string().optional(),
@@ -87,11 +88,6 @@ export const bonusesObject = z.object({
   weaponDamageBonus: bonusObject.optional(),
 });
 
-export const imageObject = z.object({
-  imgdir: z.string(),
-  lastedited: z.number(),
-});
-
 export const CRTwoPointsObject = z.object({
   x1: z.string(),
   x2: z.string(),
@@ -145,9 +141,14 @@ export const roleplayStats = {
 export const alignmentModifiersStats = {
   alignmentModifiers: alignmentModifiers.optional(),
 };
+
+// export const imageObject = z.object({
+//   imgdir: z.string(),
+//   lastedited: z.number(),
+// });
+
 export const publicationStats = {
-  image: imageObject.optional(),
-  imageBackground: z.string().optional(),
+  sheet: sheet.optional(),
   searchTags: z.array(z.string()).optional(),
   environments: z.array(z.string()).optional(),
   backstory: z.object({}).passthrough().optional(),

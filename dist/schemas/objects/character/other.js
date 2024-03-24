@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStats = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedsStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.imageObject = exports.bonusesObject = exports.legendaryActionsPerRoundStats = exports.bonusObject = exports.sensesObject = exports.speedsObject = void 0;
+exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStats = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedsStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.bonusesObject = exports.legendaryActionsPerRoundStats = exports.bonusObject = exports.sensesObject = exports.speedsObject = void 0;
 const zod_1 = require("zod");
 const roleplay_1 = require("./roleplay");
 const armor_1 = require("./armor");
@@ -10,6 +10,7 @@ const actions_1 = require("./actions");
 const spells_1 = require("./spells");
 const abilities_1 = require("./abilities");
 const alignment_1 = require("./alignment");
+const sheet_1 = require("./sheet");
 exports.speedsObject = zod_1.z.object({
     walk: zod_1.z.string().optional(),
     burrow: zod_1.z.string().optional(),
@@ -84,10 +85,6 @@ exports.bonusesObject = zod_1.z.object({
     weaponAttackBonus: exports.bonusObject.optional(),
     weaponDamageBonus: exports.bonusObject.optional(),
 });
-exports.imageObject = zod_1.z.object({
-    imgdir: zod_1.z.string(),
-    lastedited: zod_1.z.number(),
-});
 exports.CRTwoPointsObject = zod_1.z.object({
     x1: zod_1.z.string(),
     x2: zod_1.z.string(),
@@ -139,9 +136,12 @@ exports.roleplayStats = {
 exports.alignmentModifiersStats = {
     alignmentModifiers: alignment_1.alignmentModifiers.optional(),
 };
+// export const imageObject = z.object({
+//   imgdir: z.string(),
+//   lastedited: z.number(),
+// });
 exports.publicationStats = {
-    image: exports.imageObject.optional(),
-    imageBackground: zod_1.z.string().optional(),
+    sheet: sheet_1.sheet.optional(),
     searchTags: zod_1.z.array(zod_1.z.string()).optional(),
     environments: zod_1.z.array(zod_1.z.string()).optional(),
     backstory: zod_1.z.object({}).passthrough().optional(),

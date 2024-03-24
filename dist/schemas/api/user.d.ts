@@ -36,11 +36,11 @@ export declare const resetPassword: z.ZodObject<{
     token: z.ZodString;
     password: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    password: string;
     token: string;
+    password: string;
 }, {
-    password: string;
     token: string;
+    password: string;
 }>;
 export declare const reactivateUser: z.ZodObject<{
     email: z.ZodString;

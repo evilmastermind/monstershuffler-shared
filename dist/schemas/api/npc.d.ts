@@ -60,11 +60,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -691,11 +706,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             racevariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -1311,11 +1341,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             class?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -1928,11 +1973,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             classvariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -3159,11 +3219,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             template?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -3823,11 +3898,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -4478,11 +4568,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -6256,11 +6361,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -6887,11 +7007,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             racevariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -7507,11 +7642,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             class?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -8124,11 +8274,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             classvariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -9355,11 +9520,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             } | undefined;
             template?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -10019,11 +10199,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -10674,11 +10869,26 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -12455,11 +12665,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -13086,11 +13311,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             racevariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -13706,11 +13946,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             class?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -14323,11 +14578,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             classvariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -15554,11 +15824,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             template?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -16218,11 +16503,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -16873,11 +17173,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -18651,11 +18966,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
             race?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -19282,11 +19612,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             racevariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -19902,11 +20247,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             class?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -20519,11 +20879,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             classvariant?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -21750,11 +22125,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
             template?: {
                 name: string;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -22414,11 +22804,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
@@ -23069,11 +23474,26 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     character?: string | undefined;
                     production?: string | undefined;
                 } | undefined;
-                image?: {
-                    imgdir: string;
-                    lastedited: number;
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
                 } | undefined;
-                imageBackground?: string | undefined;
                 searchTags?: string[] | undefined;
                 environments?: string[] | undefined;
                 backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
