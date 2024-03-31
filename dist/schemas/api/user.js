@@ -56,6 +56,7 @@ exports.userSettingsObject = zod_1.z.union([
     zod_1.z.object({
         stats: zod_1.z.object({
             lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
+            heightUnit: zod_1.z.enum(['feet', 'meters']),
         }),
         language: zod_1.z.enum(['en', 'it']),
     }),

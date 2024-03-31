@@ -69,21 +69,26 @@ export declare const loginResponse: z.ZodObject<{
 export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
     stats: z.ZodObject<{
         lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
+        heightUnit: z.ZodEnum<["feet", "meters"]>;
     }, "strip", z.ZodTypeAny, {
         lengthUnit: "feet" | "meters" | "squares";
+        heightUnit: "feet" | "meters";
     }, {
         lengthUnit: "feet" | "meters" | "squares";
+        heightUnit: "feet" | "meters";
     }>;
     language: z.ZodEnum<["en", "it"]>;
 }, "strip", z.ZodTypeAny, {
     language: "it" | "en";
     stats: {
         lengthUnit: "feet" | "meters" | "squares";
+        heightUnit: "feet" | "meters";
     };
 }, {
     language: "it" | "en";
     stats: {
         lengthUnit: "feet" | "meters" | "squares";
+        heightUnit: "feet" | "meters";
     };
 }>, z.ZodNull]>;
 export declare const getUserResponse: z.ZodObject<{
@@ -94,21 +99,26 @@ export declare const getUserResponse: z.ZodObject<{
     settings: z.ZodUnion<[z.ZodObject<{
         stats: z.ZodObject<{
             lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
+            heightUnit: z.ZodEnum<["feet", "meters"]>;
         }, "strip", z.ZodTypeAny, {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         }, {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         }>;
         language: z.ZodEnum<["en", "it"]>;
     }, "strip", z.ZodTypeAny, {
         language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         };
     }, {
         language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         };
     }>, z.ZodNull]>;
     email: z.ZodString;
@@ -126,6 +136,7 @@ export declare const getUserResponse: z.ZodObject<{
         language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         };
     } | null;
 }, {
@@ -140,6 +151,7 @@ export declare const getUserResponse: z.ZodObject<{
         language: "it" | "en";
         stats: {
             lengthUnit: "feet" | "meters" | "squares";
+            heightUnit: "feet" | "meters";
         };
     } | null;
 }>;

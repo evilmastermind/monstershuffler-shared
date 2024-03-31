@@ -62,6 +62,7 @@ export const userSettingsObject = z.union([
   z.object({
     stats: z.object({
       lengthUnit: z.enum(['feet', 'meters', 'squares']),
+      heightUnit: z.enum(['feet', 'meters']),
     }),
     language: z.enum(['en', 'it']),
   }),
