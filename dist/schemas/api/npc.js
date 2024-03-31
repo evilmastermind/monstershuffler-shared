@@ -22,6 +22,7 @@ exports.postRandomNpcInput = zod_1.z.object({
     secondaryRacePercentage: zod_1.z.number().min(0).max(100).optional(),
     addVoice: zod_1.z.boolean().optional(),
     includeChildren: zod_1.z.boolean().optional(),
+    includeBodyType: zod_1.z.boolean().optional(),
     pronounsChosen: other_1.pronounsObject.optional(),
 });
 exports.postRandomNpcResponse = zod_1.z.object({

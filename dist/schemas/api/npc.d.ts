@@ -14,6 +14,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
     secondaryRacePercentage: z.ZodOptional<z.ZodNumber>;
     addVoice: z.ZodOptional<z.ZodBoolean>;
     includeChildren: z.ZodOptional<z.ZodBoolean>;
+    includeBodyType: z.ZodOptional<z.ZodBoolean>;
     pronounsChosen: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
 }, "strip", z.ZodTypeAny, {
     levelType?: "random" | "randomPeasantsMostly" | undefined;
@@ -30,6 +31,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
     secondaryRacePercentage?: number | undefined;
     addVoice?: boolean | undefined;
     includeChildren?: boolean | undefined;
+    includeBodyType?: boolean | undefined;
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
 }, {
     levelType?: "random" | "randomPeasantsMostly" | undefined;
@@ -46,6 +48,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
     secondaryRacePercentage?: number | undefined;
     addVoice?: boolean | undefined;
     includeChildren?: boolean | undefined;
+    includeBodyType?: boolean | undefined;
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{

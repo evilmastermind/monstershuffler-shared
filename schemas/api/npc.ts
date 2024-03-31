@@ -20,6 +20,7 @@ export const postRandomNpcInput = z.object({
   secondaryRacePercentage: z.number().min(0).max(100).optional(),
   addVoice: z.boolean().optional(),
   includeChildren: z.boolean().optional(),
+  includeBodyType: z.boolean().optional(),
   pronounsChosen: pronounsObject.optional(),
 });
 
