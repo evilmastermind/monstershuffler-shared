@@ -30,6 +30,8 @@ import { rechargeTypeEnum } from '.';
 export const parsedDice = z.object({
   dice: z.number(),
   sides: z.number(),
+  average: z.number(),
+  string: z.string(),
   bonus: z.number().optional(),
   type: z.string().optional(),
 });
@@ -42,7 +44,7 @@ export const parsedExpression = z.object({
 export const roll = z.object({
   dice: z.array(z.union([parsedDice, parsedExpression])),
   name: z.string().optional(),
-  translationKey: z.string().optional(),
+  translationKey: z.string().optional(), // the translation for the roll name
 });
 
 export const additionalStringTypes = z.enum([

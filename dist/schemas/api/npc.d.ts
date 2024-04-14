@@ -487,7 +487,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -499,7 +499,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -1134,7 +1134,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -1146,7 +1146,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -1768,7 +1768,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -1780,7 +1780,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -2401,7 +2401,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -2413,7 +2413,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -3013,7 +3013,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -3025,7 +3025,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -3646,7 +3646,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -3658,7 +3658,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -4325,7 +4325,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -4337,7 +4337,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -4995,7 +4995,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -5007,7 +5007,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -5343,8 +5343,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5376,8 +5378,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5403,8 +5407,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5446,8 +5452,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5473,8 +5481,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5500,8 +5510,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5527,8 +5539,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5554,8 +5568,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5581,8 +5597,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5608,8 +5626,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5634,8 +5654,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5658,8 +5680,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -5686,8 +5710,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -5710,8 +5736,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5736,8 +5764,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5762,8 +5792,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5788,8 +5820,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5814,8 +5848,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5840,8 +5876,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5866,8 +5904,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5896,8 +5936,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5920,8 +5962,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5950,8 +5994,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5974,8 +6020,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6004,8 +6052,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6028,8 +6078,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6058,8 +6110,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6082,8 +6136,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6112,8 +6168,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6136,8 +6194,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6165,8 +6225,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6190,8 +6252,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -6215,8 +6279,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6239,8 +6305,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6788,7 +6856,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -6800,7 +6868,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -7435,7 +7503,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -7447,7 +7515,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -8069,7 +8137,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -8081,7 +8149,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -8702,7 +8770,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -8714,7 +8782,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -9314,7 +9382,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -9326,7 +9394,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -9947,7 +10015,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -9959,7 +10027,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -10626,7 +10694,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -10638,7 +10706,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -11296,7 +11364,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -11308,7 +11376,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -11644,8 +11712,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11677,8 +11747,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11704,8 +11776,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11747,8 +11821,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11774,8 +11850,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11801,8 +11879,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11828,8 +11908,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11855,8 +11937,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11882,8 +11966,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11909,8 +11995,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11935,8 +12023,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11959,8 +12049,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -11987,8 +12079,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -12011,8 +12105,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12037,8 +12133,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12063,8 +12161,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12089,8 +12189,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12115,8 +12217,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12141,8 +12245,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12167,8 +12273,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12197,8 +12305,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12221,8 +12331,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12251,8 +12363,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12275,8 +12389,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12305,8 +12421,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12329,8 +12447,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12359,8 +12479,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12383,8 +12505,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12413,8 +12537,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12437,8 +12563,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12466,8 +12594,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12491,8 +12621,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -12516,8 +12648,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12540,8 +12674,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -13092,7 +13228,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -13104,7 +13240,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -13739,7 +13875,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -13751,7 +13887,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -14373,7 +14509,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -14385,7 +14521,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -15006,7 +15142,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -15018,7 +15154,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -15618,7 +15754,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -15630,7 +15766,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -16251,7 +16387,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -16263,7 +16399,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -16930,7 +17066,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -16942,7 +17078,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -17600,7 +17736,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -17612,7 +17748,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -17948,8 +18084,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -17981,8 +18119,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18008,8 +18148,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18051,8 +18193,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18078,8 +18222,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18105,8 +18251,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18132,8 +18280,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18159,8 +18309,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18186,8 +18338,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18213,8 +18367,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18239,8 +18395,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18263,8 +18421,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18291,8 +18451,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18315,8 +18477,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18341,8 +18505,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18367,8 +18533,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18393,8 +18561,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18419,8 +18589,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18445,8 +18617,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18471,8 +18645,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18501,8 +18677,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18525,8 +18703,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18555,8 +18735,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18579,8 +18761,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18609,8 +18793,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18633,8 +18819,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18663,8 +18851,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18687,8 +18877,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18717,8 +18909,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18741,8 +18935,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18770,8 +18966,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18795,8 +18993,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18820,8 +19020,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18844,8 +19046,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -19393,7 +19597,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -19405,7 +19609,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -20040,7 +20244,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -20052,7 +20256,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -20674,7 +20878,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -20686,7 +20890,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -21307,7 +21511,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -21319,7 +21523,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -21919,7 +22123,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -21931,7 +22135,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -22552,7 +22756,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -22564,7 +22768,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -23231,7 +23435,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -23243,7 +23447,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -23901,7 +24105,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -23913,7 +24117,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -24249,8 +24453,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24282,8 +24488,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24309,8 +24517,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24352,8 +24562,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24379,8 +24591,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24406,8 +24620,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24433,8 +24649,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24460,8 +24678,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24487,8 +24707,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24514,8 +24736,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24540,8 +24764,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24564,8 +24790,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -24592,8 +24820,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -24616,8 +24846,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24642,8 +24874,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24668,8 +24902,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24694,8 +24930,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24720,8 +24958,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24746,8 +24986,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24772,8 +25014,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24802,8 +25046,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24826,8 +25072,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24856,8 +25104,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24880,8 +25130,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24910,8 +25162,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24934,8 +25188,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24964,8 +25220,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24988,8 +25246,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25018,8 +25278,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25042,8 +25304,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25071,8 +25335,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25096,8 +25362,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -25121,8 +25389,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25145,8 +25415,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {

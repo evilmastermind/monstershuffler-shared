@@ -43,7 +43,7 @@ export const attackObject = z.object({
     attackAttributesObject.merge(weaponObject),
     choiceRandomObject,
   ]).optional(),
-  enchantment: enchantmentObject.optional(),
+  enchantments: z.array(enchantmentObject).optional(),
 });
 
 export const valueExpressionObject = z.object({

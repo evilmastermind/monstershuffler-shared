@@ -1996,7 +1996,7 @@ export declare const getClassResponse: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -2048,7 +2048,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -2088,7 +2088,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2100,7 +2100,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -2140,7 +2140,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2152,7 +2152,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -2231,7 +2231,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2243,7 +2243,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -2322,7 +2322,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2334,7 +2334,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -2422,7 +2422,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2434,7 +2434,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -2523,7 +2523,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2535,7 +2535,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -3847,7 +3847,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -3859,7 +3859,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -4478,7 +4478,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -4490,7 +4490,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -5112,7 +5112,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -5124,7 +5124,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -5746,7 +5746,7 @@ export declare const getClassResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -5758,7 +5758,7 @@ export declare const getClassResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -7865,7 +7865,7 @@ export declare const postClass: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -7917,7 +7917,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -7957,7 +7957,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -7969,7 +7969,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -8009,7 +8009,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8021,7 +8021,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -8100,7 +8100,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8112,7 +8112,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -8191,7 +8191,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8203,7 +8203,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -8291,7 +8291,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8303,7 +8303,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -8392,7 +8392,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8404,7 +8404,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -9716,7 +9716,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -9728,7 +9728,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -10347,7 +10347,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -10359,7 +10359,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -10980,7 +10980,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -10992,7 +10992,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -11614,7 +11614,7 @@ export declare const postClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -11626,7 +11626,7 @@ export declare const postClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -13732,7 +13732,7 @@ export declare const putClass: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -13784,7 +13784,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -13824,7 +13824,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13836,7 +13836,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -13876,7 +13876,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13888,7 +13888,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -13967,7 +13967,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13979,7 +13979,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -14058,7 +14058,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14070,7 +14070,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -14158,7 +14158,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14170,7 +14170,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -14259,7 +14259,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14271,7 +14271,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -15583,7 +15583,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -15595,7 +15595,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -16214,7 +16214,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -16226,7 +16226,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -16848,7 +16848,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -16860,7 +16860,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -17482,7 +17482,7 @@ export declare const putClass: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -17494,7 +17494,7 @@ export declare const putClass: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;

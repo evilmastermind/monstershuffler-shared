@@ -42,7 +42,7 @@ exports.attackObject = zod_1.z.object({
         exports.attackAttributesObject.merge(weapons_1.weaponObject),
         choices_1.choiceRandomObject,
     ]).optional(),
-    enchantment: exports.enchantmentObject.optional(),
+    enchantments: zod_1.z.array(exports.enchantmentObject).optional(),
 });
 exports.valueExpressionObject = zod_1.z.object({
     name: zod_1.z.string(),

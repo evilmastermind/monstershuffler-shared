@@ -463,7 +463,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -475,7 +475,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -1110,7 +1110,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -1122,7 +1122,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -1744,7 +1744,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -1756,7 +1756,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -2377,7 +2377,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -2389,7 +2389,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -2989,7 +2989,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -3001,7 +3001,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -3622,7 +3622,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -3634,7 +3634,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -4301,7 +4301,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -4313,7 +4313,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -4971,7 +4971,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -4983,7 +4983,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -5319,8 +5319,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5352,8 +5354,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5379,8 +5383,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5422,8 +5428,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5449,8 +5457,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5476,8 +5486,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5503,8 +5515,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5530,8 +5544,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5557,8 +5573,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -5584,8 +5602,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5610,8 +5630,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5634,8 +5656,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -5662,8 +5686,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -5686,8 +5712,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5712,8 +5740,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5738,8 +5768,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5764,8 +5796,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5790,8 +5824,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5816,8 +5852,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5842,8 +5880,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5872,8 +5912,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5896,8 +5938,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5926,8 +5970,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5950,8 +5996,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -5980,8 +6028,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6004,8 +6054,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6034,8 +6086,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6058,8 +6112,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6088,8 +6144,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6112,8 +6170,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6141,8 +6201,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6166,8 +6228,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -6191,8 +6255,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6215,8 +6281,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -6765,7 +6833,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -6777,7 +6845,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -7412,7 +7480,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -7424,7 +7492,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -8046,7 +8114,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -8058,7 +8126,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -8679,7 +8747,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -8691,7 +8759,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -9291,7 +9359,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -9303,7 +9371,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -9924,7 +9992,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -9936,7 +10004,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -10603,7 +10671,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -10615,7 +10683,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -11273,7 +11341,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -11285,7 +11353,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -11621,8 +11689,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11654,8 +11724,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11681,8 +11753,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11724,8 +11798,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11751,8 +11827,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11778,8 +11856,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11805,8 +11885,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11832,8 +11914,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11859,8 +11943,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -11886,8 +11972,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11912,8 +12000,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -11936,8 +12026,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -11964,8 +12056,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -11988,8 +12082,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12014,8 +12110,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12040,8 +12138,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12066,8 +12166,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12092,8 +12194,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12118,8 +12222,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12144,8 +12250,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12174,8 +12282,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12198,8 +12308,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12228,8 +12340,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12252,8 +12366,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12282,8 +12398,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12306,8 +12424,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12336,8 +12456,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12360,8 +12482,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12390,8 +12514,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12414,8 +12540,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12443,8 +12571,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12468,8 +12598,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -12493,8 +12625,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -12517,8 +12651,10 @@ export declare const getCharacterResponse: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -13072,7 +13208,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -13084,7 +13220,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -13719,7 +13855,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -13731,7 +13867,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -14353,7 +14489,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -14365,7 +14501,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -14986,7 +15122,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -14998,7 +15134,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -15598,7 +15734,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -15610,7 +15746,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -16231,7 +16367,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -16243,7 +16379,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -16910,7 +17046,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -16922,7 +17058,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -17580,7 +17716,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -17592,7 +17728,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -17928,8 +18064,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -17961,8 +18099,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -17988,8 +18128,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18031,8 +18173,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18058,8 +18202,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18085,8 +18231,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18112,8 +18260,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18139,8 +18289,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18166,8 +18318,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -18193,8 +18347,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18219,8 +18375,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18243,8 +18401,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18271,8 +18431,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18295,8 +18457,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18321,8 +18485,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18347,8 +18513,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18373,8 +18541,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18399,8 +18569,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18425,8 +18597,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18451,8 +18625,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18481,8 +18657,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18505,8 +18683,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18535,8 +18715,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18559,8 +18741,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18589,8 +18773,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18613,8 +18799,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18643,8 +18831,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18667,8 +18857,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18697,8 +18889,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18721,8 +18915,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18750,8 +18946,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18775,8 +18973,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -18800,8 +19000,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -18824,8 +19026,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -19375,7 +19579,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -19387,7 +19591,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -20022,7 +20226,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -20034,7 +20238,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -20656,7 +20860,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -20668,7 +20872,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -21289,7 +21493,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -21301,7 +21505,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -21901,7 +22105,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -21913,7 +22117,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -22534,7 +22738,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -22546,7 +22750,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -23213,7 +23417,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -23225,7 +23429,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -23883,7 +24087,7 @@ export declare const postCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -23895,7 +24099,7 @@ export declare const postCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -24231,8 +24435,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24264,8 +24470,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24291,8 +24499,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24334,8 +24544,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24361,8 +24573,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24388,8 +24602,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24415,8 +24631,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24442,8 +24660,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24469,8 +24689,10 @@ export declare const postCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -24496,8 +24718,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24522,8 +24746,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24546,8 +24772,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -24574,8 +24802,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -24598,8 +24828,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24624,8 +24856,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24650,8 +24884,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24676,8 +24912,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24702,8 +24940,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24728,8 +24968,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24754,8 +24996,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24784,8 +25028,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24808,8 +25054,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24838,8 +25086,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24862,8 +25112,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24892,8 +25144,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24916,8 +25170,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24946,8 +25202,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -24970,8 +25228,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25000,8 +25260,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25024,8 +25286,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25053,8 +25317,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25078,8 +25344,10 @@ export declare const postCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -25103,8 +25371,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25127,8 +25397,10 @@ export declare const postCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -25683,7 +25955,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -25695,7 +25967,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -26330,7 +26602,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -26342,7 +26614,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -26964,7 +27236,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -26976,7 +27248,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -27597,7 +27869,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -27609,7 +27881,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -28209,7 +28481,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -28221,7 +28493,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -28842,7 +29114,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -28854,7 +29126,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -29521,7 +29793,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -29533,7 +29805,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -30191,7 +30463,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -30203,7 +30475,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -30539,8 +30811,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30572,8 +30846,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30599,8 +30875,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30642,8 +30920,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30669,8 +30949,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30696,8 +30978,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30723,8 +31007,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30750,8 +31036,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30777,8 +31065,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -30804,8 +31094,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30830,8 +31122,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30854,8 +31148,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -30882,8 +31178,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -30906,8 +31204,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30932,8 +31232,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30958,8 +31260,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -30984,8 +31288,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31010,8 +31316,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31036,8 +31344,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31062,8 +31372,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31092,8 +31404,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31116,8 +31430,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31146,8 +31462,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31170,8 +31488,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31200,8 +31520,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31224,8 +31546,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31254,8 +31578,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31278,8 +31604,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31308,8 +31636,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31332,8 +31662,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31361,8 +31693,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31386,8 +31720,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -31411,8 +31747,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31435,8 +31773,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -31986,7 +32326,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -31998,7 +32338,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -32633,7 +32973,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -32645,7 +32985,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -33267,7 +33607,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -33279,7 +33619,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -33900,7 +34240,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -33912,7 +34252,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -34512,7 +34852,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -34524,7 +34864,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -35145,7 +35485,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -35157,7 +35497,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -35824,7 +36164,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -35836,7 +36176,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -36494,7 +36834,7 @@ export declare const putCharacter: z.ZodObject<{
                                 rangeMax?: string | undefined;
                                 properties?: string[] | undefined;
                             } | undefined;
-                            enchantment?: {
+                            enchantments?: {
                                 type: string;
                                 dice?: {
                                     dice: number;
@@ -36506,7 +36846,7 @@ export declare const putCharacter: z.ZodObject<{
                                     unitInterval?: number | undefined;
                                 } | undefined;
                                 expression?: string | undefined;
-                            } | undefined;
+                            }[] | undefined;
                         }[] | undefined;
                     }[];
                     priority?: number | undefined;
@@ -36842,8 +37182,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -36875,8 +37217,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -36902,8 +37246,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -36945,8 +37291,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -36972,8 +37320,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -36999,8 +37349,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -37026,8 +37378,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -37053,8 +37407,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -37080,8 +37436,10 @@ export declare const putCharacter: z.ZodObject<{
                         format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                         roll?: {
                             dice: ({
+                                string: string;
                                 dice: number;
                                 sides: number;
+                                average: number;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
                             } | {
@@ -37107,8 +37465,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37133,8 +37493,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37157,8 +37519,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -37185,8 +37549,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -37209,8 +37575,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37235,8 +37603,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37261,8 +37631,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37287,8 +37659,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37313,8 +37687,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37339,8 +37715,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37365,8 +37743,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37395,8 +37775,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37419,8 +37801,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37449,8 +37833,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37473,8 +37859,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37503,8 +37891,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37527,8 +37917,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37557,8 +37949,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37581,8 +37975,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37611,8 +38007,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37635,8 +38033,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37664,8 +38064,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37689,8 +38091,10 @@ export declare const putCharacter: z.ZodObject<{
                 format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                 roll?: {
                     dice: ({
+                        string: string;
                         dice: number;
                         sides: number;
+                        average: number;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     } | {
@@ -37714,8 +38118,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {
@@ -37738,8 +38144,10 @@ export declare const putCharacter: z.ZodObject<{
                     format?: ("italic" | "font-bold" | "underline" | "line-through" | "sups" | "subs")[] | undefined;
                     roll?: {
                         dice: ({
+                            string: string;
                             dice: number;
                             sides: number;
+                            average: number;
                             bonus?: number | undefined;
                             type?: string | undefined;
                         } | {

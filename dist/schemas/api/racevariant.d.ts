@@ -1938,7 +1938,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -1990,7 +1990,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -2030,7 +2030,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2042,7 +2042,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -2082,7 +2082,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2094,7 +2094,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -2173,7 +2173,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2185,7 +2185,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -2264,7 +2264,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2276,7 +2276,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -2364,7 +2364,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2376,7 +2376,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -2465,7 +2465,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -2477,7 +2477,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -3792,7 +3792,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -3804,7 +3804,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -4426,7 +4426,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -4438,7 +4438,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -5062,7 +5062,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -5074,7 +5074,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -5699,7 +5699,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -5711,7 +5711,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -7822,7 +7822,7 @@ export declare const postRacevariant: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -7874,7 +7874,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -7914,7 +7914,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -7926,7 +7926,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -7966,7 +7966,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -7978,7 +7978,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -8057,7 +8057,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8069,7 +8069,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -8148,7 +8148,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8160,7 +8160,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -8248,7 +8248,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8260,7 +8260,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -8349,7 +8349,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -8361,7 +8361,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -9676,7 +9676,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -9688,7 +9688,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -10310,7 +10310,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -10322,7 +10322,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -10946,7 +10946,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -10958,7 +10958,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -11584,7 +11584,7 @@ export declare const postRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -11596,7 +11596,7 @@ export declare const postRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -13706,7 +13706,7 @@ export declare const putRacevariant: z.ZodObject<{
                             }[] | undefined;
                         };
                     }>]>>;
-                    enchantment: z.ZodOptional<z.ZodObject<{
+                    enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                         type: z.ZodString;
                         dice: z.ZodOptional<z.ZodObject<{
                             dice: z.ZodNumber;
@@ -13758,7 +13758,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    }>>;
+                    }>, "many">>;
                 }, "strip", z.ZodTypeAny, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -13798,7 +13798,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13810,7 +13810,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }, {
                     name: string;
                     replaceName?: boolean | undefined;
@@ -13850,7 +13850,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13862,7 +13862,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -13941,7 +13941,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -13953,7 +13953,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -14032,7 +14032,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14044,7 +14044,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
@@ -14132,7 +14132,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14144,7 +14144,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -14233,7 +14233,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -14245,7 +14245,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -15560,7 +15560,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -15572,7 +15572,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -16194,7 +16194,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -16206,7 +16206,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -16830,7 +16830,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -16842,7 +16842,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;
@@ -17466,7 +17466,7 @@ export declare const putRacevariant: z.ZodObject<{
                         rangeMax?: string | undefined;
                         properties?: string[] | undefined;
                     } | undefined;
-                    enchantment?: {
+                    enchantments?: {
                         type: string;
                         dice?: {
                             dice: number;
@@ -17478,7 +17478,7 @@ export declare const putRacevariant: z.ZodObject<{
                             unitInterval?: number | undefined;
                         } | undefined;
                         expression?: string | undefined;
-                    } | undefined;
+                    }[] | undefined;
                 }[] | undefined;
             }[];
             priority?: number | undefined;

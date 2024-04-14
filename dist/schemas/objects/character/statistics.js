@@ -31,6 +31,8 @@ const _1 = require(".");
 exports.parsedDice = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
+    average: zod_1.z.number(),
+    string: zod_1.z.string(),
     bonus: zod_1.z.number().optional(),
     type: zod_1.z.string().optional(),
 });
@@ -41,7 +43,7 @@ exports.parsedExpression = zod_1.z.object({
 exports.roll = zod_1.z.object({
     dice: zod_1.z.array(zod_1.z.union([exports.parsedDice, exports.parsedExpression])),
     name: zod_1.z.string().optional(),
-    translationKey: zod_1.z.string().optional(),
+    translationKey: zod_1.z.string().optional(), // the translation for the roll name
 });
 exports.additionalStringTypes = zod_1.z.enum([
     'text', 'translatableText', 'nextLine', 'paragraphEnd', 'listStart', 'listEnd', 'listItemStart', 'listItemEnd', 'numberAsWord', 'ordinal', 'feet', '-feet', 'ft', 'range/rangeMax', 'range', 'reach', 'resource', 'tag', 'value', 'valueAsWord', 'diceRoll', 'd20Roll'
