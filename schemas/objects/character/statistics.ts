@@ -30,8 +30,8 @@ import { rechargeTypeEnum } from '.';
 export const parsedDice = z.object({
   dice: z.number(),
   sides: z.number(),
-  average: z.number(),
-  string: z.string(),
+  average: z.number().optional(),
+  string: z.string().optional(),
   bonus: z.number().optional(),
   type: z.string().optional(),
 });
