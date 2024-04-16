@@ -27,25 +27,6 @@ export const diceObject = z.object({
   unitInterval: z.number().optional(),
 });
 
-export const enchantmentObject = z.object({
-  type: z.string(),
-  dice: diceObject.optional(),
-  expression: z.string().optional(),
-});
-export const attackAttributesObject = z.object({
-  reach: z.string().optional(),
-  targets: z.string().optional(),
-});
-export const attackObject = z.object({
-  name: z.string(),
-  replaceName: z.boolean().optional(),
-  attributes: z.union([
-    attackAttributesObject.merge(weaponObject),
-    choiceRandomObject,
-  ]).optional(),
-  enchantments: z.array(enchantmentObject).optional(),
-});
-
 export const valueExpressionObject = z.object({
   name: z.string(),
   type: z.string().optional(),
@@ -69,6 +50,16 @@ export const valueIncrProgressionObject = z.object({
     valueBase: z.number(),
     valueIncrement: z.number(),
   }),
+});
+
+export const attackObject = z.object({
+  name: z.string(),
+  replaceName: z.boolean().optional(),
+  attributes: z.union([
+    weaponObject,
+    choiceRandomObject,
+  ]).optional(),
+  enchantments: z.array(valueDiceObject).optional(),
 });
 
 export const actionVariantObject = z.object({

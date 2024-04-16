@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.attackObject = exports.attackAttributesObject = exports.enchantmentObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
+exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
@@ -26,24 +26,6 @@ exports.diceObject = zod_1.z.object({
     availableUnit: zod_1.z.enum(['level', 'cr']).optional(),
     unitInterval: zod_1.z.number().optional(),
 });
-exports.enchantmentObject = zod_1.z.object({
-    type: zod_1.z.string(),
-    dice: exports.diceObject.optional(),
-    expression: zod_1.z.string().optional(),
-});
-exports.attackAttributesObject = zod_1.z.object({
-    reach: zod_1.z.string().optional(),
-    targets: zod_1.z.string().optional(),
-});
-exports.attackObject = zod_1.z.object({
-    name: zod_1.z.string(),
-    replaceName: zod_1.z.boolean().optional(),
-    attributes: zod_1.z.union([
-        exports.attackAttributesObject.merge(weapons_1.weaponObject),
-        choices_1.choiceRandomObject,
-    ]).optional(),
-    enchantments: zod_1.z.array(exports.enchantmentObject).optional(),
-});
 exports.valueExpressionObject = zod_1.z.object({
     name: zod_1.z.string(),
     type: zod_1.z.string().optional(),
@@ -66,6 +48,15 @@ exports.valueIncrProgressionObject = zod_1.z.object({
         valueBase: zod_1.z.number(),
         valueIncrement: zod_1.z.number(),
     }),
+});
+exports.attackObject = zod_1.z.object({
+    name: zod_1.z.string(),
+    replaceName: zod_1.z.boolean().optional(),
+    attributes: zod_1.z.union([
+        weapons_1.weaponObject,
+        choices_1.choiceRandomObject,
+    ]).optional(),
+    enchantments: zod_1.z.array(exports.valueDiceObject).optional(),
 });
 exports.actionVariantObject = zod_1.z.object({
     name: zod_1.z.string(),

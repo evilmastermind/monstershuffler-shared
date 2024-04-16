@@ -12,5 +12,7 @@ export const weaponObject = z.object({
   sidesV: z.string().optional(),
   range: z.string().optional(),
   rangeMax: z.string().optional(),
+  reach: z.string().optional(),
+  targets: z.string().optional(),
   properties: z.array(z.string()).optional(),
 });
