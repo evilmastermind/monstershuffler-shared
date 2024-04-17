@@ -22,24 +22,35 @@ import { z } from 'zod';
  * possible, provide an alternative string that can be used instead.
  *
  */
+/**
+ * Parsed Dice & translating dice rolls
+ * - a parsed dice object's type property can be
+ *   something like "acid damage", "hit point", etc.
+ * - the string property contains the dice roll in the
+ *   format usually found inside stat blocks, like
+ *   "10 (2d6 + 3)"
+ * - I can create a translated description for the roll
+ *   with vue-i18n like this:
+ *   $t(`statBlock.value.${type}`, { n: string }, average)
+ */
 export declare const parsedDice: z.ZodObject<{
     dice: z.ZodNumber;
     sides: z.ZodNumber;
-    average: z.ZodOptional<z.ZodNumber>;
+    value: z.ZodOptional<z.ZodNumber>;
     string: z.ZodOptional<z.ZodString>;
     bonus: z.ZodOptional<z.ZodNumber>;
     type: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     dice: number;
     sides: number;
-    average?: number | undefined;
+    value?: number | undefined;
     string?: string | undefined;
     bonus?: number | undefined;
     type?: string | undefined;
 }, {
     dice: number;
     sides: number;
-    average?: number | undefined;
+    value?: number | undefined;
     string?: string | undefined;
     bonus?: number | undefined;
     type?: string | undefined;
@@ -58,21 +69,21 @@ export declare const roll: z.ZodObject<{
     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         dice: z.ZodNumber;
         sides: z.ZodNumber;
-        average: z.ZodOptional<z.ZodNumber>;
+        value: z.ZodOptional<z.ZodNumber>;
         string: z.ZodOptional<z.ZodString>;
         bonus: z.ZodOptional<z.ZodNumber>;
         type: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         dice: number;
         sides: number;
-        average?: number | undefined;
+        value?: number | undefined;
         string?: string | undefined;
         bonus?: number | undefined;
         type?: string | undefined;
     }, {
         dice: number;
         sides: number;
-        average?: number | undefined;
+        value?: number | undefined;
         string?: string | undefined;
         bonus?: number | undefined;
         type?: string | undefined;
@@ -92,7 +103,7 @@ export declare const roll: z.ZodObject<{
     dice: ({
         dice: number;
         sides: number;
-        average?: number | undefined;
+        value?: number | undefined;
         string?: string | undefined;
         bonus?: number | undefined;
         type?: string | undefined;
@@ -106,7 +117,7 @@ export declare const roll: z.ZodObject<{
     dice: ({
         dice: number;
         sides: number;
-        average?: number | undefined;
+        value?: number | undefined;
         string?: string | undefined;
         bonus?: number | undefined;
         type?: string | undefined;
@@ -128,21 +139,21 @@ export declare const descriptionPartObject: z.ZodObject<{
         dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
             dice: z.ZodNumber;
             sides: z.ZodNumber;
-            average: z.ZodOptional<z.ZodNumber>;
+            value: z.ZodOptional<z.ZodNumber>;
             string: z.ZodOptional<z.ZodString>;
             bonus: z.ZodOptional<z.ZodNumber>;
             type: z.ZodOptional<z.ZodString>;
         }, "strip", z.ZodTypeAny, {
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
         }, {
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
@@ -162,7 +173,7 @@ export declare const descriptionPartObject: z.ZodObject<{
         dice: ({
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
@@ -176,7 +187,7 @@ export declare const descriptionPartObject: z.ZodObject<{
         dice: ({
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
@@ -199,7 +210,7 @@ export declare const descriptionPartObject: z.ZodObject<{
         dice: ({
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
@@ -222,7 +233,7 @@ export declare const descriptionPartObject: z.ZodObject<{
         dice: ({
             dice: number;
             sides: number;
-            average?: number | undefined;
+            value?: number | undefined;
             string?: string | undefined;
             bonus?: number | undefined;
             type?: string | undefined;
@@ -262,21 +273,21 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -296,7 +307,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -310,7 +321,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -333,7 +344,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -356,7 +367,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -384,7 +395,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -412,7 +423,7 @@ export declare const statStringNumberArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -450,21 +461,21 @@ export declare const statStringArray: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -484,7 +495,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -498,7 +509,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -521,7 +532,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -544,7 +555,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -571,7 +582,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -598,7 +609,7 @@ export declare const statStringArray: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -628,21 +639,21 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -662,7 +673,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -676,7 +687,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -699,7 +710,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -722,7 +733,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -747,21 +758,21 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -781,7 +792,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -795,7 +806,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -818,7 +829,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -841,7 +852,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -872,7 +883,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -898,7 +909,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -929,7 +940,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -955,7 +966,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -988,21 +999,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1022,7 +1033,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1036,7 +1047,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1059,7 +1070,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1082,7 +1093,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1110,7 +1121,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1138,7 +1149,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1167,21 +1178,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1201,7 +1212,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1215,7 +1226,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1238,7 +1249,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1261,7 +1272,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1289,7 +1300,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1317,7 +1328,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1346,21 +1357,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1380,7 +1391,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1394,7 +1405,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1417,7 +1428,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1440,7 +1451,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1468,7 +1479,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1496,7 +1507,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1525,21 +1536,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1559,7 +1570,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1573,7 +1584,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1596,7 +1607,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1619,7 +1630,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1647,7 +1658,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1675,7 +1686,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1704,21 +1715,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1738,7 +1749,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1752,7 +1763,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1775,7 +1786,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1798,7 +1809,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1826,7 +1837,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1854,7 +1865,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1883,21 +1894,21 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1917,7 +1928,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1931,7 +1942,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1954,7 +1965,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -1977,7 +1988,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2005,7 +2016,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2033,7 +2044,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2063,7 +2074,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2092,7 +2103,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2121,7 +2132,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2150,7 +2161,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2179,7 +2190,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2208,7 +2219,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2238,7 +2249,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2267,7 +2278,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2296,7 +2307,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2325,7 +2336,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2354,7 +2365,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2383,7 +2394,7 @@ export declare const abilitiesObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2414,21 +2425,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2448,7 +2459,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2462,7 +2473,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2485,7 +2496,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2508,7 +2519,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2536,7 +2547,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2564,7 +2575,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2595,21 +2606,21 @@ export declare const statisticsObject: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -2629,7 +2640,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -2643,7 +2654,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -2666,7 +2677,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -2689,7 +2700,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -2731,21 +2742,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2765,7 +2776,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2779,7 +2790,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2802,7 +2813,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2825,7 +2836,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2853,7 +2864,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2881,7 +2892,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -2939,21 +2950,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -2973,7 +2984,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -2987,7 +2998,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3010,7 +3021,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3033,7 +3044,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3061,7 +3072,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3089,7 +3100,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3118,21 +3129,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3152,7 +3163,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3166,7 +3177,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3189,7 +3200,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3212,7 +3223,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3240,7 +3251,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3268,7 +3279,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3297,21 +3308,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3331,7 +3342,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3345,7 +3356,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3368,7 +3379,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3391,7 +3402,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3419,7 +3430,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3447,7 +3458,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3476,21 +3487,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3510,7 +3521,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3524,7 +3535,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3547,7 +3558,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3570,7 +3581,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3598,7 +3609,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3626,7 +3637,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3655,21 +3666,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3689,7 +3700,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3703,7 +3714,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3726,7 +3737,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3749,7 +3760,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3777,7 +3788,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3805,7 +3816,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3834,21 +3845,21 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
-                        average: z.ZodOptional<z.ZodNumber>;
+                        value: z.ZodOptional<z.ZodNumber>;
                         string: z.ZodOptional<z.ZodString>;
                         bonus: z.ZodOptional<z.ZodNumber>;
                         type: z.ZodOptional<z.ZodString>;
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3868,7 +3879,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3882,7 +3893,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3905,7 +3916,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3928,7 +3939,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3956,7 +3967,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -3984,7 +3995,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4014,7 +4025,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4043,7 +4054,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4072,7 +4083,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4101,7 +4112,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4130,7 +4141,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4159,7 +4170,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4189,7 +4200,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4218,7 +4229,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4247,7 +4258,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4276,7 +4287,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4305,7 +4316,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4334,7 +4345,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -4387,21 +4398,21 @@ export declare const statisticsObject: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -4421,7 +4432,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -4435,7 +4446,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -4458,7 +4469,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -4481,7 +4492,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -4507,21 +4518,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4541,7 +4552,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4555,7 +4566,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4578,7 +4589,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4601,7 +4612,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4628,7 +4639,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4655,7 +4666,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4683,21 +4694,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4717,7 +4728,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4731,7 +4742,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4754,7 +4765,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4777,7 +4788,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4804,7 +4815,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4831,7 +4842,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4859,21 +4870,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4893,7 +4904,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4907,7 +4918,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4930,7 +4941,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4953,7 +4964,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -4980,7 +4991,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5007,7 +5018,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5035,21 +5046,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5069,7 +5080,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5083,7 +5094,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5106,7 +5117,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5129,7 +5140,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5156,7 +5167,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5183,7 +5194,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5211,21 +5222,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5245,7 +5256,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5259,7 +5270,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5282,7 +5293,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5305,7 +5316,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5332,7 +5343,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5359,7 +5370,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5387,21 +5398,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5421,7 +5432,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5435,7 +5446,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5458,7 +5469,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5481,7 +5492,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5508,7 +5519,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5535,7 +5546,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5563,21 +5574,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5597,7 +5608,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5611,7 +5622,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5634,7 +5645,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5657,7 +5668,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5684,7 +5695,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5711,7 +5722,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5739,21 +5750,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5773,7 +5784,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5787,7 +5798,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5810,7 +5821,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5833,7 +5844,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5860,7 +5871,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5887,7 +5898,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5915,21 +5926,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5949,7 +5960,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5963,7 +5974,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -5986,7 +5997,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6009,7 +6020,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6036,7 +6047,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6063,7 +6074,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6091,21 +6102,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6125,7 +6136,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6139,7 +6150,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6162,7 +6173,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6185,7 +6196,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6212,7 +6223,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6239,7 +6250,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6272,21 +6283,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6306,7 +6317,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6320,7 +6331,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6343,7 +6354,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6366,7 +6377,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6391,21 +6402,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6425,7 +6436,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6439,7 +6450,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6462,7 +6473,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6485,7 +6496,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6516,7 +6527,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6542,7 +6553,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6573,7 +6584,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6599,7 +6610,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6632,21 +6643,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6666,7 +6677,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6680,7 +6691,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6703,7 +6714,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6726,7 +6737,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6751,21 +6762,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6785,7 +6796,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6799,7 +6810,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6822,7 +6833,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6845,7 +6856,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6876,7 +6887,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6902,7 +6913,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6933,7 +6944,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6959,7 +6970,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -6992,21 +7003,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7026,7 +7037,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7040,7 +7051,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7063,7 +7074,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7086,7 +7097,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7111,21 +7122,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7145,7 +7156,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7159,7 +7170,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7182,7 +7193,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7205,7 +7216,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7236,7 +7247,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7262,7 +7273,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7293,7 +7304,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7319,7 +7330,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7352,21 +7363,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7386,7 +7397,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7400,7 +7411,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7423,7 +7434,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7446,7 +7457,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7471,21 +7482,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7505,7 +7516,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7519,7 +7530,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7542,7 +7553,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7565,7 +7576,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7596,7 +7607,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7622,7 +7633,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7653,7 +7664,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7679,7 +7690,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7712,21 +7723,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7746,7 +7757,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7760,7 +7771,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7783,7 +7794,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7806,7 +7817,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7831,21 +7842,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7865,7 +7876,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7879,7 +7890,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7902,7 +7913,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7925,7 +7936,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7956,7 +7967,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -7982,7 +7993,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8013,7 +8024,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8039,7 +8050,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8070,21 +8081,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8104,7 +8115,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8118,7 +8129,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8141,7 +8152,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8164,7 +8175,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8191,7 +8202,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8218,7 +8229,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8245,21 +8256,21 @@ export declare const statisticsObject: z.ZodObject<{
             dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 dice: z.ZodNumber;
                 sides: z.ZodNumber;
-                average: z.ZodOptional<z.ZodNumber>;
+                value: z.ZodOptional<z.ZodNumber>;
                 string: z.ZodOptional<z.ZodString>;
                 bonus: z.ZodOptional<z.ZodNumber>;
                 type: z.ZodOptional<z.ZodString>;
             }, "strip", z.ZodTypeAny, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
             }, {
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -8279,7 +8290,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -8293,7 +8304,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -8316,7 +8327,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -8339,7 +8350,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -8367,21 +8378,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8401,7 +8412,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8415,7 +8426,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8438,7 +8449,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8461,7 +8472,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8486,21 +8497,21 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: z.ZodArray<z.ZodUnion<[z.ZodObject<{
                     dice: z.ZodNumber;
                     sides: z.ZodNumber;
-                    average: z.ZodOptional<z.ZodNumber>;
+                    value: z.ZodOptional<z.ZodNumber>;
                     string: z.ZodOptional<z.ZodString>;
                     bonus: z.ZodOptional<z.ZodNumber>;
                     type: z.ZodOptional<z.ZodString>;
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8520,7 +8531,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8534,7 +8545,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8557,7 +8568,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8580,7 +8591,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8611,7 +8622,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8637,7 +8648,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8668,7 +8679,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8694,7 +8705,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8733,7 +8744,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8768,7 +8779,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8797,7 +8808,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -8842,7 +8853,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -8871,7 +8882,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -8900,7 +8911,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -8929,7 +8940,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -8958,7 +8969,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -8987,7 +8998,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9016,7 +9027,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9044,7 +9055,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9070,7 +9081,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -9100,7 +9111,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -9126,7 +9137,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9154,7 +9165,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9182,7 +9193,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9210,7 +9221,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9238,7 +9249,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9266,7 +9277,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9294,7 +9305,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9326,7 +9337,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9352,7 +9363,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9384,7 +9395,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9410,7 +9421,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9442,7 +9453,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9468,7 +9479,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9500,7 +9511,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9526,7 +9537,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9558,7 +9569,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9584,7 +9595,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9615,7 +9626,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9642,7 +9653,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -9669,7 +9680,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9695,7 +9706,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9734,7 +9745,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9769,7 +9780,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9798,7 +9809,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -9843,7 +9854,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9872,7 +9883,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9901,7 +9912,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9930,7 +9941,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9959,7 +9970,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -9988,7 +9999,7 @@ export declare const statisticsObject: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -10017,7 +10028,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10045,7 +10056,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10071,7 +10082,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -10101,7 +10112,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -10127,7 +10138,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10155,7 +10166,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10183,7 +10194,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10211,7 +10222,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10239,7 +10250,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10267,7 +10278,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10295,7 +10306,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10327,7 +10338,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10353,7 +10364,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10385,7 +10396,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10411,7 +10422,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10443,7 +10454,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10469,7 +10480,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10501,7 +10512,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10527,7 +10538,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10559,7 +10570,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10585,7 +10596,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10616,7 +10627,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10643,7 +10654,7 @@ export declare const statisticsObject: z.ZodObject<{
             dice: ({
                 dice: number;
                 sides: number;
-                average?: number | undefined;
+                value?: number | undefined;
                 string?: string | undefined;
                 bonus?: number | undefined;
                 type?: string | undefined;
@@ -10670,7 +10681,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;
@@ -10696,7 +10707,7 @@ export declare const statisticsObject: z.ZodObject<{
                 dice: ({
                     dice: number;
                     sides: number;
-                    average?: number | undefined;
+                    value?: number | undefined;
                     string?: string | undefined;
                     bonus?: number | undefined;
                     type?: string | undefined;

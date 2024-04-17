@@ -5329,7 +5329,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5364,7 +5364,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5393,7 +5393,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5438,7 +5438,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5467,7 +5467,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5496,7 +5496,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5525,7 +5525,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5554,7 +5554,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5583,7 +5583,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5612,7 +5612,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5640,7 +5640,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5666,7 +5666,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -5696,7 +5696,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -5722,7 +5722,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5750,7 +5750,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5778,7 +5778,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5806,7 +5806,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5834,7 +5834,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5862,7 +5862,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5890,7 +5890,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5922,7 +5922,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5948,7 +5948,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5980,7 +5980,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6006,7 +6006,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6038,7 +6038,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6064,7 +6064,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6096,7 +6096,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6122,7 +6122,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6154,7 +6154,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6180,7 +6180,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6211,7 +6211,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6238,7 +6238,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -6265,7 +6265,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6291,7 +6291,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11707,7 +11707,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11742,7 +11742,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11771,7 +11771,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11816,7 +11816,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11845,7 +11845,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11874,7 +11874,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11903,7 +11903,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11932,7 +11932,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11961,7 +11961,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11990,7 +11990,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12018,7 +12018,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12044,7 +12044,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12074,7 +12074,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12100,7 +12100,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12128,7 +12128,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12156,7 +12156,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12184,7 +12184,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12212,7 +12212,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12240,7 +12240,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12268,7 +12268,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12300,7 +12300,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12326,7 +12326,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12358,7 +12358,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12384,7 +12384,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12416,7 +12416,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12442,7 +12442,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12474,7 +12474,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12500,7 +12500,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12532,7 +12532,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12558,7 +12558,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12589,7 +12589,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12616,7 +12616,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12643,7 +12643,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12669,7 +12669,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18090,7 +18090,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18125,7 +18125,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18154,7 +18154,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18199,7 +18199,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18228,7 +18228,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18257,7 +18257,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18286,7 +18286,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18315,7 +18315,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18344,7 +18344,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18373,7 +18373,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18401,7 +18401,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18427,7 +18427,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -18457,7 +18457,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -18483,7 +18483,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18511,7 +18511,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18539,7 +18539,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18567,7 +18567,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18595,7 +18595,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18623,7 +18623,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18651,7 +18651,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18683,7 +18683,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18709,7 +18709,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18741,7 +18741,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18767,7 +18767,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18799,7 +18799,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18825,7 +18825,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18857,7 +18857,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18883,7 +18883,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18915,7 +18915,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18941,7 +18941,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18972,7 +18972,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18999,7 +18999,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -19026,7 +19026,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -19052,7 +19052,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24469,7 +24469,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24504,7 +24504,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24533,7 +24533,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24578,7 +24578,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24607,7 +24607,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24636,7 +24636,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24665,7 +24665,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24694,7 +24694,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24723,7 +24723,7 @@ export declare const postCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24752,7 +24752,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24780,7 +24780,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24806,7 +24806,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -24836,7 +24836,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -24862,7 +24862,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24890,7 +24890,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24918,7 +24918,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24946,7 +24946,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24974,7 +24974,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25002,7 +25002,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25030,7 +25030,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25062,7 +25062,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25088,7 +25088,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25120,7 +25120,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25146,7 +25146,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25178,7 +25178,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25204,7 +25204,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25236,7 +25236,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25262,7 +25262,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25294,7 +25294,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25320,7 +25320,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25351,7 +25351,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25378,7 +25378,7 @@ export declare const postCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -25405,7 +25405,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25431,7 +25431,7 @@ export declare const postCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -30853,7 +30853,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -30888,7 +30888,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -30917,7 +30917,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -30962,7 +30962,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -30991,7 +30991,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -31020,7 +31020,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -31049,7 +31049,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -31078,7 +31078,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -31107,7 +31107,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -31136,7 +31136,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31164,7 +31164,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31190,7 +31190,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -31220,7 +31220,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -31246,7 +31246,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31274,7 +31274,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31302,7 +31302,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31330,7 +31330,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31358,7 +31358,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31386,7 +31386,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31414,7 +31414,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31446,7 +31446,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31472,7 +31472,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31504,7 +31504,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31530,7 +31530,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31562,7 +31562,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31588,7 +31588,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31620,7 +31620,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31646,7 +31646,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31678,7 +31678,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31704,7 +31704,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31735,7 +31735,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31762,7 +31762,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -31789,7 +31789,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -31815,7 +31815,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37232,7 +37232,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37267,7 +37267,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37296,7 +37296,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37341,7 +37341,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37370,7 +37370,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37399,7 +37399,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37428,7 +37428,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37457,7 +37457,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37486,7 +37486,7 @@ export declare const putCharacter: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                average?: number | undefined;
+                                value?: number | undefined;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -37515,7 +37515,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37543,7 +37543,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37569,7 +37569,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -37599,7 +37599,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -37625,7 +37625,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37653,7 +37653,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37681,7 +37681,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37709,7 +37709,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37737,7 +37737,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37765,7 +37765,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37793,7 +37793,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37825,7 +37825,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37851,7 +37851,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37883,7 +37883,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37909,7 +37909,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37941,7 +37941,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37967,7 +37967,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -37999,7 +37999,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38025,7 +38025,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38057,7 +38057,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38083,7 +38083,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38114,7 +38114,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38141,7 +38141,7 @@ export declare const putCharacter: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        average?: number | undefined;
+                        value?: number | undefined;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -38168,7 +38168,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -38194,7 +38194,7 @@ export declare const putCharacter: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            average?: number | undefined;
+                            value?: number | undefined;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;

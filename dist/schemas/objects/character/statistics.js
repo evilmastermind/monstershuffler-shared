@@ -28,10 +28,21 @@ const _1 = require(".");
  * possible, provide an alternative string that can be used instead.
  *
  */
+/**
+ * Parsed Dice & translating dice rolls
+ * - a parsed dice object's type property can be
+ *   something like "acid damage", "hit point", etc.
+ * - the string property contains the dice roll in the
+ *   format usually found inside stat blocks, like
+ *   "10 (2d6 + 3)"
+ * - I can create a translated description for the roll
+ *   with vue-i18n like this:
+ *   $t(`statBlock.value.${type}`, { n: string }, average)
+ */
 exports.parsedDice = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
-    average: zod_1.z.number().optional(),
+    value: zod_1.z.number().optional(),
     string: zod_1.z.string().optional(),
     bonus: zod_1.z.number().optional(),
     type: zod_1.z.string().optional(),

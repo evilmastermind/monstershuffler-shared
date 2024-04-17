@@ -27,10 +27,22 @@ import { rechargeTypeEnum } from '.';
  * 
  */
 
+
+/**
+ * Parsed Dice & translating dice rolls
+ * - a parsed dice object's type property can be
+ *   something like "acid damage", "hit point", etc.
+ * - the string property contains the dice roll in the
+ *   format usually found inside stat blocks, like
+ *   "10 (2d6 + 3)"
+ * - I can create a translated description for the roll
+ *   with vue-i18n like this: 
+ *   $t(`statBlock.value.${type}`, { n: string }, average)
+ */
 export const parsedDice = z.object({
   dice: z.number(),
   sides: z.number(),
-  average: z.number().optional(),
+  value: z.number().optional(),
   string: z.string().optional(),
   bonus: z.number().optional(),
   type: z.string().optional(),
