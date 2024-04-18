@@ -5353,7 +5353,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5388,7 +5388,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5417,7 +5417,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5462,7 +5462,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5491,7 +5491,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5520,7 +5520,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5549,7 +5549,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5578,7 +5578,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5607,7 +5607,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -5636,7 +5636,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5664,7 +5664,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5690,7 +5690,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -5720,7 +5720,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -5746,7 +5746,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5774,7 +5774,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5802,7 +5802,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5830,7 +5830,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5858,7 +5858,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5886,7 +5886,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5914,7 +5914,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5946,7 +5946,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -5972,7 +5972,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6004,7 +6004,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6030,7 +6030,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6062,7 +6062,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6088,7 +6088,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6120,7 +6120,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6146,7 +6146,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6178,7 +6178,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6204,7 +6204,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6235,7 +6235,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6262,7 +6262,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -6289,7 +6289,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -6315,7 +6315,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11730,7 +11730,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11765,7 +11765,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11794,7 +11794,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -11839,7 +11839,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11868,7 +11868,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11897,7 +11897,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11926,7 +11926,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11955,7 +11955,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -11984,7 +11984,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -12013,7 +12013,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12041,7 +12041,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12067,7 +12067,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12097,7 +12097,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12123,7 +12123,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12151,7 +12151,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12179,7 +12179,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12207,7 +12207,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12235,7 +12235,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12263,7 +12263,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12291,7 +12291,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12323,7 +12323,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12349,7 +12349,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12381,7 +12381,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12407,7 +12407,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12439,7 +12439,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12465,7 +12465,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12497,7 +12497,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12523,7 +12523,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12555,7 +12555,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12581,7 +12581,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12612,7 +12612,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12639,7 +12639,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -12666,7 +12666,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -12692,7 +12692,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18110,7 +18110,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18145,7 +18145,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18174,7 +18174,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18219,7 +18219,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18248,7 +18248,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18277,7 +18277,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18306,7 +18306,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18335,7 +18335,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18364,7 +18364,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -18393,7 +18393,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18421,7 +18421,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18447,7 +18447,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -18477,7 +18477,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -18503,7 +18503,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18531,7 +18531,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18559,7 +18559,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18587,7 +18587,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18615,7 +18615,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18643,7 +18643,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18671,7 +18671,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18703,7 +18703,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18729,7 +18729,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18761,7 +18761,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18787,7 +18787,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18819,7 +18819,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18845,7 +18845,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18877,7 +18877,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18903,7 +18903,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18935,7 +18935,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18961,7 +18961,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -18992,7 +18992,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -19019,7 +19019,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -19046,7 +19046,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -19072,7 +19072,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24487,7 +24487,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24522,7 +24522,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24551,7 +24551,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24596,7 +24596,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24625,7 +24625,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24654,7 +24654,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24683,7 +24683,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24712,7 +24712,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24741,7 +24741,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             dice: ({
                                 dice: number;
                                 sides: number;
-                                value?: number | undefined;
+                                value: number;
                                 string?: string | undefined;
                                 bonus?: number | undefined;
                                 type?: string | undefined;
@@ -24770,7 +24770,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24798,7 +24798,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24824,7 +24824,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -24854,7 +24854,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -24880,7 +24880,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24908,7 +24908,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24936,7 +24936,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24964,7 +24964,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -24992,7 +24992,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25020,7 +25020,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25048,7 +25048,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25080,7 +25080,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25106,7 +25106,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25138,7 +25138,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25164,7 +25164,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25196,7 +25196,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25222,7 +25222,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25254,7 +25254,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25280,7 +25280,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25312,7 +25312,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25338,7 +25338,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25369,7 +25369,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25396,7 +25396,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     dice: ({
                         dice: number;
                         sides: number;
-                        value?: number | undefined;
+                        value: number;
                         string?: string | undefined;
                         bonus?: number | undefined;
                         type?: string | undefined;
@@ -25423,7 +25423,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;
@@ -25449,7 +25449,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         dice: ({
                             dice: number;
                             sides: number;
-                            value?: number | undefined;
+                            value: number;
                             string?: string | undefined;
                             bonus?: number | undefined;
                             type?: string | undefined;

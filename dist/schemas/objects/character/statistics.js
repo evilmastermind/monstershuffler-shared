@@ -42,7 +42,7 @@ const _1 = require(".");
 exports.parsedDice = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
-    value: zod_1.z.number().optional(),
+    value: zod_1.z.number(),
     string: zod_1.z.string().optional(),
     bonus: zod_1.z.number().optional(),
     type: zod_1.z.string().optional(),
