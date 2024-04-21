@@ -67,12 +67,6 @@ exports.actionVariantObject = zod_1.z.object({
     availableAt: zod_1.z.number().optional(),
     ability: abilities_1.abilitiesEnum.optional(),
     cost: zod_1.z.string().optional(),
-    values: zod_1.z
-        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
-        .optional(),
-    attacks: zod_1.z
-        .array(exports.attackObject)
-        .optional(),
 });
 exports.chosenActionObject = zod_1.z.object({
     tag: zod_1.z.string(),
@@ -84,5 +78,13 @@ exports.chosenActionObject = zod_1.z.object({
     subType: zod_1.z.string().optional(),
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
+    // 2024/04/21 - values and attacks moved out of the variant object
+    // because random choices should be made only once per action
+    values: zod_1.z
+        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
+        .optional(),
+    attacks: zod_1.z
+        .array(exports.attackObject)
+        .optional(),
 });
 exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);

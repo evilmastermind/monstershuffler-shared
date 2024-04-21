@@ -71,12 +71,6 @@ export const actionVariantObject = z.object({
   availableAt: z.number().optional(),
   ability: abilitiesEnum.optional(),
   cost: z.string().optional(),
-  values: z
-    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
-    .optional(),
-  attacks: z
-    .array(attackObject)
-    .optional(),
 });
 export const chosenActionObject = z.object({
   tag: z.string(),
@@ -88,5 +82,13 @@ export const chosenActionObject = z.object({
   subType: z.string().optional(),
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
+  // 2024/04/21 - values and attacks moved out of the variant object
+  // because random choices should be made only once per action
+  values: z
+    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
+    .optional(),
+  attacks: z
+    .array(attackObject)
+    .optional(),
 });
 export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
