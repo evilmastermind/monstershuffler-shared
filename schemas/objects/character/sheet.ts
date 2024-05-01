@@ -21,6 +21,7 @@ export const imageObject = z.object({
 export const sheet = z.object({
   images: z.array(imageObject),
   layout: z.string().optional(),
+  showRoleplayStats: z.boolean().optional(),
   decoration: z.string().optional(),
   statBlockOffsetPx: z.number().optional(),
 });

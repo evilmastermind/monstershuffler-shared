@@ -82,6 +82,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }>, "many">;
             layout: z.ZodOptional<z.ZodString>;
+            showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
             decoration: z.ZodOptional<z.ZodString>;
             statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
@@ -101,6 +102,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }, {
@@ -120,6 +122,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }>>;
@@ -3227,6 +3230,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -3862,6 +3866,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -4499,6 +4504,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -5137,6 +5143,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -5813,6 +5820,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }>, "many">;
             layout: z.ZodOptional<z.ZodString>;
+            showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
             decoration: z.ZodOptional<z.ZodString>;
             statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
@@ -5832,6 +5840,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }, {
@@ -5851,6 +5860,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }>>;
@@ -8958,6 +8968,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -9593,6 +9604,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -10230,6 +10242,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -10869,6 +10882,7 @@ export declare const postRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -11544,6 +11558,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }>, "many">;
             layout: z.ZodOptional<z.ZodString>;
+            showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
             decoration: z.ZodOptional<z.ZodString>;
             statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
@@ -11563,6 +11578,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }, {
@@ -11582,6 +11598,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         }>>;
@@ -14689,6 +14706,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -15324,6 +15342,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -15961,6 +15980,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;
@@ -16598,6 +16618,7 @@ export declare const putRacevariant: z.ZodObject<{
                 } | undefined;
             }[];
             layout?: string | undefined;
+            showRoleplayStats?: boolean | undefined;
             decoration?: string | undefined;
             statBlockOffsetPx?: number | undefined;
         } | undefined;

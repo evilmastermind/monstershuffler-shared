@@ -1205,6 +1205,7 @@ export declare const publicationStats: {
             } | undefined;
         }>, "many">;
         layout: z.ZodOptional<z.ZodString>;
+        showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
         decoration: z.ZodOptional<z.ZodString>;
         statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
@@ -1224,6 +1225,7 @@ export declare const publicationStats: {
             } | undefined;
         }[];
         layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
         decoration?: string | undefined;
         statBlockOffsetPx?: number | undefined;
     }, {
@@ -1243,6 +1245,7 @@ export declare const publicationStats: {
             } | undefined;
         }[];
         layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
         decoration?: string | undefined;
         statBlockOffsetPx?: number | undefined;
     }>>;

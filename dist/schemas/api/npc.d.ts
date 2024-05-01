@@ -80,6 +80,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -727,6 +728,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -1363,6 +1365,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -1996,6 +1999,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -3244,6 +3248,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -3924,6 +3929,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -4595,6 +4601,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -6457,6 +6464,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -7104,6 +7112,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -7740,6 +7749,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -8373,6 +8383,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -9621,6 +9632,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -10301,6 +10313,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -10972,6 +10985,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -12837,6 +12851,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -13484,6 +13499,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -14120,6 +14136,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -14753,6 +14770,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -16001,6 +16019,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -16681,6 +16700,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -17352,6 +17372,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -19214,6 +19235,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -19861,6 +19883,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -20497,6 +20520,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -21130,6 +21154,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -22378,6 +22403,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -23058,6 +23084,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -23729,6 +23756,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;

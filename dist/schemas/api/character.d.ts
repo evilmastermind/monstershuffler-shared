@@ -56,6 +56,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -703,6 +704,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -1339,6 +1341,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -1972,6 +1975,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -3220,6 +3224,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -3900,6 +3905,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -4571,6 +4577,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -6434,6 +6441,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -7081,6 +7089,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -7717,6 +7726,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -8350,6 +8360,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -9598,6 +9609,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -10278,6 +10290,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -10949,6 +10962,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -12817,6 +12831,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -13464,6 +13479,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -14100,6 +14116,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -14733,6 +14750,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -15981,6 +15999,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -16661,6 +16680,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -17332,6 +17352,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -19196,6 +19217,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -19843,6 +19865,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -20479,6 +20502,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -21112,6 +21136,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -22360,6 +22385,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -23040,6 +23066,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -23711,6 +23738,7 @@ export declare const postCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -25580,6 +25608,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -26227,6 +26256,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -26863,6 +26893,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -27496,6 +27527,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -28744,6 +28776,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -29424,6 +29457,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -30095,6 +30129,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -31959,6 +31994,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -32606,6 +32642,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -33242,6 +33279,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -33875,6 +33913,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -35123,6 +35162,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -35803,6 +35843,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;
@@ -36474,6 +36515,7 @@ export declare const putCharacter: z.ZodObject<{
                         } | undefined;
                     }[];
                     layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
                     decoration?: string | undefined;
                     statBlockOffsetPx?: number | undefined;
                 } | undefined;

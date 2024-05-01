@@ -21,6 +21,7 @@ exports.imageObject = zod_1.z.object({
 exports.sheet = zod_1.z.object({
     images: zod_1.z.array(exports.imageObject),
     layout: zod_1.z.string().optional(),
+    showRoleplayStats: zod_1.z.boolean().optional(),
     decoration: zod_1.z.string().optional(),
     statBlockOffsetPx: zod_1.z.number().optional(),
 });
