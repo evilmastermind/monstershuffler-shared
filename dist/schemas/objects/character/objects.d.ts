@@ -27134,6 +27134,106 @@ export declare const templateObject: z.ZodObject<{
     id?: number | undefined;
 }>;
 export declare const backgroundObject: z.ZodObject<{
+    sheet: z.ZodOptional<z.ZodObject<{
+        images: z.ZodArray<z.ZodObject<{
+            url: z.ZodString;
+            artist: z.ZodOptional<z.ZodString>;
+            artistUrl: z.ZodOptional<z.ZodString>;
+            elementHeightPx: z.ZodOptional<z.ZodNumber>;
+            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
+            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
+            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            mask: z.ZodOptional<z.ZodString>;
+            token: z.ZodOptional<z.ZodObject<{
+                topPx: z.ZodNumber;
+                leftPx: z.ZodNumber;
+                widthPx: z.ZodNumber;
+            }, "strip", z.ZodTypeAny, {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            }, {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            }>>;
+        }, "strip", z.ZodTypeAny, {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }, {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }>, "many">;
+        layout: z.ZodOptional<z.ZodString>;
+        showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
+        decoration: z.ZodOptional<z.ZodString>;
+        statBlockOffsetPx: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        images: {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }[];
+        layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
+        decoration?: string | undefined;
+        statBlockOffsetPx?: number | undefined;
+    }, {
+        images: {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }[];
+        layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
+        decoration?: string | undefined;
+        statBlockOffsetPx?: number | undefined;
+    }>>;
+    searchTags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+    environments: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
+    backstory: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     enableGenerator: z.ZodOptional<z.ZodBoolean>;
     legendaryActionsMax: z.ZodOptional<z.ZodString>;
     spells: z.ZodOptional<z.ZodObject<{
@@ -30223,6 +30323,30 @@ export declare const backgroundObject: z.ZodObject<{
     femaleName: string;
     workplace: string;
     compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+    sheet?: {
+        images: {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }[];
+        layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
+        decoration?: string | undefined;
+        statBlockOffsetPx?: number | undefined;
+    } | undefined;
+    searchTags?: string[] | undefined;
+    environments?: string[] | undefined;
+    backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
     enableGenerator?: boolean | undefined;
     legendaryActionsMax?: string | undefined;
     spells?: {
@@ -30837,6 +30961,30 @@ export declare const backgroundObject: z.ZodObject<{
     femaleName: string;
     workplace: string;
     compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+    sheet?: {
+        images: {
+            url: string;
+            artist?: string | undefined;
+            artistUrl?: string | undefined;
+            elementHeightPx?: number | undefined;
+            backgroundHeightPerc?: number | undefined;
+            backgroundPositionTopPx?: number | undefined;
+            backgroundPositionLeftPx?: number | undefined;
+            mask?: string | undefined;
+            token?: {
+                topPx: number;
+                leftPx: number;
+                widthPx: number;
+            } | undefined;
+        }[];
+        layout?: string | undefined;
+        showRoleplayStats?: boolean | undefined;
+        decoration?: string | undefined;
+        statBlockOffsetPx?: number | undefined;
+    } | undefined;
+    searchTags?: string[] | undefined;
+    environments?: string[] | undefined;
+    backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
     enableGenerator?: boolean | undefined;
     legendaryActionsMax?: string | undefined;
     spells?: {

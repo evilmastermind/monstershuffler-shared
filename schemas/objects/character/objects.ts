@@ -211,6 +211,7 @@ export const backgroundObject = z
     ...spellsStats,
     ...legendaryActionsPerRoundStats,
     ...generatorStats,
+    ...publicationStats,
   })
   .strict();
 

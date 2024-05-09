@@ -176,6 +176,7 @@ exports.backgroundObject = zod_1.z
     ...other_1.spellsStats,
     ...other_1.legendaryActionsPerRoundStats,
     ...other_1.generatorStats,
+    ...other_1.publicationStats,
 })
     .strict();
 const CRCalculationObject = zod_1.z

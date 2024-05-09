@@ -2595,6 +2595,30 @@ export declare const getCharacterResponse: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
@@ -8980,6 +9004,30 @@ export declare const getCharacterResponse: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
@@ -15370,6 +15418,30 @@ export declare const postCharacter: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
@@ -21756,6 +21828,30 @@ export declare const postCharacter: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
@@ -28147,6 +28243,30 @@ export declare const putCharacter: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
@@ -34533,6 +34653,30 @@ export declare const putCharacter: z.ZodObject<{
                 femaleName: string;
                 workplace: string;
                 compatibleAges: ("child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable")[];
+                sheet?: {
+                    images: {
+                        url: string;
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        elementHeightPx?: number | undefined;
+                        backgroundHeightPerc?: number | undefined;
+                        backgroundPositionTopPx?: number | undefined;
+                        backgroundPositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
+                            topPx: number;
+                            leftPx: number;
+                            widthPx: number;
+                        } | undefined;
+                    }[];
+                    layout?: string | undefined;
+                    showRoleplayStats?: boolean | undefined;
+                    decoration?: string | undefined;
+                    statBlockOffsetPx?: number | undefined;
+                } | undefined;
+                searchTags?: string[] | undefined;
+                environments?: string[] | undefined;
+                backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
                 enableGenerator?: boolean | undefined;
                 legendaryActionsMax?: string | undefined;
                 spells?: {
