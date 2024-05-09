@@ -22,6 +22,7 @@ __exportStar(require("./armor"), exports);
 __exportStar(require("./choices"), exports);
 __exportStar(require("./other"), exports);
 __exportStar(require("./roleplay"), exports);
+__exportStar(require("./sheet"), exports);
 __exportStar(require("./spells"), exports);
 __exportStar(require("./statistics"), exports);
 __exportStar(require("./tags"), exports);

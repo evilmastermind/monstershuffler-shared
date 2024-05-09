@@ -6,6 +6,7 @@ export * from './armor';
 export * from './choices';
 export * from './other';
 export * from './roleplay';
+export * from './sheet';
 export * from './spells';
 export * from './statistics';
 export * from './tags';
