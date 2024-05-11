@@ -50,10 +50,10 @@ export declare const userObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -72,10 +72,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -86,10 +86,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -106,10 +106,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -126,10 +126,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -3340,10 +3340,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -4011,10 +4011,10 @@ export declare const userObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -4668,10 +4668,10 @@ export declare const raceObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -4690,10 +4690,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -4704,10 +4704,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -4724,10 +4724,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -4744,10 +4744,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -7863,10 +7863,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -8510,10 +8510,10 @@ export declare const raceObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -9157,10 +9157,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -9179,10 +9179,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -9193,10 +9193,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -9213,10 +9213,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -9233,10 +9233,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -12341,10 +12341,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -12977,10 +12977,10 @@ export declare const racevariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -13613,10 +13613,10 @@ export declare const classObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -13635,10 +13635,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -13649,10 +13649,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -13669,10 +13669,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -13689,10 +13689,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -16794,10 +16794,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -17427,10 +17427,10 @@ export declare const classObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -18060,10 +18060,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -18082,10 +18082,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -18096,10 +18096,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -18116,10 +18116,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -18136,10 +18136,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -21241,10 +21241,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -21874,10 +21874,10 @@ export declare const classvariantObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -22507,10 +22507,10 @@ export declare const templateObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -22529,10 +22529,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -22543,10 +22543,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -22563,10 +22563,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -22583,10 +22583,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -25807,10 +25807,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -26473,10 +26473,10 @@ export declare const templateObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -27139,10 +27139,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -27161,10 +27161,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -27175,10 +27175,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -27195,10 +27195,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -27215,10 +27215,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -30328,10 +30328,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -30966,10 +30966,10 @@ export declare const backgroundObject: z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -31667,10 +31667,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: z.ZodString;
             artist: z.ZodOptional<z.ZodString>;
             artistUrl: z.ZodOptional<z.ZodString>;
-            elementHeightPx: z.ZodOptional<z.ZodNumber>;
-            backgroundHeightPerc: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionTopPx: z.ZodOptional<z.ZodNumber>;
-            backgroundPositionLeftPx: z.ZodOptional<z.ZodNumber>;
+            canvasHeightPx: z.ZodOptional<z.ZodNumber>;
+            imageHeightPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
+            imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
             mask: z.ZodOptional<z.ZodString>;
             token: z.ZodOptional<z.ZodObject<{
                 topPx: z.ZodNumber;
@@ -31689,10 +31689,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -31703,10 +31703,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -31723,10 +31723,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -31743,10 +31743,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -34957,10 +34957,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;
@@ -35628,10 +35628,10 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
             url: string;
             artist?: string | undefined;
             artistUrl?: string | undefined;
-            elementHeightPx?: number | undefined;
-            backgroundHeightPerc?: number | undefined;
-            backgroundPositionTopPx?: number | undefined;
-            backgroundPositionLeftPx?: number | undefined;
+            canvasHeightPx?: number | undefined;
+            imageHeightPx?: number | undefined;
+            imagePositionTopPx?: number | undefined;
+            imagePositionLeftPx?: number | undefined;
             mask?: string | undefined;
             token?: {
                 topPx: number;

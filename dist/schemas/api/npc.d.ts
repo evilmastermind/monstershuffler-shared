@@ -68,10 +68,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -716,10 +716,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -1353,10 +1353,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -1987,10 +1987,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -2624,10 +2624,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -3260,10 +3260,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -3941,10 +3941,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -4613,10 +4613,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -6476,10 +6476,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -7124,10 +7124,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -7761,10 +7761,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -8395,10 +8395,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -9032,10 +9032,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -9668,10 +9668,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -10349,10 +10349,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -11021,10 +11021,10 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -12887,10 +12887,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -13535,10 +13535,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -14172,10 +14172,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -14806,10 +14806,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -15443,10 +15443,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -16079,10 +16079,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -16760,10 +16760,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -17432,10 +17432,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -19295,10 +19295,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -19943,10 +19943,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -20580,10 +20580,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -21214,10 +21214,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -21851,10 +21851,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -22487,10 +22487,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -23168,10 +23168,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
@@ -23840,10 +23840,10 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         url: string;
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
-                        elementHeightPx?: number | undefined;
-                        backgroundHeightPerc?: number | undefined;
-                        backgroundPositionTopPx?: number | undefined;
-                        backgroundPositionLeftPx?: number | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
                         mask?: string | undefined;
                         token?: {
                             topPx: number;
