@@ -33,12 +33,12 @@ export declare const getBackgroundResponse: z.ZodObject<{
                 url: z.ZodString;
                 artist: z.ZodOptional<z.ZodString>;
                 artistUrl: z.ZodOptional<z.ZodString>;
-                canvasHeightPx: z.ZodOptional<z.ZodNumber>;
-                imageHeightPx: z.ZodOptional<z.ZodNumber>;
-                imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
-                imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
+                canvasHeightPx: z.ZodNumber;
+                imageHeightPx: z.ZodNumber;
+                imagePositionTopPx: z.ZodNumber;
+                imagePositionLeftPx: z.ZodNumber;
                 mask: z.ZodOptional<z.ZodString>;
-                token: z.ZodOptional<z.ZodObject<{
+                token: z.ZodObject<{
                     topPx: z.ZodNumber;
                     leftPx: z.ZodNumber;
                     widthPx: z.ZodNumber;
@@ -50,35 +50,35 @@ export declare const getBackgroundResponse: z.ZodObject<{
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                }>>;
+                }>;
             }, "strip", z.ZodTypeAny, {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }, {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }>, "many">;
             layout: z.ZodOptional<z.ZodString>;
             showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
@@ -87,18 +87,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -107,18 +107,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         }, {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -3220,18 +3220,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -3858,18 +3858,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -4503,18 +4503,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -5148,18 +5148,18 @@ export declare const getBackgroundResponse: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -5792,12 +5792,12 @@ export declare const postBackground: z.ZodObject<{
                 url: z.ZodString;
                 artist: z.ZodOptional<z.ZodString>;
                 artistUrl: z.ZodOptional<z.ZodString>;
-                canvasHeightPx: z.ZodOptional<z.ZodNumber>;
-                imageHeightPx: z.ZodOptional<z.ZodNumber>;
-                imagePositionTopPx: z.ZodOptional<z.ZodNumber>;
-                imagePositionLeftPx: z.ZodOptional<z.ZodNumber>;
+                canvasHeightPx: z.ZodNumber;
+                imageHeightPx: z.ZodNumber;
+                imagePositionTopPx: z.ZodNumber;
+                imagePositionLeftPx: z.ZodNumber;
                 mask: z.ZodOptional<z.ZodString>;
-                token: z.ZodOptional<z.ZodObject<{
+                token: z.ZodObject<{
                     topPx: z.ZodNumber;
                     leftPx: z.ZodNumber;
                     widthPx: z.ZodNumber;
@@ -5809,35 +5809,35 @@ export declare const postBackground: z.ZodObject<{
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                }>>;
+                }>;
             }, "strip", z.ZodTypeAny, {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }, {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }>, "many">;
             layout: z.ZodOptional<z.ZodString>;
             showRoleplayStats: z.ZodOptional<z.ZodBoolean>;
@@ -5846,18 +5846,18 @@ export declare const postBackground: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -5866,18 +5866,18 @@ export declare const postBackground: z.ZodObject<{
         }, {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -8979,18 +8979,18 @@ export declare const postBackground: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -9617,18 +9617,18 @@ export declare const postBackground: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -10260,18 +10260,18 @@ export declare const postBackground: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
@@ -10903,18 +10903,18 @@ export declare const postBackground: z.ZodObject<{
         sheet?: {
             images: {
                 url: string;
-                artist?: string | undefined;
-                artistUrl?: string | undefined;
-                canvasHeightPx?: number | undefined;
-                imageHeightPx?: number | undefined;
-                imagePositionTopPx?: number | undefined;
-                imagePositionLeftPx?: number | undefined;
-                mask?: string | undefined;
-                token?: {
+                canvasHeightPx: number;
+                imageHeightPx: number;
+                imagePositionTopPx: number;
+                imagePositionLeftPx: number;
+                token: {
                     topPx: number;
                     leftPx: number;
                     widthPx: number;
-                } | undefined;
+                };
+                artist?: string | undefined;
+                artistUrl?: string | undefined;
+                mask?: string | undefined;
             }[];
             layout?: string | undefined;
             showRoleplayStats?: boolean | undefined;
