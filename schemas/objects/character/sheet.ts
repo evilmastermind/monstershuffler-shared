@@ -10,12 +10,12 @@ export const imageObject = z.object({
   url: z.string(),
   artist: z.string().optional(),
   artistUrl: z.string().optional(),
-  canvasHeightPx: z.number(),
-  imageHeightPx: z.number(),
-  imagePositionTopPx: z.number(),
-  imagePositionLeftPx: z.number(),
+  canvasHeightPx: z.number().optional(),
+  imageHeightPx: z.number().optional(),
+  imagePositionTopPx: z.number().optional(),
+  imagePositionLeftPx: z.number().optional(),
   mask: z.string().optional(),
-  token: tokenObject,
+  token: tokenObject.optional(),
 });
 
 export const sheet = z.object({

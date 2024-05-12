@@ -11,12 +11,12 @@ exports.imageObject = zod_1.z.object({
     url: zod_1.z.string(),
     artist: zod_1.z.string().optional(),
     artistUrl: zod_1.z.string().optional(),
-    canvasHeightPx: zod_1.z.number(),
-    imageHeightPx: zod_1.z.number(),
-    imagePositionTopPx: zod_1.z.number(),
-    imagePositionLeftPx: zod_1.z.number(),
+    canvasHeightPx: zod_1.z.number().optional(),
+    imageHeightPx: zod_1.z.number().optional(),
+    imagePositionTopPx: zod_1.z.number().optional(),
+    imagePositionLeftPx: zod_1.z.number().optional(),
     mask: zod_1.z.string().optional(),
-    token: exports.tokenObject,
+    token: exports.tokenObject.optional(),
 });
 exports.sheet = zod_1.z.object({
     images: zod_1.z.array(exports.imageObject),

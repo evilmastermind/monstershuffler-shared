@@ -66,18 +66,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -714,18 +714,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -1351,18 +1351,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -1985,18 +1985,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -2622,18 +2622,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -3258,18 +3258,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -3939,18 +3939,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -4611,18 +4611,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -6474,18 +6474,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -7122,18 +7122,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -7759,18 +7759,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -8393,18 +8393,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -9030,18 +9030,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -9666,18 +9666,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -10347,18 +10347,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -11019,18 +11019,18 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -12885,18 +12885,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -13533,18 +13533,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -14170,18 +14170,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -14804,18 +14804,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -15441,18 +15441,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -16077,18 +16077,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -16758,18 +16758,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -17430,18 +17430,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -19293,18 +19293,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -19941,18 +19941,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -20578,18 +20578,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -21212,18 +21212,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -21849,18 +21849,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -22485,18 +22485,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -23166,18 +23166,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
@@ -23838,18 +23838,18 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 sheet?: {
                     images: {
                         url: string;
-                        canvasHeightPx: number;
-                        imageHeightPx: number;
-                        imagePositionTopPx: number;
-                        imagePositionLeftPx: number;
-                        token: {
+                        artist?: string | undefined;
+                        artistUrl?: string | undefined;
+                        canvasHeightPx?: number | undefined;
+                        imageHeightPx?: number | undefined;
+                        imagePositionTopPx?: number | undefined;
+                        imagePositionLeftPx?: number | undefined;
+                        mask?: string | undefined;
+                        token?: {
                             topPx: number;
                             leftPx: number;
                             widthPx: number;
-                        };
-                        artist?: string | undefined;
-                        artistUrl?: string | undefined;
-                        mask?: string | undefined;
+                        } | undefined;
                     }[];
                     layout?: string | undefined;
                     showRoleplayStats?: boolean | undefined;
