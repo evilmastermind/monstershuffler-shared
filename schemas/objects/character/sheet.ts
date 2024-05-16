@@ -11,6 +11,7 @@ export const imageObject = z.object({
   artist: z.string().optional(),
   artistUrl: z.string().optional(),
   canvasHeightPx: z.number().optional(),
+  canvasWidthPx: z.number().optional(),
   imageHeightPx: z.number().optional(),
   imagePositionTopPx: z.number().optional(),
   imagePositionLeftPx: z.number().optional(),

@@ -69,6 +69,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -717,6 +718,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -1354,6 +1356,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -1988,6 +1991,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -2625,6 +2629,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -3261,6 +3266,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -3942,6 +3948,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -4614,6 +4621,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -6477,6 +6485,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -7125,6 +7134,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -7762,6 +7772,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -8396,6 +8407,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -9033,6 +9045,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -9669,6 +9682,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -10350,6 +10364,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -11022,6 +11037,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -12888,6 +12904,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -13536,6 +13553,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -14173,6 +14191,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -14807,6 +14826,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -15444,6 +15464,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -16080,6 +16101,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -16761,6 +16783,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -17433,6 +17456,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -19296,6 +19320,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -19944,6 +19969,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -20581,6 +20607,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -21215,6 +21242,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -21852,6 +21880,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -22488,6 +22517,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -23169,6 +23199,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -23841,6 +23872,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;

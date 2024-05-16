@@ -45,6 +45,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -693,6 +694,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -1330,6 +1332,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -1964,6 +1967,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -2601,6 +2605,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -3237,6 +3242,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -3918,6 +3924,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -4590,6 +4597,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -6454,6 +6462,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -7102,6 +7111,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -7739,6 +7749,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -8373,6 +8384,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -9010,6 +9022,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -9646,6 +9659,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -10327,6 +10341,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -10999,6 +11014,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -12868,6 +12884,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -13516,6 +13533,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -14153,6 +14171,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -14787,6 +14806,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -15424,6 +15444,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -16060,6 +16081,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -16741,6 +16763,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -17413,6 +17436,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -19278,6 +19302,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -19926,6 +19951,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -20563,6 +20589,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -21197,6 +21224,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -21834,6 +21862,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -22470,6 +22499,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -23151,6 +23181,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -23823,6 +23854,7 @@ export declare const postCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -25693,6 +25725,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -26341,6 +26374,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -26978,6 +27012,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -27612,6 +27647,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -28249,6 +28285,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -28885,6 +28922,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -29566,6 +29604,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -30238,6 +30277,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -32103,6 +32143,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -32751,6 +32792,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -33388,6 +33430,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -34022,6 +34065,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -34659,6 +34703,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -35295,6 +35340,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -35976,6 +36022,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
@@ -36648,6 +36695,7 @@ export declare const putCharacter: z.ZodObject<{
                         artist?: string | undefined;
                         artistUrl?: string | undefined;
                         canvasHeightPx?: number | undefined;
+                        canvasWidthPx?: number | undefined;
                         imageHeightPx?: number | undefined;
                         imagePositionTopPx?: number | undefined;
                         imagePositionLeftPx?: number | undefined;
