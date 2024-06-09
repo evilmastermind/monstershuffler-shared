@@ -13,6 +13,7 @@ exports.imageObject = zod_1.z.object({
     artistUrl: zod_1.z.string().optional(),
     canvasHeightPx: zod_1.z.number().optional(),
     canvasWidthPx: zod_1.z.number().optional(),
+    sheetWidthPx: zod_1.z.number().optional(),
     imageHeightPx: zod_1.z.number().optional(),
     imagePositionTopPx: zod_1.z.number().optional(),
     imagePositionLeftPx: zod_1.z.number().optional(),
