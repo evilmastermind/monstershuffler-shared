@@ -56,7 +56,7 @@ exports.attackObject = zod_1.z.object({
         weapons_1.weaponObject,
         choices_1.choiceRandomObject,
     ]).optional(),
-    enchantments: zod_1.z.array(exports.valueDiceObject).optional(),
+    enchantments: zod_1.z.array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject])).optional(),
 });
 exports.actionVariantObject = zod_1.z.object({
     name: zod_1.z.string(),

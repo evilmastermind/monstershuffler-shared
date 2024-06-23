@@ -408,7 +408,7 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             }>]>>;
-            enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 name: z.ZodString;
                 type: z.ZodOptional<z.ZodString>;
                 expression: z.ZodOptional<z.ZodString>;
@@ -463,7 +463,19 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }>, "many">>;
+            }>, z.ZodObject<{
+                name: z.ZodString;
+                type: z.ZodOptional<z.ZodString>;
+                expression: z.ZodString;
+            }, "strip", z.ZodTypeAny, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }>]>, "many">>;
         }, "strip", z.ZodTypeAny, {
             name: string;
             replaceName?: boolean | undefined;
@@ -503,7 +515,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -516,7 +532,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }, {
             name: string;
             replaceName?: boolean | undefined;
@@ -556,7 +572,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -569,7 +589,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
         tag: string;
@@ -658,7 +678,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -671,7 +695,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }, {
         tag: string;
@@ -760,7 +784,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -773,7 +801,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }>, z.ZodObject<{
         choice: z.ZodObject<{
@@ -1016,7 +1044,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1029,7 +1061,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -1138,7 +1170,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1151,7 +1187,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     id: number;
@@ -1270,7 +1306,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1283,7 +1323,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -1392,7 +1432,11 @@ export declare const getActionResponse: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1405,7 +1449,7 @@ export declare const getActionResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     id: number;
@@ -1741,7 +1785,7 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             }>]>>;
-            enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 name: z.ZodString;
                 type: z.ZodOptional<z.ZodString>;
                 expression: z.ZodOptional<z.ZodString>;
@@ -1796,7 +1840,19 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }>, "many">>;
+            }>, z.ZodObject<{
+                name: z.ZodString;
+                type: z.ZodOptional<z.ZodString>;
+                expression: z.ZodString;
+            }, "strip", z.ZodTypeAny, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }>]>, "many">>;
         }, "strip", z.ZodTypeAny, {
             name: string;
             replaceName?: boolean | undefined;
@@ -1836,7 +1892,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1849,7 +1909,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }, {
             name: string;
             replaceName?: boolean | undefined;
@@ -1889,7 +1949,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -1902,7 +1966,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
         tag: string;
@@ -1991,7 +2055,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2004,7 +2072,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }, {
         tag: string;
@@ -2093,7 +2161,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2106,7 +2178,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }>, z.ZodObject<{
         choice: z.ZodObject<{
@@ -2333,7 +2405,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2346,7 +2422,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -2455,7 +2531,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2468,7 +2548,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     name: string;
@@ -2585,7 +2665,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2598,7 +2682,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -2707,7 +2791,11 @@ export declare const postAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -2720,7 +2808,7 @@ export declare const postAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     name: string;
@@ -3053,7 +3141,7 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             }>]>>;
-            enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
                 name: z.ZodString;
                 type: z.ZodOptional<z.ZodString>;
                 expression: z.ZodOptional<z.ZodString>;
@@ -3108,7 +3196,19 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }>, "many">>;
+            }>, z.ZodObject<{
+                name: z.ZodString;
+                type: z.ZodOptional<z.ZodString>;
+                expression: z.ZodString;
+            }, "strip", z.ZodTypeAny, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }, {
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            }>]>, "many">>;
         }, "strip", z.ZodTypeAny, {
             name: string;
             replaceName?: boolean | undefined;
@@ -3148,7 +3248,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3161,7 +3265,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }, {
             name: string;
             replaceName?: boolean | undefined;
@@ -3201,7 +3305,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3214,7 +3322,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
         tag: string;
@@ -3303,7 +3411,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3316,7 +3428,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }, {
         tag: string;
@@ -3405,7 +3517,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3418,7 +3534,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }>, z.ZodObject<{
         choice: z.ZodObject<{
@@ -3645,7 +3761,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3658,7 +3778,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -3767,7 +3887,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3780,7 +3904,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     name: string;
@@ -3896,7 +4020,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -3909,7 +4037,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     }) & ({
         choice: {
@@ -4018,7 +4146,11 @@ export declare const putAction: z.ZodObject<{
                     }[] | undefined;
                 };
             } | undefined;
-            enchantments?: {
+            enchantments?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
                 name: string;
                 dice: {
                     dice: number;
@@ -4031,7 +4163,7 @@ export declare const putAction: z.ZodObject<{
                 };
                 type?: string | undefined;
                 expression?: string | undefined;
-            }[] | undefined;
+            })[] | undefined;
         }[] | undefined;
     } | undefined);
     name: string;

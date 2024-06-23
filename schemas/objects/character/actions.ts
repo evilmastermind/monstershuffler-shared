@@ -59,7 +59,7 @@ export const attackObject = z.object({
     weaponObject,
     choiceRandomObject,
   ]).optional(),
-  enchantments: z.array(valueDiceObject).optional(),
+  enchantments: z.array(z.union([valueDiceObject, valueExpressionObject])).optional(),
 });
 
 export const actionVariantObject = z.object({

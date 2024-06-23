@@ -474,7 +474,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -487,7 +491,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -1125,7 +1129,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -1138,7 +1146,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -1763,7 +1771,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -1776,7 +1788,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -2400,7 +2412,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -2413,7 +2429,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -3039,7 +3055,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -3052,7 +3072,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -3676,7 +3696,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -3689,7 +3713,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -4359,7 +4383,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -4372,7 +4400,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -5033,7 +5061,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -5046,7 +5078,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -6899,7 +6931,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -6912,7 +6948,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -7550,7 +7586,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -7563,7 +7603,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -8188,7 +8228,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -8201,7 +8245,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -8825,7 +8869,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -8838,7 +8886,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -9464,7 +9512,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -9477,7 +9529,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -10101,7 +10153,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -10114,7 +10170,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -10784,7 +10840,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -10797,7 +10857,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -11458,7 +11518,11 @@ export declare const getCharacterResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -11471,7 +11535,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -13329,7 +13393,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -13342,7 +13410,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -13980,7 +14048,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -13993,7 +14065,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -14618,7 +14690,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -14631,7 +14707,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -15255,7 +15331,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -15268,7 +15348,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -15894,7 +15974,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -15907,7 +15991,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -16531,7 +16615,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -16544,7 +16632,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -17214,7 +17302,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -17227,7 +17319,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -17888,7 +17980,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -17901,7 +17997,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -19755,7 +19851,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -19768,7 +19868,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -20406,7 +20506,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -20419,7 +20523,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -21044,7 +21148,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -21057,7 +21165,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -21681,7 +21789,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -21694,7 +21806,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -22320,7 +22432,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -22333,7 +22449,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -22957,7 +23073,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -22970,7 +23090,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -23640,7 +23760,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -23653,7 +23777,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -24314,7 +24438,11 @@ export declare const postCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -24327,7 +24455,7 @@ export declare const postCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -26186,7 +26314,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -26199,7 +26331,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -26837,7 +26969,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -26850,7 +26986,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -27475,7 +27611,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -27488,7 +27628,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -28112,7 +28252,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -28125,7 +28269,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -28751,7 +28895,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -28764,7 +28912,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -29388,7 +29536,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -29401,7 +29553,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -30071,7 +30223,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -30084,7 +30240,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -30745,7 +30901,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -30758,7 +30918,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -32612,7 +32772,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -32625,7 +32789,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -33263,7 +33427,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -33276,7 +33444,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -33901,7 +34069,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -33914,7 +34086,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -34538,7 +34710,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -34551,7 +34727,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -35177,7 +35353,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -35190,7 +35370,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -35814,7 +35994,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -35827,7 +36011,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -36497,7 +36681,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -36510,7 +36698,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -37171,7 +37359,11 @@ export declare const putCharacter: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: {
+                        enchantments?: ({
+                            name: string;
+                            expression: string;
+                            type?: string | undefined;
+                        } | {
                             name: string;
                             dice: {
                                 dice: number;
@@ -37184,7 +37376,7 @@ export declare const putCharacter: z.ZodObject<{
                             };
                             type?: string | undefined;
                             expression?: string | undefined;
-                        }[] | undefined;
+                        })[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
