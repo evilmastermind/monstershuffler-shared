@@ -475,9 +475,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -1126,9 +1126,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -1764,9 +1764,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -2401,9 +2401,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -3040,9 +3040,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -3677,9 +3677,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -4360,9 +4360,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -5034,9 +5034,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -6900,9 +6900,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -7551,9 +7551,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -8189,9 +8189,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -8826,9 +8826,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -9465,9 +9465,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -10102,9 +10102,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -10785,9 +10785,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -11459,9 +11459,9 @@ export declare const getCharacterResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -13330,9 +13330,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -13981,9 +13981,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -14619,9 +14619,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -15256,9 +15256,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -15895,9 +15895,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -16532,9 +16532,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -17215,9 +17215,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -17889,9 +17889,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -19756,9 +19756,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -20407,9 +20407,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -21045,9 +21045,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -21682,9 +21682,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -22321,9 +22321,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -22958,9 +22958,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -23641,9 +23641,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -24315,9 +24315,9 @@ export declare const postCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -26187,9 +26187,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -26838,9 +26838,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -27476,9 +27476,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -28113,9 +28113,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -28752,9 +28752,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -29389,9 +29389,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -30072,9 +30072,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -30746,9 +30746,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -32613,9 +32613,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -33264,9 +33264,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -33902,9 +33902,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -34539,9 +34539,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -35178,9 +35178,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -35815,9 +35815,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -36498,9 +36498,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -37172,9 +37172,9 @@ export declare const putCharacter: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;

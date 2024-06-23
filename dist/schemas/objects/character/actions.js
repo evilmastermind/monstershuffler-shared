@@ -40,7 +40,7 @@ exports.valueDiceObject = zod_1.z.object({
 exports.enchantmentObject = zod_1.z.object({
     name: zod_1.z.string().optional(),
     type: zod_1.z.string().optional(),
-    expression: zod_1.z.string(),
+    expression: zod_1.z.string().optional(),
     dice: exports.diceObject.optional(),
 });
 exports.valueIncrProgressionObject = zod_1.z.object({

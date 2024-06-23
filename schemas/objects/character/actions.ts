@@ -41,7 +41,7 @@ export const valueDiceObject = z.object({
 export const enchantmentObject = z.object({
   name: z.string().optional(),
   type: z.string().optional(),
-  expression: z.string(),
+  expression: z.string().optional(),
   dice: diceObject.optional(),
 });
 

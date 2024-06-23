@@ -499,9 +499,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -1150,9 +1150,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -1788,9 +1788,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -2425,9 +2425,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -3064,9 +3064,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -3701,9 +3701,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -4384,9 +4384,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -5058,9 +5058,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -6923,9 +6923,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -7574,9 +7574,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -8212,9 +8212,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -8849,9 +8849,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -9488,9 +9488,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -10125,9 +10125,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -10808,9 +10808,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -11482,9 +11482,9 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -13350,9 +13350,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -14001,9 +14001,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -14639,9 +14639,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -15276,9 +15276,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -15915,9 +15915,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -16552,9 +16552,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -17235,9 +17235,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -17909,9 +17909,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -19774,9 +19774,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -20425,9 +20425,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -21063,9 +21063,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -21700,9 +21700,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -22339,9 +22339,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -22976,9 +22976,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -23659,9 +23659,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;
@@ -24333,9 +24333,9 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                             };
                         } | undefined;
                         enchantments?: {
-                            expression: string;
                             name?: string | undefined;
                             type?: string | undefined;
+                            expression?: string | undefined;
                             dice?: {
                                 dice: number;
                                 sides: number;

@@ -1979,7 +1979,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
                 enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                     name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
+                    expression: z.ZodOptional<z.ZodString>;
                     dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
@@ -2006,9 +2006,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -2019,9 +2019,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                         unitInterval?: number | undefined;
                     } | undefined;
                 }, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -2072,9 +2072,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -2125,9 +2125,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -2227,9 +2227,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -2329,9 +2329,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -3660,9 +3660,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -4298,9 +4298,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -4938,9 +4938,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -5579,9 +5579,9 @@ export declare const getRacevariantResponse: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -7735,7 +7735,7 @@ export declare const postRacevariant: z.ZodObject<{
                 enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                     name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
+                    expression: z.ZodOptional<z.ZodString>;
                     dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
@@ -7762,9 +7762,9 @@ export declare const postRacevariant: z.ZodObject<{
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -7775,9 +7775,9 @@ export declare const postRacevariant: z.ZodObject<{
                         unitInterval?: number | undefined;
                     } | undefined;
                 }, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -7828,9 +7828,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -7881,9 +7881,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -7983,9 +7983,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -8085,9 +8085,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -9416,9 +9416,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -10054,9 +10054,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -10694,9 +10694,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -11336,9 +11336,9 @@ export declare const postRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13491,7 +13491,7 @@ export declare const putRacevariant: z.ZodObject<{
                 enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                     name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
+                    expression: z.ZodOptional<z.ZodString>;
                     dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
@@ -13518,9 +13518,9 @@ export declare const putRacevariant: z.ZodObject<{
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13531,9 +13531,9 @@ export declare const putRacevariant: z.ZodObject<{
                         unitInterval?: number | undefined;
                     } | undefined;
                 }, {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13584,9 +13584,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13637,9 +13637,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13739,9 +13739,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -13841,9 +13841,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -15172,9 +15172,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -15810,9 +15810,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -16450,9 +16450,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
@@ -17090,9 +17090,9 @@ export declare const putRacevariant: z.ZodObject<{
                     };
                 } | undefined;
                 enchantments?: {
-                    expression: string;
                     name?: string | undefined;
                     type?: string | undefined;
+                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
