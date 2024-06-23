@@ -498,13 +498,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -512,10 +510,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -1153,13 +1149,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -1167,10 +1161,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -1795,13 +1787,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -1809,10 +1799,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -2436,13 +2424,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -2450,10 +2436,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -3079,13 +3063,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -3093,10 +3075,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -3720,13 +3700,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -3734,10 +3712,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -4407,13 +4383,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -4421,10 +4395,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -5085,13 +5057,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -5099,10 +5069,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -6954,13 +6922,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -6968,10 +6934,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -7609,13 +7573,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -7623,10 +7585,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -8251,13 +8211,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -8265,10 +8223,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -8892,13 +8848,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -8906,10 +8860,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -9535,13 +9487,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -9549,10 +9499,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -10176,13 +10124,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -10190,10 +10136,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -10863,13 +10807,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -10877,10 +10819,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -11541,13 +11481,11 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -11555,10 +11493,8 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -13413,13 +13349,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -13427,10 +13361,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -14068,13 +14000,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -14082,10 +14012,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -14710,13 +14638,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -14724,10 +14650,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -15351,13 +15275,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -15365,10 +15287,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -15994,13 +15914,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -16008,10 +15926,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -16635,13 +16551,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -16649,10 +16563,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -17322,13 +17234,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -17336,10 +17246,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -18000,13 +17908,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -18014,10 +17920,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -19869,13 +19773,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -19883,10 +19785,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -20524,13 +20424,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -20538,10 +20436,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -21166,13 +21062,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -21180,10 +21074,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -21807,13 +21699,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -21821,10 +21711,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -22450,13 +22338,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -22464,10 +22350,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -23091,13 +22975,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -23105,10 +22987,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -23778,13 +23658,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -23792,10 +23670,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;
@@ -24456,13 +24332,11 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 }[] | undefined;
                             };
                         } | undefined;
-                        enchantments?: ({
-                            name: string;
+                        enchantments?: {
                             expression: string;
+                            name?: string | undefined;
                             type?: string | undefined;
-                        } | {
-                            name: string;
-                            dice: {
+                            dice?: {
                                 dice: number;
                                 sides: number;
                                 diceIncrement?: number | undefined;
@@ -24470,10 +24344,8 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                                 availableUntil?: number | undefined;
                                 availableUnit?: "level" | "cr" | undefined;
                                 unitInterval?: number | undefined;
-                            };
-                            type?: string | undefined;
-                            expression?: string | undefined;
-                        })[] | undefined;
+                            } | undefined;
+                        }[] | undefined;
                     }[] | undefined;
                 })[] | undefined;
                 canSpeak?: boolean | undefined;

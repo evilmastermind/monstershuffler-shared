@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
+exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.enchantmentObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
@@ -37,6 +37,12 @@ exports.valueDiceObject = zod_1.z.object({
     expression: zod_1.z.string().optional(),
     dice: exports.diceObject,
 });
+exports.enchantmentObject = zod_1.z.object({
+    name: zod_1.z.string().optional(),
+    type: zod_1.z.string().optional(),
+    expression: zod_1.z.string(),
+    dice: exports.diceObject.optional(),
+});
 exports.valueIncrProgressionObject = zod_1.z.object({
     name: zod_1.z.string(),
     type: zod_1.z.string().optional(),
@@ -56,7 +62,7 @@ exports.attackObject = zod_1.z.object({
         weapons_1.weaponObject,
         choices_1.choiceRandomObject,
     ]).optional(),
-    enchantments: zod_1.z.array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject])).optional(),
+    enchantments: zod_1.z.array(exports.enchantmentObject).optional(),
 });
 exports.actionVariantObject = zod_1.z.object({
     name: zod_1.z.string(),

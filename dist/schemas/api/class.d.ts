@@ -2034,11 +2034,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 }>]>>;
-                enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                    name: z.ZodString;
+                enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodOptional<z.ZodString>;
-                    dice: z.ZodObject<{
+                    expression: z.ZodString;
+                    dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
                         diceIncrement: z.ZodOptional<z.ZodNumber>;
@@ -2062,10 +2062,12 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    }>;
+                    }>>;
                 }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2073,12 +2075,12 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
+                    } | undefined;
                 }, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2086,22 +2088,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                }>, z.ZodObject<{
-                    name: z.ZodString;
-                    type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
-                }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }>]>, "many">>;
+                    } | undefined;
+                }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -2141,13 +2129,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2155,10 +2141,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -2198,13 +2182,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2212,10 +2194,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             tag: string;
@@ -2304,13 +2284,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2318,10 +2296,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }, {
             tag: string;
@@ -2410,13 +2386,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -2424,10 +2398,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -3742,13 +3714,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -3756,10 +3726,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -4381,13 +4349,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -4395,10 +4361,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -5023,13 +4987,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -5037,10 +4999,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -5665,13 +5625,11 @@ export declare const getClassResponse: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -5679,10 +5637,8 @@ export declare const getClassResponse: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -7819,11 +7775,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 }>]>>;
-                enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                    name: z.ZodString;
+                enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodOptional<z.ZodString>;
-                    dice: z.ZodObject<{
+                    expression: z.ZodString;
+                    dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
                         diceIncrement: z.ZodOptional<z.ZodNumber>;
@@ -7847,10 +7803,12 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    }>;
+                    }>>;
                 }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -7858,12 +7816,12 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
+                    } | undefined;
                 }, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -7871,22 +7829,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                }>, z.ZodObject<{
-                    name: z.ZodString;
-                    type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
-                }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }>]>, "many">>;
+                    } | undefined;
+                }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -7926,13 +7870,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -7940,10 +7882,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -7983,13 +7923,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -7997,10 +7935,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             tag: string;
@@ -8089,13 +8025,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -8103,10 +8037,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }, {
             tag: string;
@@ -8195,13 +8127,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -8209,10 +8139,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -9527,13 +9455,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -9541,10 +9467,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -10166,13 +10090,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -10180,10 +10102,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -10807,13 +10727,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -10821,10 +10739,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -11449,13 +11365,11 @@ export declare const postClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -11463,10 +11377,8 @@ export declare const postClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -13602,11 +13514,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 }>]>>;
-                enchantments: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
-                    name: z.ZodString;
+                enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    name: z.ZodOptional<z.ZodString>;
                     type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodOptional<z.ZodString>;
-                    dice: z.ZodObject<{
+                    expression: z.ZodString;
+                    dice: z.ZodOptional<z.ZodObject<{
                         dice: z.ZodNumber;
                         sides: z.ZodNumber;
                         diceIncrement: z.ZodOptional<z.ZodNumber>;
@@ -13630,10 +13542,12 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    }>;
+                    }>>;
                 }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13641,12 +13555,12 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
+                    } | undefined;
                 }, {
-                    name: string;
-                    dice: {
+                    expression: string;
+                    name?: string | undefined;
+                    type?: string | undefined;
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13654,22 +13568,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                }>, z.ZodObject<{
-                    name: z.ZodString;
-                    type: z.ZodOptional<z.ZodString>;
-                    expression: z.ZodString;
-                }, "strip", z.ZodTypeAny, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }, {
-                    name: string;
-                    expression: string;
-                    type?: string | undefined;
-                }>]>, "many">>;
+                    } | undefined;
+                }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -13709,13 +13609,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13723,10 +13621,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }, {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -13766,13 +13662,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13780,10 +13674,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
             tag: string;
@@ -13872,13 +13764,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13886,10 +13776,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }, {
             tag: string;
@@ -13978,13 +13866,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -13992,10 +13878,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -15310,13 +15194,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -15324,10 +15206,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -15949,13 +15829,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -15963,10 +15841,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -16591,13 +16467,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -16605,10 +16479,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
@@ -17233,13 +17105,11 @@ export declare const putClass: z.ZodObject<{
                         }[] | undefined;
                     };
                 } | undefined;
-                enchantments?: ({
-                    name: string;
+                enchantments?: {
                     expression: string;
+                    name?: string | undefined;
                     type?: string | undefined;
-                } | {
-                    name: string;
-                    dice: {
+                    dice?: {
                         dice: number;
                         sides: number;
                         diceIncrement?: number | undefined;
@@ -17247,10 +17117,8 @@ export declare const putClass: z.ZodObject<{
                         availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
                         unitInterval?: number | undefined;
-                    };
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                })[] | undefined;
+                    } | undefined;
+                }[] | undefined;
             }[] | undefined;
         })[] | undefined;
         canSpeak?: boolean | undefined;
