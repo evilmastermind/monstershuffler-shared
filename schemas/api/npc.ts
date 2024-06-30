@@ -24,12 +24,15 @@ export const postRandomNpcInput = z.object({
   pronounsChosen: pronounsObject.optional(),
 });
 
-export const postRandomNpcResponse = z.object({
-  npc: characterObject,
+export const npcDetailsObject = z.object({
+  id: z.string(),
+  object: characterObject,
 });
 
+export const postRandomNpcResponse = npcDetailsObject;
+
 export const postFourRandomNpcsResponse = z.object({
-  npcs: z.array(characterObject),
+  npcs: z.array(npcDetailsObject),
 });
 
 export const getGeneratorDataResponse = z.object({
