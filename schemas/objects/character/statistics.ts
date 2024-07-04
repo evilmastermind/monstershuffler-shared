@@ -172,6 +172,13 @@ export const statisticsObject = z.object({
   legendaryActionsMax: z.number().optional(),
   spellcasting: z.array(descriptionPartObject).optional(),
   spells: z.array(statStringArrayWithName).optional(),
+  // other
+  race: z.string().optional(),
+  class: z.string().optional(),
+  age: z.string().optional(),
+  personality: z.string().optional(),
+  voice: z.string().optional(),
+  bodyType: z.string().optional(),
 });
 
 /**
