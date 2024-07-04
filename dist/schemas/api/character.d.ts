@@ -6358,6 +6358,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -12783,6 +12789,12 @@ export declare const getCharacterResponse: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -19213,6 +19225,12 @@ export declare const postCharacter: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -25639,6 +25657,12 @@ export declare const postCharacter: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -32070,6 +32094,12 @@ export declare const putCharacter: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -38496,6 +38526,12 @@ export declare const putCharacter: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;

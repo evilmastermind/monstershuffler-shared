@@ -6383,6 +6383,12 @@ export declare const npcDetailsObject: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -12808,6 +12814,12 @@ export declare const npcDetailsObject: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -19237,6 +19249,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -25662,6 +25680,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
                 cost?: number | undefined;
                 charges?: number | undefined;
             }[] | undefined;
+            race?: string | undefined;
+            class?: string | undefined;
+            age?: string | undefined;
+            personality?: string | undefined;
+            voice?: string | undefined;
+            bodyType?: string | undefined;
         } | undefined;
         variables?: {
             STR: number;
@@ -32092,6 +32116,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     cost?: number | undefined;
                     charges?: number | undefined;
                 }[] | undefined;
+                race?: string | undefined;
+                class?: string | undefined;
+                age?: string | undefined;
+                personality?: string | undefined;
+                voice?: string | undefined;
+                bodyType?: string | undefined;
             } | undefined;
             variables?: {
                 STR: number;
@@ -38517,6 +38547,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     cost?: number | undefined;
                     charges?: number | undefined;
                 }[] | undefined;
+                race?: string | undefined;
+                class?: string | undefined;
+                age?: string | undefined;
+                personality?: string | undefined;
+                voice?: string | undefined;
+                bodyType?: string | undefined;
             } | undefined;
             variables?: {
                 STR: number;
@@ -44944,6 +44980,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     cost?: number | undefined;
                     charges?: number | undefined;
                 }[] | undefined;
+                race?: string | undefined;
+                class?: string | undefined;
+                age?: string | undefined;
+                personality?: string | undefined;
+                voice?: string | undefined;
+                bodyType?: string | undefined;
             } | undefined;
             variables?: {
                 STR: number;
@@ -51371,6 +51413,12 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                     cost?: number | undefined;
                     charges?: number | undefined;
                 }[] | undefined;
+                race?: string | undefined;
+                class?: string | undefined;
+                age?: string | undefined;
+                personality?: string | undefined;
+                voice?: string | undefined;
+                bodyType?: string | undefined;
             } | undefined;
             variables?: {
                 STR: number;

@@ -157,4 +157,11 @@ exports.statisticsObject = zod_1.z.object({
     legendaryActionsMax: zod_1.z.number().optional(),
     spellcasting: zod_1.z.array(exports.descriptionPartObject).optional(),
     spells: zod_1.z.array(exports.statStringArrayWithName).optional(),
+    // other
+    race: zod_1.z.string().optional(),
+    class: zod_1.z.string().optional(),
+    age: zod_1.z.string().optional(),
+    personality: zod_1.z.string().optional(),
+    voice: zod_1.z.string().optional(),
+    bodyType: zod_1.z.string().optional(),
 });

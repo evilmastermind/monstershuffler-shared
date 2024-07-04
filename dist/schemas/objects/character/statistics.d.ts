@@ -8725,6 +8725,12 @@ export declare const statisticsObject: z.ZodObject<{
         cost?: number | undefined;
         charges?: number | undefined;
     }>, "many">>;
+    race: z.ZodOptional<z.ZodString>;
+    class: z.ZodOptional<z.ZodString>;
+    age: z.ZodOptional<z.ZodString>;
+    personality: z.ZodOptional<z.ZodString>;
+    voice: z.ZodOptional<z.ZodString>;
+    bodyType: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -9726,6 +9732,12 @@ export declare const statisticsObject: z.ZodObject<{
         cost?: number | undefined;
         charges?: number | undefined;
     }[] | undefined;
+    race?: string | undefined;
+    class?: string | undefined;
+    age?: string | undefined;
+    personality?: string | undefined;
+    voice?: string | undefined;
+    bodyType?: string | undefined;
 }, {
     name: string;
     type: {
@@ -10727,6 +10739,12 @@ export declare const statisticsObject: z.ZodObject<{
         cost?: number | undefined;
         charges?: number | undefined;
     }[] | undefined;
+    race?: string | undefined;
+    class?: string | undefined;
+    age?: string | undefined;
+    personality?: string | undefined;
+    voice?: string | undefined;
+    bodyType?: string | undefined;
 }>;
 /**
  * 2024-01-28 Note on spells:
