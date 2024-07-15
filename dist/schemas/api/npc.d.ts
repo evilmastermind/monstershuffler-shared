@@ -53,6 +53,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
 }>;
 export declare const npcDetailsObject: z.ZodObject<{
     id: z.ZodString;
+    token: z.ZodString;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -6485,6 +6486,7 @@ export declare const npcDetailsObject: z.ZodObject<{
         } | undefined;
     };
     id: string;
+    token: string;
 }, {
     object: {
         character: {
@@ -12916,9 +12918,11 @@ export declare const npcDetailsObject: z.ZodObject<{
         } | undefined;
     };
     id: string;
+    token: string;
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{
     id: z.ZodString;
+    token: z.ZodString;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -19351,6 +19355,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
         } | undefined;
     };
     id: string;
+    token: string;
 }, {
     object: {
         character: {
@@ -25782,10 +25787,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
         } | undefined;
     };
     id: string;
+    token: string;
 }>;
 export declare const postFourRandomNpcsResponse: z.ZodObject<{
     npcs: z.ZodArray<z.ZodObject<{
         id: z.ZodString;
+        token: z.ZodString;
         object: import("../../schemas/objects/character/objects").CharacterObject;
     }, "strip", z.ZodTypeAny, {
         object: {
@@ -32218,6 +32225,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
         };
         id: string;
+        token: string;
     }, {
         object: {
             character: {
@@ -38649,6 +38657,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
         };
         id: string;
+        token: string;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     npcs: {
@@ -45082,6 +45091,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
         };
         id: string;
+        token: string;
     }[];
 }, {
     npcs: {
@@ -51515,6 +51525,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
             } | undefined;
         };
         id: string;
+        token: string;
     }[];
 }>;
 export declare const getGeneratorDataResponse: z.ZodObject<{

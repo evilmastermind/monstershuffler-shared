@@ -26,6 +26,7 @@ export const postRandomNpcInput = z.object({
 
 export const npcDetailsObject = z.object({
   id: z.string(),
+  token: z.string(),
   object: characterObject,
 });
 

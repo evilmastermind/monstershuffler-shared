@@ -27,6 +27,7 @@ exports.postRandomNpcInput = zod_1.z.object({
 });
 exports.npcDetailsObject = zod_1.z.object({
     id: zod_1.z.string(),
+    token: zod_1.z.string(),
     object: objects_1.characterObject,
 });
 exports.postRandomNpcResponse = exports.npcDetailsObject;
