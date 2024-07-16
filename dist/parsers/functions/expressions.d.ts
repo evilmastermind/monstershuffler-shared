@@ -1,4 +1,4 @@
-import type { Character } from "@/types";
+import type { Character } from "../../types";
 type Result<T, E = Error> = {
     ok: true;
     value: T;

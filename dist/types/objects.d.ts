@@ -1,53 +1,5 @@
 import { z } from 'zod';
-import {
-  abilitiesEnum,
-  abilitiesObject,
-  actionObject,
-  actionVariantObject,
-  alignmentEthical,
-  alignmentMoral,
-  armorObject,
-  attackObject,
-  backgroundObject,
-  bonusesObject,
-  bonusObject,
-  characterObject,
-  chosenActionObject,
-  descriptionPartObject,
-  enchantmentObject,
-  imageObject,
-  npcDetailsObject,
-  pageSettings,
-  parsedActionObject,
-  parsedDice,
-  parsedExpression,
-  raceObject,
-  resourcePartObject,
-  roll,
-  sensesObject,
-  speedsObject,
-  spellObject,
-  spellsObject,
-  spellGroupObject,
-  statisticsObject,
-  statObject,
-  statString,
-  statStringArray,
-  statStringArrayWithName,
-  statStringNumber,
-  statStringNumberArray,
-  statStringWithName,
-  tagsObject,
-  tokenObject,
-  userObject,
-  valueDiceObject,
-  valueExpressionObject,
-  valueIncrProgressionObject,
-  variablesObject,
-  variationsObject,
-  weaponObject,
-} from '@/schemas';
-
+import { abilitiesEnum, abilitiesObject, actionObject, actionVariantObject, alignmentEthical, alignmentMoral, armorObject, attackObject, backgroundObject, bonusesObject, bonusObject, characterObject, chosenActionObject, descriptionPartObject, enchantmentObject, imageObject, npcDetailsObject, pageSettings, parsedDice, parsedExpression, raceObject, roll, sensesObject, speedsObject, spellObject, spellsObject, spellGroupObject, statisticsObject, statObject, statString, statStringArray, statStringArrayWithName, statStringNumber, statStringNumberArray, tagsObject, tokenObject, userObject, valueDiceObject, valueExpressionObject, valueIncrProgressionObject, variablesObject, variationsObject, weaponObject } from '../schemas';
 export type Abilities = z.infer<typeof abilitiesObject>;
 export type AbilitiesEnum = z.infer<typeof abilitiesEnum>;
 export type Action = z.infer<typeof actionObject>;
@@ -67,12 +19,10 @@ export type Enchantment = z.infer<typeof enchantmentObject>;
 export type Image = z.infer<typeof imageObject>;
 export type NpcDetails = z.infer<typeof npcDetailsObject>;
 export type PageSettings = z.infer<typeof pageSettings>;
-export type ParsedAction = z.infer<typeof parsedActionObject>;
 export type ParsedDice = z.infer<typeof parsedDice>;
 export type ParsedExpression = z.infer<typeof parsedExpression>;
 export type Race = z.infer<typeof raceObject>;
 export type Roll = z.infer<typeof roll>;
-export type ResourcePart = z.infer<typeof resourcePartObject>;
 export type Senses = z.infer<typeof sensesObject>;
 export type Speeds = z.infer<typeof speedsObject>;
 export type Spell = z.infer<typeof spellObject>;
@@ -85,8 +35,6 @@ export type StatStringArray = z.infer<typeof statStringArray>;
 export type StatStringArrayWithName = z.infer<typeof statStringArrayWithName>;
 export type StatStringNumber = z.infer<typeof statStringNumber>;
 export type StatStringNumberArray = z.infer<typeof statStringNumberArray>;
-export type StatStringWithName = z.infer<typeof statStringWithName>;
-export type Subtypes = z.infer<typeof subtypesObject>;
 export type Tags = z.infer<typeof tagsObject>;
 export type Token = z.infer<typeof tokenObject>;
 export type ValueDice = z.infer<typeof valueDiceObject>;
@@ -95,12 +43,10 @@ export type ValueIncrProgression = z.infer<typeof valueIncrProgressionObject>;
 export type Variables = z.infer<typeof variablesObject>;
 export type Variations = z.infer<typeof variationsObject>;
 export type Weapon = z.infer<typeof weaponObject>;
-
 export type ParsedHTMLTags = 'p' | 'li' | 'ul' | 'span';
-
 export type PartsInHTMLTag = {
-  tag: ParsedHTMLTags;
-  parts: Parts;
+    tag: ParsedHTMLTags;
+    parts: Parts;
 };
-
 export type Parts = (PartsInHTMLTag | DescriptionPart)[];
+//# sourceMappingURL=objects.d.ts.map

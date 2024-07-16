@@ -1,4 +1,4 @@
-import type { Character, Bonus, DescriptionPart } from "@/types";
+import type { Character, Bonus, DescriptionPart } from "../../types";
 import { type Challenge } from "../../parsers/stats";
 export declare const objects: string[];
 export declare function createPart(string: string, type?: DescriptionPart["type"] | undefined, format?: DescriptionPart["format"], id?: number | undefined): {
