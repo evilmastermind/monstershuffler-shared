@@ -10757,5 +10757,4 @@ export declare const statisticsObject: z.ZodObject<{
  * We don't need to do it in descriptionPart, though. The groups' tag and the spells' id (or name) is
  * enough to be able to identify them
  * */
-export type Statistics = z.infer<typeof statisticsObject>;
 //# sourceMappingURL=statistics.d.ts.map

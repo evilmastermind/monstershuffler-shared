@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStats = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedsStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.bonusesObject = exports.legendaryActionsPerRoundStats = exports.bonusObject = exports.sensesObject = exports.speedsObject = void 0;
+exports.generatorStats = exports.namingStats = exports.pronounsStats = exports.sizeStatsObject = exports.HDStats = exports.armorStats = exports.typeAndSubtypesStats = exports.subtypesStats = exports.typeStats = exports.abilityScoresLimit = exports.abilityScoresStats = exports.speedsStats = exports.savingThrowsStats = exports.skillsStats = exports.spellsStats = exports.bonusesStats = exports.actionsStats = exports.sensesStats = exports.languagesStats = exports.publicationStats = exports.alignmentModifiersStats = exports.roleplayStats = exports.WeightObject = exports.AgeObject = exports.ages = exports.resistenceImmunitiesStats = exports.swarmStats = exports.pronounsObject = exports.CRAutomaticObject = exports.CRNPCObject = exports.CRTwoPointsObject = exports.bonusesObject = exports.legendaryActionsPerRoundStats = exports.bonusObject = exports.sensesObject = exports.speedsObject = void 0;
 const zod_1 = require("zod");
 const roleplay_1 = require("./roleplay");
 const armor_1 = require("./armor");
@@ -199,7 +199,7 @@ exports.armorStats = {
 exports.HDStats = {
     HD: zod_1.z.number().optional(),
 };
-exports.sizeStats = {
+exports.sizeStatsObject = {
     size: zod_1.z.number().optional(),
 };
 exports.pronounsStats = {

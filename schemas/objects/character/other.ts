@@ -208,7 +208,7 @@ export const armorStats = {
 export const HDStats = {
   HD: z.number().optional(),
 };
-export const sizeStats = {
+export const sizeStatsObject = {
   size: z.number().optional(),
 };
 export const pronounsStats = {

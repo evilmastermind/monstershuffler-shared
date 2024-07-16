@@ -21,9 +21,12 @@
   },
   "homepage": "https://github.com/evilmastermind/monstershuffler-shared#readme",
   "dependencies": {
+    "jspath": "^0.4.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/jspath": "^0.4.2",
+    "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",

@@ -4418,7 +4418,7 @@ export declare const armorStats: {
 export declare const HDStats: {
     HD: z.ZodOptional<z.ZodNumber>;
 };
-export declare const sizeStats: {
+export declare const sizeStatsObject: {
     size: z.ZodOptional<z.ZodNumber>;
 };
 export declare const pronounsStats: {

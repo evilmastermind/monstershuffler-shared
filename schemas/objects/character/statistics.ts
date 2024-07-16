@@ -192,4 +192,3 @@ export const statisticsObject = z.object({
  * We don't need to do it in descriptionPart, though. The groups' tag and the spells' id (or name) is
  * enough to be able to identify them
  * */ 
-export type Statistics = z.infer<typeof statisticsObject>;
