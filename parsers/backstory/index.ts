@@ -45,7 +45,7 @@ export function getAlignmentDescription(alignment: string) {
   }
 }
 
-export function getAlignmentDescriptionSimple(alignment: string) {
+export function getSimpleAlignmentDescription(alignment: string) {
   switch (alignment) {
     case "Lawful Good":
       return "good and honourable";
@@ -179,7 +179,7 @@ export function parseRoleplayStats(character: Character) {
     );
   }
   const age = `${s.age || "unspecified"}`;
-  const alignment = `${getAlignmentDescriptionSimple(s.alignment.string)}`;
+  const alignment = `${getSimpleAlignmentDescription(s.alignment.string)}`;
   const personality = s.personality || "";
   const voice = s.voice || "";
   return {

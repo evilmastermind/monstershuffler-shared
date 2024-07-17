@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getBackstory = exports.parseRoleplayStats = exports.getArchetypeDescription = exports.getAlignmentDescriptionSimple = exports.getAlignmentDescription = void 0;
+exports.getBackstory = exports.parseRoleplayStats = exports.getArchetypeDescription = exports.getSimpleAlignmentDescription = exports.getAlignmentDescription = void 0;
 const functions_1 = require("../functions");
 const functions_2 = require("../../functions");
 function getAlignmentDescription(alignment) {
@@ -46,7 +46,7 @@ function getAlignmentDescription(alignment) {
     }
 }
 exports.getAlignmentDescription = getAlignmentDescription;
-function getAlignmentDescriptionSimple(alignment) {
+function getSimpleAlignmentDescription(alignment) {
     switch (alignment) {
         case "Lawful Good":
             return "good and honourable";
@@ -88,7 +88,7 @@ function getAlignmentDescriptionSimple(alignment) {
             return "";
     }
 }
-exports.getAlignmentDescriptionSimple = getAlignmentDescriptionSimple;
+exports.getSimpleAlignmentDescription = getSimpleAlignmentDescription;
 function getArchetypeDescription(archetype) {
     switch (archetype) {
         case "Beast":
@@ -180,7 +180,7 @@ function parseRoleplayStats(character) {
         professionDetails = getArchetypeDescription(character.character.classvariant?.name);
     }
     const age = `${s.age || "unspecified"}`;
-    const alignment = `${getAlignmentDescriptionSimple(s.alignment.string)}`;
+    const alignment = `${getSimpleAlignmentDescription(s.alignment.string)}`;
     const personality = s.personality || "";
     const voice = s.voice || "";
     return {
