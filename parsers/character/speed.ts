@@ -84,7 +84,11 @@ export function calculateSpeed(character: Character) {
     // ) {
     //   continue;
     // }
-    v[speed.toUpperCase() as "FLY"] = speeds[speed as Speeds];
+    if (speed === "walk") {
+      v.SPEED = speeds[speed as Speeds];
+    } else {
+      v[speed.toUpperCase() as "FLY"] = speeds[speed as Speeds];
+    }
   }
 
   s.speeds.string = s.speeds.array.reduce((acc, obj) => acc + obj.string, "");
