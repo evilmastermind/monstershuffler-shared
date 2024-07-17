@@ -70,8 +70,8 @@ export function calculateLanguages(character: Character) {
       number: s.telepathy,
       type: "ft",
     });
-    v.TELEPATHY = s.telepathy;
   }
+  v.TELEPATHY = s.telepathy || 0;
 
   if (!s.languages.array!.length) {
     s.languages.array!.push(createPart("—"));
