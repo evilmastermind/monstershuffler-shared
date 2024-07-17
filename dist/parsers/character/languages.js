@@ -57,8 +57,8 @@ function calculateLanguages(character) {
             number: s.telepathy,
             type: "ft",
         });
-        v.TELEPATHY = s.telepathy;
     }
+    v.TELEPATHY = s.telepathy || 0;
     if (!s.languages.array.length) {
         s.languages.array.push((0, functions_1.createPart)("—"));
     }
