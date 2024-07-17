@@ -77,12 +77,13 @@ export function calculateSpeed(character: Character) {
     speeds[type as Speeds] = speedNumber;
   }
   for (const speed in speeds) {
-    if (
-      !Object.hasOwn(speeds, speed) ||
-      speeds[speed as Speeds] === undefined
-    ) {
-      continue;
-    }
+    // 2024-07-17: variables object expects all speeds defined
+    // if (
+    //   !Object.hasOwn(speeds, speed) ||
+    //   speeds[speed as Speeds] === undefined
+    // ) {
+    //   continue;
+    // }
     v[speed.toUpperCase() as "FLY"] = speeds[speed as Speeds];
   }
 

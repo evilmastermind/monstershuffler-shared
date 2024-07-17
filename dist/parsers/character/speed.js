@@ -62,10 +62,13 @@ function calculateSpeed(character) {
         speeds[type] = speedNumber;
     }
     for (const speed in speeds) {
-        if (!Object.hasOwn(speeds, speed) ||
-            speeds[speed] === undefined) {
-            continue;
-        }
+        // 2024-07-17: variables object expects all speeds defined
+        // if (
+        //   !Object.hasOwn(speeds, speed) ||
+        //   speeds[speed as Speeds] === undefined
+        // ) {
+        //   continue;
+        // }
         v[speed.toUpperCase()] = speeds[speed];
     }
     s.speeds.string = s.speeds.array.reduce((acc, obj) => acc + obj.string, "");
