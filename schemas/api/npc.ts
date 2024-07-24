@@ -1,9 +1,11 @@
 import { z } from 'zod';
 import { characterObject } from '@/schemas/objects/character/objects';
 import { pronounsObject } from '@/schemas/objects/character/other';
+import { alignmentEthical, alignmentMoral } from '@/schemas';
 import { id, objectWithVariantsList, objectList } from './object';
 
 export const postRandomNpcInput = z.object({
+  sessionId: z.string().optional(),
   levelType: z.enum(['random', 'randomPeasantsMostly']).optional(),
   classType: z
     .enum(['none', 'randomSometimes', 'randomAlways', 'specific'])
@@ -22,11 +24,13 @@ export const postRandomNpcInput = z.object({
   includeChildren: z.boolean().optional(),
   includeBodyType: z.boolean().optional(),
   pronounsChosen: pronounsObject.optional(),
+  alignmentEthicalChosen: alignmentEthical.optional(),
+  alignmentMoralChosen: alignmentMoral.optional(),
+  CRChosen: z.number().optional(),
 });
 
 export const npcDetailsObject = z.object({
-  id: z.string(),
-  token: z.string(),
+  id: z.number(),
   object: characterObject,
 });
 

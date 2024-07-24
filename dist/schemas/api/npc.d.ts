@@ -1,5 +1,6 @@
 import { z } from 'zod';
 export declare const postRandomNpcInput: z.ZodObject<{
+    sessionId: z.ZodOptional<z.ZodString>;
     levelType: z.ZodOptional<z.ZodEnum<["random", "randomPeasantsMostly"]>>;
     classType: z.ZodOptional<z.ZodEnum<["none", "randomSometimes", "randomAlways", "specific"]>>;
     backgroundType: z.ZodOptional<z.ZodEnum<["none", "random", "specific"]>>;
@@ -16,7 +17,11 @@ export declare const postRandomNpcInput: z.ZodObject<{
     includeChildren: z.ZodOptional<z.ZodBoolean>;
     includeBodyType: z.ZodOptional<z.ZodBoolean>;
     pronounsChosen: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
+    alignmentEthicalChosen: z.ZodOptional<z.ZodEnum<["Lawful", "Neutral", "Chaotic", "Any", "Unaligned"]>>;
+    alignmentMoralChosen: z.ZodOptional<z.ZodEnum<["Good", "Neutral", "Evil", "Any"]>>;
+    CRChosen: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
+    sessionId?: string | undefined;
     levelType?: "random" | "randomPeasantsMostly" | undefined;
     classType?: "none" | "randomSometimes" | "randomAlways" | "specific" | undefined;
     backgroundType?: "random" | "none" | "specific" | undefined;
@@ -33,7 +38,11 @@ export declare const postRandomNpcInput: z.ZodObject<{
     includeChildren?: boolean | undefined;
     includeBodyType?: boolean | undefined;
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
+    alignmentEthicalChosen?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
+    alignmentMoralChosen?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
+    CRChosen?: number | undefined;
 }, {
+    sessionId?: string | undefined;
     levelType?: "random" | "randomPeasantsMostly" | undefined;
     classType?: "none" | "randomSometimes" | "randomAlways" | "specific" | undefined;
     backgroundType?: "random" | "none" | "specific" | undefined;
@@ -50,11 +59,13 @@ export declare const postRandomNpcInput: z.ZodObject<{
     includeChildren?: boolean | undefined;
     includeBodyType?: boolean | undefined;
     pronounsChosen?: "male" | "female" | "neutral" | "thing" | undefined;
+    alignmentEthicalChosen?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
+    alignmentMoralChosen?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
+    CRChosen?: number | undefined;
 }>;
 export declare const npcDetailsObject: z.ZodObject<{
-    id: z.ZodString;
-    token: z.ZodString;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    id: z.ZodNumber;
+    object: import("../../schemas").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -6485,8 +6496,7 @@ export declare const npcDetailsObject: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    id: string;
-    token: string;
+    id: number;
 }, {
     object: {
         character: {
@@ -12917,13 +12927,11 @@ export declare const npcDetailsObject: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    id: string;
-    token: string;
+    id: number;
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{
-    id: z.ZodString;
-    token: z.ZodString;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    id: z.ZodNumber;
+    object: import("../../schemas").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -19354,8 +19362,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    id: string;
-    token: string;
+    id: number;
 }, {
     object: {
         character: {
@@ -25786,14 +25793,12 @@ export declare const postRandomNpcResponse: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    id: string;
-    token: string;
+    id: number;
 }>;
 export declare const postFourRandomNpcsResponse: z.ZodObject<{
     npcs: z.ZodArray<z.ZodObject<{
-        id: z.ZodString;
-        token: z.ZodString;
-        object: import("../../schemas/objects/character/objects").CharacterObject;
+        id: z.ZodNumber;
+        object: import("../../schemas").CharacterObject;
     }, "strip", z.ZodTypeAny, {
         object: {
             character: {
@@ -32224,8 +32229,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 currentHD?: number | undefined;
             } | undefined;
         };
-        id: string;
-        token: string;
+        id: number;
     }, {
         object: {
             character: {
@@ -38656,8 +38660,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 currentHD?: number | undefined;
             } | undefined;
         };
-        id: string;
-        token: string;
+        id: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     npcs: {
@@ -45090,8 +45093,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 currentHD?: number | undefined;
             } | undefined;
         };
-        id: string;
-        token: string;
+        id: number;
     }[];
 }, {
     npcs: {
@@ -51524,8 +51526,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
                 currentHD?: number | undefined;
             } | undefined;
         };
-        id: string;
-        token: string;
+        id: number;
     }[];
 }>;
 export declare const getGeneratorDataResponse: z.ZodObject<{
