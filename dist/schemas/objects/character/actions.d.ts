@@ -203,6 +203,7 @@ export declare const attackObject: z.ZodObject<{
     name: z.ZodString;
     replaceName: z.ZodOptional<z.ZodBoolean>;
     attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
         cost: z.ZodOptional<z.ZodString>;
         weight: z.ZodOptional<z.ZodString>;
@@ -218,6 +219,7 @@ export declare const attackObject: z.ZodObject<{
         targets: z.ZodOptional<z.ZodString>;
         properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -233,6 +235,7 @@ export declare const attackObject: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     }, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -424,6 +427,7 @@ export declare const attackObject: z.ZodObject<{
     name: string;
     replaceName?: boolean | undefined;
     attributes?: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -477,6 +481,7 @@ export declare const attackObject: z.ZodObject<{
     name: string;
     replaceName?: boolean | undefined;
     attributes?: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -556,6 +561,7 @@ export declare const actionVariantObject: z.ZodObject<{
     cost?: string | undefined;
 }>;
 export declare const chosenActionObject: z.ZodObject<{
+    id: z.ZodOptional<z.ZodNumber>;
     tag: z.ZodString;
     priority: z.ZodOptional<z.ZodNumber>;
     variants: z.ZodArray<z.ZodObject<{
@@ -711,6 +717,7 @@ export declare const chosenActionObject: z.ZodObject<{
         name: z.ZodString;
         replaceName: z.ZodOptional<z.ZodBoolean>;
         attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+            id: z.ZodOptional<z.ZodNumber>;
             name: z.ZodOptional<z.ZodString>;
             cost: z.ZodOptional<z.ZodString>;
             weight: z.ZodOptional<z.ZodString>;
@@ -726,6 +733,7 @@ export declare const chosenActionObject: z.ZodObject<{
             targets: z.ZodOptional<z.ZodString>;
             properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         }, "strip", z.ZodTypeAny, {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -741,6 +749,7 @@ export declare const chosenActionObject: z.ZodObject<{
             targets?: string | undefined;
             properties?: string[] | undefined;
         }, {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -932,6 +941,7 @@ export declare const chosenActionObject: z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -985,6 +995,7 @@ export declare const chosenActionObject: z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1047,6 +1058,7 @@ export declare const chosenActionObject: z.ZodObject<{
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         cost?: string | undefined;
     }[];
+    id?: number | undefined;
     priority?: number | undefined;
     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
     availableUnit?: "level" | "cr" | undefined;
@@ -1087,6 +1099,7 @@ export declare const chosenActionObject: z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1149,6 +1162,7 @@ export declare const chosenActionObject: z.ZodObject<{
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         cost?: string | undefined;
     }[];
+    id?: number | undefined;
     priority?: number | undefined;
     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
     availableUnit?: "level" | "cr" | undefined;
@@ -1189,6 +1203,7 @@ export declare const chosenActionObject: z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1241,6 +1256,7 @@ export declare const chosenActionObject: z.ZodObject<{
     }[] | undefined;
 }>;
 export declare const actionObject: z.ZodUnion<[z.ZodObject<{
+    id: z.ZodOptional<z.ZodNumber>;
     tag: z.ZodString;
     priority: z.ZodOptional<z.ZodNumber>;
     variants: z.ZodArray<z.ZodObject<{
@@ -1396,6 +1412,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
         replaceName: z.ZodOptional<z.ZodBoolean>;
         attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+            id: z.ZodOptional<z.ZodNumber>;
             name: z.ZodOptional<z.ZodString>;
             cost: z.ZodOptional<z.ZodString>;
             weight: z.ZodOptional<z.ZodString>;
@@ -1411,6 +1428,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             targets: z.ZodOptional<z.ZodString>;
             properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         }, "strip", z.ZodTypeAny, {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1426,6 +1444,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             targets?: string | undefined;
             properties?: string[] | undefined;
         }, {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1617,6 +1636,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1670,6 +1690,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1732,6 +1753,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         cost?: string | undefined;
     }[];
+    id?: number | undefined;
     priority?: number | undefined;
     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
     availableUnit?: "level" | "cr" | undefined;
@@ -1772,6 +1794,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;
@@ -1834,6 +1857,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
         cost?: string | undefined;
     }[];
+    id?: number | undefined;
     priority?: number | undefined;
     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
     availableUnit?: "level" | "cr" | undefined;
@@ -1874,6 +1898,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         name: string;
         replaceName?: boolean | undefined;
         attributes?: {
+            id?: number | undefined;
             name?: string | undefined;
             cost?: string | undefined;
             weight?: string | undefined;

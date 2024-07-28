@@ -1,6 +1,7 @@
 import { z } from 'zod';
 
 export const weaponObject = z.object({
+  id: z.number().optional(),
   name: z.string().optional(),
   cost: z.string().optional(),
   weight: z.string().optional(),

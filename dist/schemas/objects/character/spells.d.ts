@@ -999,6 +999,7 @@ export declare const spellsObject: z.ZodObject<{
     }[] | undefined;
 }>;
 export declare const spellObject: z.ZodObject<{
+    id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
     level: z.ZodNumber;
     range: z.ZodString;
@@ -1022,6 +1023,7 @@ export declare const spellObject: z.ZodObject<{
     duration: string;
     components: string;
     castingTime: string;
+    id?: number | undefined;
 }, {
     name: string;
     range: string;
@@ -1034,5 +1036,6 @@ export declare const spellObject: z.ZodObject<{
     duration: string;
     components: string;
     castingTime: string;
+    id?: number | undefined;
 }>;
 //# sourceMappingURL=spells.d.ts.map

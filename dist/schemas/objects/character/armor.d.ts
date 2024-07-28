@@ -1,6 +1,7 @@
 import { z } from 'zod';
 export declare const armorTypes: z.ZodEnum<["light", "medium", "heavy"]>;
 export declare const armorObject: z.ZodObject<{
+    id: z.ZodOptional<z.ZodNumber>;
     AC: z.ZodString;
     name: z.ZodString;
     isAutomaticCalcDisabled: z.ZodOptional<z.ZodBoolean>;
@@ -13,6 +14,7 @@ export declare const armorObject: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     name: string;
     AC: string;
+    id?: number | undefined;
     isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;
@@ -23,6 +25,7 @@ export declare const armorObject: z.ZodObject<{
 }, {
     name: string;
     AC: string;
+    id?: number | undefined;
     isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;

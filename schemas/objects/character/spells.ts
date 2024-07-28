@@ -30,6 +30,7 @@ export const spellsObject = z.object({
 
 export const spellObject = z
   .object({
+    id: z.number().optional(),
     name: z.string().min(2),
     level: z.number(),
     range: z.string(),

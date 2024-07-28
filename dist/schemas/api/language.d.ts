@@ -15,13 +15,13 @@ export declare const getLanguageResponse: z.ZodObject<{
     name: z.ZodString;
     script: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
     script: string;
 }, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
     script: string;
 }>;
@@ -42,27 +42,27 @@ export declare const getLanguageListResponse: z.ZodObject<{
         name: z.ZodString;
         script: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
         script: string;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
         script: string;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
         script: string;
     }[];
 }, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
         script: string;
     }[];

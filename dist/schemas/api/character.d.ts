@@ -5,24 +5,24 @@ export declare const getCharacterListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }>;
@@ -399,6 +399,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -439,6 +440,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -656,6 +658,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -1050,6 +1053,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -1090,6 +1094,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -1314,6 +1319,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -1688,6 +1694,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -1728,6 +1735,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -1951,6 +1959,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -2325,6 +2334,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -2365,6 +2375,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -2588,6 +2599,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -2964,6 +2976,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -3004,6 +3017,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -3229,6 +3243,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -3601,6 +3616,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -3641,6 +3657,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -3884,6 +3901,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -4284,6 +4302,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -4324,6 +4343,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -4559,6 +4579,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -4958,6 +4979,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -4998,6 +5020,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -5233,6 +5256,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -6830,6 +6854,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -6870,6 +6895,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -7087,6 +7113,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -7481,6 +7508,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -7521,6 +7549,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -7745,6 +7774,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -8119,6 +8149,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -8159,6 +8190,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -8382,6 +8414,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -8756,6 +8789,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -8796,6 +8830,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -9019,6 +9054,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -9395,6 +9431,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -9435,6 +9472,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -9660,6 +9698,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -10032,6 +10071,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -10072,6 +10112,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -10315,6 +10356,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -10715,6 +10757,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -10755,6 +10798,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -10990,6 +11034,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -11389,6 +11434,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -11429,6 +11475,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -11664,6 +11711,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -13266,6 +13314,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -13306,6 +13355,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -13523,6 +13573,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -13917,6 +13968,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -13957,6 +14009,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -14181,6 +14234,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -14555,6 +14609,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -14595,6 +14650,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -14818,6 +14874,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -15192,6 +15249,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -15232,6 +15290,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -15455,6 +15514,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -15831,6 +15891,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -15871,6 +15932,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -16096,6 +16158,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -16468,6 +16531,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -16508,6 +16572,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -16751,6 +16816,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -17151,6 +17217,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -17191,6 +17258,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -17426,6 +17494,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -17825,6 +17894,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -17865,6 +17935,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -18100,6 +18171,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -19698,6 +19770,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -19738,6 +19811,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -19955,6 +20029,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -20349,6 +20424,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -20389,6 +20465,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -20613,6 +20690,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -20987,6 +21065,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -21027,6 +21106,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -21250,6 +21330,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -21624,6 +21705,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -21664,6 +21746,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -21887,6 +21970,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -22263,6 +22347,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -22303,6 +22388,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -22528,6 +22614,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -22900,6 +22987,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -22940,6 +23028,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -23183,6 +23272,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -23583,6 +23673,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -23623,6 +23714,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -23858,6 +23950,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -24257,6 +24350,7 @@ export declare const postCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -24297,6 +24391,7 @@ export declare const postCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -24532,6 +24627,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -26135,6 +26231,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -26175,6 +26272,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -26392,6 +26490,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -26786,6 +26885,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -26826,6 +26926,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -27050,6 +27151,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -27424,6 +27526,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -27464,6 +27567,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -27687,6 +27791,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -28061,6 +28166,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -28101,6 +28207,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -28324,6 +28431,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -28700,6 +28808,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -28740,6 +28849,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -28965,6 +29075,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -29337,6 +29448,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -29377,6 +29489,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -29620,6 +29733,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -30020,6 +30134,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -30060,6 +30175,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -30295,6 +30411,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -30694,6 +30811,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -30734,6 +30852,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -30969,6 +31088,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -32567,6 +32687,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -32607,6 +32728,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -32824,6 +32946,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -33218,6 +33341,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -33258,6 +33382,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -33482,6 +33607,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -33856,6 +33982,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -33896,6 +34023,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -34119,6 +34247,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -34493,6 +34622,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -34533,6 +34663,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -34756,6 +34887,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -35132,6 +35264,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -35172,6 +35305,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -35397,6 +35531,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -35769,6 +35904,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -35809,6 +35945,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -36052,6 +36189,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -36452,6 +36590,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -36492,6 +36631,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -36727,6 +36867,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;
@@ -37126,6 +37267,7 @@ export declare const putCharacter: z.ZodObject<{
                         ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
                         cost?: string | undefined;
                     }[];
+                    id?: number | undefined;
                     priority?: number | undefined;
                     actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
                     availableUnit?: "level" | "cr" | undefined;
@@ -37166,6 +37308,7 @@ export declare const putCharacter: z.ZodObject<{
                         name: string;
                         replaceName?: boolean | undefined;
                         attributes?: {
+                            id?: number | undefined;
                             name?: string | undefined;
                             cost?: string | undefined;
                             weight?: string | undefined;
@@ -37401,6 +37544,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | {
                     name: string;
                     AC: string;
+                    id?: number | undefined;
                     isAutomaticCalcDisabled?: boolean | undefined;
                     cost?: string | undefined;
                     type?: "light" | "medium" | "heavy" | undefined;

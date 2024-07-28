@@ -1,5 +1,6 @@
 import { z } from 'zod';
 export declare const weaponObject: z.ZodObject<{
+    id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodOptional<z.ZodString>;
     cost: z.ZodOptional<z.ZodString>;
     weight: z.ZodOptional<z.ZodString>;
@@ -15,6 +16,7 @@ export declare const weaponObject: z.ZodObject<{
     targets: z.ZodOptional<z.ZodString>;
     properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
 }, "strip", z.ZodTypeAny, {
+    id?: number | undefined;
     name?: string | undefined;
     cost?: string | undefined;
     weight?: string | undefined;
@@ -30,6 +32,7 @@ export declare const weaponObject: z.ZodObject<{
     targets?: string | undefined;
     properties?: string[] | undefined;
 }, {
+    id?: number | undefined;
     name?: string | undefined;
     cost?: string | undefined;
     weight?: string | undefined;

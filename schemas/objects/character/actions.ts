@@ -79,6 +79,7 @@ export const actionVariantObject = z.object({
   cost: z.string().optional(),
 });
 export const chosenActionObject = z.object({
+  id: z.number().optional(),
   tag: z.string(),
   priority: z.number().optional(),
   variants: z.array(actionVariantObject),

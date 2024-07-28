@@ -8,12 +8,12 @@ export declare const objectList: z.ZodArray<z.ZodObject<{
     userid: z.ZodNumber;
     name: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
 }, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
 }>, "many">;
 export declare const objectWithVariantsList: z.ZodArray<z.ZodObject<{
@@ -25,30 +25,30 @@ export declare const objectWithVariantsList: z.ZodArray<z.ZodObject<{
         name: z.ZodString;
         userid: z.ZodNumber;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
     other_objects: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }, {
-    name: string;
     id: number;
+    name: string;
     userid: number;
     other_objects: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }>, "many">;

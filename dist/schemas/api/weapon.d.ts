@@ -2,6 +2,7 @@ import { z } from 'zod';
 export declare const postWeapon: z.ZodObject<{
     game: z.ZodNumber;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
         cost: z.ZodOptional<z.ZodString>;
         weight: z.ZodOptional<z.ZodString>;
@@ -17,6 +18,7 @@ export declare const postWeapon: z.ZodObject<{
         targets: z.ZodOptional<z.ZodString>;
         properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -32,6 +34,7 @@ export declare const postWeapon: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     }, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -49,6 +52,7 @@ export declare const postWeapon: z.ZodObject<{
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -67,6 +71,7 @@ export declare const postWeapon: z.ZodObject<{
     game: number;
 }, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -86,6 +91,7 @@ export declare const postWeapon: z.ZodObject<{
 }>;
 export declare const putWeapon: z.ZodObject<{
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
         cost: z.ZodOptional<z.ZodString>;
         weight: z.ZodOptional<z.ZodString>;
@@ -101,6 +107,7 @@ export declare const putWeapon: z.ZodObject<{
         targets: z.ZodOptional<z.ZodString>;
         properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -116,6 +123,7 @@ export declare const putWeapon: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     }, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -133,6 +141,7 @@ export declare const putWeapon: z.ZodObject<{
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -150,6 +159,7 @@ export declare const putWeapon: z.ZodObject<{
     };
 }, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -175,6 +185,7 @@ export declare const getWeaponParams: z.ZodObject<{
 }>;
 export declare const getWeaponResponse: z.ZodObject<{
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
         cost: z.ZodOptional<z.ZodString>;
         weight: z.ZodOptional<z.ZodString>;
@@ -190,6 +201,7 @@ export declare const getWeaponResponse: z.ZodObject<{
         targets: z.ZodOptional<z.ZodString>;
         properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     }, "strip", z.ZodTypeAny, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -205,6 +217,7 @@ export declare const getWeaponResponse: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     }, {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -222,6 +235,7 @@ export declare const getWeaponResponse: z.ZodObject<{
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -239,6 +253,7 @@ export declare const getWeaponResponse: z.ZodObject<{
     };
 }, {
     object: {
+        id?: number | undefined;
         name?: string | undefined;
         cost?: string | undefined;
         weight?: string | undefined;
@@ -261,24 +276,24 @@ export declare const getWeaponListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }>;

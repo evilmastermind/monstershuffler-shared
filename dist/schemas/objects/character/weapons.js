@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.weaponObject = void 0;
 const zod_1 = require("zod");
 exports.weaponObject = zod_1.z.object({
+    id: zod_1.z.number().optional(),
     name: zod_1.z.string().optional(),
     cost: zod_1.z.string().optional(),
     weight: zod_1.z.string().optional(),

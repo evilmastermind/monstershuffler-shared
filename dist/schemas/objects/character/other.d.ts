@@ -1506,6 +1506,7 @@ export declare const sensesStats: {
 };
 export declare const actionsStats: {
     actions: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         tag: z.ZodString;
         priority: z.ZodOptional<z.ZodNumber>;
         variants: z.ZodArray<z.ZodObject<{
@@ -1661,6 +1662,7 @@ export declare const actionsStats: {
             name: z.ZodString;
             replaceName: z.ZodOptional<z.ZodBoolean>;
             attributes: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+                id: z.ZodOptional<z.ZodNumber>;
                 name: z.ZodOptional<z.ZodString>;
                 cost: z.ZodOptional<z.ZodString>;
                 weight: z.ZodOptional<z.ZodString>;
@@ -1676,6 +1678,7 @@ export declare const actionsStats: {
                 targets: z.ZodOptional<z.ZodString>;
                 properties: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
             }, "strip", z.ZodTypeAny, {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -1691,6 +1694,7 @@ export declare const actionsStats: {
                 targets?: string | undefined;
                 properties?: string[] | undefined;
             }, {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -1882,6 +1886,7 @@ export declare const actionsStats: {
             name: string;
             replaceName?: boolean | undefined;
             attributes?: {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -1935,6 +1940,7 @@ export declare const actionsStats: {
             name: string;
             replaceName?: boolean | undefined;
             attributes?: {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -1997,6 +2003,7 @@ export declare const actionsStats: {
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
         }[];
+        id?: number | undefined;
         priority?: number | undefined;
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -2037,6 +2044,7 @@ export declare const actionsStats: {
             name: string;
             replaceName?: boolean | undefined;
             attributes?: {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -2099,6 +2107,7 @@ export declare const actionsStats: {
             ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             cost?: string | undefined;
         }[];
+        id?: number | undefined;
         priority?: number | undefined;
         actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
         availableUnit?: "level" | "cr" | undefined;
@@ -2139,6 +2148,7 @@ export declare const actionsStats: {
             name: string;
             replaceName?: boolean | undefined;
             attributes?: {
+                id?: number | undefined;
                 name?: string | undefined;
                 cost?: string | undefined;
                 weight?: string | undefined;
@@ -4268,6 +4278,7 @@ export declare const typeAndSubtypesStats: {
 };
 export declare const armorStats: {
     armor: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         AC: z.ZodString;
         name: z.ZodString;
         isAutomaticCalcDisabled: z.ZodOptional<z.ZodBoolean>;
@@ -4280,6 +4291,7 @@ export declare const armorStats: {
     }, "strip", z.ZodTypeAny, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -4290,6 +4302,7 @@ export declare const armorStats: {
     }, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;

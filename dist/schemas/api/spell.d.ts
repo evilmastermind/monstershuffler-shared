@@ -45,24 +45,24 @@ export declare const getSpellListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }>;
@@ -70,6 +70,7 @@ export declare const getSpellResponse: z.ZodObject<{
     id: z.ZodNumber;
     userid: z.ZodNumber;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
         level: z.ZodNumber;
         range: z.ZodString;
@@ -93,6 +94,7 @@ export declare const getSpellResponse: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }, {
         name: string;
         range: string;
@@ -105,6 +107,7 @@ export declare const getSpellResponse: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -119,6 +122,7 @@ export declare const getSpellResponse: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     id: number;
     userid: number;
@@ -135,6 +139,7 @@ export declare const getSpellResponse: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     id: number;
     userid: number;
@@ -143,6 +148,7 @@ export declare const postSpell: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
         level: z.ZodNumber;
         range: z.ZodString;
@@ -166,6 +172,7 @@ export declare const postSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }, {
         name: string;
         range: string;
@@ -178,6 +185,7 @@ export declare const postSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -192,6 +200,7 @@ export declare const postSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     name: string;
     game: number;
@@ -208,6 +217,7 @@ export declare const postSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     name: string;
     game: number;
@@ -215,6 +225,7 @@ export declare const postSpell: z.ZodObject<{
 export declare const putSpell: z.ZodObject<{
     name: z.ZodString;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
         level: z.ZodNumber;
         range: z.ZodString;
@@ -238,6 +249,7 @@ export declare const putSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }, {
         name: string;
         range: string;
@@ -250,6 +262,7 @@ export declare const putSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -264,6 +277,7 @@ export declare const putSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     name: string;
 }, {
@@ -279,6 +293,7 @@ export declare const putSpell: z.ZodObject<{
         duration: string;
         components: string;
         castingTime: string;
+        id?: number | undefined;
     };
     name: string;
 }>;

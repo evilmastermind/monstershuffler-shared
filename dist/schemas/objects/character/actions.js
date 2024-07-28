@@ -75,6 +75,7 @@ exports.actionVariantObject = zod_1.z.object({
     cost: zod_1.z.string().optional(),
 });
 exports.chosenActionObject = zod_1.z.object({
+    id: zod_1.z.number().optional(),
     tag: zod_1.z.string(),
     priority: zod_1.z.number().optional(),
     variants: zod_1.z.array(exports.actionVariantObject),

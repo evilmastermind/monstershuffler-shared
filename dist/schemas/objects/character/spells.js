@@ -26,6 +26,7 @@ exports.spellsObject = zod_1.z.object({
 });
 exports.spellObject = zod_1.z
     .object({
+    id: zod_1.z.number().optional(),
     name: zod_1.z.string().min(2),
     level: zod_1.z.number(),
     range: zod_1.z.string(),

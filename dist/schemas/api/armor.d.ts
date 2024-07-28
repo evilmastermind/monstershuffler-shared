@@ -3,6 +3,7 @@ export declare const postArmor: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         AC: z.ZodString;
         name: z.ZodString;
         isAutomaticCalcDisabled: z.ZodOptional<z.ZodBoolean>;
@@ -15,6 +16,7 @@ export declare const postArmor: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -25,6 +27,7 @@ export declare const postArmor: z.ZodObject<{
     }, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -37,6 +40,7 @@ export declare const postArmor: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -51,6 +55,7 @@ export declare const postArmor: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -65,6 +70,7 @@ export declare const postArmor: z.ZodObject<{
 export declare const putArmor: z.ZodObject<{
     name: z.ZodString;
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         AC: z.ZodString;
         name: z.ZodString;
         isAutomaticCalcDisabled: z.ZodOptional<z.ZodBoolean>;
@@ -77,6 +83,7 @@ export declare const putArmor: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -87,6 +94,7 @@ export declare const putArmor: z.ZodObject<{
     }, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -99,6 +107,7 @@ export declare const putArmor: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -112,6 +121,7 @@ export declare const putArmor: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -131,6 +141,7 @@ export declare const getArmorParams: z.ZodObject<{
 }>;
 export declare const getArmorResponse: z.ZodObject<{
     object: z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
         AC: z.ZodString;
         name: z.ZodString;
         isAutomaticCalcDisabled: z.ZodOptional<z.ZodBoolean>;
@@ -143,6 +154,7 @@ export declare const getArmorResponse: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -153,6 +165,7 @@ export declare const getArmorResponse: z.ZodObject<{
     }, {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -165,6 +178,7 @@ export declare const getArmorResponse: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -177,6 +191,7 @@ export declare const getArmorResponse: z.ZodObject<{
     object: {
         name: string;
         AC: string;
+        id?: number | undefined;
         isAutomaticCalcDisabled?: boolean | undefined;
         cost?: string | undefined;
         type?: "light" | "medium" | "heavy" | undefined;
@@ -192,24 +207,24 @@ export declare const getArmorListResponse: z.ZodObject<{
         userid: z.ZodNumber;
         name: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }, {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }, {
     list: {
-        name: string;
         id: number;
+        name: string;
         userid: number;
     }[];
 }>;
