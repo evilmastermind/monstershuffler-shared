@@ -48,7 +48,7 @@ export function adjustLevel(character: Character) {
     );
   }
   if (character?.character?.CRCalculation?.name === "npcstandard") {
-    if (CR === -3) character.variations!.currentHD = 1;
+    if (CR === -3 || isNaN(CR)) character.variations!.currentHD = 1;
     else if (CR === -2) character.variations!.currentHD = 1;
     else if (CR === -1) character.variations!.currentHD = 1;
     else if (CR === 0) character.variations!.currentHD = 2;

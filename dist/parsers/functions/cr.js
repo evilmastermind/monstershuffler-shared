@@ -45,7 +45,7 @@ function adjustLevel(character) {
         character.variations.currentHD = Math.round(((CR - y1) * (x2 - x1)) / (y2 - y1) + x1);
     }
     if (character?.character?.CRCalculation?.name === "npcstandard") {
-        if (CR === -3)
+        if (CR === -3 || isNaN(CR))
             character.variations.currentHD = 1;
         else if (CR === -2)
             character.variations.currentHD = 1;
