@@ -4,7 +4,7 @@ exports.getGeneratorDataResponse = exports.postFourRandomNpcsResponse = exports.
 const zod_1 = require("zod");
 const objects_1 = require("../../schemas/objects/character/objects");
 const other_1 = require("../../schemas/objects/character/other");
-const schemas_1 = require("../../schemas");
+const alignment_1 = require("../../schemas/objects/character/alignment");
 const object_1 = require("./object");
 exports.postRandomNpcInput = zod_1.z.object({
     sessionId: zod_1.z.string().optional(),
@@ -26,8 +26,8 @@ exports.postRandomNpcInput = zod_1.z.object({
     includeChildren: zod_1.z.boolean().optional(),
     includeBodyType: zod_1.z.boolean().optional(),
     pronounsChosen: other_1.pronounsObject.optional(),
-    alignmentEthicalChosen: schemas_1.alignmentEthical.optional(),
-    alignmentMoralChosen: schemas_1.alignmentMoral.optional(),
+    alignmentEthicalChosen: alignment_1.alignmentEthical.optional(),
+    alignmentMoralChosen: alignment_1.alignmentMoral.optional(),
     CRChosen: zod_1.z.number().optional(),
 });
 exports.npcDetailsObject = zod_1.z.object({

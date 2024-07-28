@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { characterObject } from '@/schemas/objects/character/objects';
 import { pronounsObject } from '@/schemas/objects/character/other';
-import { alignmentEthical, alignmentMoral } from '@/schemas';
+import { alignmentEthical, alignmentMoral } from '@/schemas/objects/character/alignment';
 import { id, objectWithVariantsList, objectList } from './object';
 
 export const postRandomNpcInput = z.object({

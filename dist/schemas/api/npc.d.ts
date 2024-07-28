@@ -65,7 +65,7 @@ export declare const postRandomNpcInput: z.ZodObject<{
 }>;
 export declare const npcDetailsObject: z.ZodObject<{
     id: z.ZodNumber;
-    object: import("../../schemas").CharacterObject;
+    object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -12979,7 +12979,7 @@ export declare const npcDetailsObject: z.ZodObject<{
 }>;
 export declare const postRandomNpcResponse: z.ZodObject<{
     id: z.ZodNumber;
-    object: import("../../schemas").CharacterObject;
+    object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -25894,7 +25894,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
 export declare const postFourRandomNpcsResponse: z.ZodObject<{
     npcs: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
-        object: import("../../schemas").CharacterObject;
+        object: import("../../schemas/objects/character/objects").CharacterObject;
     }, "strip", z.ZodTypeAny, {
         object: {
             character: {
