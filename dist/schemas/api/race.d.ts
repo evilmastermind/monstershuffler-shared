@@ -3304,6 +3304,7 @@ export declare const getRaceResponse: z.ZodObject<{
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -3956,6 +3957,7 @@ export declare const getRaceResponse: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -4608,6 +4610,7 @@ export declare const getRaceResponse: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     id: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -5263,6 +5266,7 @@ export declare const getRaceResponse: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }, {
@@ -5918,6 +5922,7 @@ export declare const getRaceResponse: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }>;
@@ -9140,6 +9145,7 @@ export declare const postRace: z.ZodObject<{
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -9792,6 +9798,7 @@ export declare const postRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -10444,6 +10451,7 @@ export declare const postRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -11098,6 +11106,7 @@ export declare const postRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }, {
@@ -11753,6 +11762,7 @@ export declare const postRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }>;
@@ -14974,6 +14984,7 @@ export declare const putRace: z.ZodObject<{
         enableGenerator: z.ZodOptional<z.ZodBoolean>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -15626,6 +15637,7 @@ export declare const putRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -16278,6 +16290,7 @@ export declare const putRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     game: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -16933,6 +16946,7 @@ export declare const putRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }, {
@@ -17588,6 +17602,7 @@ export declare const putRace: z.ZodObject<{
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }>;

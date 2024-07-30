@@ -3232,6 +3232,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
         }>]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
         femaleName: z.ZodString;
         workplace: z.ZodString;
         compatibleAges: z.ZodArray<z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>, "many">;
@@ -3878,6 +3879,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         femaleName: string;
@@ -4521,6 +4523,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     id: z.ZodNumber;
     name: z.ZodString;
@@ -5171,6 +5174,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
     name: string;
@@ -5821,6 +5825,7 @@ export declare const getBackgroundResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
     name: string;
@@ -9034,6 +9039,7 @@ export declare const postBackground: z.ZodObject<{
         }>]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
         femaleName: z.ZodString;
         workplace: z.ZodString;
         compatibleAges: z.ZodArray<z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>, "many">;
@@ -9680,6 +9686,7 @@ export declare const postBackground: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         femaleName: string;
@@ -10323,6 +10330,7 @@ export declare const postBackground: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     age: z.ZodEnum<["medieval", "fantasy", "renaissance", "modern", "future", "space", "other"]>;
     description: z.ZodString;
@@ -10971,6 +10979,7 @@ export declare const postBackground: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     description: string;
     game: number;
@@ -11619,6 +11628,7 @@ export declare const postBackground: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     description: string;
     game: number;

@@ -72,6 +72,7 @@ export const raceObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     ...generatorStats,
     ...raceSpecificGeneratorStats,
     ...pronounsStats,
@@ -100,6 +101,7 @@ export const racevariantObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     ...pronounsStats,
     ...alignmentModifiersStats,
     ...armorStats,
@@ -124,6 +126,7 @@ export const classObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     ...generatorStats,
     ...armorStats,
     ...subtypesStats,
@@ -145,6 +148,7 @@ export const classvariantObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     ...armorStats,
     ...subtypesStats,
     ...speedsStats,
@@ -166,6 +170,7 @@ export const templateObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     ...pronounsStats,
     ...sizeStatsObject,
     ...typeAndSubtypesStats,
@@ -193,6 +198,7 @@ export const backgroundObject = z
   .object({
     id: z.number().optional(),
     name: z.string(),
+    description: z.string().optional(),
     femaleName: z.string(),
     workplace: z.string(),
     compatibleAges: z.array(ages),
@@ -227,6 +233,7 @@ const conditionsObject = z.array(userObject);
 // See: https://github.com/colinhacks/zod/issues/1040
 export type CharacterObject = z.ZodObject<{
   id: z.ZodOptional<z.ZodNumber>;
+  description: z.ZodOptional<z.ZodString>;
   character: z.ZodObject<{
     name: typeof namingStats.name;
     prename: typeof namingStats.prename;
@@ -265,6 +272,7 @@ export type CharacterObject = z.ZodObject<{
 export const characterObject: CharacterObject = z
   .object({
     id: z.number().optional(),
+    description: z.string().optional(),
     character: z
       .object({
         // naming

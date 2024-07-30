@@ -3350,6 +3350,7 @@ export declare const getTemplateResponse: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -4021,6 +4022,7 @@ export declare const getTemplateResponse: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -4692,6 +4694,7 @@ export declare const getTemplateResponse: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -5365,6 +5368,7 @@ export declare const getTemplateResponse: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }, {
@@ -6039,6 +6043,7 @@ export declare const getTemplateResponse: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }>;
@@ -9365,6 +9370,7 @@ export declare const postTemplate: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -10036,6 +10042,7 @@ export declare const postTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -10707,6 +10714,7 @@ export declare const postTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     game: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -11381,6 +11389,7 @@ export declare const postTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }, {
@@ -12055,6 +12064,7 @@ export declare const postTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }>;
@@ -15381,6 +15391,7 @@ export declare const putTemplate: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -16052,6 +16063,7 @@ export declare const putTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -16723,6 +16735,7 @@ export declare const putTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     game: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -17397,6 +17410,7 @@ export declare const putTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }, {
@@ -18071,6 +18085,7 @@ export declare const putTemplate: z.ZodObject<{
         size?: number | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
 }>;

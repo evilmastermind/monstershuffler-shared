@@ -7912,6 +7912,7 @@ export declare const raceObject: z.ZodObject<{
     enableGenerator: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
 }, "strict", z.ZodTypeAny, {
     name: string;
     sheet?: {
@@ -8564,6 +8565,7 @@ export declare const raceObject: z.ZodObject<{
     addSurname?: number | undefined;
     enableGenerator?: boolean | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     sheet?: {
@@ -9216,6 +9218,7 @@ export declare const raceObject: z.ZodObject<{
     addSurname?: number | undefined;
     enableGenerator?: boolean | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 export declare const racevariantObject: z.ZodObject<{
     sheet: z.ZodOptional<z.ZodObject<{
@@ -12423,6 +12426,7 @@ export declare const racevariantObject: z.ZodObject<{
     pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
 }, "strict", z.ZodTypeAny, {
     name: string;
     sheet?: {
@@ -13064,6 +13068,7 @@ export declare const racevariantObject: z.ZodObject<{
     alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
     pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     sheet?: {
@@ -13705,6 +13710,7 @@ export declare const racevariantObject: z.ZodObject<{
     alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
     pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 export declare const classObject: z.ZodObject<{
     sheet: z.ZodOptional<z.ZodObject<{
@@ -16909,6 +16915,7 @@ export declare const classObject: z.ZodObject<{
     enableGenerator: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
 }, "strict", z.ZodTypeAny, {
     name: string;
     sheet?: {
@@ -17547,6 +17554,7 @@ export declare const classObject: z.ZodObject<{
     } | undefined;
     enableGenerator?: boolean | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     sheet?: {
@@ -18185,6 +18193,7 @@ export declare const classObject: z.ZodObject<{
     } | undefined;
     enableGenerator?: boolean | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 export declare const classvariantObject: z.ZodObject<{
     sheet: z.ZodOptional<z.ZodObject<{
@@ -21389,6 +21398,7 @@ export declare const classvariantObject: z.ZodObject<{
     }>]>>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
 }, "strict", z.ZodTypeAny, {
     name: string;
     sheet?: {
@@ -22027,6 +22037,7 @@ export declare const classvariantObject: z.ZodObject<{
         stealthDis?: boolean | undefined;
     } | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     sheet?: {
@@ -22665,6 +22676,7 @@ export declare const classvariantObject: z.ZodObject<{
         stealthDis?: boolean | undefined;
     } | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 export declare const templateObject: z.ZodObject<{
     sheet: z.ZodOptional<z.ZodObject<{
@@ -25988,6 +26000,7 @@ export declare const templateObject: z.ZodObject<{
     pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
 }, "strict", z.ZodTypeAny, {
     name: string;
     sheet?: {
@@ -26659,6 +26672,7 @@ export declare const templateObject: z.ZodObject<{
     size?: number | undefined;
     pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     sheet?: {
@@ -27330,6 +27344,7 @@ export declare const templateObject: z.ZodObject<{
     size?: number | undefined;
     pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 export declare const backgroundObject: z.ZodObject<{
     sheet: z.ZodOptional<z.ZodObject<{
@@ -30536,6 +30551,7 @@ export declare const backgroundObject: z.ZodObject<{
     }>]>>;
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
+    description: z.ZodOptional<z.ZodString>;
     femaleName: z.ZodString;
     workplace: z.ZodString;
     compatibleAges: z.ZodArray<z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>, "many">;
@@ -31182,6 +31198,7 @@ export declare const backgroundObject: z.ZodObject<{
         stealthDis?: boolean | undefined;
     } | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }, {
     name: string;
     femaleName: string;
@@ -31825,6 +31842,7 @@ export declare const backgroundObject: z.ZodObject<{
         stealthDis?: boolean | undefined;
     } | undefined;
     id?: number | undefined;
+    description?: string | undefined;
 }>;
 declare const CRCalculationObject: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
     x1: z.ZodString;
@@ -36545,6 +36563,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
 }>, "many">;
 export type CharacterObject = z.ZodObject<{
     id: z.ZodOptional<z.ZodNumber>;
+    description: z.ZodOptional<z.ZodString>;
     character: z.ZodObject<{
         name: typeof namingStats.name;
         prename: typeof namingStats.prename;

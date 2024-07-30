@@ -3283,6 +3283,7 @@ export declare const getClassvariantResponse: z.ZodObject<{
         }>]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -3921,6 +3922,7 @@ export declare const getClassvariantResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -4559,6 +4561,7 @@ export declare const getClassvariantResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
     id: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -5200,6 +5203,7 @@ export declare const getClassvariantResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }, {
@@ -5841,6 +5845,7 @@ export declare const getClassvariantResponse: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }>;
@@ -9050,6 +9055,7 @@ export declare const postClassvariant: z.ZodObject<{
         }>]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -9688,6 +9694,7 @@ export declare const postClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -10326,6 +10333,7 @@ export declare const postClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -10966,6 +10974,7 @@ export declare const postClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
     classId: number;
@@ -11608,6 +11617,7 @@ export declare const postClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
     classId: number;
@@ -14816,6 +14826,7 @@ export declare const putClassvariant: z.ZodObject<{
         }>]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -15454,6 +15465,7 @@ export declare const putClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -16092,6 +16104,7 @@ export declare const putClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -16732,6 +16745,7 @@ export declare const putClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
 }, {
     object: {
@@ -17372,6 +17386,7 @@ export declare const putClassvariant: z.ZodObject<{
             stealthDis?: boolean | undefined;
         } | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
 }>;
 //# sourceMappingURL=classvariant.d.ts.map

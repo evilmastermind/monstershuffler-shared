@@ -42,6 +42,7 @@ exports.raceObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     ...other_1.generatorStats,
     ...exports.raceSpecificGeneratorStats,
     ...other_1.pronounsStats,
@@ -69,6 +70,7 @@ exports.racevariantObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     ...other_1.pronounsStats,
     ...other_1.alignmentModifiersStats,
     ...other_1.armorStats,
@@ -92,6 +94,7 @@ exports.classObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     ...other_1.generatorStats,
     ...other_1.armorStats,
     ...other_1.subtypesStats,
@@ -112,6 +115,7 @@ exports.classvariantObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     ...other_1.armorStats,
     ...other_1.subtypesStats,
     ...other_1.speedsStats,
@@ -132,6 +136,7 @@ exports.templateObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     ...other_1.pronounsStats,
     ...other_1.sizeStatsObject,
     ...other_1.typeAndSubtypesStats,
@@ -158,6 +163,7 @@ exports.backgroundObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string(),
+    description: zod_1.z.string().optional(),
     femaleName: zod_1.z.string(),
     workplace: zod_1.z.string(),
     compatibleAges: zod_1.z.array(other_1.ages),
@@ -187,6 +193,7 @@ const conditionsObject = zod_1.z.array(exports.userObject);
 exports.characterObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
+    description: zod_1.z.string().optional(),
     character: zod_1.z
         .object({
         // naming

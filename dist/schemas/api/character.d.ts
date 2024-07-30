@@ -689,6 +689,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -1331,6 +1332,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -1970,6 +1972,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -2609,6 +2612,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -3253,6 +3257,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -3925,6 +3930,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -5381,6 +5387,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {
@@ -7144,6 +7151,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -7786,6 +7794,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -8425,6 +8434,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -9064,6 +9074,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -9708,6 +9719,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -10380,6 +10392,7 @@ export declare const getCharacterResponse: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -11836,6 +11849,7 @@ export declare const getCharacterResponse: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {
@@ -13604,6 +13618,7 @@ export declare const postCharacter: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -14246,6 +14261,7 @@ export declare const postCharacter: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -14885,6 +14901,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -15524,6 +15541,7 @@ export declare const postCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -16168,6 +16186,7 @@ export declare const postCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -16840,6 +16859,7 @@ export declare const postCharacter: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -18296,6 +18316,7 @@ export declare const postCharacter: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {
@@ -20060,6 +20081,7 @@ export declare const postCharacter: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -20702,6 +20724,7 @@ export declare const postCharacter: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -21341,6 +21364,7 @@ export declare const postCharacter: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -21980,6 +22004,7 @@ export declare const postCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -22624,6 +22649,7 @@ export declare const postCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -23296,6 +23322,7 @@ export declare const postCharacter: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -24752,6 +24779,7 @@ export declare const postCharacter: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {
@@ -26521,6 +26549,7 @@ export declare const putCharacter: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -27163,6 +27192,7 @@ export declare const putCharacter: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -27802,6 +27832,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -28441,6 +28472,7 @@ export declare const putCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -29085,6 +29117,7 @@ export declare const putCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -29757,6 +29790,7 @@ export declare const putCharacter: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -31213,6 +31247,7 @@ export declare const putCharacter: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {
@@ -32977,6 +33012,7 @@ export declare const putCharacter: z.ZodObject<{
                 addSurname?: number | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             racevariant?: {
                 name: string;
@@ -33619,6 +33655,7 @@ export declare const putCharacter: z.ZodObject<{
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             class?: {
                 name: string;
@@ -34258,6 +34295,7 @@ export declare const putCharacter: z.ZodObject<{
                 } | undefined;
                 enableGenerator?: boolean | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             classvariant?: {
                 name: string;
@@ -34897,6 +34935,7 @@ export declare const putCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             background?: {
                 name: string;
@@ -35541,6 +35580,7 @@ export declare const putCharacter: z.ZodObject<{
                     stealthDis?: boolean | undefined;
                 } | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             template?: {
                 name: string;
@@ -36213,6 +36253,7 @@ export declare const putCharacter: z.ZodObject<{
                 size?: number | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
                 id?: number | undefined;
+                description?: string | undefined;
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
@@ -37669,6 +37710,7 @@ export declare const putCharacter: z.ZodObject<{
             proficiencyCalculation?: "level" | "CR" | undefined;
         };
         id?: number | undefined;
+        description?: string | undefined;
         statistics?: {
             name: string;
             type: {

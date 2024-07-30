@@ -3234,6 +3234,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -3875,6 +3876,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -4516,6 +4518,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -5159,6 +5162,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }, {
@@ -5803,6 +5807,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     id: number;
 }>;
@@ -9015,6 +9020,7 @@ export declare const postRacevariant: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -9656,6 +9662,7 @@ export declare const postRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -10297,6 +10304,7 @@ export declare const postRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -10940,6 +10948,7 @@ export declare const postRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
     raceId: number;
@@ -11585,6 +11594,7 @@ export declare const postRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
     game: number;
     raceId: number;
@@ -14796,6 +14806,7 @@ export declare const putRacevariant: z.ZodObject<{
         pronouns: z.ZodOptional<z.ZodEnum<["male", "female", "neutral", "thing"]>>;
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
         sheet?: {
@@ -15437,6 +15448,7 @@ export declare const putRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }, {
         name: string;
         sheet?: {
@@ -16078,6 +16090,7 @@ export declare const putRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -16721,6 +16734,7 @@ export declare const putRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
 }, {
     object: {
@@ -17364,6 +17378,7 @@ export declare const putRacevariant: z.ZodObject<{
         alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
         id?: number | undefined;
+        description?: string | undefined;
     };
 }>;
 //# sourceMappingURL=racevariant.d.ts.map
