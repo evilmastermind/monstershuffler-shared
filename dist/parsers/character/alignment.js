@@ -15,44 +15,42 @@ function calculateAlignment(character) {
     /*
     alignments that have already been defined
     */
-    if (c.alignmentEthical || c.alignmentMoral) {
-        if (c.alignmentEthical === "Unaligned") {
-            // unaligned
-            alignment.array.push((0, functions_2.createPart)("Unaligned", "alignment"));
+    if (c.alignmentEthical === "Unaligned") {
+        // unaligned
+        alignment.array.push((0, functions_2.createPart)("Unaligned", "alignment"));
+    }
+    else if (
+    // any
+    c.alignmentEthical === c.alignmentMoral &&
+        c.alignmentMoral === "Any") {
+        alignment.array.push((0, functions_2.createPart)("Any Alignment", "alignment"));
+    }
+    else if (["Any", undefined].includes(c.alignmentEthical) &&
+        c.alignmentMoral) {
+        // any (lawful, neutral, chaotic)
+        alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
+        alignment.array.push((0, functions_2.createPart)(" "));
+    }
+    else if (["Any", undefined].includes(c.alignmentMoral) &&
+        c.alignmentEthical) {
+        // any (good, neutral, evil)
+        alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
+        alignment.array.push((0, functions_2.createPart)(" "));
+    }
+    else if (c.alignmentEthical && c.alignmentMoral) {
+        // neutral
+        if (c.alignmentEthical === c.alignmentMoral) {
+            alignment.array.push((0, functions_2.createPart)(c.alignmentEthical, "alignment"));
         }
-        else if (
-        // any
-        c.alignmentEthical === c.alignmentMoral &&
-            c.alignmentMoral === "Any") {
-            alignment.array.push((0, functions_2.createPart)("Any Alignment", "alignment"));
-        }
-        else if (["Any", undefined].includes(c.alignmentEthical) &&
-            c.alignmentMoral) {
-            // any (lawful, neutral, chaotic)
-            alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
+        else {
+            // any other defined alignment
+            alignment.array.push((0, functions_2.createPart)(c.alignmentEthical, "alignment"));
             alignment.array.push((0, functions_2.createPart)(" "));
+            alignment.array.push((0, functions_2.createPart)(c.alignmentMoral, "alignment"));
         }
-        else if (["Any", undefined].includes(c.alignmentMoral) &&
-            c.alignmentEthical) {
-            // any (good, neutral, evil)
-            alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
-            alignment.array.push((0, functions_2.createPart)(" "));
-        }
-        else if (c.alignmentEthical && c.alignmentMoral) {
-            // neutral
-            if (c.alignmentEthical === c.alignmentMoral) {
-                alignment.array.push((0, functions_2.createPart)(c.alignmentEthical, "alignment"));
-            }
-            else {
-                // any other defined alignment
-                alignment.array.push((0, functions_2.createPart)(c.alignmentEthical, "alignment"));
-                alignment.array.push((0, functions_2.createPart)(" "));
-                alignment.array.push((0, functions_2.createPart)(c.alignmentMoral, "alignment"));
-            }
-            if (typically) {
-                alignment.array.unshift((0, functions_2.createPart)(" ", "text"));
-                alignment.array.unshift((0, functions_2.createPart)(typically, "alignment"));
-            }
+        if (typically) {
+            alignment.array.unshift((0, functions_2.createPart)(" ", "text"));
+            alignment.array.unshift((0, functions_2.createPart)(typically, "alignment"));
         }
     }
     else {
