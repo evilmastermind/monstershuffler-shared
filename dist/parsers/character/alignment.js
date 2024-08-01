@@ -25,13 +25,13 @@ function calculateAlignment(character) {
         c.alignmentMoral === "Any") {
         alignment.array.push((0, functions_2.createPart)("Any Alignment", "alignment"));
     }
-    else if (["Any", undefined].includes(c.alignmentEthical) &&
+    else if (["Any"].includes(c.alignmentEthical || "") &&
         c.alignmentMoral) {
         // any (lawful, neutral, chaotic)
         alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
         alignment.array.push((0, functions_2.createPart)(" "));
     }
-    else if (["Any", undefined].includes(c.alignmentMoral) &&
+    else if (["Any"].includes(c.alignmentMoral || "") &&
         c.alignmentEthical) {
         // any (good, neutral, evil)
         alignment.array.push((0, functions_2.createPart)("Any", "alignment"));
