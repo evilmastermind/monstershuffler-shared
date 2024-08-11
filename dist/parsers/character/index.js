@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createStats = void 0;
+exports.createStats = exports.calculateCharacterHook = void 0;
 const functions_1 = require("../../functions");
 const challengeRating_1 = require("./challengeRating");
 const alignment_1 = require("./alignment");
@@ -29,6 +29,8 @@ const senses_1 = require("./senses");
 const actions_1 = require("./actions");
 const backstory_1 = require("./backstory");
 const spells_1 = require("./spells");
+var characterHook_2 = require("./characterHook");
+Object.defineProperty(exports, "calculateCharacterHook", { enumerable: true, get: function () { return characterHook_2.calculateCharacterHook; } });
 function createStats(character) {
     (0, functions_1.createKeyIfUndefined)(character, "statistics");
     (0, functions_1.createKeyIfUndefined)(character, "variables");

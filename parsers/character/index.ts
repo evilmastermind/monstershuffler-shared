@@ -32,6 +32,8 @@ import { calculateSpells } from "./spells";
 
 import type { Character } from "@/types";
 
+export { calculateCharacterHook } from "./characterHook";
+
 export function createStats(character: Character) {
   createKeyIfUndefined(character, "statistics");
   createKeyIfUndefined(character, "variables");
