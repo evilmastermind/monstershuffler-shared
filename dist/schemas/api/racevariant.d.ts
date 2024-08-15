@@ -5811,7 +5811,7 @@ export declare const sGetRacevariantResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const sPostRacevariant: z.ZodObject<{
+export declare const sPostRacevariantBody: z.ZodObject<{
     game: z.ZodNumber;
     raceId: z.ZodNumber;
     object: z.ZodObject<{
@@ -11599,7 +11599,7 @@ export declare const sPostRacevariant: z.ZodObject<{
     game: number;
     raceId: number;
 }>;
-export declare const sPutRacevariant: z.ZodObject<{
+export declare const sPutRacevariantBody: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{

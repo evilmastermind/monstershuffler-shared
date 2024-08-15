@@ -46,7 +46,6 @@ export const sGetGeneratorDataResponse = z.object({
   backgrounds: objectList,
 });
 
-
 export const sPostNpcRatingResponse = z.object({
   id: z.number(),
   rating: z.number()

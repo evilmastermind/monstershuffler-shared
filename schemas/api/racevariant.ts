@@ -11,13 +11,13 @@ export const sGetRacevariantResponse = z.object({
   object: racevariantObject,
 });
 
-export const sPostRacevariant = z.object({
+export const sPostRacevariantBody = z.object({
   game,
   raceId: id,
   object: racevariantObject,
 });
 
-export const sPutRacevariant = z.object({
+export const sPutRacevariantBody = z.object({
   object: racevariantObject,
   game: game.optional(),
 });
