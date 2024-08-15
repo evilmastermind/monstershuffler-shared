@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sGetWeaponListResponse = exports.sGetWeaponResponse = exports.sGetWeaponParams = exports.sPutWeapon = exports.sPostWeaponBody = void 0;
+exports.sGetWeaponListResponse = exports.sGetWeaponResponse = exports.sGetWeaponParams = exports.sPutWeaponBody = exports.sPostWeaponBody = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("../../schemas/objects/character/weapons");
 const object_1 = require("./object");
@@ -8,7 +8,7 @@ exports.sPostWeaponBody = zod_1.z.object({
     game: object_1.game,
     object: weapons_1.weaponObject,
 });
-exports.sPutWeapon = zod_1.z.object({
+exports.sPutWeaponBody = zod_1.z.object({
     object: weapons_1.weaponObject,
     game: object_1.game.optional(),
 });

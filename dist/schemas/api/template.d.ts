@@ -6047,7 +6047,7 @@ export declare const sGetTemplateResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const sPostTemplate: z.ZodObject<{
+export declare const sPostTemplateBody: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -12068,7 +12068,7 @@ export declare const sPostTemplate: z.ZodObject<{
     };
     game: number;
 }>;
-export declare const sPutTemplate: z.ZodObject<{
+export declare const sPutTemplateBody: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{

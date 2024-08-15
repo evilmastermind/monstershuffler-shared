@@ -89,7 +89,7 @@ export declare const sPostWeaponBody: z.ZodObject<{
     };
     game: number;
 }>;
-export declare const sPutWeapon: z.ZodObject<{
+export declare const sPutWeaponBody: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;

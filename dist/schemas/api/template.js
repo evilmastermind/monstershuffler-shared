@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sPutTemplate = exports.sPostTemplate = exports.sGetTemplateResponse = exports.sGetTemplateListResponse = void 0;
+exports.sPutTemplateBody = exports.sPostTemplateBody = exports.sGetTemplateResponse = exports.sGetTemplateListResponse = void 0;
 const zod_1 = require("zod");
 const objects_1 = require("../../schemas/objects/character/objects");
 const object_1 = require("./object");
@@ -15,11 +15,11 @@ exports.sGetTemplateResponse = zod_1.z.object({
     id: object_1.id,
     object: objects_1.templateObject,
 });
-exports.sPostTemplate = zod_1.z.object({
+exports.sPostTemplateBody = zod_1.z.object({
     object: objects_1.templateObject,
     game: object_1.game,
 });
-exports.sPutTemplate = zod_1.z.object({
+exports.sPutTemplateBody = zod_1.z.object({
     object: objects_1.templateObject,
     game: object_1.game.optional(),
 });

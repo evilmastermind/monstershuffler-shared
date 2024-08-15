@@ -7,7 +7,7 @@ export const sPostWeaponBody = z.object({
   object: weaponObject,
 });
 
-export const sPutWeapon = z.object({
+export const sPutWeaponBody = z.object({
   object: weaponObject,
   game: game.optional(),
 });

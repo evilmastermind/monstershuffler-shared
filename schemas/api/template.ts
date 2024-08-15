@@ -17,12 +17,12 @@ export const sGetTemplateResponse = z.object({
   object: templateObject,
 });
 
-export const sPostTemplate = z.object({
+export const sPostTemplateBody = z.object({
   object: templateObject,
   game,
 });
 
-export const sPutTemplate = z.object({
+export const sPutTemplateBody = z.object({
   object: templateObject,
   game: game.optional(),
 });
