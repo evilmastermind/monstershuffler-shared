@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { characterObject } from '@/schemas/objects/character/objects';
 import { id, userid, name, game } from './object';
 
-export const getCharacterListResponse = z.object({
+export const sGetCharacterListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -12,19 +12,17 @@ export const getCharacterListResponse = z.object({
   ),
 });
 
-export const getCharacterResponse = z.object({
+export const sGetCharacterResponse = z.object({
   id,
   object: characterObject,
 });
 
-export const postCharacter = z.object({
+export const sPostCharacterBody = z.object({
   game,
-  name,
   object: characterObject,
 });
 
-export const putCharacter = z.object({
-  name,
-  game,
+export const sPutCharacterBody = z.object({
+  game: game.optional(),
   object: characterObject,
 });

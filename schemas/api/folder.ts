@@ -61,7 +61,7 @@ const templates = z.array(
   })
 );
 
-export const getFolderContentResponse = z.object({
+export const sGetFolderContentResponse = z.object({
   folders,
   characters,
   races,
@@ -69,11 +69,15 @@ export const getFolderContentResponse = z.object({
   templates,
 });
 
-export const postFolder = z.object({
+export const sPostFolderBody = z.object({
   name,
 });
 
-export const postFolderResponse = z.object({
+export const sPutFolderBody = z.object({
+  name: name.optional(),
+});
+
+export const sPostFolderResponse = z.object({
   id,
   name,
 });

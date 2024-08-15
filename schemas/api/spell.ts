@@ -13,7 +13,7 @@ const component = z.string().min(2);
 const castingTime = z.string().min(2);
 const description = z.string().min(2);
 
-export const getSpellList = z.object({
+export const sGetSpellListBody = z.object({
   game,
   name: name.optional(),
   level: level.optional(),
@@ -28,7 +28,7 @@ export const getSpellList = z.object({
   description: description.optional(),
 });
 
-export const getSpellListResponse = z.object({
+export const sGetSpellListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -38,19 +38,19 @@ export const getSpellListResponse = z.object({
   ),
 });
 
-export const getSpellResponse = z.object({
+export const sGetSpellResponse = z.object({
   id,
   userid,
   object: spellObject,
 });
 
-export const postSpell = z.object({
+export const sPostSpellBody = z.object({
   game,
   name,
   object: spellObject,
 });
 
-export const putSpell = z.object({
+export const sPutSpellBody = z.object({
   name,
   object: spellObject,
 });

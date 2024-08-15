@@ -3,25 +3,25 @@ import { classObject } from '@/schemas/objects/character/objects';
 
 import { id, game, objectList, objectWithVariantsList } from './object';
 
-export const getClassListResponse = z.object({
+export const sGetClassListResponse = z.object({
   list: objectList,
 });
 
-export const getClassWithVariantsListResponse = z.object({
+export const sGetClassWithVariantsListResponse = z.object({
   list: objectWithVariantsList,
 });
 
-export const getClassResponse = z.object({
+export const sGetClassResponse = z.object({
   object: classObject,
   id,
 });
 
-export const postClass = z.object({
+export const sPostClassBody = z.object({
   game,
   object: classObject,
 });
 
-export const putClass = z.object({
+export const sPutClassBody = z.object({
   object: classObject,
-  game,
+  game: game.optional(),
 });

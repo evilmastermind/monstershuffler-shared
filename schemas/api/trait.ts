@@ -7,14 +7,14 @@ const category = z.string();
 const feeling = z.number();
 const description = z.string();
 
-export const getRandomTrait = z.object({
+export const sGetRandomTraitBody = z.object({
   type: type.optional(),
   subtitle: subtitle.optional(),
   category: category.optional(),
   feeling: feeling.optional(),
 });
 
-export const getRandomTraitResponse = z.object({
+export const sGetRandomTraitResponse = z.object({
   name,
   type,
   subtitle,
@@ -23,6 +23,6 @@ export const getRandomTraitResponse = z.object({
   description,
 });
 
-export const getTraitDescriptionResponse = z.object({
+export const sGetTraitDescriptionResponse = z.object({
   description,
 });

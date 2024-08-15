@@ -2,26 +2,26 @@ import { z } from 'zod';
 import { armorObject } from '@/schemas/objects/character/armor';
 import { id, userid, game, name } from './object';
 
-export const postArmor = z.object({
+export const sPostArmorBody = z.object({
   game,
   name,
   object: armorObject,
 });
 
-export const putArmor = z.object({
+export const sPutArmorBody = z.object({
   name,
   object: armorObject,
 });
 
-export const getArmorParams = z.object({
+export const sGetArmorParams = z.object({
   id,
 });
 
-export const getArmorResponse = z.object({
+export const sGetArmorResponse = z.object({
   object: armorObject,
 });
 
-export const getArmorListResponse = z.object({
+export const sGetArmorListResponse = z.object({
   list: z.array(
     z.object({
       id,

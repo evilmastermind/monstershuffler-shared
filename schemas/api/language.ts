@@ -5,24 +5,24 @@ const userid = z.number();
 const name = z.string().min(2);
 const script = z.string().min(2);
 
-export const postLanguage = z.object({
+export const sPostLanguageBody = z.object({
   name,
   script,
 });
 
-export const getLanguageResponse = z.object({
+export const sPutLanguageBody = z.object({
+  name: name.optional(),
+  script: script.optional(),
+});
+
+export const sGetLanguageResponse = z.object({
   id,
   userid,
   name,
   script,
 });
 
-export const putLanguage = z.object({
-  name,
-  script,
-});
-
-export const getLanguageListResponse = z.object({
+export const sGetLanguageListResponse = z.object({
   list: z.array(
     z.object({
       id,

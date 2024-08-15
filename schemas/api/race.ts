@@ -2,25 +2,25 @@ import { z } from 'zod';
 import { raceObject } from '@/schemas/objects/character/objects';
 import { id, game, objectList, objectWithVariantsList } from './object';
 
-export const getRaceListResponse = z.object({
+export const sGetRaceListResponse = z.object({
   list: objectList,
 });
 
-export const getRaceWithVariantsListResponse = z.object({
+export const sGetRaceWithVariantsListResponse = z.object({
   list: objectWithVariantsList,
 });
 
-export const getRaceResponse = z.object({
+export const sGetRaceResponse = z.object({
   object: raceObject,
   id,
 });
 
-export const postRace = z.object({
+export const sPostRaceBody = z.object({
   game,
   object: raceObject,
 });
 
-export const putRace = z.object({
+export const sPutRaceBody = z.object({
   object: raceObject,
-  game,
+  game: game.optional(),
 });

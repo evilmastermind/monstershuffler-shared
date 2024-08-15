@@ -13,7 +13,7 @@ const actionsdetails = z.object({
   source,
 });
 
-export const getActionList = z.object({
+export const sGetActionListBody = z.object({
   game: game.optional(),
   name: name.optional(),
   type: type.optional(),
@@ -22,7 +22,7 @@ export const getActionList = z.object({
   tag: z.string().optional(),
 });
 
-export const getActionListResponse = z.object({
+export const sGetActionListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -33,14 +33,14 @@ export const getActionListResponse = z.object({
   ),
 });
 
-export const getActionResponse = z.object({
+export const sGetActionResponse = z.object({
   id,
   userid,
   object: actionObject,
   actionsdetails,
 });
 
-export const postAction = z.object({
+export const sPostActionBody = z.object({
   game,
   name,
   type,
@@ -50,7 +50,7 @@ export const postAction = z.object({
   object: actionObject,
 });
 
-export const putAction = z.object({
+export const sPutActionBody = z.object({
   name,
   type,
   subtype,

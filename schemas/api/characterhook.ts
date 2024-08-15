@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const getRandomCharacterhookResponse = z.object({
+export const sGetRandomCharacterhookResponse = z.object({
   id: z.number(),
   characterhook: z.string(),
 });

@@ -6,8 +6,8 @@ const skill = z.object({
   name,
 });
 
-export const getSkillListResponse = z.object({
+export const sGetSkillListResponse = z.object({
   list: z.array(skill),
 });
 
-export const getSkillResponse = skill;
+export const sGetSkillResponse = skill;

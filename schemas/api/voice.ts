@@ -1,10 +1,10 @@
 import { z } from 'zod';
 
-export const getRandomVoice = z.object({
+export const sGetRandomVoiceBody = z.object({
   gender: z.string().optional(),
 });
 
-export const getRandomVoiceResponse = z.object({
+export const sGetRandomVoiceResponse = z.object({
   id: z.number(),
   gender: z.string(),
   person: z.string(),

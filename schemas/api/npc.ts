@@ -4,7 +4,7 @@ import { pronounsObject } from '@/schemas/objects/character/other';
 import { alignmentEthical, alignmentMoral } from '@/schemas/objects/character/alignment';
 import { id, objectWithVariantsList, objectList } from './object';
 
-export const postRandomNpcInput = z.object({
+export const sPostRandomNpcBody = z.object({
   sessionId: z.string().optional(),
   levelType: z.enum(['random', 'randomPeasantsMostly']).optional(),
   classType: z
@@ -34,13 +34,13 @@ export const npcDetailsObject = z.object({
   object: characterObject,
 });
 
-export const postRandomNpcResponse = npcDetailsObject;
+export const sPostRandomNpcResponse = npcDetailsObject;
 
-export const postFourRandomNpcsResponse = z.object({
+export const sPostFourRandomNpcsResponse = z.object({
   npcs: z.array(npcDetailsObject),
 });
 
-export const getGeneratorDataResponse = z.object({
+export const sGetGeneratorDataResponse = z.object({
   races: objectWithVariantsList,
   classes: objectWithVariantsList,
   backgrounds: objectList,

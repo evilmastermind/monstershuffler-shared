@@ -2,24 +2,25 @@ import { z } from 'zod';
 import { weaponObject } from '@/schemas/objects/character/weapons';
 import { id, userid, name, game } from './object';
 
-export const postWeapon = z.object({
+export const sPostWeaponBody = z.object({
   game,
   object: weaponObject,
 });
 
-export const putWeapon = z.object({
+export const sPutWeapon = z.object({
   object: weaponObject,
+  game: game.optional(),
 });
 
-export const getWeaponParams = z.object({
+export const sGetWeaponParams = z.object({
   id,
 });
 
-export const getWeaponResponse = z.object({
+export const sGetWeaponResponse = z.object({
   object: weaponObject,
 });
 
-export const getWeaponListResponse = z.object({
+export const sGetWeaponListResponse = z.object({
   list: z.array(
     z.object({
       id,

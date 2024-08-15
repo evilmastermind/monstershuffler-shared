@@ -15,7 +15,7 @@ const age = z.enum([
 const description = z.string();
 const object = backgroundObject;
 
-export const getBackgroundListResponse = z.object({
+export const sGetBackgroundListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -25,7 +25,7 @@ export const getBackgroundListResponse = z.object({
   ),
 });
 
-export const getBackgroundResponse = z.object({
+export const sGetBackgroundResponse = z.object({
   object,
   id,
   name: z.string(),
@@ -34,9 +34,16 @@ export const getBackgroundResponse = z.object({
   description: z.string(),
 });
 
-export const postBackground = z.object({
+export const sPostBackgroundBody = z.object({
   object,
   age,
   description,
   game,
+});
+
+export const sPutBackgroundBody = z.object({
+  object,
+  age,
+  description,
+  game: game.optional(),
 });

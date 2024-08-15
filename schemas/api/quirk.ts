@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const getRandomQuirkResponse = z.object({
+export const sGetRandomQuirkResponse = z.object({
   id: z.number(),
   quirk: z.string(),
 });

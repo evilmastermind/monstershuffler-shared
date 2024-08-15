@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { templateObject } from '@/schemas/objects/character/objects';
 import { id, userid, name, game } from './object';
 
-export const getTemplateListResponse = z.object({
+export const sGetTemplateListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -12,17 +12,17 @@ export const getTemplateListResponse = z.object({
   ),
 });
 
-export const getTemplateResponse = z.object({
+export const sGetTemplateResponse = z.object({
   id,
   object: templateObject,
 });
 
-export const postTemplate = z.object({
+export const sPostTemplate = z.object({
   object: templateObject,
   game,
 });
 
-export const putTemplate = z.object({
+export const sPutTemplate = z.object({
   object: templateObject,
-  game,
+  game: game.optional(),
 });

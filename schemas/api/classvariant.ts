@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { classvariantObject } from '@/schemas/objects/character/objects';
 import { id, game, name, userid } from './object';
 
-export const getClassvariantListResponse = z.object({
+export const sGetClassvariantListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -16,7 +16,7 @@ export const getClassvariantListResponse = z.object({
   ),
 });
 
-export const getClassvariantClassListResponse = z.object({
+export const sGetClassvariantClassListResponse = z.object({
   list: z.array(
     z.object({
       id,
@@ -26,17 +26,18 @@ export const getClassvariantClassListResponse = z.object({
   ),
 });
 
-export const getClassvariantResponse = z.object({
+export const sGetClassvariantResponse = z.object({
   object: classvariantObject,
   id,
 });
 
-export const postClassvariant = z.object({
+export const sPostClassvariantBody = z.object({
   game,
   classId: id,
   object: classvariantObject,
 });
 
-export const putClassvariant = z.object({
+export const sPutClassvariantBody = z.object({
   object: classvariantObject,
+  game: game.optional(),
 });
