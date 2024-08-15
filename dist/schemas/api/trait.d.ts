@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getRandomTrait: z.ZodObject<{
+export declare const sGetRandomTraitBody: z.ZodObject<{
     type: z.ZodOptional<z.ZodString>;
     subtitle: z.ZodOptional<z.ZodNumber>;
     category: z.ZodOptional<z.ZodString>;
@@ -15,7 +15,7 @@ export declare const getRandomTrait: z.ZodObject<{
     category?: string | undefined;
     feeling?: number | undefined;
 }>;
-export declare const getRandomTraitResponse: z.ZodObject<{
+export declare const sGetRandomTraitResponse: z.ZodObject<{
     name: z.ZodString;
     type: z.ZodString;
     subtitle: z.ZodNumber;
@@ -37,7 +37,7 @@ export declare const getRandomTraitResponse: z.ZodObject<{
     subtitle: number;
     category: string;
 }>;
-export declare const getTraitDescriptionResponse: z.ZodObject<{
+export declare const sGetTraitDescriptionResponse: z.ZodObject<{
     description: z.ZodString;
 }, "strip", z.ZodTypeAny, {
     description: string;

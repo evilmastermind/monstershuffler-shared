@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getActionList: z.ZodObject<{
+export declare const sGetActionListBody: z.ZodObject<{
     game: z.ZodOptional<z.ZodNumber>;
     name: z.ZodOptional<z.ZodString>;
     type: z.ZodOptional<z.ZodString>;
@@ -21,7 +21,7 @@ export declare const getActionList: z.ZodObject<{
     source?: string | undefined;
     tag?: string | undefined;
 }>;
-export declare const getActionListResponse: z.ZodObject<{
+export declare const sGetActionListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -88,7 +88,7 @@ export declare const getActionListResponse: z.ZodObject<{
         actionstags?: string[] | undefined;
     }[];
 }>;
-export declare const getActionResponse: z.ZodObject<{
+export declare const sGetActionResponse: z.ZodObject<{
     id: z.ZodNumber;
     userid: z.ZodNumber;
     object: z.ZodUnion<[z.ZodObject<{
@@ -1435,7 +1435,7 @@ export declare const getActionResponse: z.ZodObject<{
         subtype?: string | undefined;
     };
 }>;
-export declare const postAction: z.ZodObject<{
+export declare const sPostActionBody: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
     type: z.ZodString;
@@ -2766,7 +2766,7 @@ export declare const postAction: z.ZodObject<{
     subtype?: string | undefined;
     tags?: string[] | undefined;
 }>;
-export declare const putAction: z.ZodObject<{
+export declare const sPutActionBody: z.ZodObject<{
     name: z.ZodString;
     type: z.ZodString;
     subtype: z.ZodOptional<z.ZodString>;

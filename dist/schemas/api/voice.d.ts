@@ -1,12 +1,12 @@
 import { z } from 'zod';
-export declare const getRandomVoice: z.ZodObject<{
+export declare const sGetRandomVoiceBody: z.ZodObject<{
     gender: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     gender?: string | undefined;
 }, {
     gender?: string | undefined;
 }>;
-export declare const getRandomVoiceResponse: z.ZodObject<{
+export declare const sGetRandomVoiceResponse: z.ZodObject<{
     id: z.ZodNumber;
     gender: z.ZodString;
     person: z.ZodString;

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getClassListResponse: z.ZodObject<{
+export declare const sGetClassListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -26,7 +26,7 @@ export declare const getClassListResponse: z.ZodObject<{
         userid: number;
     }[];
 }>;
-export declare const getClassWithVariantsListResponse: z.ZodObject<{
+export declare const sGetClassWithVariantsListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -86,7 +86,7 @@ export declare const getClassWithVariantsListResponse: z.ZodObject<{
         }[];
     }[];
 }>;
-export declare const getClassResponse: z.ZodObject<{
+export declare const sGetClassResponse: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -5856,7 +5856,7 @@ export declare const getClassResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postClass: z.ZodObject<{
+export declare const sPostClassBody: z.ZodObject<{
     game: z.ZodNumber;
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
@@ -11626,7 +11626,7 @@ export declare const postClass: z.ZodObject<{
     };
     game: number;
 }>;
-export declare const putClass: z.ZodObject<{
+export declare const sPutClassBody: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -16110,7 +16110,7 @@ export declare const putClass: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     }>;
-    game: z.ZodNumber;
+    game: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
@@ -16752,7 +16752,7 @@ export declare const putClass: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
-    game: number;
+    game?: number | undefined;
 }, {
     object: {
         name: string;
@@ -17394,6 +17394,6 @@ export declare const putClass: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
-    game: number;
+    game?: number | undefined;
 }>;
 //# sourceMappingURL=class.d.ts.map

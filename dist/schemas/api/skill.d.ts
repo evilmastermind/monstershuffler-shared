@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getSkillListResponse: z.ZodObject<{
+export declare const sGetSkillListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         game: z.ZodNumber;
@@ -26,7 +26,7 @@ export declare const getSkillListResponse: z.ZodObject<{
         game: number;
     }[];
 }>;
-export declare const getSkillResponse: z.ZodObject<{
+export declare const sGetSkillResponse: z.ZodObject<{
     id: z.ZodNumber;
     game: z.ZodNumber;
     name: z.ZodString;

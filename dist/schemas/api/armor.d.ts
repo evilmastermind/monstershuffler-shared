@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const postArmor: z.ZodObject<{
+export declare const sPostArmorBody: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
     object: z.ZodObject<{
@@ -67,7 +67,7 @@ export declare const postArmor: z.ZodObject<{
     name: string;
     game: number;
 }>;
-export declare const putArmor: z.ZodObject<{
+export declare const sPutArmorBody: z.ZodObject<{
     name: z.ZodString;
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
@@ -132,14 +132,14 @@ export declare const putArmor: z.ZodObject<{
     };
     name: string;
 }>;
-export declare const getArmorParams: z.ZodObject<{
+export declare const sGetArmorParams: z.ZodObject<{
     id: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     id: number;
 }, {
     id: number;
 }>;
-export declare const getArmorResponse: z.ZodObject<{
+export declare const sGetArmorResponse: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         AC: z.ZodString;
@@ -201,7 +201,7 @@ export declare const getArmorResponse: z.ZodObject<{
         stealthDis?: boolean | undefined;
     };
 }>;
-export declare const getArmorListResponse: z.ZodObject<{
+export declare const sGetArmorListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

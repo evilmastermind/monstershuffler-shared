@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomVoiceResponse = exports.getRandomVoice = void 0;
+exports.sGetRandomVoiceResponse = exports.sGetRandomVoiceBody = void 0;
 const zod_1 = require("zod");
-exports.getRandomVoice = zod_1.z.object({
+exports.sGetRandomVoiceBody = zod_1.z.object({
     gender: zod_1.z.string().optional(),
 });
-exports.getRandomVoiceResponse = zod_1.z.object({
+exports.sGetRandomVoiceResponse = zod_1.z.object({
     id: zod_1.z.number(),
     gender: zod_1.z.string(),
     person: zod_1.z.string(),

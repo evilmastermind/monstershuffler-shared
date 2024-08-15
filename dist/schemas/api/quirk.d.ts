@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getRandomQuirkResponse: z.ZodObject<{
+export declare const sGetRandomQuirkResponse: z.ZodObject<{
     id: z.ZodNumber;
     quirk: z.ZodString;
 }, "strip", z.ZodTypeAny, {

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const postLanguage: z.ZodObject<{
+export declare const sPostLanguageBody: z.ZodObject<{
     name: z.ZodString;
     script: z.ZodString;
 }, "strip", z.ZodTypeAny, {
@@ -9,7 +9,17 @@ export declare const postLanguage: z.ZodObject<{
     name: string;
     script: string;
 }>;
-export declare const getLanguageResponse: z.ZodObject<{
+export declare const sPutLanguageBody: z.ZodObject<{
+    name: z.ZodOptional<z.ZodString>;
+    script: z.ZodOptional<z.ZodString>;
+}, "strip", z.ZodTypeAny, {
+    name?: string | undefined;
+    script?: string | undefined;
+}, {
+    name?: string | undefined;
+    script?: string | undefined;
+}>;
+export declare const sGetLanguageResponse: z.ZodObject<{
     id: z.ZodNumber;
     userid: z.ZodNumber;
     name: z.ZodString;
@@ -25,17 +35,7 @@ export declare const getLanguageResponse: z.ZodObject<{
     userid: number;
     script: string;
 }>;
-export declare const putLanguage: z.ZodObject<{
-    name: z.ZodString;
-    script: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    name: string;
-    script: string;
-}, {
-    name: string;
-    script: string;
-}>;
-export declare const getLanguageListResponse: z.ZodObject<{
+export declare const sGetLanguageListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

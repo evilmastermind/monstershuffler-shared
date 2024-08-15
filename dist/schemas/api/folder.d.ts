@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getFolderContentResponse: z.ZodObject<{
+export declare const sGetFolderContentResponse: z.ZodObject<{
     folders: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         name: z.ZodString;
@@ -193,14 +193,21 @@ export declare const getFolderContentResponse: z.ZodObject<{
         positiveratings?: number | undefined;
     }[];
 }>;
-export declare const postFolder: z.ZodObject<{
+export declare const sPostFolderBody: z.ZodObject<{
     name: z.ZodString;
 }, "strip", z.ZodTypeAny, {
     name: string;
 }, {
     name: string;
 }>;
-export declare const postFolderResponse: z.ZodObject<{
+export declare const sPutFolderBody: z.ZodObject<{
+    name: z.ZodOptional<z.ZodString>;
+}, "strip", z.ZodTypeAny, {
+    name?: string | undefined;
+}, {
+    name?: string | undefined;
+}>;
+export declare const sPostFolderResponse: z.ZodObject<{
     id: z.ZodNumber;
     name: z.ZodString;
 }, "strip", z.ZodTypeAny, {

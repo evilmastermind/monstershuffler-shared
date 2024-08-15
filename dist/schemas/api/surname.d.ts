@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getRandomSurname: z.ZodObject<{
+export declare const sGetRandomSurnameBody: z.ZodObject<{
     race: z.ZodOptional<z.ZodString>;
     gender: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
@@ -9,7 +9,7 @@ export declare const getRandomSurname: z.ZodObject<{
     race?: string | undefined;
     gender?: string | undefined;
 }>;
-export declare const getRandomSurnameResponse: z.ZodObject<{
+export declare const sGetRandomSurnameResponse: z.ZodObject<{
     surname: z.ZodString;
 }, "strip", z.ZodTypeAny, {
     surname: string;

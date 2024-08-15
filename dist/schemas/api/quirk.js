@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomQuirkResponse = void 0;
+exports.sGetRandomQuirkResponse = void 0;
 const zod_1 = require("zod");
-exports.getRandomQuirkResponse = zod_1.z.object({
+exports.sGetRandomQuirkResponse = zod_1.z.object({
     id: zod_1.z.number(),
     quirk: zod_1.z.string(),
 });

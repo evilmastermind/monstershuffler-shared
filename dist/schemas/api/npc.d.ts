@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const postRandomNpcInput: z.ZodObject<{
+export declare const sPostRandomNpcBody: z.ZodObject<{
     sessionId: z.ZodOptional<z.ZodString>;
     levelType: z.ZodOptional<z.ZodEnum<["random", "randomPeasantsMostly"]>>;
     classType: z.ZodOptional<z.ZodEnum<["none", "randomSometimes", "randomAlways", "specific"]>>;
@@ -12991,7 +12991,7 @@ export declare const npcDetailsObject: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postRandomNpcResponse: z.ZodObject<{
+export declare const sPostRandomNpcResponse: z.ZodObject<{
     id: z.ZodNumber;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
@@ -25919,7 +25919,7 @@ export declare const postRandomNpcResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postFourRandomNpcsResponse: z.ZodObject<{
+export declare const sPostFourRandomNpcsResponse: z.ZodObject<{
     npcs: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         object: import("../../schemas/objects/character/objects").CharacterObject;
@@ -51777,7 +51777,7 @@ export declare const postFourRandomNpcsResponse: z.ZodObject<{
         id: number;
     }[];
 }>;
-export declare const getGeneratorDataResponse: z.ZodObject<{
+export declare const sGetGeneratorDataResponse: z.ZodObject<{
     races: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

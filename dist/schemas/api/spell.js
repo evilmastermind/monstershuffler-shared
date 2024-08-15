@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.putSpell = exports.postSpell = exports.getSpellResponse = exports.getSpellListResponse = exports.getSpellList = void 0;
+exports.sPutSpellBody = exports.sPostSpellBody = exports.sGetSpellResponse = exports.sGetSpellListResponse = exports.sGetSpellListBody = void 0;
 const zod_1 = require("zod");
 const spells_1 = require("../../schemas/objects/character/spells");
 const object_1 = require("./object");
@@ -14,7 +14,7 @@ const duration = zod_1.z.string().min(2);
 const component = zod_1.z.string().min(2);
 const castingTime = zod_1.z.string().min(2);
 const description = zod_1.z.string().min(2);
-exports.getSpellList = zod_1.z.object({
+exports.sGetSpellListBody = zod_1.z.object({
     game: object_1.game,
     name: object_1.name.optional(),
     level: level.optional(),
@@ -28,24 +28,24 @@ exports.getSpellList = zod_1.z.object({
     castingTime: castingTime.optional(),
     description: description.optional(),
 });
-exports.getSpellListResponse = zod_1.z.object({
+exports.sGetSpellListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
         id: object_1.id,
         userid: object_1.userid,
         name: object_1.name,
     })),
 });
-exports.getSpellResponse = zod_1.z.object({
+exports.sGetSpellResponse = zod_1.z.object({
     id: object_1.id,
     userid: object_1.userid,
     object: spells_1.spellObject,
 });
-exports.postSpell = zod_1.z.object({
+exports.sPostSpellBody = zod_1.z.object({
     game: object_1.game,
     name: object_1.name,
     object: spells_1.spellObject,
 });
-exports.putSpell = zod_1.z.object({
+exports.sPutSpellBody = zod_1.z.object({
     name: object_1.name,
     object: spells_1.spellObject,
 });

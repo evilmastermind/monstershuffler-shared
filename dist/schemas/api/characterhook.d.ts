@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getRandomCharacterhookResponse: z.ZodObject<{
+export declare const sGetRandomCharacterhookResponse: z.ZodObject<{
     id: z.ZodNumber;
     characterhook: z.ZodString;
 }, "strip", z.ZodTypeAny, {

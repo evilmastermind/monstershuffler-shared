@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getSpellList: z.ZodObject<{
+export declare const sGetSpellListBody: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodOptional<z.ZodString>;
     level: z.ZodOptional<z.ZodNumber>;
@@ -39,7 +39,7 @@ export declare const getSpellList: z.ZodObject<{
     castingTime?: string | undefined;
     description?: string | undefined;
 }>;
-export declare const getSpellListResponse: z.ZodObject<{
+export declare const sGetSpellListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -66,7 +66,7 @@ export declare const getSpellListResponse: z.ZodObject<{
         userid: number;
     }[];
 }>;
-export declare const getSpellResponse: z.ZodObject<{
+export declare const sGetSpellResponse: z.ZodObject<{
     id: z.ZodNumber;
     userid: z.ZodNumber;
     object: z.ZodObject<{
@@ -144,7 +144,7 @@ export declare const getSpellResponse: z.ZodObject<{
     id: number;
     userid: number;
 }>;
-export declare const postSpell: z.ZodObject<{
+export declare const sPostSpellBody: z.ZodObject<{
     game: z.ZodNumber;
     name: z.ZodString;
     object: z.ZodObject<{
@@ -222,7 +222,7 @@ export declare const postSpell: z.ZodObject<{
     name: string;
     game: number;
 }>;
-export declare const putSpell: z.ZodObject<{
+export declare const sPutSpellBody: z.ZodObject<{
     name: z.ZodString;
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;

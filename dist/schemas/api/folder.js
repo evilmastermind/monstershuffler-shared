@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postFolderResponse = exports.postFolder = exports.getFolderContentResponse = void 0;
+exports.sPostFolderResponse = exports.sPutFolderBody = exports.sPostFolderBody = exports.sGetFolderContentResponse = void 0;
 const zod_1 = require("zod");
 const object_1 = require("./object");
 const adds = zod_1.z.number().int().nonnegative().optional();
@@ -47,17 +47,20 @@ const templates = zod_1.z.array(zod_1.z.object({
     negativeratings,
     positiveratings,
 }));
-exports.getFolderContentResponse = zod_1.z.object({
+exports.sGetFolderContentResponse = zod_1.z.object({
     folders,
     characters,
     races,
     classes,
     templates,
 });
-exports.postFolder = zod_1.z.object({
+exports.sPostFolderBody = zod_1.z.object({
     name: object_1.name,
 });
-exports.postFolderResponse = zod_1.z.object({
+exports.sPutFolderBody = zod_1.z.object({
+    name: object_1.name.optional(),
+});
+exports.sPostFolderResponse = zod_1.z.object({
     id: object_1.id,
     name: object_1.name,
 });

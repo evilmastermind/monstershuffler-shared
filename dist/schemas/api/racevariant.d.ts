@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getRacevariantListResponse: z.ZodObject<{
+export declare const sGetRacevariantListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -26,7 +26,7 @@ export declare const getRacevariantListResponse: z.ZodObject<{
         userid: number;
     }[];
 }>;
-export declare const getRacevariantResponse: z.ZodObject<{
+export declare const sGetRacevariantResponse: z.ZodObject<{
     id: z.ZodNumber;
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
@@ -5811,7 +5811,7 @@ export declare const getRacevariantResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postRacevariant: z.ZodObject<{
+export declare const sPostRacevariant: z.ZodObject<{
     game: z.ZodNumber;
     raceId: z.ZodNumber;
     object: z.ZodObject<{
@@ -11599,7 +11599,7 @@ export declare const postRacevariant: z.ZodObject<{
     game: number;
     raceId: number;
 }>;
-export declare const putRacevariant: z.ZodObject<{
+export declare const sPutRacevariant: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -16092,6 +16092,7 @@ export declare const putRacevariant: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     }>;
+    game: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
@@ -16736,6 +16737,7 @@ export declare const putRacevariant: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
+    game?: number | undefined;
 }, {
     object: {
         name: string;
@@ -17380,5 +17382,6 @@ export declare const putRacevariant: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
+    game?: number | undefined;
 }>;
 //# sourceMappingURL=racevariant.d.ts.map

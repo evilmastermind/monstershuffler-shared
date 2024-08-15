@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getCharacterListResponse: z.ZodObject<{
+export declare const sGetCharacterListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -26,7 +26,7 @@ export declare const getCharacterListResponse: z.ZodObject<{
         userid: number;
     }[];
 }>;
-export declare const getCharacterResponse: z.ZodObject<{
+export declare const sGetCharacterResponse: z.ZodObject<{
     id: z.ZodNumber;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
@@ -12954,9 +12954,8 @@ export declare const getCharacterResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postCharacter: z.ZodObject<{
+export declare const sPostCharacterBody: z.ZodObject<{
     game: z.ZodNumber;
-    name: z.ZodString;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -19419,7 +19418,6 @@ export declare const postCharacter: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    name: string;
     game: number;
 }, {
     object: {
@@ -25882,12 +25880,10 @@ export declare const postCharacter: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    name: string;
     game: number;
 }>;
-export declare const putCharacter: z.ZodObject<{
-    name: z.ZodString;
-    game: z.ZodNumber;
+export declare const sPutCharacterBody: z.ZodObject<{
+    game: z.ZodOptional<z.ZodNumber>;
     object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
@@ -32350,8 +32346,7 @@ export declare const putCharacter: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    name: string;
-    game: number;
+    game?: number | undefined;
 }, {
     object: {
         character: {
@@ -38813,7 +38808,6 @@ export declare const putCharacter: z.ZodObject<{
             currentHD?: number | undefined;
         } | undefined;
     };
-    name: string;
-    game: number;
+    game?: number | undefined;
 }>;
 //# sourceMappingURL=character.d.ts.map

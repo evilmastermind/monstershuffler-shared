@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const postDamageType: z.ZodObject<{
+export declare const sPostDamageTypeBody: z.ZodObject<{
     name: z.ZodString;
     description: z.ZodString;
 }, "strip", z.ZodTypeAny, {
@@ -9,7 +9,17 @@ export declare const postDamageType: z.ZodObject<{
     name: string;
     description: string;
 }>;
-export declare const getDamageTypeResponse: z.ZodObject<{
+export declare const sPutDamageTypeBody: z.ZodObject<{
+    name: z.ZodOptional<z.ZodString>;
+    description: z.ZodOptional<z.ZodString>;
+}, "strip", z.ZodTypeAny, {
+    name?: string | undefined;
+    description?: string | undefined;
+}, {
+    name?: string | undefined;
+    description?: string | undefined;
+}>;
+export declare const sGetDamageTypeResponse: z.ZodObject<{
     id: z.ZodNumber;
     userid: z.ZodNumber;
     name: z.ZodString;
@@ -25,17 +35,7 @@ export declare const getDamageTypeResponse: z.ZodObject<{
     description: string;
     userid: number;
 }>;
-export declare const putDamageType: z.ZodObject<{
-    name: z.ZodString;
-    description: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    name: string;
-    description: string;
-}, {
-    name: string;
-    description: string;
-}>;
-export declare const getDamageTypeListResponse: z.ZodObject<{
+export declare const sGetDamageTypeListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

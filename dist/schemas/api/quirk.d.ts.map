@@ -1,1 +1,1 @@
-{"version":3,"file":"quirk.d.ts","sourceRoot":"","sources":["../../../schemas/api/quirk.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,sBAAsB;;;;;;;;;EAGjC,CAAC"}
+{"version":3,"file":"quirk.d.ts","sourceRoot":"","sources":["../../../schemas/api/quirk.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,uBAAuB;;;;;;;;;EAGlC,CAAC"}

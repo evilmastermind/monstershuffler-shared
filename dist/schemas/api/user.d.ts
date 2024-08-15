@@ -1,71 +1,4 @@
 import { z } from 'zod';
-export declare const postUser: z.ZodObject<{
-    password: z.ZodString;
-    email: z.ZodString;
-    username: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    password: string;
-    email: string;
-    username: string;
-}, {
-    password: string;
-    email: string;
-    username: string;
-}>;
-export declare const postUserResponse: z.ZodObject<{
-    id: z.ZodNumber;
-    email: z.ZodString;
-    username: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    id: number;
-    email: string;
-    username: string;
-}, {
-    id: number;
-    email: string;
-    username: string;
-}>;
-export declare const activateUser: z.ZodObject<{
-    token: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    token: string;
-}, {
-    token: string;
-}>;
-export declare const resetPassword: z.ZodObject<{
-    token: z.ZodString;
-    password: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    token: string;
-    password: string;
-}, {
-    token: string;
-    password: string;
-}>;
-export declare const reactivateUser: z.ZodObject<{
-    email: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    email: string;
-}, {
-    email: string;
-}>;
-export declare const loginSchema: z.ZodObject<{
-    email: z.ZodString;
-    password: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    password: string;
-    email: string;
-}, {
-    password: string;
-    email: string;
-}>;
-export declare const loginResponse: z.ZodObject<{
-    accessToken: z.ZodString;
-}, "strip", z.ZodTypeAny, {
-    accessToken: string;
-}, {
-    accessToken: string;
-}>;
 export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
     stats: z.ZodObject<{
         lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
@@ -91,7 +24,74 @@ export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
         heightUnit: "feet" | "meters";
     };
 }>, z.ZodNull]>;
-export declare const getUserResponse: z.ZodObject<{
+export declare const sPostUserBody: z.ZodObject<{
+    password: z.ZodString;
+    email: z.ZodString;
+    username: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    password: string;
+    email: string;
+    username: string;
+}, {
+    password: string;
+    email: string;
+    username: string;
+}>;
+export declare const sPostUserResponse: z.ZodObject<{
+    id: z.ZodNumber;
+    email: z.ZodString;
+    username: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    id: number;
+    email: string;
+    username: string;
+}, {
+    id: number;
+    email: string;
+    username: string;
+}>;
+export declare const sActivateUserBody: z.ZodObject<{
+    token: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    token: string;
+}, {
+    token: string;
+}>;
+export declare const sResetPasswordBody: z.ZodObject<{
+    token: z.ZodString;
+    password: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    token: string;
+    password: string;
+}, {
+    token: string;
+    password: string;
+}>;
+export declare const sReactivateUserBody: z.ZodObject<{
+    email: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    email: string;
+}, {
+    email: string;
+}>;
+export declare const sLoginBody: z.ZodObject<{
+    email: z.ZodString;
+    password: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    password: string;
+    email: string;
+}, {
+    password: string;
+    email: string;
+}>;
+export declare const sLoginResponse: z.ZodObject<{
+    accessToken: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    accessToken: string;
+}, {
+    accessToken: string;
+}>;
+export declare const sGetUserResponse: z.ZodObject<{
     level: z.ZodNumber;
     created: z.ZodString;
     publishsuspension: z.ZodString;
@@ -155,7 +155,7 @@ export declare const getUserResponse: z.ZodObject<{
         };
     } | null;
 }>;
-export declare const putUser: z.ZodObject<{
+export declare const sPutUserBody: z.ZodObject<{
     username: z.ZodString;
     avatar: z.ZodString;
 }, "strip", z.ZodTypeAny, {

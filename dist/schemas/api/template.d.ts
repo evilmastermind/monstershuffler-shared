@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const getTemplateListResponse: z.ZodObject<{
+export declare const sGetTemplateListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;
@@ -26,7 +26,7 @@ export declare const getTemplateListResponse: z.ZodObject<{
         userid: number;
     }[];
 }>;
-export declare const getTemplateResponse: z.ZodObject<{
+export declare const sGetTemplateResponse: z.ZodObject<{
     id: z.ZodNumber;
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
@@ -6047,7 +6047,7 @@ export declare const getTemplateResponse: z.ZodObject<{
     };
     id: number;
 }>;
-export declare const postTemplate: z.ZodObject<{
+export declare const sPostTemplate: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -12068,7 +12068,7 @@ export declare const postTemplate: z.ZodObject<{
     };
     game: number;
 }>;
-export declare const putTemplate: z.ZodObject<{
+export declare const sPutTemplate: z.ZodObject<{
     object: z.ZodObject<{
         sheet: z.ZodOptional<z.ZodObject<{
             images: z.ZodArray<z.ZodObject<{
@@ -16737,7 +16737,7 @@ export declare const putTemplate: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     }>;
-    game: z.ZodNumber;
+    game: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
@@ -17412,7 +17412,7 @@ export declare const putTemplate: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
-    game: number;
+    game?: number | undefined;
 }, {
     object: {
         name: string;
@@ -18087,6 +18087,6 @@ export declare const putTemplate: z.ZodObject<{
         id?: number | undefined;
         description?: string | undefined;
     };
-    game: number;
+    game?: number | undefined;
 }>;
 //# sourceMappingURL=template.d.ts.map

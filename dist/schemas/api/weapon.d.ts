@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const postWeapon: z.ZodObject<{
+export declare const sPostWeaponBody: z.ZodObject<{
     game: z.ZodNumber;
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
@@ -89,7 +89,7 @@ export declare const postWeapon: z.ZodObject<{
     };
     game: number;
 }>;
-export declare const putWeapon: z.ZodObject<{
+export declare const sPutWeapon: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
@@ -139,6 +139,7 @@ export declare const putWeapon: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     }>;
+    game: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     object: {
         id?: number | undefined;
@@ -157,6 +158,7 @@ export declare const putWeapon: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     };
+    game?: number | undefined;
 }, {
     object: {
         id?: number | undefined;
@@ -175,15 +177,16 @@ export declare const putWeapon: z.ZodObject<{
         targets?: string | undefined;
         properties?: string[] | undefined;
     };
+    game?: number | undefined;
 }>;
-export declare const getWeaponParams: z.ZodObject<{
+export declare const sGetWeaponParams: z.ZodObject<{
     id: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     id: number;
 }, {
     id: number;
 }>;
-export declare const getWeaponResponse: z.ZodObject<{
+export declare const sGetWeaponResponse: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodOptional<z.ZodString>;
@@ -270,7 +273,7 @@ export declare const getWeaponResponse: z.ZodObject<{
         properties?: string[] | undefined;
     };
 }>;
-export declare const getWeaponListResponse: z.ZodObject<{
+export declare const sGetWeaponListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{
         id: z.ZodNumber;
         userid: z.ZodNumber;

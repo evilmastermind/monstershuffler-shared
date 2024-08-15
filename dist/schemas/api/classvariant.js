@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.putClassvariant = exports.postClassvariant = exports.getClassvariantResponse = exports.getClassvariantClassListResponse = exports.getClassvariantListResponse = void 0;
+exports.sPutClassvariantBody = exports.sPostClassvariantBody = exports.sGetClassvariantResponse = exports.sGetClassvariantClassListResponse = exports.sGetClassvariantListResponse = void 0;
 const zod_1 = require("zod");
 const objects_1 = require("../../schemas/objects/character/objects");
 const object_1 = require("./object");
-exports.getClassvariantListResponse = zod_1.z.object({
+exports.sGetClassvariantListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
         id: object_1.id,
         userid: object_1.userid,
@@ -15,22 +15,23 @@ exports.getClassvariantListResponse = zod_1.z.object({
         }),
     })),
 });
-exports.getClassvariantClassListResponse = zod_1.z.object({
+exports.sGetClassvariantClassListResponse = zod_1.z.object({
     list: zod_1.z.array(zod_1.z.object({
         id: object_1.id,
         userid: object_1.userid,
         name: object_1.name,
     })),
 });
-exports.getClassvariantResponse = zod_1.z.object({
+exports.sGetClassvariantResponse = zod_1.z.object({
     object: objects_1.classvariantObject,
     id: object_1.id,
 });
-exports.postClassvariant = zod_1.z.object({
+exports.sPostClassvariantBody = zod_1.z.object({
     game: object_1.game,
     classId: object_1.id,
     object: objects_1.classvariantObject,
 });
-exports.putClassvariant = zod_1.z.object({
+exports.sPutClassvariantBody = zod_1.z.object({
     object: objects_1.classvariantObject,
+    game: object_1.game.optional(),
 });
