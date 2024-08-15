@@ -45,3 +45,37 @@ export const sGetGeneratorDataResponse = z.object({
   classes: objectWithVariantsList,
   backgrounds: objectList,
 });
+
+
+export const sPostNpcRatingResponse = z.object({
+  id: z.number(),
+  rating: z.number()
+});
+
+export const sPostNpcToSentAlreadyListBody = z.object({
+  npcid: z.number(),
+  userid: z.number().optional(),
+  sessionid: z.string().optional(),
+});
+
+export const sAddBackstoryToNpcBody = z.object({
+  id: z.number(),
+  backstory: z.string(),
+  object: characterObject,
+});
+
+export const sGenerateBackstoryBody = z.object({
+  id: z.number(),
+});
+
+export const sPostNpcBody = z.object({
+  object: characterObject,
+  userid: z.number().optional(),
+  sessionid: z.string().optional(),
+});
+
+export const sPostNpcRatingBody = z.object({
+  id: z.number(),
+  rating: z.number(),
+  sessionid: z.string().optional(),
+});

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sGetGeneratorDataResponse = exports.sPostFourRandomNpcsResponse = exports.sPostRandomNpcResponse = exports.npcDetailsObject = exports.sPostRandomNpcBody = void 0;
+exports.sPostNpcRatingBody = exports.sPostNpcBody = exports.sGenerateBackstoryBody = exports.sAddBackstoryToNpcBody = exports.sPostNpcToSentAlreadyListBody = exports.sPostNpcRatingResponse = exports.sGetGeneratorDataResponse = exports.sPostFourRandomNpcsResponse = exports.sPostRandomNpcResponse = exports.npcDetailsObject = exports.sPostRandomNpcBody = void 0;
 const zod_1 = require("zod");
 const objects_1 = require("../../schemas/objects/character/objects");
 const other_1 = require("../../schemas/objects/character/other");
@@ -42,4 +42,31 @@ exports.sGetGeneratorDataResponse = zod_1.z.object({
     races: object_1.objectWithVariantsList,
     classes: object_1.objectWithVariantsList,
     backgrounds: object_1.objectList,
+});
+exports.sPostNpcRatingResponse = zod_1.z.object({
+    id: zod_1.z.number(),
+    rating: zod_1.z.number()
+});
+exports.sPostNpcToSentAlreadyListBody = zod_1.z.object({
+    npcid: zod_1.z.number(),
+    userid: zod_1.z.number().optional(),
+    sessionid: zod_1.z.string().optional(),
+});
+exports.sAddBackstoryToNpcBody = zod_1.z.object({
+    id: zod_1.z.number(),
+    backstory: zod_1.z.string(),
+    object: objects_1.characterObject,
+});
+exports.sGenerateBackstoryBody = zod_1.z.object({
+    id: zod_1.z.number(),
+});
+exports.sPostNpcBody = zod_1.z.object({
+    object: objects_1.characterObject,
+    userid: zod_1.z.number().optional(),
+    sessionid: zod_1.z.string().optional(),
+});
+exports.sPostNpcRatingBody = zod_1.z.object({
+    id: zod_1.z.number(),
+    rating: zod_1.z.number(),
+    sessionid: zod_1.z.string().optional(),
 });
