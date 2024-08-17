@@ -15,18 +15,15 @@ const userCore = {
         invalid_type_error: 'Email must be a string',
     })
         .min(2, { message: 'Username is too short (min 2 characters)' })
-        .max(21, { message: 'Username is too long (max 21 characters' }),
+        .max(21, { message: 'Username is too long (max 21 characters)' }),
 };
-exports.userSettingsObject = zod_1.z.union([
-    zod_1.z.object({
-        stats: zod_1.z.object({
-            lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
-            heightUnit: zod_1.z.enum(['feet', 'meters']),
-        }),
-        language: zod_1.z.enum(['en', 'it']),
+exports.userSettingsObject = zod_1.z.object({
+    stats: zod_1.z.object({
+        lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
+        heightUnit: zod_1.z.enum(['feet', 'meters']),
     }),
-    zod_1.z.null(),
-]);
+    language: zod_1.z.enum(['en', 'it']),
+}).nullable();
 exports.sPostUserBody = zod_1.z.object({
     ...userCore,
     password: zod_1.z

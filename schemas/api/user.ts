@@ -13,19 +13,17 @@ const userCore = {
       invalid_type_error: 'Email must be a string',
     })
     .min(2, { message: 'Username is too short (min 2 characters)' })
-    .max(21, { message: 'Username is too long (max 21 characters' }),
+    .max(21, { message: 'Username is too long (max 21 characters)' }),
 };
 
-export const userSettingsObject = z.union([
+export const userSettingsObject = 
   z.object({
     stats: z.object({
       lengthUnit: z.enum(['feet', 'meters', 'squares']),
       heightUnit: z.enum(['feet', 'meters']),
     }),
     language: z.enum(['en', 'it']),
-  }),
-  z.null(),
-]);
+  }).nullable();
 
 export const sPostUserBody = z.object({
   ...userCore,

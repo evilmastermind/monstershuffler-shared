@@ -1297,6 +1297,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -1331,6 +1332,12 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;
@@ -7759,6 +7766,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -7793,6 +7801,12 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;
@@ -14225,6 +14239,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -14259,6 +14274,12 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;
@@ -20687,6 +20708,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -20721,6 +20743,12 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;
@@ -27153,6 +27181,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -27187,6 +27216,12 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;
@@ -33615,6 +33650,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     availableUnit?: "level" | "cr" | undefined;
                     properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
+                size?: number | undefined;
                 armor?: {
                     choice: {
                         type: "random";
@@ -33649,6 +33685,12 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 } | undefined;
                 alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
                 pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+                ageAdult?: number | undefined;
+                ageMax?: number | undefined;
+                heightMin?: number | undefined;
+                heightMax?: number | undefined;
+                nameType?: string[] | undefined;
+                addSurname?: number | undefined;
                 id?: number | undefined;
                 description?: string | undefined;
             } | undefined;

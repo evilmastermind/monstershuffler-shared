@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
+export declare const userSettingsObject: z.ZodNullable<z.ZodObject<{
     stats: z.ZodObject<{
         lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
         heightUnit: z.ZodEnum<["feet", "meters"]>;
@@ -23,7 +23,7 @@ export declare const userSettingsObject: z.ZodUnion<[z.ZodObject<{
         lengthUnit: "feet" | "meters" | "squares";
         heightUnit: "feet" | "meters";
     };
-}>, z.ZodNull]>;
+}>>;
 export declare const sPostUserBody: z.ZodObject<{
     password: z.ZodString;
     email: z.ZodString;
@@ -96,7 +96,7 @@ export declare const sGetUserResponse: z.ZodObject<{
     created: z.ZodString;
     publishsuspension: z.ZodString;
     avatar: z.ZodString;
-    settings: z.ZodUnion<[z.ZodObject<{
+    settings: z.ZodNullable<z.ZodObject<{
         stats: z.ZodObject<{
             lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
             heightUnit: z.ZodEnum<["feet", "meters"]>;
@@ -120,7 +120,7 @@ export declare const sGetUserResponse: z.ZodObject<{
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
         };
-    }>, z.ZodNull]>;
+    }>>;
     email: z.ZodString;
     username: z.ZodString;
     id: z.ZodNumber;
