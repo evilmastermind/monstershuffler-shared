@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getBackstory = exports.parseRoleplayStats = exports.getArchetypeDescription = exports.getSimpleAlignmentDescription = exports.getAlignmentDescription = void 0;
 const functions_1 = require("../functions");
-const functions_2 = require("../../functions");
+const functions_2 = require("@/functions");
 function getAlignmentDescription(alignment) {
     switch (alignment) {
         case "Lawful Good":

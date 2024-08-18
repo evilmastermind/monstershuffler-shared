@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createUserObjectIfNotExists = exports.parseNameChoices = exports.getUnitSymbol = exports.feetDecimalToMeters = exports.feetDecimalToFeetInches = exports.feetToOtherUnit = exports.unshiftWithComma = exports.numberToSignedString = exports.pushWithComma = exports.addCommaIfNotEmpty = exports.calibrateStatistic = exports.getPrioritizedStatisticFromPath = exports.getPrioritizedStatistic = exports.getBonusAndInfo = exports.getBonus = exports.getBonusesForOneStatistic = exports.getStatArrayFromObjects = exports.getCurrentStatLimit = exports.isNumber = exports.sortObject = exports.addPlusSign = exports.createPart = exports.objects = void 0;
 const jspath_1 = __importDefault(require("jspath"));
 const expressions_1 = require("./expressions");
-const functions_1 = require("../../functions");
-const stats_1 = require("../../parsers/stats");
+const functions_1 = require("@/functions");
+const stats_1 = require("@/parsers/stats");
 exports.objects = [
     "user",
     "template",

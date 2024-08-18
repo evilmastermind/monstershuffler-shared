@@ -210,10 +210,8 @@ exports.characterObject = zod_1.z
         template: exports.templateObject.optional(),
         user: exports.userObject.optional(),
         conditions: conditionsObject.optional(),
-        ...other_1.abilityScoresStats,
         ...other_1.alignmentModifiersStats,
         ...alignment_1.alignmentStats,
-        ...other_1.skillsStats,
         ...other_1.roleplayStats,
         // CR
         CRCalculation: CRCalculationObject,

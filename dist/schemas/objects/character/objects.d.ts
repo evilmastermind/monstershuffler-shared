@@ -4,7 +4,7 @@ import { variablesObject } from './variables';
 import { tagsObject } from './tags';
 import { variationsObject } from './variations';
 import { alignmentStats } from './alignment';
-import { namingStats, pronounsStats, abilityScoresStats, skillsStats, roleplayStats, alignmentModifiersStats } from './other';
+import { namingStats, pronounsStats, roleplayStats, alignmentModifiersStats } from './other';
 export declare const raceSpecificGeneratorStats: {
     ageAdult: z.ZodOptional<z.ZodNumber>;
     ageMax: z.ZodOptional<z.ZodNumber>;
@@ -36599,11 +36599,9 @@ export type CharacterObject = z.ZodObject<{
         template: z.ZodOptional<typeof templateObject>;
         user: z.ZodOptional<typeof userObject>;
         conditions: z.ZodOptional<typeof conditionsObject>;
-        abilityScores: typeof abilityScoresStats.abilityScores;
         alignmentModifiers: typeof alignmentModifiersStats.alignmentModifiers;
         alignmentEthical: typeof alignmentStats.alignmentEthical;
         alignmentMoral: typeof alignmentStats.alignmentMoral;
-        skills: typeof skillsStats.skills;
         characterHook: typeof roleplayStats.characterHook;
         trait: typeof roleplayStats.trait;
         feeling: typeof roleplayStats.feeling;

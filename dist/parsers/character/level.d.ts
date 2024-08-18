@@ -1,4 +1,4 @@
-import { Character } from "../../types";
+import { Character } from "@/types";
 export declare function calculateLevel(character: Character): void;
 /** ------- automatic calculation (CR) -------
  * This function is called after the HP have been adjusted to the new CR

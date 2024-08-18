@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sPostNpcRatingBody = exports.sPostNpcBody = exports.sGenerateBackstoryBody = exports.sAddBackstoryToNpcBody = exports.sPostNpcToSentAlreadyListBody = exports.sPostNpcRatingResponse = exports.sGetGeneratorDataResponse = exports.sPostFourRandomNpcsResponse = exports.sPostRandomNpcResponse = exports.npcDetailsObject = exports.sPostRandomNpcBody = void 0;
 const zod_1 = require("zod");
-const objects_1 = require("../../schemas/objects/character/objects");
-const other_1 = require("../../schemas/objects/character/other");
-const alignment_1 = require("../../schemas/objects/character/alignment");
+const objects_1 = require("@/schemas/objects/character/objects");
+const other_1 = require("@/schemas/objects/character/other");
+const alignment_1 = require("@/schemas/objects/character/alignment");
 const object_1 = require("./object");
 exports.sPostRandomNpcBody = zod_1.z.object({
     sessionId: zod_1.z.string().optional(),

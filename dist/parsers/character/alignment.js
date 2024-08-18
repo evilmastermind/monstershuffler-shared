@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateAlignment = void 0;
-const functions_1 = require("../../functions");
-const functions_2 = require("../../parsers/functions");
+const functions_1 = require("@/functions");
+const functions_2 = require("@/parsers/functions");
 function calculateAlignment(character) {
     const c = character.character;
     const generic = c?.generic || null;

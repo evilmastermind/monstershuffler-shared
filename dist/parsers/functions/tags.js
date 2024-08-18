@@ -5,7 +5,7 @@ const statistics_1 = require("./statistics");
 const values_1 = require("./values");
 const attacks_1 = require("./attacks");
 const words_1 = require("./words");
-const functions_1 = require("../../functions");
+const functions_1 = require("@/functions");
 function replaceTags(untrimmedString, character, action = undefined, variant = undefined) {
     const string = untrimmedString.trim().replace(/^\\n|\\n$/g, "");
     const parts = [];

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createStats = exports.calculateCharacterHook = void 0;
-const functions_1 = require("../../functions");
+const functions_1 = require("@/functions");
 const challengeRating_1 = require("./challengeRating");
 const alignment_1 = require("./alignment");
 const name_1 = require("./name");

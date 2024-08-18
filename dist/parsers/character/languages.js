@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateLanguages = void 0;
-const parsers_1 = require("../../parsers");
-const functions_1 = require("../../parsers/functions");
+const parsers_1 = require("@/parsers");
+const functions_1 = require("@/parsers/functions");
 function calculateLanguages(character) {
     const s = character.statistics;
     const v = character.variables;
