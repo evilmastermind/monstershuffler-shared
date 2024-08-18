@@ -354,3 +354,11 @@ export function parseNameChoices(name = "") {
   const randomName = random(0, possibleNames.length - 1);
   return possibleNames[randomName];
 }
+
+
+export function createUserObjectIfNotExists(character: Character) {
+  if (!character.character.user) {
+    character.character.user = {
+    };
+  }
+}

@@ -74,4 +74,5 @@ export declare function feetDecimalToFeetInches(decimalFeet: number): string;
 export declare function feetDecimalToMeters(decimalFeet: number): string;
 export declare function getUnitSymbol(unit?: string): "ft" | "m" | "sq" | undefined;
 export declare function parseNameChoices(name?: string): string;
+export declare function createUserObjectIfNotExists(character: Character): void;
 //# sourceMappingURL=statistics.d.ts.map
