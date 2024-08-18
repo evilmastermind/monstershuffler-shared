@@ -10,7 +10,6 @@ function calculateAbilityScores(character) {
     const user = c.user;
     // @ts-expect-error
     character.statistics.abilities = {};
-    (0, functions_2.createKeyIfUndefined)(c, 'abilityScores');
     if (!user.abilityScores) {
         user.abilityScores = {};
     }

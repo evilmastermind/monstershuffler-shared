@@ -16,7 +16,6 @@ export function calculateAbilityScores(character: Character) {
   const user = c.user!;
   // @ts-expect-error
   character.statistics!.abilities = {};
-  createKeyIfUndefined(c, 'abilityScores');
   if (!user.abilityScores) {
     user.abilityScores = {};
   }
