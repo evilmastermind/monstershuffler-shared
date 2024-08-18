@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sGetArmorListResponse = exports.sGetArmorResponse = exports.sGetArmorParams = exports.sPutArmorBody = exports.sPostArmorBody = void 0;
 const zod_1 = require("zod");
-const armor_1 = require("@/schemas/objects/character/armor");
+const armor_1 = require("../../schemas/objects/character/armor");
 const object_1 = require("./object");
 exports.sPostArmorBody = zod_1.z.object({
     game: object_1.game,

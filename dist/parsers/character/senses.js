@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSenses = void 0;
 const stats_1 = require("../stats");
-const functions_1 = require("@/parsers/functions");
-const functions_2 = require("@/functions");
+const functions_1 = require("../../parsers/functions");
+const functions_2 = require("../../functions");
 function calculateSenses(character) {
     const s = character.statistics;
     const v = character.variables;

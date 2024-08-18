@@ -1,1 +1,1 @@
-{"version":3,"file":"abilityScores.d.ts","sourceRoot":"","sources":["../../../parsers/character/abilityScores.ts"],"names":[],"mappings":"AAQA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,sBAAsB,CAAC,SAAS,EAAE,SAAS,QA0F1D"}
+{"version":3,"file":"abilityScores.d.ts","sourceRoot":"","sources":["../../../parsers/character/abilityScores.ts"],"names":[],"mappings":"AASA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,sBAAsB,CAAC,SAAS,EAAE,SAAS,QA4F1D"}

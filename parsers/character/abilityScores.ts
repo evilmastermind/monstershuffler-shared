@@ -4,6 +4,7 @@ import {
   getBonusAndInfo,
   createPart,
   numberToSignedString,
+  createUserObjectIfNotExists,
 } from '../functions';
 import { abilities, abilityNames } from '../stats';
 import type { Character } from '@/types';
@@ -11,24 +12,26 @@ import { random, createKeyIfUndefined } from '@/functions';
 
 export function calculateAbilityScores(character: Character) {
   const c = character.character;
+  createUserObjectIfNotExists(character);
+  const user = c.user!;
   // @ts-expect-error
   character.statistics!.abilities = {};
   createKeyIfUndefined(c, 'abilityScores');
-  if (!c.abilityScores) {
-    c.abilityScores = {};
+  if (!user.abilityScores) {
+    user.abilityScores = {};
   }
   const abilityScoresLimit =
     getPrioritizedStatistic<number>(character, 'abilityScoresLimit') || 30;
   for (const abilityName of abilities) {
     // generating abilities scores if they don't exist yet
     // base Ability Score = 3d6, min 8;
-    if (c.abilityScores[abilityName] === undefined) {
-      c.abilityScores[abilityName] = {
+    if (user.abilityScores[abilityName] === undefined) {
+      user.abilityScores[abilityName] = {
         value: random(1, 6) + random(1, 6) + random(1, 6),
       };
     }
-    if (c.abilityScores[abilityName]!.value < 8) {
-      c.abilityScores[abilityName]!.value = 8;
+    if (user.abilityScores[abilityName]!.value < 8) {
+      user.abilityScores[abilityName]!.value = 8;
     }
 
     // checking if there's a template applied to the creature with
@@ -36,13 +39,13 @@ export function calculateAbilityScores(character: Character) {
     if (
       c?.template?.abilityScores &&
       Object.hasOwn(c.template.abilityScores, abilityName) &&
-      c.abilityScores[abilityName]!.value <
+      user.abilityScores[abilityName]!.value <
         c.template.abilityScores[abilityName]!.value
     ) {
-      c.abilityScores[abilityName]!.value =
+      user.abilityScores[abilityName]!.value =
         c.template.abilityScores[abilityName]!.value;
     }
-    let abilityScoreTotal: number = c.abilityScores[abilityName]!.value;
+    let abilityScoreTotal: number = user.abilityScores[abilityName]!.value;
 
     // ability score bonus
     const bonus = getBonusAndInfo(character, abilityName);
@@ -51,7 +54,7 @@ export function calculateAbilityScores(character: Character) {
     // ------- automatic calculation (CR) -------
     if (
       // c?.CRCalculation?.name === "automatic" &&
-      c.abilityScores[abilityName]?.isAutomaticCalcDisabled !== true &&
+      user.abilityScores[abilityName]?.isAutomaticCalcDisabled !== true &&
       !bonus.hadExpressions
     ) {
       abilityScoreTotal = calibrateStatistic(

@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateActions = void 0;
 const jspath_1 = __importDefault(require("jspath"));
 const functions_1 = require("../functions");
-const functions_2 = require("@/functions");
-const parsers_1 = require("@/parsers");
+const functions_2 = require("../../functions");
+const parsers_1 = require("../../parsers");
 function calculateActions(character) {
     const tempMultiAttack = [];
     const tempMeleeAttacks = [];

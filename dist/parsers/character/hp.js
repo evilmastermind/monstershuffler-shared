@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateHitPoints = void 0;
-const parsers_1 = require("@/parsers");
+const parsers_1 = require("../../parsers");
 function calculateHitPoints(character, addBonus = true, calibrate = true) {
     const s = character.statistics;
     const v = character.variables;
