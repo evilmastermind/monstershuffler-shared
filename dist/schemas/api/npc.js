@@ -31,7 +31,7 @@ exports.sPostRandomNpcBody = zod_1.z.object({
     CRChosen: zod_1.z.number().optional(),
 });
 exports.npcDetailsObject = zod_1.z.object({
-    id: zod_1.z.number(),
+    id: zod_1.z.string().uuid(),
     object: objects_1.characterObject,
 });
 exports.sPostRandomNpcResponse = exports.npcDetailsObject;
@@ -48,17 +48,17 @@ exports.sPostNpcRatingResponse = zod_1.z.object({
     rating: zod_1.z.number()
 });
 exports.sPostNpcToSentAlreadyListBody = zod_1.z.object({
-    npcid: zod_1.z.number(),
+    npcid: zod_1.z.string().uuid(),
     userid: zod_1.z.number().optional(),
     sessionid: zod_1.z.string().optional(),
 });
 exports.sAddBackstoryToNpcBody = zod_1.z.object({
-    id: zod_1.z.number(),
+    id: zod_1.z.string().uuid(),
     backstory: zod_1.z.string(),
     object: objects_1.characterObject,
 });
 exports.sGenerateBackstoryBody = zod_1.z.object({
-    id: zod_1.z.number(),
+    id: zod_1.z.string().uuid(),
 });
 exports.sPostNpcBody = zod_1.z.object({
     object: objects_1.characterObject,
@@ -66,7 +66,7 @@ exports.sPostNpcBody = zod_1.z.object({
     sessionid: zod_1.z.string().optional(),
 });
 exports.sPostNpcRatingBody = zod_1.z.object({
-    id: zod_1.z.number(),
+    id: zod_1.z.string().uuid(),
     rating: zod_1.z.number(),
     sessionid: zod_1.z.string().optional(),
 });

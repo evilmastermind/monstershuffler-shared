@@ -30,7 +30,7 @@ export const sPostRandomNpcBody = z.object({
 });
 
 export const npcDetailsObject = z.object({
-  id: z.number(),
+  id: z.string().uuid(),
   object: characterObject,
 });
 
@@ -52,19 +52,19 @@ export const sPostNpcRatingResponse = z.object({
 });
 
 export const sPostNpcToSentAlreadyListBody = z.object({
-  npcid: z.number(),
+  npcid: z.string().uuid(),
   userid: z.number().optional(),
   sessionid: z.string().optional(),
 });
 
 export const sAddBackstoryToNpcBody = z.object({
-  id: z.number(),
+  id: z.string().uuid(),
   backstory: z.string(),
   object: characterObject,
 });
 
 export const sGenerateBackstoryBody = z.object({
-  id: z.number(),
+  id: z.string().uuid(),
 });
 
 export const sPostNpcBody = z.object({
@@ -74,7 +74,7 @@ export const sPostNpcBody = z.object({
 });
 
 export const sPostNpcRatingBody = z.object({
-  id: z.number(),
+  id: z.string().uuid(),
   rating: z.number(),
   sessionid: z.string().optional(),
 });
