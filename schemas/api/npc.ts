@@ -58,6 +58,7 @@ export const sPostNpcToSentAlreadyListBody = z.object({
 });
 
 export const sAddBackstoryToNpcBody = z.object({
+  prisma: z.unknown(),
   id: z.string().uuid(),
   backstory: z.string(),
   object: characterObject,
