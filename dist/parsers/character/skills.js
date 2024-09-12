@@ -6,6 +6,9 @@ const functions_1 = require("../../parsers/functions");
 function calculateSkills(character) {
     const s = character.statistics;
     const v = character.variables;
+    if (!s || !v) {
+        return;
+    }
     s.skills = { string: "", array: [] };
     const skills = (0, functions_1.getStatArrayFromObjects)(character, "skills");
     const proficiency = s.proficiency;
@@ -13,8 +16,9 @@ function calculateSkills(character) {
     let skillValues = {};
     for (let i = 0; i < skills.length; i++) {
         for (let j = 0; j < skills[i].length; j++) {
-            if (skills[i][j].availableAt === undefined ||
-                limit >= skills[i][j].availableAt) {
+            const availableAt = skills[i][j].availableAt;
+            if (availableAt === undefined ||
+                limit >= availableAt) {
                 const skill = skills[i][j].value;
                 const ability = stats_1.skillTypes[skill];
                 skillValues[skill] = v[ability] + proficiency;
@@ -25,8 +29,7 @@ function calculateSkills(character) {
         skillValues = (0, functions_1.sortObject)(skillValues);
     }
     for (const skill in skillValues) {
-        if (!Object.hasOwn(skillValues, skill) ||
-            skillValues[skill] === undefined) {
+        if (!(skill in skillValues)) {
             continue;
         }
         const bonus = (0, functions_1.getBonus)(character, `${skill.replace(/\s/g, "")}`);

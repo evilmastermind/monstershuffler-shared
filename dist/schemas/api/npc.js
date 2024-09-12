@@ -44,7 +44,7 @@ exports.sGetGeneratorDataResponse = zod_1.z.object({
     backgrounds: object_1.objectList,
 });
 exports.sPostNpcRatingResponse = zod_1.z.object({
-    id: zod_1.z.number(),
+    id: zod_1.z.string().uuid(),
     rating: zod_1.z.number()
 });
 exports.sPostNpcToSentAlreadyListBody = zod_1.z.object({
