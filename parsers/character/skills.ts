@@ -12,8 +12,12 @@ import type { Character, Stat } from "@/types";
 import { capitalizeFirst } from "@/functions";
 
 export function calculateSkills(character: Character) {
-  const s = character.statistics!;
-  const v = character.variables!;
+  const s = character.statistics;
+  const v = character.variables;
+
+  if (!s || !v) {
+    return;
+  }
 
   s.skills = { string: "", array: [] };
 
@@ -24,14 +28,15 @@ export function calculateSkills(character: Character) {
   const limit = getCurrentStatLimit(character);
 
   let skillValues: {
-    [key in keyof typeof skillTypes]?: number;
+    [key in keyof typeof skillTypes]: number;
   } = {};
 
   for (let i = 0; i < skills.length; i++) {
     for (let j = 0; j < skills[i].length; j++) {
+      const availableAt = skills[i][j].availableAt;
       if (
-        skills[i][j].availableAt === undefined ||
-        limit >= skills[i][j].availableAt!
+        availableAt === undefined ||
+        limit >= availableAt
       ) {
         const skill = skills[i][j].value;
         const ability = skillTypes[skill];
@@ -46,21 +51,20 @@ export function calculateSkills(character: Character) {
 
   for (const skill in skillValues) {
     if (
-      !Object.hasOwn(skillValues, skill) ||
-      skillValues[skill] === undefined
+      !(skill in skillValues)
     ) {
       continue;
     }
     const bonus = getBonus(character, `${skill.replace(/\s/g, "")}`);
     if (bonus) {
-      skillValues[skill]! += bonus;
+      skillValues[skill] += bonus;
     }
 
     addCommaIfNotEmpty(s.skills.array);
     s.skills.array.push(createPart(skill, "skill"));
     s.skills.array.push(createPart(" "));
-    s.skills.array!.push({
-      string: numberToSignedString(skillValues[skill]!),
+    s.skills.array.push({
+      string: numberToSignedString(skillValues[skill]),
       number: skillValues[skill],
       type: "d20Roll",
       roll: {
@@ -70,7 +74,7 @@ export function calculateSkills(character: Character) {
           {
             sides: 20,
             dice: 1,
-            value: 10 + skillValues[skill]!,
+            value: 10 + skillValues[skill],
             bonus: skillValues[skill],
           },
         ],
@@ -84,7 +88,7 @@ export function calculateSkills(character: Character) {
       skillValues[skill] ?? v[skillTypes[skill]];
   }
 
-  s.skills.string = s.skills.array!.reduce((acc, obj) => acc + obj.string, "");
+  s.skills.string = s.skills.array.reduce((acc, obj) => acc + obj.string, "");
 
   if (!s.skills.array.length) {
     delete s.skills;

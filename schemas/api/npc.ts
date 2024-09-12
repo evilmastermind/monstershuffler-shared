@@ -47,7 +47,7 @@ export const sGetGeneratorDataResponse = z.object({
 });
 
 export const sPostNpcRatingResponse = z.object({
-  id: z.number(),
+  id: z.string().uuid(),
   rating: z.number()
 });
 
