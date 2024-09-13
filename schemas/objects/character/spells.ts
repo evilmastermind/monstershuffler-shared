@@ -32,7 +32,7 @@ export const spellObject = z
   .object({
     id: z.number().optional(),
     name: z.string().min(2),
-    level: z.number(),
+    level: z.string(),
     range: z.string(),
     ritual: z.boolean(),
     school: z.string().min(2),

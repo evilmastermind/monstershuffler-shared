@@ -303,7 +303,7 @@ export function calculateSpells(character: Character) {
  */
 function getSpellTimesOrSlots(group: SpellGroup, character: Character) {
   let times = group.times || "0";
-  let timesMax = group.timesMax || "0";
+  let timesMax = group.timesMax || "9";
   // users are trying to write "at will" inside times/day and times/day max, and they're probably right to do so
   if (
     times
