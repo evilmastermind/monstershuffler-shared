@@ -1001,7 +1001,7 @@ export declare const spellsObject: z.ZodObject<{
 export declare const spellObject: z.ZodObject<{
     id: z.ZodOptional<z.ZodNumber>;
     name: z.ZodString;
-    level: z.ZodNumber;
+    level: z.ZodString;
     range: z.ZodString;
     ritual: z.ZodBoolean;
     school: z.ZodString;
@@ -1014,7 +1014,7 @@ export declare const spellObject: z.ZodObject<{
 }, "strict", z.ZodTypeAny, {
     name: string;
     range: string;
-    level: number;
+    level: string;
     source: string;
     description: string;
     ritual: boolean;
@@ -1027,7 +1027,7 @@ export declare const spellObject: z.ZodObject<{
 }, {
     name: string;
     range: string;
-    level: number;
+    level: string;
     source: string;
     description: string;
     ritual: boolean;

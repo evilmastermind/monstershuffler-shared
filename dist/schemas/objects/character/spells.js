@@ -28,7 +28,7 @@ exports.spellObject = zod_1.z
     .object({
     id: zod_1.z.number().optional(),
     name: zod_1.z.string().min(2),
-    level: zod_1.z.number(),
+    level: zod_1.z.string(),
     range: zod_1.z.string(),
     ritual: zod_1.z.boolean(),
     school: zod_1.z.string().min(2),

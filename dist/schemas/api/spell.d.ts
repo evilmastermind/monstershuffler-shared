@@ -72,7 +72,7 @@ export declare const sGetSpellResponse: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
-        level: z.ZodNumber;
+        level: z.ZodString;
         range: z.ZodString;
         ritual: z.ZodBoolean;
         school: z.ZodString;
@@ -85,7 +85,7 @@ export declare const sGetSpellResponse: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -98,7 +98,7 @@ export declare const sGetSpellResponse: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -113,7 +113,7 @@ export declare const sGetSpellResponse: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -130,7 +130,7 @@ export declare const sGetSpellResponse: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -150,7 +150,7 @@ export declare const sPostSpellBody: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
-        level: z.ZodNumber;
+        level: z.ZodString;
         range: z.ZodString;
         ritual: z.ZodBoolean;
         school: z.ZodString;
@@ -163,7 +163,7 @@ export declare const sPostSpellBody: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -176,7 +176,7 @@ export declare const sPostSpellBody: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -191,7 +191,7 @@ export declare const sPostSpellBody: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -208,7 +208,7 @@ export declare const sPostSpellBody: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -227,7 +227,7 @@ export declare const sPutSpellBody: z.ZodObject<{
     object: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
         name: z.ZodString;
-        level: z.ZodNumber;
+        level: z.ZodString;
         range: z.ZodString;
         ritual: z.ZodBoolean;
         school: z.ZodString;
@@ -240,7 +240,7 @@ export declare const sPutSpellBody: z.ZodObject<{
     }, "strict", z.ZodTypeAny, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -253,7 +253,7 @@ export declare const sPutSpellBody: z.ZodObject<{
     }, {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -268,7 +268,7 @@ export declare const sPutSpellBody: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
@@ -284,7 +284,7 @@ export declare const sPutSpellBody: z.ZodObject<{
     object: {
         name: string;
         range: string;
-        level: number;
+        level: string;
         source: string;
         description: string;
         ritual: boolean;
