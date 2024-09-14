@@ -29,6 +29,7 @@ exports.sPostRandomNpcBody = zod_1.z.object({
     alignmentEthicalChosen: alignment_1.alignmentEthical.optional(),
     alignmentMoralChosen: alignment_1.alignmentMoral.optional(),
     CRChosen: zod_1.z.number().optional(),
+    wordsNotFound: zod_1.z.array(zod_1.z.string()).optional(),
 });
 exports.npcDetailsObject = zod_1.z.object({
     id: zod_1.z.string().uuid(),

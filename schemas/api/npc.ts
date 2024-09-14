@@ -27,6 +27,7 @@ export const sPostRandomNpcBody = z.object({
   alignmentEthicalChosen: alignmentEthical.optional(),
   alignmentMoralChosen: alignmentMoral.optional(),
   CRChosen: z.number().optional(),
+  wordsNotFound: z.array(z.string()).optional(),
 });
 
 export const npcDetailsObject = z.object({
