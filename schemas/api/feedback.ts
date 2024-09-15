@@ -30,6 +30,6 @@ export const sGetRandomQuestionResponse = z.object({
 export const sPostAnswerBody = z.object({
   questionid: z.string().uuid(),
   answer: sAnswer,
-  userid: z.string().optional(),
+  userid: z.number().optional(),
   sessionid: z.string().optional(),
 });

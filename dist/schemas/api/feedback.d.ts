@@ -92,7 +92,7 @@ export declare const sPostAnswerBody: z.ZodObject<{
         rating?: number | undefined;
         boolean?: boolean | undefined;
     }>;
-    userid: z.ZodOptional<z.ZodString>;
+    userid: z.ZodOptional<z.ZodNumber>;
     sessionid: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     answer: {
@@ -102,7 +102,7 @@ export declare const sPostAnswerBody: z.ZodObject<{
         boolean?: boolean | undefined;
     };
     questionid: string;
-    userid?: string | undefined;
+    userid?: number | undefined;
     sessionid?: string | undefined;
 }, {
     answer: {
@@ -112,7 +112,7 @@ export declare const sPostAnswerBody: z.ZodObject<{
         boolean?: boolean | undefined;
     };
     questionid: string;
-    userid?: string | undefined;
+    userid?: number | undefined;
     sessionid?: string | undefined;
 }>;
 //# sourceMappingURL=feedback.d.ts.map

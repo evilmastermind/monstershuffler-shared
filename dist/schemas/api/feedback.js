@@ -26,6 +26,6 @@ exports.sGetRandomQuestionResponse = zod_1.z.object({
 exports.sPostAnswerBody = zod_1.z.object({
     questionid: zod_1.z.string().uuid(),
     answer: exports.sAnswer,
-    userid: zod_1.z.string().optional(),
+    userid: zod_1.z.number().optional(),
     sessionid: zod_1.z.string().optional(),
 });
