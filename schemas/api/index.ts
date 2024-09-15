@@ -6,6 +6,7 @@ export * from './characterhook';
 export * from './class';
 export * from './classvariant';
 export * from './damagetype';
+export * from './feedback';
 export * from './folder';
 export * from './language';
 export * from './name';

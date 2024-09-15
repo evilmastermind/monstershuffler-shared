@@ -22,6 +22,7 @@ __exportStar(require("./characterhook"), exports);
 __exportStar(require("./class"), exports);
 __exportStar(require("./classvariant"), exports);
 __exportStar(require("./damagetype"), exports);
+__exportStar(require("./feedback"), exports);
 __exportStar(require("./folder"), exports);
 __exportStar(require("./language"), exports);
 __exportStar(require("./name"), exports);
