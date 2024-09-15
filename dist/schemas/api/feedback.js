@@ -10,6 +10,7 @@ exports.sQuestion = zod_1.z.object({
 exports.sAnswer = zod_1.z.object({
     answer: zod_1.z.string().optional(),
     options: zod_1.z.array(zod_1.z.number()).optional(),
+    data: zod_1.z.any().optional(),
     rating: zod_1.z.number().optional(),
     boolean: zod_1.z.boolean().optional(),
 });

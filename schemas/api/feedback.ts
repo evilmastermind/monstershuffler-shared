@@ -11,6 +11,7 @@ export const sQuestion = z.object({
 export const sAnswer = z.object({
   answer: z.string().optional(),
   options: z.array(z.number()).optional(),
+  data: z.any().optional(),
   rating: z.number().optional(),
   boolean: z.boolean().optional(),
 });

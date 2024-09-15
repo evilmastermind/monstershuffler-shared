@@ -15,16 +15,19 @@ export declare const sQuestion: z.ZodObject<{
 export declare const sAnswer: z.ZodObject<{
     answer: z.ZodOptional<z.ZodString>;
     options: z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>;
+    data: z.ZodOptional<z.ZodAny>;
     rating: z.ZodOptional<z.ZodNumber>;
     boolean: z.ZodOptional<z.ZodBoolean>;
 }, "strip", z.ZodTypeAny, {
     answer?: string | undefined;
     options?: number[] | undefined;
+    data?: any;
     rating?: number | undefined;
     boolean?: boolean | undefined;
 }, {
     answer?: string | undefined;
     options?: number[] | undefined;
+    data?: any;
     rating?: number | undefined;
     boolean?: boolean | undefined;
 }>;
@@ -79,16 +82,19 @@ export declare const sPostAnswerBody: z.ZodObject<{
     answer: z.ZodObject<{
         answer: z.ZodOptional<z.ZodString>;
         options: z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>;
+        data: z.ZodOptional<z.ZodAny>;
         rating: z.ZodOptional<z.ZodNumber>;
         boolean: z.ZodOptional<z.ZodBoolean>;
     }, "strip", z.ZodTypeAny, {
         answer?: string | undefined;
         options?: number[] | undefined;
+        data?: any;
         rating?: number | undefined;
         boolean?: boolean | undefined;
     }, {
         answer?: string | undefined;
         options?: number[] | undefined;
+        data?: any;
         rating?: number | undefined;
         boolean?: boolean | undefined;
     }>;
@@ -98,6 +104,7 @@ export declare const sPostAnswerBody: z.ZodObject<{
     answer: {
         answer?: string | undefined;
         options?: number[] | undefined;
+        data?: any;
         rating?: number | undefined;
         boolean?: boolean | undefined;
     };
@@ -108,6 +115,7 @@ export declare const sPostAnswerBody: z.ZodObject<{
     answer: {
         answer?: string | undefined;
         options?: number[] | undefined;
+        data?: any;
         rating?: number | undefined;
         boolean?: boolean | undefined;
     };
