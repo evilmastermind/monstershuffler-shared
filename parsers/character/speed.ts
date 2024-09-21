@@ -1,22 +1,18 @@
 import {
-  addCommaIfNotEmpty,
   createPart,
   getBonus,
   getPrioritizedStatisticFromPath,
   parseExpressionNumeric,
-} from "../functions";
-import { speedTypes } from "../stats";
-import type { Character } from "@/types";
+} from '../functions';
+import { speedTypes } from '../stats';
+import type { Character } from '@/types';
 
 export function calculateSpeed(character: Character) {
   const s = character.statistics!;
   const v = character.variables!;
-  s.speeds = {
-    string: "",
-    array: [],
-  };
+  s.speeds = [];
 
-  type Speeds = "walk" | "fly" | "climb" | "swim" | "burrow" | "hover";
+  type Speeds = 'walk' | 'fly' | 'climb' | 'swim' | 'burrow' | 'hover';
 
   const speeds: { [key in Speeds]: number } = {
     walk: 0,
@@ -42,39 +38,47 @@ export function calculateSpeed(character: Character) {
       continue;
     }
 
-    addCommaIfNotEmpty(s.speeds.array);
+    s.speeds.push({
+      name: type,
+      number: speedNumber,
+      string: '',
+      array: [],
+    });
+
+    const speed = s.speeds[s.speeds.length - 1];
 
     switch (type as Speeds) {
-      case "walk":
-        s.speeds!.array!.push({
-          string: `${speedNumber} ft`,
-          number: speedNumber,
-          type: "ft",
-        });
-        break;
-      case "hover":
-        s.speeds!.array.push(createPart("fly", "speed"));
-        s.speeds!.array.push(createPart(" "));
-        s.speeds!.array!.push({
-          string: `${speedNumber} ft`,
-          number: speedNumber,
-          type: "ft",
-        });
-        s.speeds!.array.push(createPart(" ("));
-        s.speeds!.array.push(createPart("hover", "speed"));
-        s.speeds!.array.push(createPart(")"));
-        break;
-      default:
-        s.speeds!.array.push(createPart(type, "speed"));
-        s.speeds!.array.push(createPart(" "));
-        s.speeds!.array!.push({
-          string: `${speedNumber} ft`,
-          number: speedNumber,
-          type: "ft",
-        });
-        break;
+    case 'walk':
+      speed.array.push({
+        string: `${speedNumber} ft`,
+        number: speedNumber,
+        type: 'ft',
+      });
+      break;
+    case 'hover':
+      speed.array.push(createPart('fly', 'speed'));
+      speed.array.push(createPart(' '));
+      speed.array.push({
+        string: `${speedNumber} ft`,
+        number: speedNumber,
+        type: 'ft',
+      });
+      speed.array.push(createPart(' ('));
+      speed.array.push(createPart('hover', 'speed'));
+      speed.array.push(createPart(')'));
+      break;
+    default:
+      speed.array.push(createPart(type, 'speed'));
+      speed.array.push(createPart(' '));
+      speed.array.push({
+        string: `${speedNumber} ft`,
+        number: speedNumber,
+        type: 'ft',
+      });
+      break;
     }
     speeds[type as Speeds] = speedNumber;
+    speed.string = speed.array.reduce((acc, obj) => acc + obj.string, '');
   }
   for (const speed in speeds) {
     // 2024-07-17: variables object expects all speeds defined
@@ -84,16 +88,13 @@ export function calculateSpeed(character: Character) {
     // ) {
     //   continue;
     // }
-    if (speed === "walk") {
+    if (speed === 'walk') {
       v.SPEED = speeds[speed as Speeds];
     } else {
-      v[speed.toUpperCase() as "FLY"] = speeds[speed as Speeds];
+      v[speed.toUpperCase() as 'FLY'] = speeds[speed as Speeds];
     }
   }
-
-  s.speeds.string = s.speeds.array.reduce((acc, obj) => acc + obj.string, "");
-
-  if (!s.speeds.string) {
+  if (!s.speeds.length) {
     delete s.speeds;
   }
 }

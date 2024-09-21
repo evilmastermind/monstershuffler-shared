@@ -87,6 +87,7 @@ export const statStringNumber = z.object({
 });
 
 export const statStringNumberArray = z.object({
+  name: z.string(),
   number: z.number(),
   string: z.string(),
   array: z.array(descriptionPartObject),
@@ -151,15 +152,15 @@ export const statisticsObject = z.object({
   type: statStringNumber,
   subtypes: z.array(descriptionPartObject).optional(),
   meta: statStringArray,
-  speeds: statStringArray.optional(),
-  savingThrows: statStringArray.optional(),
-  skills: statStringArray.optional(),
-  resistances:  statStringArray.optional(),
-  immunities:  statStringArray.optional(),
-  vulnerabilities:  statStringArray.optional(),
-  conditionImmunities:  statStringArray.optional(),
-  senses: statStringArray, // never optional: passive perception is always calculated
-  languages:  statStringArray, // never optional: write "-" if no languages are known
+  speeds: z.array(statStringNumberArray).optional(),
+  savingThrows: z.array(statStringNumberArray).optional(),
+  skills: z.array(statStringNumberArray).optional(),
+  resistances:  z.array(statStringNumberArray).optional(),
+  immunities:  z.array(statStringNumberArray).optional(),
+  vulnerabilities:  z.array(statStringNumberArray).optional(),
+  conditionImmunities:  z.array(statStringNumberArray).optional(),
+  senses:  z.array(statStringNumberArray), // never optional: passive perception is always calculated
+  languages:   z.array(statStringNumberArray), // never optional: write "-" if no languages are known
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),

@@ -8,7 +8,7 @@ import {
 } from '../functions';
 import { abilities, abilityNames } from '../stats';
 import type { Character } from '@/types';
-import { random, createKeyIfUndefined } from '@/functions';
+import { random } from '@/functions';
 
 export function calculateAbilityScores(character: Character) {
   const c = character.character;
@@ -73,7 +73,8 @@ export function calculateAbilityScores(character: Character) {
     const modifier = Math.floor(abilityScoreTotal / 2) - 5;
     // statistics
     character.statistics!.abilities[abilityName] = {
-      number: modifier,
+      name: abilityNames[abilityName],
+      number: abilityScoreTotal,
       string: '',
       array: [],
     };
@@ -97,6 +98,7 @@ export function calculateAbilityScores(character: Character) {
       },
     });
     parts.push(createPart(')'));
+    character.statistics!.abilities[abilityName].string = parts.map((p) => p.string).join('');
     // variables
     character.variables![abilityName] = modifier;
     character.variables![`${abilityName}VALUE`] = abilityScoreTotal;

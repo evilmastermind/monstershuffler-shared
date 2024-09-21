@@ -7,6 +7,7 @@ export function calculateAlignment(character: Character) {
   const generic = c?.generic || null;
   const typically = generic === true ? "Typically" : "";
   const alignment: StatStringNumberArray = {
+    name: "Alignment",
     number: 0,
     string: "",
     array: [],

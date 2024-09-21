@@ -1,14 +1,13 @@
 import {
-  addCommaIfNotEmpty,
   getStatArrayFromObjects,
   getBonus,
   getCurrentStatLimit,
   createPart,
   numberToSignedString,
-} from "../functions";
-import { type Ability, abilityNames, abilities } from "./../stats";
-import type { Character, Stat } from "@/types";
-import { capitalizeFirst } from "@/functions";
+} from '../functions';
+import { type Ability, abilityNames, abilities } from './../stats';
+import type { Character, Stat } from '@/types';
+import { capitalizeFirst } from '@/functions';
 
 export function calculateSavingThrows(character: Character) {
   const s = character.statistics!;
@@ -16,10 +15,10 @@ export function calculateSavingThrows(character: Character) {
 
   const savingThrows = getStatArrayFromObjects<Stat[]>(
     character,
-    "savingThrows"
+    'savingThrows'
   );
   const savingThrowValues: { [K in Ability]?: number } = {};
-  s.savingThrows = { string: "", array: [] };
+  s.savingThrows = [];
   const proficiency = s.proficiency;
 
   const limit = getCurrentStatLimit(character);
@@ -49,19 +48,26 @@ export function calculateSavingThrows(character: Character) {
     if (bonus) {
       savingThrowValues[ability]! += bonus;
     }
-    if (savingThrowValues[ability] === 0) {
+    if (!savingThrowValues[ability]) {
       continue;
     }
 
-    addCommaIfNotEmpty(s.savingThrows.array);
-    s.savingThrows.array!.push(
-      createPart(capitalizeFirst(ability), "savingThrow")
+    s.savingThrows.push({
+      name: ability,
+      number: savingThrowValues[ability],
+      string: '',
+      array: []
+    });
+    
+    const savingThrow = s.savingThrows[s.savingThrows.length - 1];
+    savingThrow.array.push(
+      createPart(capitalizeFirst(ability), 'savingThrow')
     );
-    s.savingThrows.array!.push(createPart(" "));
-    s.savingThrows.array!.push({
+    savingThrow.array.push(createPart(' '));
+    savingThrow.array.push({
       string: numberToSignedString(savingThrowValues[ability]!),
       number: savingThrowValues[ability],
-      type: "d20Roll",
+      type: 'd20Roll',
       roll: {
         name: abilityNames[ability],
         translationKey: abilityNames[ability],
@@ -76,6 +82,11 @@ export function calculateSavingThrows(character: Character) {
       },
       translationKey: abilityNames[ability],
     });
+
+    savingThrow.string = savingThrow.array.reduce(
+      (acc, obj) => acc + obj.string,
+      ''
+    );
   }
 
   abilities.forEach((ability) => {
@@ -83,12 +94,8 @@ export function calculateSavingThrows(character: Character) {
       savingThrowValues[ability as Ability]! ?? v[ability as Ability];
   });
 
-  s.savingThrows.string = s.savingThrows.array!.reduce(
-    (acc, obj) => acc + obj.string,
-    ""
-  );
 
-  if (!s.savingThrows.string) {
+  if (!s.savingThrows.length) {
     delete s.savingThrows;
   }
 }

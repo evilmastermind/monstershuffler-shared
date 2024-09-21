@@ -1,8 +1,8 @@
-import type { Character } from "@/types";
+import type { Character } from '@/types';
 import {
   challengeStats,
   getChallengeString,
-} from "@/parsers/stats";
+} from '@/parsers/stats';
 
 export function calculateChallengeRating(
   character: Character,
@@ -20,7 +20,7 @@ export function calculateChallengeRating(
   const c = character.character;
   let CR = 0;
 
-  if (c?.CRCalculation?.name === "twopoints") {
+  if (c?.CRCalculation?.name === 'twopoints') {
     // two-point calculation:
     // the cr of a creature is given by the user at two different levels
     //
@@ -43,7 +43,7 @@ export function calculateChallengeRating(
     const x2 = parseFloat(c.CRCalculation.x2) || 20;
     const y2 = parseFloat(c.CRCalculation.y2) || 12;
     CR = ((level - x1) * (y2 - y1)) / (x2 - x1) + y1;
-  } else if (c?.CRCalculation?.name === "npcstandard") {
+  } else if (c?.CRCalculation?.name === 'npcstandard') {
     // NPC standard calculation:
     // CR 1/4 = LVL 1
     // CR 1/2 = LVL 2
@@ -61,7 +61,7 @@ export function calculateChallengeRating(
     } else {
       CR = Math.floor((level / 5) * 3);
     }
-  } else if (c?.CRCalculation?.name === "automatic") {
+  } else if (c?.CRCalculation?.name === 'automatic') {
     CR = c.CRCalculation.CR || 0;
   }
   if (assignToVariations) {
@@ -92,6 +92,6 @@ function assignChallengeRating(
   // variables
   character.statistics!.XP =
     // @ts-expect-error CRString is a valid key
-    CR <= 30 ? challengeStats[CRString].xp.toString() : "???";
+    CR <= 30 ? challengeStats[CRString].xp.toString() : '???';
   character.variables!.CR = CR;
 }

@@ -1,4 +1,4 @@
-import JSPath from "jspath";
+import JSPath from 'jspath';
 import {
   getStatArrayFromObjects,
   getCurrentStatLimit,
@@ -6,16 +6,16 @@ import {
   replaceTags,
   createPart,
   getPrioritizedStatistic,
-} from "../functions";
-import { capitalizeFirst } from "@/functions";
-import { parseExpressionNumeric } from "@/parsers";
+} from '../functions';
+import { capitalizeFirst } from '@/functions';
+import { parseExpressionNumeric } from '@/parsers';
 import type {
   Character,
   ChosenAction,
   ActionVariant,
   DescriptionPart,
   StatStringArrayWithName,
-} from "@/types";
+} from '@/types';
 
 export function calculateActions(character: Character) {
   const tempMultiAttack: StatStringArrayWithName[] = [];
@@ -29,7 +29,7 @@ export function calculateActions(character: Character) {
   character.statistics!.legendaryActions = [];
 
   const s = character.statistics!;
-  const v = character.variables!;
+  // const v = character.variables!;
   const t = character.tags!;
 
   const tagsArray: string[] = [];
@@ -37,7 +37,7 @@ export function calculateActions(character: Character) {
 
   const actions = getStatArrayFromObjects<ChosenAction[]>(
     character,
-    "actions"
+    'actions'
   ).flat();
 
   for (let i = 0; i < actions.length; i++) {
@@ -51,8 +51,8 @@ export function calculateActions(character: Character) {
     }
 
     // giving a unique tag to each action
-    while (!Object.hasOwn(action, "tag") || tagsArray.includes(action?.tag)) {
-      const type = action?.tag || action?.variants[0]?.type || "action";
+    while (!Object.hasOwn(action, 'tag') || tagsArray.includes(action?.tag)) {
+      const type = action?.tag || action?.variants[0]?.type || 'action';
       if (isNaN(parseInt(type.charAt(type.length - 1)))) {
         action.tag = `${type}${tagsNumber}`;
       } else {
@@ -82,19 +82,19 @@ export function calculateActions(character: Character) {
     let actionName = parseNameChoices(variant.name); // ex: "Fire | Cold | Lightning"
     actionName = replaceTags(actionName, character, action, variant).reduce(
       (acc, obj) => acc + obj.string,
-      ""
+      ''
     ); // ex: "Cone of [damageType]"
 
     if (actionName !== variant.name) {
       character.tags![action.tag] = capitalizeFirst(actionName);
     }
 
-    if (variant.type === "attack") {
+    if (variant.type === 'attack') {
       action?.attacks?.forEach((attack) => {
         if (
           attack.replaceName &&
           attack?.attributes &&
-          "name" in attack?.attributes &&
+          'name' in attack?.attributes &&
           attack?.attributes?.name
         ) {
           variant!.name = attack.attributes.name;
@@ -111,9 +111,9 @@ export function calculateActions(character: Character) {
     );
 
     actionName = capitalizeFirst(actionName);
-    const format: DescriptionPart["format"] = ["font-bold"];
-    if (variant.type !== "legendary") {
-      format.push("italic");
+    const format: DescriptionPart['format'] = ['font-bold'];
+    if (variant.type !== 'legendary') {
+      format.push('italic');
     }
 
     const parsedAction: StatStringArrayWithName = {
@@ -121,112 +121,112 @@ export function calculateActions(character: Character) {
       nameArray: [{ string: actionName, format }],
       tag: action.tag,
       priority: action.priority || 100,
-      string: parsedActionArray.reduce((acc, obj) => acc + obj.string, ""),
+      string: parsedActionArray.reduce((acc, obj) => acc + obj.string, ''),
       array: parsedActionArray,
     };
 
     // recharge
     if (variant.recharge) {
-      parsedAction.nameArray.push(createPart(" (", "text", format));
+      parsedAction.nameArray.push(createPart(' (', 'text', format));
       parsedAction.recharge = variant.recharge;
       const charges = parseExpressionNumeric(variant.charges, character) || 1;
       const descriptionPart: DescriptionPart = {
-        string: "",
-        type: "resource",
+        string: '',
+        type: 'resource',
         format,
       };
       if (charges) {
         parsedAction.charges = charges;
       }
       switch (variant.recharge) {
-        case "turn":
-          descriptionPart.string = `${charges}/Turn`;
-          break;
-        case "short":
-          if (charges === 1) {
-            descriptionPart.string = "Recharges after a Short or Long Rest";
-          } else {
-            descriptionPart.string = `${charges}/Short or Long Rest`;
-          }
-          break;
-        case "day":
-          descriptionPart.string = `${charges}/Day`;
-          break;
-        case "week":
-          descriptionPart.string = `${charges}/Week`;
-          break;
-        case "month":
-          descriptionPart.string = `${charges}/Month`;
-          break;
-        case "3-6":
-          descriptionPart.string = "Recharge 3–6";
-          break;
-        case "4-6":
-          descriptionPart.string = "Recharge 4–6";
-          break;
-        case "5-6":
-          descriptionPart.string = "Recharge 5–6";
-          break;
-        case "6-6":
-          descriptionPart.string = "Recharge 6–6";
-          break;
+      case 'turn':
+        descriptionPart.string = `${charges}/Turn`;
+        break;
+      case 'short':
+        if (charges === 1) {
+          descriptionPart.string = 'Recharges after a Short or Long Rest';
+        } else {
+          descriptionPart.string = `${charges}/Short or Long Rest`;
+        }
+        break;
+      case 'day':
+        descriptionPart.string = `${charges}/Day`;
+        break;
+      case 'week':
+        descriptionPart.string = `${charges}/Week`;
+        break;
+      case 'month':
+        descriptionPart.string = `${charges}/Month`;
+        break;
+      case '3-6':
+        descriptionPart.string = 'Recharge 3–6';
+        break;
+      case '4-6':
+        descriptionPart.string = 'Recharge 4–6';
+        break;
+      case '5-6':
+        descriptionPart.string = 'Recharge 5–6';
+        break;
+      case '6-6':
+        descriptionPart.string = 'Recharge 6–6';
+        break;
       }
       parsedAction.nameArray.push(descriptionPart);
-      parsedAction.nameArray.push(createPart(")", "text", format));
+      parsedAction.nameArray.push(createPart(')', 'text', format));
     }
 
     // cost (legendary actions)
-    if (variant.cost && variant.type === "legendary") {
+    if (variant.cost && variant.type === 'legendary') {
       const cost = parseExpressionNumeric(variant.cost, character) || 1;
       parsedAction.cost = cost;
       if (cost > 1) {
-        parsedAction.nameArray.push(createPart(" (", "text", format));
+        parsedAction.nameArray.push(createPart(' (', 'text', format));
         parsedAction.nameArray.push({
           string: `Costs ${cost} Actions`,
-          type: "resource",
+          type: 'resource',
           format,
         });
-        parsedAction.nameArray.push(createPart(")"));
+        parsedAction.nameArray.push(createPart(')'));
       }
     }
 
     parsedAction.name = parsedAction.nameArray.reduce(
       (acc, obj) => acc + obj.string,
-      ""
+      ''
     );
 
     // assigning the action to the correct array
     switch (variant.type) {
-      case "attack":
-        if (action.tag === "profession") {
-          tempProfessionAttack.push(parsedAction);
+    case 'attack':
+      if (action.tag === 'profession') {
+        tempProfessionAttack.push(parsedAction);
+      } else {
+        const properties = JSPath.apply('..properties', action.attacks);
+        if (properties.includes('ranged')) {
+          tempRangedAttacks.push(parsedAction);
         } else {
-          const properties = JSPath.apply("..properties", action.attacks);
-          if (properties.includes("ranged")) {
-            tempRangedAttacks.push(parsedAction);
-          } else {
-            tempMeleeAttacks.push(parsedAction);
-          }
+          tempMeleeAttacks.push(parsedAction);
         }
-        break;
-      case "multiattack":
-        tempMultiAttack.push(parsedAction);
-        break;
-      case "trait":
+      }
+      break;
+    case 'multiattack':
+      tempMultiAttack.push(parsedAction);
+      break;
+    case 'trait':
         character.statistics!.traits.push(parsedAction);
-        break;
-      case "action":
+      break;
+    case 'action':
         character.statistics!.actions.push(parsedAction);
-        break;
-      case "bonus":
+      break;
+    case 'bonus':
         character.statistics!.bonusActions.push(parsedAction);
-        break;
-      case "reaction":
+      break;
+    case 'reaction':
         character.statistics!.reactions.push(parsedAction);
-        break;
-      case "legendary":
+      break;
+    case 'legendary':
         character.statistics!.legendaryActions.push(parsedAction);
-        break;
+      break;
     }
   }
 
@@ -257,7 +257,7 @@ export function calculateActions(character: Character) {
   );
 
   const legendaryActionsMax =
-    getPrioritizedStatistic<string>(character, "legendaryActionsMax") || "3";
+    getPrioritizedStatistic<string>(character, 'legendaryActionsMax') || '3';
 
   if (legendaryActionsMax) {
     s.legendaryActionsMax = parseExpressionNumeric(
@@ -265,15 +265,15 @@ export function calculateActions(character: Character) {
       character
     );
     s.legendaryActionsIntro = {
-      string: "",
+      string: '',
       array: [],
     };
 
     const legArray = s.legendaryActionsIntro!.array;
     legArray.push({
       string: `${t.Name} can take ${s.legendaryActionsMax} legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. ${t.Name} regains spent legendary actions at the start of ${t.his} turn.`,
-      type: "translatableText",
-      translationKey: "legendaryActionsIntro",
+      type: 'translatableText',
+      translationKey: 'legendaryActionsIntro',
       translationVariables: {
         name: t.Name,
         his: t.his,

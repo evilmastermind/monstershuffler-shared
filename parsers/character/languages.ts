@@ -1,23 +1,20 @@
-import { parseExpressionNumeric } from "@/parsers";
+import { parseExpressionNumeric } from '@/parsers';
 import {
   getStatArrayFromObjects,
   getCurrentStatLimit,
   getPrioritizedStatistic,
   createPart,
-} from "@/parsers/functions";
-import type { Character, DescriptionPart, Stat } from "@/types";
+} from '@/parsers/functions';
+import type { Character, DescriptionPart, Stat } from '@/types';
 
 export function calculateLanguages(character: Character) {
   const s = character.statistics!;
   const v = character.variables!;
 
-  const languages = getStatArrayFromObjects<Stat[]>(character, "languages");
+  const languages = getStatArrayFromObjects<Stat[]>(character, 'languages');
   const limit = getCurrentStatLimit(character);
 
-  s.languages = {
-    string: "",
-    array: [],
-  };
+  s.languages = [];
 
   for (let i = 0; i < languages.length; i++) {
     for (let j = 0; j < languages[i].length; j++) {
@@ -25,60 +22,76 @@ export function calculateLanguages(character: Character) {
         languages[i][j].availableAt === undefined ||
         limit >= languages[i][j].availableAt!
       ) {
-        if (s.languages.array!.length) {
-          s.languages.array!.push(createPart(", "));
-        }
+
+        s.languages.push({
+          name: languages[i][j].value,
+          number: 0,
+          string: '',
+          array: [],
+        });
+
+        const language = s.languages[s.languages.length - 1];
+
         const descriptionPart: DescriptionPart = {
           string: languages[i][j].value,
-          type: "language",
+          type: 'language',
         };
         if (languages[i][j].id) {
           descriptionPart.id = languages[i][j].id;
         }
-        s.languages.array!.push(descriptionPart);
+        language.array.push(descriptionPart);
+        language.string = language.array.reduce((acc, obj) => acc + obj.string, '');
       }
     }
   }
 
-  const canSpeakQuery = getPrioritizedStatistic<boolean>(character, "canSpeak");
+  const canSpeakQuery = getPrioritizedStatistic<boolean>(character, 'canSpeak');
   const canSpeak = canSpeakQuery !== undefined ? canSpeakQuery : true;
-  const telepathy = getPrioritizedStatistic<string>(character, "telepathy");
+  const telepathy = getPrioritizedStatistic<string>(character, 'telepathy');
 
   if (!canSpeak) {
     s.canSpeak = false;
-    if (s.languages.array!.length) {
-      s.languages.array!.push(createPart(" "));
-      s.languages.array!.push(
-        createPart("but can't speak", "translatableText")
-      );
-      s.languages.array!.unshift(createPart(" "));
-      s.languages.array!.unshift(createPart("Understands", "translatableText"));
+    if (s.languages.length) {
+      const firstLanguage = s.languages[0];
+      firstLanguage.array.unshift(createPart(' '));
+      firstLanguage.array.unshift(createPart('Understands', 'translatableText'));
+      firstLanguage.string = firstLanguage.array.reduce((acc, obj) => acc + obj.string, '');
+      const lastLanguage = s.languages[s.languages.length - 1];
+      lastLanguage.array.push(createPart(' '));
+      lastLanguage.array.push(createPart('but can\'t speak', 'translatableText'));
+      lastLanguage.string = lastLanguage.array.reduce((acc, obj) => acc + obj.string, '');
     } else {
-      s.languages.array!.unshift(createPart("Can't speak", "translatableText"));
+      s.languages.push(
+        {
+          name: 'Can\'t speak',
+          number: 0,
+          string: 'Can\'t speak',
+          array: [createPart('Can\'t speak', 'translatableText')]
+        });
     }
   }
 
   if (telepathy) {
     s.telepathy = parseExpressionNumeric(telepathy, character);
-    if (s.languages.array!.length) {
-      s.languages.array!.push(createPart(", "));
-    }
-    s.languages.array!.push(createPart("telepathy", "translatableText"));
-    s.languages.array!.push(createPart(" "));
-    s.languages.array!.push({
-      string: `${s.telepathy} ft`,
+    s.languages.push({
+      name: 'Telepathy',
       number: s.telepathy,
-      type: "ft",
+      string: `Telepathy ${s.telepathy} ft`,
+      array: [{
+        string: `Telepathy ${s.telepathy} ft`,
+        number: s.telepathy,
+        type: 'ft',
+      }]
     });
   }
   v.TELEPATHY = s.telepathy || 0;
 
-  if (!s.languages.array!.length) {
-    s.languages.array!.push(createPart("—"));
+  if (!s.languages.length) {
+    s.languages.push({
+      name: '—',
+      number: 0,
+      string: '—',
+      array:[createPart('—')]
+    });
   }
-
-  s.languages.string = s.languages.array!.reduce(
-    (acc, obj) => acc + obj.string,
-    ""
-  );
 }

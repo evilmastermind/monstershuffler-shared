@@ -1,17 +1,14 @@
 import {
   getStatArrayFromObjects,
   getCurrentStatLimit,
-} from "@/parsers/functions";
-import { Character, Stat } from "@/types";
+} from '@/parsers/functions';
+import { Character, Stat } from '@/types';
 
 export function calculateResistances(character: Character) {
   const s = character.statistics!;
 
-  const stats = getStatArrayFromObjects<Stat[]>(character, "resistances");
-  s.resistances = {
-    string: "",
-    array: [],
-  };
+  const stats = getStatArrayFromObjects<Stat[]>(character, 'resistances');
+  s.resistances = [];
 
   const limit = getCurrentStatLimit(character);
 
@@ -22,20 +19,28 @@ export function calculateResistances(character: Character) {
         limit >= stats[i][j].availableAt!
       ) {
         const string = stats[i][j].value;
-        s.resistances.array!.push({
-          string,
-          type: "damageType",
+
+        s.resistances.push({
+          name: string,
+          number: 0,
+          string: '',
+          array: [],
         });
+
+        const resistance = s.resistances[s.resistances.length - 1];
+
+        resistance.array.push({
+          string,
+          type: 'damageType',
+        });
+
+        resistance.string = resistance.array.reduce((acc, obj) => acc + obj.string, '');
       }
     }
   }
 
-  if (!s.resistances.array!.length) {
+  if (!s.resistances.length) {
     delete s.conditionImmunities;
     return;
   }
-  s.resistances.string = s.resistances.array!.reduce(
-    (acc, obj) => acc + obj.string,
-    ""
-  );
 }
