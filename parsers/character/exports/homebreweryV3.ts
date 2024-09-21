@@ -86,10 +86,11 @@ ___`;
 
   if (s.legendaryActions?.length) {
     output += '\n### Legendary Actions';
-    output += `\n**${s.legendaryActionsIntro?.string}**`;
+    output += `\n${s.legendaryActionsIntro?.string}`;
     for (const legendaryAction of s.legendaryActions) {
-      output += `\n***${legendaryAction.name}.*** ${addMarkdown(legendaryAction.array)}`;
+      output += `\n**${legendaryAction.name}.** ${addMarkdown(legendaryAction.array)}`;
     }
   }
+  output += '\n}}';
   return output;
 }
