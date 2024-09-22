@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateArmorClass = void 0;
-const parsers_1 = require("@/parsers");
+const parsers_1 = require("../../parsers");
 const createClankingArmorCondition = (armorName) => {
     return {
         name: '_clankingarmor',

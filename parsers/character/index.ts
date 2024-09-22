@@ -1,48 +1,49 @@
-import { createKeyIfUndefined } from "@/functions";
+import { createKeyIfUndefined } from '@/functions';
 import {
   calculateChallengeRating,
   assignNewChallengeRating,
-} from "./challengeRating";
-import { calculateAlignment } from "./alignment";
-import { calculateName } from "./name";
-import { calculateLevel, recalculateLevelAfterAutomaticHP } from "./level";
-import { calculateProficiency } from "./proficiency";
-import { calculateSize } from "./size";
-import { calculateAbilityScores } from "./abilityScores";
-import { calculateHitPoints } from "./hp";
-import { calculatePronouns } from "./pronouns";
-import { calculateCharacterHook } from "./characterHook";
-import { calculateType } from "./type";
-import { createTags } from "./tags";
-import { calculateSubtype } from "./subtype";
-import { calculateMeta } from "./meta";
-import { calculateArmorClass } from "./ac";
-import { calculateLanguages } from "./languages";
-import { calculateSpeed } from "./speed";
-import { calculateSavingThrows } from "./savingThrows";
-import { calculateSkills } from "./skills";
-import { calculateVulnerabilities } from "./damageVulnerabilities";
-import { calculateResistances } from "./damageResistances";
-import { calculateConditionImmunities } from "./conditionImmunities";
-import { calculateImmunities } from "./damageImmunities";
-import { calculateSenses } from "./senses";
-import { calculateActions } from "./actions";
-import { calculateBackstoryInfo } from "./backstory";
-import { calculateSpells } from "./spells";
+} from './challengeRating';
+import { calculateAlignment } from './alignment';
+import { calculateName } from './name';
+import { calculateLevel, recalculateLevelAfterAutomaticHP } from './level';
+import { calculateProficiency } from './proficiency';
+import { calculateSize } from './size';
+import { calculateAbilityScores } from './abilityScores';
+import { calculateHitPoints } from './hp';
+import { calculatePronouns } from './pronouns';
+import { calculateCharacterHook } from './characterHook';
+import { calculateType } from './type';
+import { createTags } from './tags';
+import { calculateSubtype } from './subtype';
+import { calculateMeta } from './meta';
+import { calculateArmorClass } from './ac';
+import { calculateLanguages } from './languages';
+import { calculateSpeed } from './speed';
+import { calculateSavingThrows } from './savingThrows';
+import { calculateSkills } from './skills';
+import { calculateVulnerabilities } from './damageVulnerabilities';
+import { calculateResistances } from './damageResistances';
+import { calculateConditionImmunities } from './conditionImmunities';
+import { calculateImmunities } from './damageImmunities';
+import { calculateSenses } from './senses';
+import { calculateActions } from './actions';
+import { calculateBackstoryInfo } from './backstory';
+import { calculateSpells } from './spells';
 
-import type { Character } from "@/types";
+import type { Character } from '@/types';
 
-export { calculateCharacterHook } from "./characterHook";
+export { calculateCharacterHook } from './characterHook';
 
+export * from './exports';
 export function createStats(character: Character) {
-  createKeyIfUndefined(character, "statistics");
-  createKeyIfUndefined(character, "variables");
-  createKeyIfUndefined(character, "tags");
-  createKeyIfUndefined(character, "variations");
+  createKeyIfUndefined(character, 'statistics');
+  createKeyIfUndefined(character, 'variables');
+  createKeyIfUndefined(character, 'tags');
+  createKeyIfUndefined(character, 'variations');
   /// /// ///
   /// /// ///
   const CRCalculation = character.character.CRCalculation?.name;
-  if (CRCalculation === "automatic") {
+  if (CRCalculation === 'automatic') {
     /**
      * AUTOMATIC
      * The user creates a monster, gives it some hit dice and chooses an appropriate CR.

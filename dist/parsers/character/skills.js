@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSkills = void 0;
 const stats_1 = require("../stats");
-const functions_1 = require("@/parsers/functions");
+const functions_1 = require("../../parsers/functions");
 function calculateSkills(character) {
     const s = character.statistics;
     const v = character.variables;

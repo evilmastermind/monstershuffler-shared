@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createTags = void 0;
 const functions_1 = require("../functions");
-const functions_2 = require("@/functions");
-const parsers_1 = require("@/parsers");
+const functions_2 = require("../../functions");
+const parsers_1 = require("../../parsers");
 function createTags(character) {
     const c = character.character;
     const tags = character.tags;

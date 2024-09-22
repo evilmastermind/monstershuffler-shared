@@ -28,7 +28,7 @@ export declare const sGetCharacterListResponse: z.ZodObject<{
 }>;
 export declare const sGetCharacterResponse: z.ZodObject<{
     id: z.ZodNumber;
-    object: import("@/schemas/objects/character/objects").CharacterObject;
+    object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -12886,7 +12886,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
 }>;
 export declare const sPostCharacterBody: z.ZodObject<{
     game: z.ZodNumber;
-    object: import("@/schemas/objects/character/objects").CharacterObject;
+    object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -25744,7 +25744,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
 }>;
 export declare const sPutCharacterBody: z.ZodObject<{
     game: z.ZodOptional<z.ZodNumber>;
-    object: import("@/schemas/objects/character/objects").CharacterObject;
+    object: import("../../schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {

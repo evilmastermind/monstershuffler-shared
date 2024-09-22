@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.exportCharacterToImprovedInitiative = void 0;
-const functions_1 = require("@/functions");
+const functions_1 = require("../../../functions");
 function exportCharacterToImprovedInitiative(character) {
     const output = {
         'Source': 'Monstershuffler.com',

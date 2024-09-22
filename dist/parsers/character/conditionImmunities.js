@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateConditionImmunities = void 0;
-const functions_1 = require("@/parsers/functions");
+const functions_1 = require("../../parsers/functions");
 function calculateConditionImmunities(character) {
     const s = character.statistics;
     const stats = (0, functions_1.getStatArrayFromObjects)(character, 'conditionImmunities');

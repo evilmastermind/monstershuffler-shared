@@ -1,4 +1,4 @@
-import type { ChosenAction, ActionVariant, Character } from "@/types";
+import type { ChosenAction, ActionVariant, Character } from "../../types";
 export declare function replaceTags(untrimmedString: string, character: Character, action?: ChosenAction | undefined, variant?: ActionVariant | undefined): {
     string: string;
     number?: number | undefined;

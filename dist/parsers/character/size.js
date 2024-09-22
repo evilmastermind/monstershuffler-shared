@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSize = void 0;
-const parsers_1 = require("@/parsers");
-const functions_1 = require("@/parsers/functions");
-const functions_2 = require("@/functions");
+const parsers_1 = require("../../parsers");
+const functions_1 = require("../../parsers/functions");
+const functions_2 = require("../../functions");
 function calculateSize(character) {
     let size = 0;
     const baseSize = (0, functions_1.getPrioritizedStatistic)(character, "size") || 3;

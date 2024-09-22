@@ -1,7 +1,21 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createStats = exports.calculateCharacterHook = void 0;
-const functions_1 = require("@/functions");
+const functions_1 = require("../../functions");
 const challengeRating_1 = require("./challengeRating");
 const alignment_1 = require("./alignment");
 const name_1 = require("./name");
@@ -31,15 +45,16 @@ const backstory_1 = require("./backstory");
 const spells_1 = require("./spells");
 var characterHook_2 = require("./characterHook");
 Object.defineProperty(exports, "calculateCharacterHook", { enumerable: true, get: function () { return characterHook_2.calculateCharacterHook; } });
+__exportStar(require("./exports"), exports);
 function createStats(character) {
-    (0, functions_1.createKeyIfUndefined)(character, "statistics");
-    (0, functions_1.createKeyIfUndefined)(character, "variables");
-    (0, functions_1.createKeyIfUndefined)(character, "tags");
-    (0, functions_1.createKeyIfUndefined)(character, "variations");
+    (0, functions_1.createKeyIfUndefined)(character, 'statistics');
+    (0, functions_1.createKeyIfUndefined)(character, 'variables');
+    (0, functions_1.createKeyIfUndefined)(character, 'tags');
+    (0, functions_1.createKeyIfUndefined)(character, 'variations');
     /// /// ///
     /// /// ///
     const CRCalculation = character.character.CRCalculation?.name;
-    if (CRCalculation === "automatic") {
+    if (CRCalculation === 'automatic') {
         /**
          * AUTOMATIC
          * The user creates a monster, gives it some hit dice and chooses an appropriate CR.

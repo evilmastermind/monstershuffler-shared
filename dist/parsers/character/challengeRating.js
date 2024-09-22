@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.assignNewChallengeRating = exports.calculateChallengeRating = void 0;
-const stats_1 = require("@/parsers/stats");
+const stats_1 = require("../../parsers/stats");
 function calculateChallengeRating(character, assignToVariations = true) {
     if (character?.variations?.currentCR !== undefined) {
         assignChallengeRating(character, character.variations.currentCR, (0, stats_1.getChallengeString)(character.variations.currentCR));

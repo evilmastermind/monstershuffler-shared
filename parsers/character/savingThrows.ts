@@ -54,7 +54,7 @@ export function calculateSavingThrows(character: Character) {
 
     s.savingThrows.push({
       name: ability,
-      number: savingThrowValues[ability],
+      number: savingThrowValues[ability]!,
       string: '',
       array: []
     });

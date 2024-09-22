@@ -1,4 +1,4 @@
-import type { ActionVariant, Character, DescriptionPart, ValueDice, ValueExpression, ValueIncrProgression, Enchantment } from "@/types";
+import type { ActionVariant, Character, DescriptionPart, ValueDice, ValueExpression, ValueIncrProgression, Enchantment } from "../../types";
 export declare function calculateValue(value: ValueDice | ValueExpression | ValueIncrProgression | Enchantment, character: Character, variant?: ActionVariant | undefined, isEnchantment?: boolean): {
     string: string;
     number?: number | undefined;
