@@ -1,1 +1,1 @@
-{"version":3,"file":"senses.d.ts","sourceRoot":"","sources":["../../../parsers/character/senses.ts"],"names":[],"mappings":"AAUA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,eAAe,CAAC,SAAS,EAAE,SAAS,QAoGnD"}
+{"version":3,"file":"senses.d.ts","sourceRoot":"","sources":["../../../parsers/character/senses.ts"],"names":[],"mappings":"AASA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,eAAe,CAAC,SAAS,EAAE,SAAS,QAoHnD"}

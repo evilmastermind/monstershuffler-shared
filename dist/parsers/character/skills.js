@@ -2,15 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSkills = void 0;
 const stats_1 = require("../stats");
-const functions_1 = require("../../parsers/functions");
+const functions_1 = require("@/parsers/functions");
 function calculateSkills(character) {
     const s = character.statistics;
     const v = character.variables;
     if (!s || !v) {
         return;
     }
-    s.skills = { string: "", array: [] };
-    const skills = (0, functions_1.getStatArrayFromObjects)(character, "skills");
+    s.skills = [];
+    const skills = (0, functions_1.getStatArrayFromObjects)(character, 'skills');
     const proficiency = s.proficiency;
     const limit = (0, functions_1.getCurrentStatLimit)(character);
     let skillValues = {};
@@ -32,17 +32,18 @@ function calculateSkills(character) {
         if (!(skill in skillValues)) {
             continue;
         }
-        const bonus = (0, functions_1.getBonus)(character, `${skill.replace(/\s/g, "")}`);
+        const bonus = (0, functions_1.getBonus)(character, `${skill.replace(/\s/g, '')}`);
         if (bonus) {
             skillValues[skill] += bonus;
         }
-        (0, functions_1.addCommaIfNotEmpty)(s.skills.array);
-        s.skills.array.push((0, functions_1.createPart)(skill, "skill"));
-        s.skills.array.push((0, functions_1.createPart)(" "));
-        s.skills.array.push({
+        s.skills.push({ name: skill, number: skillValues[skill], string: '', array: [] });
+        const currentSkill = s.skills[s.skills.length - 1];
+        currentSkill.array.push((0, functions_1.createPart)(skill, 'skill'));
+        currentSkill.array.push((0, functions_1.createPart)(' '));
+        currentSkill.array.push({
             string: (0, functions_1.numberToSignedString)(skillValues[skill]),
             number: skillValues[skill],
-            type: "d20Roll",
+            type: 'd20Roll',
             roll: {
                 name: skill,
                 translationKey: `skill.${skill}`,
@@ -57,13 +58,13 @@ function calculateSkills(character) {
             },
             translationKey: `skill.${skill}`,
         });
+        currentSkill.string = currentSkill.array.reduce((acc, obj) => acc + obj.string, '');
     }
     for (const skill in stats_1.skillTypes) {
-        v[skill.replace(/\s/g, "").toUpperCase()] =
+        v[skill.replace(/\s/g, '').toUpperCase()] =
             skillValues[skill] ?? v[stats_1.skillTypes[skill]];
     }
-    s.skills.string = s.skills.array.reduce((acc, obj) => acc + obj.string, "");
-    if (!s.skills.array.length) {
+    if (!s.skills.length) {
         delete s.skills;
     }
 }

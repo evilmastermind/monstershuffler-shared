@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.assignNewChallengeRating = exports.calculateChallengeRating = void 0;
-const stats_1 = require("../../parsers/stats");
+const stats_1 = require("@/parsers/stats");
 function calculateChallengeRating(character, assignToVariations = true) {
     if (character?.variations?.currentCR !== undefined) {
         assignChallengeRating(character, character.variations.currentCR, (0, stats_1.getChallengeString)(character.variations.currentCR));
@@ -10,7 +10,7 @@ function calculateChallengeRating(character, assignToVariations = true) {
     const level = character.statistics.level;
     const c = character.character;
     let CR = 0;
-    if (c?.CRCalculation?.name === "twopoints") {
+    if (c?.CRCalculation?.name === 'twopoints') {
         // two-point calculation:
         // the cr of a creature is given by the user at two different levels
         //
@@ -34,7 +34,7 @@ function calculateChallengeRating(character, assignToVariations = true) {
         const y2 = parseFloat(c.CRCalculation.y2) || 12;
         CR = ((level - x1) * (y2 - y1)) / (x2 - x1) + y1;
     }
-    else if (c?.CRCalculation?.name === "npcstandard") {
+    else if (c?.CRCalculation?.name === 'npcstandard') {
         // NPC standard calculation:
         // CR 1/4 = LVL 1
         // CR 1/2 = LVL 2
@@ -57,7 +57,7 @@ function calculateChallengeRating(character, assignToVariations = true) {
             CR = Math.floor((level / 5) * 3);
         }
     }
-    else if (c?.CRCalculation?.name === "automatic") {
+    else if (c?.CRCalculation?.name === 'automatic') {
         CR = c.CRCalculation.CR || 0;
     }
     if (assignToVariations) {
@@ -84,6 +84,6 @@ function assignChallengeRating(character, CR, CRString) {
     // variables
     character.statistics.XP =
         // @ts-expect-error CRString is a valid key
-        CR <= 30 ? stats_1.challengeStats[CRString].xp.toString() : "???";
+        CR <= 30 ? stats_1.challengeStats[CRString].xp.toString() : '???';
     character.variables.CR = CR;
 }

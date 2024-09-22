@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateAbilityScores = void 0;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
-const functions_2 = require("../../functions");
+const functions_2 = require("@/functions");
 function calculateAbilityScores(character) {
     const c = character.character;
     (0, functions_1.createUserObjectIfNotExists)(character);
@@ -55,7 +55,8 @@ function calculateAbilityScores(character) {
         const modifier = Math.floor(abilityScoreTotal / 2) - 5;
         // statistics
         character.statistics.abilities[abilityName] = {
-            number: modifier,
+            name: stats_1.abilityNames[abilityName],
+            number: abilityScoreTotal,
             string: '',
             array: [],
         };
@@ -79,6 +80,7 @@ function calculateAbilityScores(character) {
             },
         });
         parts.push((0, functions_1.createPart)(')'));
+        character.statistics.abilities[abilityName].string = parts.map((p) => p.string).join('');
         // variables
         character.variables[abilityName] = modifier;
         character.variables[`${abilityName}VALUE`] = abilityScoreTotal;

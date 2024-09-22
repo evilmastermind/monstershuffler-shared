@@ -6,10 +6,7 @@ const stats_1 = require("../stats");
 function calculateSpeed(character) {
     const s = character.statistics;
     const v = character.variables;
-    s.speeds = {
-        string: "",
-        array: [],
-    };
+    s.speeds = [];
     const speeds = {
         walk: 0,
         fly: 0,
@@ -28,38 +25,45 @@ function calculateSpeed(character) {
         if (speedNumber <= 0) {
             continue;
         }
-        (0, functions_1.addCommaIfNotEmpty)(s.speeds.array);
+        s.speeds.push({
+            name: type,
+            number: speedNumber,
+            string: '',
+            array: [],
+        });
+        const speed = s.speeds[s.speeds.length - 1];
         switch (type) {
-            case "walk":
-                s.speeds.array.push({
+            case 'walk':
+                speed.array.push({
                     string: `${speedNumber} ft`,
                     number: speedNumber,
-                    type: "ft",
+                    type: 'ft',
                 });
                 break;
-            case "hover":
-                s.speeds.array.push((0, functions_1.createPart)("fly", "speed"));
-                s.speeds.array.push((0, functions_1.createPart)(" "));
-                s.speeds.array.push({
+            case 'hover':
+                speed.array.push((0, functions_1.createPart)('fly', 'speed'));
+                speed.array.push((0, functions_1.createPart)(' '));
+                speed.array.push({
                     string: `${speedNumber} ft`,
                     number: speedNumber,
-                    type: "ft",
+                    type: 'ft',
                 });
-                s.speeds.array.push((0, functions_1.createPart)(" ("));
-                s.speeds.array.push((0, functions_1.createPart)("hover", "speed"));
-                s.speeds.array.push((0, functions_1.createPart)(")"));
+                speed.array.push((0, functions_1.createPart)(' ('));
+                speed.array.push((0, functions_1.createPart)('hover', 'speed'));
+                speed.array.push((0, functions_1.createPart)(')'));
                 break;
             default:
-                s.speeds.array.push((0, functions_1.createPart)(type, "speed"));
-                s.speeds.array.push((0, functions_1.createPart)(" "));
-                s.speeds.array.push({
+                speed.array.push((0, functions_1.createPart)(type, 'speed'));
+                speed.array.push((0, functions_1.createPart)(' '));
+                speed.array.push({
                     string: `${speedNumber} ft`,
                     number: speedNumber,
-                    type: "ft",
+                    type: 'ft',
                 });
                 break;
         }
         speeds[type] = speedNumber;
+        speed.string = speed.array.reduce((acc, obj) => acc + obj.string, '');
     }
     for (const speed in speeds) {
         // 2024-07-17: variables object expects all speeds defined
@@ -69,15 +73,14 @@ function calculateSpeed(character) {
         // ) {
         //   continue;
         // }
-        if (speed === "walk") {
+        if (speed === 'walk') {
             v.SPEED = speeds[speed];
         }
         else {
             v[speed.toUpperCase()] = speeds[speed];
         }
     }
-    s.speeds.string = s.speeds.array.reduce((acc, obj) => acc + obj.string, "");
-    if (!s.speeds.string) {
+    if (!s.speeds.length) {
         delete s.speeds;
     }
 }

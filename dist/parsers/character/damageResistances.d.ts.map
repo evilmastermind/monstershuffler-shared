@@ -1,1 +1,1 @@
-{"version":3,"file":"damageResistances.d.ts","sourceRoot":"","sources":["../../../parsers/character/damageResistances.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,oBAAoB,CAAC,SAAS,EAAE,SAAS,QAkCxD"}
+{"version":3,"file":"damageResistances.d.ts","sourceRoot":"","sources":["../../../parsers/character/damageResistances.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,oBAAoB,CAAC,SAAS,EAAE,SAAS,QAuCxD"}

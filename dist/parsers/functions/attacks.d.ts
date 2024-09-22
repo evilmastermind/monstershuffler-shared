@@ -1,4 +1,4 @@
-import type { AbilitiesEnum, Attack, Character } from "../../types";
+import type { AbilitiesEnum, Attack, Character } from "@/types";
 export declare function calculateAttack(attack: Attack, character: Character, name?: string, ability?: AbilitiesEnum): {
     string: string;
     number?: number | undefined;

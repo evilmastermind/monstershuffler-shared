@@ -28,7 +28,7 @@ export declare const sGetCharacterListResponse: z.ZodObject<{
 }>;
 export declare const sGetCharacterResponse: z.ZodObject<{
     id: z.ZodNumber;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -5337,6 +5337,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5372,6 +5373,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5397,10 +5400,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5446,6 +5450,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5475,6 +5480,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5504,6 +5510,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5533,6 +5540,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5562,6 +5570,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5591,6 +5600,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -5648,6 +5658,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5673,7 +5685,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -5730,6 +5742,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5755,9 +5769,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5783,9 +5799,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5811,9 +5829,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5839,9 +5859,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5867,9 +5889,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5895,9 +5919,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -5923,7 +5949,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -11738,6 +11764,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11773,6 +11800,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11798,10 +11827,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -11847,6 +11877,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -11876,6 +11907,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -11905,6 +11937,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -11934,6 +11967,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -11963,6 +11997,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -11992,6 +12027,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -12049,6 +12085,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12074,7 +12112,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -12131,6 +12169,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12156,9 +12196,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12184,9 +12226,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12212,9 +12256,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12240,9 +12286,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12268,9 +12316,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12296,9 +12346,11 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -12324,7 +12376,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -12834,7 +12886,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
 }>;
 export declare const sPostCharacterBody: z.ZodObject<{
     game: z.ZodNumber;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -18143,6 +18195,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18178,6 +18231,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18203,10 +18258,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18252,6 +18308,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18281,6 +18338,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18310,6 +18368,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18339,6 +18398,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18368,6 +18428,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18397,6 +18458,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -18454,6 +18516,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18479,7 +18543,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -18536,6 +18600,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18561,9 +18627,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18589,9 +18657,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18617,9 +18687,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18645,9 +18717,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18673,9 +18747,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18701,9 +18777,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -18729,7 +18807,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -24544,6 +24622,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24579,6 +24658,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24604,10 +24685,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24653,6 +24735,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24682,6 +24765,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24711,6 +24795,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24740,6 +24825,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24769,6 +24855,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24798,6 +24885,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -24855,6 +24943,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24880,7 +24970,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -24937,6 +25027,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24962,9 +25054,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -24990,9 +25084,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -25018,9 +25114,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -25046,9 +25144,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -25074,9 +25174,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -25102,9 +25204,11 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -25130,7 +25234,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -25640,7 +25744,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
 }>;
 export declare const sPutCharacterBody: z.ZodObject<{
     game: z.ZodOptional<z.ZodNumber>;
-    object: import("../../schemas/objects/character/objects").CharacterObject;
+    object: import("@/schemas/objects/character/objects").CharacterObject;
 }, "strip", z.ZodTypeAny, {
     object: {
         character: {
@@ -30949,6 +31053,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -30984,6 +31089,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31009,10 +31116,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31058,6 +31166,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31087,6 +31196,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31116,6 +31226,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31145,6 +31256,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31174,6 +31286,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31203,6 +31316,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -31260,6 +31374,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31285,7 +31401,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -31342,6 +31458,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31367,9 +31485,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31395,9 +31515,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31423,9 +31545,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31451,9 +31575,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31479,9 +31605,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31507,9 +31635,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -31535,7 +31665,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;
@@ -37350,6 +37480,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             alignment: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37385,6 +37516,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             level: number;
             languages: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37410,10 +37543,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             AC: {
                 string: string;
                 number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37459,6 +37593,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 STR: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37488,6 +37623,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 DEX: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37517,6 +37653,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 CON: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37546,6 +37683,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 INT: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37575,6 +37713,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 WIS: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37604,6 +37743,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                 CHA: {
                     string: string;
                     number: number;
+                    name: string;
                     array: {
                         string: string;
                         number?: number | undefined;
@@ -37661,6 +37801,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             };
             senses: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37686,7 +37828,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            };
+            }[];
             characterHook?: {
                 string: string;
                 number?: number | undefined;
@@ -37743,6 +37885,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
             }[] | undefined;
             speeds?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37768,9 +37912,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             savingThrows?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37796,9 +37942,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             skills?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37824,9 +37972,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             resistances?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37852,9 +38002,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             immunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37880,9 +38032,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             vulnerabilities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37908,9 +38062,11 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             conditionImmunities?: {
                 string: string;
+                number: number;
+                name: string;
                 array: {
                     string: string;
                     number?: number | undefined;
@@ -37936,7 +38092,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
                     translationVariables?: Record<string, string> | undefined;
                 }[];
                 id?: number | undefined;
-            } | undefined;
+            }[] | undefined;
             isBlind?: boolean | undefined;
             canSpeak?: boolean | undefined;
             telepathy?: number | undefined;

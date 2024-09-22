@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sPutActionBody = exports.sPostActionBody = exports.sGetActionResponse = exports.sGetActionListResponse = exports.sGetActionListBody = void 0;
 const zod_1 = require("zod");
-const actions_1 = require("../../schemas/objects/character/actions");
+const actions_1 = require("@/schemas/objects/character/actions");
 const object_1 = require("./object");
 const type = zod_1.z.string().min(2);
 const subtype = zod_1.z.string().min(2).optional();

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.recalculateLevelAfterAutomaticHP = exports.calculateLevel = void 0;
-const parsers_1 = require("../../parsers");
-const functions_1 = require("../../parsers/functions");
+const parsers_1 = require("@/parsers");
+const functions_1 = require("@/parsers/functions");
 function calculateLevel(character) {
     // level-based calculation when the level has been already
     // calculated  once

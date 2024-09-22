@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateMeta = void 0;
 const functions_1 = require("../functions");
-const functions_2 = require("../../functions");
+const functions_2 = require("@/functions");
 function calculateMeta(character) {
     character.statistics.meta = {
         string: "",

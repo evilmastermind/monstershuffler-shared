@@ -262,6 +262,7 @@ export declare const statStringNumber: z.ZodObject<{
     id?: number | undefined;
 }>;
 export declare const statStringNumberArray: z.ZodObject<{
+    name: z.ZodString;
     number: z.ZodNumber;
     string: z.ZodString;
     array: z.ZodArray<z.ZodObject<{
@@ -386,6 +387,7 @@ export declare const statStringNumberArray: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     string: string;
     number: number;
+    name: string;
     array: {
         string: string;
         number?: number | undefined;
@@ -414,6 +416,7 @@ export declare const statStringNumberArray: z.ZodObject<{
 }, {
     string: string;
     number: number;
+    name: string;
     array: {
         string: string;
         number?: number | undefined;
@@ -988,6 +991,7 @@ export declare const statStringArrayWithName: z.ZodObject<{
 }>;
 export declare const abilitiesObject: z.ZodObject<{
     STR: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -1112,6 +1116,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1140,6 +1145,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1167,6 +1173,7 @@ export declare const abilitiesObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     DEX: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -1291,6 +1298,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1319,6 +1327,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1346,6 +1355,7 @@ export declare const abilitiesObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     CON: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -1470,6 +1480,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1498,6 +1509,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1525,6 +1537,7 @@ export declare const abilitiesObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     INT: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -1649,6 +1662,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1677,6 +1691,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1704,6 +1719,7 @@ export declare const abilitiesObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     WIS: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -1828,6 +1844,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1856,6 +1873,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -1883,6 +1901,7 @@ export declare const abilitiesObject: z.ZodObject<{
         id?: number | undefined;
     }>;
     CHA: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -2007,6 +2026,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2035,6 +2055,7 @@ export declare const abilitiesObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2065,6 +2086,7 @@ export declare const abilitiesObject: z.ZodObject<{
     STR: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2094,6 +2116,7 @@ export declare const abilitiesObject: z.ZodObject<{
     DEX: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2123,6 +2146,7 @@ export declare const abilitiesObject: z.ZodObject<{
     CON: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2152,6 +2176,7 @@ export declare const abilitiesObject: z.ZodObject<{
     INT: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2181,6 +2206,7 @@ export declare const abilitiesObject: z.ZodObject<{
     WIS: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2210,6 +2236,7 @@ export declare const abilitiesObject: z.ZodObject<{
     CHA: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2240,6 +2267,7 @@ export declare const abilitiesObject: z.ZodObject<{
     STR: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2269,6 +2297,7 @@ export declare const abilitiesObject: z.ZodObject<{
     DEX: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2298,6 +2327,7 @@ export declare const abilitiesObject: z.ZodObject<{
     CON: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2327,6 +2357,7 @@ export declare const abilitiesObject: z.ZodObject<{
     INT: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2356,6 +2387,7 @@ export declare const abilitiesObject: z.ZodObject<{
     WIS: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2385,6 +2417,7 @@ export declare const abilitiesObject: z.ZodObject<{
     CHA: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2414,6 +2447,7 @@ export declare const abilitiesObject: z.ZodObject<{
 }>;
 export declare const statisticsObject: z.ZodObject<{
     alignment: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -2538,6 +2572,7 @@ export declare const statisticsObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2566,6 +2601,7 @@ export declare const statisticsObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2731,6 +2767,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>;
     XP: z.ZodString;
     AC: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
@@ -2855,6 +2892,7 @@ export declare const statisticsObject: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2883,6 +2921,7 @@ export declare const statisticsObject: z.ZodObject<{
     }, {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -2939,6 +2978,7 @@ export declare const statisticsObject: z.ZodObject<{
     }>>;
     abilities: z.ZodObject<{
         STR: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3063,6 +3103,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3091,6 +3132,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3118,6 +3160,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }>;
         DEX: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3242,6 +3285,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3270,6 +3314,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3297,6 +3342,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }>;
         CON: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3421,6 +3467,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3449,6 +3496,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3476,6 +3524,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }>;
         INT: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3600,6 +3649,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3628,6 +3678,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3655,6 +3706,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }>;
         WIS: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3779,6 +3831,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3807,6 +3860,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3834,6 +3888,7 @@ export declare const statisticsObject: z.ZodObject<{
             id?: number | undefined;
         }>;
         CHA: z.ZodObject<{
+            name: z.ZodString;
             number: z.ZodNumber;
             string: z.ZodString;
             array: z.ZodArray<z.ZodObject<{
@@ -3958,6 +4013,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, "strip", z.ZodTypeAny, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -3986,6 +4042,7 @@ export declare const statisticsObject: z.ZodObject<{
         }, {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4016,6 +4073,7 @@ export declare const statisticsObject: z.ZodObject<{
         STR: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4045,6 +4103,7 @@ export declare const statisticsObject: z.ZodObject<{
         DEX: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4074,6 +4133,7 @@ export declare const statisticsObject: z.ZodObject<{
         CON: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4103,6 +4163,7 @@ export declare const statisticsObject: z.ZodObject<{
         INT: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4132,6 +4193,7 @@ export declare const statisticsObject: z.ZodObject<{
         WIS: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4161,6 +4223,7 @@ export declare const statisticsObject: z.ZodObject<{
         CHA: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4191,6 +4254,7 @@ export declare const statisticsObject: z.ZodObject<{
         STR: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4220,6 +4284,7 @@ export declare const statisticsObject: z.ZodObject<{
         DEX: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4249,6 +4314,7 @@ export declare const statisticsObject: z.ZodObject<{
         CON: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4278,6 +4344,7 @@ export declare const statisticsObject: z.ZodObject<{
         INT: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4307,6 +4374,7 @@ export declare const statisticsObject: z.ZodObject<{
         WIS: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4336,6 +4404,7 @@ export declare const statisticsObject: z.ZodObject<{
         CHA: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -4683,7 +4752,9 @@ export declare const statisticsObject: z.ZodObject<{
         }[];
         id?: number | undefined;
     }>;
-    speeds: z.ZodOptional<z.ZodObject<{
+    speeds: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -4806,6 +4877,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -4833,6 +4906,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -4858,8 +4933,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    savingThrows: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    savingThrows: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -4982,6 +5059,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5009,6 +5088,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5034,8 +5115,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    skills: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    skills: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5158,6 +5241,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5185,6 +5270,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5210,8 +5297,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    resistances: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    resistances: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5334,6 +5423,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5361,6 +5452,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5386,8 +5479,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    immunities: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5510,6 +5605,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5537,6 +5634,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5562,8 +5661,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    vulnerabilities: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5686,6 +5787,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5713,6 +5816,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5738,8 +5843,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    conditionImmunities: z.ZodOptional<z.ZodObject<{
+    }>, "many">>;
+    conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -5862,6 +5969,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5889,6 +5998,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -5914,8 +6025,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>>;
-    senses: z.ZodObject<{
+    }>, "many">>;
+    senses: z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -6038,6 +6151,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -6065,6 +6180,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -6090,8 +6207,10 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>;
-    languages: z.ZodObject<{
+    }>, "many">;
+    languages: z.ZodArray<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
         string: z.ZodString;
         array: z.ZodArray<z.ZodObject<{
             string: z.ZodString;
@@ -6214,6 +6333,8 @@ export declare const statisticsObject: z.ZodObject<{
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -6241,6 +6362,8 @@ export declare const statisticsObject: z.ZodObject<{
         id?: number | undefined;
     }, {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -6266,7 +6389,7 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    }>;
+    }>, "many">;
     isBlind: z.ZodOptional<z.ZodBoolean>;
     canSpeak: z.ZodOptional<z.ZodBoolean>;
     telepathy: z.ZodOptional<z.ZodNumber>;
@@ -8741,6 +8864,7 @@ export declare const statisticsObject: z.ZodObject<{
     alignment: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -8776,6 +8900,8 @@ export declare const statisticsObject: z.ZodObject<{
     level: number;
     languages: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -8801,10 +8927,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    };
+    }[];
     AC: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -8850,6 +8977,7 @@ export declare const statisticsObject: z.ZodObject<{
         STR: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -8879,6 +9007,7 @@ export declare const statisticsObject: z.ZodObject<{
         DEX: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -8908,6 +9037,7 @@ export declare const statisticsObject: z.ZodObject<{
         CON: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -8937,6 +9067,7 @@ export declare const statisticsObject: z.ZodObject<{
         INT: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -8966,6 +9097,7 @@ export declare const statisticsObject: z.ZodObject<{
         WIS: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -8995,6 +9127,7 @@ export declare const statisticsObject: z.ZodObject<{
         CHA: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -9052,6 +9185,8 @@ export declare const statisticsObject: z.ZodObject<{
     };
     senses: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9077,7 +9212,7 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    };
+    }[];
     characterHook?: {
         string: string;
         number?: number | undefined;
@@ -9134,6 +9269,8 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     speeds?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9159,9 +9296,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     savingThrows?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9187,9 +9326,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     skills?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9215,9 +9356,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     resistances?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9243,9 +9386,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     immunities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9271,9 +9416,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     vulnerabilities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9299,9 +9446,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     conditionImmunities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9327,7 +9476,7 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;
@@ -9748,6 +9897,7 @@ export declare const statisticsObject: z.ZodObject<{
     alignment: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9783,6 +9933,8 @@ export declare const statisticsObject: z.ZodObject<{
     level: number;
     languages: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9808,10 +9960,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    };
+    }[];
     AC: {
         string: string;
         number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -9857,6 +10010,7 @@ export declare const statisticsObject: z.ZodObject<{
         STR: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -9886,6 +10040,7 @@ export declare const statisticsObject: z.ZodObject<{
         DEX: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -9915,6 +10070,7 @@ export declare const statisticsObject: z.ZodObject<{
         CON: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -9944,6 +10100,7 @@ export declare const statisticsObject: z.ZodObject<{
         INT: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -9973,6 +10130,7 @@ export declare const statisticsObject: z.ZodObject<{
         WIS: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -10002,6 +10160,7 @@ export declare const statisticsObject: z.ZodObject<{
         CHA: {
             string: string;
             number: number;
+            name: string;
             array: {
                 string: string;
                 number?: number | undefined;
@@ -10059,6 +10218,8 @@ export declare const statisticsObject: z.ZodObject<{
     };
     senses: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10084,7 +10245,7 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    };
+    }[];
     characterHook?: {
         string: string;
         number?: number | undefined;
@@ -10141,6 +10302,8 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     speeds?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10166,9 +10329,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     savingThrows?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10194,9 +10359,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     skills?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10222,9 +10389,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     resistances?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10250,9 +10419,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     immunities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10278,9 +10449,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     vulnerabilities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10306,9 +10479,11 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     conditionImmunities?: {
         string: string;
+        number: number;
+        name: string;
         array: {
             string: string;
             number?: number | undefined;
@@ -10334,7 +10509,7 @@ export declare const statisticsObject: z.ZodObject<{
             translationVariables?: Record<string, string> | undefined;
         }[];
         id?: number | undefined;
-    } | undefined;
+    }[] | undefined;
     isBlind?: boolean | undefined;
     canSpeak?: boolean | undefined;
     telepathy?: number | undefined;

@@ -4,8 +4,8 @@ exports.calculateSpells = void 0;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
 function calculateSpells(character) {
-    const spells = (0, functions_1.getStatArrayFromObjects)(character, "spells");
-    const prioritizedSpells = (0, functions_1.getPrioritizedStatistic)(character, "spells");
+    const spells = (0, functions_1.getStatArrayFromObjects)(character, 'spells');
+    const prioritizedSpells = (0, functions_1.getPrioritizedStatistic)(character, 'spells');
     const s = character.statistics;
     const t = character.tags;
     const v = character.variables;
@@ -16,7 +16,7 @@ function calculateSpells(character) {
     // removing groups that are not available for the current level/CR
     // and giving a unique tag to each group
     for (let i = 0; i < spells.length; i++) {
-        const limit = spells[i].availableUnit === "cr"
+        const limit = spells[i].availableUnit === 'cr'
             ? character.variations?.currentCR || -3
             : character.variations?.currentHD || 0;
         if (!spells[i].groups) {
@@ -105,7 +105,7 @@ function calculateSpells(character) {
         obj[key] = spellsPerUses[key];
         return obj;
     }, {});
-    const spellcastingAbility = prioritizedSpells?.ability || "CHA";
+    const spellcastingAbility = prioritizedSpells?.ability || 'CHA';
     const spellSaveDC = 8 + v.PROF + v[spellcastingAbility];
     const spellToHit = v.PROF + v[spellcastingAbility];
     const spellToHitString = spellToHit >= 0 ? `+${spellToHit}` : spellToHit.toString();
@@ -115,8 +115,8 @@ function calculateSpells(character) {
     const spellcasting = [];
     spellcasting.push({
         string: `${t.Name} casts one of the following spells, using ${stats_1.abilityNames[spellcastingAbility]} as the spellcasting ability (spell save DC ${spellSaveDC}, `,
-        type: "translatableText",
-        translationKey: "spellcastingDescription",
+        type: 'translatableText',
+        translationKey: 'spellcastingDescription',
         translationVariables: {
             name: t.Name,
             ability: stats_1.abilityNames[spellcastingAbility],
@@ -125,16 +125,16 @@ function calculateSpells(character) {
     });
     spellcasting.push({
         string: `${spellToHitString} to hit`,
-        type: "translatableText",
-        translationKey: "toHit",
+        type: 'translatableText',
+        translationKey: 'toHit',
         translationVariables: {
             toHit: spellToHitString,
         },
     });
     spellcasting.push({
-        string: " with spell attacks):",
-        type: "translatableText",
-        translationKey: "spellcastingDescription2",
+        string: ' with spell attacks):',
+        type: 'translatableText',
+        translationKey: 'spellcastingDescription2',
     });
     s.spellcasting = spellcasting;
     // --------------------------------------------------
@@ -150,12 +150,12 @@ function calculateSpells(character) {
         spellsPerUses[uses].spells = spellsPerUses[uses].spells.filter((spell, index, self) => index === self.findIndex((s) => s.id === spell.id));
         // sorting spells by level (descending) and name (ascending)
         spellsPerUses[uses].spells.sort((a, b) => {
-            const levelA = typeof a.properties?.level === "number"
+            const levelA = typeof a.properties?.level === 'number'
                 ? a.properties?.level
-                : parseInt(a.properties?.level || "0");
-            const levelB = typeof b.properties?.level === "number"
+                : parseInt(a.properties?.level || '0');
+            const levelB = typeof b.properties?.level === 'number'
                 ? b.properties?.level
-                : parseInt(b.properties?.level || "0");
+                : parseInt(b.properties?.level || '0');
             if (levelA === levelB) {
                 return a.value.localeCompare(b.value);
             }
@@ -165,8 +165,8 @@ function calculateSpells(character) {
         const parsedGroup = {
             priority: 0,
             tag: group.tag,
-            string: "",
-            name: "",
+            string: '',
+            name: '',
             nameArray: [],
             array: [],
         };
@@ -175,13 +175,13 @@ function calculateSpells(character) {
             // spell slots
             group.slots ??= 1;
             parsedGroup.charges = group.slots;
-            parsedGroup.recharge = "spellSlot";
-            if (uses === "0") {
-                parsedGroup.name = "Cantrips (at will)";
+            parsedGroup.recharge = 'spellSlot';
+            if (uses === '0') {
+                parsedGroup.name = 'Cantrips (at will)';
                 parsedGroup.nameArray.push({
-                    string: "Cantrips (at will)",
-                    type: "translatableText",
-                    translationKey: "cantripsAtWill",
+                    string: 'Cantrips (at will)',
+                    type: 'translatableText',
+                    translationKey: 'cantripsAtWill',
                 });
             }
             else {
@@ -191,34 +191,34 @@ function calculateSpells(character) {
                 parsedGroup.nameArray.push({
                     string: `${uses}${(0, functions_1.addOrdinal)(uses)}`,
                     number: parseInt(uses),
-                    type: "ordinal",
+                    type: 'ordinal',
                 });
-                parsedGroup.nameArray.push((0, functions_1.createPart)(" "));
+                parsedGroup.nameArray.push((0, functions_1.createPart)(' '));
                 parsedGroup.nameArray.push({
-                    string: "level",
-                    type: "translatableText",
+                    string: 'level',
+                    type: 'translatableText',
                 });
-                parsedGroup.nameArray.push((0, functions_1.createPart)(" ("));
+                parsedGroup.nameArray.push((0, functions_1.createPart)(' ('));
                 parsedGroup.nameArray.push({
                     string: slots,
-                    type: "translatableText",
-                    translationKey: "slotSpells",
+                    type: 'translatableText',
+                    translationKey: 'slotSpells',
                     translationVariables: {
                         n: group.slots.toString(),
                     },
                 });
-                parsedGroup.nameArray.push((0, functions_1.createPart)(")"));
+                parsedGroup.nameArray.push((0, functions_1.createPart)(')'));
             }
         }
         else {
             // spell groups
             parsedGroup.charges = parseInt(uses);
-            parsedGroup.recharge = "spellGroup";
-            if (uses === "0") {
-                parsedGroup.name = "At will";
+            parsedGroup.recharge = 'spellGroup';
+            if (uses === '0') {
+                parsedGroup.name = 'At will';
                 parsedGroup.nameArray.push({
-                    string: "At will",
-                    type: "translatableText",
+                    string: 'At will',
+                    type: 'translatableText',
                 });
             }
             else {
@@ -226,8 +226,8 @@ function calculateSpells(character) {
                 parsedGroup.name = name;
                 parsedGroup.nameArray.push({
                     string: name,
-                    type: "translatableText",
-                    translationKey: "dayEach",
+                    type: 'translatableText',
+                    translationKey: 'dayEach',
                     translationVariables: {
                         times: uses,
                     },
@@ -237,18 +237,18 @@ function calculateSpells(character) {
         // spell list
         for (let i = 0; i < group.spells.length; i++) {
             if (i > 0) {
-                parsedGroup.string += ", ";
-                parsedGroup.array.push((0, functions_1.createPart)(", "));
+                parsedGroup.string += ', ';
+                parsedGroup.array.push((0, functions_1.createPart)(', '));
             }
             parsedGroup.string += group.spells[i].value;
             parsedGroup.array.push({
                 string: group.spells[i].value,
-                format: ["italic"],
-                type: "spell",
+                format: ['italic'],
+                type: 'spell',
                 id: group.spells[i].id,
             });
         }
-        if (uses === "0") {
+        if (uses === '0') {
             cantrips = parsedGroup;
         }
         else if (hasSlots) {
@@ -270,23 +270,23 @@ exports.calculateSpells = calculateSpells;
  * returns the number of times/day or slots for a spell group
  */
 function getSpellTimesOrSlots(group, character) {
-    let times = group.times || "0";
-    let timesMax = group.timesMax || "9";
+    let times = group.times || '0';
+    let timesMax = group.timesMax || '9';
     // users are trying to write "at will" inside times/day and times/day max, and they're probably right to do so
     if (times
         .toString()
         .toLowerCase()
-        .replace(/[^a-z]/g, "") === "atwill") {
-        times = "0";
+        .replace(/[^a-z]/g, '') === 'atwill') {
+        times = '0';
     }
     if (timesMax
         .toString()
         .toLowerCase()
-        .replace(/[^a-z]/g, "") === "atwill") {
-        timesMax = "9";
+        .replace(/[^a-z]/g, '') === 'atwill') {
+        timesMax = '9';
     }
     if (isNaN(parseInt(timesMax))) {
-        timesMax = "9";
+        timesMax = '9';
     }
     // timesDay can be an expression
     let timesNumber = (0, functions_1.parseExpressionNumeric)(times, character);

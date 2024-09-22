@@ -1,17 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateArmorClass = void 0;
-const parsers_1 = require("../../parsers");
+const parsers_1 = require("@/parsers");
 const createClankingArmorCondition = (armorName) => {
     return {
-        name: "_clankingarmor",
+        name: '_clankingarmor',
         actions: [
             {
-                tag: "clankingarmordefault",
+                tag: 'clankingarmordefault',
                 variants: [
                     {
-                        name: "Stealth Disadvantage",
-                        type: "trait",
+                        name: 'Stealth Disadvantage',
+                        type: 'trait',
                         description: `[Name] has disadvantage on Dexterity (Stealth) checks while wearing [his] ${armorName} armor`,
                     },
                 ],
@@ -19,7 +19,7 @@ const createClankingArmorCondition = (armorName) => {
         ],
         bonuses: {
             walkBonus: {
-                value: "-10",
+                value: '-10',
             },
         },
     };
@@ -29,22 +29,23 @@ function calculateArmorClass(character) {
     const v = character.variables;
     let totalAC = 0;
     let dexMod = v.DEX;
-    let armor = { name: "", AC: "0" };
+    let armor = { name: '', AC: '0' };
     let armorAC = 0;
     s.AC = {
+        name: '',
         number: 0,
-        string: "",
+        string: '',
         array: [],
     };
     // checking if the user has "disabled" the armor from other sources
     // (there should be an armor inside the 'user' object with an empty name "")
     const userArmor = character?.character?.user?.armor;
-    if (userArmor && Object.hasOwn(userArmor, "name")) {
+    if (userArmor && Object.hasOwn(userArmor, 'name')) {
         armor = userArmor;
         armorAC = (0, parsers_1.parseExpressionNumeric)(armor.AC, character);
     }
     else {
-        const armorArray = (0, parsers_1.getStatArrayFromObjects)(character, "armor");
+        const armorArray = (0, parsers_1.getStatArrayFromObjects)(character, 'armor');
         armorArray?.forEach((a) => {
             const AC = (0, parsers_1.parseExpressionNumeric)(a.AC, character);
             if (AC > armorAC) {
@@ -53,9 +54,9 @@ function calculateArmorClass(character) {
             }
         });
     }
-    const armorBonuses = (0, parsers_1.getBonusesForOneStatistic)(character, "AC");
+    const armorBonuses = (0, parsers_1.getBonusesForOneStatistic)(character, 'AC');
     let armorBonus = 0;
-    let armorBonusString = "";
+    let armorBonusString = '';
     let hasExpression = false;
     armorBonuses.forEach((bonus) => {
         if (!(0, parsers_1.isNumber)(bonus.value)) {
@@ -64,7 +65,7 @@ function calculateArmorClass(character) {
         armorBonus += (0, parsers_1.parseExpressionNumeric)(bonus.value, character);
         if (bonus?.name) {
             if (armorBonusString)
-                armorBonusString += ", ";
+                armorBonusString += ', ';
             armorBonusString += bonus.name;
         }
     });
@@ -79,13 +80,13 @@ function calculateArmorClass(character) {
             if (!character.character.conditions) {
                 character.character.conditions = [];
             }
-            if (character.character.conditions?.findIndex((c) => c.name === "_clankingarmor") === -1) {
+            if (character.character.conditions?.findIndex((c) => c.name === '_clankingarmor') === -1) {
                 character.character.conditions?.push(createClankingArmorCondition(armor.name));
             }
         }
         else if (character.character.conditions &&
-            character.character.conditions?.findIndex((c) => c.name === "_clankingarmor") !== -1) {
-            character.character.conditions = character.character.conditions?.filter((c) => c.name !== "_clankingarmor");
+            character.character.conditions?.findIndex((c) => c.name === '_clankingarmor') !== -1) {
+            character.character.conditions = character.character.conditions?.filter((c) => c.name !== '_clankingarmor');
         }
         // max dex bonus
         if (armor?.maxDex !== undefined) {
@@ -97,13 +98,14 @@ function calculateArmorClass(character) {
         totalAC = armorAC + dexMod + armorBonus;
     }
     if (armor.name) {
-        s.AC.array?.push((0, parsers_1.createPart)(armor.name.toLowerCase(), "armor"));
+        s.AC.array?.push((0, parsers_1.createPart)(armor.name.toLowerCase(), 'armor'));
+        s.AC.name = armor.name;
     }
     if (armorBonusString) {
         if (s.AC.array?.length) {
-            s.AC.array?.push((0, parsers_1.createPart)(", "));
+            s.AC.array?.push((0, parsers_1.createPart)(', '));
         }
-        s.AC.array?.push((0, parsers_1.createPart)(armorBonusString.toLowerCase(), "armor"));
+        s.AC.array?.push((0, parsers_1.createPart)(armorBonusString.toLowerCase(), 'armor'));
     }
     // ------- automatic calculation (CR) -------
     if (
@@ -111,15 +113,15 @@ function calculateArmorClass(character) {
     armor.isAutomaticCalcDisabled !== true &&
         (0, parsers_1.isNumber)(armor.AC) &&
         !hasExpression) {
-        totalAC = (0, parsers_1.calibrateStatistic)(character, totalAC, "AC");
+        totalAC = (0, parsers_1.calibrateStatistic)(character, totalAC, 'AC');
     }
     s.AC.number = totalAC;
     if (s.AC.array.length) {
-        s.AC.array.push((0, parsers_1.createPart)(")"));
-        s.AC.array.unshift((0, parsers_1.createPart)(" ("));
+        s.AC.array.push((0, parsers_1.createPart)(')'));
+        s.AC.array.unshift((0, parsers_1.createPart)(' ('));
     }
-    s.AC.array.unshift((0, parsers_1.createPart)(totalAC.toString(), "text"));
-    s.AC.string = s.AC.array.reduce((acc, obj) => acc + obj.string, "");
+    s.AC.array.unshift((0, parsers_1.createPart)(totalAC.toString(), 'text'));
+    s.AC.string = s.AC.array.reduce((acc, obj) => acc + obj.string, '');
     character.variables.AC = totalAC;
 }
 exports.calculateArmorClass = calculateArmorClass;

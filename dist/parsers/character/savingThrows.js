@@ -3,13 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSavingThrows = void 0;
 const functions_1 = require("../functions");
 const stats_1 = require("./../stats");
-const functions_2 = require("../../functions");
+const functions_2 = require("@/functions");
 function calculateSavingThrows(character) {
     const s = character.statistics;
     const v = character.variables;
-    const savingThrows = (0, functions_1.getStatArrayFromObjects)(character, "savingThrows");
+    const savingThrows = (0, functions_1.getStatArrayFromObjects)(character, 'savingThrows');
     const savingThrowValues = {};
-    s.savingThrows = { string: "", array: [] };
+    s.savingThrows = [];
     const proficiency = s.proficiency;
     const limit = (0, functions_1.getCurrentStatLimit)(character);
     for (let i = 0; i < savingThrows.length; i++) {
@@ -32,16 +32,22 @@ function calculateSavingThrows(character) {
         if (bonus) {
             savingThrowValues[ability] += bonus;
         }
-        if (savingThrowValues[ability] === 0) {
+        if (!savingThrowValues[ability]) {
             continue;
         }
-        (0, functions_1.addCommaIfNotEmpty)(s.savingThrows.array);
-        s.savingThrows.array.push((0, functions_1.createPart)((0, functions_2.capitalizeFirst)(ability), "savingThrow"));
-        s.savingThrows.array.push((0, functions_1.createPart)(" "));
-        s.savingThrows.array.push({
+        s.savingThrows.push({
+            name: ability,
+            number: savingThrowValues[ability],
+            string: '',
+            array: []
+        });
+        const savingThrow = s.savingThrows[s.savingThrows.length - 1];
+        savingThrow.array.push((0, functions_1.createPart)((0, functions_2.capitalizeFirst)(ability), 'savingThrow'));
+        savingThrow.array.push((0, functions_1.createPart)(' '));
+        savingThrow.array.push({
             string: (0, functions_1.numberToSignedString)(savingThrowValues[ability]),
             number: savingThrowValues[ability],
-            type: "d20Roll",
+            type: 'd20Roll',
             roll: {
                 name: stats_1.abilityNames[ability],
                 translationKey: stats_1.abilityNames[ability],
@@ -56,13 +62,13 @@ function calculateSavingThrows(character) {
             },
             translationKey: stats_1.abilityNames[ability],
         });
+        savingThrow.string = savingThrow.array.reduce((acc, obj) => acc + obj.string, '');
     }
     stats_1.abilities.forEach((ability) => {
         v[`${ability}SAVE`] =
             savingThrowValues[ability] ?? v[ability];
     });
-    s.savingThrows.string = s.savingThrows.array.reduce((acc, obj) => acc + obj.string, "");
-    if (!s.savingThrows.string) {
+    if (!s.savingThrows.length) {
         delete s.savingThrows;
     }
 }

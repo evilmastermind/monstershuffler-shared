@@ -1,1 +1,1 @@
-{"version":3,"file":"damageImmunities.d.ts","sourceRoot":"","sources":["../../../parsers/character/damageImmunities.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,mBAAmB,CAAC,SAAS,EAAE,SAAS,QAkCvD"}
+{"version":3,"file":"damageImmunities.d.ts","sourceRoot":"","sources":["../../../parsers/character/damageImmunities.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,mBAAmB,CAAC,SAAS,EAAE,SAAS,QA0CvD"}
