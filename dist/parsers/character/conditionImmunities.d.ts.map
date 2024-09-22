@@ -1,1 +1,1 @@
-{"version":3,"file":"conditionImmunities.d.ts","sourceRoot":"","sources":["../../../parsers/character/conditionImmunities.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,4BAA4B,CAAC,SAAS,EAAE,SAAS,QAwChE"}
+{"version":3,"file":"conditionImmunities.d.ts","sourceRoot":"","sources":["../../../parsers/character/conditionImmunities.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,SAAS,EAAQ,MAAM,SAAS,CAAC;AAE1C,wBAAgB,4BAA4B,CAAC,SAAS,EAAE,SAAS,QA6ChE"}

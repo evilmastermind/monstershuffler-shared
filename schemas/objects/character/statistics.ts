@@ -81,6 +81,7 @@ export const descriptionPartObject = z.object({
 });
 
 export const statStringNumber = z.object({
+  name: z.string(),
   number: z.number(),
   string: z.string(),
   id: z.number().optional(),

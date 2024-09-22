@@ -36,6 +36,11 @@ export function calculateConditionImmunities(character: Character) {
           string,
           type: 'condition',
         });
+
+        immunity.string = immunity.array!.reduce(
+          (acc, obj) => acc + obj.string,
+          ''
+        );
       }
     }
   }

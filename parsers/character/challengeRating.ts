@@ -87,6 +87,7 @@ function assignChallengeRating(
   // statistics
   character.statistics!.CR = {
     number: CR,
+    name: CRString,
     string: CRString,
   };
   // variables

@@ -23,7 +23,8 @@ function calculateSavingThrows(character) {
         }
     }
     for (const key in savingThrowValues) {
-        if (savingThrowValues[key] === undefined) {
+        if (!Object.hasOwn(savingThrowValues, key) ||
+            savingThrowValues[key] === undefined) {
             continue;
         }
         const ability = key;

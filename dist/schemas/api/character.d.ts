@@ -5332,6 +5332,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -5368,6 +5369,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -5434,11 +5436,13 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -5714,6 +5718,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
@@ -11759,6 +11764,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -11795,6 +11801,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -11861,11 +11868,13 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -12141,6 +12150,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
@@ -18190,6 +18200,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -18226,6 +18237,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -18292,11 +18304,13 @@ export declare const sPostCharacterBody: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -18572,6 +18586,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
@@ -24617,6 +24632,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -24653,6 +24669,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -24719,11 +24736,13 @@ export declare const sPostCharacterBody: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -24999,6 +25018,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
@@ -31048,6 +31068,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -31084,6 +31105,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -31150,11 +31172,13 @@ export declare const sPutCharacterBody: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -31430,6 +31454,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {
@@ -37475,6 +37500,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             type: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             alignment: {
@@ -37511,6 +37537,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             size: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             level: number;
@@ -37577,11 +37604,13 @@ export declare const sPutCharacterBody: z.ZodObject<{
             CR: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             HP: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             };
             prename: string;
@@ -37857,6 +37886,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             sizeSingleEntityOfSwarm?: {
                 string: string;
                 number: number;
+                name: string;
                 id?: number | undefined;
             } | undefined;
             subtypes?: {

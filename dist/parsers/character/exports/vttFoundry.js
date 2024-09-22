@@ -7,22 +7,22 @@ function exportCharacterToVTTFoundry(character) {
     }
     const s = character.statistics;
     let output = `${s.fullName}
-  ${s.meta.string}
-  Armor Class ${s.AC.number} (${s.AC.string})
-  Hit Points ${s.HP.number} (${s.HP.string})
-  Speed ${(s.speeds?.map((speed) => speed.string.replace('ft', 'ft.')) || []).join(', ')}
-  STR
-  ${s.abilities.STR.string}
-  DEX
-  ${s.abilities.DEX.string}
-  CON
-  ${s.abilities.CON.string}
-  INT
-  ${s.abilities.INT.string}
-  WIS
-  ${s.abilities.WIS.string}
-  CHA
-  ${s.abilities.CHA.string}`;
+${s.meta.string}
+Armor Class ${s.AC.string}
+Hit Points ${s.HP.string}
+Speed ${(s.speeds?.map((speed) => speed.string.replace('ft', 'ft.')) || []).join(', ')}
+STR
+${s.abilities.STR.string}
+DEX
+${s.abilities.DEX.string}
+CON
+${s.abilities.CON.string}
+INT
+${s.abilities.INT.string}
+WIS
+${s.abilities.WIS.string}
+CHA
+${s.abilities.CHA.string}`;
     if (s.savingThrows?.length) {
         output += `\nSaving Throws ${s.savingThrows.map((save) => save.string).join(', ')}`;
     }

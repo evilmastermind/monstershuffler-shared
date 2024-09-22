@@ -6,12 +6,12 @@ const functions_1 = require("../../parsers/functions");
 const functions_2 = require("../../functions");
 function calculateSize(character) {
     let size = 0;
-    const baseSize = (0, functions_1.getPrioritizedStatistic)(character, "size") || 3;
-    const sizeBonus = (0, functions_1.getBonus)(character, "size");
+    const baseSize = (0, functions_1.getPrioritizedStatistic)(character, 'size') || 3;
+    const sizeBonus = (0, functions_1.getBonus)(character, 'size');
     size += sizeBonus;
-    const isSwarm = (0, functions_1.getPrioritizedStatistic)(character, "isSwarm");
+    const isSwarm = (0, functions_1.getPrioritizedStatistic)(character, 'isSwarm');
     if (isSwarm) {
-        const swarmSize = (0, parsers_1.parseExpressionNumeric)((0, functions_1.getPrioritizedStatistic)(character, "swarmSize") || "3", character);
+        const swarmSize = (0, parsers_1.parseExpressionNumeric)((0, functions_1.getPrioritizedStatistic)(character, 'swarmSize') || '3', character);
         size += swarmSize;
     }
     else {
@@ -26,11 +26,13 @@ function calculateSize(character) {
         size = 1;
     // statistics
     character.statistics.size = {
+        name: parsers_1.sizeStats[size.toString()].name,
         string: parsers_1.sizeStats[size.toString()].name,
         number: size,
     };
     if (isSwarm) {
         character.statistics.sizeSingleEntityOfSwarm = {
+            name: parsers_1.sizeStats[baseSize.toString()].name,
             string: parsers_1.sizeStats[baseSize.toString()].name,
             number: baseSize,
         };

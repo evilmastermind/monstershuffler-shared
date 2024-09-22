@@ -73,6 +73,7 @@ exports.descriptionPartObject = zod_1.z.object({
     translationVariables: zod_1.z.record(zod_1.z.string()).optional(),
 });
 exports.statStringNumber = zod_1.z.object({
+    name: zod_1.z.string(),
     number: zod_1.z.number(),
     string: zod_1.z.string(),
     id: zod_1.z.number().optional(),

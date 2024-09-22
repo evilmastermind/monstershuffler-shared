@@ -249,16 +249,19 @@ export declare const descriptionPartObject: z.ZodObject<{
     translationVariables?: Record<string, string> | undefined;
 }>;
 export declare const statStringNumber: z.ZodObject<{
+    name: z.ZodString;
     number: z.ZodNumber;
     string: z.ZodString;
     id: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     string: string;
     number: number;
+    name: string;
     id?: number | undefined;
 }, {
     string: string;
     number: number;
+    name: string;
     id?: number | undefined;
 }>;
 export declare const statStringNumberArray: z.ZodObject<{
@@ -2753,16 +2756,19 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     level: z.ZodNumber;
     CR: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }>;
     XP: z.ZodString;
@@ -2950,30 +2956,36 @@ export declare const statisticsObject: z.ZodObject<{
     }>;
     proficiency: z.ZodNumber;
     size: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }>;
     isSwarm: z.ZodOptional<z.ZodBoolean>;
     sizeSingleEntityOfSwarm: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }>>;
     abilities: z.ZodObject<{
@@ -4433,29 +4445,35 @@ export declare const statisticsObject: z.ZodObject<{
         };
     }>;
     HP: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }>;
     type: z.ZodObject<{
+        name: z.ZodString;
         number: z.ZodNumber;
         string: z.ZodString;
         id: z.ZodOptional<z.ZodNumber>;
     }, "strip", z.ZodTypeAny, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }, {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     }>;
     subtypes: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -8859,6 +8877,7 @@ export declare const statisticsObject: z.ZodObject<{
     type: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     alignment: {
@@ -8895,6 +8914,7 @@ export declare const statisticsObject: z.ZodObject<{
     size: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     level: number;
@@ -8961,11 +8981,13 @@ export declare const statisticsObject: z.ZodObject<{
     CR: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     HP: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     prename: string;
@@ -9241,6 +9263,7 @@ export declare const statisticsObject: z.ZodObject<{
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     } | undefined;
     subtypes?: {
@@ -9892,6 +9915,7 @@ export declare const statisticsObject: z.ZodObject<{
     type: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     alignment: {
@@ -9928,6 +9952,7 @@ export declare const statisticsObject: z.ZodObject<{
     size: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     level: number;
@@ -9994,11 +10019,13 @@ export declare const statisticsObject: z.ZodObject<{
     CR: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     HP: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     };
     prename: string;
@@ -10274,6 +10301,7 @@ export declare const statisticsObject: z.ZodObject<{
     sizeSingleEntityOfSwarm?: {
         string: string;
         number: number;
+        name: string;
         id?: number | undefined;
     } | undefined;
     subtypes?: {

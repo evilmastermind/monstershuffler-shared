@@ -10,17 +10,17 @@ function calculateHitPoints(character, addBonus = true, calibrate = true) {
     const die = parsers_1.sizeStats[size.toString()].hitDice;
     const HPFromHitDice = Math.floor(HitDice * ((die + 1) / 2));
     const HPFromConstitution = HitDice * v.CON;
-    const HPBonus = addBonus ? (0, parsers_1.getBonus)(character, "HP") : 0;
+    const HPBonus = addBonus ? (0, parsers_1.getBonus)(character, 'HP') : 0;
     let HPTotal = HPFromHitDice + HPFromConstitution + HPBonus;
     if (HPTotal < 1) {
         HPTotal = 1;
     }
     // ------- automatic calculation (CR) -------
-    if (character.character?.CRCalculation?.name === "automatic" && calibrate) {
-        HPTotal = (0, parsers_1.calibrateStatistic)(character, HPTotal, "HP");
+    if (character.character?.CRCalculation?.name === 'automatic' && calibrate) {
+        HPTotal = (0, parsers_1.calibrateStatistic)(character, HPTotal, 'HP');
     }
     // HP text
-    let HPText = "";
+    let HPText = '';
     if (HPFromConstitution > 0) {
         HPText = ` + ${HPFromConstitution}`;
     }
@@ -34,8 +34,10 @@ function calculateHitPoints(character, addBonus = true, calibrate = true) {
         HPText = ` - ${Math.abs(HPBonus)}`;
     }
     // statistics
+    const name = `${HitDice}d${die}${HPText}`;
     s.HP = {
-        string: `${HPTotal} (${HitDice}d${die}${HPText})`,
+        name,
+        string: `${HPTotal} (${name})`,
         number: HPTotal,
     };
     // variables

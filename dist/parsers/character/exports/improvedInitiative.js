@@ -18,15 +18,15 @@ function exportCharacterToImprovedInitiative(character) {
     const s = character.statistics;
     output.Name = s.fullName;
     output.Type = s.meta.string;
-    output.Description += s.characterHook ? s.characterHook?.join() + '\n' : '';
-    output.Description += s.personality ? 'Personality Trait ' + s.personality + '\n' : '';
+    output.Description += s.characterHook ? s.characterHook?.map((part) => part.string).join() : '';
+    output.Description += s.personality ? '\nPersonality Trait: ' + s.personality : '';
     output.AC = {
         'Value': s.AC.number,
-        'Notes': s.AC.string,
+        'Notes': s.AC.name ? `(${s.AC.name})` : '',
     };
     output.HP = {
         'Value': s.HP.number,
-        'Notes': s.HP.string,
+        'Notes': s.HP.name ? `(${s.HP.name})` : '',
     };
     output.Speed = s.speeds?.map((speed) => speed.string.replace('ft', 'ft.')) || [];
     output.Abilities = {
@@ -55,7 +55,7 @@ function exportCharacterToImprovedInitiative(character) {
     output.ConditionImmunities = s.conditionImmunities?.map((conditionImmunity) => conditionImmunity.string) || [];
     output.Senses = s.senses?.map((sense) => sense.string.replace('ft', 'ft.')) || [];
     output.Languages = s.languages?.map((language) => language.string.replace('ft', 'ft.')) || [];
-    output.Challenge = s.CR.number;
+    output.Challenge = s.CR.string;
     output.Traits = s.traits?.map((trait) => {
         return {
             Name: trait.name,

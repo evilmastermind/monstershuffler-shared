@@ -1,21 +1,21 @@
-import type { Size } from "@/parsers";
-import type { Character } from "@/types";
-import { sizeStats, parseExpressionNumeric } from "@/parsers";
-import { getBonus, getPrioritizedStatistic } from "@/parsers/functions";
-import { capitalizeFirst } from "@/functions";
+import type { Size } from '@/parsers';
+import type { Character } from '@/types';
+import { sizeStats, parseExpressionNumeric } from '@/parsers';
+import { getBonus, getPrioritizedStatistic } from '@/parsers/functions';
+import { capitalizeFirst } from '@/functions';
 
 export function calculateSize(character: Character) {
   let size = 0;
 
-  const baseSize = getPrioritizedStatistic<number>(character, "size") || 3;
-  const sizeBonus = getBonus(character, "size");
+  const baseSize = getPrioritizedStatistic<number>(character, 'size') || 3;
+  const sizeBonus = getBonus(character, 'size');
 
   size += sizeBonus;
 
-  const isSwarm = getPrioritizedStatistic<boolean>(character, "isSwarm");
+  const isSwarm = getPrioritizedStatistic<boolean>(character, 'isSwarm');
   if (isSwarm) {
     const swarmSize = parseExpressionNumeric(
-      getPrioritizedStatistic<string>(character, "swarmSize") || "3",
+      getPrioritizedStatistic<string>(character, 'swarmSize') || '3',
       character
     );
     size += swarmSize;
@@ -29,11 +29,13 @@ export function calculateSize(character: Character) {
 
   // statistics
   character.statistics!.size = {
+    name: sizeStats[size.toString() as Size].name,
     string: sizeStats[size.toString() as Size].name,
     number: size,
   };
   if (isSwarm) {
     character.statistics!.sizeSingleEntityOfSwarm = {
+      name: sizeStats[baseSize.toString() as Size].name,
       string: sizeStats[baseSize.toString() as Size].name,
       number: baseSize,
     };
