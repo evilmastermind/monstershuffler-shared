@@ -7,7 +7,7 @@ const attacks_1 = require("./attacks");
 const words_1 = require("./words");
 const functions_1 = require("../../functions");
 function replaceTags(untrimmedString, character, action = undefined, variant = undefined) {
-    const string = untrimmedString.trim().replace(/^\\n|\\n$/g, "");
+    const string = untrimmedString.trim().replace(/^\\n|\\n$/g, '');
     const parts = [];
     const tags = character.tags;
     const format = [];
@@ -17,20 +17,20 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
     let position = 0;
     let j = 0;
     let startingPoint = 0;
-    let word = "";
+    let word = '';
     let wordSize = 0;
-    let newWord = "";
+    let newWord = '';
     while (position < stringSize) {
         const i = position;
         position++;
         // ---------------------------------------------------------
         // replacing tags between [ ] like [name]
         // ---------------------------------------------------------
-        if (string.charAt(i) === "[") {
+        if (string.charAt(i) === '[') {
             parts.push((0, statistics_1.createPart)(string.substring(startingPoint, i)));
             startingPoint = i;
             j = i + 1;
-            while (string.charAt(j) !== "]" && j < stringSize) {
+            while (string.charAt(j) !== ']' && j < stringSize) {
                 j++;
             }
             if (j <= i + 1) {
@@ -40,22 +40,22 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
             wordSize = word.length;
             newWord = word;
             // solving random choices
-            if (newWord.includes("|")) {
+            if (newWord.includes('|')) {
                 newWord = calculateRandomName(newWord);
             }
             if (Object.hasOwn(tags, newWord)) {
                 // word found between [] is a tag
-                const newWordFromTag = tags[newWord] || "";
+                const newWordFromTag = tags[newWord] || '';
                 parts.push({
                     string: newWordFromTag,
-                    type: "tag",
+                    type: 'tag',
                     // translationKey: newWord,
                 });
             }
-            else if (newWord.substring(0, 6) === "spell:") {
-                parts.push((0, statistics_1.createPart)(newWord.replace("spell:", "").trim(), "spell", [
-                    "italic",
-                    "underline",
+            else if (newWord.substring(0, 6) === 'spell:') {
+                parts.push((0, statistics_1.createPart)(newWord.replace('spell:', '').trim(), 'spell', [
+                    'italic',
+                    'underline',
                 ]));
             }
             else {
@@ -65,7 +65,7 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
             position = position + (wordSize + 1);
             startingPoint = position;
         }
-        else if (string.charAt(i) === "{") {
+        else if (string.charAt(i) === '{') {
             // ---------------------------------------------------------
             // replacing variables between { } that contain expressions,
             // dice rolls and attacks
@@ -73,7 +73,7 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
             parts.push((0, statistics_1.createPart)(string.substring(startingPoint, i)));
             startingPoint = i;
             j = i + 1;
-            while (string.charAt(j) !== "}" && j < stringSize) {
+            while (string.charAt(j) !== '}' && j < stringSize) {
                 j++;
             }
             if (j <= i + 1) {
@@ -81,9 +81,9 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
             }
             word = string.substring(i + 1, j);
             // TODO: firstPart is added here for the new syntax, ex: {attack 1d6 bludgeoning}
-            const firstPart = word.split(" ")[0];
+            const firstPart = word.split(' ')[0];
             wordSize = word.length;
-            newWord = "";
+            newWord = '';
             position = position + (wordSize + 1);
             startingPoint = position;
             const value = action?.values?.find((v) => v.name === firstPart);
@@ -103,58 +103,58 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
             // pseudo-markdown for actions
             // ---------------------------------------------------------
         }
-        else if (string.charAt(i) === "\n") {
+        else if (string.charAt(i) === '\n') {
             parts.push((0, statistics_1.createPart)(string.substring(startingPoint, i)));
-            parts.push((0, statistics_1.createPart)("\n"));
+            parts.push((0, statistics_1.createPart)('\n'));
             if (isListItemStarted) {
                 // list item end
-                parts.push((0, statistics_1.createPart)("", "listItemEnd", format));
+                parts.push((0, statistics_1.createPart)('', 'listItemEnd', format));
                 isListItemStarted = false;
             }
-            if (string.charAt(i + 1) === "-") {
+            if (string.charAt(i + 1) === '-') {
                 if (!isListStarted) {
                     // list start
-                    parts.push((0, statistics_1.createPart)(``, "listStart", format));
+                    parts.push((0, statistics_1.createPart)('', 'listStart', format));
                     isListStarted = true;
                 }
                 // list item start
-                parts.push((0, statistics_1.createPart)(`-`, "listItemStart", format));
+                parts.push((0, statistics_1.createPart)('-', 'listItemStart', format));
                 isListItemStarted = true;
                 position++;
             }
-            else if (string.charAt(i + 1) === "\n") {
+            else if (string.charAt(i + 1) === '\n') {
                 // paragraph end (double new line)
-                parts.push((0, statistics_1.createPart)(`\n`, "paragraphEnd", format));
+                parts.push((0, statistics_1.createPart)('\n', 'paragraphEnd', format));
                 position++;
             }
             else {
                 if (isListStarted) {
                     // list end
-                    parts.push((0, statistics_1.createPart)(``, "listEnd", format));
+                    parts.push((0, statistics_1.createPart)('', 'listEnd', format));
                     isListStarted = false;
                 }
                 // next line
-                parts.push((0, statistics_1.createPart)(`\n`, "nextLine", format));
+                parts.push((0, statistics_1.createPart)('\n', 'nextLine', format));
             }
             startingPoint = position;
         }
-        else if (string.charAt(i) === "*") {
+        else if (string.charAt(i) === '*') {
             parts.push((0, statistics_1.createPart)(string.substring(startingPoint, i)));
-            if (string.charAt(i + 1) === "*") {
+            if (string.charAt(i + 1) === '*') {
                 // bold
-                (0, functions_1.toggle)(format, "font-bold");
+                (0, functions_1.toggle)(format, 'font-bold');
                 position++;
             }
             else {
                 // italic
-                (0, functions_1.toggle)(format, "italic");
+                (0, functions_1.toggle)(format, 'italic');
             }
             startingPoint = position;
         }
-        else if (string.charAt(i) === "_") {
+        else if (string.charAt(i) === '_') {
             parts.push((0, statistics_1.createPart)(string.substring(startingPoint, i)));
             // italic
-            (0, functions_1.toggle)(format, "italic");
+            (0, functions_1.toggle)(format, 'italic');
             startingPoint = position;
         }
     }
@@ -162,11 +162,11 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
         parts.push((0, statistics_1.createPart)(string.substring(startingPoint, stringSize)));
     }
     if (isListItemStarted) {
-        parts.push((0, statistics_1.createPart)("", "listItemEnd", format));
+        parts.push((0, statistics_1.createPart)('', 'listItemEnd', format));
     }
     if (isListStarted) {
         // list end
-        parts.push((0, statistics_1.createPart)(``, "listEnd", format));
+        parts.push((0, statistics_1.createPart)('', 'listEnd', format));
         isListStarted = false;
     }
     fixVerbsAfterNeutralThey(parts);
@@ -176,10 +176,10 @@ exports.replaceTags = replaceTags;
 // ---------------------------------------------------------------------------
 // RANDOM TEXT MANAGEMENT
 // ---------------------------------------------------------------------------
-function calculateRandomName(name = "") {
+function calculateRandomName(name = '') {
     if (!name)
-        return "Name";
-    const possibleNames = name.split("|") || null;
+        return 'Name';
+    const possibleNames = name.split('|') || null;
     if (possibleNames?.length <= 1)
         return name;
     const randomName = (0, functions_1.random)(0, possibleNames.length - 1);
@@ -194,8 +194,8 @@ function fixVerbsAfterNeutralThey(parts) {
     while (i < parts.length) {
         const part = parts[i];
         // checking for a "they" tag
-        if (part.type === "tag") {
-            if (["they", "They"].includes(part.string)) {
+        if (part.type === 'tag') {
+            if (['they', 'They'].includes(part.string)) {
                 if (i >= parts.length - 1) {
                     i++;
                     continue;
@@ -205,10 +205,10 @@ function fixVerbsAfterNeutralThey(parts) {
                     word = (0, words_1.getNthWord)(parts[i + 1].string, 2, true);
                 }
                 // check if the word has "n't" and separate it
-                const hasNt = word.endsWith("n't");
+                const hasNt = word.endsWith('n\'t');
                 const wordWithoutNt = hasNt ? word.slice(0, -3) : word;
                 // replace the word with the new one
-                parts[i + 1].string = parts[i + 1].string.replace(word, (0, words_1.thirdToFirstPerson)(wordWithoutNt) + (hasNt ? "n't" : ""));
+                parts[i + 1].string = parts[i + 1].string.replace(word, (0, words_1.thirdToFirstPerson)(wordWithoutNt) + (hasNt ? 'n\'t' : ''));
             }
         }
         i++;

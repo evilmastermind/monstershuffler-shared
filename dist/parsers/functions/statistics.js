@@ -9,13 +9,13 @@ const expressions_1 = require("./expressions");
 const functions_1 = require("../../functions");
 const stats_1 = require("../../parsers/stats");
 exports.objects = [
-    "user",
-    "template",
-    "classvariant",
-    "class",
-    "racevariant",
-    "race",
-    "background",
+    'user',
+    'template',
+    'classvariant',
+    'class',
+    'racevariant',
+    'race',
+    'background',
 ];
 function createPart(string, type = undefined, format = [], id = undefined) {
     const part = {
@@ -48,7 +48,7 @@ const characterObjects = (character) => {
             objectsFound.push(c[raceOrClassEtc]);
         }
     });
-    if (Object.hasOwn(c, "conditions")) {
+    if (Object.hasOwn(c, 'conditions')) {
         objectsFound = [...objectsFound, ...c.conditions];
     }
     return objectsFound;
@@ -67,7 +67,7 @@ function isNumber(stat) {
 }
 exports.isNumber = isNumber;
 function getCurrentStatLimit(character) {
-    if (character?.character?.CRCalculation?.name === "automatic") {
+    if (character?.character?.CRCalculation?.name === 'automatic') {
         return character?.statistics?.CR.number || -3;
     }
     else {
@@ -98,7 +98,7 @@ function getBonusesForOneStatistic(character, stat) {
     const bonuses = [];
     const objectsFound = characterObjects(character);
     objectsFound.forEach((raceOrClassEtc) => {
-        if (Object.hasOwn(raceOrClassEtc, "bonuses")) {
+        if (Object.hasOwn(raceOrClassEtc, 'bonuses')) {
             if (Object.hasOwn(raceOrClassEtc.bonuses, `${stat}Bonus`)) {
                 bonuses.push(raceOrClassEtc.bonuses[`${stat}Bonus`]);
             }
@@ -145,7 +145,6 @@ function getPrioritizedStatistic(character, key) {
 }
 exports.getPrioritizedStatistic = getPrioritizedStatistic;
 function getPrioritizedStatisticFromPath(character, key) {
-    const c = character.character;
     const objectsFound = characterObjects(character);
     for (let i = 0; i < objectsFound.length; i++) {
         const result = jspath_1.default.apply(`${key}`, objectsFound[i]);
@@ -201,7 +200,7 @@ function calculateCalibrationFactor(originalCR, newCR, statName, statValue) {
         statValueAvg = stats_1.challengeTable[originalCR.toString()][statName];
     }
     const calibrationFactor = Math.abs(statValue / statValueAvg);
-    if (originalCR >= newCR || statName !== "HP") {
+    if (originalCR >= newCR || statName !== 'HP') {
         return calibrationFactor;
     }
     else {
@@ -213,9 +212,9 @@ function calculateCalibrationFactor(originalCR, newCR, statName, statValue) {
     }
 }
 function getAvgStatisticHigherThan30(originalCR, statName) {
-    const increaseFactor = stats_1.challengeTable["30"][statName] / stats_1.challengeTable["29"][statName];
+    const increaseFactor = stats_1.challengeTable['30'][statName] / stats_1.challengeTable['29'][statName];
     const CRDifference = originalCR - 30;
-    return stats_1.challengeTable["30"][statName] * increaseFactor ** CRDifference;
+    return stats_1.challengeTable['30'][statName] * increaseFactor ** CRDifference;
 }
 function calibrateTheCalibrationFactor(originalCR, newCr, calibrationFactor) {
     const CRDifference = Math.abs(originalCR - newCr);
@@ -234,13 +233,13 @@ function calibrateTheCalibrationFactor(originalCR, newCr, calibrationFactor) {
 }
 function addCommaIfNotEmpty(array) {
     if (array.length) {
-        array.push(createPart(", "));
+        array.push(createPart(', '));
     }
 }
 exports.addCommaIfNotEmpty = addCommaIfNotEmpty;
 function pushWithComma(originalString, string2) {
     if (originalString) {
-        originalString += ", ";
+        originalString += ', ';
     }
     originalString += string2;
     return originalString;
@@ -255,19 +254,19 @@ function numberToSignedString(number) {
 exports.numberToSignedString = numberToSignedString;
 function unshiftWithComma(originalString, string2) {
     if (originalString) {
-        originalString = ", " + originalString;
+        originalString = ', ' + originalString;
     }
     originalString = string2 + originalString;
     return originalString;
 }
 exports.unshiftWithComma = unshiftWithComma;
-function feetToOtherUnit(feet, unit = "feet") {
+function feetToOtherUnit(feet, unit = 'feet') {
     let meters = 0;
     switch (unit) {
-        case "meters":
+        case 'meters':
             meters = feet * 0.3048;
             return parseFloat((meters - (meters % 1.5)).toFixed(1));
-        case "squares":
+        case 'squares':
             return feet / 5;
         default:
             return feet;
@@ -285,22 +284,22 @@ function feetDecimalToMeters(decimalFeet) {
     return `${meters.toFixed(2)} m`;
 }
 exports.feetDecimalToMeters = feetDecimalToMeters;
-function getUnitSymbol(unit = "feet") {
+function getUnitSymbol(unit = 'feet') {
     switch (unit) {
-        case "feet":
-            return "ft";
-        case "meters":
-            return "m";
-        case "squares":
-            return "sq";
+        case 'feet':
+            return 'ft';
+        case 'meters':
+            return 'm';
+        case 'squares':
+            return 'sq';
     }
 }
 exports.getUnitSymbol = getUnitSymbol;
-function parseNameChoices(name = "") {
+function parseNameChoices(name = '') {
     if (!name) {
-        return "Name";
+        return 'Name';
     }
-    const possibleNames = name.split("|") || null;
+    const possibleNames = name.split('|') || null;
     if (possibleNames?.length <= 1) {
         return name;
     }

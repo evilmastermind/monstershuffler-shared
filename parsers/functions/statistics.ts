@@ -1,23 +1,23 @@
-import JSPath from "jspath";
-import { parseExpressionNumeric } from "./expressions";
-import type { Character, Bonus, DescriptionPart } from "@/types";
-import { random } from "@/functions";
-import { type Challenge, challengeTable } from "@/parsers/stats";
+import JSPath from 'jspath';
+import { parseExpressionNumeric } from './expressions';
+import type { Character, Bonus, DescriptionPart } from '@/types';
+import { random } from '@/functions';
+import { type Challenge, challengeTable } from '@/parsers/stats';
 
 export const objects = [
-  "user",
-  "template",
-  "classvariant",
-  "class",
-  "racevariant",
-  "race",
-  "background",
+  'user',
+  'template',
+  'classvariant',
+  'class',
+  'racevariant',
+  'race',
+  'background',
 ];
 
 export function createPart(
   string: string,
-  type: DescriptionPart["type"] | undefined = undefined,
-  format: DescriptionPart["format"] = [],
+  type: DescriptionPart['type'] | undefined = undefined,
+  format: DescriptionPart['format'] = [],
   id: number | undefined = undefined
 ) {
   const part: DescriptionPart = {
@@ -50,7 +50,7 @@ const characterObjects = (character: Character) => {
       objectsFound.push(c[raceOrClassEtc]);
     }
   });
-  if (Object.hasOwn(c, "conditions")) {
+  if (Object.hasOwn(c, 'conditions')) {
     objectsFound = [...objectsFound, ...c.conditions];
   }
   return objectsFound as any[];
@@ -72,7 +72,7 @@ export function isNumber(stat: string) {
 }
 
 export function getCurrentStatLimit(character: Character) {
-  if (character?.character?.CRCalculation?.name === "automatic") {
+  if (character?.character?.CRCalculation?.name === 'automatic') {
     return character?.statistics?.CR.number || -3;
   } else {
     return character?.statistics?.level || 0;
@@ -106,7 +106,7 @@ export function getBonusesForOneStatistic(
   const objectsFound = characterObjects(character);
 
   objectsFound.forEach((raceOrClassEtc) => {
-    if (Object.hasOwn(raceOrClassEtc, "bonuses")) {
+    if (Object.hasOwn(raceOrClassEtc, 'bonuses')) {
       if (Object.hasOwn(raceOrClassEtc.bonuses, `${stat}Bonus`)) {
         bonuses.push(raceOrClassEtc.bonuses[`${stat}Bonus`]);
       }
@@ -159,7 +159,6 @@ export function getPrioritizedStatisticFromPath<T>(
   character: Character,
   key: string
 ) {
-  const c = character.character;
   const objectsFound = characterObjects(character);
   for (let i = 0; i < objectsFound.length; i++) {
     const result = JSPath.apply(`${key}`, objectsFound[i]);
@@ -234,7 +233,7 @@ function calculateCalibrationFactor(
   }
   const calibrationFactor = Math.abs(statValue / statValueAvg);
 
-  if (originalCR >= newCR || statName !== "HP") {
+  if (originalCR >= newCR || statName !== 'HP') {
     return calibrationFactor;
   } else {
     // At higher CRs, statistics tend to lean towards the average
@@ -254,9 +253,9 @@ function getAvgStatisticHigherThan30(
   statName: keyof Challenge
 ) {
   const increaseFactor =
-    challengeTable["30"][statName] / challengeTable["29"][statName];
+    challengeTable['30'][statName] / challengeTable['29'][statName];
   const CRDifference = originalCR - 30;
-  return challengeTable["30"][statName] * increaseFactor ** CRDifference;
+  return challengeTable['30'][statName] * increaseFactor ** CRDifference;
 }
 
 function calibrateTheCalibrationFactor(
@@ -280,13 +279,13 @@ function calibrateTheCalibrationFactor(
 
 export function addCommaIfNotEmpty(array: DescriptionPart[]) {
   if (array.length) {
-    array.push(createPart(", "));
+    array.push(createPart(', '));
   }
 }
 
 export function pushWithComma(originalString: string, string2: string) {
   if (originalString) {
-    originalString += ", ";
+    originalString += ', ';
   }
   originalString += string2;
   return originalString;
@@ -301,22 +300,22 @@ export function numberToSignedString(number: number) {
 
 export function unshiftWithComma(originalString: string, string2: string) {
   if (originalString) {
-    originalString = ", " + originalString;
+    originalString = ', ' + originalString;
   }
   originalString = string2 + originalString;
   return originalString;
 }
 
-export function feetToOtherUnit(feet: number, unit = "feet") {
+export function feetToOtherUnit(feet: number, unit = 'feet') {
   let meters = 0;
   switch (unit) {
-    case "meters":
-      meters = feet * 0.3048;
-      return parseFloat((meters - (meters % 1.5)).toFixed(1));
-    case "squares":
-      return feet / 5;
-    default:
-      return feet;
+  case 'meters':
+    meters = feet * 0.3048;
+    return parseFloat((meters - (meters % 1.5)).toFixed(1));
+  case 'squares':
+    return feet / 5;
+  default:
+    return feet;
   }
 }
 
@@ -331,22 +330,22 @@ export function feetDecimalToMeters(decimalFeet: number) {
   return `${meters.toFixed(2)} m`;
 }
 
-export function getUnitSymbol(unit = "feet") {
+export function getUnitSymbol(unit = 'feet') {
   switch (unit) {
-    case "feet":
-      return "ft";
-    case "meters":
-      return "m";
-    case "squares":
-      return "sq";
+  case 'feet':
+    return 'ft';
+  case 'meters':
+    return 'm';
+  case 'squares':
+    return 'sq';
   }
 }
 
-export function parseNameChoices(name = "") {
+export function parseNameChoices(name = '') {
   if (!name) {
-    return "Name";
+    return 'Name';
   }
-  const possibleNames = name.split("|") || null;
+  const possibleNames = name.split('|') || null;
   if (possibleNames?.length <= 1) {
     return name;
   }

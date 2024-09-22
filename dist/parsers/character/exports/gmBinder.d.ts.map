@@ -1,1 +1,1 @@
-{"version":3,"file":"gmBinder.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/gmBinder.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,yBAAyB,CAAC,SAAS,EAAE,SAAS,GAAG,MAAM,CA6FtE"}
+{"version":3,"file":"gmBinder.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/gmBinder.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,yBAAyB,CAAC,SAAS,EAAE,SAAS,EAAE,OAAO,SAAI,GAAG,MAAM,CA4FnF"}

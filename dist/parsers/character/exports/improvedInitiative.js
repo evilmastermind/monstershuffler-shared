@@ -18,8 +18,10 @@ function exportCharacterToImprovedInitiative(character) {
     const s = character.statistics;
     output.Name = s.fullName;
     output.Type = s.meta.string;
-    output.Description += s.characterHook ? s.characterHook?.map((part) => part.string).join() : '';
-    output.Description += s.personality ? '\nPersonality Trait: ' + s.personality : '';
+    output.Description += s.characterHook ? s.characterHook?.map((part) => part.string).join('') + '.' : '';
+    output.Description += s.personality ? ' Personality Trait: ' + s.personality + '.' : '';
+    // more fields if needed
+    output.Description = output.Description.trim();
     output.AC = {
         'Value': s.AC.number,
         'Notes': s.AC.name ? `(${s.AC.name})` : '',
@@ -77,7 +79,7 @@ function exportCharacterToImprovedInitiative(character) {
     if (s.spells?.length) {
         output.Actions.push({
             Name: 'Spellcasting',
-            Content: `${s.spellcasting?.map((spellcasting) => spellcasting.string).join('')}\n\n${s.spells.map((group) => `* ${group.name}. ${group.string}`).join('\n')}`,
+            Content: `${s.spellcasting?.map((spellcasting) => spellcasting.string).join('')}\n${s.spells.map((group) => `* ${group.name}. ${group.string}`).join('\n')}`,
         });
     }
     output.Reactions = s.reactions?.map((reaction) => {

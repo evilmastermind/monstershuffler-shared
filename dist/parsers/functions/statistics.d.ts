@@ -1,7 +1,7 @@
-import type { Character, Bonus, DescriptionPart } from "../../types";
-import { type Challenge } from "../../parsers/stats";
+import type { Character, Bonus, DescriptionPart } from '../../types';
+import { type Challenge } from '../../parsers/stats';
 export declare const objects: string[];
-export declare function createPart(string: string, type?: DescriptionPart["type"] | undefined, format?: DescriptionPart["format"], id?: number | undefined): {
+export declare function createPart(string: string, type?: DescriptionPart['type'] | undefined, format?: DescriptionPart['format'], id?: number | undefined): {
     string: string;
     number?: number | undefined;
     type?: "damageType" | "range" | "reach" | "type" | "value" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | "tag" | "text" | "translatableText" | "nextLine" | "paragraphEnd" | "listStart" | "listEnd" | "listItemStart" | "listItemEnd" | "numberAsWord" | "ordinal" | "feet" | "-feet" | "ft" | "range/rangeMax" | "resource" | "valueAsWord" | "diceRoll" | "d20Roll" | undefined;

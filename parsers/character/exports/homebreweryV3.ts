@@ -11,9 +11,10 @@ export function exportCharacterToHomebreweryV3(character: Character): string {
   `{{monster,frame
 ## ${s.fullName}
 *${s.meta.string}*
+___
 **Armor Class** :: ${s.AC.string}
 **Hit Points** :: ${s.HP.string}
-**Speed** :: :: ${(s.speeds?.map((speed)=> speed.string.replace('ft', 'ft.')) || []).join(', ')}
+**Speed** :: ${(s.speeds?.map((speed)=> speed.string.replace('ft', 'ft.')) || []).join(', ')}
 ___
 |STR|DEX|CON|INT|WIS|CHA|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -54,16 +55,16 @@ ___`;
   }
 
   if (s.actions?.length || s.spells?.length) {
-    output += '\n>### Actions';
+    output += '\n### Actions';
   }
   if (s.actions?.length) {
     for (const action of s.actions) {
-      output += `\n***${action.name}.*** ${addMarkdown(action.array)}`;
+      output += `\n***${action.name}.*** ${addMarkdown(action.array)}\n:`;
     }
   }
   if (s.spells?.length) {
     if (s.spellcasting?.length) {
-      output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}`;
+      output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}\n:`;
     }
     for (const group of s.spells) {
       output += `\n ${group.name} ${addMarkdown(group.array)}`;
@@ -73,14 +74,14 @@ ___`;
   if (s.bonusActions?.length) {
     output += '\n### Bonus Actions';
     for (const bonusAction of s.bonusActions) {
-      output += `\n***${bonusAction.name}.*** ${addMarkdown(bonusAction.array)}`;
+      output += `\n***${bonusAction.name}.*** ${addMarkdown(bonusAction.array)}\n:`;
     }
   }
 
   if (s.reactions?.length) {
     output += '\n### Reactions';
     for (const reaction of s.reactions) {
-      output += `\n ***${reaction.name}.*** ${addMarkdown(reaction.array)}`;
+      output += `\n ***${reaction.name}.*** ${addMarkdown(reaction.array)}\n:`;
     }
   }
 
@@ -88,7 +89,7 @@ ___`;
     output += '\n### Legendary Actions';
     output += `\n${s.legendaryActionsIntro?.string}`;
     for (const legendaryAction of s.legendaryActions) {
-      output += `\n**${legendaryAction.name}.** ${addMarkdown(legendaryAction.array)}`;
+      output += `\n**${legendaryAction.name}.** ${addMarkdown(legendaryAction.array)}\n:`;
     }
   }
   output += '\n}}';

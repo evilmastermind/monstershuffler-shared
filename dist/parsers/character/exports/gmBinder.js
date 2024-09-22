@@ -2,13 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.exportCharacterToGmBinder = void 0;
 const utils_1 = require("./utils");
-function exportCharacterToGmBinder(character) {
+function exportCharacterToGmBinder(character, columns = 1) {
     if (!character.statistics) {
         return '';
     }
     const s = character.statistics;
-    let output = `___
-___
+    let output = `___${columns > 1 ? '\n___\n' : ''}
 > ## ${s.fullName}
 > *${s.meta.string}*
 > ___
@@ -21,38 +20,38 @@ ___
 > |${s.abilities.STR.string}|${s.abilities.DEX.string}|${s.abilities.CON.string}|${s.abilities.INT.string}|${s.abilities.WIS.string}|${s.abilities.CHA.string}|
 > ___`;
     if (s.savingThrows?.length) {
-        output += `\n> **Saving Throws** ${(s.savingThrows?.map((save) => save.string).join(', '))}`;
+        output += `\n> - **Saving Throws** ${(s.savingThrows?.map((save) => save.string).join(', '))}`;
     }
     if (s.skills?.length) {
-        output += `\n> **Skills** ${(s.skills?.map((skill) => skill.string).join(', '))}`;
+        output += `\n> - **Skills** ${(s.skills?.map((skill) => skill.string).join(', '))}`;
     }
     if (s.vulnerabilities?.length) {
-        output += `\n> **Damage Vulnerabilities** ${(s.vulnerabilities?.map((vulnerability) => vulnerability.string).join(', '))}`;
+        output += `\n> - **Damage Vulnerabilities** ${(s.vulnerabilities?.map((vulnerability) => vulnerability.string).join(', '))}`;
     }
     if (s.resistances?.length) {
-        output += `\n> **Damage Resistances** ${(s.resistances?.map((resistance) => resistance.string).join(', '))}`;
+        output += `\n> - **Damage Resistances** ${(s.resistances?.map((resistance) => resistance.string).join(', '))}`;
     }
     if (s.immunities?.length) {
-        output += `\n> **Damage Immunities** ${(s.immunities?.map((immunity) => immunity.string).join(', '))}`;
+        output += `\n> - **Damage Immunities** ${(s.immunities?.map((immunity) => immunity.string).join(', '))}`;
     }
     if (s.conditionImmunities?.length) {
-        output += `\n> **Condition Immunities** ${(s.conditionImmunities?.map((conditionImmunity) => conditionImmunity.string).join(', '))}`;
+        output += `\n> - **Condition Immunities** ${(s.conditionImmunities?.map((conditionImmunity) => conditionImmunity.string).join(', '))}`;
     }
     if (s.senses?.length) {
-        output += `\n> **Senses** ${(s.senses?.map((sense) => sense.string).join(', '))}`;
+        output += `\n> - **Senses** ${(s.senses?.map((sense) => sense.string).join(', '))}`;
     }
     if (s.languages?.length) {
-        output += `\n> **Languages** ${(s.languages?.map((language) => language.string).join(', '))}`;
+        output += `\n> - **Languages** ${(s.languages?.map((language) => language.string).join(', '))}`;
     }
     output += `\n> **Challenge** ${s.CR.string} (${s.XP} XP)`;
-    output += '\n___';
+    output += '\n> ___';
     if (s.traits?.length) {
         for (const trait of s.traits) {
             output += `\n> ***${trait.name}.*** ${(0, utils_1.addMarkdown)(trait.array)}`;
         }
     }
     if (s.actions?.length || s.spells?.length) {
-        output += '\n>### Actions';
+        output += '\n> ### Actions';
     }
     if (s.actions?.length) {
         for (const action of s.actions) {
