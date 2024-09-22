@@ -43,7 +43,7 @@ function exportCharacterToGmBinder(character, columns = 1) {
     if (s.languages?.length) {
         output += `\n> - **Languages** ${(s.languages?.map((language) => language.string).join(', '))}`;
     }
-    output += `\n> **Challenge** ${s.CR.string} (${s.XP} XP)`;
+    output += `\n> - **Challenge** ${s.CR.string} (${s.XP} XP)`;
     output += '\n> ___';
     if (s.traits?.length) {
         for (const trait of s.traits) {

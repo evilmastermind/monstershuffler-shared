@@ -79,7 +79,7 @@ function exportCharacterToImprovedInitiative(character) {
     if (s.spells?.length) {
         output.Actions.push({
             Name: 'Spellcasting',
-            Content: `${s.spellcasting?.map((spellcasting) => spellcasting.string).join('')}\n${s.spells.map((group) => `* ${group.name}. ${group.string}`).join('\n')}`,
+            Content: `${s.spellcasting?.map((spellcasting) => spellcasting.string).join('')}\n${s.spells.map((group) => `* ${group.name}: ${group.string}`).join('\n')}`,
         });
     }
     output.Reactions = s.reactions?.map((reaction) => {
