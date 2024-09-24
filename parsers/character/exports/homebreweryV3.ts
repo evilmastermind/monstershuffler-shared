@@ -8,7 +8,7 @@ export function exportCharacterToHomebreweryV3(character: Character, columns = 1
   const s = character.statistics;
 
   let output = 
-  `{{monster,frame${columns > 1 ? ', wide' : ''}}}
+  `{{monster,frame${columns > 1 ? ',wide' : ''}
 ## ${s.fullName}
 *${s.meta.string}*
 ___
@@ -69,8 +69,11 @@ ___`;
     }
   }
   if (s.spells?.length) {
+    if (s.actions?.length) {
+      output += '\n:';
+    }
     if (s.spellcasting?.length) {
-      output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}:\n`;
+      output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}\n`;
     }
     for (const group of s.spells) {
       output += `\n:: ${group.name} ${addMarkdown(group.array)}`;
