@@ -47,7 +47,7 @@ function exportCharacterToGmBinder(character, columns = 1) {
     output += '\n> ___';
     if (s.traits?.length) {
         for (const trait of s.traits) {
-            output += `\n> ***${trait.name}.*** ${(0, utils_1.addMarkdown)(trait.array)}`;
+            output += `\n>\n> ***${trait.name}.*** ${(0, utils_1.addMarkdown)(trait.array)}`;
         }
     }
     if (s.actions?.length || s.spells?.length) {
@@ -55,34 +55,34 @@ function exportCharacterToGmBinder(character, columns = 1) {
     }
     if (s.actions?.length) {
         for (const action of s.actions) {
-            output += `\n> ***${action.name}.*** ${(0, utils_1.addMarkdown)(action.array)}`;
+            output += `\n>\n> ***${action.name}.*** ${(0, utils_1.addMarkdown)(action.array)}`;
         }
     }
     if (s.spells?.length) {
         if (s.spellcasting?.length) {
-            output += `\n> ***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}`;
+            output += `\n>\n> ***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}`;
         }
         for (const group of s.spells) {
-            output += `\n> ${group.name} ${(0, utils_1.addMarkdown)(group.array)}`;
+            output += `\n> - ${group.name} ${(0, utils_1.addMarkdown)(group.array)}`;
         }
     }
     if (s.bonusActions?.length) {
         output += '\n> ### Bonus Actions';
         for (const bonusAction of s.bonusActions) {
-            output += `\n> ***${bonusAction.name}.*** ${(0, utils_1.addMarkdown)(bonusAction.array)}`;
+            output += `\n>\n> ***${bonusAction.name}.*** ${(0, utils_1.addMarkdown)(bonusAction.array)}`;
         }
     }
     if (s.reactions?.length) {
         output += '\n> ### Reactions';
         for (const reaction of s.reactions) {
-            output += `\n> ***${reaction.name}.*** ${(0, utils_1.addMarkdown)(reaction.array)}`;
+            output += `\n>\n> ***${reaction.name}.*** ${(0, utils_1.addMarkdown)(reaction.array)}`;
         }
     }
     if (s.legendaryActions?.length) {
         output += '\n> ### Legendary Actions';
         output += `\n> ${s.legendaryActionsIntro?.string}`;
         for (const legendaryAction of s.legendaryActions) {
-            output += `\n> **${legendaryAction.name}.** ${(0, utils_1.addMarkdown)(legendaryAction.array)}`;
+            output += `\n>\n> **${legendaryAction.name}.** ${(0, utils_1.addMarkdown)(legendaryAction.array)}`;
         }
     }
     return output;

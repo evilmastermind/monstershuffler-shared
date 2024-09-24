@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.exportCharacterToHomebreweryV3 = void 0;
 const utils_1 = require("./utils");
-function exportCharacterToHomebreweryV3(character) {
+function exportCharacterToHomebreweryV3(character, columns = 1) {
     if (!character.statistics) {
         return '';
     }
     const s = character.statistics;
-    let output = `{{monster,frame
+    let output = `{{monster,frame${columns > 1 ? ', wide' : ''}}}
 ## ${s.fullName}
 *${s.meta.string}*
 ___
@@ -46,43 +46,58 @@ ___`;
     output += `\n**Challenge** :: ${s.CR.string} (${s.XP} XP)`;
     output += '\n___';
     if (s.traits?.length) {
-        for (const trait of s.traits) {
-            output += `\n***${trait.name}.*** ${(0, utils_1.addMarkdown)(trait.array)}`;
+        for (let i = 0; i < s.traits.length; i++) {
+            output += `\n***${s.traits[i].name}.*** ${(0, utils_1.addMarkdown)(s.traits[i].array)}`;
+            if (i < s.traits.length - 1) {
+                output += '\n:';
+            }
         }
     }
     if (s.actions?.length || s.spells?.length) {
         output += '\n### Actions';
     }
     if (s.actions?.length) {
-        for (const action of s.actions) {
-            output += `\n***${action.name}.*** ${(0, utils_1.addMarkdown)(action.array)}\n:`;
+        for (let i = 0; i < s.actions.length; i++) {
+            output += `\n***${s.actions[i].name}.*** ${(0, utils_1.addMarkdown)(s.actions[i].array)}`;
+            if (i < s.actions.length - 1) {
+                output += '\n:';
+            }
         }
     }
     if (s.spells?.length) {
         if (s.spellcasting?.length) {
-            output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}\n:`;
+            output += `\n***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}:\n`;
         }
         for (const group of s.spells) {
-            output += `\n ${group.name} ${(0, utils_1.addMarkdown)(group.array)}`;
+            output += `\n:: ${group.name} ${(0, utils_1.addMarkdown)(group.array)}`;
         }
     }
     if (s.bonusActions?.length) {
         output += '\n### Bonus Actions';
-        for (const bonusAction of s.bonusActions) {
-            output += `\n***${bonusAction.name}.*** ${(0, utils_1.addMarkdown)(bonusAction.array)}\n:`;
+        for (let i = 0; i < s.bonusActions.length; i++) {
+            output += `\n***${s.bonusActions[i].name}.*** ${(0, utils_1.addMarkdown)(s.bonusActions[i].array)}`;
+            if (i < s.bonusActions.length - 1) {
+                output += '\n:';
+            }
         }
     }
     if (s.reactions?.length) {
         output += '\n### Reactions';
-        for (const reaction of s.reactions) {
-            output += `\n ***${reaction.name}.*** ${(0, utils_1.addMarkdown)(reaction.array)}\n:`;
+        for (let i = 0; i < s.reactions.length; i++) {
+            output += `\n ***${s.reactions[i].name}.*** ${(0, utils_1.addMarkdown)(s.reactions[i].array)}`;
+            if (i < s.reactions.length - 1) {
+                output += '\n:';
+            }
         }
     }
     if (s.legendaryActions?.length) {
         output += '\n### Legendary Actions';
         output += `\n${s.legendaryActionsIntro?.string}`;
-        for (const legendaryAction of s.legendaryActions) {
-            output += `\n**${legendaryAction.name}.** ${(0, utils_1.addMarkdown)(legendaryAction.array)}\n:`;
+        for (let i = 0; i < s.legendaryActions.length; i++) {
+            output += `\n**${s.legendaryActions[i].name}.** ${(0, utils_1.addMarkdown)(s.legendaryActions[i].array)}`;
+            if (i < s.legendaryActions.length - 1) {
+                output += '\n:';
+            }
         }
     }
     output += '\n}}';

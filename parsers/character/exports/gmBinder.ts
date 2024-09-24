@@ -50,7 +50,7 @@ export function exportCharacterToGmBinder(character: Character, columns = 1): st
 
   if (s.traits?.length) {
     for (const trait of s.traits) {
-      output += `\n> ***${trait.name}.*** ${addMarkdown(trait.array)}`;
+      output += `\n>\n> ***${trait.name}.*** ${addMarkdown(trait.array)}`;
     }
   }
 
@@ -59,29 +59,29 @@ export function exportCharacterToGmBinder(character: Character, columns = 1): st
   }
   if (s.actions?.length) {
     for (const action of s.actions) {
-      output += `\n> ***${action.name}.*** ${addMarkdown(action.array)}`;
+      output += `\n>\n> ***${action.name}.*** ${addMarkdown(action.array)}`;
     }
   }
   if (s.spells?.length) {
     if (s.spellcasting?.length) {
-      output += `\n> ***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}`;
+      output += `\n>\n> ***Spellcasting***. ${s.spellcasting.map((spellcasting) => spellcasting.string).join('')}`;
     }
     for (const group of s.spells) {
-      output += `\n> ${group.name} ${addMarkdown(group.array)}`;
+      output += `\n> - ${group.name} ${addMarkdown(group.array)}`;
     }
   }
 
   if (s.bonusActions?.length) {
     output += '\n> ### Bonus Actions';
     for (const bonusAction of s.bonusActions) {
-      output += `\n> ***${bonusAction.name}.*** ${addMarkdown(bonusAction.array)}`;
+      output += `\n>\n> ***${bonusAction.name}.*** ${addMarkdown(bonusAction.array)}`;
     }
   }
 
   if (s.reactions?.length) {
     output += '\n> ### Reactions';
     for (const reaction of s.reactions) {
-      output += `\n> ***${reaction.name}.*** ${addMarkdown(reaction.array)}`;
+      output += `\n>\n> ***${reaction.name}.*** ${addMarkdown(reaction.array)}`;
     }
   }
 
@@ -89,7 +89,7 @@ export function exportCharacterToGmBinder(character: Character, columns = 1): st
     output += '\n> ### Legendary Actions';
     output += `\n> ${s.legendaryActionsIntro?.string}`;
     for (const legendaryAction of s.legendaryActions) {
-      output += `\n> **${legendaryAction.name}.** ${addMarkdown(legendaryAction.array)}`;
+      output += `\n>\n> **${legendaryAction.name}.** ${addMarkdown(legendaryAction.array)}`;
     }
   }
   return output;

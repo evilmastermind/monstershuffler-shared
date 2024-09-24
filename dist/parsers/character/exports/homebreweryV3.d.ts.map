@@ -1,1 +1,1 @@
-{"version":3,"file":"homebreweryV3.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/homebreweryV3.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,8BAA8B,CAAC,SAAS,EAAE,SAAS,GAAG,MAAM,CA6F3E"}
+{"version":3,"file":"homebreweryV3.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/homebreweryV3.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,8BAA8B,CAAC,SAAS,EAAE,SAAS,EAAE,OAAO,SAAI,GAAG,MAAM,CA4GxF"}
