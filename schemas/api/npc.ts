@@ -62,6 +62,7 @@ export const sAddBackstoryToNpcBody = z.object({
   prisma: z.unknown(),
   id: z.string().uuid(),
   backstory: z.string(),
+  physicalAppearance: z.string(),
   object: characterObject,
 });
 

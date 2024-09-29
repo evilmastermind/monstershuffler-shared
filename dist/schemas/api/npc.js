@@ -57,6 +57,7 @@ exports.sAddBackstoryToNpcBody = zod_1.z.object({
     prisma: zod_1.z.unknown(),
     id: zod_1.z.string().uuid(),
     backstory: zod_1.z.string(),
+    physicalAppearance: zod_1.z.string(),
     object: objects_1.characterObject,
 });
 exports.sGenerateBackstoryBody = zod_1.z.object({
