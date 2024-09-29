@@ -1119,6 +1119,7 @@ export declare const roleplayStats: {
     characterHook: z.ZodOptional<z.ZodString>;
     trait: z.ZodOptional<z.ZodString>;
     feeling: z.ZodOptional<z.ZodString>;
+    physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>;

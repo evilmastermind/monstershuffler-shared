@@ -17,6 +17,7 @@ export declare const userObject: z.ZodObject<{
     characterHook: z.ZodOptional<z.ZodString>;
     trait: z.ZodOptional<z.ZodString>;
     feeling: z.ZodOptional<z.ZodString>;
+    physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>;
@@ -3346,6 +3347,7 @@ export declare const userObject: z.ZodObject<{
     characterHook?: string | undefined;
     trait?: string | undefined;
     feeling?: string | undefined;
+    physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
         number: number;
@@ -4022,6 +4024,7 @@ export declare const userObject: z.ZodObject<{
     characterHook?: string | undefined;
     trait?: string | undefined;
     feeling?: string | undefined;
+    physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
         number: number;
@@ -31904,6 +31907,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
     characterHook: z.ZodOptional<z.ZodString>;
     trait: z.ZodOptional<z.ZodString>;
     feeling: z.ZodOptional<z.ZodString>;
+    physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
         string: z.ZodEnum<["child", "adolescent", "young adult", "adult", "middle-aged", "elderly", "venerable"]>;
@@ -35233,6 +35237,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
     characterHook?: string | undefined;
     trait?: string | undefined;
     feeling?: string | undefined;
+    physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
         number: number;
@@ -35909,6 +35914,7 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
     characterHook?: string | undefined;
     trait?: string | undefined;
     feeling?: string | undefined;
+    physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
         number: number;

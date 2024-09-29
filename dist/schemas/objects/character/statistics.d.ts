@@ -8872,6 +8872,7 @@ export declare const statisticsObject: z.ZodObject<{
     personality: z.ZodOptional<z.ZodString>;
     voice: z.ZodOptional<z.ZodString>;
     bodyType: z.ZodOptional<z.ZodString>;
+    physicalAppearance: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     name: string;
     type: {
@@ -9910,6 +9911,7 @@ export declare const statisticsObject: z.ZodObject<{
     personality?: string | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
+    physicalAppearance?: string | undefined;
 }, {
     name: string;
     type: {
@@ -10948,16 +10950,17 @@ export declare const statisticsObject: z.ZodObject<{
     personality?: string | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
+    physicalAppearance?: string | undefined;
 }>;
 /**
  * 2024-01-28 Note on spells:
- * both spell slots and uses/day will require the "name" part to have
- * - number of uses
- * - recharge type
+ * both spell group types ("slots" and "uses/day") will require to have a "name" for:
+ * - the number of uses
+ * - the recharge type
  *
- * the difference between them is that they will have a different type of "recharge", and that
+ * the difference between the two types is that they will have a different type of "recharge", and that
  * we need to count the uses for single spells for groups.
  * We don't need to do it in descriptionPart, though. The groups' tag and the spells' id (or name) is
- * enough to be able to identify them
+ * enough to identify them and count the uses.
  * */
 //# sourceMappingURL=statistics.d.ts.map

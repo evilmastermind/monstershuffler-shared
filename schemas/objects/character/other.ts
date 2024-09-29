@@ -133,6 +133,7 @@ export const roleplayStats = {
   characterHook: z.string().optional(),
   trait: z.string().optional(),
   feeling: z.string().optional(),
+  physicalAppearance: z.string().optional(),
   age: AgeObject.optional(),
   height: z.number().optional(),
   weight: WeightObject.optional(),

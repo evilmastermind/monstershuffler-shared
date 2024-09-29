@@ -128,6 +128,7 @@ exports.roleplayStats = {
     characterHook: zod_1.z.string().optional(),
     trait: zod_1.z.string().optional(),
     feeling: zod_1.z.string().optional(),
+    physicalAppearance: zod_1.z.string().optional(),
     age: exports.AgeObject.optional(),
     height: zod_1.z.number().optional(),
     weight: exports.WeightObject.optional(),

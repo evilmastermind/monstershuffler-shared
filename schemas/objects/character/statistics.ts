@@ -161,7 +161,7 @@ export const statisticsObject = z.object({
   vulnerabilities:  z.array(statStringNumberArray).optional(),
   conditionImmunities:  z.array(statStringNumberArray).optional(),
   senses:  z.array(statStringNumberArray), // never optional: passive perception is always calculated
-  languages:   z.array(statStringNumberArray), // never optional: write "-" if no languages are known
+  languages:   z.array(statStringNumberArray), // never optional: write "—" if no languages are known
   isBlind: z.boolean().optional(),
   canSpeak: z.boolean().optional(),
   telepathy: z.number().optional(),
@@ -181,16 +181,17 @@ export const statisticsObject = z.object({
   personality: z.string().optional(),
   voice: z.string().optional(),
   bodyType: z.string().optional(),
+  physicalAppearance: z.string().optional(),
 });
 
 /**
  * 2024-01-28 Note on spells:
- * both spell slots and uses/day will require the "name" part to have 
- * - number of uses
- * - recharge type
+ * both spell group types ("slots" and "uses/day") will require to have a "name" for: 
+ * - the number of uses
+ * - the recharge type
  * 
- * the difference between them is that they will have a different type of "recharge", and that
+ * the difference between the two types is that they will have a different type of "recharge", and that
  * we need to count the uses for single spells for groups.
  * We don't need to do it in descriptionPart, though. The groups' tag and the spells' id (or name) is
- * enough to be able to identify them
+ * enough to identify them and count the uses.
  * */ 
