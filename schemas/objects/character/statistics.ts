@@ -181,6 +181,7 @@ export const statisticsObject = z.object({
   personality: z.string().optional(),
   voice: z.string().optional(),
   bodyType: z.string().optional(),
+  height: z.string().optional(),
   physicalAppearance: z.string().optional(),
 });
 

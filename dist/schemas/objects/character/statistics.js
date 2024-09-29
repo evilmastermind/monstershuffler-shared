@@ -166,6 +166,7 @@ exports.statisticsObject = zod_1.z.object({
     personality: zod_1.z.string().optional(),
     voice: zod_1.z.string().optional(),
     bodyType: zod_1.z.string().optional(),
+    height: zod_1.z.string().optional(),
     physicalAppearance: zod_1.z.string().optional(),
 });
 /**

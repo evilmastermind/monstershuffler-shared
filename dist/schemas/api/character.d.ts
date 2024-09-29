@@ -5307,6 +5307,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -6367,6 +6368,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {
@@ -11742,6 +11744,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -12802,6 +12805,7 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {
@@ -18181,6 +18185,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -19241,6 +19246,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {
@@ -24616,6 +24622,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -25676,6 +25683,7 @@ export declare const sPostCharacterBody: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {
@@ -31055,6 +31063,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -32115,6 +32124,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {
@@ -37490,6 +37500,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             height?: number | undefined;
             weight?: "skinny" | "average" | "chubby" | "obese" | undefined;
+            physicalAppearance?: string | undefined;
             voice?: {
                 person: string;
                 filename: string;
@@ -38550,6 +38561,7 @@ export declare const sPutCharacterBody: z.ZodObject<{
             personality?: string | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
+            height?: string | undefined;
             physicalAppearance?: string | undefined;
         } | undefined;
         variables?: {

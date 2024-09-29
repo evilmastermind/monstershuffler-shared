@@ -8872,6 +8872,7 @@ export declare const statisticsObject: z.ZodObject<{
     personality: z.ZodOptional<z.ZodString>;
     voice: z.ZodOptional<z.ZodString>;
     bodyType: z.ZodOptional<z.ZodString>;
+    height: z.ZodOptional<z.ZodString>;
     physicalAppearance: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     name: string;
@@ -9911,6 +9912,7 @@ export declare const statisticsObject: z.ZodObject<{
     personality?: string | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
+    height?: string | undefined;
     physicalAppearance?: string | undefined;
 }, {
     name: string;
@@ -10950,6 +10952,7 @@ export declare const statisticsObject: z.ZodObject<{
     personality?: string | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
+    height?: string | undefined;
     physicalAppearance?: string | undefined;
 }>;
 /**

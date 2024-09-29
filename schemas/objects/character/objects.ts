@@ -259,6 +259,7 @@ export type CharacterObject = z.ZodObject<{
     age: typeof roleplayStats.age;
     height: typeof roleplayStats.height;
     weight: typeof roleplayStats.weight;
+    physicalAppearance: typeof roleplayStats.physicalAppearance;
     voice: typeof roleplayStats.voice;
     CRCalculation: typeof CRCalculationObject;
     proficiencyCalculation: typeof proficiencyCalculationObject;
