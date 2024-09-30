@@ -8869,7 +8869,26 @@ export declare const statisticsObject: z.ZodObject<{
     race: z.ZodOptional<z.ZodString>;
     class: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodString>;
-    personality: z.ZodOptional<z.ZodString>;
+    personality: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
+    feeling: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
     voice: z.ZodOptional<z.ZodString>;
     bodyType: z.ZodOptional<z.ZodString>;
     height: z.ZodOptional<z.ZodString>;
@@ -9909,7 +9928,14 @@ export declare const statisticsObject: z.ZodObject<{
     race?: string | undefined;
     class?: string | undefined;
     age?: string | undefined;
-    personality?: string | undefined;
+    personality?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
     height?: string | undefined;
@@ -10949,7 +10975,14 @@ export declare const statisticsObject: z.ZodObject<{
     race?: string | undefined;
     class?: string | undefined;
     age?: string | undefined;
-    personality?: string | undefined;
+    personality?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     voice?: string | undefined;
     bodyType?: string | undefined;
     height?: string | undefined;

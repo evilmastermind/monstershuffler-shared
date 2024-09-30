@@ -15,8 +15,26 @@ export declare const raceSpecificGeneratorStats: {
 };
 export declare const userObject: z.ZodObject<{
     characterHook: z.ZodOptional<z.ZodString>;
-    trait: z.ZodOptional<z.ZodString>;
-    feeling: z.ZodOptional<z.ZodString>;
+    trait: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
+    feeling: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
     physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
@@ -3345,8 +3363,14 @@ export declare const userObject: z.ZodObject<{
     name: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     characterHook?: string | undefined;
-    trait?: string | undefined;
-    feeling?: string | undefined;
+    trait?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -4022,8 +4046,14 @@ export declare const userObject: z.ZodObject<{
     name?: string | undefined;
 }, {
     characterHook?: string | undefined;
-    trait?: string | undefined;
-    feeling?: string | undefined;
+    trait?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -31905,8 +31935,26 @@ declare const CRCalculationObject: z.ZodOptional<z.ZodUnion<[z.ZodObject<{
 declare const proficiencyCalculationObject: z.ZodOptional<z.ZodEnum<["level", "CR"]>>;
 declare const conditionsObject: z.ZodArray<z.ZodObject<{
     characterHook: z.ZodOptional<z.ZodString>;
-    trait: z.ZodOptional<z.ZodString>;
-    feeling: z.ZodOptional<z.ZodString>;
+    trait: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
+    feeling: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
     physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;
@@ -35235,8 +35283,14 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
     name: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     characterHook?: string | undefined;
-    trait?: string | undefined;
-    feeling?: string | undefined;
+    trait?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -35912,8 +35966,14 @@ declare const conditionsObject: z.ZodArray<z.ZodObject<{
     name?: string | undefined;
 }, {
     characterHook?: string | undefined;
-    trait?: string | undefined;
-    feeling?: string | undefined;
+    trait?: {
+        name: string;
+        description: string;
+    } | undefined;
+    feeling?: {
+        name: string;
+        description: string;
+    } | undefined;
     physicalAppearance?: string | undefined;
     age?: {
         string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.statisticsObject = exports.abilitiesObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.roll = exports.parsedExpression = exports.parsedDice = void 0;
+const roleplay_1 = require("./roleplay");
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
 const other_1 = require("./other");
@@ -163,7 +164,8 @@ exports.statisticsObject = zod_1.z.object({
     race: zod_1.z.string().optional(),
     class: zod_1.z.string().optional(),
     age: zod_1.z.string().optional(),
-    personality: zod_1.z.string().optional(),
+    personality: roleplay_1.traitObject.optional(),
+    feeling: roleplay_1.traitObject.optional(),
     voice: zod_1.z.string().optional(),
     bodyType: zod_1.z.string().optional(),
     height: zod_1.z.string().optional(),

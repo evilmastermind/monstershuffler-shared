@@ -7,4 +7,9 @@ export const voiceObject = z.object({
   filename: z.string(),
 });
 
+export const traitObject = z.object({
+  name: z.string(),
+  description: z.string(),
+});
+
 export type Voice = z.infer<typeof voiceObject>;

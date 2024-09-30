@@ -15,5 +15,15 @@ export declare const voiceObject: z.ZodObject<{
     character?: string | undefined;
     production?: string | undefined;
 }>;
+export declare const traitObject: z.ZodObject<{
+    name: z.ZodString;
+    description: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    name: string;
+    description: string;
+}, {
+    name: string;
+    description: string;
+}>;
 export type Voice = z.infer<typeof voiceObject>;
 //# sourceMappingURL=roleplay.d.ts.map

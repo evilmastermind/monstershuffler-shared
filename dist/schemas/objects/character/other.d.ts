@@ -1117,8 +1117,26 @@ export declare const AgeObject: z.ZodObject<{
 export declare const WeightObject: z.ZodEnum<["skinny", "average", "chubby", "obese"]>;
 export declare const roleplayStats: {
     characterHook: z.ZodOptional<z.ZodString>;
-    trait: z.ZodOptional<z.ZodString>;
-    feeling: z.ZodOptional<z.ZodString>;
+    trait: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
+    feeling: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        description: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        name: string;
+        description: string;
+    }, {
+        name: string;
+        description: string;
+    }>>;
     physicalAppearance: z.ZodOptional<z.ZodString>;
     age: z.ZodOptional<z.ZodObject<{
         number: z.ZodNumber;

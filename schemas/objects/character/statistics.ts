@@ -1,3 +1,4 @@
+import { traitObject } from './roleplay';
 import { z } from 'zod';
 import { statType } from './choices';
 import { pronounsObject } from './other';
@@ -178,7 +179,8 @@ export const statisticsObject = z.object({
   race: z.string().optional(),
   class: z.string().optional(),
   age: z.string().optional(),
-  personality: z.string().optional(),
+  personality: traitObject.optional(),
+  feeling: traitObject.optional(),
   voice: z.string().optional(),
   bodyType: z.string().optional(),
   height: z.string().optional(),

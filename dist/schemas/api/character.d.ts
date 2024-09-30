@@ -3941,8 +3941,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -4619,8 +4625,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -5299,8 +5311,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -6365,7 +6383,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;
@@ -10378,8 +10403,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -11056,8 +11087,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -11736,8 +11773,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -12802,7 +12845,14 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;
@@ -16819,8 +16869,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -17497,8 +17553,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -18177,8 +18239,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -19243,7 +19311,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;
@@ -23256,8 +23331,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -23934,8 +24015,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -24614,8 +24701,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -25680,7 +25773,14 @@ export declare const sPostCharacterBody: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;
@@ -29697,8 +29797,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -30375,8 +30481,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -31055,8 +31167,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -32121,7 +32239,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;
@@ -36134,8 +36259,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             user?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -36812,8 +36943,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             } | undefined;
             conditions?: {
                 characterHook?: string | undefined;
-                trait?: string | undefined;
-                feeling?: string | undefined;
+                trait?: {
+                    name: string;
+                    description: string;
+                } | undefined;
+                feeling?: {
+                    name: string;
+                    description: string;
+                } | undefined;
                 physicalAppearance?: string | undefined;
                 age?: {
                     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
@@ -37492,8 +37629,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             alignmentEthical?: "Lawful" | "Neutral" | "Chaotic" | "Any" | "Unaligned" | undefined;
             alignmentMoral?: "Neutral" | "Any" | "Good" | "Evil" | undefined;
             characterHook?: string | undefined;
-            trait?: string | undefined;
-            feeling?: string | undefined;
+            trait?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             age?: {
                 string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
                 number: number;
@@ -38558,7 +38701,14 @@ export declare const sPutCharacterBody: z.ZodObject<{
             race?: string | undefined;
             class?: string | undefined;
             age?: string | undefined;
-            personality?: string | undefined;
+            personality?: {
+                name: string;
+                description: string;
+            } | undefined;
+            feeling?: {
+                name: string;
+                description: string;
+            } | undefined;
             voice?: string | undefined;
             bodyType?: string | undefined;
             height?: string | undefined;

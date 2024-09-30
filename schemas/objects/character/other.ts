@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { voiceObject } from './roleplay';
+import { voiceObject, traitObject } from './roleplay';
 import { armorObject } from './armor';
 import { statObject } from './choices';
 import { choiceRandomObject, choiceListObject } from './choices';
@@ -131,8 +131,8 @@ export const AgeObject = z.object({
 export const WeightObject = z.enum(['skinny', 'average', 'chubby', 'obese']);
 export const roleplayStats = {
   characterHook: z.string().optional(),
-  trait: z.string().optional(),
-  feeling: z.string().optional(),
+  trait: traitObject.optional(),
+  feeling: traitObject.optional(),
   physicalAppearance: z.string().optional(),
   age: AgeObject.optional(),
   height: z.number().optional(),
