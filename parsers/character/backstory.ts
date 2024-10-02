@@ -1,21 +1,33 @@
-import type { Character } from "@/types";
+import type { Character } from '@/types';
 
 export function calculateBackstoryInfo(character: Character) {
+  if (!character.statistics) {
+    return;
+  }
   const s = character.statistics!;
+  const c = character.character;
+
   s.race =
-    character.character?.racevariant?.name ||
-    character.character?.race?.name ||
+    c?.racevariant?.name ||
+    c?.race?.name ||
     s.type.string;
-  if ("class" in character.character && character.character.class) {
-    s.class = character.character?.class?.name || "";
+  if ('class' in c && c.class) {
+    s.class = c?.class?.name || '';
   }
-  if ("age" in character.character && character.character.age) {
-    s.age = `${character.character?.age.string}`;
+  if ('age' in c && c.age) {
+    s.age = `${c?.age.string}`;
   }
-  if (character.character.trait) {
-    s.personality = character.character.trait;
+  if (c.trait) {
+    s.personality = c.trait;
   }
-  if (character.character.weight) {
-    s.bodyType = character.character.weight;
+  if (c.weight) {
+    s.bodyType = c.weight;
+  }
+  if (c.height !== undefined) {
+    s.height = c.height.toString();
+  }
+  if (c.voice) {
+    s.voice = c.voice?.character ? `${c.voice.character} (${c.voice.person})` : c.voice.person;
+    s.voice = c.voice?.production ? `${s.voice} in ${c.voice.production}` : s.voice;
   }
 }
