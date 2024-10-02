@@ -18,3 +18,4 @@ __exportStar(require("./gmBinder"), exports);
 __exportStar(require("./homebreweryV3"), exports);
 __exportStar(require("./improvedInitiative"), exports);
 __exportStar(require("./vttFoundry"), exports);
+__exportStar(require("./roleplayStats"), exports);
