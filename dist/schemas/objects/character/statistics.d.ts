@@ -8868,7 +8868,22 @@ export declare const statisticsObject: z.ZodObject<{
     }>, "many">>;
     race: z.ZodOptional<z.ZodString>;
     class: z.ZodOptional<z.ZodString>;
-    age: z.ZodOptional<z.ZodString>;
+    age: z.ZodOptional<z.ZodObject<{
+        name: z.ZodString;
+        number: z.ZodNumber;
+        string: z.ZodString;
+        id: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        string: string;
+        number: number;
+        name: string;
+        id?: number | undefined;
+    }, {
+        string: string;
+        number: number;
+        name: string;
+        id?: number | undefined;
+    }>>;
     personality: z.ZodOptional<z.ZodObject<{
         name: z.ZodString;
         description: z.ZodString;
@@ -9927,7 +9942,12 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     race?: string | undefined;
     class?: string | undefined;
-    age?: string | undefined;
+    age?: {
+        string: string;
+        number: number;
+        name: string;
+        id?: number | undefined;
+    } | undefined;
     personality?: {
         name: string;
         description: string;
@@ -10974,7 +10994,12 @@ export declare const statisticsObject: z.ZodObject<{
     }[] | undefined;
     race?: string | undefined;
     class?: string | undefined;
-    age?: string | undefined;
+    age?: {
+        string: string;
+        number: number;
+        name: string;
+        id?: number | undefined;
+    } | undefined;
     personality?: {
         name: string;
         description: string;

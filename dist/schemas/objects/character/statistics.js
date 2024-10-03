@@ -163,7 +163,7 @@ exports.statisticsObject = zod_1.z.object({
     // other
     race: zod_1.z.string().optional(),
     class: zod_1.z.string().optional(),
-    age: zod_1.z.string().optional(),
+    age: exports.statStringNumber.optional(),
     personality: roleplay_1.traitObject.optional(),
     feeling: roleplay_1.traitObject.optional(),
     voice: zod_1.z.string().optional(),

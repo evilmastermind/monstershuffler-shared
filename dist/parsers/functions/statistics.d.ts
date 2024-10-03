@@ -71,6 +71,7 @@ export declare function numberToSignedString(number: number): string;
 export declare function unshiftWithComma(originalString: string, string2: string): string;
 export declare function feetToOtherUnit(feet: number, unit?: string): number;
 export declare function feetDecimalToFeetInches(decimalFeet: number): string;
+export declare function feetDecimalToUnit(height: number, unit?: 'meters' | 'feet'): string;
 export declare function feetDecimalToMeters(decimalFeet: number): string;
 export declare function getUnitSymbol(unit?: string): "ft" | "m" | "sq" | undefined;
 export declare function parseNameChoices(name?: string): string;

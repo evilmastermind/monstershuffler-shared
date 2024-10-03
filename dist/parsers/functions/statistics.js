@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createUserObjectIfNotExists = exports.parseNameChoices = exports.getUnitSymbol = exports.feetDecimalToMeters = exports.feetDecimalToFeetInches = exports.feetToOtherUnit = exports.unshiftWithComma = exports.numberToSignedString = exports.pushWithComma = exports.addCommaIfNotEmpty = exports.calibrateStatistic = exports.getPrioritizedStatisticFromPath = exports.getPrioritizedStatistic = exports.getBonusAndInfo = exports.getBonus = exports.getBonusesForOneStatistic = exports.getStatArrayFromObjects = exports.getCurrentStatLimit = exports.isNumber = exports.sortObject = exports.addPlusSign = exports.createPart = exports.objects = void 0;
+exports.createUserObjectIfNotExists = exports.parseNameChoices = exports.getUnitSymbol = exports.feetDecimalToMeters = exports.feetDecimalToUnit = exports.feetDecimalToFeetInches = exports.feetToOtherUnit = exports.unshiftWithComma = exports.numberToSignedString = exports.pushWithComma = exports.addCommaIfNotEmpty = exports.calibrateStatistic = exports.getPrioritizedStatisticFromPath = exports.getPrioritizedStatistic = exports.getBonusAndInfo = exports.getBonus = exports.getBonusesForOneStatistic = exports.getStatArrayFromObjects = exports.getCurrentStatLimit = exports.isNumber = exports.sortObject = exports.addPlusSign = exports.createPart = exports.objects = void 0;
 const jspath_1 = __importDefault(require("jspath"));
 const expressions_1 = require("./expressions");
 const functions_1 = require("../../functions");
@@ -279,6 +279,13 @@ function feetDecimalToFeetInches(decimalFeet) {
     return `${feet}'${inches}"`;
 }
 exports.feetDecimalToFeetInches = feetDecimalToFeetInches;
+function feetDecimalToUnit(height, unit = 'feet') {
+    if (unit === 'meters') {
+        return feetDecimalToMeters(height);
+    }
+    return feetDecimalToFeetInches(height);
+}
+exports.feetDecimalToUnit = feetDecimalToUnit;
 function feetDecimalToMeters(decimalFeet) {
     const meters = decimalFeet * 0.3048;
     return `${meters.toFixed(2)} m`;

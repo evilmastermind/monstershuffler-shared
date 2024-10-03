@@ -41,7 +41,7 @@ const conditionImmunities_1 = require("./conditionImmunities");
 const damageImmunities_1 = require("./damageImmunities");
 const senses_1 = require("./senses");
 const actions_1 = require("./actions");
-const backstory_1 = require("./backstory");
+const roleplayStats_1 = require("./roleplayStats");
 const spells_1 = require("./spells");
 var characterHook_2 = require("./characterHook");
 Object.defineProperty(exports, "calculateCharacterHook", { enumerable: true, get: function () { return characterHook_2.calculateCharacterHook; } });
@@ -139,6 +139,6 @@ function createStats(character) {
     (0, actions_1.calculateActions)(character);
     (0, spells_1.calculateSpells)(character);
     /// /// ///
-    (0, backstory_1.calculateRoleplayStats)(character);
+    (0, roleplayStats_1.calculateRoleplayStats)(character);
 }
 exports.createStats = createStats;

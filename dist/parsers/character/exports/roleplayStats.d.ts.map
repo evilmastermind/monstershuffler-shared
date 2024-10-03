@@ -1,1 +1,1 @@
-{"version":3,"file":"roleplayStats.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/roleplayStats.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAEzC,wBAAgB,mBAAmB,CAAC,SAAS,EAAE,SAAS,GAAG,MAAM,CAwBhE"}
+{"version":3,"file":"roleplayStats.d.ts","sourceRoot":"","sources":["../../../../parsers/character/exports/roleplayStats.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAGzC,wBAAgB,mBAAmB,CAAC,SAAS,EAAE,SAAS,EAAE,UAAU,GAAE,QAAQ,GAAG,MAAe,GAAG,MAAM,CAyBxG"}

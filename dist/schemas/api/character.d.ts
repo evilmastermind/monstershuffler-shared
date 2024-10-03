@@ -6382,7 +6382,12 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
@@ -12844,7 +12849,12 @@ export declare const sGetCharacterResponse: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
@@ -19310,7 +19320,12 @@ export declare const sPostCharacterBody: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
@@ -25772,7 +25787,12 @@ export declare const sPostCharacterBody: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
@@ -32238,7 +32258,12 @@ export declare const sPutCharacterBody: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
@@ -38700,7 +38725,12 @@ export declare const sPutCharacterBody: z.ZodObject<{
             }[] | undefined;
             race?: string | undefined;
             class?: string | undefined;
-            age?: string | undefined;
+            age?: {
+                string: string;
+                number: number;
+                name: string;
+                id?: number | undefined;
+            } | undefined;
             personality?: {
                 name: string;
                 description: string;
