@@ -1,6 +1,8 @@
 import type { Character } from '@/types';
+import { capitalizeFirst } from '@/functions';
+import { feetDecimalToFeetInches } from '../functions';
 
-export function calculateBackstoryInfo(character: Character) {
+export function calculateRoleplayStats(character: Character) {
   if (!character.statistics) {
     return;
   }
@@ -15,19 +17,27 @@ export function calculateBackstoryInfo(character: Character) {
     s.class = c?.class?.name || '';
   }
   if ('age' in c && c.age) {
-    s.age = `${c?.age.string}`;
+    s.age = {
+      name: c.age.string,
+      number: c.age.number,
+      string: `${capitalizeFirst(c.age.string)} (${c.age.number} years old)`,
+    };
   }
   if (c.trait) {
     s.personality = c.trait;
   }
   if (c.weight) {
-    s.bodyType = c.weight;
+    s.bodyType = capitalizeFirst(c.weight);
   }
   if (c.height !== undefined) {
-    s.height = c.height.toString();
+    s.height = feetDecimalToFeetInches(c.height);
   }
   if (c.voice) {
     s.voice = c.voice?.character ? `${c.voice.character} (${c.voice.person})` : c.voice.person;
     s.voice = c.voice?.production ? `${s.voice} in ${c.voice.production}` : s.voice;
+  }
+
+  if (c.physicalAppearance) {
+    s.physicalAppearance = c.physicalAppearance;
   }
 }

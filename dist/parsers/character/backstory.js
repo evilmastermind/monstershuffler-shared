@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateBackstoryInfo = void 0;
-function calculateBackstoryInfo(character) {
+exports.calculateRoleplayStats = void 0;
+function calculateRoleplayStats(character) {
     if (!character.statistics) {
         return;
     }
@@ -31,4 +31,4 @@ function calculateBackstoryInfo(character) {
         s.voice = c.voice?.production ? `${s.voice} in ${c.voice.production}` : s.voice;
     }
 }
-exports.calculateBackstoryInfo = calculateBackstoryInfo;
+exports.calculateRoleplayStats = calculateRoleplayStats;

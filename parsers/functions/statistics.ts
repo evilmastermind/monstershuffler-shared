@@ -325,6 +325,13 @@ export function feetDecimalToFeetInches(decimalFeet: number) {
   return `${feet}'${inches}"`;
 }
 
+export function feetDecimalToUnit(height: number, unit: 'meters' | 'feet' = 'feet') {
+  if (unit === 'meters') {
+    return feetDecimalToMeters(height);
+  }
+  return feetDecimalToFeetInches(height);
+}
+
 export function feetDecimalToMeters(decimalFeet: number) {
   const meters = decimalFeet * 0.3048;
   return `${meters.toFixed(2)} m`;

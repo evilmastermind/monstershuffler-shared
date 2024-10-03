@@ -178,7 +178,7 @@ export const statisticsObject = z.object({
   // other
   race: z.string().optional(),
   class: z.string().optional(),
-  age: z.string().optional(),
+  age: statStringNumber.optional(),
   personality: traitObject.optional(),
   feeling: traitObject.optional(),
   voice: z.string().optional(),

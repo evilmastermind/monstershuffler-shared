@@ -139,6 +139,6 @@ function createStats(character) {
     (0, actions_1.calculateActions)(character);
     (0, spells_1.calculateSpells)(character);
     /// /// ///
-    (0, backstory_1.calculateBackstoryInfo)(character);
+    (0, backstory_1.calculateRoleplayStats)(character);
 }
 exports.createStats = createStats;
