@@ -43,7 +43,6 @@ export function calculateActions(character: Character) {
   for (let i = 0; i < actions.length; i++) {
     const action = actions[i];
     const limit = getCurrentStatLimit(character);
-    console.log('----- limit', limit);
     if (
       !action?.variants?.length ||
       (action?.availableUntil && limit > action?.availableUntil)
@@ -70,9 +69,7 @@ export function calculateActions(character: Character) {
     // finding the right variant for the current CR, if any
     for (const currentlyCheckedVariant of action.variants) {
       const availableAt = currentlyCheckedVariant.availableAt ?? -3;
-      console.log('availableAt', availableAt);
       const currentAvailableAt = variant ? variant.availableAt ?? -3 : -3;
-      console.log('currentAvailableAt', currentAvailableAt);
       if (availableAt <= limit && availableAt >= currentAvailableAt) {
         variant = currentlyCheckedVariant;
       }
