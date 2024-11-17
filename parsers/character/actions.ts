@@ -41,6 +41,7 @@ export function calculateActions(character: Character) {
   ).flat();
 
   for (let i = 0; i < actions.length; i++) {
+    console.log('action #', i+1);
     const action = actions[i];
     const limit = getCurrentStatLimit(character);
     if (

@@ -1,7 +1,8 @@
-import { createStats } from "../character";
-import type { Character } from "@/types";
+import { createStats } from '../character';
+import type { Character } from '@/types';
 
 export function raiseCR(character: Character) {
+  console.log('raising CR');
   character.variations!.currentCR!++;
   adjustLevel(character);
   if (character.variations!.currentHD! <= character.statistics!.level) {
@@ -14,6 +15,7 @@ export function raiseCR(character: Character) {
 }
 
 export function lowerCR(character: Character) {
+  console.log('lowering CR');
   if (character.variations!.currentHD! <= 1) {
     return;
   }
@@ -33,11 +35,12 @@ export function lowerCR(character: Character) {
 }
 
 export function adjustLevel(character: Character) {
-  if (character?.character?.CRCalculation?.name === "automatic") {
+  console.log('adjusting level');
+  if (character?.character?.CRCalculation?.name === 'automatic') {
     return;
   }
   const CR = character.variations!.currentCR!;
-  if (character?.character?.CRCalculation?.name === "twopoints") {
+  if (character?.character?.CRCalculation?.name === 'twopoints') {
     const x1 = parseFloat(character.character?.CRCalculation?.x1);
     const y1 = parseFloat(character.character?.CRCalculation?.y1);
     const x2 = parseFloat(character.character?.CRCalculation?.x2);
@@ -47,7 +50,7 @@ export function adjustLevel(character: Character) {
       ((CR - y1) * (x2 - x1)) / (y2 - y1) + x1
     );
   }
-  if (character?.character?.CRCalculation?.name === "npcstandard") {
+  if (character?.character?.CRCalculation?.name === 'npcstandard') {
     if (CR === -3 || isNaN(CR)) character.variations!.currentHD = 1;
     else if (CR === -2) character.variations!.currentHD = 1;
     else if (CR === -1) character.variations!.currentHD = 1;
