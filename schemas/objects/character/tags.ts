@@ -3,6 +3,8 @@ import { z } from 'zod';
 export const tagsObject = z.object({
   name: z.string(),
   Name: z.string(),
+  fullname: z.string(),
+  Fullname: z.string(),
   he: z.string(),
   she: z.string(),
   his: z.string(),
