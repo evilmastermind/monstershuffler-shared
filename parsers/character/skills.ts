@@ -66,12 +66,15 @@ export function calculateSkills(character: Character) {
       skillValues[skill] += bonus;
     }
 
+    console.time('pushing skills');
     s.skills.push(
       { name: skill, number: skillValues[skill], string: '', array: [] }
     );
+    console.timeEnd('pushing skills');
 
     const currentSkill = s.skills[s.skills.length - 1];
 
+    console.time('creating parts');
     currentSkill.array.push(createPart(skill, 'skill'));
     currentSkill.array.push(createPart(' '));
     currentSkill.array.push({
@@ -92,6 +95,7 @@ export function calculateSkills(character: Character) {
       },
       translationKey: `skill.${skill}`,
     });
+    console.timeEnd('creating parts');
 
     console.time('reduce');
     currentSkill.string = currentSkill.array.reduce((acc, obj) => acc + obj.string, '');
