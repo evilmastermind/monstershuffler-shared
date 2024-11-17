@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateName = void 0;
 function calculateName(character) {
     const c = character.character;
-    const prename = c.prename || "";
-    const name = c.name || "";
-    const surname = c.surname || "";
+    const prename = c.prename || '';
+    const name = c.name || '';
+    const surname = c.surname || '';
     character.statistics.name = name;
     character.statistics.prename = prename;
     character.statistics.surname = surname;

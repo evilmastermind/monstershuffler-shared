@@ -5,6 +5,8 @@ const zod_1 = require("zod");
 exports.tagsObject = zod_1.z.object({
     name: zod_1.z.string(),
     Name: zod_1.z.string(),
+    fullname: zod_1.z.string(),
+    Fullname: zod_1.z.string(),
     he: zod_1.z.string(),
     she: zod_1.z.string(),
     his: zod_1.z.string(),

@@ -25,6 +25,7 @@ function calculateActions(character) {
     let tagsNumber = 0;
     const actions = (0, functions_1.getStatArrayFromObjects)(character, 'actions').flat();
     for (let i = 0; i < actions.length; i++) {
+        console.log('action #', i + 1);
         const action = actions[i];
         const limit = (0, functions_1.getCurrentStatLimit)(character);
         if (!action?.variants?.length ||

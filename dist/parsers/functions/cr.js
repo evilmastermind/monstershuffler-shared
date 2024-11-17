@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.adjustLevel = exports.lowerCR = exports.raiseCR = void 0;
 const character_1 = require("../character");
 function raiseCR(character) {
+    console.log('raising CR');
     character.variations.currentCR++;
     adjustLevel(character);
     if (character.variations.currentHD <= character.statistics.level) {
@@ -15,6 +16,7 @@ function raiseCR(character) {
 }
 exports.raiseCR = raiseCR;
 function lowerCR(character) {
+    console.log('lowering CR');
     if (character.variations.currentHD <= 1) {
         return;
     }
@@ -33,18 +35,19 @@ function lowerCR(character) {
 }
 exports.lowerCR = lowerCR;
 function adjustLevel(character) {
-    if (character?.character?.CRCalculation?.name === "automatic") {
+    console.log('adjusting level');
+    if (character?.character?.CRCalculation?.name === 'automatic') {
         return;
     }
     const CR = character.variations.currentCR;
-    if (character?.character?.CRCalculation?.name === "twopoints") {
+    if (character?.character?.CRCalculation?.name === 'twopoints') {
         const x1 = parseFloat(character.character?.CRCalculation?.x1);
         const y1 = parseFloat(character.character?.CRCalculation?.y1);
         const x2 = parseFloat(character.character?.CRCalculation?.x2);
         const y2 = parseFloat(character.character?.CRCalculation?.y2);
         character.variations.currentHD = Math.round(((CR - y1) * (x2 - x1)) / (y2 - y1) + x1);
     }
-    if (character?.character?.CRCalculation?.name === "npcstandard") {
+    if (character?.character?.CRCalculation?.name === 'npcstandard') {
         if (CR === -3 || isNaN(CR))
             character.variations.currentHD = 1;
         else if (CR === -2)

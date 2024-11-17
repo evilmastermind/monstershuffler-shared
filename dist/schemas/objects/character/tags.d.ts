@@ -2,6 +2,8 @@ import { z } from 'zod';
 export declare const tagsObject: z.ZodObject<{
     name: z.ZodString;
     Name: z.ZodString;
+    fullname: z.ZodString;
+    Fullname: z.ZodString;
     he: z.ZodString;
     she: z.ZodString;
     his: z.ZodString;
@@ -33,6 +35,8 @@ export declare const tagsObject: z.ZodObject<{
 }, "strip", z.ZodString, z.objectOutputType<{
     name: z.ZodString;
     Name: z.ZodString;
+    fullname: z.ZodString;
+    Fullname: z.ZodString;
     he: z.ZodString;
     she: z.ZodString;
     his: z.ZodString;
@@ -64,6 +68,8 @@ export declare const tagsObject: z.ZodObject<{
 }, z.ZodString, "strip">, z.objectInputType<{
     name: z.ZodString;
     Name: z.ZodString;
+    fullname: z.ZodString;
+    Fullname: z.ZodString;
     he: z.ZodString;
     she: z.ZodString;
     his: z.ZodString;

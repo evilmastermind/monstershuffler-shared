@@ -158,7 +158,7 @@ export type SizeStats = {
 };
 export declare const sizeStats: SizeStats;
 export declare function typeToNumber(type?: string | null | undefined): 2 | 0 | 8 | 1 | 10 | 3 | 4 | 5 | 6 | 7 | 9 | 12 | 11 | 13 | 14;
-export declare function numberToType(number?: number): 'aberration' | 'beast' | 'celestial' | 'construct' | 'dragon' | 'elemental' | 'fey' | 'fiend' | 'giant' | 'humanoid' | 'monstrosity' | 'ooze' | 'plant' | 'undead' | 'unknown';
+export declare function numberToType(number?: number): "aberration" | "beast" | "celestial" | "construct" | "dragon" | "elemental" | "fey" | "fiend" | "giant" | "humanoid" | "monstrosity" | "ooze" | "plant" | "undead" | "unknown";
 export type Challenge = {
     CR: number;
     CI: number;

@@ -6,115 +6,121 @@ const functions_2 = require("../../functions");
 const parsers_1 = require("../../parsers");
 function createTags(character) {
     const c = character.character;
-    const tags = character.tags;
+    const t = character.tags;
+    const s = character.statistics;
+    if (!t || !s) {
+        return;
+    }
     // TODO: translate the article. It's possible that some languages will have different ways to handle this.
-    tags.name = c?.generic
-        ? `the ${c.name.toLowerCase() || "the name"}`
-        : c?.name || "Name";
-    tags.Name = (0, functions_2.capitalizeFirst)(tags.name);
-    const pronouns = character.statistics?.pronouns || "thing";
+    t.name = c?.generic
+        ? `the ${c.name.toLowerCase() || 'the name'}`
+        : c?.name || 'Name';
+    t.Name = (0, functions_2.capitalizeFirst)(t.name);
+    t.fullname = c?.generic ? `the ${s.fullName.toLowerCase()}` : s.fullName;
+    t.Fullname = (0, functions_2.capitalizeFirst)(t.fullname);
+    const pronouns = character.statistics?.pronouns || 'thing';
     switch (pronouns) {
-        case "male":
-            tags.he = "he";
-            tags.she = "he";
-            tags.his = "his";
-            tags.her = "his";
-            tags.him = "him";
-            tags.hers = "his";
-            tags.He = "He";
-            tags.His = "His";
-            tags.Him = "Him";
-            tags.Hers = "His";
-            tags.they = "he";
-            tags.their = "his";
-            tags.them = "him";
-            tags.theirs = "his";
-            tags.They = "He";
-            tags.Their = "His";
-            tags.Them = "Him";
-            tags.Theirs = "His";
-            tags.it = "he";
-            tags.its = "his";
-            tags.It = "He";
-            tags.Its = "His";
+        case 'male':
+            t.he = 'he';
+            t.she = 'he';
+            t.his = 'his';
+            t.her = 'his';
+            t.him = 'him';
+            t.hers = 'his';
+            t.He = 'He';
+            t.His = 'His';
+            t.Him = 'Him';
+            t.Hers = 'His';
+            t.they = 'he';
+            t.their = 'his';
+            t.them = 'him';
+            t.theirs = 'his';
+            t.They = 'He';
+            t.Their = 'His';
+            t.Them = 'Him';
+            t.Theirs = 'His';
+            t.it = 'he';
+            t.its = 'his';
+            t.It = 'He';
+            t.Its = 'His';
             break;
-        case "female":
-            tags.he = "she";
-            tags.she = "she";
-            tags.his = "her";
-            tags.her = "her";
-            tags.him = "her";
-            tags.hers = "hers";
-            tags.He = "She";
-            tags.His = "Her";
-            tags.Him = "Her";
-            tags.Hers = "Hers";
-            tags.they = "she";
-            tags.their = "her";
-            tags.them = "her";
-            tags.theirs = "hers";
-            tags.They = "She";
-            tags.Their = "Her";
-            tags.Them = "Her";
-            tags.Theirs = "Hers";
-            tags.it = "she";
-            tags.its = "her";
-            tags.It = "She";
-            tags.Its = "Her";
+        case 'female':
+            t.he = 'she';
+            t.she = 'she';
+            t.his = 'her';
+            t.her = 'her';
+            t.him = 'her';
+            t.hers = 'hers';
+            t.He = 'She';
+            t.His = 'Her';
+            t.Him = 'Her';
+            t.Hers = 'Hers';
+            t.they = 'she';
+            t.their = 'her';
+            t.them = 'her';
+            t.theirs = 'hers';
+            t.They = 'She';
+            t.Their = 'Her';
+            t.Them = 'Her';
+            t.Theirs = 'Hers';
+            t.it = 'she';
+            t.its = 'her';
+            t.It = 'She';
+            t.Its = 'Her';
             break;
-        case "neutral":
-            tags.he = "they";
-            tags.she = "they";
-            tags.his = "their";
-            tags.her = "their";
-            tags.him = "them";
-            tags.hers = "theirs";
-            tags.He = "They";
-            tags.His = "Their";
-            tags.Him = "Them";
-            tags.Hers = "Theirs";
-            tags.they = "they";
-            tags.their = "their";
-            tags.them = "them";
-            tags.theirs = "theirs";
-            tags.They = "They";
-            tags.Their = "Their";
-            tags.Them = "Them";
-            tags.Theirs = "Theirs";
-            tags.it = "they";
-            tags.its = "their";
-            tags.It = "They";
-            tags.Its = "Their";
+        case 'neutral':
+            t.he = 'they';
+            t.she = 'they';
+            t.his = 'their';
+            t.her = 'their';
+            t.him = 'them';
+            t.hers = 'theirs';
+            t.He = 'They';
+            t.His = 'Their';
+            t.Him = 'Them';
+            t.Hers = 'Theirs';
+            t.they = 'they';
+            t.their = 'their';
+            t.them = 'them';
+            t.theirs = 'theirs';
+            t.They = 'They';
+            t.Their = 'Their';
+            t.Them = 'Them';
+            t.Theirs = 'Theirs';
+            t.it = 'they';
+            t.its = 'their';
+            t.It = 'They';
+            t.Its = 'Their';
             break;
         default:
-            tags.he = "it";
-            tags.she = "it";
-            tags.his = "its";
-            tags.her = "its";
-            tags.him = "it";
-            tags.hers = "theirs";
-            tags.He = "It";
-            tags.His = "Its";
-            tags.Him = "It";
-            tags.Hers = "Theirs";
-            tags.they = "it";
-            tags.their = "its";
-            tags.them = "it";
-            tags.theirs = "theirs";
-            tags.They = "It";
-            tags.Their = "Its";
-            tags.Them = "It";
-            tags.Theirs = "Theirs";
-            tags.it = "it";
-            tags.its = "its";
-            tags.It = "It";
-            tags.Its = "Its";
+            t.he = 'it';
+            t.she = 'it';
+            t.his = 'its';
+            t.her = 'its';
+            t.him = 'it';
+            t.hers = 'theirs';
+            t.He = 'It';
+            t.His = 'Its';
+            t.Him = 'It';
+            t.Hers = 'Theirs';
+            t.they = 'it';
+            t.their = 'its';
+            t.them = 'it';
+            t.theirs = 'theirs';
+            t.They = 'It';
+            t.Their = 'Its';
+            t.Them = 'It';
+            t.Theirs = 'Theirs';
+            t.it = 'it';
+            t.its = 'its';
+            t.It = 'It';
+            t.Its = 'Its';
             break;
     }
     // race
-    tags.race = c?.racevariant?.name || c?.race?.name || "Race";
-    // action tags
-    const actions = (0, functions_1.getStatArrayFromObjects)(character, "actions").flat();
+    t.race = c?.racevariant?.name || c?.race?.name || 'Race';
+    // action t
+    const actions = (0, functions_1.getStatArrayFromObjects)(character, 'actions').flat();
     for (let i = 0; i < actions.length; i++) {
         const action = actions[i];
         const limit = (0, functions_1.getCurrentStatLimit)(character);
@@ -135,17 +141,17 @@ function createTags(character) {
             }
         }
         // actions that use the name of the attack (weapon)
-        if ("attacks" in action) {
+        if ('attacks' in action) {
             action?.attacks?.forEach((attack) => {
                 if (attack.replaceName &&
-                    attack?.attributes &&
-                    "name" in attack?.attributes &&
-                    attack?.attributes?.name) {
+                    attack.attributes &&
+                    'name' in attack.attributes &&
+                    attack.attributes.name) {
                     variantName = attack.attributes.name;
                 }
             });
         }
-        tags[action.tag] = variantName;
+        t[action.tag] = variantName;
     }
 }
 exports.createTags = createTags;

@@ -6461,6 +6461,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
         tags?: z.objectOutputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
@@ -12928,6 +12930,8 @@ export declare const sGetCharacterResponse: z.ZodObject<{
         tags?: z.objectInputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
@@ -19399,6 +19403,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
         tags?: z.objectOutputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
@@ -25866,6 +25872,8 @@ export declare const sPostCharacterBody: z.ZodObject<{
         tags?: z.objectInputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
@@ -32337,6 +32345,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
         tags?: z.objectOutputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
@@ -38804,6 +38814,8 @@ export declare const sPutCharacterBody: z.ZodObject<{
         tags?: z.objectInputType<{
             name: z.ZodString;
             Name: z.ZodString;
+            fullname: z.ZodString;
+            Fullname: z.ZodString;
             he: z.ZodString;
             she: z.ZodString;
             his: z.ZodString;
