@@ -15,29 +15,29 @@ export declare const sGetSpellListBody: z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     game: number;
     name?: string | undefined;
-    level?: number | undefined;
     range?: string | undefined;
+    level?: number | undefined;
+    source?: string | undefined;
+    description?: string | undefined;
     ritual?: boolean | undefined;
     school?: string | undefined;
-    source?: string | undefined;
-    className?: string | undefined;
     duration?: string | undefined;
-    component?: string | undefined;
     castingTime?: string | undefined;
-    description?: string | undefined;
+    className?: string | undefined;
+    component?: string | undefined;
 }, {
     game: number;
     name?: string | undefined;
-    level?: number | undefined;
     range?: string | undefined;
+    level?: number | undefined;
+    source?: string | undefined;
+    description?: string | undefined;
     ritual?: boolean | undefined;
     school?: string | undefined;
-    source?: string | undefined;
-    className?: string | undefined;
     duration?: string | undefined;
-    component?: string | undefined;
     castingTime?: string | undefined;
-    description?: string | undefined;
+    className?: string | undefined;
+    component?: string | undefined;
 }>;
 export declare const sGetSpellListResponse: z.ZodObject<{
     list: z.ZodArray<z.ZodObject<{

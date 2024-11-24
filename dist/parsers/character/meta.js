@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateMeta = void 0;
+exports.calculateMeta = calculateMeta;
 const functions_1 = require("../functions");
 const functions_2 = require("../../functions");
 function calculateMeta(character) {
@@ -57,4 +57,3 @@ function calculateMeta(character) {
     meta.string = meta.array.reduce((acc, obj) => acc + obj.string, "");
     character.statistics.meta = meta;
 }
-exports.calculateMeta = calculateMeta;

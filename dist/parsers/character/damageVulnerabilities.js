@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateVulnerabilities = void 0;
+exports.calculateVulnerabilities = calculateVulnerabilities;
 const functions_1 = require("../../parsers/functions");
 function calculateVulnerabilities(character) {
     const s = character.statistics;
@@ -32,4 +32,3 @@ function calculateVulnerabilities(character) {
         return;
     }
 }
-exports.calculateVulnerabilities = calculateVulnerabilities;

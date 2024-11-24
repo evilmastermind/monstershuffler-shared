@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateAttack = void 0;
+exports.calculateAttack = calculateAttack;
 const stats_1 = require("../stats");
 const expressions_1 = require("./expressions");
 const statistics_1 = require("./statistics");
@@ -210,7 +210,6 @@ function calculateAttack(attack, character, name = "", ability = "STR") {
     }
     return parts;
 }
-exports.calculateAttack = calculateAttack;
 function createAttackDamagePart(name, ability, damageBonus, attributes, attack, character, isVersatile = false) {
     const v = character.variables;
     const part = {

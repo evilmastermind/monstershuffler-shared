@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.roundDiceSides = exports.addOrdinal = exports.numberToWord = void 0;
+exports.numberToWord = numberToWord;
+exports.addOrdinal = addOrdinal;
+exports.roundDiceSides = roundDiceSides;
 function numberToWord(number, language = "en") {
     if (typeof number === "string") {
         number = parseInt(number);
@@ -13,7 +15,6 @@ function numberToWord(number, language = "en") {
             break;
     }
 }
-exports.numberToWord = numberToWord;
 // System for American Numbering
 const thVal = ["", "thousand", "million", "billion", "trillion"];
 // System for uncomment this line for Number of English
@@ -107,7 +108,6 @@ function addOrdinal(value, language = "en") {
             break;
     }
 }
-exports.addOrdinal = addOrdinal;
 function addOrdinalEn(number) {
     const j = number % 10;
     const k = number % 100;
@@ -135,4 +135,3 @@ function roundDiceSides(value) {
         return 12;
     return 20;
 }
-exports.roundDiceSides = roundDiceSides;

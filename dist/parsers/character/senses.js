@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSenses = void 0;
+exports.calculateSenses = calculateSenses;
 const stats_1 = require("../stats");
 const functions_1 = require("../../parsers/functions");
 const functions_2 = require("../../functions");
@@ -90,4 +90,3 @@ function calculateSenses(character) {
         });
     }
 }
-exports.calculateSenses = calculateSenses;

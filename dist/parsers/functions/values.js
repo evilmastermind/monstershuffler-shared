@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addAdditionalDescriptionParts = exports.calculateValue = void 0;
+exports.calculateValue = calculateValue;
+exports.addAdditionalDescriptionParts = addAdditionalDescriptionParts;
 const expressions_1 = require("./expressions");
 const numbers_1 = require("./numbers");
 function calculateValue(value, character, variant = undefined, isEnchantment = false) {
@@ -133,7 +134,6 @@ function calculateValue(value, character, variant = undefined, isEnchantment = f
     addAdditionalDescriptionParts(part, value.type, average);
     return part;
 }
-exports.calculateValue = calculateValue;
 function addAdditionalDescriptionParts(part, type = '', average = 0) {
     if (!type) {
         return;
@@ -317,4 +317,3 @@ function addAdditionalDescriptionParts(part, type = '', average = 0) {
             part.translationKey = 'value.value';
     }
 }
-exports.addAdditionalDescriptionParts = addAdditionalDescriptionParts;

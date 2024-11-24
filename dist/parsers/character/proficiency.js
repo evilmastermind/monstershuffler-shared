@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateProficiency = void 0;
+exports.calculateProficiency = calculateProficiency;
 function calculateProficiency(character) {
     const c = character.character;
     const method = c.proficiencyCalculation || "CR";
@@ -17,4 +17,3 @@ function calculateProficiency(character) {
     }
     character.variables.PROF = character.statistics.proficiency;
 }
-exports.calculateProficiency = calculateProficiency;

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSavingThrows = void 0;
+exports.calculateSavingThrows = calculateSavingThrows;
 const functions_1 = require("../functions");
 const stats_1 = require("./../stats");
 const functions_2 = require("../../functions");
@@ -72,4 +72,3 @@ function calculateSavingThrows(character) {
         delete s.savingThrows;
     }
 }
-exports.calculateSavingThrows = calculateSavingThrows;

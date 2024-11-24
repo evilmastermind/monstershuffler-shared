@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSpells = void 0;
+exports.calculateSpells = calculateSpells;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
 function calculateSpells(character) {
@@ -265,7 +265,6 @@ function calculateSpells(character) {
         s.spells.unshift(cantrips);
     }
 }
-exports.calculateSpells = calculateSpells;
 /**
  * returns the number of times/day or slots for a spell group
  */

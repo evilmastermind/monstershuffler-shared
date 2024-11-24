@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateAlignment = void 0;
+exports.calculateAlignment = calculateAlignment;
 const functions_1 = require("../../functions");
 const functions_2 = require("../../parsers/functions");
 function calculateAlignment(character) {
@@ -183,4 +183,3 @@ function calculateAlignment(character) {
     character.statistics.alignment = alignment;
     character.statistics.alignment.string = alignment.array.reduce((acc, obj) => acc + obj.string, "");
 }
-exports.calculateAlignment = calculateAlignment;

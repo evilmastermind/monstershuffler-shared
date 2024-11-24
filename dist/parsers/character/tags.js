@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createTags = void 0;
+exports.createTags = createTags;
 const functions_1 = require("../functions");
 const functions_2 = require("../../functions");
 const parsers_1 = require("../../parsers");
@@ -154,4 +154,3 @@ function createTags(character) {
         t[action.tag] = variantName;
     }
 }
-exports.createTags = createTags;

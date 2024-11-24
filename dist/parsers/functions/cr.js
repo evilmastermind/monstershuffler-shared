@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.adjustLevel = exports.lowerCR = exports.raiseCR = void 0;
+exports.raiseCR = raiseCR;
+exports.lowerCR = lowerCR;
+exports.adjustLevel = adjustLevel;
 const character_1 = require("../character");
 function raiseCR(character) {
-    console.log('raising CR');
     character.variations.currentCR++;
     adjustLevel(character);
     if (character.variations.currentHD <= character.statistics.level) {
@@ -14,9 +15,7 @@ function raiseCR(character) {
     }
     (0, character_1.createStats)(character);
 }
-exports.raiseCR = raiseCR;
 function lowerCR(character) {
-    console.log('lowering CR');
     if (character.variations.currentHD <= 1) {
         return;
     }
@@ -33,9 +32,7 @@ function lowerCR(character) {
     }
     (0, character_1.createStats)(character);
 }
-exports.lowerCR = lowerCR;
 function adjustLevel(character) {
-    console.log('adjusting level');
     if (character?.character?.CRCalculation?.name === 'automatic') {
         return;
     }
@@ -62,4 +59,3 @@ function adjustLevel(character) {
             character.variations.currentHD = Math.ceil((CR / 3) * 5);
     }
 }
-exports.adjustLevel = adjustLevel;

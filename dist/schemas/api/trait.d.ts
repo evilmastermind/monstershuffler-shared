@@ -6,14 +6,14 @@ export declare const sGetRandomTraitBody: z.ZodObject<{
     feeling: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     type?: string | undefined;
+    feeling?: number | undefined;
     subtitle?: number | undefined;
     category?: string | undefined;
-    feeling?: number | undefined;
 }, {
     type?: string | undefined;
+    feeling?: number | undefined;
     subtitle?: number | undefined;
     category?: string | undefined;
-    feeling?: number | undefined;
 }>;
 export declare const sGetRandomTraitResponse: z.ZodObject<{
     name: z.ZodString;

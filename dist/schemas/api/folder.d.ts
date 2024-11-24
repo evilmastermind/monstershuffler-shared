@@ -28,8 +28,8 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
         size: number;
         cr: number;
         meta: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
@@ -39,8 +39,8 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
         size: number;
         cr: number;
         meta: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }>, "many">;
@@ -54,15 +54,15 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }>, "many">;
@@ -76,15 +76,15 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }>, "many">;
@@ -98,15 +98,15 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }, {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }>, "many">;
@@ -114,8 +114,8 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
     classes: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
@@ -130,24 +130,24 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
         size: number;
         cr: number;
         meta: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     races: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     templates: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
@@ -155,8 +155,8 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
     classes: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
@@ -171,24 +171,24 @@ export declare const sGetFolderContentResponse: z.ZodObject<{
         size: number;
         cr: number;
         meta: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     races: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];
     templates: {
         id: number;
         name: string;
-        adds?: number | undefined;
         url?: string | undefined;
+        adds?: number | undefined;
         negativeratings?: number | undefined;
         positiveratings?: number | undefined;
     }[];

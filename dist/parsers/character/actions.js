@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateActions = void 0;
+exports.calculateActions = calculateActions;
 const jspath_1 = __importDefault(require("jspath"));
 const functions_1 = require("../functions");
 const functions_2 = require("../../functions");
@@ -25,7 +25,6 @@ function calculateActions(character) {
     let tagsNumber = 0;
     const actions = (0, functions_1.getStatArrayFromObjects)(character, 'actions').flat();
     for (let i = 0; i < actions.length; i++) {
-        console.log('action #', i + 1);
         const action = actions[i];
         const limit = (0, functions_1.getCurrentStatLimit)(character);
         if (!action?.variants?.length ||
@@ -226,4 +225,3 @@ function calculateActions(character) {
         });
     }
 }
-exports.calculateActions = calculateActions;

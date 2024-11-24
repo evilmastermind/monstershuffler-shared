@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateAbilityScores = void 0;
+exports.calculateAbilityScores = calculateAbilityScores;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
 const functions_2 = require("../../functions");
@@ -86,4 +86,3 @@ function calculateAbilityScores(character) {
         character.variables[`${abilityName}VALUE`] = abilityScoreTotal;
     }
 }
-exports.calculateAbilityScores = calculateAbilityScores;

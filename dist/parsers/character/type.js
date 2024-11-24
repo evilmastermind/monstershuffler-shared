@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateType = void 0;
+exports.calculateType = calculateType;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
 function calculateType(character) {
@@ -12,4 +12,3 @@ function calculateType(character) {
         number: (0, stats_1.typeToNumber)(type),
     };
 }
-exports.calculateType = calculateType;

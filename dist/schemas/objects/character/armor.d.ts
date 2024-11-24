@@ -15,23 +15,23 @@ export declare const armorObject: z.ZodObject<{
     name: string;
     AC: string;
     id?: number | undefined;
-    isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
+    weight?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;
+    isAutomaticCalcDisabled?: boolean | undefined;
     maxDex?: string | undefined;
     minStr?: string | undefined;
-    weight?: string | undefined;
     stealthDis?: boolean | undefined;
 }, {
     name: string;
     AC: string;
     id?: number | undefined;
-    isAutomaticCalcDisabled?: boolean | undefined;
     cost?: string | undefined;
+    weight?: string | undefined;
     type?: "light" | "medium" | "heavy" | undefined;
+    isAutomaticCalcDisabled?: boolean | undefined;
     maxDex?: string | undefined;
     minStr?: string | undefined;
-    weight?: string | undefined;
     stealthDis?: boolean | undefined;
 }>;
 //# sourceMappingURL=armor.d.ts.map

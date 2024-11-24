@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSubtype = void 0;
+exports.calculateSubtype = calculateSubtype;
 const functions_1 = require("../functions");
 function calculateSubtype(character) {
     const subtypesArrays = (0, functions_1.getStatArrayFromObjects)(character, "subtypes");
@@ -32,4 +32,3 @@ function calculateSubtype(character) {
         character.statistics.subtypes = subtypes;
     }
 }
-exports.calculateSubtype = calculateSubtype;

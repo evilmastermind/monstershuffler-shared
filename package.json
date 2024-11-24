@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/jspath": "^0.4.2",
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.17.7",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",

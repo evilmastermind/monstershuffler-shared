@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exportCharacterToHomebreweryV3 = void 0;
+exports.exportCharacterToHomebreweryV3 = exportCharacterToHomebreweryV3;
 const utils_1 = require("./utils");
 function exportCharacterToHomebreweryV3(character, columns = 1) {
     if (!character.statistics) {
@@ -106,4 +106,3 @@ ___`;
     output += '\n}}';
     return output;
 }
-exports.exportCharacterToHomebreweryV3 = exportCharacterToHomebreweryV3;

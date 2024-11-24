@@ -146,8 +146,8 @@ exports.statisticsObject = zod_1.z.object({
     immunities: zod_1.z.array(exports.statStringNumberArray).optional(),
     vulnerabilities: zod_1.z.array(exports.statStringNumberArray).optional(),
     conditionImmunities: zod_1.z.array(exports.statStringNumberArray).optional(),
-    senses: zod_1.z.array(exports.statStringNumberArray),
-    languages: zod_1.z.array(exports.statStringNumberArray),
+    senses: zod_1.z.array(exports.statStringNumberArray), // never optional: passive perception is always calculated
+    languages: zod_1.z.array(exports.statStringNumberArray), // never optional: write "—" if no languages are known
     isBlind: zod_1.z.boolean().optional(),
     canSpeak: zod_1.z.boolean().optional(),
     telepathy: zod_1.z.number().optional(),

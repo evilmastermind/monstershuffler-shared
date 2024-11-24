@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateResistances = void 0;
+exports.calculateResistances = calculateResistances;
 const functions_1 = require("../../parsers/functions");
 function calculateResistances(character) {
     const s = character.statistics;
@@ -32,4 +32,3 @@ function calculateResistances(character) {
         return;
     }
 }
-exports.calculateResistances = calculateResistances;

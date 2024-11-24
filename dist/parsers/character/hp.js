@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateHitPoints = void 0;
+exports.calculateHitPoints = calculateHitPoints;
 const parsers_1 = require("../../parsers");
 function calculateHitPoints(character, addBonus = true, calibrate = true) {
     const s = character.statistics;
@@ -43,4 +43,3 @@ function calculateHitPoints(character, addBonus = true, calibrate = true) {
     // variables
     v.HP = HPTotal;
 }
-exports.calculateHitPoints = calculateHitPoints;

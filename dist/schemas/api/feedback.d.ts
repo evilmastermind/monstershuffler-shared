@@ -19,17 +19,17 @@ export declare const sAnswer: z.ZodObject<{
     rating: z.ZodOptional<z.ZodNumber>;
     boolean: z.ZodOptional<z.ZodBoolean>;
 }, "strip", z.ZodTypeAny, {
-    answer?: string | undefined;
-    options?: number[] | undefined;
-    data?: any;
-    rating?: number | undefined;
     boolean?: boolean | undefined;
+    options?: number[] | undefined;
+    rating?: number | undefined;
+    answer?: string | undefined;
+    data?: any;
 }, {
-    answer?: string | undefined;
-    options?: number[] | undefined;
-    data?: any;
-    rating?: number | undefined;
     boolean?: boolean | undefined;
+    options?: number[] | undefined;
+    rating?: number | undefined;
+    answer?: string | undefined;
+    data?: any;
 }>;
 export declare const sGetRandomQuestionBody: z.ZodObject<{
     topic: z.ZodOptional<z.ZodString>;
@@ -86,38 +86,38 @@ export declare const sPostAnswerBody: z.ZodObject<{
         rating: z.ZodOptional<z.ZodNumber>;
         boolean: z.ZodOptional<z.ZodBoolean>;
     }, "strip", z.ZodTypeAny, {
-        answer?: string | undefined;
-        options?: number[] | undefined;
-        data?: any;
-        rating?: number | undefined;
         boolean?: boolean | undefined;
+        options?: number[] | undefined;
+        rating?: number | undefined;
+        answer?: string | undefined;
+        data?: any;
     }, {
-        answer?: string | undefined;
-        options?: number[] | undefined;
-        data?: any;
-        rating?: number | undefined;
         boolean?: boolean | undefined;
+        options?: number[] | undefined;
+        rating?: number | undefined;
+        answer?: string | undefined;
+        data?: any;
     }>;
     userid: z.ZodOptional<z.ZodNumber>;
     sessionid: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     answer: {
-        answer?: string | undefined;
-        options?: number[] | undefined;
-        data?: any;
-        rating?: number | undefined;
         boolean?: boolean | undefined;
+        options?: number[] | undefined;
+        rating?: number | undefined;
+        answer?: string | undefined;
+        data?: any;
     };
     questionid: string;
     userid?: number | undefined;
     sessionid?: string | undefined;
 }, {
     answer: {
-        answer?: string | undefined;
-        options?: number[] | undefined;
-        data?: any;
-        rating?: number | undefined;
         boolean?: boolean | undefined;
+        options?: number[] | undefined;
+        rating?: number | undefined;
+        answer?: string | undefined;
+        data?: any;
     };
     questionid: string;
     userid?: number | undefined;

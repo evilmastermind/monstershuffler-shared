@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateName = void 0;
+exports.calculateName = calculateName;
 function calculateName(character) {
     const c = character.character;
     const prename = c.prename || '';
@@ -11,4 +11,3 @@ function calculateName(character) {
     character.statistics.surname = surname;
     character.statistics.fullName = `${prename} ${name} ${surname}`.trim();
 }
-exports.calculateName = calculateName;

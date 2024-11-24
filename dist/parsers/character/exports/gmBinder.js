@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exportCharacterToGmBinder = void 0;
+exports.exportCharacterToGmBinder = exportCharacterToGmBinder;
 const utils_1 = require("./utils");
 function exportCharacterToGmBinder(character, columns = 1) {
     if (!character.statistics) {
@@ -87,4 +87,3 @@ function exportCharacterToGmBinder(character, columns = 1) {
     }
     return output;
 }
-exports.exportCharacterToGmBinder = exportCharacterToGmBinder;

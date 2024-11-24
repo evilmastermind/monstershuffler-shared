@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSize = void 0;
+exports.calculateSize = calculateSize;
 const parsers_1 = require("../../parsers");
 const functions_1 = require("../../parsers/functions");
 const functions_2 = require("../../functions");
@@ -51,4 +51,3 @@ function calculateSize(character) {
     character.variables.SIZE = size;
     character.variables.HD = parsers_1.sizeStats[size.toString()].hitDice;
 }
-exports.calculateSize = calculateSize;

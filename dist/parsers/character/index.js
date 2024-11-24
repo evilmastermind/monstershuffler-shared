@@ -14,7 +14,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createStats = exports.calculateCharacterHook = void 0;
+exports.calculateCharacterHook = void 0;
+exports.createStats = createStats;
 const functions_1 = require("../../functions");
 const challengeRating_1 = require("./challengeRating");
 const alignment_1 = require("./alignment");
@@ -142,4 +143,3 @@ function createStats(character) {
     /// /// ///
     (0, roleplayStats_1.calculateRoleplayStats)(character);
 }
-exports.createStats = createStats;

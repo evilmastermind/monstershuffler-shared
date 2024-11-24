@@ -18,19 +18,14 @@ export function calculateSkills(character: Character) {
   }
 
   s.skills = [];
-  console.time('getStatArrayFromObjects');
   const skills = getStatArrayFromObjects<Stat[]>(character, 'skills');
-  console.timeEnd('getStatArrayFromObjects');
   const proficiency = s.proficiency;
-  console.time('getCurrentStatLimit');
   const limit = getCurrentStatLimit(character);
-  console.timeEnd('getCurrentStatLimit');
 
   let skillValues: {
     [key in keyof typeof skillTypes]: number;
   } = {};
 
-  console.time('calculating skills');
   for (let i = 0; i < skills.length; i++) {
     for (let j = 0; j < skills[i].length; j++) {
       const availableAt = skills[i][j].availableAt;
@@ -44,37 +39,28 @@ export function calculateSkills(character: Character) {
       }
     }
   }
-  console.timeEnd('calculating skills');
 
-  console.time('sorting skills');
   if (skillValues.length) {
     skillValues = sortObject(skillValues);
   }
-  console.timeEnd('sorting skills');
 
-  console.time('adding skills');
   for (const skill in skillValues) {
     if (
       !(skill in skillValues)
     ) {
       continue;
     }
-    console.time('getBonus');
     const bonus = getBonus(character, `${skill.replace(/\s/g, '')}`);
-    console.timeEnd('getBonus');
     if (bonus) {
       skillValues[skill] += bonus;
     }
 
-    console.time('pushing skills');
     s.skills.push(
       { name: skill, number: skillValues[skill], string: '', array: [] }
     );
-    console.timeEnd('pushing skills');
 
     const currentSkill = s.skills[s.skills.length - 1];
 
-    console.time('creating parts');
     currentSkill.array.push(createPart(skill, 'skill'));
     currentSkill.array.push(createPart(' '));
     currentSkill.array.push({
@@ -95,20 +81,14 @@ export function calculateSkills(character: Character) {
       },
       translationKey: `skill.${skill}`,
     });
-    console.timeEnd('creating parts');
 
-    console.time('reduce');
     currentSkill.string = currentSkill.array.reduce((acc, obj) => acc + obj.string, '');
-    console.timeEnd('reduce');
   }
-  console.timeEnd('adding skills');
 
-  console.time('deleting skills');
   for (const skill in skillTypes) {
     v[skill.replace(/\s/g, '').toUpperCase() as 'PERSUASION'] =
       skillValues[skill] ?? v[skillTypes[skill]];
   }
-  console.timeEnd('deleting skills');
 
   if (!s.skills.length) {
     delete s.skills;

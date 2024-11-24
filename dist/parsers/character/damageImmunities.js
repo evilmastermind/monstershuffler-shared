@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateImmunities = void 0;
+exports.calculateImmunities = calculateImmunities;
 const functions_1 = require("../../parsers/functions");
 function calculateImmunities(character) {
     const s = character.statistics;
@@ -32,4 +32,3 @@ function calculateImmunities(character) {
         return;
     }
 }
-exports.calculateImmunities = calculateImmunities;

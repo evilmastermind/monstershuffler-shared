@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateCharacterHook = void 0;
+exports.calculateCharacterHook = calculateCharacterHook;
 const parsers_1 = require("../../parsers");
 function calculateCharacterHook(character) {
     const c = character.character;
@@ -30,4 +30,3 @@ function calculateCharacterHook(character) {
     }
     character.statistics.characterHook = characterHook;
 }
-exports.calculateCharacterHook = calculateCharacterHook;

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateRandomName = exports.replaceTags = void 0;
+exports.replaceTags = replaceTags;
+exports.calculateRandomName = calculateRandomName;
 const statistics_1 = require("./statistics");
 const values_1 = require("./values");
 const attacks_1 = require("./attacks");
@@ -172,7 +173,6 @@ function replaceTags(untrimmedString, character, action = undefined, variant = u
     fixVerbsAfterNeutralThey(parts);
     return parts;
 }
-exports.replaceTags = replaceTags;
 // ---------------------------------------------------------------------------
 // RANDOM TEXT MANAGEMENT
 // ---------------------------------------------------------------------------
@@ -185,7 +185,6 @@ function calculateRandomName(name = '') {
     const randomName = (0, functions_1.random)(0, possibleNames.length - 1);
     return possibleNames[randomName];
 }
-exports.calculateRandomName = calculateRandomName;
 // ---------------------------------------------------------------------------
 // MISCELLANEOUS FUNCTIONS
 // ---------------------------------------------------------------------------

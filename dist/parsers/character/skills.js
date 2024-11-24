@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSkills = void 0;
+exports.calculateSkills = calculateSkills;
 const stats_1 = require("../stats");
 const functions_1 = require("../../parsers/functions");
 function calculateSkills(character) {
@@ -10,15 +10,10 @@ function calculateSkills(character) {
         return;
     }
     s.skills = [];
-    console.time('getStatArrayFromObjects');
     const skills = (0, functions_1.getStatArrayFromObjects)(character, 'skills');
-    console.timeEnd('getStatArrayFromObjects');
     const proficiency = s.proficiency;
-    console.time('getCurrentStatLimit');
     const limit = (0, functions_1.getCurrentStatLimit)(character);
-    console.timeEnd('getCurrentStatLimit');
     let skillValues = {};
-    console.time('calculating skills');
     for (let i = 0; i < skills.length; i++) {
         for (let j = 0; j < skills[i].length; j++) {
             const availableAt = skills[i][j].availableAt;
@@ -30,28 +25,19 @@ function calculateSkills(character) {
             }
         }
     }
-    console.timeEnd('calculating skills');
-    console.time('sorting skills');
     if (skillValues.length) {
         skillValues = (0, functions_1.sortObject)(skillValues);
     }
-    console.timeEnd('sorting skills');
-    console.time('adding skills');
     for (const skill in skillValues) {
         if (!(skill in skillValues)) {
             continue;
         }
-        console.time('getBonus');
         const bonus = (0, functions_1.getBonus)(character, `${skill.replace(/\s/g, '')}`);
-        console.timeEnd('getBonus');
         if (bonus) {
             skillValues[skill] += bonus;
         }
-        console.time('pushing skills');
         s.skills.push({ name: skill, number: skillValues[skill], string: '', array: [] });
-        console.timeEnd('pushing skills');
         const currentSkill = s.skills[s.skills.length - 1];
-        console.time('creating parts');
         currentSkill.array.push((0, functions_1.createPart)(skill, 'skill'));
         currentSkill.array.push((0, functions_1.createPart)(' '));
         currentSkill.array.push({
@@ -72,20 +58,13 @@ function calculateSkills(character) {
             },
             translationKey: `skill.${skill}`,
         });
-        console.timeEnd('creating parts');
-        console.time('reduce');
         currentSkill.string = currentSkill.array.reduce((acc, obj) => acc + obj.string, '');
-        console.timeEnd('reduce');
     }
-    console.timeEnd('adding skills');
-    console.time('deleting skills');
     for (const skill in stats_1.skillTypes) {
         v[skill.replace(/\s/g, '').toUpperCase()] =
             skillValues[skill] ?? v[stats_1.skillTypes[skill]];
     }
-    console.timeEnd('deleting skills');
     if (!s.skills.length) {
         delete s.skills;
     }
 }
-exports.calculateSkills = calculateSkills;

@@ -9,8 +9,8 @@ exports.spellGroupObject = zod_1.z
     tag: zod_1.z.string(),
     availableAt: zod_1.z.number().optional(),
     level: zod_1.z.number().optional(),
-    times: zod_1.z.string().optional(),
-    timesMax: zod_1.z.string().optional(),
+    times: zod_1.z.string().optional(), // must be a string because of expressions and "at will"
+    timesMax: zod_1.z.string().optional(), // must be a string because of "at will"
     spells: zod_1.z.union([
         zod_1.z.array(choices_1.statObject),
         choices_1.choiceRandomObject,

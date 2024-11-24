@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exportCharacterToImprovedInitiative = void 0;
+exports.exportCharacterToImprovedInitiative = exportCharacterToImprovedInitiative;
 const functions_1 = require("../../../functions");
 function exportCharacterToImprovedInitiative(character) {
     const output = {
@@ -97,4 +97,3 @@ function exportCharacterToImprovedInitiative(character) {
     output.MythicActions = [];
     return JSON.stringify(output, null, 2);
 }
-exports.exportCharacterToImprovedInitiative = exportCharacterToImprovedInitiative;

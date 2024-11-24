@@ -24,7 +24,8 @@ added features:
 ----------------------------------------------------------------
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseExpressionNumeric = exports.parseExpression = void 0;
+exports.parseExpression = parseExpression;
+exports.parseExpressionNumeric = parseExpressionNumeric;
 const fixSigns = (expression) => {
     // this part adds 0 before numbers declared with a sign at the beginning of an expression
     // example: -5+3 ===> 0-5+3
@@ -196,7 +197,6 @@ function parseExpression(expression = "", character, source = "") {
         value: result,
     };
 }
-exports.parseExpression = parseExpression;
 function parseExpressionNumeric(expression = "", character, source = "") {
     const result = parseExpression(expression, character, source);
     if (result.ok)
@@ -204,4 +204,3 @@ function parseExpressionNumeric(expression = "", character, source = "") {
     else
         return 0;
 }
-exports.parseExpressionNumeric = parseExpressionNumeric;

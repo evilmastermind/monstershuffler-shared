@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addMarkdown = void 0;
+exports.addMarkdown = addMarkdown;
 function addMarkdown(descriptionObjects) {
     let output = '';
     for (const description of descriptionObjects) {
@@ -21,4 +21,3 @@ function addMarkdown(descriptionObjects) {
     }
     return output;
 }
-exports.addMarkdown = addMarkdown;

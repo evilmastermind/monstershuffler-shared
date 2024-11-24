@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.challengeTable = exports.numberToType = exports.typeToNumber = exports.sizeStats = exports.getChallengeNumber = exports.getChallengeString = exports.challengeStats = exports.sensesList = exports.skillTypes = exports.speedTypes = exports.abilityNames = exports.abilities = void 0;
+exports.challengeTable = exports.sizeStats = exports.challengeStats = exports.sensesList = exports.skillTypes = exports.speedTypes = exports.abilityNames = exports.abilities = void 0;
+exports.getChallengeString = getChallengeString;
+exports.getChallengeNumber = getChallengeNumber;
+exports.typeToNumber = typeToNumber;
+exports.numberToType = numberToType;
 exports.abilities = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
 exports.abilityNames = {
     STR: 'Strength',
@@ -86,7 +90,6 @@ function getChallengeString(CR) {
     else
         return Math.round(CR).toString();
 }
-exports.getChallengeString = getChallengeString;
 function getChallengeNumber(CR) {
     if (CR === '0')
         return -3;
@@ -99,7 +102,6 @@ function getChallengeNumber(CR) {
     else
         return parseInt(CR);
 }
-exports.getChallengeNumber = getChallengeNumber;
 exports.sizeStats = {
     '1': { name: 'Tiny', space: 2.5, squares: 0.5, hitDice: 4 },
     '2': { name: 'Small', space: 5, squares: 1, hitDice: 6 },
@@ -157,7 +159,6 @@ function typeToNumber(type = null) {
             break;
     }
 }
-exports.typeToNumber = typeToNumber;
 function numberToType(number = 0) {
     switch (number) {
         case 1:
@@ -207,7 +208,6 @@ function numberToType(number = 0) {
             break;
     }
 }
-exports.numberToType = numberToType;
 exports.challengeTable = {
     '-3': {
         CR: 0,

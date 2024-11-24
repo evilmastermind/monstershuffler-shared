@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.thirdToFirstPerson = exports.ADVERBS = exports.getNthWord = void 0;
+exports.ADVERBS = void 0;
+exports.getNthWord = getNthWord;
+exports.thirdToFirstPerson = thirdToFirstPerson;
 function getNthWord(str, n, apostrophe = false) {
     if (n < 1)
         return ""; // Return empty string if n is less than 1
@@ -8,7 +10,6 @@ function getNthWord(str, n, apostrophe = false) {
     const words = str.match(regex);
     return words && words.length >= n ? words[n - 1] : "";
 }
-exports.getNthWord = getNthWord;
 exports.ADVERBS = [
     "absolutely",
     "accordingly",
@@ -124,4 +125,3 @@ function thirdToFirstPerson(verb) {
     }
     return verb;
 }
-exports.thirdToFirstPerson = thirdToFirstPerson;

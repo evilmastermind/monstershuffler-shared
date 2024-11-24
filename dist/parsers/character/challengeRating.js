@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.assignNewChallengeRating = exports.calculateChallengeRating = void 0;
+exports.calculateChallengeRating = calculateChallengeRating;
+exports.assignNewChallengeRating = assignNewChallengeRating;
 const stats_1 = require("../../parsers/stats");
 function calculateChallengeRating(character, assignToVariations = true) {
     if (character?.variations?.currentCR !== undefined) {
@@ -65,7 +66,6 @@ function calculateChallengeRating(character, assignToVariations = true) {
     }
     assignChallengeRating(character, CR, (0, stats_1.getChallengeString)(CR));
 }
-exports.calculateChallengeRating = calculateChallengeRating;
 function assignNewChallengeRating(character) {
     let CR = character?.variations?.currentCR;
     if (CR === null || CR === undefined) {
@@ -74,7 +74,6 @@ function assignNewChallengeRating(character) {
     character.variations.currentCR = CR;
     assignChallengeRating(character, CR, (0, stats_1.getChallengeString)(CR));
 }
-exports.assignNewChallengeRating = assignNewChallengeRating;
 function assignChallengeRating(character, CR, CRString) {
     // statistics
     character.statistics.CR = {

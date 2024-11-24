@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateSpeed = void 0;
+exports.calculateSpeed = calculateSpeed;
 const functions_1 = require("../functions");
 const stats_1 = require("../stats");
 function calculateSpeed(character) {
@@ -84,4 +84,3 @@ function calculateSpeed(character) {
         delete s.speeds;
     }
 }
-exports.calculateSpeed = calculateSpeed;

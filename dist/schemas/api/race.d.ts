@@ -220,16 +220,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">, z.ZodObject<{
                     choice: z.ZodObject<{
                         type: z.ZodLiteral<"random">;
@@ -258,16 +258,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -283,9 +283,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -301,9 +301,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -321,9 +321,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -341,9 +341,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>, z.ZodObject<{
@@ -361,16 +361,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">;
                         isRepeatable: z.ZodOptional<z.ZodBoolean>;
                     }, "strip", z.ZodTypeAny, {
@@ -380,9 +380,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }, {
@@ -392,9 +392,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }>;
@@ -406,9 +406,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -420,22 +420,22 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
                 }>]>;
             }, "strict", z.ZodTypeAny, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -451,9 +451,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -464,67 +464,26 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -540,9 +499,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -553,72 +512,31 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -634,9 +552,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -647,72 +565,31 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }[] | undefined;
         }, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -728,9 +605,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -741,54 +618,13 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
@@ -1733,21 +1569,21 @@ export declare const sGetRaceResponse: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
@@ -1770,18 +1606,18 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }>;
             }, "strip", z.ZodTypeAny, {
@@ -1789,10 +1625,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -1802,10 +1638,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -1949,16 +1785,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -1974,9 +1810,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -1992,9 +1828,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -2012,9 +1848,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -2032,9 +1868,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>]>>;
@@ -2053,46 +1889,46 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -2128,25 +1964,25 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -2182,25 +2018,25 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
@@ -2208,21 +2044,14 @@ export declare const sGetRaceResponse: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -2232,10 +2061,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -2252,6 +2081,13 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -2286,25 +2122,25 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }, {
@@ -2312,21 +2148,14 @@ export declare const sGetRaceResponse: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -2336,10 +2165,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -2356,6 +2185,13 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -2390,25 +2226,25 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
@@ -2439,16 +2275,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2464,9 +2300,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2482,9 +2318,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2502,9 +2338,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2522,9 +2358,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>, "many">>;
@@ -2541,16 +2377,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -2579,16 +2415,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2604,9 +2440,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2622,9 +2458,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2642,9 +2478,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2662,9 +2498,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -2682,16 +2518,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -2701,9 +2537,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -2713,9 +2549,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -2727,9 +2563,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2741,9 +2577,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -2776,16 +2612,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -2798,16 +2634,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -2820,16 +2656,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -2842,16 +2678,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         skills: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -2864,16 +2700,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -2902,16 +2738,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -2927,9 +2763,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -2945,9 +2781,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -2965,9 +2801,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -2985,9 +2821,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -3005,16 +2841,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -3024,9 +2860,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -3036,9 +2872,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -3050,9 +2886,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -3064,9 +2900,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -3082,16 +2918,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
@@ -3132,23 +2968,23 @@ export declare const sGetRaceResponse: z.ZodObject<{
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }, {
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -3178,16 +3014,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -3203,9 +3039,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -3221,9 +3057,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -3241,9 +3077,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -3261,9 +3097,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>>;
@@ -3281,16 +3117,16 @@ export declare const sGetRaceResponse: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         type: z.ZodOptional<z.ZodString>;
         size: z.ZodOptional<z.ZodNumber>;
@@ -3307,6 +3143,374 @@ export declare const sGetRaceResponse: z.ZodObject<{
         description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -3333,102 +3537,6 @@ export declare const sGetRaceResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -3635,6 +3743,260 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    }, {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -3650,9 +4012,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -3660,21 +4022,14 @@ export declare const sGetRaceResponse: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -3684,10 +4039,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -3704,6 +4059,13 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -3738,228 +4100,29 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    }, {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -3986,102 +4149,6 @@ export declare const sGetRaceResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -4288,320 +4355,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -4609,13 +4365,379 @@ export declare const sGetRaceResponse: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     }>;
     id: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -4642,102 +4764,6 @@ export declare const sGetRaceResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -4944,6 +4970,263 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    };
+    id: number;
+}, {
+    object: {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -4959,9 +5242,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -4969,21 +5252,14 @@ export declare const sGetRaceResponse: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -4993,10 +5269,10 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -5013,6 +5289,13 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -5047,231 +5330,29 @@ export declare const sGetRaceResponse: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    };
-    id: number;
-}, {
-    object: {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -5298,102 +5379,6 @@ export declare const sGetRaceResponse: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -5600,320 +5585,9 @@ export declare const sGetRaceResponse: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -5921,8 +5595,6 @@ export declare const sGetRaceResponse: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     };
     id: number;
 }>;
@@ -6061,16 +5733,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">, z.ZodObject<{
                     choice: z.ZodObject<{
                         type: z.ZodLiteral<"random">;
@@ -6099,16 +5771,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -6124,9 +5796,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -6142,9 +5814,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -6162,9 +5834,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -6182,9 +5854,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>, z.ZodObject<{
@@ -6202,16 +5874,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">;
                         isRepeatable: z.ZodOptional<z.ZodBoolean>;
                     }, "strip", z.ZodTypeAny, {
@@ -6221,9 +5893,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }, {
@@ -6233,9 +5905,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }>;
@@ -6247,9 +5919,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -6261,22 +5933,22 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
                 }>]>;
             }, "strict", z.ZodTypeAny, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -6292,9 +5964,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -6305,67 +5977,26 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -6381,9 +6012,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -6394,72 +6025,31 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -6475,9 +6065,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -6488,72 +6078,31 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }[] | undefined;
         }, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -6569,9 +6118,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -6582,54 +6131,13 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
@@ -7574,21 +7082,21 @@ export declare const sPostRaceBody: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
@@ -7611,18 +7119,18 @@ export declare const sPostRaceBody: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }>;
             }, "strip", z.ZodTypeAny, {
@@ -7630,10 +7138,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -7643,10 +7151,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -7790,16 +7298,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -7815,9 +7323,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -7833,9 +7341,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -7853,9 +7361,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -7873,9 +7381,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>]>>;
@@ -7894,46 +7402,46 @@ export declare const sPostRaceBody: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -7969,25 +7477,25 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -8023,25 +7531,25 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
@@ -8049,21 +7557,14 @@ export declare const sPostRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -8073,10 +7574,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -8093,6 +7594,13 @@ export declare const sPostRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -8127,25 +7635,25 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }, {
@@ -8153,21 +7661,14 @@ export declare const sPostRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -8177,10 +7678,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -8197,6 +7698,13 @@ export declare const sPostRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -8231,25 +7739,25 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
@@ -8280,16 +7788,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -8305,9 +7813,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -8323,9 +7831,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -8343,9 +7851,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -8363,9 +7871,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>, "many">>;
@@ -8382,16 +7890,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -8420,16 +7928,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -8445,9 +7953,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -8463,9 +7971,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -8483,9 +7991,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -8503,9 +8011,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -8523,16 +8031,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -8542,9 +8050,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -8554,9 +8062,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -8568,9 +8076,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8582,9 +8090,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8617,16 +8125,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -8639,16 +8147,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -8661,16 +8169,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -8683,16 +8191,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         skills: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -8705,16 +8213,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -8743,16 +8251,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -8768,9 +8276,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -8786,9 +8294,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -8806,9 +8314,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -8826,9 +8334,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -8846,16 +8354,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -8865,9 +8373,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -8877,9 +8385,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -8891,9 +8399,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8905,9 +8413,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -8923,16 +8431,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
@@ -8973,23 +8481,23 @@ export declare const sPostRaceBody: z.ZodObject<{
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }, {
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -9019,16 +8527,16 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -9044,9 +8552,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -9062,9 +8570,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -9082,9 +8590,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -9102,9 +8610,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>>;
@@ -9122,16 +8630,16 @@ export declare const sPostRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         type: z.ZodOptional<z.ZodString>;
         size: z.ZodOptional<z.ZodNumber>;
@@ -9148,6 +8656,374 @@ export declare const sPostRaceBody: z.ZodObject<{
         description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -9174,102 +9050,6 @@ export declare const sPostRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -9476,6 +9256,260 @@ export declare const sPostRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    }, {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -9491,9 +9525,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -9501,21 +9535,14 @@ export declare const sPostRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -9525,10 +9552,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -9545,6 +9572,13 @@ export declare const sPostRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -9579,228 +9613,29 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    }, {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -9827,102 +9662,6 @@ export declare const sPostRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -10129,6 +9868,262 @@ export declare const sPostRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    }>;
+}, "strip", z.ZodTypeAny, {
+    object: {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -10144,9 +10139,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -10154,21 +10149,14 @@ export declare const sPostRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -10178,10 +10166,10 @@ export declare const sPostRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -10198,6 +10186,13 @@ export declare const sPostRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -10232,230 +10227,29 @@ export declare const sPostRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    }>;
-}, "strip", z.ZodTypeAny, {
-    object: {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -10482,102 +10276,6 @@ export declare const sPostRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -10784,320 +10482,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -11105,13 +10492,379 @@ export declare const sPostRaceBody: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     };
     game: number;
 }, {
     object: {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -11138,102 +10891,6 @@ export declare const sPostRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -11440,320 +11097,9 @@ export declare const sPostRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -11761,8 +11107,6 @@ export declare const sPostRaceBody: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     };
     game: number;
 }>;
@@ -11900,16 +11244,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">, z.ZodObject<{
                     choice: z.ZodObject<{
                         type: z.ZodLiteral<"random">;
@@ -11938,16 +11282,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -11963,9 +11307,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -11981,9 +11325,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -12001,9 +11345,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -12021,9 +11365,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>, z.ZodObject<{
@@ -12041,16 +11385,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">;
                         isRepeatable: z.ZodOptional<z.ZodBoolean>;
                     }, "strip", z.ZodTypeAny, {
@@ -12060,9 +11404,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }, {
@@ -12072,9 +11416,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     }>;
@@ -12086,9 +11430,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
@@ -12100,22 +11444,22 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
                 }>]>;
             }, "strict", z.ZodTypeAny, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -12131,9 +11475,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -12144,67 +11488,26 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }, {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -12220,9 +11523,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -12233,72 +11536,31 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -12314,9 +11576,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -12327,72 +11589,31 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
                 timesMax?: string | undefined;
             }[] | undefined;
         }, {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
             availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
             groups?: {
                 tag: string;
-                spells: ({
+                spells: {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | {
                     choice: {
                         type: "random";
@@ -12408,9 +11629,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | {
@@ -12421,54 +11642,13 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[];
                         isRepeatable?: boolean | undefined;
                     };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
+                };
                 availableAt?: number | undefined;
                 level?: number | undefined;
                 times?: string | undefined;
@@ -13413,21 +12593,21 @@ export declare const sPutRaceBody: z.ZodObject<{
             }, "strip", z.ZodTypeAny, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }, {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }>, "many">;
             actionType: z.ZodOptional<z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>>;
             availableUnit: z.ZodOptional<z.ZodEnum<["level", "cr"]>>;
@@ -13450,18 +12630,18 @@ export declare const sPutRaceBody: z.ZodObject<{
                 }, "strip", z.ZodTypeAny, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }, {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 }>;
             }, "strip", z.ZodTypeAny, {
@@ -13469,10 +12649,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -13482,10 +12662,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -13629,16 +12809,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }, {
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }>, "many">>;
                     }, "strip", z.ZodTypeAny, {
                         type: "random";
@@ -13654,9 +12834,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }, {
                         type: "random";
@@ -13672,9 +12852,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     }>;
                 }, "strip", z.ZodTypeAny, {
@@ -13692,9 +12872,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }, {
@@ -13712,9 +12892,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 }>]>>;
@@ -13733,46 +12913,46 @@ export declare const sPutRaceBody: z.ZodObject<{
                     }, "strip", z.ZodTypeAny, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }, {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     }>>;
                 }, "strip", z.ZodTypeAny, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }, {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 name: string;
@@ -13808,25 +12988,25 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }, {
                 name: string;
@@ -13862,25 +13042,25 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
@@ -13888,21 +13068,14 @@ export declare const sPutRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -13912,10 +13085,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -13932,6 +13105,13 @@ export declare const sPutRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -13966,25 +13146,25 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }, {
@@ -13992,21 +13172,14 @@ export declare const sPutRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -14016,10 +13189,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -14036,6 +13209,13 @@ export declare const sPutRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -14070,25 +13250,25 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         }>, z.ZodObject<{
@@ -14119,16 +13299,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -14144,9 +13324,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -14162,9 +13342,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -14182,9 +13362,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -14202,9 +13382,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>, "many">>;
@@ -14221,16 +13401,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -14259,16 +13439,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -14284,9 +13464,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -14302,9 +13482,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -14322,9 +13502,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -14342,9 +13522,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -14362,16 +13542,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -14381,9 +13561,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -14393,9 +13573,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -14407,9 +13587,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -14421,9 +13601,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -14456,16 +13636,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         immunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -14478,16 +13658,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         vulnerabilities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -14500,16 +13680,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         conditionImmunities: z.ZodOptional<z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -14522,16 +13702,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         skills: z.ZodOptional<z.ZodUnion<[z.ZodArray<z.ZodObject<{
             id: z.ZodOptional<z.ZodNumber>;
@@ -14544,16 +13724,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">, z.ZodObject<{
             choice: z.ZodObject<{
                 type: z.ZodLiteral<"random">;
@@ -14582,16 +13762,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -14607,9 +13787,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -14625,9 +13805,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -14645,9 +13825,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -14665,9 +13845,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>, z.ZodObject<{
@@ -14685,16 +13865,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">;
                 isRepeatable: z.ZodOptional<z.ZodBoolean>;
             }, "strip", z.ZodTypeAny, {
@@ -14704,9 +13884,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }, {
@@ -14716,9 +13896,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             }>;
@@ -14730,9 +13910,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -14744,9 +13924,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[];
                 isRepeatable?: boolean | undefined;
             };
@@ -14762,16 +13942,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         speeds: z.ZodOptional<z.ZodObject<{
             walk: z.ZodOptional<z.ZodString>;
@@ -14812,23 +13992,23 @@ export declare const sPutRaceBody: z.ZodObject<{
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }, {
             name: string;
             AC: string;
             id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
             cost?: string | undefined;
+            weight?: string | undefined;
             type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
             maxDex?: string | undefined;
             minStr?: string | undefined;
-            weight?: string | undefined;
             stealthDis?: boolean | undefined;
         }>, z.ZodObject<{
             choice: z.ZodObject<{
@@ -14858,16 +14038,16 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }, {
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }>, "many">>;
             }, "strip", z.ZodTypeAny, {
                 type: "random";
@@ -14883,9 +14063,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }, {
                 type: "random";
@@ -14901,9 +14081,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             }>;
         }, "strip", z.ZodTypeAny, {
@@ -14921,9 +14101,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }, {
@@ -14941,9 +14121,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         }>]>>;
@@ -14961,16 +14141,16 @@ export declare const sPutRaceBody: z.ZodObject<{
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }, {
             value: string;
             id?: number | undefined;
             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
             availableAt?: number | undefined;
             availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
         }>, "many">>;
         type: z.ZodOptional<z.ZodString>;
         size: z.ZodOptional<z.ZodNumber>;
@@ -14987,6 +14167,374 @@ export declare const sPutRaceBody: z.ZodObject<{
         description: z.ZodOptional<z.ZodString>;
     }, "strict", z.ZodTypeAny, {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -15013,102 +14561,6 @@ export declare const sPutRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -15315,6 +14767,260 @@ export declare const sPutRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    }, {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -15330,9 +15036,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -15340,21 +15046,14 @@ export declare const sPutRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -15364,10 +15063,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -15384,6 +15083,13 @@ export declare const sPutRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -15418,228 +15124,29 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    }, {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -15666,102 +15173,6 @@ export declare const sPutRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -15968,320 +15379,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -16289,13 +15389,379 @@ export declare const sPutRaceBody: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     }>;
     game: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
     object: {
         name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
+        actions?: ({
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            tag: string;
+            variants: {
+                name: string;
+                description: string;
+                cost?: string | undefined;
+                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
+                charges?: string | undefined;
+                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
+                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            }[];
+            id?: number | undefined;
+            values?: ({
+                name: string;
+                expression: string;
+                type?: string | undefined;
+            } | {
+                name: string;
+                dice: {
+                    dice: number;
+                    sides: number;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
+                    unitInterval?: number | undefined;
+                };
+                type?: string | undefined;
+                expression?: string | undefined;
+            } | {
+                name: string;
+                incrProgression: {
+                    availableAt: number;
+                    unitInterval: number;
+                    unitIncrement: number;
+                    valueBase: number;
+                    valueIncrement: number;
+                    availableUnit?: "level" | "cr" | undefined;
+                };
+                type?: string | undefined;
+            })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
+            attacks?: {
+                name: string;
+                replaceName?: boolean | undefined;
+                attributes?: {
+                    id?: number | undefined;
+                    name?: string | undefined;
+                    cost?: string | undefined;
+                    weight?: string | undefined;
+                    damageType?: string | undefined;
+                    special?: string | undefined;
+                    dice?: string | undefined;
+                    sides?: string | undefined;
+                    diceV?: string | undefined;
+                    sidesV?: string | undefined;
+                    range?: string | undefined;
+                    rangeMax?: string | undefined;
+                    reach?: string | undefined;
+                    targets?: string | undefined;
+                    properties?: string[] | undefined;
+                } | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | undefined;
+                enchantments?: {
+                    name?: string | undefined;
+                    dice?: {
+                        dice: number;
+                        sides: number;
+                        availableAt?: number | undefined;
+                        availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
+                        unitInterval?: number | undefined;
+                    } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
+                }[] | undefined;
+            }[] | undefined;
+        })[] | undefined;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -16322,102 +15788,6 @@ export declare const sPutRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -16624,6 +15994,263 @@ export declare const sPutRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
+        abilityScoresLimit?: number | undefined;
+        swarmSize?: string | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
+        ageAdult?: number | undefined;
+        ageMax?: number | undefined;
+        heightMin?: number | undefined;
+        heightMax?: number | undefined;
+        nameType?: string[] | undefined;
+        addSurname?: number | undefined;
+        enableGenerator?: boolean | undefined;
+    };
+    game?: number | undefined;
+}, {
+    object: {
+        name: string;
+        id?: number | undefined;
+        type?: string | undefined;
+        armor?: {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            name: string;
+            AC: string;
+            id?: number | undefined;
+            cost?: string | undefined;
+            weight?: string | undefined;
+            type?: "light" | "medium" | "heavy" | undefined;
+            isAutomaticCalcDisabled?: boolean | undefined;
+            maxDex?: string | undefined;
+            minStr?: string | undefined;
+            stealthDis?: boolean | undefined;
+        } | undefined;
+        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        size?: number | undefined;
+        languages?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        skills?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | {
+            choice: {
+                type: "random";
+                resultType: "object" | "nameId";
+                source: "objects" | "languages" | "skills";
+                number?: number | undefined;
+                objectType?: number | undefined;
+                filters?: {
+                    keyName: string;
+                    keyValues: string[];
+                }[] | undefined;
+                chosenAlready?: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | undefined;
+            };
+        } | {
+            choice: {
+                number: number;
+                type: "list";
+                list: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[];
+                isRepeatable?: boolean | undefined;
+            };
+        } | undefined;
+        description?: string | undefined;
+        spells?: {
+            availableUnit?: "level" | "cr" | undefined;
+            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
+            hasSlots?: boolean | undefined;
+            groups?: {
+                tag: string;
+                spells: {
+                    value: string;
+                    id?: number | undefined;
+                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
+                    availableAt?: number | undefined;
+                    availableUnit?: "level" | "cr" | undefined;
+                }[] | {
+                    choice: {
+                        type: "random";
+                        resultType: "object" | "nameId";
+                        source: "objects" | "languages" | "skills";
+                        number?: number | undefined;
+                        objectType?: number | undefined;
+                        filters?: {
+                            keyName: string;
+                            keyValues: string[];
+                        }[] | undefined;
+                        chosenAlready?: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[] | undefined;
+                    };
+                } | {
+                    choice: {
+                        number: number;
+                        type: "list";
+                        list: {
+                            value: string;
+                            id?: number | undefined;
+                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
+                            availableAt?: number | undefined;
+                            availableUnit?: "level" | "cr" | undefined;
+                        }[];
+                        isRepeatable?: boolean | undefined;
+                    };
+                };
+                availableAt?: number | undefined;
+                level?: number | undefined;
+                times?: string | undefined;
+                timesMax?: string | undefined;
+            }[] | undefined;
+        } | undefined;
+        HD?: number | undefined;
+        isSwarm?: boolean | undefined;
+        subtypes?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        speeds?: {
+            walk?: string | undefined;
+            burrow?: string | undefined;
+            climb?: string | undefined;
+            fly?: string | undefined;
+            hover?: string | undefined;
+            swim?: string | undefined;
+        } | undefined;
+        savingThrows?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        resistances?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        immunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        vulnerabilities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        conditionImmunities?: {
+            value: string;
+            id?: number | undefined;
+            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+            properties?: Record<string, string | number> | undefined;
+            availableAt?: number | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+        }[] | undefined;
+        senses?: {
+            blindsight?: string | undefined;
+            darkvision?: string | undefined;
+            tremorsense?: string | undefined;
+            truesight?: string | undefined;
+        } | undefined;
+        isBlind?: boolean | undefined;
+        canSpeak?: boolean | undefined;
+        telepathy?: string | undefined;
         actions?: ({
             choice: {
                 type: "random";
@@ -16639,9 +16266,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                     value: string;
                     id?: number | undefined;
                     type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                    properties?: Record<string, string | number> | undefined;
                     availableAt?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
                 }[] | undefined;
             };
         } | {
@@ -16649,21 +16276,14 @@ export declare const sPutRaceBody: z.ZodObject<{
             variants: {
                 name: string;
                 description: string;
+                cost?: string | undefined;
                 type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+                availableAt?: number | undefined;
                 charges?: string | undefined;
                 recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
                 ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
             }[];
             id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
             values?: ({
                 name: string;
                 expression: string;
@@ -16673,10 +16293,10 @@ export declare const sPutRaceBody: z.ZodObject<{
                 dice: {
                     dice: number;
                     sides: number;
-                    diceIncrement?: number | undefined;
                     availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
                     availableUnit?: "level" | "cr" | undefined;
+                    diceIncrement?: number | undefined;
+                    availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 };
                 type?: string | undefined;
@@ -16693,6 +16313,13 @@ export declare const sPutRaceBody: z.ZodObject<{
                 };
                 type?: string | undefined;
             })[] | undefined;
+            availableUnit?: "level" | "cr" | undefined;
+            source?: string | undefined;
+            availableUntil?: number | undefined;
+            priority?: number | undefined;
+            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
+            subType?: string | undefined;
+            tags?: string[] | undefined;
             attacks?: {
                 name: string;
                 replaceName?: boolean | undefined;
@@ -16727,231 +16354,29 @@ export declare const sPutRaceBody: z.ZodObject<{
                             value: string;
                             id?: number | undefined;
                             type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
+                            properties?: Record<string, string | number> | undefined;
                             availableAt?: number | undefined;
                             availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
                         }[] | undefined;
                     };
                 } | undefined;
                 enchantments?: {
                     name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
                     dice?: {
                         dice: number;
                         sides: number;
-                        diceIncrement?: number | undefined;
                         availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
                         availableUnit?: "level" | "cr" | undefined;
+                        diceIncrement?: number | undefined;
+                        availableUntil?: number | undefined;
                         unitInterval?: number | undefined;
                     } | undefined;
+                    type?: string | undefined;
+                    expression?: string | undefined;
                 }[] | undefined;
             }[] | undefined;
         })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
-        abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
-        swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
-        ageAdult?: number | undefined;
-        ageMax?: number | undefined;
-        heightMin?: number | undefined;
-        heightMax?: number | undefined;
-        nameType?: string[] | undefined;
-        addSurname?: number | undefined;
-        enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
-    };
-    game?: number | undefined;
-}, {
-    object: {
-        name: string;
+        legendaryActionsMax?: string | undefined;
         sheet?: {
             images: {
                 url: string;
@@ -16978,102 +16403,6 @@ export declare const sPutRaceBody: z.ZodObject<{
         searchTags?: string[] | undefined;
         environments?: string[] | undefined;
         backstory?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
-        legendaryActionsMax?: string | undefined;
-        spells?: {
-            hasSlots?: boolean | undefined;
-            ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            groups?: {
-                tag: string;
-                spells: ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                }) & ({
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | {
-                    choice: {
-                        number: number;
-                        type: "list";
-                        list: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[];
-                        isRepeatable?: boolean | undefined;
-                    };
-                } | undefined);
-                availableAt?: number | undefined;
-                level?: number | undefined;
-                times?: string | undefined;
-                timesMax?: string | undefined;
-            }[] | undefined;
-        } | undefined;
         bonuses?: {
             HPBonus?: {
                 value: string;
@@ -17280,320 +16609,9 @@ export declare const sPutRaceBody: z.ZodObject<{
                 name?: string | undefined;
             } | undefined;
         } | undefined;
-        actions?: ({
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            tag: string;
-            variants: {
-                name: string;
-                description: string;
-                type?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-                charges?: string | undefined;
-                recharge?: "turn" | "short" | "day" | "week" | "month" | "3-6" | "4-6" | "5-6" | "6-6" | "spellGroup" | "spellSlot" | undefined;
-                availableAt?: number | undefined;
-                ability?: "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA" | undefined;
-                cost?: string | undefined;
-            }[];
-            id?: number | undefined;
-            priority?: number | undefined;
-            actionType?: "trait" | "legendary" | "action" | "reaction" | "bonus" | "attack" | "multiattack" | "mythic" | "lair" | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            availableUntil?: number | undefined;
-            subType?: string | undefined;
-            source?: string | undefined;
-            tags?: string[] | undefined;
-            values?: ({
-                name: string;
-                expression: string;
-                type?: string | undefined;
-            } | {
-                name: string;
-                dice: {
-                    dice: number;
-                    sides: number;
-                    diceIncrement?: number | undefined;
-                    availableAt?: number | undefined;
-                    availableUntil?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    unitInterval?: number | undefined;
-                };
-                type?: string | undefined;
-                expression?: string | undefined;
-            } | {
-                name: string;
-                incrProgression: {
-                    availableAt: number;
-                    unitInterval: number;
-                    unitIncrement: number;
-                    valueBase: number;
-                    valueIncrement: number;
-                    availableUnit?: "level" | "cr" | undefined;
-                };
-                type?: string | undefined;
-            })[] | undefined;
-            attacks?: {
-                name: string;
-                replaceName?: boolean | undefined;
-                attributes?: {
-                    id?: number | undefined;
-                    name?: string | undefined;
-                    cost?: string | undefined;
-                    weight?: string | undefined;
-                    damageType?: string | undefined;
-                    special?: string | undefined;
-                    dice?: string | undefined;
-                    sides?: string | undefined;
-                    diceV?: string | undefined;
-                    sidesV?: string | undefined;
-                    range?: string | undefined;
-                    rangeMax?: string | undefined;
-                    reach?: string | undefined;
-                    targets?: string | undefined;
-                    properties?: string[] | undefined;
-                } | {
-                    choice: {
-                        type: "random";
-                        resultType: "object" | "nameId";
-                        source: "objects" | "languages" | "skills";
-                        number?: number | undefined;
-                        objectType?: number | undefined;
-                        filters?: {
-                            keyName: string;
-                            keyValues: string[];
-                        }[] | undefined;
-                        chosenAlready?: {
-                            value: string;
-                            id?: number | undefined;
-                            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                            availableAt?: number | undefined;
-                            availableUnit?: "level" | "cr" | undefined;
-                            properties?: Record<string, string | number> | undefined;
-                        }[] | undefined;
-                    };
-                } | undefined;
-                enchantments?: {
-                    name?: string | undefined;
-                    type?: string | undefined;
-                    expression?: string | undefined;
-                    dice?: {
-                        dice: number;
-                        sides: number;
-                        diceIncrement?: number | undefined;
-                        availableAt?: number | undefined;
-                        availableUntil?: number | undefined;
-                        availableUnit?: "level" | "cr" | undefined;
-                        unitInterval?: number | undefined;
-                    } | undefined;
-                }[] | undefined;
-            }[] | undefined;
-        })[] | undefined;
-        canSpeak?: boolean | undefined;
-        telepathy?: string | undefined;
-        languages?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        senses?: {
-            blindsight?: string | undefined;
-            darkvision?: string | undefined;
-            tremorsense?: string | undefined;
-            truesight?: string | undefined;
-        } | undefined;
-        isBlind?: boolean | undefined;
-        resistances?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        immunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        vulnerabilities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        conditionImmunities?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        skills?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            choice: {
-                number: number;
-                type: "list";
-                list: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[];
-                isRepeatable?: boolean | undefined;
-            };
-        } | undefined;
-        savingThrows?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        speeds?: {
-            walk?: string | undefined;
-            burrow?: string | undefined;
-            climb?: string | undefined;
-            fly?: string | undefined;
-            hover?: string | undefined;
-            swim?: string | undefined;
-        } | undefined;
         abilityScoresLimit?: number | undefined;
-        HD?: number | undefined;
-        armor?: {
-            choice: {
-                type: "random";
-                resultType: "object" | "nameId";
-                source: "objects" | "languages" | "skills";
-                number?: number | undefined;
-                objectType?: number | undefined;
-                filters?: {
-                    keyName: string;
-                    keyValues: string[];
-                }[] | undefined;
-                chosenAlready?: {
-                    value: string;
-                    id?: number | undefined;
-                    type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-                    availableAt?: number | undefined;
-                    availableUnit?: "level" | "cr" | undefined;
-                    properties?: Record<string, string | number> | undefined;
-                }[] | undefined;
-            };
-        } | {
-            name: string;
-            AC: string;
-            id?: number | undefined;
-            isAutomaticCalcDisabled?: boolean | undefined;
-            cost?: string | undefined;
-            type?: "light" | "medium" | "heavy" | undefined;
-            maxDex?: string | undefined;
-            minStr?: string | undefined;
-            weight?: string | undefined;
-            stealthDis?: boolean | undefined;
-        } | undefined;
-        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
-        isSwarm?: boolean | undefined;
         swarmSize?: string | undefined;
-        subtypes?: {
-            value: string;
-            id?: number | undefined;
-            type?: "damageType" | "type" | "alignment" | "armor" | "background" | "class" | "condition" | "conditionImmunity" | "immunity" | "item" | "language" | "pronouns" | "race" | "resistance" | "savingThrow" | "sense" | "size" | "skill" | "speed" | "spell" | "subtype" | "template" | "trait" | "vulnerability" | "weapon" | undefined;
-            availableAt?: number | undefined;
-            availableUnit?: "level" | "cr" | undefined;
-            properties?: Record<string, string | number> | undefined;
-        }[] | undefined;
-        type?: string | undefined;
-        size?: number | undefined;
-        pronouns?: "male" | "female" | "neutral" | "thing" | undefined;
+        alignmentModifiers?: [[number, number, number], [number, number, number]] | undefined;
         ageAdult?: number | undefined;
         ageMax?: number | undefined;
         heightMin?: number | undefined;
@@ -17601,8 +16619,6 @@ export declare const sPutRaceBody: z.ZodObject<{
         nameType?: string[] | undefined;
         addSurname?: number | undefined;
         enableGenerator?: boolean | undefined;
-        id?: number | undefined;
-        description?: string | undefined;
     };
     game?: number | undefined;
 }>;

@@ -2,7 +2,6 @@ import { createStats } from '../character';
 import type { Character } from '@/types';
 
 export function raiseCR(character: Character) {
-  console.log('raising CR');
   character.variations!.currentCR!++;
   adjustLevel(character);
   if (character.variations!.currentHD! <= character.statistics!.level) {
@@ -15,7 +14,6 @@ export function raiseCR(character: Character) {
 }
 
 export function lowerCR(character: Character) {
-  console.log('lowering CR');
   if (character.variations!.currentHD! <= 1) {
     return;
   }
@@ -35,7 +33,6 @@ export function lowerCR(character: Character) {
 }
 
 export function adjustLevel(character: Character) {
-  console.log('adjusting level');
   if (character?.character?.CRCalculation?.name === 'automatic') {
     return;
   }

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.recalculateLevelAfterAutomaticHP = exports.calculateLevel = void 0;
+exports.calculateLevel = calculateLevel;
+exports.recalculateLevelAfterAutomaticHP = recalculateLevelAfterAutomaticHP;
 const parsers_1 = require("../../parsers");
 const functions_1 = require("../../parsers/functions");
 function calculateLevel(character) {
@@ -24,7 +25,6 @@ function calculateLevel(character) {
     character.variations.currentHD = level;
     assignLevel(character, level);
 }
-exports.calculateLevel = calculateLevel;
 function assignLevel(character, level) {
     // statistics
     character.statistics.level = level;
@@ -49,4 +49,3 @@ function recalculateLevelAfterAutomaticHP(character) {
     character.variables.LVL = level;
     character.variations.currentHD = level;
 }
-exports.recalculateLevelAfterAutomaticHP = recalculateLevelAfterAutomaticHP;

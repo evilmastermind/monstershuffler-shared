@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exportRoleplayStats = void 0;
+exports.exportRoleplayStats = exportRoleplayStats;
 const functions_1 = require("../../../parsers/functions");
 function exportRoleplayStats(character, heightUnit = 'feet') {
     if (!character.statistics || !character.tags) {
@@ -24,4 +24,3 @@ function exportRoleplayStats(character, heightUnit = 'feet') {
     output += `${c.physicalAppearance ? `\n${c.physicalAppearance}` : ''}`;
     return output;
 }
-exports.exportRoleplayStats = exportRoleplayStats;

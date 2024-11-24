@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateArmorClass = void 0;
+exports.calculateArmorClass = calculateArmorClass;
 const parsers_1 = require("../../parsers");
 const createClankingArmorCondition = (armorName) => {
     return {
@@ -124,4 +124,3 @@ function calculateArmorClass(character) {
     s.AC.string = s.AC.array.reduce((acc, obj) => acc + obj.string, '');
     character.variables.AC = totalAC;
 }
-exports.calculateArmorClass = calculateArmorClass;

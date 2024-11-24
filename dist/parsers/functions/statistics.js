@@ -3,7 +3,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createUserObjectIfNotExists = exports.parseNameChoices = exports.getUnitSymbol = exports.feetDecimalToMeters = exports.feetDecimalToUnit = exports.feetDecimalToFeetInches = exports.feetToOtherUnit = exports.unshiftWithComma = exports.numberToSignedString = exports.pushWithComma = exports.addCommaIfNotEmpty = exports.calibrateStatistic = exports.getPrioritizedStatisticFromPath = exports.getPrioritizedStatistic = exports.getBonusAndInfo = exports.getBonus = exports.getBonusesForOneStatistic = exports.getStatArrayFromObjects = exports.getCurrentStatLimit = exports.isNumber = exports.sortObject = exports.addPlusSign = exports.createPart = exports.objects = void 0;
+exports.objects = void 0;
+exports.createPart = createPart;
+exports.addPlusSign = addPlusSign;
+exports.sortObject = sortObject;
+exports.isNumber = isNumber;
+exports.getCurrentStatLimit = getCurrentStatLimit;
+exports.getStatArrayFromObjects = getStatArrayFromObjects;
+exports.getBonusesForOneStatistic = getBonusesForOneStatistic;
+exports.getBonus = getBonus;
+exports.getBonusAndInfo = getBonusAndInfo;
+exports.getPrioritizedStatistic = getPrioritizedStatistic;
+exports.getPrioritizedStatisticFromPath = getPrioritizedStatisticFromPath;
+exports.calibrateStatistic = calibrateStatistic;
+exports.addCommaIfNotEmpty = addCommaIfNotEmpty;
+exports.pushWithComma = pushWithComma;
+exports.numberToSignedString = numberToSignedString;
+exports.unshiftWithComma = unshiftWithComma;
+exports.feetToOtherUnit = feetToOtherUnit;
+exports.feetDecimalToFeetInches = feetDecimalToFeetInches;
+exports.feetDecimalToUnit = feetDecimalToUnit;
+exports.feetDecimalToMeters = feetDecimalToMeters;
+exports.getUnitSymbol = getUnitSymbol;
+exports.parseNameChoices = parseNameChoices;
+exports.createUserObjectIfNotExists = createUserObjectIfNotExists;
 const jspath_1 = __importDefault(require("jspath"));
 const expressions_1 = require("./expressions");
 const functions_1 = require("../../functions");
@@ -32,14 +55,12 @@ function createPart(string, type = undefined, format = [], id = undefined) {
     }
     return part;
 }
-exports.createPart = createPart;
 function addPlusSign(number) {
     if (number > 0) {
         return `+${number}`;
     }
     return number.toString();
 }
-exports.addPlusSign = addPlusSign;
 const characterObjects = (character) => {
     const c = character.character;
     let objectsFound = [];
@@ -61,11 +82,9 @@ function sortObject(obj) {
         return sortedObj;
     }, {});
 }
-exports.sortObject = sortObject;
 function isNumber(stat) {
     return !isNaN(parseFloat(stat)) && isFinite(Number(stat));
 }
-exports.isNumber = isNumber;
 function getCurrentStatLimit(character) {
     if (character?.character?.CRCalculation?.name === 'automatic') {
         return character?.statistics?.CR.number || -3;
@@ -74,7 +93,6 @@ function getCurrentStatLimit(character) {
         return character?.statistics?.level || 0;
     }
 }
-exports.getCurrentStatLimit = getCurrentStatLimit;
 function getStatArrayFromObjects(character, stat) {
     const c = character.character;
     const array = [];
@@ -93,7 +111,6 @@ function getStatArrayFromObjects(character, stat) {
     });
     return array;
 }
-exports.getStatArrayFromObjects = getStatArrayFromObjects;
 function getBonusesForOneStatistic(character, stat) {
     const bonuses = [];
     const objectsFound = characterObjects(character);
@@ -106,7 +123,6 @@ function getBonusesForOneStatistic(character, stat) {
     });
     return bonuses;
 }
-exports.getBonusesForOneStatistic = getBonusesForOneStatistic;
 function getBonus(character, stat) {
     const bonuses = getBonusesForOneStatistic(character, stat);
     let bonus = 0;
@@ -115,7 +131,6 @@ function getBonus(character, stat) {
     });
     return bonus;
 }
-exports.getBonus = getBonus;
 function getBonusAndInfo(character, stat) {
     const bonuses = getBonusesForOneStatistic(character, stat);
     const bonus = {
@@ -130,7 +145,6 @@ function getBonusAndInfo(character, stat) {
     });
     return bonus;
 }
-exports.getBonusAndInfo = getBonusAndInfo;
 function getPrioritizedStatistic(character, key) {
     const objectsFound = characterObjects(character);
     for (let i = 0; i < objectsFound.length; i++) {
@@ -143,7 +157,6 @@ function getPrioritizedStatistic(character, key) {
         return c[key];
     }
 }
-exports.getPrioritizedStatistic = getPrioritizedStatistic;
 function getPrioritizedStatisticFromPath(character, key) {
     const objectsFound = characterObjects(character);
     for (let i = 0; i < objectsFound.length; i++) {
@@ -153,7 +166,6 @@ function getPrioritizedStatisticFromPath(character, key) {
         }
     }
 }
-exports.getPrioritizedStatisticFromPath = getPrioritizedStatisticFromPath;
 /**
  *  C A L I B R A T E   S T A T I S T I C
  * ---------------------------------------
@@ -190,7 +202,6 @@ function calibrateStatistic(character, statValue, statName) {
     const result = Math.round(calibrationFactor * statValueAvgAtNewCR);
     return result;
 }
-exports.calibrateStatistic = calibrateStatistic;
 function calculateCalibrationFactor(originalCR, newCR, statName, statValue) {
     let statValueAvg;
     if (originalCR > 30) {
@@ -236,7 +247,6 @@ function addCommaIfNotEmpty(array) {
         array.push(createPart(', '));
     }
 }
-exports.addCommaIfNotEmpty = addCommaIfNotEmpty;
 function pushWithComma(originalString, string2) {
     if (originalString) {
         originalString += ', ';
@@ -244,14 +254,12 @@ function pushWithComma(originalString, string2) {
     originalString += string2;
     return originalString;
 }
-exports.pushWithComma = pushWithComma;
 function numberToSignedString(number) {
     if (number >= 0) {
         return `+${number}`;
     }
     return number.toString();
 }
-exports.numberToSignedString = numberToSignedString;
 function unshiftWithComma(originalString, string2) {
     if (originalString) {
         originalString = ', ' + originalString;
@@ -259,7 +267,6 @@ function unshiftWithComma(originalString, string2) {
     originalString = string2 + originalString;
     return originalString;
 }
-exports.unshiftWithComma = unshiftWithComma;
 function feetToOtherUnit(feet, unit = 'feet') {
     let meters = 0;
     switch (unit) {
@@ -272,25 +279,21 @@ function feetToOtherUnit(feet, unit = 'feet') {
             return feet;
     }
 }
-exports.feetToOtherUnit = feetToOtherUnit;
 function feetDecimalToFeetInches(decimalFeet) {
     const feet = Math.floor(decimalFeet);
     const inches = Math.round((decimalFeet - feet) * 12);
     return `${feet}'${inches}"`;
 }
-exports.feetDecimalToFeetInches = feetDecimalToFeetInches;
 function feetDecimalToUnit(height, unit = 'feet') {
     if (unit === 'meters') {
         return feetDecimalToMeters(height);
     }
     return feetDecimalToFeetInches(height);
 }
-exports.feetDecimalToUnit = feetDecimalToUnit;
 function feetDecimalToMeters(decimalFeet) {
     const meters = decimalFeet * 0.3048;
     return `${meters.toFixed(2)} m`;
 }
-exports.feetDecimalToMeters = feetDecimalToMeters;
 function getUnitSymbol(unit = 'feet') {
     switch (unit) {
         case 'feet':
@@ -301,7 +304,6 @@ function getUnitSymbol(unit = 'feet') {
             return 'sq';
     }
 }
-exports.getUnitSymbol = getUnitSymbol;
 function parseNameChoices(name = '') {
     if (!name) {
         return 'Name';
@@ -313,10 +315,8 @@ function parseNameChoices(name = '') {
     const randomName = (0, functions_1.random)(0, possibleNames.length - 1);
     return possibleNames[randomName];
 }
-exports.parseNameChoices = parseNameChoices;
 function createUserObjectIfNotExists(character) {
     if (!character.character.user) {
         character.character.user = {};
     }
 }
-exports.createUserObjectIfNotExists = createUserObjectIfNotExists;

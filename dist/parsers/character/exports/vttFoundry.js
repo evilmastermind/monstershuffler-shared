@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.exportCharacterToVTTFoundry = void 0;
+exports.exportCharacterToVTTFoundry = exportCharacterToVTTFoundry;
 function exportCharacterToVTTFoundry(character) {
     if (!character.statistics) {
         return '';
@@ -90,4 +90,3 @@ ${s.abilities.CHA.string}`;
     }
     return output;
 }
-exports.exportCharacterToVTTFoundry = exportCharacterToVTTFoundry;

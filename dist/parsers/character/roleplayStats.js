@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateRoleplayStats = void 0;
+exports.calculateRoleplayStats = calculateRoleplayStats;
 const functions_1 = require("../../functions");
 const functions_2 = require("../functions");
 function calculateRoleplayStats(character) {
@@ -40,4 +40,3 @@ function calculateRoleplayStats(character) {
         s.physicalAppearance = c.physicalAppearance;
     }
 }
-exports.calculateRoleplayStats = calculateRoleplayStats;
