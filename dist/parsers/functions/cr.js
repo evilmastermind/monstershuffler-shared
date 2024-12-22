@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.adjustLevel = exports.lowerCR = exports.raiseCR = exports.setCR = void 0;
+exports.setCR = setCR;
+exports.raiseCR = raiseCR;
+exports.lowerCR = lowerCR;
+exports.adjustLevel = adjustLevel;
 const character_1 = require("../character");
 const parsers_1 = require("../../parsers");
 function setCR(character, CR) {
@@ -12,7 +15,6 @@ function setCR(character, CR) {
     adjustLevel(character);
     (0, character_1.createStats)(character);
 }
-exports.setCR = setCR;
 function raiseCR(character) {
     character.variations.currentCR++;
     adjustLevel(character);
