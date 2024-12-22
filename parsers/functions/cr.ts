@@ -1,5 +1,16 @@
 import { createStats } from '../character';
+import { getChallengeNumber } from '@/parsers';
 import type { Character } from '@/types';
+
+export function setCR(character: Character, CR: string) {
+  let CRNumber = getChallengeNumber(CR);
+  if (CRNumber < -3) {
+    CRNumber = -3;
+  }
+  character.variations!.currentCR = CRNumber;
+  adjustLevel(character);
+  createStats(character);
+}
 
 export function raiseCR(character: Character) {
   character.variations!.currentCR!++;

@@ -1,9 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.raiseCR = raiseCR;
-exports.lowerCR = lowerCR;
-exports.adjustLevel = adjustLevel;
+exports.adjustLevel = exports.lowerCR = exports.raiseCR = exports.setCR = void 0;
 const character_1 = require("../character");
+const parsers_1 = require("../../parsers");
+function setCR(character, CR) {
+    let CRNumber = (0, parsers_1.getChallengeNumber)(CR);
+    if (CRNumber < -3) {
+        CRNumber = -3;
+    }
+    character.variations.currentCR = CRNumber;
+    adjustLevel(character);
+    (0, character_1.createStats)(character);
+}
+exports.setCR = setCR;
 function raiseCR(character) {
     character.variations.currentCR++;
     adjustLevel(character);
