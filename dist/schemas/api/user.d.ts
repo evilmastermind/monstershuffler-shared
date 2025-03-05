@@ -1,6 +1,6 @@
 import { z } from 'zod';
 export declare const userSettingsObject: z.ZodNullable<z.ZodObject<{
-    stats: z.ZodObject<{
+    stats: z.ZodOptional<z.ZodObject<{
         lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
         heightUnit: z.ZodEnum<["feet", "meters"]>;
     }, "strip", z.ZodTypeAny, {
@@ -9,20 +9,23 @@ export declare const userSettingsObject: z.ZodNullable<z.ZodObject<{
     }, {
         lengthUnit: "feet" | "meters" | "squares";
         heightUnit: "feet" | "meters";
-    }>;
-    language: z.ZodEnum<["en", "it"]>;
+    }>>;
+    language: z.ZodOptional<z.ZodEnum<["en", "it"]>>;
+    statBlocks: z.ZodOptional<z.ZodEnum<["5e", "5.5e"]>>;
 }, "strip", z.ZodTypeAny, {
-    language: "it" | "en";
-    stats: {
+    language?: "it" | "en" | undefined;
+    stats?: {
         lengthUnit: "feet" | "meters" | "squares";
         heightUnit: "feet" | "meters";
-    };
+    } | undefined;
+    statBlocks?: "5e" | "5.5e" | undefined;
 }, {
-    language: "it" | "en";
-    stats: {
+    language?: "it" | "en" | undefined;
+    stats?: {
         lengthUnit: "feet" | "meters" | "squares";
         heightUnit: "feet" | "meters";
-    };
+    } | undefined;
+    statBlocks?: "5e" | "5.5e" | undefined;
 }>>;
 export declare const sPostUserBody: z.ZodObject<{
     password: z.ZodString;
@@ -97,7 +100,7 @@ export declare const sGetUserResponse: z.ZodObject<{
     publishsuspension: z.ZodString;
     avatar: z.ZodString;
     settings: z.ZodNullable<z.ZodObject<{
-        stats: z.ZodObject<{
+        stats: z.ZodOptional<z.ZodObject<{
             lengthUnit: z.ZodEnum<["feet", "meters", "squares"]>;
             heightUnit: z.ZodEnum<["feet", "meters"]>;
         }, "strip", z.ZodTypeAny, {
@@ -106,20 +109,23 @@ export declare const sGetUserResponse: z.ZodObject<{
         }, {
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
-        }>;
-        language: z.ZodEnum<["en", "it"]>;
+        }>>;
+        language: z.ZodOptional<z.ZodEnum<["en", "it"]>>;
+        statBlocks: z.ZodOptional<z.ZodEnum<["5e", "5.5e"]>>;
     }, "strip", z.ZodTypeAny, {
-        language: "it" | "en";
-        stats: {
+        language?: "it" | "en" | undefined;
+        stats?: {
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
-        };
+        } | undefined;
+        statBlocks?: "5e" | "5.5e" | undefined;
     }, {
-        language: "it" | "en";
-        stats: {
+        language?: "it" | "en" | undefined;
+        stats?: {
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
-        };
+        } | undefined;
+        statBlocks?: "5e" | "5.5e" | undefined;
     }>>;
     email: z.ZodString;
     username: z.ZodString;
@@ -133,11 +139,12 @@ export declare const sGetUserResponse: z.ZodObject<{
     publishsuspension: string;
     avatar: string;
     settings: {
-        language: "it" | "en";
-        stats: {
+        language?: "it" | "en" | undefined;
+        stats?: {
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
-        };
+        } | undefined;
+        statBlocks?: "5e" | "5.5e" | undefined;
     } | null;
 }, {
     id: number;
@@ -148,11 +155,12 @@ export declare const sGetUserResponse: z.ZodObject<{
     publishsuspension: string;
     avatar: string;
     settings: {
-        language: "it" | "en";
-        stats: {
+        language?: "it" | "en" | undefined;
+        stats?: {
             lengthUnit: "feet" | "meters" | "squares";
             heightUnit: "feet" | "meters";
-        };
+        } | undefined;
+        statBlocks?: "5e" | "5.5e" | undefined;
     } | null;
 }>;
 export declare const sPutUserBody: z.ZodObject<{

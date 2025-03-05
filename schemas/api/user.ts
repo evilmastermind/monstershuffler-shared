@@ -21,8 +21,9 @@ export const userSettingsObject =
     stats: z.object({
       lengthUnit: z.enum(['feet', 'meters', 'squares']),
       heightUnit: z.enum(['feet', 'meters']),
-    }),
-    language: z.enum(['en', 'it']),
+    }).optional(),
+    language: z.enum(['en', 'it']).optional(),
+    statBlocks: z.enum((['5e', '5.5e'])).optional(),
   }).nullable();
 
 export const sPostUserBody = z.object({

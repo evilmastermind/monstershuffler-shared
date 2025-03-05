@@ -21,8 +21,9 @@ exports.userSettingsObject = zod_1.z.object({
     stats: zod_1.z.object({
         lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),
         heightUnit: zod_1.z.enum(['feet', 'meters']),
-    }),
-    language: zod_1.z.enum(['en', 'it']),
+    }).optional(),
+    language: zod_1.z.enum(['en', 'it']).optional(),
+    statBlocks: zod_1.z.enum((['5e', '5.5e'])).optional(),
 }).nullable();
 exports.sPostUserBody = zod_1.z.object({
     ...userCore,
