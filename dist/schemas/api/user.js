@@ -17,6 +17,8 @@ const userCore = {
         .min(2, { message: 'Username is too short (min 2 characters)' })
         .max(21, { message: 'Username is too long (max 21 characters)' }),
 };
+// TODO: these need to be removed, they will be handled by the /page-settings/ route
+// ...unless I still want to retrieve them during login and still put them in the user object
 exports.userSettingsObject = zod_1.z.object({
     stats: zod_1.z.object({
         lengthUnit: zod_1.z.enum(['feet', 'meters', 'squares']),

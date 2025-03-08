@@ -1,13 +1,13 @@
-import { sizeStats, Size } from "@/parsers";
-import { Character } from "@/types";
-import { getStatArrayFromObjects } from "@/parsers/functions";
+import { sizeStats, Size } from '@/parsers';
+import { Character } from '@/types';
+import { getStatArrayFromObjects } from '@/parsers/functions';
 
 export function calculateLevel(character: Character) {
   // level-based calculation when the level has been already
   // calculated  once
   if (
     character?.variations?.currentHD !== undefined &&
-    character?.character?.CRCalculation?.name !== "automatic"
+    character?.character?.CRCalculation?.name !== 'automatic'
   ) {
     assignLevel(character, character.variations.currentHD);
     return;
@@ -16,7 +16,7 @@ export function calculateLevel(character: Character) {
   // calculated yet, or automatic calculation on its first phase
 
   let level = 0;
-  const HD = getStatArrayFromObjects<number>(character, "HD");
+  const HD = getStatArrayFromObjects<number>(character, 'HD');
   HD.forEach((hd) => {
     level += hd;
   });

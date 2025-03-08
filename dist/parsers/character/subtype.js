@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateSubtype = calculateSubtype;
 const functions_1 = require("../functions");
 function calculateSubtype(character) {
-    const subtypesArrays = (0, functions_1.getStatArrayFromObjects)(character, "subtypes");
+    const subtypesArrays = (0, functions_1.getStatArrayFromObjects)(character, 'subtypes');
     const subtypes = [];
     if (!subtypesArrays) {
         return;
@@ -15,7 +15,7 @@ function calculateSubtype(character) {
                 limit >= subtypesArrays[i][j].availableAt) {
                 const subtype = {
                     string: subtypesArrays[i][j].value,
-                    type: "subtype",
+                    type: 'subtype',
                 };
                 if (subtypesArrays[i][j].id) {
                     subtype.id = subtypesArrays[i][j].id;

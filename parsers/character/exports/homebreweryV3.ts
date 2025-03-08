@@ -18,7 +18,7 @@ ___
 ___
 |STR|DEX|CON|INT|WIS|CHA|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|${s.abilities.STR.string}|${s.abilities.DEX.string}|${s.abilities.CON.string}|${s.abilities.INT.string}|${s.abilities.WIS.string}|${s.abilities.CHA.string}|
+|${s.abilities.STR.score.string} (${s.abilities.STR.modifier.string})|${s.abilities.DEX.score.string} (${s.abilities.DEX.modifier.string})|${s.abilities.CON.score.string} (${s.abilities.CON.modifier.string})|${s.abilities.INT.score.string} (${s.abilities.INT.modifier.string})|${s.abilities.WIS.score.string} (${s.abilities.WIS.modifier.string})|${s.abilities.CHA.score.string} (${s.abilities.CHA.modifier.string})|
 ___`;
 
   if (s.savingThrows?.length) {

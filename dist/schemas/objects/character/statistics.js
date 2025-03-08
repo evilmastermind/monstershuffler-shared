@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statisticsObject = exports.abilitiesObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.roll = exports.parsedExpression = exports.parsedDice = void 0;
+exports.statisticsObject = exports.abilitiesObject = exports.abilityObject = exports.statStringArrayWithName = exports.statStringArray = exports.statString = exports.statStringNumberArray = exports.statStringNumber = exports.descriptionPartObject = exports.format = exports.additionalStringTypes = exports.roll = exports.parsedExpression = exports.parsedDice = void 0;
 const roleplay_1 = require("./roleplay");
 const zod_1 = require("zod");
 const choices_1 = require("./choices");
@@ -110,13 +110,18 @@ exports.statStringArrayWithName = zod_1.z.object({
     // isCharged: z.boolean().optional(),
 });
 ///////////////////////////////////////////////////////
+exports.abilityObject = zod_1.z.object({
+    score: exports.statStringNumberArray,
+    modifier: exports.statStringNumberArray,
+    save: exports.statStringNumberArray,
+});
 exports.abilitiesObject = zod_1.z.object({
-    STR: exports.statStringNumberArray,
-    DEX: exports.statStringNumberArray,
-    CON: exports.statStringNumberArray,
-    INT: exports.statStringNumberArray,
-    WIS: exports.statStringNumberArray,
-    CHA: exports.statStringNumberArray,
+    STR: exports.abilityObject,
+    DEX: exports.abilityObject,
+    CON: exports.abilityObject,
+    INT: exports.abilityObject,
+    WIS: exports.abilityObject,
+    CHA: exports.abilityObject,
 });
 exports.statisticsObject = zod_1.z.object({
     alignment: exports.statStringNumberArray,

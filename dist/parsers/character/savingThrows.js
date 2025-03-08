@@ -32,19 +32,10 @@ function calculateSavingThrows(character) {
         if (bonus) {
             savingThrowValues[ability] += bonus;
         }
-        if (!savingThrowValues[ability]) {
-            continue;
-        }
-        s.savingThrows.push({
-            name: ability,
-            number: savingThrowValues[ability],
-            string: '',
-            array: []
-        });
-        const savingThrow = s.savingThrows[s.savingThrows.length - 1];
-        savingThrow.array.push((0, functions_1.createPart)((0, functions_2.capitalizeFirst)(ability), 'savingThrow'));
-        savingThrow.array.push((0, functions_1.createPart)(' '));
-        savingThrow.array.push({
+        const saveDescription = [];
+        saveDescription.push((0, functions_1.createPart)((0, functions_2.capitalizeFirst)(ability), 'savingThrow'));
+        saveDescription.push((0, functions_1.createPart)(' '));
+        const roll = {
             string: (0, functions_1.numberToSignedString)(savingThrowValues[ability]),
             number: savingThrowValues[ability],
             type: 'd20Roll',
@@ -61,8 +52,29 @@ function calculateSavingThrows(character) {
                 ],
             },
             translationKey: stats_1.abilityNames[ability],
+        };
+        saveDescription.push(roll);
+        // updating saves in the ability score object (5.5e)
+        s.abilities[ability].save = {
+            name: ability,
+            number: savingThrowValues[ability],
+            string: (0, functions_1.numberToSignedString)(savingThrowValues[ability]),
+            array: [roll]
+        };
+        // TODO: is this condition correct? Apparently it just
+        // prevents to add a +0 saving throw with proficiency,
+        // since we're only cycling through the saves that the
+        // monster has proficiency in.
+        if (!savingThrowValues[ability]) {
+            continue;
+        }
+        // updating saves (5e)
+        s.savingThrows.push({
+            name: ability,
+            number: savingThrowValues[ability],
+            string: saveDescription.reduce((acc, obj) => acc + obj.string, ''),
+            array: saveDescription
         });
-        savingThrow.string = savingThrow.array.reduce((acc, obj) => acc + obj.string, '');
     }
     stats_1.abilities.forEach((ability) => {
         v[`${ability}SAVE`] =

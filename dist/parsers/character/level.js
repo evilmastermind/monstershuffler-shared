@@ -8,14 +8,14 @@ function calculateLevel(character) {
     // level-based calculation when the level has been already
     // calculated  once
     if (character?.variations?.currentHD !== undefined &&
-        character?.character?.CRCalculation?.name !== "automatic") {
+        character?.character?.CRCalculation?.name !== 'automatic') {
         assignLevel(character, character.variations.currentHD);
         return;
     }
     // level-based CR calculation when the level has not been
     // calculated yet, or automatic calculation on its first phase
     let level = 0;
-    const HD = (0, functions_1.getStatArrayFromObjects)(character, "HD");
+    const HD = (0, functions_1.getStatArrayFromObjects)(character, 'HD');
     HD.forEach((hd) => {
         level += hd;
     });

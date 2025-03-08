@@ -38,12 +38,12 @@ export function exportCharacterToImprovedInitiative(character: Character): strin
   output.Speed = s.speeds?.map((speed)=> speed.string.replace('ft', 'ft.')) || [];
   
   output.Abilities = {
-    Str: s.abilities.STR.number,
-    Dex: s.abilities.DEX.number,
-    Con: s.abilities.CON.number,
-    Int: s.abilities.INT.number,
-    Wis: s.abilities.WIS.number,
-    Cha: s.abilities.CHA.number,
+    Str: s.abilities.STR.score.number,
+    Dex: s.abilities.DEX.score.number,
+    Con: s.abilities.CON.score.number,
+    Int: s.abilities.INT.score.number,
+    Wis: s.abilities.WIS.score.number,
+    Cha: s.abilities.CHA.score.number,
   };
 
   output.Skills = s.skills?.map((skill)=> { 

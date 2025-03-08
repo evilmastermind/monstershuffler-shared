@@ -124,13 +124,19 @@ export const statStringArrayWithName = z.object({
 
 ///////////////////////////////////////////////////////
 
+export const abilityObject = z.object({
+  score: statStringNumberArray,
+  modifier: statStringNumberArray,
+  save: statStringNumberArray,
+});
+
 export const abilitiesObject = z.object({
-  STR: statStringNumberArray,
-  DEX: statStringNumberArray,
-  CON: statStringNumberArray,
-  INT: statStringNumberArray,
-  WIS: statStringNumberArray,
-  CHA: statStringNumberArray,
+  STR: abilityObject,
+  DEX: abilityObject,
+  CON: abilityObject,
+  INT: abilityObject,
+  WIS: abilityObject,
+  CHA: abilityObject,
 });
 
 export const statisticsObject = z.object({

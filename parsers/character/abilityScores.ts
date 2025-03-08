@@ -7,30 +7,35 @@ import {
   createUserObjectIfNotExists,
 } from '../functions';
 import { abilities, abilityNames } from '../stats';
-import type { Character } from '@/types';
+import type { Character, StatStringNumberArray } from '@/types';
 import { random } from '@/functions';
 
 export function calculateAbilityScores(character: Character) {
-  const c = character.character;
   createUserObjectIfNotExists(character);
-  const user = c.user!;
+  
+  const c = character.character;
+  const u = c.user!;
+  const s = character.statistics!;
+  const v = character.variables!;
+
   // @ts-expect-error
-  character.statistics!.abilities = {};
-  if (!user.abilityScores) {
-    user.abilityScores = {};
+  s.abilities = {};
+  if (!u.abilityScores) {
+    u.abilityScores = {};
   }
   const abilityScoresLimit =
     getPrioritizedStatistic<number>(character, 'abilityScoresLimit') || 30;
+
   for (const abilityName of abilities) {
     // generating abilities scores if they don't exist yet
     // base Ability Score = 3d6, min 8;
-    if (user.abilityScores[abilityName] === undefined) {
-      user.abilityScores[abilityName] = {
+    if (u.abilityScores[abilityName] === undefined) {
+      u.abilityScores[abilityName] = {
         value: random(1, 6) + random(1, 6) + random(1, 6),
       };
     }
-    if (user.abilityScores[abilityName]!.value < 8) {
-      user.abilityScores[abilityName]!.value = 8;
+    if (u.abilityScores[abilityName]!.value < 8) {
+      u.abilityScores[abilityName]!.value = 8;
     }
 
     // checking if there's a template applied to the creature with
@@ -38,22 +43,22 @@ export function calculateAbilityScores(character: Character) {
     if (
       c?.template?.abilityScores &&
       Object.hasOwn(c.template.abilityScores, abilityName) &&
-      user.abilityScores[abilityName]!.value <
+      u.abilityScores[abilityName]!.value <
         c.template.abilityScores[abilityName]!.value
     ) {
-      user.abilityScores[abilityName]!.value =
+      u.abilityScores[abilityName]!.value =
         c.template.abilityScores[abilityName]!.value;
     }
-    let abilityScoreTotal: number = user.abilityScores[abilityName]!.value;
 
+    let abilityScoreTotal: number = u.abilityScores[abilityName]!.value;
     // ability score bonus
     const bonus = getBonusAndInfo(character, abilityName);
-
     abilityScoreTotal += bonus.value;
+
     // ------- automatic calculation (CR) -------
     if (
       // c?.CRCalculation?.name === "automatic" &&
-      user.abilityScores[abilityName]?.isAutomaticCalcDisabled !== true &&
+      u.abilityScores[abilityName]?.isAutomaticCalcDisabled !== true &&
       !bonus.hadExpressions
     ) {
       abilityScoreTotal = calibrateStatistic(
@@ -70,37 +75,54 @@ export function calculateAbilityScores(character: Character) {
       abilityScoreTotal = 1;
     }
 
-    const modifier = Math.floor(abilityScoreTotal / 2) - 5;
+    const modifierNumber = Math.floor(abilityScoreTotal / 2) - 5;
+
     // statistics
-    character.statistics!.abilities[abilityName] = {
+    const score: StatStringNumberArray = {
       name: abilityNames[abilityName],
       number: abilityScoreTotal,
-      string: '',
-      array: [],
+      string: abilityScoreTotal.toString(),
+      array: [createPart(abilityScoreTotal.toString())],
     };
-    const parts = character.statistics!.abilities[abilityName].array;
-    parts.push(createPart(`${abilityScoreTotal} (`));
-    parts.push({
-      string: numberToSignedString(modifier),
-      number: modifier,
-      type: 'd20Roll',
-      roll: {
-        name: abilityNames[abilityName],
-        translationKey: abilityNames[abilityName],
-        dice: [
-          {
-            sides: 20,
-            dice: 1,
-            value: 10 + modifier,
-            bonus: modifier,
+
+    const modifier: StatStringNumberArray = {
+      name: abilityNames[abilityName],
+      number: modifierNumber,
+      string: numberToSignedString(modifierNumber),
+      array: [
+        {
+          string: numberToSignedString(modifierNumber),
+          number: modifierNumber,
+          type: 'd20Roll',
+          roll: {
+            name: abilityNames[abilityName],
+            translationKey: abilityNames[abilityName],
+            dice: [
+              {
+                sides: 20,
+                dice: 1,
+                value: 10 + modifierNumber,
+                bonus: modifierNumber,
+              },
+            ],
           },
-        ],
-      },
-    });
-    parts.push(createPart(')'));
-    character.statistics!.abilities[abilityName].string = parts.map((p) => p.string).join('');
+        }
+      ],
+    };
+
+    // we temporarily assign the modifier to the save
+    // and we'll check if there's a save bonus later
+    const save: StatStringNumberArray = { ...modifier };
+
+    // statistics
+    s.abilities[abilityName] = {
+      score,
+      modifier,
+      save,
+    };
+
     // variables
-    character.variables![abilityName] = modifier;
-    character.variables![`${abilityName}VALUE`] = abilityScoreTotal;
+    v[abilityName] = modifierNumber;
+    v[`${abilityName}VALUE`] = abilityScoreTotal;
   }
 }

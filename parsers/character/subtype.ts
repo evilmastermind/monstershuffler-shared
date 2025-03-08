@@ -1,8 +1,8 @@
-import { getCurrentStatLimit, getStatArrayFromObjects } from "../functions";
-import type { Character, Stat, DescriptionPart } from "@/types";
+import { getCurrentStatLimit, getStatArrayFromObjects } from '../functions';
+import type { Character, Stat, DescriptionPart } from '@/types';
 
 export function calculateSubtype(character: Character) {
-  const subtypesArrays = getStatArrayFromObjects<Stat[]>(character, "subtypes");
+  const subtypesArrays = getStatArrayFromObjects<Stat[]>(character, 'subtypes');
   const subtypes: DescriptionPart[] = [];
   if (!subtypesArrays) {
     return;
@@ -18,7 +18,7 @@ export function calculateSubtype(character: Character) {
       ) {
         const subtype: DescriptionPart = {
           string: subtypesArrays[i][j].value,
-          type: "subtype",
+          type: 'subtype',
         };
         if (subtypesArrays[i][j].id) {
           subtype.id = subtypesArrays[i][j].id;

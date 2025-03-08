@@ -6,7 +6,7 @@ import {
   numberToSignedString,
 } from '../functions';
 import { type Ability, abilityNames, abilities } from './../stats';
-import type { Character, Stat } from '@/types';
+import type { Character, Stat, DescriptionPart } from '@/types';
 import { capitalizeFirst } from '@/functions';
 
 export function calculateSavingThrows(character: Character) {
@@ -48,23 +48,15 @@ export function calculateSavingThrows(character: Character) {
     if (bonus) {
       savingThrowValues[ability]! += bonus;
     }
-    if (!savingThrowValues[ability]) {
-      continue;
-    }
 
-    s.savingThrows.push({
-      name: ability,
-      number: savingThrowValues[ability]!,
-      string: '',
-      array: []
-    });
-    
-    const savingThrow = s.savingThrows[s.savingThrows.length - 1];
-    savingThrow.array.push(
+    const saveDescription: DescriptionPart[] = [];
+
+    saveDescription.push(
       createPart(capitalizeFirst(ability), 'savingThrow')
     );
-    savingThrow.array.push(createPart(' '));
-    savingThrow.array.push({
+    saveDescription.push(createPart(' '));
+
+    const roll: DescriptionPart  = {
       string: numberToSignedString(savingThrowValues[ability]!),
       number: savingThrowValues[ability],
       type: 'd20Roll',
@@ -81,12 +73,35 @@ export function calculateSavingThrows(character: Character) {
         ],
       },
       translationKey: abilityNames[ability],
-    });
+    };
+    saveDescription.push(roll);
 
-    savingThrow.string = savingThrow.array.reduce(
-      (acc, obj) => acc + obj.string,
-      ''
-    );
+    // updating saves in the ability score object (5.5e)
+    s.abilities[ability].save = {
+      name: ability,
+      number: savingThrowValues[ability]!,
+      string: numberToSignedString(savingThrowValues[ability]!),
+      array: [roll]
+    };
+
+    // TODO: is this condition correct? Apparently it just
+    // prevents to add a +0 saving throw with proficiency,
+    // since we're only cycling through the saves that the
+    // monster has proficiency in.
+    if (!savingThrowValues[ability]) {
+      continue;
+    }
+
+    // updating saves (5e)
+    s.savingThrows.push({
+      name: ability,
+      number: savingThrowValues[ability]!,
+      string: saveDescription.reduce(
+        (acc, obj) => acc + obj.string,
+        ''
+      ),
+      array: saveDescription
+    });
   }
 
   abilities.forEach((ability) => {

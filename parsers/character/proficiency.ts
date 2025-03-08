@@ -1,9 +1,9 @@
-import { Character } from "@/types";
+import { Character } from '@/types';
 
 export function calculateProficiency(character: Character) {
   const c = character.character;
-  const method = c.proficiencyCalculation || "CR";
-  if (method === "level") {
+  const method = c.proficiencyCalculation || 'CR';
+  if (method === 'level') {
     character.statistics!.proficiency =
       1 + Math.ceil(character.statistics!.level / 4);
   } else {

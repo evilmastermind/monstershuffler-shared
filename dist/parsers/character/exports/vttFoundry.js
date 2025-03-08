@@ -12,17 +12,17 @@ Armor Class ${s.AC.string}
 Hit Points ${s.HP.string}
 Speed ${(s.speeds?.map((speed) => speed.string.replace('ft', 'ft.')) || []).join(', ')}
 STR
-${s.abilities.STR.string}
+${s.abilities.STR.score.string}
 DEX
-${s.abilities.DEX.string}
+${s.abilities.DEX.score.string}
 CON
-${s.abilities.CON.string}
+${s.abilities.CON.score.string}
 INT
-${s.abilities.INT.string}
+${s.abilities.INT.score.string}
 WIS
-${s.abilities.WIS.string}
+${s.abilities.WIS.score.string}
 CHA
-${s.abilities.CHA.string}`;
+${s.abilities.CHA.score.string}`;
     if (s.savingThrows?.length) {
         output += `\nSaving Throws ${s.savingThrows.map((save) => save.string).join(', ')}`;
     }

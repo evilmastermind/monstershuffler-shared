@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateProficiency = calculateProficiency;
 function calculateProficiency(character) {
     const c = character.character;
-    const method = c.proficiencyCalculation || "CR";
-    if (method === "level") {
+    const method = c.proficiencyCalculation || 'CR';
+    if (method === 'level') {
         character.statistics.proficiency =
             1 + Math.ceil(character.statistics.level / 4);
     }

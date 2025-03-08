@@ -16,6 +16,8 @@ const userCore = {
     .max(21, { message: 'Username is too long (max 21 characters)' }),
 };
 
+// TODO: these need to be removed, they will be handled by the /page-settings/ route
+// ...unless I still want to retrieve them during login and still put them in the user object
 export const userSettingsObject = 
   z.object({
     stats: z.object({
