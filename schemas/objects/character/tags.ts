@@ -33,4 +33,5 @@ export const tagsObject = z.object({
   sizetwogreater: z.string(),
   sizetwosmaller: z.string(),
   type: z.string(),
+  profession: z.string(),
 }).catchall(z.string());

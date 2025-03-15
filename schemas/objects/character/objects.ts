@@ -253,7 +253,7 @@ export type CharacterObject = z.ZodObject<{
     alignmentModifiers: typeof alignmentModifiersStats.alignmentModifiers;
     alignmentEthical: typeof alignmentStats.alignmentEthical;
     alignmentMoral: typeof alignmentStats.alignmentMoral;
-    characterHook: typeof roleplayStats.characterHook;
+    characterHooks: typeof roleplayStats.characterHooks;
     trait: typeof roleplayStats.trait;
     feeling: typeof roleplayStats.feeling;
     age: typeof roleplayStats.age;

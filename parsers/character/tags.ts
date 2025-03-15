@@ -123,6 +123,7 @@ export function createTags(character: Character) {
 
   // race
   t.race = c?.racevariant?.name || c?.race?.name || 'Race';
+  t.profession = c?.class?.name || c?.background?.name || 'unemployed';
 
   // action t
   const actions = getStatArrayFromObjects<ChosenAction[]>(

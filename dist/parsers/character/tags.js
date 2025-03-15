@@ -119,6 +119,7 @@ function createTags(character) {
     }
     // race
     t.race = c?.racevariant?.name || c?.race?.name || 'Race';
+    t.profession = c?.class?.name || c?.background?.name || 'unemployed';
     // action t
     const actions = (0, functions_1.getStatArrayFromObjects)(character, 'actions').flat();
     for (let i = 0; i < actions.length; i++) {

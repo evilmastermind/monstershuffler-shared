@@ -128,9 +128,18 @@ export const AgeObject = z.object({
   number: z.number(),
   string: ages,
 });
+
+export const characterHook = z.object({
+  id: z.number(),
+  type: z.enum(['youth', 'career', 'plot']),
+  sentence: z.string(),
+  summary: z.string(),
+  isPrimaryCharacterHook: z.boolean().optional(),
+});
+
 export const WeightObject = z.enum(['skinny', 'average', 'chubby', 'obese']);
 export const roleplayStats = {
-  characterHook: z.string().optional(),
+  characterHooks: z.array(characterHook).optional(),
   trait: traitObject.optional(),
   feeling: traitObject.optional(),
   physicalAppearance: z.string().optional(),

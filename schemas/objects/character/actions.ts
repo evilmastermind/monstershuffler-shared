@@ -15,7 +15,9 @@ export const actionTypesEnum = z.enum([
   'lair',
 ]);
 
+const damageTypeEnum = z.enum(['acid damage', 'bludgeoning damage', 'cold damage', 'fire damage', 'force damage', 'lightning damage', 'necrotic damage', 'piercing damage', 'poison damage', 'psychic damage', 'radiant damage', 'slashing damage', 'thunder damage']);
 export const rechargeTypeEnum = z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
+export const valueTypeEnum = z.union([z.enum(['target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']), damageTypeEnum]);
 
 export const diceObject = z.object({
   dice: z.number(),
@@ -29,25 +31,25 @@ export const diceObject = z.object({
 
 export const valueExpressionObject = z.object({
   name: z.string(),
-  type: z.string().optional(),
+  type: valueTypeEnum.optional(),
   expression: z.string(),
 });
 export const valueDiceObject = z.object({
   name: z.string(),
-  type: z.string().optional(),
+  type: valueTypeEnum.optional(),
   expression: z.string().optional(),
   dice: diceObject,
 });
 export const enchantmentObject = z.object({
   name: z.string().optional(),
-  type: z.string().optional(),
+  type: damageTypeEnum.optional(),
   expression: z.string().optional(),
   dice: diceObject.optional(),
 });
 
 export const valueIncrProgressionObject = z.object({
   name: z.string(),
-  type: z.string().optional(),
+  type: valueTypeEnum.optional(),
   incrProgression: z.object({
     unitInterval: z.number(),
     unitIncrement: z.number(),
@@ -89,8 +91,6 @@ export const chosenActionObject = z.object({
   subType: z.string().optional(),
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
-  // 2024/04/21 - values and attacks moved out of the variant object
-  // because random choices should be made only once per action
   values: z
     .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
     .optional(),

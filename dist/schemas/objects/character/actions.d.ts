@@ -1,6 +1,7 @@
 import { z } from 'zod';
 export declare const actionTypesEnum: z.ZodEnum<["trait", "legendary", "action", "reaction", "bonus", "attack", "multiattack", "mythic", "lair"]>;
 export declare const rechargeTypeEnum: z.ZodEnum<["turn", "short", "day", "week", "month", "3-6", "4-6", "5-6", "6-6", "spellGroup", "spellSlot"]>;
+export declare const valueTypeEnum: z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>;
 export declare const diceObject: z.ZodObject<{
     dice: z.ZodNumber;
     sides: z.ZodNumber;
@@ -28,20 +29,20 @@ export declare const diceObject: z.ZodObject<{
 }>;
 export declare const valueExpressionObject: z.ZodObject<{
     name: z.ZodString;
-    type: z.ZodOptional<z.ZodString>;
+    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
     expression: z.ZodString;
 }, "strip", z.ZodTypeAny, {
     name: string;
     expression: string;
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
 }, {
     name: string;
     expression: string;
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
 }>;
 export declare const valueDiceObject: z.ZodObject<{
     name: z.ZodString;
-    type: z.ZodOptional<z.ZodString>;
+    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
     expression: z.ZodOptional<z.ZodString>;
     dice: z.ZodObject<{
         dice: z.ZodNumber;
@@ -79,7 +80,7 @@ export declare const valueDiceObject: z.ZodObject<{
         availableUntil?: number | undefined;
         unitInterval?: number | undefined;
     };
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     expression?: string | undefined;
 }, {
     name: string;
@@ -92,12 +93,12 @@ export declare const valueDiceObject: z.ZodObject<{
         availableUntil?: number | undefined;
         unitInterval?: number | undefined;
     };
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     expression?: string | undefined;
 }>;
 export declare const enchantmentObject: z.ZodObject<{
     name: z.ZodOptional<z.ZodString>;
-    type: z.ZodOptional<z.ZodString>;
+    type: z.ZodOptional<z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>>;
     expression: z.ZodOptional<z.ZodString>;
     dice: z.ZodOptional<z.ZodObject<{
         dice: z.ZodNumber;
@@ -135,7 +136,7 @@ export declare const enchantmentObject: z.ZodObject<{
         availableUntil?: number | undefined;
         unitInterval?: number | undefined;
     } | undefined;
-    type?: string | undefined;
+    type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
     expression?: string | undefined;
 }, {
     name?: string | undefined;
@@ -148,12 +149,12 @@ export declare const enchantmentObject: z.ZodObject<{
         availableUntil?: number | undefined;
         unitInterval?: number | undefined;
     } | undefined;
-    type?: string | undefined;
+    type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
     expression?: string | undefined;
 }>;
 export declare const valueIncrProgressionObject: z.ZodObject<{
     name: z.ZodString;
-    type: z.ZodOptional<z.ZodString>;
+    type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
     incrProgression: z.ZodObject<{
         unitInterval: z.ZodNumber;
         unitIncrement: z.ZodNumber;
@@ -186,7 +187,7 @@ export declare const valueIncrProgressionObject: z.ZodObject<{
         valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     };
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
 }, {
     name: string;
     incrProgression: {
@@ -197,7 +198,7 @@ export declare const valueIncrProgressionObject: z.ZodObject<{
         valueIncrement: number;
         availableUnit?: "level" | "cr" | undefined;
     };
-    type?: string | undefined;
+    type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
 }>;
 export declare const attackObject: z.ZodObject<{
     name: z.ZodString;
@@ -369,7 +370,7 @@ export declare const attackObject: z.ZodObject<{
     }>]>>;
     enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
         name: z.ZodOptional<z.ZodString>;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>>;
         expression: z.ZodOptional<z.ZodString>;
         dice: z.ZodOptional<z.ZodObject<{
             dice: z.ZodNumber;
@@ -407,7 +408,7 @@ export declare const attackObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         } | undefined;
-        type?: string | undefined;
+        type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
         expression?: string | undefined;
     }, {
         name?: string | undefined;
@@ -420,7 +421,7 @@ export declare const attackObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         } | undefined;
-        type?: string | undefined;
+        type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
         expression?: string | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
@@ -474,7 +475,7 @@ export declare const attackObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         } | undefined;
-        type?: string | undefined;
+        type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
         expression?: string | undefined;
     }[] | undefined;
 }, {
@@ -528,7 +529,7 @@ export declare const attackObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         } | undefined;
-        type?: string | undefined;
+        type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
         expression?: string | undefined;
     }[] | undefined;
 }>;
@@ -600,7 +601,7 @@ export declare const chosenActionObject: z.ZodObject<{
     tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         expression: z.ZodOptional<z.ZodString>;
         dice: z.ZodObject<{
             dice: z.ZodNumber;
@@ -638,7 +639,7 @@ export declare const chosenActionObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     }, {
         name: string;
@@ -651,23 +652,23 @@ export declare const chosenActionObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     }>, z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         expression: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }, {
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }>, z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         incrProgression: z.ZodObject<{
             unitInterval: z.ZodNumber;
             unitIncrement: z.ZodNumber;
@@ -700,7 +701,7 @@ export declare const chosenActionObject: z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }, {
         name: string;
         incrProgression: {
@@ -711,7 +712,7 @@ export declare const chosenActionObject: z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }>]>, "many">>;
     attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
         name: z.ZodString;
@@ -883,7 +884,7 @@ export declare const chosenActionObject: z.ZodObject<{
         }>]>>;
         enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
             name: z.ZodOptional<z.ZodString>;
-            type: z.ZodOptional<z.ZodString>;
+            type: z.ZodOptional<z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>>;
             expression: z.ZodOptional<z.ZodString>;
             dice: z.ZodOptional<z.ZodObject<{
                 dice: z.ZodNumber;
@@ -921,7 +922,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }, {
             name?: string | undefined;
@@ -934,7 +935,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
@@ -988,7 +989,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }, {
@@ -1042,7 +1043,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }>, "many">>;
@@ -1062,7 +1063,7 @@ export declare const chosenActionObject: z.ZodObject<{
     values?: ({
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     } | {
         name: string;
         dice: {
@@ -1074,7 +1075,7 @@ export declare const chosenActionObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     } | {
         name: string;
@@ -1086,7 +1087,7 @@ export declare const chosenActionObject: z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     })[] | undefined;
     availableUnit?: "level" | "cr" | undefined;
     source?: string | undefined;
@@ -1146,7 +1147,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }[] | undefined;
@@ -1166,7 +1167,7 @@ export declare const chosenActionObject: z.ZodObject<{
     values?: ({
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     } | {
         name: string;
         dice: {
@@ -1178,7 +1179,7 @@ export declare const chosenActionObject: z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     } | {
         name: string;
@@ -1190,7 +1191,7 @@ export declare const chosenActionObject: z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     })[] | undefined;
     availableUnit?: "level" | "cr" | undefined;
     source?: string | undefined;
@@ -1250,7 +1251,7 @@ export declare const chosenActionObject: z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }[] | undefined;
@@ -1295,7 +1296,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
     tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         expression: z.ZodOptional<z.ZodString>;
         dice: z.ZodObject<{
             dice: z.ZodNumber;
@@ -1333,7 +1334,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     }, {
         name: string;
@@ -1346,23 +1347,23 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     }>, z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         expression: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }, {
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }>, z.ZodObject<{
         name: z.ZodString;
-        type: z.ZodOptional<z.ZodString>;
+        type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
         incrProgression: z.ZodObject<{
             unitInterval: z.ZodNumber;
             unitIncrement: z.ZodNumber;
@@ -1395,7 +1396,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }, {
         name: string;
         incrProgression: {
@@ -1406,7 +1407,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     }>]>, "many">>;
     attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
         name: z.ZodString;
@@ -1578,7 +1579,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
         }>]>>;
         enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
             name: z.ZodOptional<z.ZodString>;
-            type: z.ZodOptional<z.ZodString>;
+            type: z.ZodOptional<z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>>;
             expression: z.ZodOptional<z.ZodString>;
             dice: z.ZodOptional<z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1616,7 +1617,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }, {
             name?: string | undefined;
@@ -1629,7 +1630,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }>, "many">>;
     }, "strip", z.ZodTypeAny, {
@@ -1683,7 +1684,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }, {
@@ -1737,7 +1738,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }>, "many">>;
@@ -1757,7 +1758,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
     values?: ({
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     } | {
         name: string;
         dice: {
@@ -1769,7 +1770,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     } | {
         name: string;
@@ -1781,7 +1782,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     })[] | undefined;
     availableUnit?: "level" | "cr" | undefined;
     source?: string | undefined;
@@ -1841,7 +1842,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }[] | undefined;
@@ -1861,7 +1862,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
     values?: ({
         name: string;
         expression: string;
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     } | {
         name: string;
         dice: {
@@ -1873,7 +1874,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             availableUntil?: number | undefined;
             unitInterval?: number | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         expression?: string | undefined;
     } | {
         name: string;
@@ -1885,7 +1886,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
             valueIncrement: number;
             availableUnit?: "level" | "cr" | undefined;
         };
-        type?: string | undefined;
+        type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
     })[] | undefined;
     availableUnit?: "level" | "cr" | undefined;
     source?: string | undefined;
@@ -1945,7 +1946,7 @@ export declare const actionObject: z.ZodUnion<[z.ZodObject<{
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             } | undefined;
-            type?: string | undefined;
+            type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
             expression?: string | undefined;
         }[] | undefined;
     }[] | undefined;

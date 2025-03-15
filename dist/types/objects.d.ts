@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { abilitiesEnum, abilitiesObject, actionObject, actionVariantObject, alignmentEthical, alignmentMoral, armorObject, attackObject, backgroundObject, bonusesObject, bonusObject, characterObject, chosenActionObject, descriptionPartObject, enchantmentObject, imageObject, npcDetailsObject, pageSettings, parsedDice, parsedExpression, raceObject, roll, sensesObject, speedsObject, spellObject, spellsObject, spellGroupObject, statisticsObject, statObject, statString, statStringArray, statStringArrayWithName, statStringNumber, statStringNumberArray, tagsObject, tokenObject, userObject, valueDiceObject, valueExpressionObject, valueIncrProgressionObject, variablesObject, variationsObject, weaponObject } from '../schemas';
+import { abilitiesEnum, abilitiesObject, actionObject, actionVariantObject, alignmentEthical, alignmentMoral, armorObject, attackObject, backgroundObject, bonusesObject, bonusObject, characterHook, characterObject, chosenActionObject, descriptionPartObject, enchantmentObject, imageObject, npcDetailsObject, pageSettings, parsedDice, parsedExpression, raceObject, roll, sensesObject, speedsObject, spellObject, spellsObject, spellGroupObject, statisticsObject, statObject, statString, statStringArray, statStringArrayWithName, statStringNumber, statStringNumberArray, tagsObject, tokenObject, userObject, valueDiceObject, valueExpressionObject, valueIncrProgressionObject, variablesObject, variationsObject, weaponObject } from '../schemas';
 export type Abilities = z.infer<typeof abilitiesObject>;
 export type AbilitiesEnum = z.infer<typeof abilitiesEnum>;
 export type Action = z.infer<typeof actionObject>;
@@ -12,6 +12,7 @@ export type Background = z.infer<typeof backgroundObject>;
 export type Bonus = z.infer<typeof bonusObject>;
 export type Bonuses = z.infer<typeof bonusesObject>;
 export type Character = z.infer<typeof characterObject>;
+export type CharacterHook = z.infer<typeof characterHook>;
 export type ChosenAction = z.infer<typeof chosenActionObject>;
 export type Condition = z.infer<typeof userObject>;
 export type DescriptionPart = z.infer<typeof descriptionPartObject>;

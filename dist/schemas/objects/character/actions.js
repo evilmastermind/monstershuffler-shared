@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.enchantmentObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
+exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.enchantmentObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.valueTypeEnum = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
@@ -16,7 +16,9 @@ exports.actionTypesEnum = zod_1.z.enum([
     'mythic',
     'lair',
 ]);
+const damageTypeEnum = zod_1.z.enum(['acid damage', 'bludgeoning damage', 'cold damage', 'fire damage', 'force damage', 'lightning damage', 'necrotic damage', 'piercing damage', 'poison damage', 'psychic damage', 'radiant damage', 'slashing damage', 'thunder damage']);
 exports.rechargeTypeEnum = zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
+exports.valueTypeEnum = zod_1.z.union([zod_1.z.enum(['target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']), damageTypeEnum]);
 exports.diceObject = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
@@ -28,24 +30,24 @@ exports.diceObject = zod_1.z.object({
 });
 exports.valueExpressionObject = zod_1.z.object({
     name: zod_1.z.string(),
-    type: zod_1.z.string().optional(),
+    type: exports.valueTypeEnum.optional(),
     expression: zod_1.z.string(),
 });
 exports.valueDiceObject = zod_1.z.object({
     name: zod_1.z.string(),
-    type: zod_1.z.string().optional(),
+    type: exports.valueTypeEnum.optional(),
     expression: zod_1.z.string().optional(),
     dice: exports.diceObject,
 });
 exports.enchantmentObject = zod_1.z.object({
     name: zod_1.z.string().optional(),
-    type: zod_1.z.string().optional(),
+    type: damageTypeEnum.optional(),
     expression: zod_1.z.string().optional(),
     dice: exports.diceObject.optional(),
 });
 exports.valueIncrProgressionObject = zod_1.z.object({
     name: zod_1.z.string(),
-    type: zod_1.z.string().optional(),
+    type: exports.valueTypeEnum.optional(),
     incrProgression: zod_1.z.object({
         unitInterval: zod_1.z.number(),
         unitIncrement: zod_1.z.number(),
@@ -85,8 +87,6 @@ exports.chosenActionObject = zod_1.z.object({
     subType: zod_1.z.string().optional(),
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
-    // 2024/04/21 - values and attacks moved out of the variant object
-    // because random choices should be made only once per action
     values: zod_1.z
         .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
         .optional(),

@@ -1,13 +1,18 @@
-import type { Character, DescriptionPart } from '@/types';
-import { createPart, replaceTags } from '@/parsers';
+import type { Character, CharacterHook, DescriptionPart } from '@/types';
+import { createPart, replaceTags, parseDescriptionChoices } from '@/parsers';
 
 export function calculateCharacterHook(character: Character) {
   const c = character.character;
-  const hook = c?.user?.characterHook || c?.characterHook;
+  const hooks = c?.user?.characterHooks || c?.characterHooks;
+  if (!hooks?.length) {
+    return;
+  }
+  const hook = getPrimaryCharacterHook(hooks);
   if (!hook) {
     return;
   }
-  const hookParts = replaceTags(hook, character);
+  const hookSentence = parseDescriptionChoices(hook.sentence);
+  const hookParts = replaceTags(hookSentence, character);
 
   const characterHook: DescriptionPart[] = [{ string: 'The' }];
 
@@ -43,4 +48,19 @@ export function calculateCharacterHook(character: Character) {
     characterHook.push(...hookParts);
   }
   character.statistics!.characterHook = characterHook;
+}
+
+function getPrimaryCharacterHook(hooks: CharacterHook[]) {
+  if (!hooks.length) {
+    return;
+  }
+  let primaryHook = hooks.find((hook) => hook.isPrimaryCharacterHook);
+
+  if (!primaryHook) {
+    const randomIndex = Math.floor(Math.random() * hooks.length);
+    hooks[randomIndex].isPrimaryCharacterHook = true;
+    primaryHook = hooks[randomIndex];
+  }
+
+  return primaryHook;
 }

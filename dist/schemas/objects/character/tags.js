@@ -35,4 +35,5 @@ exports.tagsObject = zod_1.z.object({
     sizetwogreater: zod_1.z.string(),
     sizetwosmaller: zod_1.z.string(),
     type: zod_1.z.string(),
+    profession: zod_1.z.string(),
 }).catchall(zod_1.z.string());

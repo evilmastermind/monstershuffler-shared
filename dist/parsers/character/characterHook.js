@@ -4,11 +4,16 @@ exports.calculateCharacterHook = calculateCharacterHook;
 const parsers_1 = require("../../parsers");
 function calculateCharacterHook(character) {
     const c = character.character;
-    const hook = c?.user?.characterHook || c?.characterHook;
+    const hooks = c?.user?.characterHooks || c?.characterHooks;
+    if (!hooks?.length) {
+        return;
+    }
+    const hook = getPrimaryCharacterHook(hooks);
     if (!hook) {
         return;
     }
-    const hookParts = (0, parsers_1.replaceTags)(hook, character);
+    const hookSentence = (0, parsers_1.parseDescriptionChoices)(hook.sentence);
+    const hookParts = (0, parsers_1.replaceTags)(hookSentence, character);
     const characterHook = [{ string: 'The' }];
     if (c?.class?.name) {
         characterHook.push((0, parsers_1.createPart)(' '));
@@ -29,4 +34,16 @@ function calculateCharacterHook(character) {
         characterHook.push(...hookParts);
     }
     character.statistics.characterHook = characterHook;
+}
+function getPrimaryCharacterHook(hooks) {
+    if (!hooks.length) {
+        return;
+    }
+    let primaryHook = hooks.find((hook) => hook.isPrimaryCharacterHook);
+    if (!primaryHook) {
+        const randomIndex = Math.floor(Math.random() * hooks.length);
+        hooks[randomIndex].isPrimaryCharacterHook = true;
+        primaryHook = hooks[randomIndex];
+    }
+    return primaryHook;
 }

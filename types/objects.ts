@@ -11,6 +11,7 @@ import {
   backgroundObject,
   bonusesObject,
   bonusObject,
+  characterHook,
   characterObject,
   chosenActionObject,
   descriptionPartObject,
@@ -57,6 +58,7 @@ export type Background = z.infer<typeof backgroundObject>;
 export type Bonus = z.infer<typeof bonusObject>;
 export type Bonuses = z.infer<typeof bonusesObject>;
 export type Character = z.infer<typeof characterObject>;
+export type CharacterHook = z.infer<typeof characterHook>;
 export type ChosenAction = z.infer<typeof chosenActionObject>;
 export type Condition = z.infer<typeof userObject>;
 export type DescriptionPart = z.infer<typeof descriptionPartObject>;

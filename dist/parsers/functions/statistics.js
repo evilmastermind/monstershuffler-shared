@@ -26,6 +26,7 @@ exports.feetDecimalToUnit = feetDecimalToUnit;
 exports.feetDecimalToMeters = feetDecimalToMeters;
 exports.getUnitSymbol = getUnitSymbol;
 exports.parseNameChoices = parseNameChoices;
+exports.parseDescriptionChoices = parseDescriptionChoices;
 exports.createUserObjectIfNotExists = createUserObjectIfNotExists;
 const jspath_1 = __importDefault(require("jspath"));
 const expressions_1 = require("./expressions");
@@ -314,6 +315,12 @@ function parseNameChoices(name = '') {
     }
     const randomName = (0, functions_1.random)(0, possibleNames.length - 1);
     return possibleNames[randomName];
+}
+function parseDescriptionChoices(input) {
+    return input.replace(/\(([^)]+)\)/g, (_, group) => {
+        const options = group.split('|').map(option => option.trim());
+        return options[Math.floor(Math.random() * options.length)];
+    });
 }
 function createUserObjectIfNotExists(character) {
     if (!character.character.user) {

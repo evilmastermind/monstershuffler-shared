@@ -361,6 +361,13 @@ export function parseNameChoices(name = '') {
   return possibleNames[randomName];
 }
 
+export function parseDescriptionChoices(input: string): string {
+  return input.replace(/\(([^)]+)\)/g, (_, group: string) => {
+    const options = group.split('|').map(option => option.trim());
+    return options[Math.floor(Math.random() * options.length)];
+  });
+}
+
 
 export function createUserObjectIfNotExists(character: Character) {
   if (!character.character.user) {

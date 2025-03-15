@@ -32,6 +32,7 @@ export declare const tagsObject: z.ZodObject<{
     sizetwogreater: z.ZodString;
     sizetwosmaller: z.ZodString;
     type: z.ZodString;
+    profession: z.ZodString;
 }, "strip", z.ZodString, z.objectOutputType<{
     name: z.ZodString;
     Name: z.ZodString;
@@ -65,6 +66,7 @@ export declare const tagsObject: z.ZodObject<{
     sizetwogreater: z.ZodString;
     sizetwosmaller: z.ZodString;
     type: z.ZodString;
+    profession: z.ZodString;
 }, z.ZodString, "strip">, z.objectInputType<{
     name: z.ZodString;
     Name: z.ZodString;
@@ -98,5 +100,6 @@ export declare const tagsObject: z.ZodObject<{
     sizetwogreater: z.ZodString;
     sizetwosmaller: z.ZodString;
     type: z.ZodString;
+    profession: z.ZodString;
 }, z.ZodString, "strip">>;
 //# sourceMappingURL=tags.d.ts.map

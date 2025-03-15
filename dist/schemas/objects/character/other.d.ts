@@ -1114,9 +1114,46 @@ export declare const AgeObject: z.ZodObject<{
     string: "child" | "adolescent" | "young adult" | "adult" | "middle-aged" | "elderly" | "venerable";
     number: number;
 }>;
+export declare const characterHook: z.ZodObject<{
+    id: z.ZodNumber;
+    type: z.ZodEnum<["youth", "career", "plot"]>;
+    sentence: z.ZodString;
+    summary: z.ZodString;
+    isPrimaryCharacterHook: z.ZodOptional<z.ZodBoolean>;
+}, "strip", z.ZodTypeAny, {
+    id: number;
+    type: "youth" | "career" | "plot";
+    sentence: string;
+    summary: string;
+    isPrimaryCharacterHook?: boolean | undefined;
+}, {
+    id: number;
+    type: "youth" | "career" | "plot";
+    sentence: string;
+    summary: string;
+    isPrimaryCharacterHook?: boolean | undefined;
+}>;
 export declare const WeightObject: z.ZodEnum<["skinny", "average", "chubby", "obese"]>;
 export declare const roleplayStats: {
-    characterHook: z.ZodOptional<z.ZodString>;
+    characterHooks: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        id: z.ZodNumber;
+        type: z.ZodEnum<["youth", "career", "plot"]>;
+        sentence: z.ZodString;
+        summary: z.ZodString;
+        isPrimaryCharacterHook: z.ZodOptional<z.ZodBoolean>;
+    }, "strip", z.ZodTypeAny, {
+        id: number;
+        type: "youth" | "career" | "plot";
+        sentence: string;
+        summary: string;
+        isPrimaryCharacterHook?: boolean | undefined;
+    }, {
+        id: number;
+        type: "youth" | "career" | "plot";
+        sentence: string;
+        summary: string;
+        isPrimaryCharacterHook?: boolean | undefined;
+    }>, "many">>;
     trait: z.ZodOptional<z.ZodObject<{
         name: z.ZodString;
         description: z.ZodString;
@@ -1564,7 +1601,7 @@ export declare const actionsStats: {
         tags: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
         values: z.ZodOptional<z.ZodArray<z.ZodUnion<[z.ZodObject<{
             name: z.ZodString;
-            type: z.ZodOptional<z.ZodString>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
             expression: z.ZodOptional<z.ZodString>;
             dice: z.ZodObject<{
                 dice: z.ZodNumber;
@@ -1602,7 +1639,7 @@ export declare const actionsStats: {
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
             expression?: string | undefined;
         }, {
             name: string;
@@ -1615,23 +1652,23 @@ export declare const actionsStats: {
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
             expression?: string | undefined;
         }>, z.ZodObject<{
             name: z.ZodString;
-            type: z.ZodOptional<z.ZodString>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
             expression: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             name: string;
             expression: string;
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         }, {
             name: string;
             expression: string;
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         }>, z.ZodObject<{
             name: z.ZodString;
-            type: z.ZodOptional<z.ZodString>;
+            type: z.ZodOptional<z.ZodUnion<[z.ZodEnum<["target", "attack", "creature", "humanoid", "round", "minute", "hour", "day", "DC Strength", "DC Dexterity", "DC Constitution", "DC Intelligence", "DC Wisdom", "DC Charisma", "DC Strength saving throw", "DC Dexterity saving throw", "DC Constitution saving throw", "DC Intelligence saving throw", "DC Wisdom saving throw", "DC Charisma saving throw", "hit point", "temporary hit points", "+", "-st-nd-rd", "feet", "-feet", "time", "damage"]>, z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>]>>;
             incrProgression: z.ZodObject<{
                 unitInterval: z.ZodNumber;
                 unitIncrement: z.ZodNumber;
@@ -1664,7 +1701,7 @@ export declare const actionsStats: {
                 valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         }, {
             name: string;
             incrProgression: {
@@ -1675,7 +1712,7 @@ export declare const actionsStats: {
                 valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         }>]>, "many">>;
         attacks: z.ZodOptional<z.ZodArray<z.ZodObject<{
             name: z.ZodString;
@@ -1847,7 +1884,7 @@ export declare const actionsStats: {
             }>]>>;
             enchantments: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 name: z.ZodOptional<z.ZodString>;
-                type: z.ZodOptional<z.ZodString>;
+                type: z.ZodOptional<z.ZodEnum<["acid damage", "bludgeoning damage", "cold damage", "fire damage", "force damage", "lightning damage", "necrotic damage", "piercing damage", "poison damage", "psychic damage", "radiant damage", "slashing damage", "thunder damage"]>>;
                 expression: z.ZodOptional<z.ZodString>;
                 dice: z.ZodOptional<z.ZodObject<{
                     dice: z.ZodNumber;
@@ -1885,7 +1922,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }, {
                 name?: string | undefined;
@@ -1898,7 +1935,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }>, "many">>;
         }, "strip", z.ZodTypeAny, {
@@ -1952,7 +1989,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }[] | undefined;
         }, {
@@ -2006,7 +2043,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }[] | undefined;
         }>, "many">>;
@@ -2026,7 +2063,7 @@ export declare const actionsStats: {
         values?: ({
             name: string;
             expression: string;
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         } | {
             name: string;
             dice: {
@@ -2038,7 +2075,7 @@ export declare const actionsStats: {
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
             expression?: string | undefined;
         } | {
             name: string;
@@ -2050,7 +2087,7 @@ export declare const actionsStats: {
                 valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         })[] | undefined;
         availableUnit?: "level" | "cr" | undefined;
         source?: string | undefined;
@@ -2110,7 +2147,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }[] | undefined;
         }[] | undefined;
@@ -2130,7 +2167,7 @@ export declare const actionsStats: {
         values?: ({
             name: string;
             expression: string;
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         } | {
             name: string;
             dice: {
@@ -2142,7 +2179,7 @@ export declare const actionsStats: {
                 availableUntil?: number | undefined;
                 unitInterval?: number | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
             expression?: string | undefined;
         } | {
             name: string;
@@ -2154,7 +2191,7 @@ export declare const actionsStats: {
                 valueIncrement: number;
                 availableUnit?: "level" | "cr" | undefined;
             };
-            type?: string | undefined;
+            type?: "attack" | "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | "day" | "target" | "creature" | "humanoid" | "round" | "minute" | "hour" | "DC Strength" | "DC Dexterity" | "DC Constitution" | "DC Intelligence" | "DC Wisdom" | "DC Charisma" | "DC Strength saving throw" | "DC Dexterity saving throw" | "DC Constitution saving throw" | "DC Intelligence saving throw" | "DC Wisdom saving throw" | "DC Charisma saving throw" | "hit point" | "temporary hit points" | "+" | "-st-nd-rd" | "feet" | "-feet" | "time" | "damage" | undefined;
         })[] | undefined;
         availableUnit?: "level" | "cr" | undefined;
         source?: string | undefined;
@@ -2214,7 +2251,7 @@ export declare const actionsStats: {
                     availableUntil?: number | undefined;
                     unitInterval?: number | undefined;
                 } | undefined;
-                type?: string | undefined;
+                type?: "acid damage" | "bludgeoning damage" | "cold damage" | "fire damage" | "force damage" | "lightning damage" | "necrotic damage" | "piercing damage" | "poison damage" | "psychic damage" | "radiant damage" | "slashing damage" | "thunder damage" | undefined;
                 expression?: string | undefined;
             }[] | undefined;
         }[] | undefined;
