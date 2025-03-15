@@ -1,1 +1,1 @@
-{"version":3,"file":"alignment.d.ts","sourceRoot":"","sources":["../../../parsers/character/alignment.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAyB,MAAM,SAAS,CAAC;AAIhE,wBAAgB,kBAAkB,CAAC,SAAS,EAAE,SAAS,QA8DtD;AAED,wBAAgB,wBAAwB,CAAC,gBAAgB,EAAE,MAAM,EAAE,cAAc,EAAE,MAAM,UAyBxF;AAED,wBAAgB,+BAA+B,CAAC,SAAS,EAAE,SAAS,QAiGnE"}
+{"version":3,"file":"alignment.d.ts","sourceRoot":"","sources":["../../../parsers/character/alignment.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAyB,MAAM,SAAS,CAAC;AAGhE,wBAAgB,kBAAkB,CAAC,SAAS,EAAE,SAAS,QA8DtD"}
