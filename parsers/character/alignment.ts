@@ -1,6 +1,6 @@
 import type { Character, StatStringNumberArray } from '@/types';
-import { random } from '@/functions';
-import { createPart } from '@/parsers/functions';
+import { random, } from '@/functions';
+import { createPart, getStatArrayFromObjects } from '@/parsers/functions';
 
 export function calculateAlignment(character: Character) {
   const c = character.character;
@@ -13,9 +13,9 @@ export function calculateAlignment(character: Character) {
     array: [],
   };
 
-  /* 
-  alignments that have already been defined
-  */
+  // calculate alignment from modifiers if it hasn't been defined yet
+  calculateAlignmentFromModifiers(character);
+
   if (c.alignmentEthical === 'Unaligned') {
     // unaligned
     alignment.array!.push(createPart('Unaligned', 'alignment'));
@@ -53,8 +53,52 @@ export function calculateAlignment(character: Character) {
       alignment.array!.unshift(createPart(' ', 'text'));
       alignment.array!.unshift(createPart(typically, 'alignment'));
     }
-  } else {
-    /* 
+  }
+
+  alignment.number = calculateAlignmentNumber(
+    c.alignmentEthical || '',
+    c.alignmentMoral || ''
+  );
+  character.statistics!.alignment = alignment;
+  character.statistics!.alignment.string = alignment.array!.reduce(
+    (acc, obj) => acc + obj.string,
+    ''
+  );
+}
+
+export function calculateAlignmentNumber(alignmentEthical: string, alignmentMoral: string) {
+  let alignmentNumber = 0;
+  switch (alignmentEthical) {
+  case 'Lawful':
+    alignmentNumber += 1;
+    break;
+  case 'Neutral':
+    alignmentNumber += 2;
+    break;
+  case 'Chaotic':
+    alignmentNumber += 3;
+    break;
+  }
+  switch (alignmentMoral) {
+  case 'Good':
+    alignmentNumber += 10;
+    break;
+  case 'Neutral':
+    alignmentNumber += 20;
+    break;
+  case 'Evil':
+    alignmentNumber += 30;
+    break;
+  }
+  return alignmentNumber;
+}
+
+export function calculateAlignmentFromModifiers(character: Character) {
+  const c = character.character;
+  if (c.alignmentEthical && c.alignmentMoral) {
+    return;
+  }
+  /* 
     ======================================
     ALIGNMENT CALCULATION FOR GENERATED NPCs
     ======================================
@@ -70,40 +114,11 @@ export function calculateAlignment(character: Character) {
     there will always be at least a 5% chance of the character being of a different alignment.
     */
     type AlignmentArray = [[number, number, number], [number, number, number]];
-    const array: AlignmentArray[] = [];
-    // getStatArrayFromObjects<AlignmentArray>(
-    //   character,
-    //   "alignmentModifiers"
-    // );
 
-    // alignmentModifiers from traits
-    if ('alignmentModifiers' in c && c.alignmentModifiers) {
-      array.push(c.alignmentModifiers);
-    }
-
-    // alignmentModifiers from racevariant (or race)
-    if (
-      c?.racevariant &&
-      Object.hasOwn(c?.racevariant, 'alignmentModifiers') &&
-      c.racevariant.alignmentModifiers
-    ) {
-      array.push(c.racevariant.alignmentModifiers);
-    } else if (
-      c?.race &&
-      Object.hasOwn(c?.race, 'alignmentModifiers') &&
-      c.race.alignmentModifiers
-    ) {
-      array.push(c.race.alignmentModifiers);
-    }
-
-    // alignmentModifiers from template
-    if (
-      c?.template &&
-      Object.hasOwn(c?.template, 'alignmentModifiers') &&
-      c.template.alignmentModifiers
-    ) {
-      array.push(c.template.alignmentModifiers);
-    }
+    const array = getStatArrayFromObjects<AlignmentArray[]>(
+      character,
+      'alignmentModifiers'
+    ).flat();
 
     const totalModifiers = [
       [0, 0, 0],
@@ -175,47 +190,4 @@ export function calculateAlignment(character: Character) {
     } else {
       c.alignmentMoral ??= 'Neutral';
     }
-
-    if (typically) {
-      alignment.array!.unshift(createPart(' ', 'text'));
-      alignment.array!.unshift(createPart(typically, 'translatableText'));
-    }
-    if (c.alignmentEthical === c.alignmentMoral) {
-      alignment.array!.push(createPart(c.alignmentEthical, 'translatableText'));
-    } else {
-      alignment.array!.push(createPart(c.alignmentEthical, 'translatableText'));
-      alignment.array!.push(createPart(' '));
-      alignment.array!.push(createPart(c.alignmentMoral, 'translatableText'));
-    }
-  }
-
-  let alignmentNumber = 0;
-  switch (c.alignmentEthical) {
-  case 'Lawful':
-    alignmentNumber += 1;
-    break;
-  case 'Neutral':
-    alignmentNumber += 2;
-    break;
-  case 'Chaotic':
-    alignmentNumber += 3;
-    break;
-  }
-  switch (c.alignmentMoral) {
-  case 'Good':
-    alignmentNumber += 10;
-    break;
-  case 'Neutral':
-    alignmentNumber += 20;
-    break;
-  case 'Evil':
-    alignmentNumber += 30;
-    break;
-  }
-  alignment.number = alignmentNumber;
-  character.statistics!.alignment = alignment;
-  character.statistics!.alignment.string = alignment.array!.reduce(
-    (acc, obj) => acc + obj.string,
-    ''
-  );
 }
