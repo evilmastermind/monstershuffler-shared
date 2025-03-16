@@ -1,6 +1,6 @@
 import type { Character } from '@/types';
 import { capitalizeFirst } from '@/functions';
-import { feetDecimalToFeetInches } from '../functions';
+import { replaceTags, feetDecimalToFeetInches } from '../functions';
 
 export function calculateRoleplayStats(character: Character) {
   if (!character.statistics) {
@@ -39,5 +39,22 @@ export function calculateRoleplayStats(character: Character) {
 
   if (c.physicalAppearance) {
     s.physicalAppearance = c.physicalAppearance;
+  }
+
+  // backstory from character hooks (for generated NPCs)
+  if (c.characterHooks?.length && c?.user?.backstory?.string === undefined) {
+    if (!c.user) {
+      c.user = {};
+    }
+    c.user.backstory = {
+      string: '',
+    };
+    for (const hook of c.characterHooks) {
+      const sentence = replaceTags(hook.sentence, character);
+      if (c.user.backstory.string) {
+        c.user.backstory.string += '\n\n';
+      }
+      c.user.backstory.string += `### ${hook.type} \n\n ${sentence}`;
+    };
   }
 }
