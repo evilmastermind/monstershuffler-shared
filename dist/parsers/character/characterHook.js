@@ -12,8 +12,8 @@ function calculateCharacterHook(character) {
     if (!hook) {
         return;
     }
-    const hookSentence = (0, parsers_1.parseDescriptionChoices)(hook.sentence);
-    const hookParts = (0, parsers_1.replaceTags)(hookSentence, character);
+    const hookSummary = (0, parsers_1.parseDescriptionChoices)(hook.summary);
+    const hookParts = (0, parsers_1.replaceTags)(hookSummary, character);
     const characterHook = [{ string: 'The' }];
     if (c?.class?.name) {
         characterHook.push((0, parsers_1.createPart)(' '));

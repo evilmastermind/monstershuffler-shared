@@ -11,8 +11,8 @@ export function calculateCharacterHook(character: Character) {
   if (!hook) {
     return;
   }
-  const hookSentence = parseDescriptionChoices(hook.sentence);
-  const hookParts = replaceTags(hookSentence, character);
+  const hookSummary = parseDescriptionChoices(hook.summary);
+  const hookParts = replaceTags(hookSummary, character);
 
   const characterHook: DescriptionPart[] = [{ string: 'The' }];
 
