@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.enchantmentObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.valueTypeEnum = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
+exports.actionObject = exports.chosenActionObject = exports.actionVariantObject = exports.attackObject = exports.valueIncrProgressionObject = exports.enchantmentObject = exports.valueDiceObject = exports.valueExpressionObject = exports.diceObject = exports.valueTypeEnum = exports.variableEnum = exports.rechargeTypeEnum = exports.actionTypesEnum = void 0;
 const zod_1 = require("zod");
 const weapons_1 = require("./weapons");
 const choices_1 = require("./choices");
@@ -18,7 +18,8 @@ exports.actionTypesEnum = zod_1.z.enum([
 ]);
 const damageTypeEnum = zod_1.z.enum(['acid damage', 'bludgeoning damage', 'cold damage', 'fire damage', 'force damage', 'lightning damage', 'necrotic damage', 'piercing damage', 'poison damage', 'psychic damage', 'radiant damage', 'slashing damage', 'thunder damage']);
 exports.rechargeTypeEnum = zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
-exports.valueTypeEnum = zod_1.z.union([zod_1.z.enum(['target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']), damageTypeEnum]);
+exports.variableEnum = zod_1.z.enum(['', 'target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']);
+exports.valueTypeEnum = zod_1.z.union([exports.variableEnum, damageTypeEnum]);
 exports.diceObject = zod_1.z.object({
     dice: zod_1.z.number(),
     sides: zod_1.z.number(),
