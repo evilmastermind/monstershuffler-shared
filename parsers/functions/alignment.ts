@@ -51,10 +51,10 @@ export function calculateAlignmentFromModifiers(character: Character) {
     */
     type AlignmentArray = [[number, number, number], [number, number, number]];
 
-    const array = getStatArrayFromObjects<AlignmentArray[]>(
+    const array = getStatArrayFromObjects<AlignmentArray>(
       character,
       'alignmentModifiers'
-    ).flat();
+    );
 
     const totalModifiers = [
       [0, 0, 0],

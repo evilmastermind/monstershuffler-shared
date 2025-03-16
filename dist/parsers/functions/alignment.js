@@ -35,7 +35,7 @@ function calculateAlignmentFromModifiers(character) {
     if (c.alignmentEthical && c.alignmentMoral) {
         return;
     }
-    const array = (0, functions_2.getStatArrayFromObjects)(character, 'alignmentModifiers').flat();
+    const array = (0, functions_2.getStatArrayFromObjects)(character, 'alignmentModifiers');
     const totalModifiers = [
         [0, 0, 0],
         [0, 0, 0],
