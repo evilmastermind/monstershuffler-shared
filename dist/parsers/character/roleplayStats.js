@@ -52,7 +52,7 @@ function calculateRoleplayStats(character) {
             if (c.user.backstory.string) {
                 c.user.backstory.string += '\n\n';
             }
-            c.user.backstory.string += `### ${hook.type} \n\n ${sentence}`;
+            c.user.backstory.string += `### ${hook.type} \n\n ${sentence.map((s) => s.string).join('')}`;
         }
         ;
     }
