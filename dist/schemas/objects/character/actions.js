@@ -16,9 +16,65 @@ exports.actionTypesEnum = zod_1.z.enum([
     'mythic',
     'lair',
 ]);
-const damageTypeEnum = zod_1.z.enum(['acid damage', 'bludgeoning damage', 'cold damage', 'fire damage', 'force damage', 'lightning damage', 'necrotic damage', 'piercing damage', 'poison damage', 'psychic damage', 'radiant damage', 'slashing damage', 'thunder damage']);
-exports.rechargeTypeEnum = zod_1.z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
-exports.variableEnum = zod_1.z.enum(['', 'target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']);
+const damageTypeEnum = zod_1.z.enum([
+    'acid damage',
+    'bludgeoning damage',
+    'cold damage',
+    'fire damage',
+    'force damage',
+    'lightning damage',
+    'necrotic damage',
+    'piercing damage',
+    'poison damage',
+    'psychic damage',
+    'radiant damage',
+    'slashing damage',
+    'thunder damage',
+]);
+exports.rechargeTypeEnum = zod_1.z.enum([
+    'turn',
+    'short',
+    'day',
+    'week',
+    'month',
+    '3-6',
+    '4-6',
+    '5-6',
+    '6-6',
+    'spellGroup',
+    'spellSlot',
+]);
+exports.variableEnum = zod_1.z.enum([
+    '',
+    'target',
+    'attack',
+    'creature',
+    'humanoid',
+    'round',
+    'minute',
+    'hour',
+    'day',
+    'DC Strength',
+    'DC Dexterity',
+    'DC Constitution',
+    'DC Intelligence',
+    'DC Wisdom',
+    'DC Charisma',
+    'DC Strength saving throw',
+    'DC Dexterity saving throw',
+    'DC Constitution saving throw',
+    'DC Intelligence saving throw',
+    'DC Wisdom saving throw',
+    'DC Charisma saving throw',
+    'hit point',
+    'temporary hit point',
+    '+',
+    '-st-nd-rd',
+    'feet',
+    '-feet',
+    'time',
+    'damage',
+]);
 exports.valueTypeEnum = zod_1.z.union([exports.variableEnum, damageTypeEnum]);
 exports.diceObject = zod_1.z.object({
     dice: zod_1.z.number(),
@@ -61,10 +117,7 @@ exports.valueIncrProgressionObject = zod_1.z.object({
 exports.attackObject = zod_1.z.object({
     name: zod_1.z.string(),
     replaceName: zod_1.z.boolean().optional(),
-    attributes: zod_1.z.union([
-        weapons_1.weaponObject,
-        choices_1.choiceRandomObject,
-    ]).optional(),
+    attributes: zod_1.z.union([weapons_1.weaponObject, choices_1.choiceRandomObject]).optional(),
     enchantments: zod_1.z.array(exports.enchantmentObject).optional(),
 });
 exports.actionVariantObject = zod_1.z.object({
@@ -89,10 +142,12 @@ exports.chosenActionObject = zod_1.z.object({
     source: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
     values: zod_1.z
-        .array(zod_1.z.union([exports.valueDiceObject, exports.valueExpressionObject, exports.valueIncrProgressionObject]))
+        .array(zod_1.z.union([
+        exports.valueDiceObject,
+        exports.valueExpressionObject,
+        exports.valueIncrProgressionObject,
+    ]))
         .optional(),
-    attacks: zod_1.z
-        .array(exports.attackObject)
-        .optional(),
+    attacks: zod_1.z.array(exports.attackObject).optional(),
 });
 exports.actionObject = zod_1.z.union([exports.chosenActionObject, choices_1.choiceRandomObject]);

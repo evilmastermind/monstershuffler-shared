@@ -15,9 +15,65 @@ export const actionTypesEnum = z.enum([
   'lair',
 ]);
 
-const damageTypeEnum = z.enum(['acid damage', 'bludgeoning damage', 'cold damage', 'fire damage', 'force damage', 'lightning damage', 'necrotic damage', 'piercing damage', 'poison damage', 'psychic damage', 'radiant damage', 'slashing damage', 'thunder damage']);
-export const rechargeTypeEnum = z.enum(['turn', 'short', 'day', 'week', 'month', '3-6', '4-6', '5-6', '6-6', 'spellGroup', 'spellSlot']);
-export const variableEnum = z.enum(['','target', 'attack', 'creature', 'humanoid', 'round', 'minute', 'hour', 'day', 'DC Strength', 'DC Dexterity', 'DC Constitution', 'DC Intelligence', 'DC Wisdom', 'DC Charisma', 'DC Strength saving throw', 'DC Dexterity saving throw', 'DC Constitution saving throw', 'DC Intelligence saving throw', 'DC Wisdom saving throw', 'DC Charisma saving throw', 'hit point', 'temporary hit points', '+', '-st-nd-rd', 'feet', '-feet', 'time', 'damage']);
+const damageTypeEnum = z.enum([
+  'acid damage',
+  'bludgeoning damage',
+  'cold damage',
+  'fire damage',
+  'force damage',
+  'lightning damage',
+  'necrotic damage',
+  'piercing damage',
+  'poison damage',
+  'psychic damage',
+  'radiant damage',
+  'slashing damage',
+  'thunder damage',
+]);
+export const rechargeTypeEnum = z.enum([
+  'turn',
+  'short',
+  'day',
+  'week',
+  'month',
+  '3-6',
+  '4-6',
+  '5-6',
+  '6-6',
+  'spellGroup',
+  'spellSlot',
+]);
+export const variableEnum = z.enum([
+  '',
+  'target',
+  'attack',
+  'creature',
+  'humanoid',
+  'round',
+  'minute',
+  'hour',
+  'day',
+  'DC Strength',
+  'DC Dexterity',
+  'DC Constitution',
+  'DC Intelligence',
+  'DC Wisdom',
+  'DC Charisma',
+  'DC Strength saving throw',
+  'DC Dexterity saving throw',
+  'DC Constitution saving throw',
+  'DC Intelligence saving throw',
+  'DC Wisdom saving throw',
+  'DC Charisma saving throw',
+  'hit point',
+  'temporary hit point',
+  '+',
+  '-st-nd-rd',
+  'feet',
+  '-feet',
+  'time',
+  'damage',
+]);
 export const valueTypeEnum = z.union([variableEnum, damageTypeEnum]);
 
 export const diceObject = z.object({
@@ -64,10 +120,7 @@ export const valueIncrProgressionObject = z.object({
 export const attackObject = z.object({
   name: z.string(),
   replaceName: z.boolean().optional(),
-  attributes: z.union([
-    weaponObject,
-    choiceRandomObject,
-  ]).optional(),
+  attributes: z.union([weaponObject, choiceRandomObject]).optional(),
   enchantments: z.array(enchantmentObject).optional(),
 });
 
@@ -93,10 +146,14 @@ export const chosenActionObject = z.object({
   source: z.string().optional(),
   tags: z.array(z.string()).optional(),
   values: z
-    .array(z.union([valueDiceObject, valueExpressionObject, valueIncrProgressionObject]))
+    .array(
+      z.union([
+        valueDiceObject,
+        valueExpressionObject,
+        valueIncrProgressionObject,
+      ]),
+    )
     .optional(),
-  attacks: z
-    .array(attackObject)
-    .optional(),
+  attacks: z.array(attackObject).optional(),
 });
 export const actionObject = z.union([chosenActionObject, choiceRandomObject]);
