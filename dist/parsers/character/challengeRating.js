@@ -85,5 +85,5 @@ function assignChallengeRating(character, CR, CRString) {
     character.statistics.XP =
         // @ts-expect-error CRString is a valid key
         CR <= 30 ? stats_1.challengeStats[CRString].xp.toString() : '???';
-    character.variables.CR = CR;
+    character.variables.CR = (0, stats_1.getChallengeDecimal)(CR);
 }

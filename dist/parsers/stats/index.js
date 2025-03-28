@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.challengeTable = exports.sizeStats = exports.challengeStats = exports.sensesList = exports.skillTypes = exports.speedTypes = exports.abilityNames = exports.abilities = void 0;
 exports.getChallengeString = getChallengeString;
 exports.getChallengeNumber = getChallengeNumber;
+exports.getChallengeDecimal = getChallengeDecimal;
 exports.typeToNumber = typeToNumber;
 exports.numberToType = numberToType;
 exports.abilities = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
@@ -101,6 +102,18 @@ function getChallengeNumber(CR) {
         return 0;
     const number = parseInt(CR);
     return isNaN(number) ? 0 : number;
+}
+function getChallengeDecimal(CR) {
+    if (CR <= -2.5)
+        return 0;
+    if (CR <= -1.5)
+        return 0.125;
+    if (CR <= -0.5)
+        return 0.25;
+    if (CR <= 0.5)
+        return 0.5;
+    else
+        return CR;
 }
 exports.sizeStats = {
     '1': { name: 'Tiny', space: 2.5, squares: 0.5, hitDice: 4 },

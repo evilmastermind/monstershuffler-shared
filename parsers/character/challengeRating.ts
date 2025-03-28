@@ -2,6 +2,7 @@ import type { Character } from '@/types';
 import {
   challengeStats,
   getChallengeString,
+  getChallengeDecimal,
 } from '@/parsers/stats';
 
 export function calculateChallengeRating(
@@ -94,5 +95,5 @@ function assignChallengeRating(
   character.statistics!.XP =
     // @ts-expect-error CRString is a valid key
     CR <= 30 ? challengeStats[CRString].xp.toString() : '???';
-  character.variables!.CR = CR;
+  character.variables!.CR = getChallengeDecimal(CR);
 }

@@ -147,6 +147,7 @@ export declare const challengeStats: {
 };
 export declare function getChallengeString(CR: number): string;
 export declare function getChallengeNumber(CR: string): number;
+export declare function getChallengeDecimal(CR: number): number;
 export type Size = '1' | '2' | '3' | '4' | '5' | '6';
 export type SizeStats = {
     [key in Size]: {

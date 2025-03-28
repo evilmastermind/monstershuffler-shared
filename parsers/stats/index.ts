@@ -99,6 +99,14 @@ export function getChallengeNumber(CR: string) {
   return isNaN(number) ? 0 : number;
 }
 
+export function getChallengeDecimal(CR: number) {
+  if (CR <= -2.5) return 0;
+  if (CR <= -1.5) return 0.125;
+  if (CR <= -0.5) return 0.25;
+  if (CR <= 0.5) return 0.5;
+  else return CR;
+}
+
 export type Size = '1' | '2' | '3' | '4' | '5' | '6';
 
 export type SizeStats = {
