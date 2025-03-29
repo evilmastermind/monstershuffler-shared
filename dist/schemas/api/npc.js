@@ -46,7 +46,7 @@ exports.sGetGeneratorDataResponse = zod_1.z.object({
 });
 exports.sPostNpcRatingResponse = zod_1.z.object({
     id: zod_1.z.string().uuid(),
-    rating: zod_1.z.number()
+    rating: zod_1.z.number(),
 });
 exports.sPostNpcToSentAlreadyListBody = zod_1.z.object({
     npcid: zod_1.z.string().uuid(),
@@ -62,6 +62,7 @@ exports.sAddBackstoryToNpcBody = zod_1.z.object({
 });
 exports.sGenerateBackstoryBody = zod_1.z.object({
     id: zod_1.z.string().uuid(),
+    hook: zod_1.z.number().optional(),
 });
 exports.sPostNpcBody = zod_1.z.object({
     object: objects_1.characterObject,

@@ -1,7 +1,10 @@
 import { z } from 'zod';
 import { characterObject } from '@/schemas/objects/character/objects';
 import { pronounsObject } from '@/schemas/objects/character/other';
-import { alignmentEthical, alignmentMoral } from '@/schemas/objects/character/alignment';
+import {
+  alignmentEthical,
+  alignmentMoral,
+} from '@/schemas/objects/character/alignment';
 import { id, objectWithVariantsList, objectList } from './object';
 
 export const sPostRandomNpcBody = z.object({
@@ -49,7 +52,7 @@ export const sGetGeneratorDataResponse = z.object({
 
 export const sPostNpcRatingResponse = z.object({
   id: z.string().uuid(),
-  rating: z.number()
+  rating: z.number(),
 });
 
 export const sPostNpcToSentAlreadyListBody = z.object({
@@ -68,6 +71,7 @@ export const sAddBackstoryToNpcBody = z.object({
 
 export const sGenerateBackstoryBody = z.object({
   id: z.string().uuid(),
+  hook: z.number().optional(),
 });
 
 export const sPostNpcBody = z.object({
