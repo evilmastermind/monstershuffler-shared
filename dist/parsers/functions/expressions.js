@@ -30,18 +30,18 @@ const fixSigns = (expression) => {
     // this part adds 0 before numbers declared with a sign at the beginning of an expression
     // example: -5+3 ===> 0-5+3
     let string = expression;
-    if (string[0] === "-" || string[0] === "+") {
-        string = "0" + string;
+    if (string[0] === '-' || string[0] === '+') {
+        string = '0' + string;
     }
     let x = string.length - 1;
     let i = 0;
     while (i < x) {
         const curCh = string[i];
-        if (curCh === "(") {
+        if (curCh === '(') {
             // (
-            if (string[i + 1] === "-" || string[i + 1] === "+") {
+            if (string[i + 1] === '-' || string[i + 1] === '+') {
                 // (- or (+
-                string = string.substring(0, i + 1) + "0" + string.substring(i + 1); // (0- or (0+
+                string = string.substring(0, i + 1) + '0' + string.substring(i + 1); // (0- or (0+
                 i++;
                 x++;
             }
@@ -50,39 +50,39 @@ const fixSigns = (expression) => {
     }
     // New regex rule for parts like 6*-5, or 6>+3 => 6*(0-5), 6>(0+3)
     const operatorAndNumberPattern = /([><=/*\\+-])([+-])(\d+(\.\d+)?)/g;
-    string = string.replace(operatorAndNumberPattern, "$1($20$3)");
+    string = string.replace(operatorAndNumberPattern, '$1($20$3)');
     return string;
 };
 // split expression by operator, considering parentheses
 const split = (expression, operator) => {
     const result = [];
     let braces = 0;
-    let currentChunk = "";
+    let currentChunk = '';
     for (let i = 0; i < expression.length; ++i) {
         const curCh = expression[i];
-        if (curCh === "(") {
+        if (curCh === '(') {
             braces++;
         }
-        else if (curCh === ")") {
+        else if (curCh === ')') {
             braces--;
         }
         if (braces === 0 && operator === curCh) {
             result.push(currentChunk);
-            currentChunk = "";
+            currentChunk = '';
         }
         else
             currentChunk += curCh;
     }
-    if (currentChunk !== "") {
+    if (currentChunk !== '') {
         result.push(currentChunk);
     }
     return result;
 };
 // this will only parse strings containing the equal (=) operator [ no + ]
 const parseEqualSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "=");
+    const numbersString = split(expression, '=');
     const numbers = numbersString.map((noStr) => {
-        if (noStr[0] === "(") {
+        if (noStr[0] === '(') {
             const expr = noStr.slice(1, -1);
             // recursive call to the main function
             return parsePlusSeparatedExpression(expr);
@@ -97,7 +97,7 @@ const parseEqualSeparatedExpression = (expression) => {
 };
 // this will only take strings containing > operator [ no + ]
 const parseGreaterThanSeparatedExpression = (expression) => {
-    const numbersString = split(expression, ">");
+    const numbersString = split(expression, '>');
     const numbers = numbersString.map((noStr) => parseEqualSeparatedExpression(noStr));
     const initialValue = numbers[0];
     const result = numbers
@@ -107,7 +107,7 @@ const parseGreaterThanSeparatedExpression = (expression) => {
 };
 // this will only take strings containing < operator [ no + ]
 const parseSmallerThanSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "<");
+    const numbersString = split(expression, '<');
     const numbers = numbersString.map((noStr) => parseGreaterThanSeparatedExpression(noStr));
     const initialValue = numbers[0];
     const result = numbers
@@ -117,7 +117,7 @@ const parseSmallerThanSeparatedExpression = (expression) => {
 };
 // this will only take strings containing \ operator [ no + ]
 const parseDivisionCeilSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "\\");
+    const numbersString = split(expression, '\\');
     const numbers = numbersString.map((noStr) => parseSmallerThanSeparatedExpression(noStr));
     const initialValue = numbers[0];
     const result = numbers
@@ -127,7 +127,7 @@ const parseDivisionCeilSeparatedExpression = (expression) => {
 };
 // this will only take strings containing / operator [ no + ]
 const parseDivisionFloorSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "/");
+    const numbersString = split(expression, '/');
     const numbers = numbersString.map((noStr) => parseDivisionCeilSeparatedExpression(noStr));
     const initialValue = numbers[0];
     const result = numbers
@@ -137,7 +137,7 @@ const parseDivisionFloorSeparatedExpression = (expression) => {
 };
 // this will only take strings containing * operator [ no + ]
 const parseMultiplicationSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "*");
+    const numbersString = split(expression, '*');
     const numbers = numbersString.map((noStr) => parseDivisionFloorSeparatedExpression(noStr));
     const initialValue = 1.0;
     const result = numbers.reduce((acc, no) => acc * no, initialValue);
@@ -145,7 +145,7 @@ const parseMultiplicationSeparatedExpression = (expression) => {
 };
 // both * -
 const parseMinusSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "-");
+    const numbersString = split(expression, '-');
     const numbers = numbersString.map((noStr) => parseMultiplicationSeparatedExpression(noStr));
     const initialValue = numbers[0];
     const result = numbers.slice(1).reduce((acc, no) => acc - no, initialValue);
@@ -153,7 +153,7 @@ const parseMinusSeparatedExpression = (expression) => {
 };
 // * - +
 const parsePlusSeparatedExpression = (expression) => {
-    const numbersString = split(expression, "+");
+    const numbersString = split(expression, '+');
     const numbers = numbersString.map((noStr) => parseMinusSeparatedExpression(noStr));
     const initialValue = 0.0;
     const result = numbers.reduce((acc, no) => acc + no, initialValue);
@@ -161,7 +161,7 @@ const parsePlusSeparatedExpression = (expression) => {
 };
 // 20220709 - if replacement is negative, it's returned between parenthesis
 const replaceValues = (expression, mapObj) => {
-    const re = new RegExp("\\b(?:" + Object.keys(mapObj).join("|") + ")\\b", "gi");
+    const re = new RegExp('\\b(?:' + Object.keys(mapObj).join('|') + ')\\b', 'gi');
     return expression.replace(re, function (matched) {
         const key = matched.toUpperCase();
         if (mapObj[key] < 0)
@@ -170,11 +170,11 @@ const replaceValues = (expression, mapObj) => {
             return mapObj[key].toString();
     });
 };
-function parseExpression(expression = "", character, source = "") {
+function parseExpression(expression = '', character, source = '') {
     const mapObj = character.variables;
     let preparedExpression = expression.toString();
     // removing white spaces
-    preparedExpression = preparedExpression.replace(/ +/g, "");
+    preparedExpression = preparedExpression.replace(/ +/g, '');
     // replacing variables
     const resultAfterReplace = (preparedExpression = replaceValues(preparedExpression, mapObj));
     // adding 0 before negative numbers
@@ -182,7 +182,7 @@ function parseExpression(expression = "", character, source = "") {
     // parsing...
     const result = parsePlusSeparatedExpression(preparedExpression);
     if (isNaN(Number(result))) {
-        const sourceExpression = source ? ` of ${source}` : "";
+        const sourceExpression = source ? ` of ${source}` : '';
         return {
             ok: false,
             error: new Error(`Expression parsing ${sourceExpression} failed, possibly because of an unknown 
@@ -197,10 +197,12 @@ function parseExpression(expression = "", character, source = "") {
         value: result,
     };
 }
-function parseExpressionNumeric(expression = "", character, source = "") {
+function parseExpressionNumeric(expression = '', character, source = '', decimal = false) {
     const result = parseExpression(expression, character, source);
-    if (result.ok)
-        return result.value;
-    else
+    if (result.ok) {
+        return decimal ? result.value : Math.ceil(result.value);
+    }
+    else {
         return 0;
+    }
 }

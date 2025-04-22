@@ -1,4 +1,4 @@
-import type { Character } from "../../types";
+import type { Character } from '../../types';
 type Result<T, E = Error> = {
     ok: true;
     value: T;
@@ -7,6 +7,6 @@ type Result<T, E = Error> = {
     error: E;
 };
 export declare function parseExpression(expression: string | undefined, character: Character, source?: string): Result<number>;
-export declare function parseExpressionNumeric(expression: string | undefined, character: Character, source?: string): number;
+export declare function parseExpressionNumeric(expression: string | undefined, character: Character, source?: string, decimal?: boolean): number;
 export {};
 //# sourceMappingURL=expressions.d.ts.map
